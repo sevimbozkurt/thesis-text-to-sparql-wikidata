@@ -1,0 +1,4040 @@
+index,complexity,linked_query,fully_linked,executed,exec_error,jaccard_pooled,jaccard_entity
+0,simple,"SELECT (COUNT(?item) AS ?count) WHERE {
+  ?item wdt:P625 ?location .
+}",True,True,,1.0,na
+1,simple,"SELECT ?subproperty ?subpropertyLabel WHERE {
+  ?subproperty wdt:P1647 wdt:P276.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,na
+2,simple,"SELECT ?organism ?organismLabel WHERE {
+  ?organism wdt:P138 wd:Q936580 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.5,1.0
+3,simple,"SELECT DISTINCT ?politician ?politicianLabel ?mastodon WHERE {
+  ?politician wdt:P106 wd:Q82955 .
+  ?politician wdt:P4033 ?mastodon .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"" . }
+}",True,True,,0.4726,0.0
+4,simple,"SELECT DISTINCT ?phrase ?phraseLabel WHERE {
+  ?phrase wdt:P31 wd:Q2708515 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0007,0.0015
+5,simple,"SELECT ?child ?childLabel WHERE {
+  ?child wdt:P22 wd:Q1339 .
+  ?child wdt:P25 wd:Q57487 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,1.0,1.0
+6,simple,"SELECT ?soc ?socLabel ?announcementDate WHERE {
+  ?soc wdt:P31 wd:Q610398 .
+  ?soc wdt:P176 wd:Q312 .
+  ?soc wdt:P179 wd:Q406283 .
+  OPTIONAL { ?soc wdt:P575 ?announcementDate . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ?announcementDate",True,True,,0.0,na
+7,simple,"SELECT DISTINCT ?person ?personLabel ?hometown ?hometownLabel ?coord WHERE {
+  ?person wdt:P4033 ?mastodon .
+  ?person wdt:P551 ?hometown .
+  ?hometown wdt:P625 ?coord .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0949,0.1346
+8,simple,"SELECT ?work ?workLabel ?description WHERE {
+  ?work wdt:P31 wd:Q7725634 .
+  OPTIONAL {
+    ?work schema:description ?description .
+    FILTER(LANG(?description) = ""en"")
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,False,result_too_large,0.0,0.0
+9,simple,"SELECT DISTINCT ?botanist ?botanistLabel WHERE {
+  ?botanist wdt:P106 wd:Q2374149 .
+  ?botanist rdfs:label ?botanistLabel .
+  FILTER(LANG(?botanistLabel) = ""en"")
+  FILTER(STRSTARTS(?botanistLabel, ""H""))
+}
+ORDER BY ?botanistLabel
+LIMIT 100",True,True,,0.0099,0.0197
+10,simple,"SELECT ?metro ?metroLabel ?inception WHERE {
+  ?metro wdt:P31 wd:Q5503 .
+  ?metro wdt:P571 ?inception .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ASC(?inception)
+LIMIT 20",True,True,,0.3333,0.4783
+11,simple,"SELECT DISTINCT ?item ?itemLabel ?collection ?collectionLabel ?model WHERE {
+  ?item wdt:P195 ?collection .
+  ?item wdt:P4896 ?model .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+LIMIT 100",True,True,,0.39,0.3806
+12,simple,"SELECT ?book ?bookLabel WHERE {
+  ?book wdt:P31 wd:Q3331189 .
+  ?book wdt:P407 wd:Q9610 .
+  ?book wdt:P1957 ?index .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en,bn"". }
+}",True,True,,0.0099,0.01
+13,simple,"SELECT ?item ?itemLabel ?coord WHERE {
+  ?item wdt:P31 wd:Q1032372 .
+  ?item wdt:P625 ?coord .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+}",True,True,,1.0,1.0
+14,simple,"SELECT ?human ?humanLabel ?weight WHERE {
+  ?human wdt:P31 wd:Q5 .
+  ?human wdt:P2067 ?weight .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY DESC(?weight)
+LIMIT 20",True,True,,0.0,0.0
+15,simple,"SELECT DISTINCT ?author ?authorLabel WHERE {
+  ?author wdt:P31 wd:Q5 .
+  ?author wdt:P106 wd:Q482980 .
+  ?author rdfs:label ""Bill Thompson""@en .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+16,simple,"SELECT DISTINCT ?species ?speciesLabel WHERE {
+  wd:Q96740175 wdt:[property:commonly found species] ?species.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",False,False,not_linked,0.0,0.0
+17,simple,"SELECT ?element ?elementLabel ?symbol ?atomicNumber WHERE {
+  ?element wdt:P31 wd:Q11344.
+  ?element wdt:P913 ?symbol.
+  ?element wdt:P1086 ?atomicNumber.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ASC(?atomicNumber)",True,True,,0.0,0.0
+18,simple,"SELECT ?item ?cdliId ?label WHERE {
+  ?item wdt:P2474 ?cdliId .
+  ?item rdfs:label ?label .
+}",True,True,,0.6973,0.0
+19,simple,"SELECT ?item ?itemLabel ?wikipathwaysID ?reference WHERE {
+  ?item wdt:P2410 ?wikipathwaysID .
+  OPTIONAL { ?item wdt:P2860 ?reference . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+20,simple,"SELECT ?painting ?paintingLabel WHERE {
+  ?painting wdt:P31 wd:Q3305213 .
+  ?painting wdt:P180 wd:Q65560542 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.1123,0.2059
+21,simple,"SELECT ?phrase ?phraseLabel WHERE {
+  ?phrase wdt:P31 wd:Q5551966 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en,de"". }
+}",True,True,,0.0,0.0
+22,simple,"SELECT ?foundry ?foundryLabel ?typeface ?typefaceLabel WHERE {
+  ?foundry wdt:P31 wd:Q377688 .
+  ?typeface wdt:P4586 ?foundry .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.212,0.2126
+23,simple,"SELECT ?hillfort ?irishName WHERE {
+  ?hillfort wdt:P31 wd:Q744099 .
+  ?hillfort wdt:P1212 ?atlasId .
+  ?hillfort rdfs:label ?irishName .
+  FILTER(LANG(?irishName) = ""ga"")
+}",True,True,,1.0,na
+24,simple,"SELECT ?item ?itemLabel ?model WHERE {
+  ?item wdt:P4896 ?model .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.1081,0.106
+25,simple,"SELECT ?country ?countryLabel (AVG(?lifespan) AS ?avgLifespan) WHERE {
+  ?person wdt:P27 ?country .
+  ?person wdt:P569 ?birth .
+  ?person wdt:P570 ?death .
+  BIND((YEAR(?death) - YEAR(?birth)) AS ?lifespan)
+  FILTER(?lifespan > 0 && ?lifespan < 150)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?country ?countryLabel
+ORDER BY DESC(?avgLifespan)",True,True,,0.0327,0.0719
+26,simple,"SELECT DISTINCT ?street ?streetLabel ?namedAfter ?namedAfterLabel WHERE {
+  ?street wdt:P31 wd:Q79007 .
+  ?street wdt:P131 wd:Q43631 .
+  ?street wdt:P138 ?namedAfter .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en,nl"". }
+}",True,True,,0.3359,0.5057
+27,simple,"SELECT DISTINCT ?grandchild ?grandchildLabel WHERE {
+  wd:Q1339 wdt:P40 ?child .
+  ?child wdt:P40 ?grandchild .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,1.0,1.0
+28,simple,"SELECT DISTINCT ?person ?personLabel WHERE {
+  ?person wdt:P69 wd:Q34433 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+29,simple,"SELECT DISTINCT ?project ?projectLabel ?website WHERE {
+  ?project wdt:P179 wd:[entity:Women's & Gender History DH list] .
+  OPTIONAL { ?project wdt:P856 ?website . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",False,False,not_linked,0.0,0.0
+30,simple,"SELECT ?monument ?monumentLabel ?heritageID ?coordinates WHERE {
+  ?monument wdt:P31 wd:Q4989906 .
+  ?monument wdt:P131 wd:Q64 .
+  OPTIONAL { ?monument wdt:P14261 ?heritageID . }
+  OPTIONAL { ?monument wdt:P625 ?coordinates . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0002,0.0002
+31,simple,"SELECT ?protein ?uniprotID WHERE {
+  ?protein wdt:P31 wd:Q8054 .
+  ?protein wdt:P703 wd:Q15978631 .
+  ?protein wdt:P352 ?uniprotID .
+}",True,True,,0.9996,0.9995
+32,simple,"SELECT ?predicate ?node WHERE {
+  wd:Q2013 ?predicate ?node .
+  FILTER(LANG(?node) = ""en"" || !isLiteral(?node))
+}",True,True,,0.0104,0.0198
+33,simple,"SELECT ?lexeme ?lemma WHERE {
+  ?lexeme wikibase:lemma ""bought""@en .
+  ?lexeme ontolex:lexicalForm ?form .
+  ?form ontolex:representation ""bought""@en .
+  ?lexeme wikibase:lemma ?lemma .
+}",True,True,,0.0,na
+34,simple,"SELECT ?taxon ?taxonLabel ?eponym ?eponymLabel WHERE {
+  ?taxon wdt:P31 wd:Q16521 .
+  ?taxon wdt:P138 ?eponym .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,1.0,1.0
+35,simple,"SELECT ?item ?itemLabel WHERE {
+  ?item wdt:P31 wd:Q2934 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,1.0,1.0
+36,simple,"SELECT ?letter ?letterLabel WHERE {
+  ?letter wdt:P361 wd:Q2352347 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en,sv"". }
+}",True,True,,0.0,0.0
+37,simple,"SELECT ?color ?colorLabel ?hex WHERE {
+  ?color wdt:P31 wd:Q1075 .
+  ?color wdt:P465 ?hex .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"" . }
+}",True,True,,0.9991,1.0
+38,medium,"SELECT DISTINCT ?country ?countryLabel WHERE {
+  ?parade wdt:P31 wd:Q51404 .
+  ?parade wdt:P17 ?country .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.6792,0.809
+39,medium,"SELECT ?river ?riverLabel ?length WHERE {
+  ?river wdt:P31 wd:Q4022 .
+  ?river wdt:P2043 ?length .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY DESC(?length)
+LIMIT 10",True,True,,0.0344,0.0307
+40,medium,"SELECT DISTINCT ?property WHERE {
+  ?property wdt:P31 wd:Q18616576 .
+  ?property wdt:P1855 ?statement .
+  ?statement ?ps ?value .
+  ?value wdt:P31/wdt:P279* wd:Q43229 .
+}",True,True,,0.0084,0.0
+41,medium,"SELECT DISTINCT ?material ?materialLabel WHERE {
+  ?painting wdt:P31 wd:Q3305213 .
+  ?painting wdt:P186 ?material .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"" . }
+}",True,True,,0.288,0.3228
+42,medium,"SELECT ?president ?presidentLabel ?spouse ?spouseLabel ?start WHERE {
+  ?president wdt:P39 wd:Q11696 .
+  ?president p:P39 ?statement .
+  ?statement ps:P39 wd:Q11696 .
+  OPTIONAL { ?statement pq:P580 ?start . }
+  OPTIONAL { ?president wdt:P26 ?spouse . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ?start",True,True,,0.5828,0.8333
+43,medium,"SELECT DISTINCT ?birthplace ?birthplaceLabel WHERE {
+  ?work wdt:P5008 wd:Q20980830 .
+  ?work wdt:P170 ?artist .
+  ?artist wdt:P19 ?birthplace .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+44,medium,"SELECT ?book ?bookLabel ?place ?placeLabel ?date WHERE {
+  ?book wdt:P31 wd:Q571 .
+  ?book wdt:P577 ?date .
+  ?book wdt:P291 ?place .
+  FILTER(YEAR(?date) < 1830)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0047,0.0092
+45,medium,"SELECT DISTINCT ?composition ?compositionLabel WHERE {
+  ?composition wdt:P31/wdt:P279* wd:Q207628 .
+  ?composition wdt:P870 wd:Q1444 .
+  ?composition wdt:P870 wd:Q42998 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+46,medium,"SELECT DISTINCT ?lodge WHERE {
+  ?lodge wdt:P31 wd:Q1454597 .
+  ?article schema:about ?lodge ;
+           schema:isPartOf <https://en.wikipedia.org/> .
+  FILTER NOT EXISTS { ?lodge rdfs:label ?label . }
+}",True,True,,0.0,0.0
+47,medium,"SELECT DISTINCT ?country ?countryLabel WHERE {
+  ?country wdt:P31 wd:Q6256 .
+  ?country wdt:P361 ?fta .
+  ?fta wdt:P31 wd:Q5335686 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.08,0.08
+48,medium,"SELECT ?pyramid ?pyramidLabel WHERE {
+  ?pyramid wdt:P31 wd:Q12516 .
+  ?pyramid wdt:P17 wd:Q79 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0092,0.0235
+49,medium,"SELECT ?park ?parkLabel ?coord WHERE {
+  ?park wdt:P31 wd:Q46169 .
+  ?park wdt:P17 wd:Q34 .
+  ?park wdt:P625 ?coord .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+50,medium,"SELECT DISTINCT ?minister ?ministerLabel ?position ?positionLabel ?dateOfDeath WHERE {
+  ?minister wdt:P39 ?position .
+  ?position wdt:P361 wd:Q112014 .
+  ?minister wdt:P570 ?dateOfDeath .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.5532,0.7515
+51,medium,"SELECT ?epicPoem ?epicPoemLabel ?sitelinks WHERE {
+  ?epicPoem wdt:P31 wd:Q37484 .
+  ?epicPoem wikibase:sitelinks ?sitelinks .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY DESC(?sitelinks)",True,True,,1.0,na
+52,medium,"SELECT ?film ?filmLabel ?releaseDate ?locationLabel WHERE {
+  ?film wdt:P31 wd:Q11424 .
+  ?film wdt:P136 wd:Q172980 .
+  ?film wdt:P577 ?releaseDate .
+  FILTER(YEAR(?releaseDate) < 1925)
+  OPTIONAL { ?film wdt:P840 ?location . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.402,0.519
+53,medium,"SELECT ?building ?buildingLabel ?height WHERE {
+  wd:Q243 wdt:P2048 ?eiffelHeight .
+  ?building wdt:P31/wdt:P279* wd:Q41176 .
+  ?building wdt:P2048 ?height .
+  FILTER(?height > ?eiffelHeight)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY DESC(?height)",True,True,,0.3758,0.73
+54,medium,"SELECT ?country ?countryLabel ?signLanguage ?signLanguageLabel ?coordinates WHERE {
+  ?country wdt:P31 wd:Q3624078 .
+  ?country wdt:P1412 ?signLanguage .
+  ?country wdt:P625 ?coordinates .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+55,medium,"SELECT DISTINCT ?item ?itemLabel WHERE {
+  ?item wdt:P1922 ?firstLine .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+56,medium,"SELECT ?state ?stateLabel ?area WHERE {
+  ?state wdt:P31 wd:[entity:states of Malaysia] .
+  OPTIONAL { ?state wdt:P2046 ?area . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",False,False,not_linked,0.0,0.0
+57,medium,"SELECT DISTINCT ?driver ?driverLabel WHERE {
+  ?driver wdt:P106 wd:Q10349745 .
+  ?driver wdt:P1196 wd:Q171558 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+58,medium,"SELECT ?movie ?movieLabel WHERE {
+  ?movie wdt:P31 wd:Q11424 .
+  ?movie wdt:P161 wd:Q221074 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.4222,0.9344
+59,medium,"SELECT DISTINCT ?item ?itemLabel WHERE {
+  ?character wdt:P1441 ?work .
+  ?work wdt:P50 wd:Q692 .
+  ?item wdt:P138 ?character .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.6763,0.6763
+60,medium,"SELECT ?child ?childLabel WHERE {
+  ?child wdt:P22 wd:Q1339 .
+  ?child wdt:P25 wd:Q57487 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.1429,0.1429
+61,medium,"SELECT ?synod ?synodLabel ?geoshape WHERE {
+  ?synod wdt:P31 wd:[entity:Church of Scotland synod] .
+  OPTIONAL { ?synod wdt:P3896 ?geoshape . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",False,False,not_linked,0.0,0.0
+62,medium,"SELECT ?suburb ?suburbLabel ?coordinates WHERE {
+  ?suburb wdt:P31 wd:Q188509 .
+  ?suburb wdt:P17 wd:Q664 .
+  ?suburb wdt:P625 ?coordinates .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.9983,0.9966
+63,medium,"SELECT DISTINCT ?birthplace ?birthplaceLabel WHERE {
+  wd:Q83495 wdt:P161 ?actor .
+  ?actor wdt:P19 ?birthplace .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+64,medium,"SELECT ?place ?placeLabel ?location WHERE {
+  wd:Q64436 wdt:P625 ?center .
+  SERVICE wikibase:around {
+    ?place wdt:P625 ?location .
+    bd:serviceParam wikibase:center ?center .
+    bd:serviceParam wikibase:radius ""1"" .
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"" . }
+}",True,False,http_500,0.0,0.0
+65,medium,"SELECT ?software ?softwareLabel WHERE {
+  ?software wdt:P178 wd:Q1431 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.036,0.0746
+66,medium,"SELECT ?place ?placeLabel (COUNT(?artwork) AS ?count) WHERE {
+  ?artwork wdt:P31 wd:Q557141.
+  ?artwork wdt:P276 ?place.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?place ?placeLabel
+ORDER BY DESC(?count)",True,True,,0.0005,0.0002
+67,medium,"SELECT ?municipality ?municipalityLabel ?banner WHERE {
+  ?municipality wdt:P31 wd:Q484170 .
+  ?municipality wdt:P163 ?banner .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0475,0.0801
+68,medium,"SELECT ?painting ?paintingLabel WHERE {
+  ?painting wdt:P31 wd:Q3305213 .
+  ?painting wdt:P170 wd:Q186816 .
+  ?painting wdt:P195 wd:[entity:Belvedere] .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",False,False,not_linked,0.0,0.0
+69,medium,"SELECT (COUNT(DISTINCT ?word) AS ?count) WHERE {
+  ?language wdt:P17 wd:Q668 .
+  ?word wdt:P31 wd:Q8171 .
+  ?word wdt:P407 ?language .
+}",True,True,,0.0,0.0
+70,medium,"SELECT ?image (COUNT(?item) AS ?count) WHERE {
+  ?item wdt:P18 ?image .
+}
+GROUP BY ?image
+HAVING (COUNT(?item) > 10)
+ORDER BY DESC(?count)",True,True,,1.0,na
+71,medium,"SELECT DISTINCT ?politician ?politicianLabel WHERE {
+  ?politician wdt:P31 wd:Q5 .
+  ?politician wdt:P102 wd:Q42183 .
+  ?politician wdt:P106 wd:Q82955 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+72,medium,"SELECT ?park ?parkLabel WHERE {
+  ?park wdt:P31 wd:Q22746 .
+  ?park wdt:P131 wd:Q585 .
+  FILTER NOT EXISTS { ?park wdt:P18 ?image . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+73,medium,"SELECT ?person ?personLabel ?birthplace ?birthplaceLabel ?coord ?century WHERE {
+  ?person wdt:P31 wd:Q5 .
+  ?person wdt:P19 ?birthplace .
+  ?birthplace wdt:P625 ?coord .
+  ?person wdt:P569 ?dob .
+  BIND(FLOOR((YEAR(?dob) - 1) / 100) + 1 AS ?century)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+LIMIT 1000",True,True,,0.0004,0.0008
+74,medium,"SELECT ?paper ?paperLabel ?doi WHERE {
+  ?paper wdt:P921 wd:Q98969121 .
+  OPTIONAL { ?paper wdt:P356 ?doi . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.6462,0.6135
+75,medium,"SELECT DISTINCT ?person ?personLabel ?awardLabel WHERE {
+  ?person wdt:P69 wd:Q1432632 .
+  ?person wdt:P166 ?award .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,1.0,1.0
+76,medium,"SELECT DISTINCT ?genre ?genreLabel WHERE {
+  ?genre wdt:P31 wd:Q188451.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.8295,0.9432
+77,medium,"SELECT ?museum ?museumLabel ?coordinates ?image WHERE {
+  ?museum wdt:P31 wd:Q33506 .
+  ?museum wdt:P17 wd:Q948 .
+  OPTIONAL { ?museum wdt:P625 ?coordinates . }
+  OPTIONAL { ?museum wdt:P18 ?image . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.8571,0.869
+78,medium,"SELECT ?archive ?archiveLabel ?coordinates WHERE {
+  ?archive wdt:P31 wd:Q166118 .
+  ?archive wdt:P625 ?coordinates .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.2869,0.2078
+79,medium,"SELECT ?ruler ?rulerLabel ?image WHERE {
+  ?ruler wdt:P39 wd:Q37110 .
+  ?ruler wdt:P18 ?image .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.7597,0.5984
+80,medium,"SELECT ?place ?placeLabel ?coord ?inatID WHERE {
+  ?place wdt:P7471 ?inatID .
+  ?place wdt:P625 ?coord .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.4452,1.0
+81,medium,"SELECT ?cathedral ?cathedralLabel WHERE {
+  ?cathedral wdt:P31 wd:Q2977 .
+  ?cathedral wdt:P276 wd:Q90 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0455,0.1429
+82,medium,"SELECT ?station ?stationLabel ?tracks WHERE {
+  ?station wdt:P31 wd:Q55488 .
+  ?station wdt:P17 wd:Q142 .
+  ?station wdt:P1103 ?tracks .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY DESC(?tracks)",True,True,,0.4669,0.9672
+83,medium,"SELECT DISTINCT ?bird ?birdLabel WHERE {
+  ?bird wdt:P31/wdt:P279* wd:Q5113 .
+  ?bird wdt:P183 ?region .
+  ?region wdt:P17 wd:Q142 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+84,medium,"SELECT ?university ?universityLabel ?inception WHERE {
+  ?university wdt:P31 wd:Q3918 .
+  ?university wdt:P17 wd:Q96 .
+  OPTIONAL { ?university wdt:P571 ?inception . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.7974,0.6935
+85,medium,"SELECT DISTINCT ?birthPlace ?birthPlaceLabel WHERE {
+  ?person wdt:P735 ?givenName .
+  ?givenName wdt:P460* wd:Q4927524 .
+  ?person wdt:P19 ?birthPlace .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+86,medium,"SELECT ?property WHERE {
+  ?property a wikibase:Property .
+  FILTER NOT EXISTS {
+    ?property rdfs:label ?label .
+    FILTER(LANG(?label) = ""es"")
+  }
+}",True,True,,0.6921,na
+87,medium,"SELECT (COUNT(?statement) AS ?count) WHERE {
+  ?statement prov:wasDerivedFrom ?ref .
+  ?ref pr:P356 ?doi .
+}",True,True,,0.0,na
+88,medium,"SELECT ?item ?itemLabel ?image WHERE {
+  ?item wdt:P31 wd:Q184784 .
+  ?item wdt:P180 ?cathedral .
+  ?cathedral wdt:P31 wd:Q2977 .
+  ?cathedral wdt:P17 wd:Q142 .
+  ?item wdt:P18 ?image .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+89,medium,"SELECT ?ingredient ?ingredientLabel (COUNT(?sandwich) AS ?count) WHERE {
+  ?sandwich wdt:P279* wd:Q28803 .
+  ?sandwich wdt:P527 ?ingredient .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?ingredient ?ingredientLabel
+ORDER BY DESC(?count)",True,True,,0.0,0.0
+90,medium,"SELECT ?item ?inventoryNumber WHERE {
+  ?item wdt:P217 ?inventoryNumber .
+  FILTER NOT EXISTS { ?item wdt:P195 ?collection . }
+}",True,True,,0.4717,0.4443
+91,medium,"SELECT ?cityHall ?cityHallLabel ?address WHERE {
+  ?cityHall wdt:P31 wd:Q25550691 .
+  ?cityHall wdt:P17 wd:Q29 .
+  ?cityHall wdt:[property:located at street address] ?address .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",False,False,not_linked,0.0,0.0
+92,medium,"SELECT ?place ?placeLabel ?population ?osmRelationID WHERE {
+  ?place wdt:P17 wd:Q35 .
+  {
+    ?place wdt:P31 wd:Q515 .
+  } UNION {
+    ?place wdt:P31 wd:Q3957 .
+  }
+  OPTIONAL { ?place wdt:P1082 ?population . }
+  OPTIONAL { ?place wdt:P402 ?osmRelationID . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0798,0.0814
+93,medium,"SELECT ?country WHERE {
+  ?municipality wdt:P131* wd:Q3995 .
+  ?municipality wdt:P31 wd:Q2074737 .
+  ?municipality wdt:P47 ?country .
+  ?country wdt:P31 wd:Q6256 .
+}",True,True,,0.0,0.0
+94,medium,"SELECT ?photo ?photoLabel WHERE {
+  ?photo wdt:P31 wd:Q125191 .
+  ?photo wdt:P195 wd:Q182542 .
+  ?photo wdt:P180 wd:Q217102 .
+  ?photo wdt:P571 ?date .
+  FILTER(YEAR(?date) >= 1800 && YEAR(?date) <= 1899)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en,fr"". }
+}",True,True,,0.0,0.0
+95,medium,"SELECT ?date ?cases ?stateLabel WHERE {
+  ?stateData wdt:P31 wd:[entity:COVID-19 pandemic in a geographic region] .
+  ?stateData wdt:P131 ?state .
+  ?state wdt:P17 wd:Q668 .
+  ?stateData p:[property:number of cases] ?casesStatement .
+  ?casesStatement ps:[property:number of cases] ?cases .
+  ?casesStatement pq:P585 ?date .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ?date",False,False,not_linked,0.0,0.0
+96,medium,"SELECT DISTINCT ?item ?itemLabel WHERE {
+  VALUES ?type { wd:Q8513 wd:Q212805 }
+  ?item wdt:P31 ?type .
+  FILTER NOT EXISTS { ?item wdt:P856 ?url . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0848,0.0849
+97,medium,"SELECT ?monument ?monumentLabel ?coord ?type ?typeLabel WHERE {
+  ?monument wdt:P1435 wd:Q12794452 .
+  ?monument wdt:P625 ?coord .
+  OPTIONAL { ?monument wdt:P31 ?type . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0028,0.0046
+98,medium,"SELECT DISTINCT ?writer ?writerLabel ?signature WHERE {
+  ?writer wdt:P31 wd:Q5 .
+  ?writer wdt:P106 wd:Q36180 .
+  ?writer wdt:P21 wd:Q6581072 .
+  ?writer wdt:P1412 wd:Q150 .
+  ?writer wdt:P109 ?signature .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.8998,0.9011
+99,medium,"SELECT DISTINCT ?artwork ?artworkLabel WHERE {
+  ?artwork wdt:P31 wd:Q3305213 .
+  ?artwork wdt:P180 wd:Q405 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+100,medium,"SELECT DISTINCT ?grandchild ?grandchildLabel WHERE {
+  wd:Q1339 wdt:P40 ?child .
+  ?child wdt:P25 wd:Q57487 .
+  ?child wdt:P40 ?grandchild .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.4615,0.4615
+101,medium,"SELECT ?word ?wordLabel WHERE {
+  ?word wdt:P31 wd:Q8171 .
+  ?word wdt:P407 wd:Q1860 .
+  ?word rdfs:label ?wordLabel .
+  FILTER(LANG(?wordLabel) = ""en"")
+  FILTER(STRLEN(?wordLabel) = 5)
+  FILTER(STRSTARTS(?wordLabel, ""F""))
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,na
+102,medium,"SELECT ?tree ?treeLabel ?coord WHERE {
+  ?tree wdt:P31 wd:Q811534 .
+  ?tree wdt:P17 wd:Q219 .
+  ?tree wdt:P625 ?coord .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+103,medium,"SELECT DISTINCT ?inventor ?inventorLabel WHERE {
+  ?inventor wdt:P106 wd:Q205375 .
+  ?inventor wdt:P102 wd:Q29468 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0463,0.0467
+104,medium,"SELECT ?website WHERE {
+  ?website wdt:P31 wd:Q35127 .
+  FILTER NOT EXISTS { ?website wdt:P856 ?url }
+}",True,True,,0.4368,0.4369
+105,medium,"SELECT ?reference WHERE {
+  wd:Q636400 wdt:P856 ?reference .
+}",True,True,,0.0,na
+106,medium,"SELECT DISTINCT ?organism ?organismLabel WHERE {
+  ?organism wdt:P703 ?taxon .
+  ?organism wdt:P2974 wd:Q5880 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+
+Note: A more reliable query uses the ""found in taxon"" or ""location"" property. Here's an alternative:
+
+SELECT DISTINCT ?organism ?organismLabel WHERE {
+  ?organism wdt:P2974 wd:Q5880 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,False,http_400,0.0,0.0
+107,medium,"SELECT ?painting ?paintingLabel ?image ?rkd WHERE {
+  ?painting wdt:P31 wd:Q3305213 .
+  ?painting wdt:P350 ?rkd .
+  ?painting wdt:P18 ?image .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0002,0.0003
+108,medium,"SELECT ?director ?directorLabel (COUNT(?film) AS ?count) WHERE {
+  ?film wdt:P161 wd:Q1684856.
+  ?film wdt:P57 ?director.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?director ?directorLabel
+ORDER BY DESC(?count)
+LIMIT 10",True,True,,0.1182,0.0943
+109,medium,"SELECT ?property ?propertyLabel ?propertyDescription WHERE {
+  ?property wikibase:propertyType ?propertyType .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.5,na
+110,medium,"SELECT DISTINCT ?cave ?caveLabel ?coordinates WHERE {
+  ?cave wdt:P31 wd:Q35509 .
+  ?cave wdt:P1435 ?designation .
+  ?cave wdt:P527 ?part .
+  ?cave wdt:P625 ?coordinates .
+  {
+    ?cave wdt:P180 wd:Q1842924 .
+  }
+  UNION
+  {
+    ?cave wdt:P31 wd:Q1211146 .
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+111,medium,"SELECT DISTINCT ?person ?personLabel WHERE {
+  ?person wdt:P21 wd:Q6581072 .
+  ?person wdt:P106 ?occupation .
+  VALUES ?occupation { wd:Q15709480 wd:Q2904006 }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.2147,0.2253
+112,medium,"SELECT ?state ?stateLabel WHERE {
+  ?state wdt:P31 wd:Q35657 .
+  ?state rdfs:label ?stateLabel .
+  FILTER(LANG(?stateLabel) = ""en"")
+  FILTER(CONTAINS(LCASE(?stateLabel), ""a""))
+}",True,True,,0.6667,1.0
+113,medium,"SELECT ?person ?personLabel ?birthplace ?birthplaceLabel ?gender ?genderLabel WHERE {
+  ?person wdt:P1648 ?dwbId .
+  OPTIONAL { ?person wdt:P19 ?birthplace . }
+  OPTIONAL { ?person wdt:P21 ?gender . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ?birthplaceLabel ?genderLabel",True,True,,0.367,0.509
+114,medium,"SELECT ?satellite ?satelliteLabel ?launchDate WHERE {
+  ?satellite wdt:P31 wd:Q209363 .
+  OPTIONAL { ?satellite wdt:P619 ?launchDate . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ?launchDate",True,True,,0.7806,0.9918
+115,medium,"SELECT ?hillfort ?hillfortLabel ?protectionStatus ?protectionStatusLabel ?coord WHERE {
+  ?hillfort wdt:P31 wd:Q744099 .
+  ?hillfort wdt:P625 ?coord .
+  OPTIONAL { ?hillfort wdt:P1435 ?protectionStatus . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+}",True,True,,0.3575,0.4085
+116,medium,"SELECT DISTINCT ?viaduct ?viaductLabel ?designation ?designationLabel WHERE {
+  ?viaduct wdt:P31 wd:Q181348 .
+  ?viaduct wdt:P17 wd:Q145 .
+  ?viaduct wdt:P1435 ?designation .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.013,0.0508
+117,medium,"SELECT DISTINCT ?human ?humanLabel WHERE {
+  ?human wdt:P31 wd:Q5 .
+  ?human p:P166 ?statement .
+  ?statement ps:P166 wd:Q1131356 .
+  ?statement pq:P585 ?date .
+  FILTER(YEAR(?date) = 2016)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0127,0.0138
+118,medium,"SELECT ?synth ?synthLabel WHERE {
+  ?synth wdt:P176 wd:Q296878.
+  ?synth wdt:P31 wd:Q163829.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.2222,0.4615
+119,medium,"SELECT ?library ?libraryLabel ?coordinates WHERE {
+  ?library wdt:P31 wd:Q7075 .
+  ?library wdt:P17 wd:Q40 .
+  ?library wdt:P625 ?coordinates .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+120,medium,"SELECT DISTINCT ?placeLabel WHERE {
+  ?person wdt:P735 wd:Q16275504 .
+  ?person wdt:P19 ?place .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+121,medium,"SELECT ?cat ?catLabel WHERE {
+  ?cat wdt:P39 wd:Q198641 .
+  ?cat wdt:P31 wd:Q146 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+122,medium,"SELECT ?item WHERE {
+  ?statement wdt:P143 ?x .
+  ?item p:P1343 ?statement .
+  ?statement ps:P1343 wd:Q19020593 .
+  FILTER NOT EXISTS { ?statement pq:P304 ?page . }
+}",True,True,,0.0,0.0
+123,medium,"SELECT ?work ?workLabel (COUNT(?sitelink) AS ?count) WHERE {
+  ?work wdt:P31 wd:Q7725634 .
+  ?work wdt:P407 wd:Q188 .
+  ?sitelink schema:about ?work .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?work ?workLabel
+ORDER BY DESC(?count)
+LIMIT 100",True,True,,0.0193,0.0123
+124,medium,"SELECT ?heatwave ?heatwaveLabel ?startTime WHERE {
+  ?heatwave wdt:P31 wd:Q215864 .
+  OPTIONAL { ?heatwave wdt:P580 ?startTime . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY DESC(?startTime)
+LIMIT 10",True,True,,0.0745,0.0943
+125,medium,"SELECT ?country ?countryLabel (COUNT(?language) AS ?languageCount) WHERE {
+  ?country wdt:P31 wd:Q6256 .
+  ?country wdt:P37 ?language .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?country ?countryLabel
+HAVING (COUNT(?language) > 1)
+ORDER BY DESC(?languageCount)",True,True,,0.8218,0.8925
+126,medium,"SELECT DISTINCT ?building ?buildingLabel WHERE {
+  ?building wdt:P17 wd:Q213 .
+  ?building wdt:P31 wd:Q1370598 .
+  ?building wdt:P31 wd:Q1195942 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+127,medium,"SELECT DISTINCT ?president ?presidentLabel ?signature WHERE {
+  ?president wdt:P39 wd:Q628004 .
+  ?president wdt:P109 ?signature .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,1.0,1.0
+128,medium,"SELECT ?megalith ?megalithLabel ?coordinates WHERE {
+  ?megalith wdt:P31/wdt:P279* wd:Q164240 .
+  ?megalith wdt:P131* wd:Q47588 .
+  ?megalith wdt:P625 ?coordinates .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en,eu"" . }
+}",True,True,,0.0,0.0
+129,medium,"SELECT ?spacecraftLabel ?inspirationLabel WHERE {
+  ?spacecraft wdt:P31 wd:Q40218 .
+  ?spacecraft wdt:P941 ?inspiration .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+130,medium,"SELECT ?property ?propertyLabel ?coordinates WHERE {
+  ?property wdt:P127 wd:Q333515 .
+  ?property wdt:P625 ?coordinates .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.5015,1.0
+131,medium,"SELECT DISTINCT ?car ?carLabel ?length WHERE {
+  ?car wdt:P31 wd:Q3231690 .
+  ?car wdt:P2043 ?length .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY DESC(?length)
+LIMIT 50",True,True,,0.0284,0.0309
+132,medium,"SELECT ?painting ?paintingLabel ?image ?height ?width WHERE {
+  ?painting wdt:P31 wd:Q3305213 .
+  ?painting wdt:P2048 ?height .
+  ?painting wdt:P2049 ?width .
+  ?painting wdt:P18 ?image .
+  FILTER(?height > ?width)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+}
+LIMIT 100",True,True,,0.0005,0.0006
+133,medium,"SELECT DISTINCT ?senator ?senatorLabel ?hometown ?hometownLabel WHERE {
+  ?senator wdt:P39 wd:Q4416090 .
+  ?senator p:P39 ?statement .
+  ?statement ps:P39 wd:Q4416090 .
+  FILTER NOT EXISTS { ?statement pq:P582 ?endTime . }
+  ?senator wdt:P551 ?hometown .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+134,medium,"SELECT ?settlement ?settlementLabel WHERE {
+  ?settlement wdt:P31 wd:Q486972 .
+  ?settlement wdt:P795 wd:Q5742377 .
+  ?settlement wdt:P131 wd:Q3995 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+135,medium,"SELECT DISTINCT ?county1 ?county1Label ?county2 ?county2Label WHERE {
+  ?county1 wdt:P31 ?type1 .
+  ?county2 wdt:P31 ?type2 .
+  ?county1 wdt:P47 ?county2 .
+  VALUES ?type1 { wd:Q171809 wd:[entity:county of Wales] wd:Q1350181 wd:Q630638 wd:[entity:historic county of Scotland] }
+  VALUES ?type2 { wd:Q171809 wd:[entity:county of Wales] wd:Q1350181 wd:Q630638 wd:[entity:historic county of Scotland] }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",False,False,not_linked,0.0,0.0
+136,medium,"SELECT DISTINCT ?person ?personLabel WHERE {
+  ?person wdt:P31 wd:Q5 .
+  ?person wdt:P27 wd:Q668 .
+  ?person wdt:P570 ?death .
+  FILTER(YEAR(?death) = 1959)
+  ?person wdt:P7763 wd:[entity:works are in the public domain in countries with 60 years pma or shorter] .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",False,False,not_linked,0.0,0.0
+137,medium,"SELECT ?lexeme ?lemma (COUNT(?part) AS ?count) WHERE {
+  ?lexeme wikibase:lemma ?lemma .
+  ?lexeme wdt:P5238 ?part .
+}
+GROUP BY ?lexeme ?lemma
+ORDER BY DESC(?count)
+LIMIT 100",True,True,,0.0501,na
+138,medium,"SELECT ?human ?humanLabel WHERE {
+  ?human wdt:P31 wd:Q5 .
+  FILTER NOT EXISTS { ?human wdt:P40 ?child . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,False,result_too_large,0.0,0.0
+139,medium,"SELECT DISTINCT ?river ?riverLabel WHERE {
+  ?river wdt:P31 wd:Q4022 .
+  ?river wdt:P30 wd:Q51 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.1818,0.3596
+140,medium,"SELECT ?library ?libraryLabel ?coord WHERE {
+  ?library wdt:P31 wd:Q7075 .
+  ?library wdt:P17 wd:Q40 .
+  ?library wdt:P625 ?coord .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0321,0.0317
+141,medium,"SELECT DISTINCT ?politician ?politicianLabel WHERE {
+  ?politician wdt:P106 wd:Q82955 .
+  ?politician wdt:P509 ?cause .
+  ?cause (wdt:P279*) wd:Q12078 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.4936,0.9795
+142,medium,"SELECT ?site ?siteLabel ?sitelinks WHERE {
+  ?site wdt:P31 wd:Q9259.
+  ?site wikibase:sitelinks ?sitelinks.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY DESC(?sitelinks)
+LIMIT 100",True,True,,1.0,na
+143,medium,"SELECT DISTINCT ?artist ?artistLabel WHERE {
+  ?artist wdt:P31 wd:Q5 .
+  ?artist wdt:P106 wd:Q483501 .
+  ?artist wdt:P27 wd:Q31 .
+  ?artist wdt:P570 ?death .
+  FILTER(YEAR(?death) = 1949)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0072,0.0145
+144,medium,"SELECT ?school ?schoolLabel ?enrollment WHERE {
+  ?school wdt:P31 wd:Q52959669 .
+  ?school wdt:P2196 ?enrollment .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY DESC(?enrollment)
+LIMIT 10",True,True,,0.0,0.0
+145,medium,"SELECT DISTINCT ?country ?countryLabel WHERE {
+  ?university wdt:P27 wd:Q117 .
+  ?university wdt:P31 wd:Q3918 .
+  ?person wdt:P69 ?university .
+  ?person wdt:P27 ?country .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+LIMIT 3",True,True,,0.0,na
+146,medium,"SELECT DISTINCT ?person ?personLabel ?birthDate ?deathDate WHERE {
+  ?person wdt:P31 wd:Q5 .
+  ?person wdt:P21 wd:Q6581097 .
+  ?person wdt:P27 wd:Q30 .
+
+  ?person p:P569 ?birthStatement .
+  ?birthStatement psv:P569 ?birthValue .
+  ?birthValue wikibase:timeValue ?birthDate .
+  ?birthValue wikibase:timePrecision ?birthPrecision .
+  FILTER(?birthPrecision = 9)
+
+  ?person p:P570 ?deathStatement .
+  ?deathStatement psv:P570 ?deathValue .
+  ?deathValue wikibase:timeValue ?deathDate .
+  ?deathValue wikibase:timePrecision ?deathPrecision .
+  FILTER(?deathPrecision = 11)
+
+  FILTER(YEAR(?birthDate) >= 1875 && YEAR(?birthDate) <= 1930)
+
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.9565,0.9539
+147,medium,"SELECT DISTINCT ?town ?townLabel WHERE {
+  ?street wdt:P31 wd:Q79007 ;
+          wdt:P131 wd:Q90 ;
+          wdt:P138 ?town .
+  ?town wdt:P31/wdt:P279* wd:Q484170 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en,fr"". }
+}",True,True,,0.2165,0.3115
+148,medium,"SELECT ?state ?stateLabel ?coord ?inaturalist WHERE {
+  ?state wdt:P31 wd:Q1221156 .
+  ?state wdt:P625 ?coord .
+  OPTIONAL { ?state wdt:P7471 ?inaturalist . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.126,1.0
+149,medium,"SELECT ?peak ?peakLabel ?elevation WHERE {
+  ?peak wdt:P31 wd:Q8502 .
+  ?peak wdt:P4552 wd:Q1286 .
+  ?peak wdt:P2044 ?elevation .
+  FILTER(?elevation > 1500)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+150,medium,"SELECT ?artwork ?artworkLabel ?location ?locationLabel ?coordinates WHERE {
+  ?artwork wdt:P170 wd:Q5593 .
+  ?artwork wdt:P276 ?location .
+  ?location wdt:P625 ?coordinates .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.4462,0.7032
+151,medium,"SELECT ?statement WHERE {
+  ?statement wdt:P356 ""10.10.21/JA01577A030"" .
+}",True,True,,0.0,0.0
+152,medium,"SELECT DISTINCT ?lexeme ?lemma WHERE {
+  ?lexeme dct:language wd:Q9288 ;
+          wikibase:lexicalCategory wd:Q1084 ;
+          wikibase:lemma ?lemma ;
+          wdt:P5185 wd:Q499327 ;
+          wdt:P5185 wd:Q1775415 .
+}",True,True,,0.0,na
+153,medium,"SELECT ?winner ?winnerLabel ?image WHERE {
+  ?winner wdt:P166 wd:Q1389573 .
+  OPTIONAL { ?winner wdt:P18 ?image . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.5,0.0
+154,medium,"SELECT ?language ?languageLabel ?dialect ?dialectLabel ?image ?dialectImage WHERE {
+  ?language wdt:P31 wd:Q34770 .
+  ?dialect wdt:P4913 ?language .
+  OPTIONAL { ?language wdt:P18 ?image . }
+  OPTIONAL { ?dialect wdt:P18 ?dialectImage . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0441,0.0304
+155,medium,"SELECT ?parish ?parishLabel ?county ?countyLabel ?coord WHERE {
+  ?parish wdt:P31 wd:[entity:cadastral division of New South Wales] .
+  ?parish wdt:P131 ?county .
+  ?county wdt:P31 wd:[entity:Cadastral divisions of New South Wales] .
+  OPTIONAL { ?parish wdt:P625 ?coord . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ?countyLabel ?parishLabel",False,False,not_linked,0.0,0.0
+156,medium,"SELECT ?org ?orgLabel ?location ?locationLabel WHERE {
+  ?org wdt:P31 wd:Q43229 .
+  ?org wdt:P159 ?location .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,False,result_too_large,0.0,0.0
+157,medium,"SELECT DISTINCT ?watercraft ?watercraftLabel WHERE {
+  ?watercraft wdt:P31/wdt:P279* wd:Q1229765 .
+  ?watercraft wdt:P17 wd:Q142 .
+  ?watercraft rdfs:label ?watercraftLabel .
+  FILTER(LANG(?watercraftLabel) = ""en"")
+  FILTER(STRSTARTS(?watercraftLabel, ""A""))
+}",True,True,,0.0,0.0
+158,medium,"SELECT DISTINCT ?film ?filmLabel ?original ?originalLabel WHERE {
+  ?film wdt:P31 wd:Q11424 .
+  ?film wdt:P495 wd:Q668 .
+  ?film wdt:P144 ?original .
+  ?original wdt:P31 wd:Q11424 .
+  ?original wdt:P495 wd:Q668 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,1.0,1.0
+159,medium,"SELECT ?country ?countryLabel (COUNT(DISTINCT ?band) AS ?count) WHERE {
+  ?band wdt:P31 wd:Q215380 ;
+        wdt:P136 ?genre ;
+        wdt:P495 ?country .
+  ?genre wdt:P279* wd:Q38848 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?country ?countryLabel
+ORDER BY DESC(?count)
+LIMIT 20",True,True,,0.0,0.0
+160,medium,"SELECT DISTINCT ?pope ?popeLabel ?parent ?parentLabel WHERE {
+  ?pope wdt:P39 wd:Q19546 .
+  ?pope wdt:P22 ?parent .
+  ?parent wdt:P39 wd:Q19546 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,1.0,1.0
+161,medium,"SELECT DISTINCT ?location ?label WHERE {
+  ?location wdt:P31/wdt:P279* wd:Q2221906 .
+  ?location rdfs:label ?label .
+  FILTER(LCASE(STR(?label)) = ""earth"")
+}",True,False,timeout,0.0,0.0
+162,medium,"SELECT DISTINCT ?paper ?paperLabel ?author ?authorLabel WHERE {
+  ?paper wdt:P31 wd:Q13442814 .
+  ?paper wdt:P50 ?author .
+  ?author wdt:P31 ?type .
+  ?type wdt:P279* wd:Q729 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,False,result_too_large,0.0,0.0
+163,medium,"SELECT ?site ?siteLabel WHERE {
+  ?site wdt:P31 wd:Q839954 .
+  FILTER NOT EXISTS { ?site wdt:P625 ?coord . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.7438,0.7441
+164,medium,"SELECT DISTINCT ?flag ?flagLabel WHERE {
+  ?flag wdt:P31 wd:Q186516 .
+  ?flag wdt:P180 wd:Q1640824 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+165,medium,"SELECT DISTINCT ?person ?personLabel ?ukNationalArchivesID ?naraID WHERE {
+  ?person wdt:P31 wd:Q5 .
+  ?person wdt:P3029 ?ukNationalArchivesID .
+  ?person wdt:P6759 ?naraID .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,na
+166,medium,"SELECT DISTINCT ?country WHERE {
+  ?country wdt:P31 wd:Q6256 .
+  ?article schema:about ?country ;
+           schema:isPartOf <https://ru.wikipedia.org/> ;
+           wikibase:badge wd:Q17437796 .
+}",True,True,,0.0,0.0
+167,medium,"SELECT DISTINCT ?fortification ?fortificationLabel WHERE {
+  ?fortification wdt:P31/wdt:P279* wd:Q57821 .
+  {
+    ?fortification wdt:P137 wd:Q159766 .
+  }
+  UNION
+  {
+    ?fortification wdt:P137 wd:Q617066 .
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+168,medium,"SELECT ?film ?filmLabel ?date WHERE {
+  ?film wdt:P31 wd:Q11424 .
+  ?film wdt:P57 wd:Q53001 .
+  OPTIONAL { ?film wdt:P577 ?date . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ?date",True,True,,0.7049,0.7905
+169,medium,"SELECT ?artist ?artistLabel ?birthplace ?birthplaceLabel ?coord WHERE {
+  ?artist wdt:P1875* wd:Q20980830 .
+  ?artist wdt:P19 ?birthplace .
+  ?birthplace wdt:P625 ?coord .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+
+Note: ""Europeana 280"" artists are typically linked via a participant/featured-in relationship. A more accurate query:
+
+SELECT ?artist ?artistLabel ?birthplace ?birthplaceLabel ?coord WHERE {
+  ?artist wdt:P361 wd:Q20980830 .
+  ?artist wdt:P19 ?birthplace .
+  ?birthplace wdt:P625 ?coord .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,False,http_400,0.0,0.0
+170,medium,"SELECT DISTINCT ?person ?personLabel WHERE {
+  ?warship wdt:P31/wdt:P279* wd:Q151370 ;
+           wdt:P138 ?person .
+  ?microarch wdt:P31 wd:Q259864 ;
+             wdt:P138 ?person .
+  ?person wdt:P31 wd:Q5 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,1.0,na
+171,medium,"SELECT DISTINCT ?food ?foodLabel WHERE {
+  ?food wdt:P31 wd:Q19861951 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"" . }
+}",True,True,,0.0,0.0
+172,medium,"SELECT DISTINCT ?artist ?artistLabel WHERE {
+  ?artist wdt:P106 wd:Q483501 .
+  ?artist wdt:P21 wd:Q6581072 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0013,0.0013
+173,medium,"SELECT DISTINCT ?painting ?paintingLabel ?artist ?artistLabel WHERE {
+  ?painting wdt:P31 wd:Q3305213 .
+  ?painting wdt:P136 wd:Q170571 .
+  ?painting wdt:P170 ?artist .
+  ?artist wdt:P21 wd:Q6581072 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.1611,0.2023
+174,medium,"SELECT ?article WHERE {
+  ?article wdt:P921 wd:Q2013 .
+}",True,True,,0.6776,0.6776
+175,medium,"SELECT ?statement ?value ?reference WHERE {
+  ?statement ps:P1343 ?value .
+  ?statement prov:wasDerivedFrom ?reference .
+}",True,False,result_too_large,0.0,0.0
+176,medium,"SELECT ?item ?itemLabel ?coord WHERE {
+  ?item wdt:P17 wd:Q142 .
+  ?item wdt:P31 ?type .
+  VALUES ?type { wd:Q23397 wd:Q4022 }
+  ?item wdt:P625 ?coord .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.1494,0.1628
+177,medium,"SELECT ?painting ?paintingLabel WHERE {
+  ?painting wdt:P170 wd:Q1064767 .
+  ?painting wdt:P31 wd:Q3305213 .
+  ?painting wdt:P180 wd:Q11446 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+178,medium,"SELECT ?item ?itemLabel ?image ?coord WHERE {
+  ?item wdt:P5008 wd:Q101553389 .
+  OPTIONAL { ?item wdt:P18 ?image . }
+  ?item wdt:P625 ?coord .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en,cy"". }
+}",True,True,,0.9981,0.9971
+179,medium,"SELECT DISTINCT ?poet ?poetLabel ?birthYear ?deathYear WHERE {
+  ?poet wdt:P106 wd:Q49757 .
+  ?poet wdt:P27 wd:Q161885 .
+  ?poet wdt:P569 ?birth .
+  ?poet wdt:P570 ?death .
+  BIND(YEAR(?birth) AS ?birthYear)
+  BIND(YEAR(?death) AS ?deathYear)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.6153,0.9909
+180,medium,"SELECT DISTINCT ?coup ?coupLabel ?date WHERE {
+  ?coup wdt:P31 wd:Q45382 .
+  OPTIONAL { ?coup wdt:P585 ?date . }
+  FILTER(?date >= ""2001-01-01T00:00:00Z""^^xsd:dateTime)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ?date",True,True,,0.0,0.0
+181,medium,"SELECT ?entity WHERE {
+  ?entity wdt:P3429 ?id .
+}
+GROUP BY ?entity
+HAVING (COUNT(?id) > 1)",True,True,,0.003,0.003
+182,medium,"SELECT DISTINCT ?film ?filmLabel WHERE {
+  ?film wdt:P31 wd:Q11424 .
+  ?film wdt:P364 wd:Q188 .
+  ?film rdfs:label ?filmLabel .
+  FILTER(LANG(?filmLabel) = ""de"")
+  FILTER(CONTAINS(LCASE(?filmLabel), ""antwortet nicht""))
+}",True,True,,0.1667,0.1667
+183,medium,"SELECT ?artist ?artistLabel WHERE {
+  ?artist wdt:P31 wd:Q5 .
+  ?artist wdt:P106 wd:Q483501 .
+  ?artist wdt:P21 wd:Q6581072 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0013,0.0013
+184,medium,"SELECT DISTINCT ?taxon ?taxonLabel ?band ?bandLabel WHERE {
+  ?taxon wdt:P138 ?band .
+  ?band wdt:P31 wd:Q215380 .
+  ?band wdt:P136 ?genre .
+  ?genre wdt:P279* wd:Q38848 .
+  ?taxon wdt:P31 wd:Q16521 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.1224,0.1224
+185,medium,"SELECT ?author ?authorLabel ?gutenbergID ?eeID WHERE {
+  ?author wdt:P1938 ?gutenbergID.
+  ?author wdt:P3429 ?eeID.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+}",True,True,,0.4997,1.0
+186,medium,"SELECT ?artwork ?artworkLabel WHERE {
+  ?artwork wdt:P170 wd:Q79012 .
+  FILTER NOT EXISTS { ?artwork wdt:P180 ?depicts . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,1.0,1.0
+187,medium,"SELECT DISTINCT ?person ?personLabel WHERE {
+  ?advisor wdt:P69 wd:Q459506 .
+  ?person wdt:P184 ?advisor .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.7866,0.7866
+188,medium,"SELECT ?software ?softwareLabel (COUNT(?dependency) AS ?dependencyCount) WHERE {
+  ?software wdt:P31 wd:Q7397 .
+  ?software wdt:P1547 ?dependency .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?software ?softwareLabel
+ORDER BY DESC(?dependencyCount)
+LIMIT 100",True,True,,0.0141,0.0191
+189,medium,"SELECT ?bridge ?bridgeLabel WHERE {
+  ?bridge wdt:P31 wd:Q18615527 .
+  ?bridge wdt:P17 wd:Q142 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.3615,1.0
+190,medium,"SELECT DISTINCT ?work ?workLabel WHERE {
+  ?work wdt:P407 ?language .
+  ?language wdt:P2341 wd:[entity:specific country] .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",False,False,not_linked,0.0,0.0
+191,medium,"SELECT ?child ?childLabel WHERE {
+  ?child wdt:P22 wd:Q1339 .
+  ?child wdt:P25 wd:Q57487 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,1.0,1.0
+192,medium,"SELECT ?lexeme ?lemma WHERE {
+  ?lexeme wdt:P1343 ?source .
+  ?lexeme wikibase:lemma ?lemma .
+}
+
+Let me reconsider. The proper way to find lexemes describing a color:
+
+SELECT ?lexeme ?lemma WHERE {
+  ?lexeme a ontolex:LexicalEntry .
+  ?lexeme wikibase:lemma ?lemma .
+  ?lexeme ontolex:sense ?sense .
+  ?sense wdt:P462 ?color .
+}",True,False,http_400,0.0,0.0
+193,medium,"SELECT DISTINCT ?person ?personLabel ?birthplaceLabel WHERE {
+  ?person wdt:P119 wd:Q311 .
+  ?person wdt:P19 ?birthplace .
+  ?birthplace wdt:P17 wd:Q212 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.3214,1.0
+194,medium,"SELECT DISTINCT ?film ?filmLabel WHERE {
+  ?film wdt:P31 wd:Q11424 .
+  ?film wdt:P915 ?location .
+  ?location wdt:P17 wd:Q40 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.5824,0.799
+195,medium,"SELECT DISTINCT ?entity ?entityLabel WHERE {
+  ?entity p:P166 ?statement .
+  ?statement ps:P166 wd:Q10855212 .
+  FILTER NOT EXISTS { ?statement prov:wasDerivedFrom ?ref . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,1.0,1.0
+196,medium,"SELECT ?item ?url ?statements WHERE {
+  ?item wdt:P195 wd:Q636400 .
+  ?item wdt:[property:Jameel Centre at the Ashmolean Museum ID] ?id .
+  ?item wikibase:statements ?statements .
+  BIND(IRI(CONCAT(""https://jameelcentre.ashmolean.org/collection/"", ?id)) AS ?url)
+}
+ORDER BY DESC(?statements)",False,False,not_linked,0.0,0.0
+197,medium,"SELECT ?album ?albumLabel ?location ?locationLabel WHERE {
+  ?album wdt:P31 wd:Q482994 .
+  ?album wdt:P180 ?location .
+  ?location wdt:P31/wdt:P279* wd:Q2221906 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0007,0.001
+198,medium,"SELECT DISTINCT ?location ?locationLabel WHERE {
+  ?something wdt:P138 ?location .
+  ?location wdt:P31/wdt:P279* wd:Q2221906 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.1896,0.2678
+199,medium,"SELECT ?occupation ?occupationLabel (COUNT(?person) AS ?count) WHERE {
+  ?person wdt:P108 wd:Q3551576 .
+  ?person wdt:P106 ?occupation .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?occupation ?occupationLabel
+ORDER BY DESC(?count)",True,True,,0.0,0.0
+200,medium,"SELECT ?test ?testLabel ?coordinates WHERE {
+  ?test wdt:P31 wd:Q210112 .
+  ?test wdt:P625 ?coordinates .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.977,1.0
+201,medium,"SELECT ?year (COUNT(DISTINCT ?seat) AS ?count) WHERE {
+  ?statement pq:[qualifier:replaces] ?seat .
+  ?member p:P39 ?statement .
+  ?statement ps:P39 wd:Q18952564 .
+  ?statement pq:[qualifier:start time] ?start .
+  BIND(YEAR(?start) AS ?year)
+  FILTER(?year >= 1830 && ?year <= 1910)
+}
+GROUP BY ?year
+ORDER BY ?year",True,False,http_400,0.0,0.0
+202,medium,"SELECT DISTINCT ?painting ?paintingLabel WHERE {
+  ?painting wdt:P31 wd:Q3305213 .
+  ?painting wdt:P195 wd:Q3044768 .
+  ?painting wdt:P170 ?artist .
+  ?artist wdt:P21 wd:Q6581072 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.9279,0.9279
+203,medium,"SELECT ?gadmID ?gbifLink WHERE {
+  ?area wdt:P8714 ?gadmID .
+  ?area wdt:[property:GBIF dataset ID] ?gbifLink .
+}",False,False,not_linked,0.0,0.0
+204,medium,"SELECT ?country ?countryLabel (MAX(?population) AS ?maxPopulation) WHERE {
+  ?city wdt:P31 wd:Q515 .
+  ?city wdt:P1082 ?population .
+  ?city wdt:P17 ?country .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?country ?countryLabel",True,True,,0.6494,0.8271
+205,medium,"SELECT DISTINCT ?birthplace ?birthplaceLabel ?coord WHERE {
+  ?player wdt:P54 wd:Q1130849 .
+  ?player wdt:P19 ?birthplace .
+  ?birthplace wdt:P625 ?coord .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.2117,0.0
+206,medium,"SELECT ?country ?countryLabel ?building ?buildingLabel ?image WHERE {
+  ?building wdt:P31 wd:[entity:seat of a legislature] .
+  ?building wdt:P17 ?country .
+  OPTIONAL { ?building wdt:P18 ?image . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ?countryLabel",False,False,not_linked,0.0,0.0
+207,medium,"SELECT ?child ?childLabel WHERE {
+  ?child wdt:P22 wd:Q1339 .
+  ?child wdt:P25 wd:Q57487 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.1429,0.1429
+208,medium,"SELECT DISTINCT ?scientist ?scientistLabel WHERE {
+  ?scientist wdt:P106 wd:Q901 .
+  ?scientist wdt:P1196 wd:Q468455 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+209,medium,"SELECT DISTINCT ?institution ?institutionLabel WHERE {
+  ?person wdt:P108 wd:Q1185955 .
+  ?person wdt:P69 ?institution .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+210,medium,"SELECT DISTINCT ?place ?placeLabel WHERE {
+  ?place wdt:P17 wd:Q117 .
+  ?place wdt:P31/wdt:P279* wd:Q486972 .
+  ?place rdfs:label ?placeLabel .
+  FILTER(LANG(?placeLabel) = ""en"")
+  FILTER(REGEX(?placeLabel, ""(li|ti|om)$""))
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.5987,0.8472
+211,medium,"SELECT DISTINCT ?person ?personLabel WHERE {
+  ?person wdt:P31 wd:Q5 .
+  ?person wdt:[property:medical condition] wd:Q84263196 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",False,False,not_linked,0.0,0.0
+212,medium,"SELECT DISTINCT ?member ?memberLabel ?birthPlace ?birthPlaceLabel WHERE {
+  ?member wdt:P39 wd:Q3044918 .
+  ?member wdt:P19 ?birthPlace .
+  ?birthPlace wdt:P17 ?country .
+  FILTER(?country != wd:Q142)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.6119,0.6119
+213,medium,"SELECT ?suffragette ?suffragetteLabel ?birthplace ?birthplaceLabel ?coordinates WHERE {
+  ?suffragette wdt:P106 wd:Q322170 .
+  OPTIONAL {
+    ?suffragette wdt:P19 ?birthplace .
+    OPTIONAL { ?birthplace wdt:P625 ?coordinates . }
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.3053,0.351
+214,medium,"SELECT ?botanist ?botanistLabel (COUNT(?taxon) AS ?count) WHERE {
+  ?taxon wdt:P405 ?botanist.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?botanist ?botanistLabel
+ORDER BY DESC(?count)
+LIMIT 10",True,True,,0.0,0.0
+215,medium,"SELECT ?event ?eventLabel ?startYear WHERE {
+  ?event wdt:P31 wd:Q51404 .
+  ?event wdt:P571 ?inception .
+  BIND(YEAR(?inception) AS ?startYear)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ?startYear",True,True,,0.4206,0.8282
+216,medium,"SELECT ?initiative ?initiativeLabel WHERE {
+  ?initiative wdt:P31 wd:Q232932 .
+  ?initiative wdt:P17 wd:Q17 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+217,medium,"SELECT DISTINCT ?museum ?museumLabel ?namedAfter ?namedAfterLabel WHERE {
+  ?museum wdt:P31 wd:Q33506 .
+  ?museum wdt:P138 ?namedAfter .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.4884,0.4884
+218,medium,"SELECT DISTINCT ?film ?filmLabel WHERE {
+  ?film wdt:P31 wd:Q11424 .
+  ?film rdfs:label ?filmLabel .
+  FILTER(LANG(?filmLabel) = ""en"")
+  FILTER(CONTAINS(LCASE(?filmLabel), ""it""))
+}",True,True,,0.0237,0.0237
+219,medium,"SELECT ?song ?songLabel WHERE {
+  ?song wdt:P31 wd:Q207628 ;
+        wdt:P86 wd:Q103767 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+220,medium,"SELECT ?book ?bookLabel ?illustratorLabel ?publisherLabel ?publicationDate WHERE {
+  ?book wdt:P50 wd:[entity:Arthur Conan Doyle] .
+  ?book wdt:P31 wd:Q571 .
+  OPTIONAL { ?book wdt:P110 ?illustrator . }
+  OPTIONAL { ?book wdt:P123 ?publisher . }
+  OPTIONAL { ?book wdt:P577 ?publicationDate . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",False,False,not_linked,0.0,0.0
+221,medium,"SELECT ?body ?bodyLabel (COUNT(?river) AS ?riverCount) WHERE {
+  ?river wdt:P31 wd:Q4022 .
+  ?river wdt:P403 ?body .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?body ?bodyLabel
+ORDER BY DESC(?riverCount)
+LIMIT 50",True,True,,0.0577,0.1111
+222,medium,"SELECT ?painting ?paintingLabel WHERE {
+  ?painting wdt:P31 wd:Q3305213 .
+  ?painting wdt:P195 wd:Q61797555 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.5581,0.9943
+223,medium,"SELECT DISTINCT ?district ?districtLabel WHERE {
+  ?district wdt:P31 wd:Q1149652 .
+  ?district wdt:P47 ?neighbor .
+  ?neighbor wdt:P31 wd:Q1149652 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.9575,0.9575
+224,medium,"SELECT DISTINCT ?inventor ?inventorLabel ?invention ?inventionLabel WHERE {
+  ?inventor wdt:P31 wd:Q5 .
+  ?invention wdt:P61 ?inventor .
+  ?inventor wdt:P509 ?cause .
+  ?cause (wdt:P279|wdt:P31)* ?invention .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+225,medium,"SELECT ?memorial ?memorialLabel ?coordinates WHERE {
+  ?memorial wdt:P31 wd:Q575759 .
+  ?memorial wdt:P625 ?coordinates .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.9044,0.9252
+226,medium,"SELECT ?item ?itemLabel WHERE {
+  ?item wdt:P407 wd:Q36846 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0782,0.0856
+227,medium,"SELECT ?language ?languageLabel (COUNT(?composition) AS ?count) WHERE {
+  ?composition wdt:P31 wd:Q207628 .
+  ?composition wdt:P407 ?language .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?language ?languageLabel
+ORDER BY DESC(?count)",True,True,,0.0186,0.0116
+228,medium,"SELECT ?country ?countryLabel (COUNT(DISTINCT ?musician) AS ?count) WHERE {
+  ?musician wdt:P106 wd:Q639669 .
+  ?musician wdt:P27 ?country .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?country ?countryLabel
+ORDER BY DESC(?count)",True,True,,0.0,0.0
+229,medium,"SELECT DISTINCT ?person ?personLabel WHERE {
+  ?person wdt:P31 wd:Q5 .
+  ?person wdt:P569 ?dob .
+  ?influencer wdt:P737 ?person .
+  ?influencer wdt:P31 wd:Q5 .
+  FILTER(YEAR(?dob) >= 1590 && YEAR(?dob) <= 1750)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+230,medium,"SELECT (COUNT(?item) AS ?count) WHERE {
+  ?item wikibase:statements 0 .
+}",True,True,,0.0,na
+231,medium,"SELECT DISTINCT ?nationality ?nationalityLabel WHERE {
+  ?paper wdt:P921 ?subject .
+  ?subject wdt:P279* wd:Q826274 .
+  ?paper wdt:P50 ?author .
+  ?author wdt:P27 ?nationality .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+232,medium,"SELECT DISTINCT ?collection ?collectionLabel WHERE {
+  ?photo wdt:P170 wd:Q2939083 .
+  ?photo wdt:P195 ?collection .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0566,0.0566
+233,medium,"SELECT DISTINCT ?place ?placeLabel ?coordinates WHERE {
+  ?person wdt:P735 wd:Q15235674 .
+  ?person wdt:P19 ?place .
+  ?place wdt:P625 ?coordinates .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.2426,0.0
+234,medium,"SELECT DISTINCT ?birthplace ?birthplaceLabel WHERE {
+  ?person wdt:P106 wd:Q1792450 .
+  ?person wdt:P19 ?birthplace .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+235,medium,"SELECT DISTINCT ?item ?officialName WHERE {
+  ?item wdt:P1448 ?officialName .
+  FILTER(CONTAINS(?officialName, ""/""))
+}",True,True,,0.0141,0.0151
+236,medium,"SELECT DISTINCT ?mathematician ?mathematicianLabel WHERE {
+  ?mathematician wdt:P106 wd:Q170790 .
+  ?mathematician wdt:P3373 ?sibling .
+  ?sibling wdt:P106 ?occupation .
+  VALUES ?occupation { wd:Q33999 wd:Q639669 }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.2857,0.4167
+237,medium,"SELECT DISTINCT ?woman ?womanLabel WHERE {
+  ?woman wdt:P166 ?award .
+  ?award wdt:P1027 wd:Q55200 .
+  ?woman wdt:P21 wd:Q6581072 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+238,medium,"SELECT ?actor ?actorLabel (COUNT(DISTINCT ?film) AS ?filmCount) WHERE {
+  ?film wdt:P161 wd:Q9535.
+  ?film wdt:P161 ?actor.
+  FILTER(?actor != wd:Q9535)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?actor ?actorLabel
+HAVING (COUNT(DISTINCT ?film) > 1)
+ORDER BY DESC(?filmCount)",True,True,,0.0,0.0
+239,medium,"SELECT ?municipality ?municipalityLabel ?coordinates ?province ?provinceLabel WHERE {
+  ?municipality wdt:P31 wd:Q2039348 .
+  OPTIONAL { ?municipality wdt:P625 ?coordinates . }
+  OPTIONAL { ?municipality wdt:P131 ?province . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.2351,0.2142
+240,medium,"SELECT DISTINCT ?lang WHERE {
+  wd:Q137 rdfs:label ?label1 .
+  wd:Q12518 rdfs:label ?label2 .
+  BIND(LANG(?label1) AS ?lang1)
+  BIND(LANG(?label2) AS ?lang2)
+  FILTER(?lang1 = ?lang2)
+  BIND(?lang1 AS ?lang)
+}",True,True,,0.0,na
+241,medium,"SELECT DISTINCT ?constituency1 ?constituency1Label ?constituency2 ?constituency2Label WHERE {
+  ?constituency1 wdt:P31 wd:Q27971968 .
+  ?constituency2 wdt:P31 wd:Q27971968 .
+  ?constituency1 wdt:P47 ?constituency2 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+242,medium,"SELECT DISTINCT ?group ?groupLabel WHERE {
+  ?group wdt:P31 wd:Q14514600 .
+  ?group wdt:P1080 wd:Q931597 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,1.0,na
+243,medium,"SELECT ?library ?libraryLabel ?coord WHERE {
+  ?library wdt:P31 wd:Q7075 .
+  ?library wdt:P17 wd:Q668 .
+  ?library wdt:P625 ?coord .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.72,0.5625
+244,medium,"SELECT ?tramLine ?tramLineLabel WHERE {
+  ?tramLine wdt:P31 wd:Q27997185 .
+  ?tramLine wdt:P131 wd:Q1741 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.1111,0.1429
+245,medium,"SELECT DISTINCT ?writer ?writerLabel WHERE {
+  ?writer wdt:P31 wd:Q5 .
+  ?writer wdt:P106 wd:Q36180 .
+  ?writer wdt:P27 wd:Q96 .
+  ?writer wdt:P569 ?dob .
+  FILTER(YEAR(?dob) >= 1800 && YEAR(?dob) <= 1900)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+246,medium,"SELECT ?award ?awardLabel ?winner ?winnerLabel ?date WHERE {
+  ?winner wdt:P166 ?award .
+  ?award wdt:P279* wd:Q1350697 .
+  ?winner p:P166 ?statement .
+  ?statement ps:P166 ?award .
+  ?statement pq:P585 ?date .
+  FILTER(YEAR(?date) >= 1990 && YEAR(?date) <= 1999)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ?awardLabel ?date",True,True,,0.0,0.0
+247,medium,"SELECT DISTINCT ?hill ?hillLabel WHERE {
+  ?hill wdt:P31 wd:Q54050 .
+  ?hill wdt:P17 wd:Q145 .
+  ?hill wdt:P180 wd:Q726 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+248,medium,"SELECT DISTINCT ?person ?personLabel WHERE {
+  ?person wdt:P31 wd:Q5 .
+  ?person wdt:P106 wd:Q177220 .
+  ?person wdt:P106 wd:Q639669 .
+  ?person wdt:P136 wd:Q431415 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.087,0.087
+249,medium,"SELECT DISTINCT ?athlete ?athleteLabel ?birthPlace ?birthPlaceLabel WHERE {
+  ?athlete wdt:P54 wd:Q10315 .
+  ?athlete wdt:P19 ?birthPlace .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.7705,1.0
+250,medium,"SELECT DISTINCT ?person ?personLabel WHERE {
+  ?person wdt:P31 wd:Q5 .
+  ?person wdt:P19 ?place .
+  ?place wdt:P31 wd:Q4022 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.5423,0.5423
+251,medium,"SELECT ?stone ?stoneLabel ?location WHERE {
+  ?stone wdt:P31 wd:Q921099 .
+  ?stone wdt:P625 ?location .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+252,medium,"SELECT DISTINCT ?painting ?paintingLabel WHERE {
+  ?painting wdt:P31 wd:Q3305213 .
+  ?painting wdt:P170 wd:Q5598 .
+  ?painting wdt:P195 ?collection .
+  VALUES ?collection { wd:Q19675 wd:Q190804 }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.3211,0.6364
+253,medium,"SELECT ?country ?countryLabel ?coord ?date WHERE {
+  ?country wdt:P463 wd:Q1065 .
+  ?country p:P463 ?statement .
+  ?statement ps:P463 wd:Q1065 .
+  ?statement pq:P580 ?date .
+  ?country wdt:P625 ?coord .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+}",True,True,,0.0056,0.0047
+254,medium,"SELECT DISTINCT ?occupation ?occupationLabel WHERE {
+  ?pm wdt:P39 wd:Q14211 .
+  ?pm wdt:P106 ?occupation .
+  FILTER(?occupation != wd:Q82955)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0392,0.0408
+255,medium,"SELECT ?law ?lawLabel WHERE {
+  ?law wdt:P1001 wd:Q252 .
+  ?law wdt:P1001 wd:Q252 .
+  ?law wdt:P31 wd:Q7748 .
+  ?law wdt:P1269 wd:Q103817 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+256,medium,"SELECT DISTINCT ?author ?authorLabel WHERE {
+  ?work wdt:P2860 ?citedWork .
+  ?citedWork wdt:P50 wd:Q20895241 .
+  ?work wdt:P50 ?author .
+  ?author wdt:P166 ?award .
+  ?award wdt:P279* wd:Q7191 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+257,medium,"SELECT ?decade (COUNT(?document) AS ?count) (GROUP_CONCAT(?documentLabel; separator="", "") AS ?documents) WHERE {
+  ?document wdt:P195 wd:Q108427678 .
+  ?document wdt:P571 ?date .
+  BIND(FLOOR(YEAR(?date) / 10) * 10 AS ?decade)
+  SERVICE wikibase:label {
+    bd:serviceParam wikibase:language ""en"" .
+    ?document rdfs:label ?documentLabel .
+  }
+}
+GROUP BY ?decade
+ORDER BY ?decade",True,True,,0.0192,na
+258,medium,"SELECT ?item ?itemLabel ?description WHERE {
+  ?item wdt:P195 wd:Q6941088 .
+  OPTIONAL {
+    ?item schema:description ?description .
+    FILTER(LANG(?description) = ""en"")
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.9558,0.9942
+259,medium,"SELECT ?item ?cbdbID ?viafID WHERE {
+  ?item wdt:P497 ?cbdbID .
+  ?item wdt:P214 ?viafID .
+}",True,True,,0.614,1.0
+260,complex,"SELECT ?director ?directorLabel (COUNT(DISTINCT ?film) AS ?filmCount) ?sitelinks WHERE {
+  ?film wdt:P31 wd:Q11424 .
+  ?film wdt:P57 ?director .
+  ?director wikibase:sitelinks ?sitelinks .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?director ?directorLabel ?sitelinks
+ORDER BY DESC(?filmCount) DESC(?sitelinks)
+LIMIT 100",True,True,,0.0,0.0
+261,complex,"SELECT ?country ?countryLabel ?cases WHERE {
+  ?country wdt:P31 wd:Q3624078 .
+  ?country p:[property:number of cases] ?statement .
+  ?statement ps:[property:number of cases] ?cases .
+  ?statement pq:P361 wd:Q81068910 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY DESC(?cases)",False,False,not_linked,0.0,0.0
+262,complex,"SELECT ?thesis ?thesisLabel ?author ?authorLabel ?institution ?institutionLabel WHERE {
+  ?thesis wdt:P31 wd:Q187685 .
+  OPTIONAL { ?thesis wdt:P50 ?author . }
+  OPTIONAL { ?thesis wdt:P123 ?institution . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.5371,0.996
+263,complex,"SELECT ?parentTaxon ?parentTaxonLabel WHERE {
+  wd:Q1968598 wdt:P171 ?parentTaxon .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+264,complex,"SELECT ?item ?itemLabel ?pubmedID WHERE {
+  ?item wdt:P698 ?pubmedID .
+  ?item wdt:P361 wd:Q27612411 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+265,complex,"SELECT ?instrument ?instrumentLabel WHERE {
+  ?instrument wdt:P170 wd:Q182011 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+266,complex,"SELECT ?article ?articleLabel WHERE {
+  ?article wdt:P31 wd:Q13442814 .
+  ?article wdt:P1476 ?title .
+  FILTER(CONTAINS(LCASE(STR(?title)), ""zika""))
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,False,timeout,0.0,0.0
+267,complex,"SELECT ?item WHERE {
+  ?item schema:description ?desc .
+  FILTER(LANG(?desc) = ""en"")
+  FILTER NOT EXISTS {
+    ?item rdfs:label ?label .
+    FILTER(LANG(?label) = ""en"")
+  }
+}",True,False,result_too_large,0.0,0.0
+268,complex,"SELECT ?ingredient ?ingredientLabel WHERE {
+  wd:Q28803 wdt:P527 ?ingredient .
+  FILTER(?ingredient != wd:Q7802)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+269,complex,"SELECT ?episode ?episodeLabel ?season ?episodeNumber WHERE {
+  ?episode wdt:P179 wd:Q321423 .
+  OPTIONAL { ?episode wdt:P4908 ?season . }
+  OPTIONAL { ?episode wdt:[property:episode number] ?episodeNumber . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ?episodeNumber",False,False,not_linked,0.0,0.0
+270,complex,"SELECT ?image (COUNT(DISTINCT ?church) AS ?count) WHERE {
+  ?church wdt:P31 wd:Q16970 .
+  ?church wdt:P18 ?image .
+}
+GROUP BY ?image
+HAVING (COUNT(DISTINCT ?church) > 1)",True,True,,1.0,na
+271,complex,"SELECT ?conference ?conferenceLabel ?environment ?environmentLabel ?startTime ?endTime WHERE {
+  ?conference wdt:P31 wd:Q7935096 .
+  OPTIONAL { ?conference wdt:P276 ?environment . }
+  OPTIONAL { ?conference wdt:P580 ?startTime . }
+  OPTIONAL { ?conference wdt:P582 ?endTime . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0563,0.0211
+272,complex,"SELECT ?occupation ?occupationLabel (AVG(?lifespan) AS ?avgLifespan) WHERE {
+  ?person wdt:P106 ?occupation .
+  ?person wdt:P569 ?birth .
+  ?person wdt:P570 ?death .
+  BIND((YEAR(?death) - YEAR(?birth)) AS ?lifespan)
+  FILTER(?lifespan > 0 && ?lifespan < 120)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?occupation ?occupationLabel
+ORDER BY DESC(?avgLifespan)",True,True,,0.0002,0.0003
+273,complex,"SELECT DISTINCT ?property ?propertyLabel WHERE {
+  wd:Q39666 ?p ?value .
+  ?property wikibase:directClaim ?p .
+  ?property wikibase:propertyType wikibase:ExternalId .
+  FILTER NOT EXISTS {
+    wd:Q4573 ?p ?value2 .
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,na
+274,complex,"SELECT DISTINCT ?artist ?artistLabel ?occupation ?occupationLabel ?image WHERE {
+  ?artist wdt:P21 ?gender .
+  VALUES ?gender { wd:Q1052281 wd:Q2449503 wd:Q189125 }
+  ?artist wdt:P106 ?occupation .
+  ?occupation wdt:P279* wd:Q483501 .
+  OPTIONAL { ?artist wdt:P18 ?image . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.6796,0.6546
+275,complex,"SELECT ?place ?placeLabel WHERE {
+  wd:Q1552121 wdt:P206 ?bodyOfWater.
+  ?place wdt:P206 ?bodyOfWater.
+  FILTER(?place != wd:Q1552121)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+276,complex,"SELECT DISTINCT ?word ?wordLabel WHERE {
+  ?word wdt:P31 wd:Q4135602 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ?wordLabel",True,True,,0.0,na
+277,complex,"SELECT DISTINCT ?item ?itemLabel ?inception ?placeLabel WHERE {
+  VALUES ?type { wd:[entity:academic journal] wd:Q11032 wd:Q1002697 }
+  ?item wdt:P31 ?type .
+  ?item wdt:P407 wd:Q9309 .
+  OPTIONAL { ?item wdt:P571 ?inception . }
+  OPTIONAL { ?item wdt:P291 ?place . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",False,False,not_linked,0.0,0.0
+278,complex,"SELECT ?economist ?economistLabel ?fieldOfWork ?fieldOfWorkLabel ?nationality ?nationalityLabel WHERE {
+  ?economist wdt:P106 wd:Q188094 .
+  OPTIONAL { ?economist wdt:P101 ?fieldOfWork . }
+  OPTIONAL { ?economist wdt:P27 ?nationality . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+LIMIT 100",True,True,,0.0012,0.0024
+279,complex,"SELECT ?animal ?animalLabel (COUNT(?artwork) AS ?count) WHERE {
+  ?artwork wdt:P31/wdt:P279* wd:[entity:work of art] .
+  ?artwork wdt:P180 ?animal .
+  ?animal wdt:P31/wdt:P279* wd:Q16521 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?animal ?animalLabel
+ORDER BY DESC(?count)
+LIMIT 20",False,False,not_linked,0.0,0.0
+280,complex,"SELECT DISTINCT ?region ?regionLabel ?populationDensity WHERE {
+  ?region wdt:P31 wd:Q3455524 .
+  ?region wdt:P30 wd:Q46 .
+  ?region wdt:[property:population density] ?populationDensity .
+  FILTER(?populationDensity < 30)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",False,False,not_linked,0.0,0.0
+281,complex,"SELECT DISTINCT ?restaurant ?restaurantLabel WHERE {
+  ?restaurant wdt:P31/wdt:P279* wd:Q11707 .
+  ?restaurant wdt:P17 wd:Q32 .
+  ?restaurant wdt:[property:Michelin Guide star] ?stars .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"" . }
+}",False,False,not_linked,0.0,0.0
+282,complex,"SELECT ?property ?propertyLabel (COUNT(*) AS ?count) WHERE {
+  ?ref ?refProp ?value .
+  ?property wikibase:reference ?refProp .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?property ?propertyLabel
+ORDER BY DESC(?count)
+LIMIT 100",True,True,,0.0,na
+283,complex,"SELECT ?project ?projectLabel WHERE {
+  ?project wdt:P31 wd:Q16695773 .
+  ?project wdt:P921 wd:Q467 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+284,complex,"SELECT ?theatre ?theatreLabel ?image WHERE {
+  ?theatre wdt:P31 wd:Q24354 .
+  ?theatre wdt:P5652 ?carthaliaId .
+  ?theatre wdt:P18 ?image .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+285,complex,"SELECT ?country ?countryLabel ?bloodType ?bloodTypeLabel (COUNT(?person) AS ?count) WHERE {
+  ?person wdt:P31 wd:Q5 .
+  ?person wdt:P27 ?country .
+  ?person wdt:P1853 ?bloodType .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?country ?countryLabel ?bloodType ?bloodTypeLabel
+ORDER BY ?countryLabel DESC(?count)",True,True,,0.0,0.0
+286,complex,"SELECT DISTINCT ?artwork ?artworkLabel WHERE {
+  ?artwork wdt:P195 wd:Q636400 .
+  ?artwork wdt:P195 wd:Q657415 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+287,complex,"SELECT ?movie ?movieLabel ?sitelinks WHERE {
+  ?movie wdt:P31 wd:Q11424 .
+  ?movie wdt:P161 wd:Q106255 .
+  ?movie wikibase:sitelinks ?sitelinks .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY DESC(?sitelinks)",True,True,,1.0,na
+288,complex,"SELECT DISTINCT ?actor ?actorLabel ?character ?characterLabel WHERE {
+  ?character wdt:P31 wd:Q15632617 .
+  ?film1 wdt:P31 wd:Q11424 ;
+         wdt:P674 ?character ;
+         wdt:P161 ?actor ;
+         wdt:P577 ?date1 .
+  ?film2 wdt:P31 wd:Q11424 ;
+         wdt:P674 ?character ;
+         wdt:P161 ?actor ;
+         wdt:P577 ?date2 .
+  ?actor wdt:P21 wd:Q6581097 .
+  FILTER(YEAR(?date2) - YEAR(?date1) >= 20)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+289,complex,"SELECT DISTINCT ?church ?churchLabel WHERE {
+  ?church wdt:P31/wdt:P279* wd:Q16970 .
+  ?church wdt:P17 wd:Q213 .
+  ?church wdt:P825 ?dedication .
+  VALUES ?dedication { wd:Q196527 wd:Q239925 }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en,cs"". }
+}",True,True,,0.0084,0.0167
+290,complex,"SELECT ?item ?itemLabel ?coord WHERE {
+  ?item wdt:P17 wd:Q212 .
+  ?item wdt:P625 ?coord .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+291,complex,"SELECT DISTINCT ?photographer ?photographerLabel ?birthDate WHERE {
+  ?photographer wdt:P31 wd:Q5 .
+  ?photographer wdt:P106 wd:Q33231 .
+  ?photographer wdt:P569 ?birthDate .
+  FILTER(?birthDate < ""1826-01-01T00:00:00Z""^^xsd:dateTime)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ?birthDate",True,True,,0.0,0.0
+292,complex,"SELECT DISTINCT ?feature ?featureLabel ?subclass ?subclassLabel WHERE {
+  ?feature wdt:P31 wd:Q4147654 .
+  OPTIONAL {
+    ?subclass wdt:P279 ?feature .
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+293,complex,"SELECT DISTINCT ?musician ?musicianLabel WHERE {
+  ?musician wdt:P106 wd:Q639669 .
+  ?musician wdt:P21 wd:Q6581072 .
+  ?musician wdt:P27 ?country .
+  ?country wdt:P361 wd:Q12585 .
+  FILTER NOT EXISTS {
+    ?article schema:about ?musician ;
+             schema:isPartOf <https://es.wikipedia.org/> .
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+294,complex,"SELECT ?event ?eventLabel (COUNT(?game) AS ?count) WHERE {
+  ?game wdt:P31 wd:Q7889 .
+  ?game wdt:P793 ?event .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?event ?eventLabel
+ORDER BY DESC(?count)
+LIMIT 10",True,True,,0.0252,0.0
+295,complex,"SELECT DISTINCT ?century WHERE {
+  ?object wdt:P195 wd:Q1376 .
+  ?object wdt:P575 ?date .
+  BIND(CEIL(YEAR(?date) / 100.0) AS ?century)
+}",True,True,,0.0,na
+296,complex,"SELECT DISTINCT ?statue ?statueLabel WHERE {
+  ?statue wdt:P31 wd:Q179700 .
+  ?statue wdt:P17 wd:Q145 .
+  ?statue wdt:P180 ?subject .
+  {
+    ?subject wdt:P21 wd:Q467 .
+  } UNION {
+    ?subject wdt:P106 wd:Q13417114 .
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+297,complex,"SELECT ?team ?teamLabel (COUNT(?player) AS ?numPlayers) ?genderLabel WHERE {
+  ?team wdt:P31 wd:Q17376093 .
+  OPTIONAL {
+    ?player wdt:P54 ?team .
+    OPTIONAL { ?player wdt:P21 ?gender . }
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?team ?teamLabel ?genderLabel",True,True,,0.3605,0.4079
+298,complex,"SELECT ?entity ?entityLabel ?image WHERE {
+  ?entity ?p wd:Q93343 .
+  ?entity wdt:P18 ?image .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+299,complex,"SELECT ?characteristic ?characteristicLabel (COUNT(?object) AS ?count) WHERE {
+  ?object wdt:P195 wd:Q188740 .
+  ?object wdt:P31 ?characteristic .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?characteristic ?characteristicLabel
+ORDER BY DESC(?count)
+LIMIT 10",True,True,,0.0,0.0
+300,complex,"SELECT ?film ?filmLabel ?duration ?releaseDate WHERE {
+  ?film wdt:P31 wd:Q11424 .
+  ?film wdt:P495 wd:Q39 .
+  OPTIONAL { ?film wdt:P2047 ?duration . }
+  OPTIONAL { ?film wdt:P577 ?releaseDate . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0293,0.0102
+301,complex,"SELECT ?member ?memberLabel ?birthDate WHERE {
+  ?member wdt:P463 wd:Q133957 .
+  OPTIONAL { ?member wdt:P569 ?birthDate . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+302,complex,"SELECT ?collection ?collectionLabel ?size WHERE {
+  ?collection wdt:P31 wd:Q7328910 .
+  ?collection wdt:P17 wd:Q213 .
+  ?collection wdt:P1436 ?size .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0625,0.0
+303,complex,"SELECT DISTINCT ?airport ?airportLabel ?poet ?poetLabel WHERE {
+  ?airport wdt:P31/wdt:P279* wd:Q1248784 .
+  ?airport wdt:P138 ?poet .
+  ?poet wdt:P106 wd:Q49757 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+304,complex,"SELECT ?city ?cityLabel ?coord (COUNT(?school) AS ?schoolCount) WHERE {
+  ?city wdt:P31 wd:Q515 ;
+        wdt:P17 wd:Q38 ;
+        wdt:P625 ?coord .
+  ?school wdt:P31 wd:Q3914 ;
+          wdt:P131 ?city .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?city ?cityLabel ?coord
+ORDER BY DESC(?schoolCount)",True,True,,0.0065,0.0065
+305,complex,"SELECT ?item ?itemLabel ?coord WHERE {
+  ?item wdt:P31 wd:Q744099 .
+  ?item wdt:P17 wd:Q145 .
+  ?item wdt:P625 ?coord .
+  FILTER NOT EXISTS { ?item wdt:P18 ?image . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0493,0.0712
+306,complex,"SELECT ?pathway ?pathwayLabel (COUNT(DISTINCT ?gene) AS ?geneCount) (COUNT(DISTINCT ?metabolite) AS ?metaboliteCount) WHERE {
+  ?pathway wdt:P31 wd:Q4915012 .
+  OPTIONAL {
+    ?gene wdt:P361 ?pathway .
+    ?gene wdt:P31 wd:Q7187 .
+  }
+  OPTIONAL {
+    ?metabolite wdt:P361 ?pathway .
+    ?metabolite wdt:P31 wd:Q407595 .
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?pathway ?pathwayLabel",True,True,,0.0,0.0
+307,complex,"SELECT DISTINCT ?author ?authorLabel WHERE {
+  ?work wdt:P50 ?author .
+  ?work wdt:[property:full work available at URL] ?url .
+  ?work wdt:P577 ?date .
+  FILTER(?date >= ""1500-01-01""^^xsd:dateTime && ?date <= ""1800-12-31""^^xsd:dateTime)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",False,False,not_linked,0.0,0.0
+308,complex,"SELECT DISTINCT ?artwork ?artworkLabel WHERE {
+  ?person wdt:P3429 ?eeID .
+  ?artwork wdt:P180 ?person .
+  ?artwork wdt:P31/wdt:P279* wd:[entity:work of art] .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",False,False,not_linked,0.0,0.0
+309,complex,"SELECT DISTINCT ?type ?typeLabel WHERE {
+  ?item wdt:P2003 ?username .
+  ?item wdt:P31 ?type .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.9707,1.0
+310,complex,"SELECT DISTINCT ?org ?orgLabel WHERE {
+  ?person wdt:P69 wd:Q34433 .
+  ?org wdt:P112 ?person .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.1473,0.1473
+311,complex,"SELECT DISTINCT ?politician ?politicianLabel WHERE {
+  ?politician wdt:P106 wd:Q82955 .
+  {
+    ?politician wdt:P2037 ?github .
+  } UNION {
+    ?politician wdt:P8124 ?cpan .
+  } UNION {
+    ?politician wdt:P4174 ?wikimedia .
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0824,0.0946
+312,complex,"SELECT ?country ?countryLabel (COUNT(DISTINCT ?color) AS ?colorCount) WHERE {
+  ?country wdt:P31 wd:Q6256 .
+  ?country wdt:P163 ?flag .
+  ?flag wdt:P462 ?color .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"" . }
+}
+GROUP BY ?country ?countryLabel
+ORDER BY DESC(?colorCount)
+LIMIT 10",True,True,,0.0,0.0
+313,complex,"SELECT ?travelStory ?travelStoryLabel ?location ?locationLabel ?coordinates WHERE {
+  ?travelStory wdt:P31 wd:Q1072723 .
+  ?travelStory wdt:P407 wd:Q150 .
+  ?travelStory wdt:[property:full work available at URL] ?url .
+  ?travelStory wdt:P840 ?location .
+  ?location wdt:P625 ?coordinates .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en,fr"". }
+}",False,False,not_linked,0.0,0.0
+314,complex,"SELECT DISTINCT ?monument ?monumentLabel WHERE {
+  ?monument wdt:P31 ?type .
+  VALUES ?type { wd:Q179700 wd:Q4989906 }
+  ?monument wdt:P547 ?person .
+  ?person wdt:P106 ?occupation .
+  VALUES ?occupation { wd:Q10076267 wd:Q17769800 }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0097,0.0216
+315,complex,"SELECT DISTINCT ?townHall ?townHallLabel WHERE {
+  ?commune wdt:P47 wd:Q90 .
+  ?townHall wdt:P31 wd:Q25550691 .
+  ?townHall wdt:P131 ?commune .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+316,complex,"SELECT ?coordinates WHERE {
+  wd:[entity:Ordnance Survey Old Series preparatory drawings] wdt:P625 ?coordinates.
+}",False,False,not_linked,0.0,0.0
+317,complex,"SELECT DISTINCT ?leader ?leaderLabel ?party ?partyLabel ?alignment ?alignmentLabel WHERE {
+  ?leader wdt:P39 ?position .
+  ?position wdt:P279* wd:Q48352 .
+  ?leader wdt:P102 ?party .
+  OPTIONAL { ?party wdt:P1387 ?alignment . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0317,0.0319
+318,complex,"SELECT ?person ?personLabel (COUNT(?letter) AS ?count) WHERE {
+  ?letter wdt:P31 wd:Q133492 .
+  ?letter wdt:P1817 ?person .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?person ?personLabel
+ORDER BY DESC(?count)
+LIMIT 10",True,True,,0.0603,0.0339
+319,complex,"SELECT ?person ?article WHERE {
+  ?person wdt:P31 wd:Q5 .
+  ?article schema:about ?person ;
+           schema:isPartOf <https://en.wikipedia.org/> .
+  FILTER NOT EXISTS { ?person wdt:P18 ?image . }
+}
+LIMIT 100",True,True,,0.0,0.0
+320,complex,"SELECT ?term ?termLabel (COUNT(?petition) AS ?count) WHERE {
+  ?petition wdt:P31 wd:Q13634247 .
+  ?petition wdt:P2937 ?term .
+  ?petition wdt:P459 wd:Q6452715 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?term ?termLabel
+ORDER BY ?termLabel",True,True,,0.0,na
+321,complex,"SELECT DISTINCT ?character ?characterLabel WHERE {
+  ?character wdt:P1080 wd:Q931597 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,1.0,1.0
+322,complex,"SELECT ?facility ?facilityLabel ?type ?typeLabel ?coord WHERE {
+  ?facility wdt:P131 wd:Q28769140 .
+  ?facility wdt:P31 ?type .
+  ?type wdt:P279* wd:Q4260475 .
+  ?facility wdt:P625 ?coord .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,na
+323,complex,"SELECT ?canal ?canalLabel WHERE {
+  wd:Q4093 wdt:P625 ?glasgowLoc .
+  ?canal wdt:P31 wd:Q12284 .
+  ?canal wdt:P625 ?canalLoc .
+  BIND(geof:distance(?glasgowLoc, ?canalLoc) AS ?distance)
+  FILTER(?distance < 800)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,False,http_400,0.0,0.0
+324,complex,"SELECT ?hillfort ?hillfortLabel ?atlasID ?article WHERE {
+  ?hillfort wdt:P4102 ?atlasID .
+  OPTIONAL {
+    ?article schema:about ?hillfort ;
+             schema:isPartOf <https://en.wikipedia.org/> .
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0875,0.096
+325,complex,"SELECT ?painting ?paintingLabel ?sitelinks WHERE {
+  ?painting wdt:P31 wd:Q3305213 .
+  ?painting wikibase:sitelinks ?sitelinks .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY DESC(?sitelinks)
+LIMIT 500",True,True,,0.0,0.0
+326,complex,"SELECT ?building ?coord WHERE {
+  ?building wdt:P31 wd:Q41176 .
+  ?building wdt:P625 ?coord .
+  ?article schema:about ?building .
+}",True,False,result_too_large,0.0,0.0
+327,complex,"SELECT DISTINCT ?place ?placeLabel WHERE {
+  ?place wdt:P138 ?woman .
+  ?woman wdt:P21 wd:Q467 .
+  ?place wdt:P31 ?type .
+  ?type wdt:P279* wd:Q294440 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,1.0,na
+328,complex,"SELECT ?continent ?continentLabel ?river ?riverLabel ?maxLength WHERE {
+  {
+    SELECT ?continent (MAX(?length) AS ?maxLength) WHERE {
+      ?river wdt:P31 wd:Q4022 .
+      ?river wdt:P30 ?continent .
+      ?river wdt:P2043 ?length .
+    }
+    GROUP BY ?continent
+  }
+  ?river wdt:P31 wd:Q4022 .
+  ?river wdt:P30 ?continent .
+  ?river wdt:P2043 ?maxLength .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+329,complex,"SELECT ?route ?routeLabel WHERE {
+  wd:[entity:Antarctic Circumpolar Expedition] wdt:P15 ?route .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",False,False,not_linked,0.0,0.0
+330,complex,"SELECT ?city ?cityLabel ?citySitelinks ?country ?countryLabel ?countrySitelinks WHERE {
+  ?city wdt:P31 wd:Q515 .
+  ?city wdt:P17 ?country .
+  ?city wikibase:sitelinks ?citySitelinks .
+  ?country wikibase:sitelinks ?countrySitelinks .
+  FILTER(?citySitelinks > ?countrySitelinks)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,1.0,na
+331,complex,"SELECT ?paper ?paperLabel ?publicationDate WHERE {
+  ?paper wdt:P31 wd:Q13442814 .
+  ?paper wdt:P921 wd:Q84263196 .
+  ?paper wdt:P577 ?publicationDate .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY DESC(?publicationDate)
+LIMIT 100",True,True,,0.0,0.0
+332,complex,"SELECT ?poem ?poemLabel ?language ?languageLabel ?firstLine WHERE {
+  ?poem wdt:P31 wd:Q5185279 .
+  OPTIONAL { ?poem wdt:P407 ?language . }
+  OPTIONAL { ?poem wdt:P1922 ?firstLine . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+333,complex,"SELECT ?color ?colorLabel (COUNT(?rgb) AS ?rgbCount) WHERE {
+  ?color wdt:P31 wd:Q1075 .
+  ?color wdt:P465 ?rgb .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?color ?colorLabel
+HAVING (COUNT(?rgb) > 1)",True,True,,0.2423,0.7679
+334,complex,"SELECT ?occupation ?occupationLabel (COUNT(?person) AS ?count) WHERE {
+  ?person wdt:P19 ?birthPlace .
+  ?birthPlace wdt:P27 wd:Q664 .
+  ?person wdt:P106 ?occupation .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?occupation ?occupationLabel
+ORDER BY DESC(?count)",True,True,,0.0,na
+335,complex,"SELECT ?fibula ?fibulaLabel ?date ?materialLabel WHERE {
+  ?fibula wdt:P195 wd:Q1376 .
+  ?fibula wdt:P31 wd:Q324926 .
+  OPTIONAL { ?fibula wdt:P571 ?date . }
+  OPTIONAL { ?fibula wdt:P186 ?material . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.4552,1.0
+336,complex,"SELECT DISTINCT ?person ?personLabel ?eeID WHERE {
+  ?person wdt:P31 wd:Q5 .
+  ?person wdt:P3429 ?eeID .
+  FILTER NOT EXISTS {
+    ?article schema:about ?person ;
+             schema:isPartOf ?site .
+    FILTER(CONTAINS(STR(?site), ""wikipedia.org""))
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,False,timeout,0.0,0.0
+337,complex,"SELECT DISTINCT ?person ?personLabel ?residence ?residenceLabel ?coord WHERE {
+  ?person wdt:P1595 wd:Q259745 .
+  ?person wdt:P551 ?residence .
+  ?residence wdt:P625 ?coord .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+338,complex,"SELECT ?state ?stateLabel ?cases WHERE {
+  ?state wdt:P31 wd:Q12443800 .
+  ?cases wdt:P131 ?state .
+  ?cases wdt:P31 wd:[entity:COVID-19 pandemic in a geographic region] .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",False,False,not_linked,0.0,0.0
+339,complex,"SELECT ?painting ?paintingLabel WHERE {
+  ?painting wdt:P31 wd:Q3305213 .
+  ?painting rdfs:label ?paintingLabel .
+  FILTER(LANG(?paintingLabel) = ""en"")
+  FILTER(CONTAINS(LCASE(?paintingLabel), ""portrait""))
+  FILTER NOT EXISTS { ?painting wdt:P180 ?depicted . }
+}",True,True,,0.0,0.0
+340,complex,"SELECT ?country ?countryLabel (AVG(?weight) AS ?avgWeight) WHERE {
+  ?player wdt:P1344 wd:Q284163 .
+  ?player wdt:P1532 ?country .
+  ?player wdt:P2067 ?weight .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?country ?countryLabel
+HAVING (AVG(?weight) > 80)",True,True,,0.0506,0.129
+341,complex,"SELECT ?item ?itemLabel ?coord WHERE {
+  ?item wdt:P17 wd:Q145 .
+  ?item wdt:P625 ?coord .
+  BIND(geof:longitude(?coord) AS ?long)
+  FILTER(?long >= -2.0 && ?long <= -1.66)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+LIMIT 100",True,False,http_400,0.0,0.0
+342,complex,"SELECT DISTINCT ?language ?languageLabel WHERE {
+  ?lexeme dct:language ?language .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+343,complex,"SELECT ?award ?awardLabel ?femaleCount ?totalCount (?femaleCount / ?totalCount * 100 AS ?percentage) WHERE {
+  {
+    SELECT ?award (COUNT(DISTINCT ?recipient) AS ?totalCount) WHERE {
+      ?recipient wdt:P166 ?award .
+    }
+    GROUP BY ?award
+  }
+  {
+    SELECT ?award (COUNT(DISTINCT ?femaleRecipient) AS ?femaleCount) WHERE {
+      ?femaleRecipient wdt:P166 ?award .
+      ?femaleRecipient wdt:P21 wd:Q6581072 .
+    }
+    GROUP BY ?award
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY DESC(?percentage)
+LIMIT 100",True,True,,0.0,0.0
+344,complex,"SELECT DISTINCT ?characterLabel WHERE {
+  ?character wdt:P31 wd:Q95074 .
+  ?character wdt:P170 ?author .
+  ?author wdt:P27 wd:Q142 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,1.0,na
+345,complex,"SELECT ?item ?itemLabel WHERE {
+  ?item wdt:P31 wd:Q202444 .
+  ?item rdfs:label ?label .
+  FILTER(LANG(?label) = ""en"")
+  FILTER(CONTAINS(LCASE(?label), ""filaret""))
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,1.0,na
+346,complex,"SELECT ?author ?authorLabel (SUM(?citations) AS ?totalCitations) WHERE {
+  ?author wdt:P27 wd:Q35.
+  ?author wdt:P106 wd:Q482980.
+  ?work wdt:P50 ?author.
+  ?work wdt:P248 ?citingWork.
+  BIND(1 AS ?citations)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?author ?authorLabel
+ORDER BY DESC(?totalCitations)
+LIMIT 20",True,True,,1.0,na
+347,complex,"SELECT ?champion ?championLabel (COUNT(?event) AS ?wins) WHERE {
+  ?event wdt:P31 wd:Q502948 ;
+         wdt:P1346 ?champion .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?champion ?championLabel
+ORDER BY DESC(?wins)",True,True,,0.0,na
+348,complex,"SELECT ?economist ?economistLabel ?birthplaceLabel ?birthYear WHERE {
+  ?economist wdt:P106 wd:Q188094 .
+  OPTIONAL { ?economist wdt:P19 ?birthplace . }
+  OPTIONAL {
+    ?economist wdt:P569 ?birthDate .
+    BIND(YEAR(?birthDate) AS ?birthYear)
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.1711,0.1835
+349,complex,"SELECT ?artwork ?artworkLabel WHERE {
+  ?artwork wdt:P1779 wd:Q41264 .
+  ?artwork wdt:P170 ?actualCreator .
+  FILTER(?actualCreator != wd:Q41264)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,1.0,na
+350,complex,"SELECT DISTINCT ?character ?characterLabel WHERE {
+  ?character wdt:P1080 wd:Q1092 .
+  ?character wdt:P106 wd:Q87265645 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+351,complex,"SELECT ?person ?personLabel ?birthplaceLabel ?dateOfBirth WHERE {
+  ?person wdt:P119 wd:Q311 .
+  OPTIONAL { ?person wdt:P19 ?birthplace . }
+  OPTIONAL { ?person wdt:P569 ?dateOfBirth . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.4526,0.6851
+352,complex,"SELECT ?form WHERE {
+  ?form wdt:P17 wd:Q34.
+  FILTER NOT EXISTS { ?form wdt:P180 ?example. }
+}",True,True,,0.0,0.0
+353,complex,"SELECT ?subclass ?subclassLabel WHERE {
+  ?subclass wdt:P279 wd:Q14001.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+354,complex,"SELECT (COUNT(DISTINCT ?woman) AS ?womenCount) (COUNT(DISTINCT ?winner) AS ?totalCount) (100 * COUNT(DISTINCT ?woman) / COUNT(DISTINCT ?winner) AS ?percentage) WHERE {
+  ?winner wdt:P166 ?award .
+  ?award wdt:P361 wd:Q7191 .
+  OPTIONAL {
+    ?winner wdt:P21 wd:Q6581072 .
+    BIND(?winner AS ?woman)
+  }
+}",True,True,,0.0,0.0
+355,complex,"SELECT ?article ?item ?itemLabel (COUNT(?sitelink) AS ?languageCount) WHERE {
+  ?item wdt:P31 wd:Q1255828 .
+  ?sitelink schema:about ?item ;
+            schema:isPartOf ?wiki .
+  FILTER(CONTAINS(STR(?wiki), ""wikipedia.org""))
+  OPTIONAL {
+    ?article schema:about ?item ;
+             schema:isPartOf <https://en.wikipedia.org/> .
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?article ?item ?itemLabel
+ORDER BY DESC(?languageCount)",True,True,,0.0,0.0
+356,complex,"SELECT DISTINCT ?work ?workLabel WHERE {
+  ?work wdt:P31/wdt:P279* ?type .
+  VALUES ?type { wd:Q11424 wd:Q5398426 }
+  ?work wdt:P136 wd:Q24925 .
+  ?work wdt:P161 ?actor .
+  ?actor wdt:P19 wd:Q24826 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+357,complex,"SELECT ?agency ?agencyLabel WHERE {
+  ?agency wdt:P31/wdt:P279* wd:Q327333 .
+  ?agency wdt:P17 wd:Q22 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+358,complex,"SELECT ?collection ?collectionLabel ?website WHERE {
+  ?collection wdt:P31 wd:Q42939539 .
+  ?collection wdt:P856 ?website .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0079,0.0088
+359,complex,"SELECT ?disease ?diseaseLabel ?minIncubation ?maxIncubation WHERE {
+  ?disease wdt:P31 wd:Q18123741 .
+  OPTIONAL {
+    ?disease p:[property:incubation period in humans] ?statement .
+    OPTIONAL { ?statement pq:P2313 ?minIncubation . }
+    OPTIONAL { ?statement pq:P2312 ?maxIncubation . }
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",False,False,not_linked,0.0,0.0
+360,complex,"SELECT ?station ?stationLabel (COUNT(?intermediate) AS ?stops) WHERE {
+  wd:Q15213944 wdt:P197 ?station .
+  ?station wdt:P31 wd:Q55488 .
+  OPTIONAL {
+    ?station wdt:P197+ ?intermediate .
+    ?intermediate wdt:P197* wd:Q106652 .
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?station ?stationLabel
+ORDER BY ?stops
+LIMIT 1",True,True,,0.0,0.0
+361,complex,"SELECT ?person ?personLabel ?birthPlace ?birthPlaceLabel ?coord WHERE {
+  ?person wdt:P119 wd:Q311 .
+  ?person wdt:P19 ?birthPlace .
+  ?birthPlace wdt:P625 ?coord .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.3139,0.6325
+362,complex,"SELECT DISTINCT ?genus ?genusLabel WHERE {
+  ?genus wdt:P105 wd:Q34740 .
+  ?genus wdt:P171* ?plant .
+  ?plant wdt:P225 ""Plantae"" .
+  ?genus wdt:P138 ?person .
+  ?person wdt:P21 wd:Q6581072 .
+  ?person wdt:P106 wd:Q2374149 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.3822,0.3822
+363,complex,"SELECT ?language ?languageLabel (COUNT(?lexeme) AS ?count) WHERE {
+  ?lexeme dct:language ?language .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?language ?languageLabel
+ORDER BY DESC(?count)",True,True,,0.0,0.0
+364,complex,"SELECT ?scorer ?scorerLabel WHERE {
+  wd:Q170645 wdt:P12475 ?scorer.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,1.0,na
+365,complex,"SELECT ?workLocation ?workLocationLabel ?coordinates WHERE {
+  wd:Q704208 wdt:P937 ?workLocation .
+  ?workLocation wdt:P625 ?coordinates .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+366,complex,"SELECT DISTINCT ?language ?languageLabel ?creator ?creatorLabel ?university ?universityLabel WHERE {
+  ?language wdt:P31 wd:Q9143 .
+  ?language wdt:P287 ?creator .
+  ?creator wdt:P69 ?university .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0712,0.0736
+367,complex,"SELECT DISTINCT ?person ?personLabel WHERE {
+  ?person wdt:P69 wd:Q34433 .
+  ?person wdt:P21 wd:Q6581072 .
+  ?person wdt:P27 ?country .
+  FILTER NOT EXISTS {
+    ?person wdt:P27 wd:Q145 .
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.1539,0.1757
+368,complex,"SELECT ?decade (COUNT(?person) AS ?count) WHERE {
+  ?person wdt:P31 wd:Q5 .
+  ?person wdt:P19 ?birthPlace .
+  ?birthPlace wdt:P17 wd:Q213 .
+  ?person wdt:P20 ?deathPlace .
+  ?deathPlace wdt:P17 wd:Q183 .
+  ?person wdt:P569 ?birthDate .
+  BIND(FLOOR(YEAR(?birthDate)/10)*10 AS ?decade)
+}
+GROUP BY ?decade
+ORDER BY ?decade",True,True,,0.0451,na
+369,complex,"SELECT ?monarch ?monarchLabel ?causeLabel WHERE {
+  ?monarch wdt:P39 wd:Q18810062 .
+  OPTIONAL { ?monarch wdt:P509 ?cause . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+370,complex,"SELECT ?subject ?subjectLabel (COUNT(?work) AS ?count) WHERE {
+  ?work wdt:P195 wd:Q657415 .
+  ?work wdt:P195 wd:Q636400 .
+  ?work wdt:P180 ?subject .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?subject ?subjectLabel
+ORDER BY DESC(?count)
+LIMIT 10",True,True,,0.0,0.0
+371,complex,"SELECT ?language ?languageLabel (COUNT(?album) AS ?count) WHERE {
+  ?album wdt:P31 wd:Q482994 .
+  ?album wdt:P407 ?language .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?language ?languageLabel
+ORDER BY DESC(?count)",True,True,,0.9974,1.0
+372,complex,"SELECT DISTINCT ?country1 ?country1Label ?capital1 ?capital1Label ?country2 ?country2Label ?capital2 ?capital2Label ?distance WHERE {
+  ?country1 wdt:P31 wd:Q3624078 .
+  ?country2 wdt:P31 wd:Q3624078 .
+  FILTER(STR(?country1) < STR(?country2))
+  
+  ?country1 wdt:P36 ?capital1 .
+  ?country2 wdt:P36 ?capital2 .
+  
+  ?capital1 wdt:P625 ?coord1 .
+  ?capital2 wdt:P625 ?coord2 .
+  
+  BIND(geof:distance(?coord1, ?coord2) AS ?distance)
+  FILTER(?distance < 200)
+  
+  FILTER NOT EXISTS { ?country1 wdt:P47 ?country2 . }
+  FILTER NOT EXISTS { ?country2 wdt:P47 ?country1 . }
+  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,False,http_400,0.0,0.0
+373,complex,"SELECT ?artwork ?artworkLabel ?image WHERE {
+  ?artwork wdt:P195 wd:Q63160499 .
+  ?artwork wdt:P18 ?image .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,na
+374,complex,"SELECT DISTINCT ?person ?personLabel ?account1 ?account2 WHERE {
+  ?person wdt:P31 wd:Q5 .
+  
+  {
+    ?person wdt:P2002 ?account1 .
+    ?person wdt:P2002 ?account2 .
+  }
+  UNION
+  {
+    ?person wdt:P2003 ?account1 .
+    ?person wdt:P2003 ?account2 .
+  }
+  UNION
+  {
+    ?person wdt:P2013 ?account1 .
+    ?person wdt:P2013 ?account2 .
+  }
+  UNION
+  {
+    ?person wdt:P7085 ?account1 .
+    ?person wdt:P7085 ?account2 .
+  }
+  
+  FILTER(?account1 != ?account2)
+  FILTER(LCASE(STR(?account1)) = LCASE(STR(?account2)))
+  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.4301,0.4301
+375,complex,"SELECT DISTINCT ?firstLetter WHERE {
+  ?software wdt:P31 wd:Q341 .
+  ?software rdfs:label ?label .
+  FILTER(LANG(?label) = ""en"")
+  BIND(SUBSTR(?label, 1, 1) AS ?firstLetter)
+}
+ORDER BY ?firstLetter",True,True,,0.3786,na
+376,complex,"SELECT ?country ?countryLabel (COUNT(?demonstration) AS ?count) WHERE {
+  ?demonstration wdt:P31 wd:[entity:demonstration] .
+  ?demonstration wdt:P17 ?country .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?country ?countryLabel
+ORDER BY DESC(?count)",False,False,not_linked,0.0,0.0
+377,complex,"SELECT ?museum ?museumLabel WHERE {
+  ?museum wdt:P31 wd:Q33506 .
+  ?museum wdt:P131 wd:Q107582 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+378,complex,"SELECT ?category ?categoryLabel ?gender ?genderLabel (COUNT(DISTINCT ?winner) AS ?count) WHERE {
+  ?category wdt:P31 wd:Q7191 .
+  ?winner wdt:P166 ?award .
+  ?award wdt:P31 ?category .
+  ?winner wdt:P21 ?gender .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?category ?categoryLabel ?gender ?genderLabel
+ORDER BY ?categoryLabel ?genderLabel",True,True,,1.0,na
+379,complex,"SELECT DISTINCT ?artist ?artistLabel ?placeLabel WHERE {
+  ?artist wdt:P106 wd:Q483501 .
+  ?artist wdt:P20 ?place .
+  ?place wdt:P31 wd:Q152081 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+380,complex,"SELECT ?database ?databaseLabel (COUNT(?statement) AS ?count) WHERE {
+  ?database wdt:P5305 ?endpoint .
+  ?database wdt:P1855 ?property .
+  ?item ?propertyClaim ?statement .
+  ?property wikibase:claim ?propertyClaim .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?database ?databaseLabel
+ORDER BY DESC(?count)",True,True,,0.0,0.0
+381,complex,"SELECT (COUNT(DISTINCT ?word) AS ?count) WHERE {
+  ?word wdt:P407 wd:Q150.
+  ?word wdt:P1343 ?dictionary.
+}
+GROUP BY ?word
+HAVING (COUNT(DISTINCT ?dictionary) = 1)",True,True,,0.0476,na
+382,complex,"SELECT ?software ?softwareLabel ?field ?fieldLabel WHERE {
+  ?software wdt:P31 wd:Q42240.
+  ?software wdt:P275 ?license.
+  ?license wdt:P31/wdt:P279* wd:Q3943414.
+  OPTIONAL { ?software wdt:P101 ?field. }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ?fieldLabel ?softwareLabel",True,True,,0.0,0.0
+383,complex,"SELECT ?person ?personLabel (COUNT(?article) AS ?pageCount) WHERE {
+  ?person wdt:P570 ?dod .
+  FILTER(YEAR(?dod) = 2018)
+  ?person wdt:P31 wd:Q5 .
+  ?article schema:about ?person .
+  ?article schema:isPartOf ?site .
+  FILTER(CONTAINS(STR(?site), ""wikipedia.org""))
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?person ?personLabel
+ORDER BY DESC(?pageCount)",True,True,,0.0,0.0
+384,complex,"SELECT DISTINCT ?person ?personLabel WHERE {
+  ?person wdt:P31 wd:Q5 .
+  ?person wdt:P19 ?birthPlace .
+  ?birthPlace wdt:P17 wd:Q25 .
+  ?person wdt:P39 ?position .
+  ?position wdt:P279* wd:Q2285706 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+385,complex,"SELECT DISTINCT ?property ?propertyLabel WHERE {
+  ?church wdt:P31 wd:Q16970 .
+  ?church ?property ?saint .
+  ?saint wdt:P31 wd:Q43115 .
+  ?prop wikibase:directClaim ?property .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"" . }
+}",True,True,,0.0,na
+386,complex,"SELECT ?river ?riverLabel ?length WHERE {
+  ?river wdt:P31 wd:Q4022 .
+  ?river wdt:P17 wd:Q142 .
+  ?river wdt:P2043 ?length .
+  FILTER NOT EXISTS {
+    ?department wdt:P31 wd:Q6465 .
+    ?department wdt:P138 ?river .
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY DESC(?length)
+LIMIT 10",True,True,,0.0,0.0
+387,complex,"SELECT ?pathway ?pathwayLabel ?pdbId WHERE {
+  ?pathway wdt:P31 wd:Q4915012 .
+  ?protein wdt:[property:biological pathway] ?pathway .
+  ?protein wdt:P638 ?pdbId .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",False,False,not_linked,0.0,0.0
+388,complex,"SELECT ?property ?propertyLabel (COUNT(?item) AS ?frequency) WHERE {
+  ?item wdt:P31 wd:Q28564 .
+  ?item ?prop ?value .
+  ?property wikibase:directClaim ?prop .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?property ?propertyLabel
+ORDER BY DESC(?frequency)",True,True,,0.0,na
+389,complex,"SELECT ?scene ?sceneLabel WHERE {
+  wd:Q54854779 wdt:P180 ?scene .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+390,complex,"SELECT ?stage ?stageLabel WHERE {
+  ?stage wdt:P361 wd:Q33881 .
+  ?stage wdt:P31 wd:[entity:cycling stage] .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",False,False,not_linked,0.0,0.0
+391,complex,"SELECT ?subdivision ?subdivisionLabel ?population WHERE {
+  ?subdivision wdt:P31/wdt:P279* wd:Q10864048 .
+  ?subdivision wdt:P1082 ?population .
+  FILTER NOT EXISTS { ?subdivision wdt:P194 ?legislature . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY DESC(?population)
+LIMIT 10",True,True,,0.0,0.0
+392,complex,"SELECT ?type ?typeLabel (COUNT(?property) AS ?count) (SAMPLE(?property) AS ?example) WHERE {
+  ?property wikibase:propertyType ?type .
+}
+GROUP BY ?type ?typeLabel
+ORDER BY DESC(?count)",True,True,,0.4186,na
+393,complex,"SELECT DISTINCT ?songLabel WHERE {
+  ?song wdt:P31 wd:Q7366 .
+  ?name wdt:P31 wd:Q11879590 .
+  ?song rdfs:label ?songLabel .
+  ?name rdfs:label ?nameLabel .
+  FILTER(LANG(?songLabel) = ""en"")
+  FILTER(LANG(?nameLabel) = ""en"")
+  FILTER(?songLabel = ?nameLabel)
+}",True,True,,0.0,na
+394,complex,"SELECT ?property ?propertyLabel WHERE {
+  ?property wikibase:propertyType wikibase:ExternalId .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.5,na
+395,complex,"SELECT DISTINCT ?mathematician ?mathematicianLabel ?year WHERE {
+  ?mathematician wdt:P106 wd:Q170790 .
+  ?mathematician wdt:P569 ?dob .
+  BIND(YEAR(?dob) AS ?year)
+  FILTER(?year > 1)
+  FILTER NOT EXISTS {
+    BIND(CEIL(?year / 2) AS ?half)
+    ?divisor wdt:P31 ?anything .
+  }
+  # Prime check via FILTER
+  FILTER(
+    !EXISTS {
+      VALUES ?d { 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 }
+      FILTER(?d < ?year && ?year % ?d = 0)
+    }
+  )
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,False,http_400,0.0,0.0
+396,complex,"SELECT ?relationship ?relationshipLabel ?person ?personLabel WHERE {
+  {
+    wd:Q233009 ?relationship ?person .
+    FILTER(?person = wd:Q55264)
+  }
+  UNION
+  {
+    wd:Q55264 ?relationship ?person .
+    FILTER(?person = wd:Q233009)
+  }
+  UNION
+  {
+    wd:Q233009 ?relationship ?person .
+    ?person wdt:P31 wd:Q5 .
+  }
+  UNION
+  {
+    wd:Q55264 ?relationship ?person .
+    ?person wdt:P31 wd:Q5 .
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+397,complex,"SELECT DISTINCT ?article ?articleLabel ?pmid WHERE {
+  ?disease wdt:P279 wd:Q1164529 .
+  ?article wdt:P921 ?disease .
+  ?article wdt:P698 ?pmid .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0006,0.0006
+398,complex,"SELECT ?state ?stateLabel ?song ?songLabel WHERE {
+  ?state wdt:P31 wd:Q35657 .
+  ?state wdt:P85 ?song .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.3559,0.5707
+399,complex,"SELECT ?lastName ?lastNameLabel (COUNT(?person) AS ?count) WHERE {
+  ?person wdt:P31 wd:Q5 .
+  ?person wdt:P734 ?lastName .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?lastName ?lastNameLabel
+ORDER BY DESC(?count)
+LIMIT 50",True,True,,0.5025,0.5
+400,complex,"SELECT ?century (COUNT(DISTINCT ?person) AS ?count) WHERE {
+  ?person wdt:P31 wd:Q5 .
+  ?person wdt:P172 wd:Q47588 .
+  ?person wdt:P19 ?birthplace .
+  ?person wdt:P570 ?deathDate .
+  BIND(FLOOR((YEAR(?deathDate) - 1) / 100) + 1 AS ?century)
+}
+GROUP BY ?century
+ORDER BY ?century",True,True,,0.0,0.0
+401,complex,"SELECT ?company ?companyLabel ?revenue WHERE {
+  ?company wdt:P31 wd:Q4830453 .
+  ?company p:P2139 ?revenueStatement .
+  ?revenueStatement psv:P2139 ?revenueValue .
+  ?revenueValue wikibase:quantityAmount ?revenue .
+  ?revenueValue wikibase:quantityUnit wd:Q4917 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY DESC(?revenue)
+LIMIT 10",True,True,,0.3226,0.5
+402,complex,"SELECT ?occupation ?occupationLabel ?maleCount ?femaleCount (ABS(?maleCount - ?femaleCount) AS ?imbalance) WHERE {
+  {
+    SELECT ?occupation (COUNT(?male) AS ?maleCount) WHERE {
+      ?male wdt:P106 ?occupation .
+      ?male wdt:P21 wd:Q6581097 .
+      ?male wdt:P27 wd:Q30 .
+    }
+    GROUP BY ?occupation
+  }
+  {
+    SELECT ?occupation (COUNT(?female) AS ?femaleCount) WHERE {
+      ?female wdt:P106 ?occupation .
+      ?female wdt:P21 wd:Q6581072 .
+      ?female wdt:P27 wd:Q30 .
+    }
+    GROUP BY ?occupation
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY DESC(?imbalance)
+LIMIT 20",True,True,,0.0,0.0
+403,complex,"SELECT ?artwork ?artworkLabel WHERE {
+  ?artwork wdt:P195 wd:Q1376 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en,fr"". }
+}",True,True,,0.3122,0.993
+404,complex,"SELECT (COUNT(DISTINCT ?twitter) AS ?twitterCount) (COUNT(DISTINCT ?facebook) AS ?facebookCount) WHERE {
+  ?entity wdt:P31 ?type .
+  FILTER NOT EXISTS { ?entity wdt:P31 wd:Q5 }
+  OPTIONAL { ?entity wdt:P2002 ?twitter . }
+  OPTIONAL { ?entity wdt:P2013 ?facebook . }
+  FILTER(BOUND(?twitter) || BOUND(?facebook))
+}",True,True,,0.0,0.0
+405,complex,"SELECT ?person ?personLabel ?coord WHERE {
+  ?person wdt:P119 wd:Q252312 .
+  ?person wdt:P625 ?coord .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+406,complex,"SELECT ?team ?teamLabel ?sport ?sportLabel ?coord WHERE {
+  ?team wdt:P31 wd:Q12973014 .
+  ?team wdt:P641 ?sport .
+  ?team wdt:P625 ?coord .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0001,0.0001
+407,complex,"SELECT ?chair ?chairLabel ?startTime ?endTime WHERE {
+  wd:Q53536 p:P488 ?statement.
+  ?statement ps:P488 ?chair.
+  OPTIONAL { ?statement pq:P580 ?startTime. }
+  OPTIONAL { ?statement pq:P582 ?endTime. }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ?startTime",True,True,,0.5616,0.9412
+408,complex,"SELECT ?number ?numberLabel WHERE {
+  ?number wdt:P31 wd:Q21199 .
+  ?number wdt:P1181 ?value .
+  FILTER(?value >= 0 && ?value <= 20)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ?numberLabel",True,True,,1.0,na
+409,complex,"SELECT ?city ?cityLabel (COUNT(DISTINCT ?river) AS ?riverCount) WHERE {
+  ?city wdt:P31 wd:Q515 .
+  ?river wdt:P31 wd:Q4022 .
+  ?city wdt:P206 ?river .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?city ?cityLabel
+HAVING (COUNT(DISTINCT ?river) > 1)
+ORDER BY DESC(?riverCount)",True,True,,0.1032,0.0972
+410,complex,"SELECT ?institution ?institutionLabel ?typeLabel ?coordinates WHERE {
+  ?institution wdt:P31/wdt:P279* ?type .
+  VALUES ?type {
+    wd:Q33506
+    wd:Q7075
+    wd:Q166118
+    wd:Q1007870
+  }
+  ?institution wdt:P17 wd:Q25 .
+  OPTIONAL { ?institution wdt:P625 ?coordinates . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+411,complex,"SELECT DISTINCT ?person ?personLabel WHERE {
+  ?person wdt:P31 wd:Q5 .
+  ?person wdt:P166 ?award1 .
+  ?award1 wdt:P17 ?country1 .
+  ?award1 wdt:P31/wdt:P279* wd:Q1788716 .
+  ?person wdt:P166 ?award2 .
+  ?award2 wdt:P17 ?country2 .
+  ?award2 wdt:P31/wdt:P279* wd:Q1788716 .
+  FILTER(?country1 != ?country2)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0023,0.0023
+412,complex,"SELECT ?occupation ?occupationLabel (COUNT(?person) AS ?count) WHERE {
+  ?person wdt:P31 wd:Q5.
+  ?person wdt:P27 wd:[entity:Kingdom of Scotland].
+  ?person wdt:P793 wd:Q19902850.
+  ?person wdt:P106 ?occupation.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?occupation ?occupationLabel
+ORDER BY DESC(?count)",False,False,not_linked,0.0,0.0
+413,complex,"SELECT ?economist ?economistLabel ?gutenbergID ?birthYear ?deathYear WHERE {
+  ?economist wdt:P106 wd:Q188094 .
+  ?economist wdt:P1938 ?gutenbergID .
+  OPTIONAL {
+    ?economist wdt:P569 ?birthDate .
+    BIND(YEAR(?birthDate) AS ?birthYear)
+  }
+  OPTIONAL {
+    ?economist wdt:P570 ?deathDate .
+    BIND(YEAR(?deathDate) AS ?deathYear)
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.12,0.2834
+414,complex,"SELECT ?station ?stationLabel ?coordinates WHERE {
+  ?station wdt:P361 wd:Q260870 .
+  OPTIONAL { ?station wdt:P625 ?coordinates . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+415,complex,"SELECT DISTINCT ?material ?materialLabel WHERE {
+  ?painting wdt:P31 wd:Q3305213 .
+  ?painting wdt:P186 ?material .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"" . }
+}",True,True,,0.288,0.3228
+416,complex,"SELECT ?lake ?lakeLabel WHERE {
+  ?lake wdt:P31 wd:Q23397 .
+  ?lake wdt:P131 wd:Q64 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+417,complex,"SELECT ?property ?propertyLabel WHERE {
+  ?property wikibase:propertyType ?type .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY xsd:integer(STRAFTER(STR(?property), ""P""))",True,True,,0.9986,na
+418,complex,"SELECT ?property ?propertyLabel WHERE {
+  ?property wdt:P127 wd:Q333515 .
+  ?property wdt:P17 wd:Q145 .
+  FILTER NOT EXISTS { ?property wdt:P856 ?website . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+419,complex,"SELECT ?cathedral ?cathedralLabel ?image WHERE {
+  ?cathedral wdt:P31 wd:Q2977 .
+  ?cathedral wdt:P131 wd:Q90 .
+  OPTIONAL { ?cathedral wdt:P18 ?image . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+420,complex,"SELECT ?language ?languageLabel ?year ?inventorImage WHERE {
+  ?language wdt:P31 wd:Q9143.
+  OPTIONAL {
+    ?language wdt:P571 ?inception.
+    BIND(YEAR(?inception) AS ?year)
+  }
+  OPTIONAL {
+    ?language wdt:P178 ?inventor.
+    ?inventor wdt:P18 ?inventorImage.
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0094,0.0
+421,complex,"SELECT ?genderLabel ?occupationLabel (COUNT(DISTINCT ?person) AS ?count) WHERE {
+  ?work wdt:P195 wd:Q3329701.
+  ?work wdt:P170 ?person.
+  ?person wdt:P106 ?occupation.
+  ?person wdt:P21 ?gender.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?genderLabel ?occupationLabel
+ORDER BY ?genderLabel ?occupationLabel",True,True,,0.0,na
+422,complex,"SELECT ?discipline ?disciplineLabel (AVG(?height) AS ?avgHeight) WHERE {
+  ?skater wdt:P31 wd:Q5 .
+  ?skater wdt:P21 wd:Q6581097 .
+  ?skater wdt:P641 wd:Q38108 .
+  ?skater wdt:P2048 ?height .
+  ?skater wdt:P106 ?discipline .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?discipline ?disciplineLabel",True,True,,0.0,0.0
+423,complex,"SELECT DISTINCT ?material ?materialLabel WHERE {
+  ?item wdt:P195 wd:Q636400 .
+  ?item wdt:P186 ?material .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+424,complex,"SELECT DISTINCT ?occupation ?occupationLabel WHERE {
+  ?article wdt:P31 wd:Q13442814 .
+  ?article wdt:P50 ?author .
+  ?author wdt:P106 ?occupation .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+425,complex,"SELECT ?city ?cityLabel ?coord ?sisterCity ?sisterCityLabel WHERE {
+  ?city wdt:P17 wd:Q668 .
+  ?city wdt:P31/wdt:P279* wd:Q515 .
+  ?city wdt:P625 ?coord .
+  ?city wdt:P190 ?sisterCity .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+426,complex,"SELECT ?region ?regionLabel (COUNT(DISTINCT ?band) AS ?count) WHERE {
+  ?band wdt:P31 wd:Q215380 ;
+        wdt:P136 wd:Q3071 ;
+        wdt:P17 wd:Q252 ;
+        wdt:P276 ?region .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?region ?regionLabel
+ORDER BY DESC(?count)",True,True,,0.0,na
+427,complex,"SELECT ?museum ?museumLabel ?coordinates WHERE {
+  ?museum wdt:P31 wd:Q33506 .
+  ?museum wdt:P131 wd:Q1492 .
+  OPTIONAL { ?museum wdt:P625 ?coordinates . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+428,complex,"SELECT ?item ?itemLabel WHERE {
+  ?item wdt:P195 wd:Q1376 .
+  ?item wdt:P31/wdt:P279* wd:Q122031115 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+429,complex,"SELECT DISTINCT ?person ?personLabel ?mother ?motherLabel WHERE {
+  ?person wdt:P569 ?birth .
+  ?person wdt:P25 ?mother .
+  ?mother wdt:P570 ?death .
+  FILTER(?birth = ?death)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0861,0.094
+430,complex,"SELECT DISTINCT ?person ?personLabel WHERE {
+  ?person wdt:P108 wd:Q1138080 .
+  ?person wdt:P31 wd:Q5 .
+  FILTER NOT EXISTS { ?person wdt:P4829 ?uid . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0121,0.0121
+431,complex,"SELECT DISTINCT ?person ?personLabel WHERE {
+  ?award wdt:P31/wdt:P279* wd:Q17701409 .
+  ?person wdt:P166 ?award .
+  FILTER NOT EXISTS {
+    ?person wdt:P106 wd:Q188094 .
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.8199,0.9418
+432,complex,"SELECT ?city ?cityLabel ?population WHERE {
+  ?city wdt:P31 wd:Q515 ;
+        wdt:P1082 ?population .
+  FILTER(?population > 1000000)
+  FILTER NOT EXISTS { ?person wdt:P19 ?city . }
+  FILTER NOT EXISTS { ?person wdt:P551 ?city . }
+  FILTER NOT EXISTS { ?person wdt:P20 ?city . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,1.0,na
+433,complex,"SELECT (COUNT(DISTINCT ?lake) AS ?count) WHERE {
+  ?lake wdt:P31 wd:Q23397 .
+  ?lake wdt:P17 wd:Q145 .
+  ?lake wdt:P7548 ?id .
+}",True,True,,0.0,na
+434,complex,"SELECT DISTINCT ?person ?personLabel WHERE {
+  ?person wdt:P40 ?other .
+  ?person wdt:P22 ?other .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.4978,0.4978
+435,complex,"SELECT DISTINCT ?country ?countryLabel ?capital ?capitalLabel WHERE {
+  ?country wdt:P31 wd:Q6256 .
+  ?country wdt:P36 ?capital .
+  ?country rdfs:label ?countryLabel .
+  ?capital rdfs:label ?capitalLabel .
+  FILTER(LANG(?countryLabel) = ""en"")
+  FILTER(LANG(?capitalLabel) = ""en"")
+  FILTER(REGEX(LCASE(?capitalLabel), CONCAT(""^["", LCASE(REPLACE(?countryLabel, ""[^A-Za-z]"", """")), "" ]+$"")))
+}",True,True,,0.0,0.0
+436,complex,"SELECT ?country ?countryLabel ?language ?languageLabel WHERE {
+  ?country wdt:P31 wd:Q3624078 .
+  ?country wdt:P30 wd:Q15 .
+  OPTIONAL { ?country wdt:P37 ?language . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.2077,0.4615
+437,complex,"SELECT DISTINCT ?actress ?actressLabel WHERE {
+  wd:Q291877 (wdt:P40)+ ?actress .
+  ?actress wdt:P21 wd:Q6581072 .
+  ?actress wdt:P106 wd:Q33999 .
+  ?actress wdt:P569 ?dob .
+  BIND(YEAR(NOW()) - YEAR(?dob) AS ?age)
+  FILTER(?age < 70)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+438,complex,"SELECT ?saint ?saintLabel ?feastDay WHERE {
+  ?saint wdt:P31 wd:Q5 .
+  ?saint wdt:P841 ?feastDay .
+  ?saint wdt:P411 ?status .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ?feastDay",True,True,,0.0,0.0
+439,complex,"SELECT ?mission ?missionLabel WHERE {
+  ?mission wdt:P31 wd:Q213283 .
+  ?mission wdt:P137 wd:Q145 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+440,complex,"SELECT ?person ?personLabel ?sitelinks WHERE {
+  ?person wdt:P31 wd:Q5 .
+  ?person wikibase:sitelinks ?sitelinks .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY DESC(?sitelinks)
+LIMIT 100",True,True,,1.0,na
+441,complex,"SELECT ?protein ?proteinLabel (COUNT(?paper) AS ?count) WHERE {
+  ?protein wdt:P703 wd:Q82069695 ;
+           wdt:P31 wd:Q8054 .
+  OPTIONAL {
+    ?paper wdt:P921 ?protein .
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?protein ?proteinLabel
+ORDER BY DESC(?count)",True,True,,0.7206,0.8857
+442,complex,"SELECT ?section ?sectionLabel WHERE {
+  ?section wdt:P361 wd:Q210957 .
+  ?section wdt:P1435 wd:Q219538 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0081,0.0213
+443,complex,"SELECT ?person ?personLabel ?occupationLabel ?coord WHERE {
+  ?person wdt:P31 wd:Q5 .
+  ?person wdt:P1595 wd:Q259745 .
+  ?person wdt:P27 wd:[entity:Kingdom of Scotland] .
+  OPTIONAL { ?person wdt:P106 ?occupation . }
+  OPTIONAL { ?person wdt:P625 ?coord . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",False,False,not_linked,0.0,0.0
+444,complex,"SELECT ?language ?languageLabel (COUNT(?lexeme) AS ?count) WHERE {
+  ?lexeme dct:language ?language .
+  MINUS {
+    ?lexeme ?p ?statement .
+    FILTER(STRSTARTS(STR(?p), ""http://www.wikidata.org/prop/""))
+  }
+  MINUS {
+    ?lexeme ontolex:sense ?sense .
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?language ?languageLabel
+HAVING (COUNT(?lexeme) < 10)",True,False,timeout,0.0,0.0
+445,complex,"SELECT ?institution ?institutionLabel WHERE {
+  ?contribution wdt:P179 wd:Q108784175 .
+  ?contribution wdt:P664 ?institution .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+446,complex,"SELECT ?monument ?monumentLabel ?commonsCategory WHERE {
+  ?monument wdt:P31 wd:Q3370053 ;
+            wdt:P131 wd:Q894105 .
+  OPTIONAL { ?monument wdt:P373 ?commonsCategory . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,1.0,na
+447,complex,"SELECT DISTINCT ?minister ?ministerLabel (COUNT(DISTINCT ?cabinet) AS ?cabinetCount) WHERE {
+  ?minister wdt:P31 wd:Q5 ;
+            wdt:P27 wd:Q38 ;
+            wdt:P39 ?position .
+  ?position pq:P361 ?cabinet .
+  ?cabinet wdt:P31 wd:Q3687318 ;
+           wdt:P580 ?start .
+  FILTER(YEAR(?start) >= 1990)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?minister ?ministerLabel
+HAVING(COUNT(DISTINCT ?cabinet) > 1)
+ORDER BY DESC(?cabinetCount)",True,True,,0.0,0.0
+448,complex,"SELECT ?museum ?museumLabel ?distance WHERE {
+  wd:Q188740 wdt:P625 ?momaLocation .
+  SERVICE wikibase:around {
+    ?museum wdt:P625 ?location .
+    bd:serviceParam wikibase:center ?momaLocation .
+    bd:serviceParam wikibase:radius ""2"" .
+    bd:serviceParam wikibase:distance ?distance .
+  }
+  ?museum wdt:P31/wdt:P279* wd:Q33506 .
+  FILTER(?museum != wd:Q188740)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"" . }
+}
+ORDER BY ?distance",True,False,http_500,0.0,0.0
+449,complex,"SELECT DISTINCT ?person ?personLabel ?sibling ?siblingLabel WHERE {
+  ?person wdt:P166 wd:Q616568 .
+  ?person wdt:P3373 ?sibling .
+  ?sibling wdt:P166 wd:Q616568 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.5143,1.0
+450,complex,"SELECT DISTINCT ?activist ?activistLabel WHERE {
+  ?activist wdt:P31 wd:Q5 ;
+            wdt:P21 wd:Q6581072 ;
+            wdt:P106 wd:Q15253558 ;
+            wdt:P569 ?dob ;
+            wdt:P27 ?country .
+  ?country wdt:P30 wd:Q18 .
+  FILTER(YEAR(?dob) >= 1900 && YEAR(?dob) <= 1999)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+451,complex,"SELECT DISTINCT ?scientist ?scientistLabel ?twitter WHERE {
+  ?scientist wdt:P106 wd:Q901 .
+  ?scientist wdt:P108 ?university .
+  ?university wdt:P31 wd:Q3918 .
+  ?university wdt:P17 wd:Q55 .
+  ?scientist wdt:P2002 ?twitter .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0078,0.0141
+452,complex,"SELECT ?lexeme ?lemma ?genderLabel WHERE {
+  ?lexeme dct:language wd:Q150 ;
+          wikibase:lemma ?lemma ;
+          wdt:P5185 ?gender .
+  ?sense ontolex:sense ?lexeme .
+  ?lexeme ontolex:sense ?sense .
+  ?sense wdt:P5137 ?concept .
+  ?concept wdt:P279* wd:Q28640 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en,fr"". }
+}",True,True,,0.0,0.0
+453,complex,"SELECT ?lexeme ?lemma ?formExample ?senseExample ?source WHERE {
+  ?lexeme dct:language wd:Q9027 ;
+          wikibase:lemma ?lemma .
+  ?lexeme p:P5831 ?statement .
+  ?statement ps:P5831 ?example .
+  ?statement pq:P5830 ?form .
+  ?statement pq:P6072 ?sense .
+  OPTIONAL { ?statement prov:wasDerivedFrom ?source . }
+  BIND(?example AS ?formExample)
+  BIND(?example AS ?senseExample)
+}",True,True,,0.5542,0.0
+454,complex,"SELECT ?composer ?composerLabel ?tonality ?tonalityLabel (COUNT(?work) AS ?count) WHERE {
+  ?composer wdt:P106 wd:Q36834 .
+  ?work wdt:P86 ?composer .
+  ?work wdt:P826 ?tonality .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?composer ?composerLabel ?tonality ?tonalityLabel
+ORDER BY ?composer DESC(?count)",True,True,,0.0,0.0
+455,complex,"SELECT DISTINCT ?person ?personLabel WHERE {
+  ?person wdt:P31 wd:Q5 .
+  ?person wdt:P570 ?date .
+  FILTER(?date = ""2001-08-25""^^xsd:dateTime)
+  ?article schema:about ?person ;
+           schema:isPartOf <https://en.wikipedia.org/> .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,1.0,na
+456,complex,"SELECT DISTINCT ?monument ?monumentLabel WHERE {
+  ?monument wdt:P1435 wd:Q916475.
+  ?monument wdt:P131 ?location.
+  ?location wdt:P131* wd:Q3068.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en,fr"". }
+}",True,True,,0.0,0.0
+457,complex,"SELECT DISTINCT ?painter ?painterLabel ?deathDate WHERE {
+  ?painter wdt:P106 wd:Q1028181 .
+  ?painter wdt:P570 ?deathDate .
+  FILTER(YEAR(?deathDate) < 1800)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ?deathDate",True,True,,0.6603,0.9783
+458,complex,"SELECT ?station ?stationLabel ?connection ?connectionLabel WHERE {
+  ?station wdt:P31 wd:Q55488 .
+  ?station wdt:P17 wd:Q55 .
+  OPTIONAL { ?station wdt:P197 ?connection . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+459,complex,"SELECT DISTINCT ?creator ?creatorLabel WHERE {
+  ?item wdt:P31 wd:Q102966212 .
+  ?item wdt:P170 ?creator .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,1.0,na
+460,complex,"SELECT ?station ?stationLabel ?coord WHERE {
+  ?station wdt:P31 wd:Q55488 .
+  ?station wdt:P131* wd:Q25 .
+  ?station wdt:P625 ?coord .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+461,complex,"SELECT ?game ?gameLabel ?publicationDate WHERE {
+  ?game wdt:P31 wd:Q7889 .
+  ?game wdt:P577 ?publicationDate .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+462,complex,"SELECT ?item ?itemLabel ?sitelinks WHERE {
+  ?item wikibase:sitelinks ?sitelinks .
+  FILTER(?sitelinks > 20)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY DESC(?sitelinks)
+LIMIT 100",True,True,,0.0,na
+463,complex,"SELECT ?number ?numberLabel WHERE {
+  ?number wdt:P31 wd:Q21199 .
+  ?number wdt:P1181 ?value .
+  FILTER(?value >= 1 && ?value <= 2000)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"" . }
+}
+ORDER BY ?value",True,True,,1.0,na
+464,complex,"SELECT ?department ?departmentLabel WHERE {
+  ?department wdt:P31 wd:Q6465 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.3538,0.56
+465,complex,"SELECT DISTINCT ?person1 ?person1Label ?person2 ?person2Label ?place1Label ?place2Label WHERE {
+  ?person1 wdt:P3373 ?person2 .
+  ?person1 wdt:P569 ?dob1 .
+  ?person2 wdt:P569 ?dob2 .
+  FILTER(?dob1 = ?dob2)
+  FILTER(STR(?person1) < STR(?person2))
+  ?person1 wdt:P19 ?place1 .
+  ?person2 wdt:P19 ?place2 .
+  FILTER(?place1 != ?place2)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+466,complex,"SELECT DISTINCT ?descendant ?descendantLabel WHERE {
+  ?descendant (wdt:P22|wdt:P25)+ wd:Q23 .
+  ?descendant (wdt:P22|wdt:P25)+ wd:Q207 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,1.0,na
+467,complex,"SELECT DISTINCT ?place ?placeLabel ?elevation WHERE {
+  ?place wdt:P2044 ?elevation .
+  FILTER(?elevation < 10)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.4346,0.9746
+468,complex,"SELECT ?place ?placeLabel WHERE {
+  ?place wdt:P625 ?location .
+  ?place wdt:P1343 ?source .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+469,complex,"SELECT ?president ?presidentLabel ?birthDate ?startDate ?age WHERE {
+  ?president wdt:P39 wd:Q11696 .
+  ?president p:P39 ?statement .
+  ?statement ps:P39 wd:Q11696 .
+  ?statement pq:P580 ?startDate .
+  ?president wdt:P569 ?birthDate .
+  BIND(FLOOR((YEAR(?startDate) - YEAR(?birthDate)) - IF(MONTH(?startDate) < MONTH(?birthDate) || (MONTH(?startDate) = MONTH(?birthDate) && DAY(?startDate) < DAY(?birthDate)), 1, 0)) AS ?age)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ?startDate",True,True,,0.8562,1.0
+470,complex,"SELECT DISTINCT ?award ?awardLabel WHERE {
+  {
+    wd:Q10132 wdt:P166 ?award .
+  }
+  UNION
+  {
+    wd:Q10132 wdt:P1411 ?award .
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+471,complex,"SELECT ?musician ?musicianLabel ?age WHERE {
+  ?musician wdt:P106 wd:Q639669 .
+  ?musician wdt:P569 ?birth .
+  ?musician wdt:P570 ?death .
+  BIND(YEAR(?death) - YEAR(?birth) AS ?age)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0041,0.0
+472,complex,"SELECT DISTINCT ?center ?centerLabel WHERE {
+  ?center wdt:P31 wd:[entity:clandestine detention center] .
+  ?center wdt:P17 ?country .
+  VALUES ?country { wd:Q77 wd:Q414 wd:Q298 }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",False,False,not_linked,0.0,0.0
+473,complex,"SELECT DISTINCT ?country ?countryLabel WHERE {
+  ?country wdt:P31 wd:Q6256 .
+  ?country wdt:P138 ?person .
+  ?person wdt:P31 wd:Q5 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.3462,0.3462
+474,complex,"SELECT ?winner ?winnerLabel ?image WHERE {
+  ?winner wdt:P166 wd:Q339982 .
+  OPTIONAL { ?winner wdt:P18 ?image . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.4183,0.5556
+475,complex,"SELECT DISTINCT ?state ?stateLabel ?artifact ?artifactLabel ?collection ?collectionLabel WHERE {
+  ?state wdt:P31 wd:Q3024240 .
+  ?state wdt:P17 wd:Q29520 .
+  OPTIONAL {
+    ?artifact wdt:P495 ?state .
+    OPTIONAL { ?artifact wdt:P195 ?collection . }
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+476,complex,"SELECT DISTINCT ?country ?countryLabel ?isoCode ?nativeName WHERE {
+  ?country wdt:P31 wd:Q6256 .
+  ?country wdt:P30 wd:Q46 .
+  ?country wdt:P297 ?isoCode .
+  ?country wdt:P1705 ?nativeName .
+  FILTER(
+    CONTAINS(LCASE(?nativeName), LCASE(SUBSTR(?isoCode, 1, 1))) = false ||
+    CONTAINS(LCASE(?nativeName), LCASE(SUBSTR(?isoCode, 2, 1))) = false
+  )
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+477,complex,"SELECT ?justice ?justiceLabel ?dob WHERE {
+  ?justice wdt:P39 wd:Q20706330 .
+  ?justice p:P39 ?statement .
+  ?statement ps:P39 wd:Q20706330 .
+  FILTER NOT EXISTS { ?statement pq:P582 ?endTime . }
+  OPTIONAL { ?justice wdt:P569 ?dob . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+478,complex,"SELECT ?firstName ?firstNameLabel (COUNT(?person) AS ?count) WHERE {
+  ?person wdt:P19/wdt:P131* wd:Q1152 .
+  ?person wdt:P735 ?firstName .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?firstName ?firstNameLabel
+ORDER BY DESC(?count)
+LIMIT 10",True,True,,0.0,0.0
+479,complex,"SELECT ?material ?materialLabel (COUNT(?painting) AS ?count) WHERE {
+  ?painting wdt:P31 wd:Q3305213 .
+  ?painting wdt:P186 ?material .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?material ?materialLabel
+ORDER BY DESC(?count)
+LIMIT 10",True,True,,0.0286,0.0373
+480,complex,"SELECT DISTINCT ?item ?itemLabel ?inspiredByLabel WHERE {
+  VALUES ?type {
+    wd:Q523
+    wd:Q318
+    wd:Q168845
+    wd:Q42372
+  }
+  ?item wdt:P31 ?type .
+  ?item wdt:P138 ?inspiredBy .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.1527,0.1527
+481,complex,"SELECT ?prop ?propLabel (COUNT(?statement) AS ?count) WHERE {
+  ?item ?p ?statement .
+  ?prop wikibase:claim ?p .
+  ?prop wikibase:qualifier ?pq .
+  ?statement ?pq ?qualifierValue .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?prop ?propLabel
+ORDER BY DESC(?count)
+LIMIT 20",True,False,timeout,0.0,0.0
+482,complex,"SELECT ?country ?countryLabel ?day (COUNT(?election) AS ?count) WHERE {
+  ?election wdt:P31 wd:Q40231 .
+  ?election wdt:P17 ?country .
+  ?election wdt:P585 ?date .
+  BIND(DAY(?date) AS ?day)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?country ?countryLabel ?day
+ORDER BY DESC(?count)",True,True,,0.0,0.0
+483,complex,"SELECT DISTINCT ?church1 ?church1Label ?church2 ?church2Label WHERE {
+  ?church1 wdt:P31 wd:Q16970 .
+  ?church2 wdt:P31 wd:Q16970 .
+  ?church1 wdt:P17 wd:Q145 .
+  ?church2 wdt:P17 wd:Q145 .
+  ?church1 wdt:P197 ?church2 .
+  FILTER(?church1 != ?church2)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,1.0,na
+484,complex,"SELECT ?praenomen ?praenomenLabel (COUNT(?person) AS ?count) WHERE {
+  ?praenomen wdt:P31 wd:Q1240901 .
+  ?person wdt:P2358 ?praenomen .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?praenomen ?praenomenLabel
+ORDER BY DESC(?count)",True,True,,0.5287,0.4564
+485,complex,"SELECT DISTINCT ?artist ?artistLabel WHERE {
+  ?artist wdt:P31 wd:Q5 .
+  ?artist wdt:P106 wd:Q483501 .
+  ?artist wdt:P569 ?dob .
+  ?artist wdt:P735 ?givenName .
+  ?artist wdt:P734 ?familyName .
+  ?givenName rdfs:label ?givenNameLabel .
+  ?familyName rdfs:label ?familyNameLabel .
+  FILTER(LANG(?givenNameLabel) = ""en"")
+  FILTER(LANG(?familyNameLabel) = ""en"")
+  FILTER(STRSTARTS(?givenNameLabel, ""D""))
+  FILTER(STRSTARTS(?familyNameLabel, ""K""))
+  FILTER(YEAR(?dob) >= 1880 && YEAR(?dob) <= 1944)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+486,complex,"SELECT DISTINCT ?landlockedCountry ?landlockedCountryLabel WHERE {
+  ?landlockedCountry wdt:P31 wd:Q123480 .
+  ?landlockedCountry wdt:P47 ?neighbor .
+  ?neighbor wdt:P31 wd:Q6256 .
+  ?neighbor wdt:P47 ?body .
+  ?body wdt:P31/wdt:P279* wd:Q165 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0294,0.0303
+487,complex,"SELECT ?item ?itemLabel ?demonym WHERE {
+  ?item wdt:P1549 ?demonym .
+  ?item wdt:P625 ?coord .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+LIMIT 100",True,True,,0.0005,0.0
+488,complex,"SELECT ?school ?schoolLabel ?students WHERE {
+  ?school wdt:P31 wd:Q2143781 .
+  ?school wdt:P2196 ?students .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY DESC(?students)
+LIMIT 20",True,True,,0.0157,0.0331
+489,complex,"SELECT DISTINCT ?member ?memberLabel WHERE {
+  ?society wdt:P31 wd:Q955824 .
+  ?member wdt:P463 ?society .
+  ?member wdt:P570 ?dod .
+  FILTER(YEAR(?dod) < 1800)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0676,0.0677
+490,complex,"SELECT DISTINCT ?cemetery ?cemeteryLabel ?church ?churchLabel WHERE {
+  ?cemetery wdt:P31 wd:Q39614 .
+  ?cemetery wdt:P17 wd:Q142 .
+  ?cemetery wdt:P47 ?church .
+  ?church wdt:P31 wd:Q16970 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,1.0,na
+491,complex,"SELECT ?work ?workLabel WHERE {
+  ?work wdt:P58 wd:Q710739 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.5597,0.9082
+492,complex,"SELECT DISTINCT ?mp ?mpLabel ?twitterHandle WHERE {
+  ?mp wdt:P39 wd:Q18952564 .
+  ?mp p:P39 ?statement .
+  ?statement ps:P39 wd:Q18952564 .
+  FILTER NOT EXISTS { ?statement pq:P582 ?endTime . }
+  ?mp wdt:P2002 ?twitterHandle .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0057,0.0114
+493,complex,"SELECT ?stageWinner ?stageWinnerLabel ?country ?countryLabel WHERE {
+  ?edition wdt:P31 wd:Q33881.
+  ?edition wdt:P585 ?date.
+  FILTER(YEAR(?date) >= 1903 && YEAR(?date) <= 2022)
+  ?edition wdt:P527 ?stage.
+  ?stage wdt:P1346 ?stageWinner.
+  OPTIONAL {
+    ?stageWinner wdt:P27 ?country.
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ?countryLabel ?stageWinnerLabel",True,True,,1.0,na
+494,complex,"SELECT DISTINCT ?company ?companyLabel ?founder ?founderLabel WHERE {
+  ?company wdt:P17 wd:Q30 .
+  ?company wdt:P31 wd:Q4830453 .
+  ?company wdt:P112 ?founder .
+  {
+    ?founder wdt:P19 ?birthPlace .
+    ?birthPlace wdt:P17 ?birthCountry .
+    FILTER(?birthCountry != wd:Q30)
+  }
+  UNION
+  {
+    ?founder wdt:P22 ?parent .
+    ?parent wdt:P19 ?parentBirthPlace .
+    ?parentBirthPlace wdt:P17 ?parentBirthCountry .
+    FILTER(?parentBirthCountry != wd:Q30)
+  }
+  UNION
+  {
+    ?founder wdt:P25 ?parent .
+    ?parent wdt:P19 ?parentBirthPlace .
+    ?parentBirthPlace wdt:P17 ?parentBirthCountry .
+    FILTER(?parentBirthCountry != wd:Q30)
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+495,complex,"SELECT ?incident ?incidentLabel ?location ?locationLabel ?injured WHERE {
+  ?incident wdt:P31 wd:Q19403959 .
+  OPTIONAL { ?incident wdt:P276 ?location . }
+  OPTIONAL { ?incident wdt:P1339 ?injured . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+496,complex,"SELECT ?winner ?winnerLabel ?picture ?date WHERE {
+  ?winner wdt:P166 wd:Q1131356.
+  OPTIONAL {
+    ?winner p:P166 ?statement.
+    ?statement ps:P166 wd:Q1131356.
+    ?statement pq:P585 ?date.
+  }
+  OPTIONAL { ?winner wdt:P18 ?picture. }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ?date",True,True,,0.9255,0.9444
+497,complex,"SELECT ?lastName ?lastNameLabel (COUNT(?person) AS ?count) WHERE {
+  ?person wdt:P31 wd:Q5 .
+  ?person wdt:P734 ?lastName .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?lastName ?lastNameLabel
+ORDER BY DESC(?count)
+LIMIT 100",True,True,,1.0,1.0
+498,complex,"SELECT ?event ?eventLabel ?date WHERE {
+  {
+    wd:Q1512 wdt:P569 ?date .
+    BIND(""birth"" AS ?eventLabel)
+  } UNION {
+    wd:Q1512 wdt:P570 ?date .
+    BIND(""death"" AS ?eventLabel)
+  } UNION {
+    wd:Q1512 wdt:P793 ?event .
+    OPTIONAL { ?event wdt:P585 ?date . }
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,na
+499,complex,"SELECT DISTINCT ?artwork ?artworkLabel WHERE {
+  ?artwork wdt:P31 wd:[entity:work of art] .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",False,False,not_linked,0.0,0.0
+500,complex,"SELECT ?composer ?composerLabel (COUNT(DISTINCT ?film) AS ?filmCount) WHERE {
+  ?film wdt:P31 wd:Q11424.
+  ?film wdt:P86 ?composer.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?composer ?composerLabel
+HAVING (COUNT(DISTINCT ?film) > 100)
+ORDER BY DESC(?filmCount)",True,True,,0.6582,0.9826
+501,complex,"SELECT DISTINCT ?person ?personLabel WHERE {
+  ?person wdt:P39 wd:Q18952564 .
+  ?person wdt:P1038 ?ancestor .
+  ?ancestor wdt:P31 wd:Q4271324 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+502,complex,"SELECT DISTINCT ?property WHERE {
+  ?property wdt:P1629 wd:Q580922 .
+}",True,True,,1.0,na
+503,complex,"SELECT ?institution ?institutionLabel (COUNT(DISTINCT ?senator) AS ?count) WHERE {
+  ?senator wdt:P39 wd:Q4416090 .
+  ?senator wdt:P69 ?institution .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"" . }
+}
+GROUP BY ?institution ?institutionLabel
+ORDER BY DESC(?count)
+LIMIT 20",True,True,,0.0327,0.0188
+504,complex,"SELECT DISTINCT ?author ?authorLabel WHERE {
+  ?paper wdt:P50 wd:Q173746 .
+  ?paper wdt:P50 ?author .
+  FILTER(?author != wd:Q173746)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+505,complex,"SELECT DISTINCT ?person ?personLabel WHERE {
+  ?person wdt:P21 wd:Q6581072 .
+  {
+    ?person wdt:P106 wd:Q5716684 .
+  } UNION {
+    ?person wdt:P106 wd:Q2490358 .
+  }
+  ?enArticle schema:about ?person ;
+             schema:isPartOf <https://en.wikipedia.org/> .
+  FILTER NOT EXISTS {
+    ?frArticle schema:about ?person ;
+               schema:isPartOf <https://fr.wikipedia.org/> .
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+506,complex,"SELECT DISTINCT ?university ?universityLabel WHERE {
+  ?ambassador wdt:P39 ?position .
+  ?position wdt:P279* wd:Q18115939 .
+  ?ambassador wdt:P69 ?university .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+507,complex,"SELECT ?lighthouse ?lighthouseLabel ?coordinates WHERE {
+  ?lighthouse wdt:P31 wd:Q39715 .
+  ?lighthouse wdt:P625 ?coordinates .
+  ?lighthouse wdt:P17 ?country .
+  ?country wdt:P30 wd:Q18 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+508,complex,"SELECT DISTINCT ?language ?languageLabel WHERE {
+  ?lexeme1 dct:language ?language .
+  ?lexeme2 dct:language ?language .
+  ?lexeme1 wikibase:lemma ?lemma .
+  ?lexeme2 wikibase:lemma ?lemma .
+  FILTER(?lexeme1 != ?lexeme2)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+509,complex,"SELECT ?episode ?episodeLabel ?subject ?subjectLabel WHERE {
+  ?episode wdt:P179 wd:Q3577037 .
+  ?episode wdt:P31 wd:Q21191270 .
+  ?episode wdt:P921 ?subject .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.7489,0.9763
+510,complex,"SELECT ?person ?personLabel ?birthYear ?deathYear ?birthPlaceLabel ?deathPlaceLabel WHERE {
+  ?person wdt:P31 wd:Q5 .
+  ?person wdt:P569 ?birthDate .
+  ?person wdt:P570 ?deathDate .
+  ?person wdt:P19 ?birthPlace .
+  ?person wdt:P20 ?deathPlace .
+  BIND(YEAR(?birthDate) AS ?birthYear)
+  BIND(YEAR(?deathDate) AS ?deathYear)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+LIMIT 100",True,True,,0.0025,0.0
+511,complex,"SELECT ?place1 ?place1Label ?coord1 ?place2 ?place2Label ?coord2 ?line WHERE {
+  ?place1 wdt:P31 wd:Q484170 .
+  ?place2 wdt:P31 wd:Q484170 .
+  ?place1 rdfs:label ?name .
+  ?place2 rdfs:label ?name .
+  FILTER(?place1 != ?place2)
+  ?place1 wdt:P625 ?coord1 .
+  ?place2 wdt:P625 ?coord2 .
+  FILTER(?place1 < ?place2)
+  BIND(CONCAT(""LINESTRING("", 
+    STR(?coord1), "","", STR(?coord2), "")"") AS ?lineWKT)
+  BIND(STRDT(CONCAT(""LINESTRING("", 
+    STRAFTER(STRBEFORE(STR(?coord1),"")""),""(""), "","", 
+    STRAFTER(STRBEFORE(STR(?coord2),"")""),""(""), "")""), 
+    geo:wktLiteral) AS ?line)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en,fr"". }
+}",True,False,result_too_large,0.0,0.0
+512,complex,"SELECT ?place ?placeLabel ?englishName ?welshName ?coord WHERE {
+  ?place wdt:P1448 ?englishName .
+  FILTER(LANG(?englishName) = ""en"")
+  ?place wdt:P1448 ?welshName .
+  FILTER(LANG(?welshName) = ""cy"")
+  ?place wdt:P625 ?coord .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+513,complex,"SELECT ?property ?propertyLabel (COUNT(?item) AS ?count) WHERE {
+  ?item wdt:P31 wd:Q4006 .
+  ?item ?p ?value .
+  ?property wikibase:directClaim ?p .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"" . }
+}
+GROUP BY ?property ?propertyLabel
+ORDER BY DESC(?count)
+LIMIT 20",True,True,,0.0,na
+514,complex,"SELECT ?museum ?museumLabel ?location WHERE {
+  ?museum wdt:P31 wd:Q33506 .
+  ?museum wdt:P625 ?location .
+  SERVICE wikibase:around {
+    ?museum wdt:P625 ?location .
+    bd:serviceParam wikibase:center ""Point(0 0)""^^geo:wktLiteral .
+    bd:serviceParam wikibase:radius ""20"" .
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"" . }
+}",True,False,http_500,0.0,0.0
+515,complex,"SELECT DISTINCT ?person ?personLabel WHERE {
+  ?person wdt:P69 wd:Q185246 .
+  ?person wdt:P31 wd:Q5 .
+  FILTER NOT EXISTS { ?person wdt:P18 ?image . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+516,complex,"SELECT ?place ?placeLabel WHERE {
+  SERVICE wikibase:around {
+    ?place wdt:P625 ?location.
+    bd:serviceParam wikibase:center ""Point(2.29 48.87)""^^geo:wktLiteral.
+    bd:serviceParam wikibase:radius ""1"".
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,False,http_500,0.0,0.0
+517,complex,"SELECT ?language ?languageLabel WHERE {
+  wd:Q142 wdt:P2936 ?language .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+518,complex,"SELECT ?hillfort ?hillfortLabel ?coord WHERE {
+  ?hillfort wdt:P31 wd:Q744099 .
+  ?hillfort wdt:P17 wd:Q145 .
+  ?hillfort wdt:P3311 ?plan .
+  ?hillfort wdt:P625 ?coord .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+519,complex,"SELECT ?country ?countryLabel (COUNT(DISTINCT ?person) AS ?count) WHERE {
+  ?person wdt:P31 wd:Q5 .
+  ?person wdt:P27 ?country .
+  ?person wdt:P735 ?givenName .
+  ?givenName rdfs:label ?givenNameLabel .
+  FILTER(LANG(?givenNameLabel) = ""en"")
+  FILTER(STRSTARTS(?givenNameLabel, ""X"") || STRSTARTS(?givenNameLabel, ""Q""))
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?country ?countryLabel
+ORDER BY DESC(?count)
+LIMIT 20",True,True,,0.0,0.0
+520,complex,"SELECT ?person ?personLabel WHERE {
+  ?person wdt:P31 wd:Q5 .
+  ?person wdt:P21 wd:Q6581072 .
+  ?person wdt:P19 ?place .
+  ?place wdt:P17 wd:Q145 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"" . }
+}",True,True,,0.9967,0.9967
+521,complex,"SELECT ?facility ?facilityLabel ?type ?typeLabel ?coord ?rgb WHERE {
+  ?facility wdt:P131 wd:Q1546240 .
+  ?facility wdt:P31 ?type .
+  ?facility wdt:P625 ?coord .
+  VALUES ?type {
+    wd:Q16917
+    wd:Q1774898
+    wd:Q13107184
+    wd:Q86206293
+  }
+  BIND(
+    IF(?type = wd:Q16917, ""FF0000"",
+    IF(?type = wd:Q1774898, ""00FF00"",
+    IF(?type = wd:Q13107184, ""0000FF"",
+    ""FFFF00""))) AS ?rgb
+  )
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,na
+522,complex,"SELECT DISTINCT ?person ?personLabel ?deathDate WHERE {
+  ?person wdt:P119 wd:Q311 .
+  ?person wdt:P570 ?deathDate .
+  FILTER(YEAR(?deathDate) >= 1800 && YEAR(?deathDate) <= 1849)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ?deathDate",True,True,,0.0492,0.0787
+523,complex,"SELECT DISTINCT ?politician ?politicianLabel ?age WHERE {
+  ?politician wdt:P31 wd:Q5 .
+  ?politician wdt:P27 wd:Q38 .
+  ?politician wdt:P106 wd:Q82955 .
+  ?politician wdt:P39 ?position .
+  ?position wdt:P279* wd:Q83307 .
+  ?politician wdt:P569 ?dob .
+  BIND(YEAR(NOW()) - YEAR(?dob) AS ?age)
+  FILTER(?age >= 50 && ?age <= 80)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+524,complex,"SELECT ?president ?presidentLabel ?start WHERE {
+  ?president wdt:P39 wd:Q11696 .
+  ?president p:P39 ?statement .
+  ?statement ps:P39 wd:Q11696 .
+  ?statement pq:P580 ?start .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ?start",True,True,,0.2523,0.234
+525,complex,"SELECT ?image WHERE {
+  wd:[entity:Jean Fusoris] wdt:P18 ?image .
+}",False,False,not_linked,0.0,0.0
+526,complex,"SELECT ?genderLabel (COUNT(DISTINCT ?person) AS ?count) WHERE {
+  ?person wdt:P166 ?award .
+  ?award wdt:P31/wdt:P279* wd:Q1792571 .
+  ?person wdt:P21 ?gender .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?genderLabel",True,True,,0.0,0.0
+527,complex,"SELECT ?area ?areaLabel ?percentage ?coord WHERE {
+  ?area wdt:P31 wd:[entity:principal area of Wales] .
+  ?area wdt:P625 ?coord .
+  ?area p:[property:speakers of Welsh] ?statement .
+  ?statement ps:[property:speakers of Welsh] ?percentage .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",False,False,not_linked,0.0,0.0
+528,complex,"SELECT ?language ?languageLabel ?place ?placeLabel WHERE {
+  ?language wdt:P31 wd:Q34770 .
+  ?language wdt:P17 ?place .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+529,complex,"SELECT ?streetLabel (COUNT(?street) AS ?count) WHERE {
+  ?street wdt:P31 wd:Q79007 .
+  ?street wdt:P131 ?admin .
+  ?admin wdt:P131* wd:Q64 .
+  ?street rdfs:label ?streetLabel .
+  FILTER(LANG(?streetLabel) = ""de"")
+}
+GROUP BY ?streetLabel
+HAVING(COUNT(?street) > 1)
+ORDER BY DESC(?count)",True,True,,0.0,na
+530,complex,"SELECT DISTINCT ?person ?personLabel ?dob WHERE {
+  ?person wdt:P31 wd:Q5 ;
+          wdt:P569 ?dob .
+  ?person wdt:[property:sitelinks] ?sitelinks .
+  FILTER(MONTH(?dob) = 1)
+  BIND(YEAR(?dob) AS ?year)
+  FILTER((?year % 4 = 0 && ?year % 100 != 0) || (?year % 400 = 0))
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+LIMIT 100",False,False,not_linked,0.0,0.0
+531,complex,"SELECT DISTINCT ?author ?authorLabel WHERE {
+  ?author wdt:P108 wd:Q1138080 .
+  ?author wdt:P106 wd:Q482980 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+532,complex,"SELECT ?monarch ?monarchLabel ?placeOfDeath ?placeOfDeathLabel ?dateOfDeath WHERE {
+  ?monarch wdt:P39 wd:Q18341329 .
+  OPTIONAL { ?monarch wdt:P20 ?placeOfDeath . }
+  OPTIONAL { ?monarch wdt:P570 ?dateOfDeath . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.3986,0.4779
+533,complex,"SELECT ?taxon ?taxonLabel WHERE {
+  wd:Q15314291 wdt:P171* ?taxon .
+  wd:Q1345646 wdt:P171* ?taxon .
+  ?taxon wdt:P31 wd:Q16521 .
+  FILTER NOT EXISTS {
+    ?subtaxon wdt:P171 ?taxon .
+    wd:Q15314291 wdt:P171* ?subtaxon .
+    wd:Q1345646 wdt:P171* ?subtaxon .
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+534,complex,"SELECT ?part ?partLabel WHERE {
+  ?pathway wdt:P2410 ""WP28"" .
+  ?pathway wdt:P527 ?part .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"" . }
+}",True,True,,0.0,0.0
+535,complex,"SELECT ?poem ?poemLabel ?date WHERE {
+  ?poem wdt:P31 wd:Q5185279 .
+  ?poem wdt:P50 wd:Q7241 .
+  OPTIONAL { ?poem wdt:P577 ?date . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ?date",True,True,,1.0,na
+536,complex,"SELECT ?restaurant ?restaurantLabel ?coord WHERE {
+  ?restaurant wdt:P31 wd:Q11707 .
+  ?restaurant wdt:P17 wd:Q39 .
+  ?restaurant wdt:[property:Michelin Guide star rating] ?rating .
+  ?restaurant wdt:P625 ?coord .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",False,False,not_linked,0.0,0.0
+537,complex,"SELECT DISTINCT ?economist ?economistLabel ?birthplace ?birthplaceLabel WHERE {
+  ?economist wdt:P106 wd:Q188094 .
+  ?economist wdt:P19 ?birthplace .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.3052,0.355
+538,complex,"SELECT DISTINCT ?person ?personLabel ?deathDate WHERE {
+  ?person wdt:P31 wd:Q5 ;
+          wdt:P570 ?deathDate ;
+          wdt:[property:sitelinks] ?sitelinks .
+  FILTER(?deathDate >= ""1969-01-01T00:00:00Z""^^xsd:dateTime && ?deathDate < ""1971-01-01T00:00:00Z""^^xsd:dateTime)
+  FILTER(?sitelinks > 50)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY DESC(?sitelinks)
+LIMIT 100",False,False,not_linked,0.0,0.0
+539,complex,"SELECT ?head ?headLabel ?startTime ?endTime ?duration WHERE {
+  ?head wdt:P39 ?position .
+  ?position wdt:P1001 wd:Q142 .
+  ?head p:P39 ?statement .
+  ?statement pq:P580 ?startTime .
+  ?statement pq:P582 ?endTime .
+  ?position wdt:P31 wd:Q2285706 .
+  BIND(?endTime - ?startTime AS ?duration)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY DESC(?duration)
+LIMIT 10",True,True,,0.0,0.0
+540,complex,"SELECT ?tramway ?tramwayLabel ?coord WHERE {
+  ?tramway wdt:P31 wd:Q15145593 .
+  ?tramway wdt:P17 wd:Q142 .
+  ?tramway wdt:P625 ?coord .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+541,complex,"SELECT ?opening ?openingLabel ?sitelinks WHERE {
+  ?opening wdt:P31 wd:Q103632 .
+  ?opening wikibase:sitelinks ?sitelinks .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY DESC(?sitelinks)
+LIMIT 20",True,True,,1.0,na
+542,complex,"SELECT ?country ?countryLabel ?painting ?paintingLabel ?sitelinks WHERE {
+  {
+    SELECT ?country (MAX(?sl) AS ?maxSitelinks) WHERE {
+      ?painting wdt:P31 wd:Q3305213 .
+      ?painting wdt:P495 ?country .
+      ?painting wikibase:sitelinks ?sl .
+    }
+    GROUP BY ?country
+  }
+  ?painting wdt:P31 wd:Q3305213 .
+  ?painting wdt:P495 ?country .
+  ?painting wikibase:sitelinks ?sitelinks .
+  FILTER(?sitelinks = ?maxSitelinks)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ?countryLabel",True,True,,1.0,na
+543,complex,"SELECT DISTINCT ?person ?personLabel WHERE {
+  ?person wdt:P31 wd:Q5 .
+  ?person wdt:P21 wd:Q6581072 .
+  ?person wdt:P27 wd:Q258 .
+  ?article schema:about ?person ;
+           schema:isPartOf <https://en.wikipedia.org/> .
+  FILTER NOT EXISTS {
+    ?quote schema:about ?person ;
+           schema:isPartOf <https://en.wikiquote.org/> .
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.3991,0.8646
+544,complex,"SELECT ?place ?placeLabel WHERE {
+  ?place wdt:P31/wdt:P279* wd:Q294440 .
+  ?place wdt:P641 wd:Q3930 .
+  ?place wdt:P625 ?location .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"" . }
+}",True,True,,0.0,0.0
+545,complex,"SELECT DISTINCT ?movie ?movieLabel ?youtubeVideo WHERE {
+  ?movie wdt:P31 wd:Q11424 .
+  ?movie wdt:P1651 ?youtubeVideo .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.483,0.517
+546,complex,"SELECT ?concept ?conceptLabel (COUNT(DISTINCT ?lexeme) AS ?count) WHERE {
+  ?sense wdt:P5137 ?concept .
+  ?lexeme wdt:P5137 ?sense .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?concept ?conceptLabel
+ORDER BY DESC(?count)
+LIMIT 100",True,True,,0.0,0.0
+547,complex,"SELECT ?moon ?moonLabel ?namesake ?namesakeLabel WHERE {
+  ?moon wdt:P31 wd:Q2537 .
+  ?moon wdt:P397 ?planet .
+  ?planet wdt:P31 wd:Q634 .
+  ?planet wdt:P361 wd:Q544 .
+  ?moon wdt:P138 ?namesake .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+548,complex,"SELECT ?monument ?person WHERE {
+  ?monument wdt:P31/wdt:P279* wd:Q4989906 .
+  ?monument wdt:P138 ?person .
+  ?person wdt:P31 wd:Q5 .
+  FILTER NOT EXISTS {
+    ?monument ?prop ?person .
+    FILTER(?prop != wdt:P138)
+  }
+}",True,False,http_500,0.0,0.0
+549,complex,"SELECT ?language ?languageLabel WHERE {
+  wd:Q55 wdt:P2936 ?language .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+550,complex,"SELECT DISTINCT ?party ?partyLabel WHERE {
+  ?person p:P39 ?statement .
+  ?statement ps:P39 wd:Q41582615 .
+  ?person wdt:P102 ?party .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.25,0.44
+551,complex,"SELECT ?language ?languageLabel ?followers WHERE {
+  ?language wdt:P31 wd:Q9143 .
+  ?language p:P2002 ?statement .
+  ?statement pq:P8687 ?followers .
+  ?statement pq:P585 ?date .
+  FILTER NOT EXISTS {
+    ?language p:P2002 ?statement2 .
+    ?statement2 pq:P8687 ?followers2 .
+    ?statement2 pq:P585 ?date2 .
+    FILTER(?date2 > ?date)
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,1.0,na
+552,complex,"SELECT DISTINCT ?language ?languageCode WHERE {
+  ?lexeme wikibase:lemma ?lemma .
+  BIND(LANG(?lemma) AS ?languageCode)
+  OPTIONAL {
+    ?language wdt:P424 ?languageCode .
+  }
+}
+ORDER BY ?languageCode",True,True,,0.0,0.0
+553,complex,"SELECT DISTINCT ?type ?typeLabel WHERE {
+  ?item wdt:P195 wd:Q636400 .
+  ?item wdt:P31 ?type .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+554,complex,"SELECT ?item ?itemLabel ?diameter ?time WHERE {
+  ?item wdt:P31 wd:Q164992 .
+  ?item wdt:P2386 ?diameter .
+  ?item wdt:P571 ?time .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"" . }
+}
+ORDER BY ?time",True,True,,0.1257,0.0
+555,complex,"SELECT (COUNT(DISTINCT ?alphabet) AS ?count) WHERE {
+  ?alphabet wdt:P31 wd:Q9779 .
+}",True,True,,0.0,na
+556,complex,"SELECT DISTINCT ?descendant ?descendantLabel WHERE {
+  ?descendant wdt:P53 wd:Q13527812 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+557,complex,"SELECT ?firstName ?firstNameLabel (COUNT(?mp) AS ?count) WHERE {
+  ?mp wdt:P39 ?position .
+  ?position wdt:P31 wd:Q193582 .
+  ?mp p:P39 ?statement .
+  ?statement ps:P39 wd:Q3044918 .
+  FILTER NOT EXISTS { ?statement pq:P582 ?end . }
+  ?mp wdt:P735 ?firstName .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?firstName ?firstNameLabel
+ORDER BY DESC(?count)
+LIMIT 20",True,True,,0.0,na
+558,complex,"SELECT ?work ?workLabel ?pubDate WHERE {
+  ?work wdt:P50 wd:Q9068 .
+  OPTIONAL { ?work wdt:P577 ?pubDate . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.067,0.0
+559,complex,"SELECT ?birthDate ?deathDate WHERE {
+  wd:Q9711 wdt:P569 ?birthDate.
+  wd:Q9711 wdt:P570 ?deathDate.
+}",True,True,,0.0526,na
+560,complex,"SELECT DISTINCT ?property ?propertyLabel WHERE {
+  ?property wdt:P31 wd:Q18616576 .
+  ?property wdt:P1629 wd:Q235557 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,na
+561,complex,"SELECT ?lang (COUNT(?article) AS ?count) WHERE {
+  ?film wdt:P31 wd:Q11424 .
+  ?article schema:about ?film ;
+           schema:inLanguage ?lang ;
+           schema:isPartOf ?site .
+  FILTER(CONTAINS(STR(?site), ""wikipedia.org""))
+}
+GROUP BY ?lang
+ORDER BY DESC(?count)
+LIMIT 10",True,True,,0.0,na
+562,complex,"SELECT ?topic ?topicLabel WHERE {
+  ?article schema:about ?topic ;
+           schema:isPartOf <https://en.wikipedia.org/> ;
+           schema:mentions wd:Q213439 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,1.0,na
+563,complex,"SELECT ?city ?cityLabel ?population WHERE {
+  ?city wdt:P31 wd:Q515 .
+  ?city wdt:P17 wd:Q183 .
+  ?city wdt:P1082 ?population .
+  FILTER(?population > 50000)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY DESC(?population)",True,True,,0.0442,0.1117
+564,complex,"SELECT ?country ?countryLabel ?isoCode ?flag ?fertilityRate WHERE {
+  ?country wdt:P31 wd:Q6256 .
+  OPTIONAL { ?country wdt:P298 ?isoCode . }
+  OPTIONAL { ?country wdt:P41 ?flag . }
+  OPTIONAL { ?country wdt:P4841 ?fertilityRate . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0,0.0
+565,complex,"SELECT ?type ?typeLabel (COUNT(?work) AS ?count) WHERE {
+  ?work wdt:P31 ?type .
+  ?type wdt:P279* wd:Q7725634 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?type ?typeLabel
+ORDER BY DESC(?count)",True,True,,0.1152,0.0741
+566,complex,"SELECT ?decade ?placeLabel (COUNT(?person) AS ?count) WHERE {
+  ?person wdt:P166 ?award .
+  ?award wdt:P31/wdt:P279* wd:Q7191 .
+  ?person wdt:P19 ?place .
+  ?person wdt:P569 ?dob .
+  BIND(FLOOR(YEAR(?dob)/10)*10 AS ?decade)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?decade ?placeLabel
+ORDER BY ?decade",True,True,,0.0,na

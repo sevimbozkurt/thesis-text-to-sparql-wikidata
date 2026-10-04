@@ -1,0 +1,31 @@
+case,orig_index,complexity,author,second_annotator,second_choice,note,agree
+1,188,medium,structure,structure,,"missing the subclass closure, plain P31 used instead of P31/P279*",1
+2,12,simple,structure,structure,,Uses P31/P407/P1957 instead of the badge model the reference relies on.,1
+3,57,medium,wrong_property,wrong_property,wrong_entity,"Manner of death P1196 (too general, e.g. Accident) instead of cause of death P509.",1
+4,439,complex,structure,structure,,"Same property and entities as the reference, just missing the P279* subclass closure on P31.",1
+5,324,complex,structure,structure,,"Missing the type check entirely (wdt:P31/wdt:P279? For hillfort), generated query just grabs anything with an atlas ID.",1
+6,8,simple,execution,execution,,Fails with result_too_large.,1
+7,169,medium,execution,execution,,There's leftover prose and a second query appended after it.,1
+8,233,medium,near_miss,near_miss,,"Projects the birthplace instead of the person, gold and generated return different columns even though the properties match.",1
+9,65,medium,wrong_property,structure,wrong_property,"Missing the software-type check entirely (P31/P279*), and also uses the wrong property (P178 developer instead of P361).",0
+10,489,complex,structure,structure,,"Property and entities all match, just missing the P279? Subclass closure on the society's P31 check.",1
+11,422,complex,structure,structure,benchmark_noise,"Reference groups by gender instead of filtering to male, not sure this even answers the question as asked.",1
+12,126,medium,structure,benchmark_noise,structure,Reference has no country constraint at all even though the question specifically asks for Czech buildings.,0
+13,332,complex,structure,benchmark_noise,,"Reference never restricts to poems at all just anything with a first line, and returns a language-grouped count instead of listing poems with their line.",0
+14,477,complex,wrong_entity,structure,wrong_entity,"Q20706330 is the correct parent class but used without the P279* closure, so it probably matches nobody.",0
+15,55,medium,structure,benchmark_noise,near_miss,"Reference returns a count grouped by type instead of listing the items themselves, so it's answering with different columns than what the question asks for.",0
+16,400,complex,structure,structure,wrong_property,"Generated turns ""grouped by century"" into a literal COUNT/GROUP BY, losing the individual listing the question asks for with ""list all"".",1
+17,155,medium,unresolved,unresolved,,"Both entity mentions never got linked to a Wikidata ID, the query still has literal [entity:…] placeholders in it.",1
+18,296,complex,structure,benchmark_noise,,"Reference computes female/noble as flags but never filters on them; returns every statue, not just women/nobles.",0
+19,329,complex,unresolved,unresolved,,"The expedition entity never got linked, still shows as a literal [entity:…] placeholder in the query.",1
+20,268,complex,structure,structure,,Missing subclass closure in two places: treats Q28803 as one fixed sandwich and only excludes bread by exact match.,1
+21,32,simple,triple_flip,structure,wrong_entity,"Treats ""Wikidata"" as the entity Q2013 instead of the literal string the reference searches for, not fixable by just swapping the entity.",0
+22,205,medium,near_miss,near_miss,,"Same relation and values as reference (P54/P19/P625), but generated projects the birthplace instead of the player.",1
+23,487,complex,structure,structure,,"Reference needs the lexeme model since the question asks for words, generated just uses a plain item property instead.",1
+24,337,complex,wrong_property,wrong_property,wrong_entity,P1595 tied to one specific entity instead of reference's open-ended check on P4478 for any accusation.,1
+25,271,complex,structure,wrong_property,structure,"Uses location (P276) instead of the software/platform property (P2283) the reference uses for ""environment""",0
+26,3,simple,near_miss,near_miss,,Same properties throughout but reference selects the label string while generated selects the entity URI.,1
+27,14,simple,benchmark_noise,benchmark_noise,,"Reference selects the P31 class value instead of weight, with no ORDER BY or LIMIT, so it doesn't answer ""top 20 by weight"" at all.",1
+28,85,medium,near_miss,near_miss,,"Reference returns the person plus coordinate, generated returns the birthplace entity itself.",1
+29,434,complex,near_miss,near_miss,,"Generated selects the anchor person instead of the entity that's actually both parent and child (?other), even though the relation logic itself matches.",1
+30,453,complex,near_miss,structure,benchmark_noise,"Generated makes source optional when the question requires it as part of the answer, not fixable by swapping one property.",0

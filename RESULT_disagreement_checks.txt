@@ -1,0 +1,47 @@
+==============================================================================
+MECHANICAL CHECKS ON THE QUERY TEXT
+==============================================================================
+  [HOLDS    ] row 532: ?PoD is bound but never projected
+              SELECT projects: ['DOD', 'coords', 'coordsLabel', 'item', 'itemLabel', 'layer']
+  [HOLDS    ] row 420: LIMIT present and no ORDER BY anywhere
+              LIMIT=True  ORDER BY=False
+  [HOLDS    ] row 420: P571 (inception) sits inside an OPTIONAL
+  [HOLDS    ] row 547: P2244 (periapsis) is required, not optional
+  [HOLDS    ] row 361: coordinates come from P19 (place of birth), not the cemetery
+  [HOLDS    ] row 361: ?layer is bound from P569 (date of birth), not from birthplace
+  [HOLDS    ] row 361: a burial-plot qualifier (P965) is required
+
+  row 382 UNION branches as written:
+              ?software wdt:P31/wdt:P279* wd:Q5500964.
+              ?software wdt:P275/wdt:P279* wd:Q1156659.
+  [HOLDS    ] row 382: both branches constrain licensing/redistribution, neither a research class
+              Q5500964 and Q1156659 resolved below
+  [HOLDS    ] row 382: the two branches are joined by UNION, not by conjunction
+  [HOLDS    ] row 302: no P31/P279 anywhere, so nothing requires an ART collection
+  [HOLDS    ] row 134: the only P31 constrains ?bidea (the layer), not the projected entity
+              projected: ['Donejakue_bidea', 'Donejakue_bideaLabel', 'koordenatuak', 'layerLabel']
+  [HOLDS    ] row 424: GROUP BY is on ?occupationLabel, not on the occupation item
+  [HOLDS    ] row 167: no VOC/WIC entity appears; the only filter is a URL substring
+              entities referenced: []
+
+==============================================================================
+EXECUTED: what the disputed queries actually return
+==============================================================================
+
+  row 286: 167 rows, columns = ['depicted', 'depictedLabel', 'ashcount', 'ashexample', 'ashexampleLabel', 'clevcount', 'clevexample', 'clevexampleLabel']
+      depicted=http://www.wikidata.org/entity/Q10884 | ashcount=3 | ashexample=http://www.wikidata.org/entity/Q19863050 | clevcount=276 | clevexample=http:/
+      depicted=http://www.wikidata.org/entity/Q42891 | ashcount=68 | ashexample=http://www.wikidata.org/entity/Q50814347 | clevcount=97 | clevexample=http:/
+      depicted=http://www.wikidata.org/entity/Q345 | ashcount=26 | ashexample=ttp://www.wikidata.org/entity/Q118675973 | clevcount=71 | clevexample=ttp://ww
+      depicted=http://www.wikidata.org/entity/Q8502 | ashcount=1 | ashexample=http://www.wikidata.org/entity/Q50818196 | clevcount=89 | clevexample=http://w
+
+  row 361: 5202 rows, columns = ['article', 'person', 'personLabel', 'picGrave', 'coord', 'bd', 'graveplot2', 'layer']
+      article=//fr.wikipedia.org/wiki/Abbas_Gharabaghi | person=http://www.wikidata.org/entity/Q2026063 | picGrave=0Division%2019%20-%20Gharabaghi%2001.jpg 
+      article=/fr.wikipedia.org/wiki/Abdelghani_Bousta | person=http://www.wikidata.org/entity/Q2821019 | picGrave=0grave%20in%20Paris%2C%20July%202011.jpg 
+      article=/fr.wikipedia.org/wiki/Abdelhalim_Hemche | person=http://www.wikidata.org/entity/Q2821040 | picGrave=20-%20Division%204%20-%20Hemche%2001.jpg 
+      article=kipedia.org/wiki/Abdul_Rahman_Ghassemlou | person=http://www.wikidata.org/entity/Q317403 | picGrave=e%20Dr%20Abdul%20Rahman%20Ghassemlou.jpg |
+
+  row 382: 5135 rows, columns = ['software', 'softwareLabel', 'field', 'fieldLabel']
+      software=ttp://www.wikidata.org/entity/Q100364318 | field=ttp://www.wikidata.org/entity/Q102338867
+      software=ttp://www.wikidata.org/entity/Q100364318 | field=http://www.wikidata.org/entity/Q827792
+      software=http://www.wikidata.org/entity/Q1007056 | field=http://www.wikidata.org/entity/Q2544432
+      software=http://www.wikidata.org/entity/Q1007056 | field=http://www.wikidata.org/entity/Q2544432

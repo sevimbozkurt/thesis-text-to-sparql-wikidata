@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\caption{Decomposition of the 66.5-point gap, with Wilson intervals.}
+\label{tab:app-gap}
+\resizebox{\ifdim\width>\textwidth\textwidth\else\width\fi}{!}{%
+\begin{tabular}{@{}lrrrrrrrrr@{}}
+\toprule
+run & group & n & sample\_n & share\_pct & ci\_low\_pct & ci\_high\_pct & points\_of\_gap & points\_ci\_low & points\_ci\_high \\ \midrule
+reported (clean-pool) run & structural & 15 & 30 & 50.0 & 33.2 & 66.8 & 33.2 & 22.0 & 44.5 \\
+reported (clean-pool) run & projection & 6 & 30 & 20.0 & 9.5 & 37.3 & 13.3 & 6.3 & 24.8 \\
+reported (clean-pool) run & identifier & 6 & 30 & 20.0 & 9.5 & 37.3 & 13.3 & 6.3 & 24.8 \\
+reported (clean-pool) run & other & 3 & 30 & 10.0 & 3.5 & 25.6 & 6.7 & 2.3 & 17.0 \\
+pre-repair run (supporting) & structural & 15 & 30 & 50.0 & 33.2 & 66.8 & 33.2 & 22.0 & 44.5 \\
+pre-repair run (supporting) & projection & 4 & 30 & 13.3 & 5.3 & 29.7 & 8.9 & 3.5 & 19.7 \\
+pre-repair run (supporting) & identifier & 9 & 30 & 30.0 & 16.7 & 47.9 & 19.9 & 11.1 & 31.8 \\
+pre-repair run (supporting) & other & 2 & 30 & 6.7 & 1.8 & 21.3 & 4.4 & 1.2 & 14.2 \\
+\bottomrule
+\end{tabular}}
+\tabnote{Shares count failing rows rather than shares of the accuracy deficit. Intervals are wide and should be quoted with the point estimates.}
+\end{table}

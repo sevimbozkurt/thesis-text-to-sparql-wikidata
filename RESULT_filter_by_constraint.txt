@@ -1,0 +1,60 @@
+========================================================================
+R4 stage 1 — is a domain filter safe enough to build?   policy: all
+========================================================================
+  ambiguous property mentions examined     1132
+  mean candidates before filtering         4.39
+  mean candidates after filtering          3.02
+  mentions where the filter removed anything 903  (79.8 %)
+  mentions the filter left untouched       229
+  mentions skipped: no type evidence at all 41  (rows with no gold entity; a filter must abstain)
+
+  RECALL when the filter fires             835/903 = 92.5 %  [90.6, 94.0]
+  filter left exactly one candidate        197  (21.8 % of firings)
+
+  gold property DESTROYED on 68 mentions
+     row    40  property constraint                gold P2302     2 -> 1
+     row    40  class                              gold P2308     7 -> 2
+     row    40  relation                           gold P2309     7 -> 4
+     row    59  author                             gold P50       7 -> 3
+     row    74  published in                       gold P1433     3 -> 0
+     row    85  given name                         gold P735      3 -> 1
+     row    98  signature                          gold P109      7 -> 1
+     row   107  formatter URL                      gold P1630     6 -> 0
+     row   108  director                           gold P57       7 -> 3
+     row   118  manufacturer                       gold P176      3 -> 2
+     row   120  given name                         gold P735      3 -> 1
+     row   150  creator                            gold P170      7 -> 2
+     row   160  position held                      gold P39       5 -> 1
+     row   168  director                           gold P57       7 -> 3
+     row   186  creator                            gold P170      7 -> 2
+     ... and 53 more
+
+READING
+  The filter is NOT safe. It destroys the correct property on a
+  measurable share of the mentions where it acts, and a filter's
+  removals cannot be recovered by later reasoning.
+
+========================================================================
+R4 stage 1 — is a domain filter safe enough to build?   policy: mandatory
+========================================================================
+  ambiguous property mentions examined     1132
+  mean candidates before filtering         4.39
+  mean candidates after filtering          3.87
+  mentions where the filter removed anything 588  (51.9 %)
+  mentions the filter left untouched       544
+  mentions skipped: no type evidence at all 41  (rows with no gold entity; a filter must abstain)
+
+  RECALL when the filter fires             583/588 = 99.1 %  [98.0, 99.6]
+  filter left exactly one candidate        3  (0.5 % of firings)
+
+  gold property DESTROYED on 5 mentions
+     row    40  property constraint                gold P2302     2 -> 1
+     row   199  occupation                         gold P106      5 -> 4
+     row   405  occupation                         gold P106      5 -> 4
+     row   424  occupation                         gold P106      5 -> 4
+     row   543  occupation                         gold P106      5 -> 4
+
+READING
+  The filter is safe at this rate and worth building: it removes
+  candidates while almost never removing the right one.
+

@@ -1,0 +1,8 @@
+construct,gold_rows,count_baseline,count_idiom,count_profile,compliance_baseline,compliance_idiom,compliance_profile
+subclass closure (P279*),149,50,264,172,19.5,80.5,100.0
+statement node (p:),130,25,45,121,18.5,25.4,93.1
+qualifier (pq:),85,21,29,54,22.4,30.6,61.2
+value node (psv:),35,2,6,20,5.7,8.6,57.1
+aggregation (GROUP BY),177,84,83,156,43.5,41.8,84.7
+alternation (VALUES/UNION),102,27,31,84,16.7,15.7,76.5
+property path (/ or |),172,36,268,186,13.4,77.3,95.3

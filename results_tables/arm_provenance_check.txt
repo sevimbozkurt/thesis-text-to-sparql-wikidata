@@ -1,0 +1,40 @@
+arm                           rows  unique labels  camelCase  snake_case  bare ID
+baseline                       567            751          3           0        2
+idiom rules                    561            762          2           0        2
+schema evidence, verbose       547            914          2           0        7
+schema evidence, targeted      547            921          4           0        5
+construct profile              567            843          5           0        2
+constrained vocabulary         567            769          2           0        0
+both (factorial)               567            934          2           0        0
+
+open-backbone (control)        495            988         89          27        4
+
+reference fingerprints from X7 (official split, unfindable labels):
+  Qwen2.5-14B  camelCase 78   snake_case 8   bare ID 5
+  frontier     camelCase  0   snake_case 0   bare ID 0
+
+label-set overlap with the baseline arm (Jaccard):
+  idiom rules                  0.727
+  schema evidence, verbose     0.383
+  schema evidence, targeted    0.382
+  construct profile            0.680
+  constrained vocabulary       0.502
+  both (factorial)             0.435
+
+VERDICT
+  Positive control behaves as required: the open-backbone run shows 89 camelCase and 27 snake_case labels, so the fingerprint
+  does discriminate and a clean result below is informative.
+  All 7 arms carry the frontier fingerprint: at most 5 camelCase labels,
+  no snake_case, a handful of bare identifiers. None shows the open model's
+  signature, so the seven-arm comparison is not confounded by a change of
+  generator.
+  The grounded arms nevertheless share only ~38% of their label vocabulary with
+  the baseline, against 73% for the idiom arm: grounding triggers
+  near-wholesale rewriting rather than targeted correction.
+
+CAUTION FOR ANYONE RE-ANALYSING
+  `pool_grounded.json` (2,417 entries) is a UNION pool spanning several runs,
+  not the grounded arm's own candidate pool: its unfindable labels carry the
+  open model's fingerprint (78 camelCase, 8 snake_case) because it also contains
+  labels from the open-backbone official-split run. Do not use it to
+  characterise the frontier model; use `batch_candidates.json`.

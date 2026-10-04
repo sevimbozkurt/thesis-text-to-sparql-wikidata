@@ -1,0 +1,7 @@
+Prompt arms, entity-level Jaccard on questions scored in both arms (strict fair set)
+  construct profile                             n=355  reference 27.20  arm 30.21  difference +3.00
+  constrained vocabulary                        n=356  reference 27.13  arm 46.12  difference +18.99
+  both oracles                                  n=353  reference 27.36  arm 50.37  difference +23.01
+  both vs constrained (construct information)   n=362  reference 45.36  arm 49.12  difference +3.76
+  both vs profile (concept information)         n=358  reference 29.95  arm 49.67  difference +19.72
+Pipeline over zero-shot Claude Opus 4.8, pooled, common subset: 19.1 -> 25.1 = +6.0

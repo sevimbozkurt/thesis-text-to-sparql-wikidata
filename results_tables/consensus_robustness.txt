@@ -1,0 +1,16 @@
+n = 327; split-half evaluation of the cascade (order chosen on the other half)
+  order from half 0: ['arm-idiom', 'e2e-clean', 'arm-base']...  eval on half 1 (n=162): best-single 33.3  cascade 38.6  gain +5.4
+  order from half 1: ['arm-idiom', 'e2e-clean', 'arm-base']...  eval on half 0 (n=165): best-single 31.2  cascade 35.5  gain +4.3
+  mean out-of-sample gain +4.8pp
+
+fallback triggers: {'idiom arm non-empty (kept)': 235, 'idiom arm empty result -> fallback': 64, 'idiom arm error/unlinked -> fallback': 28}
+run finally selected: {'arm-idiom': 261, 'zs-gpt': 4, 'fs-claude': 20, 'e2e-clean': 35, 'zs-deepseek': 3, 'zs-claude': 3, 'zs-gemini': 1}
+on the 92 fallback rows: idiom-arm score 0.0 -> cascade 16.3
+
+per complexity (entity Jaccard): best single (arm-idiom) vs cascade
+  simple   n= 28   32.0 ->  35.6
+  medium   n=170   35.8 ->  41.1
+  complex  n=129   27.5 ->  32.0
+
+cascade - best single: mean +4.83pp, bootstrap 95% CI [+2.93, +7.08], permutation p = 0.0000
+rows changed: 49 (improved 49, worsened 0)

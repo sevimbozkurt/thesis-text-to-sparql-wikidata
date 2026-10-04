@@ -1,0 +1,67 @@
+### RECONCILED — headline (5 unresolved rows counted as sound) ###
+NOTE: 24 adjudicated rows do not execute or return nothing on this snapshot
+      (19 of them judged 'no'). They are excluded: neither condition is evidence
+      about whether the query answers its question. Use `estimate all` to include them.
+
+======================================================================
+BOUNDED REFERENCE-NOISE RATE
+======================================================================
+  adjudicated: 26 flagged, 30 unflagged
+  precision of the screen : 50.0%  [32.1, 67.9]
+  noise among unflagged   : 20.0%  [9.5, 37.3]
+  flag rate               : 15.2%  (61/400 scorable rows)
+
+  ESTIMATED NOISE RATE    : 24.6%  [12.9, 42.0]
+
+  for comparison: author 3.3%, second annotator 16.7% (n = 30 each)
+
+### sensitivity: the 5 unresolved counted as faulty ###
+   flagged 16/26 = 61.5% | unflagged 8/30 = 26.7%
+   RATE 32.0%  [18.5, 49.5]
+
+### pre-reconciliation agreement between the two independent passes ###
+  (first judge's verdicts read from gold_audit_prereconcile.csv, i.e. before reconciliation)
+======================================================================
+INTER-ANNOTATOR AGREEMENT ON THE ADJUDICATION
+======================================================================
+  using /Users/sevimbozkurt/Downloads/gold_audit_annotator2_answers.csv
+  rows judged twice        : 56
+  raw agreement            : 41/56 = 73.2%
+  Cohen's kappa            : 0.426
+  'no' rate, first  judge  : 26.8%
+  'no' rate, second judge  : 42.9%
+
+  15 disagreement(s):
+     row   286  first yes -> second no
+     row   424  first no  -> second yes
+     row   532  first no  -> second yes
+     row   420  first yes -> second no
+     row   547  first yes -> second no
+     row   134  first yes -> second no
+     row    46  first yes -> second no
+     row   302  first yes -> second no
+     row   508  first yes -> second no
+     row   361  first yes -> second no
+     row   452  first no  -> second yes
+     row   382  first yes -> second no
+     row   220  first yes -> second no
+     row   167  first yes -> second no
+     row   373  first yes -> second no
+
+  SECOND JUDGE'S INDEPENDENT NOISE ESTIMATE : 32.0%  [18.5, 49.5]   (26 flagged, 30 unflagged)
+  Compare with the headline in RESULT_gold_noise.txt. Two
+  independent estimates that land close together is the
+  strongest claim this design can make.
+
+### non-executing rows included ###
+======================================================================
+BOUNDED REFERENCE-NOISE RATE
+======================================================================
+  adjudicated: 40 flagged, 40 unflagged
+  precision of the screen : 62.5%  [47.0, 75.8]
+  noise among unflagged   : 32.5%  [20.1, 48.0]
+  flag rate               : 15.9%  (90/567 all rows)
+
+  ESTIMATED NOISE RATE    : 37.3%  [24.4, 52.4]
+
+  for comparison: author 3.3%, second annotator 16.7% (n = 30 each)

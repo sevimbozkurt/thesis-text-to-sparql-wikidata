@@ -1,0 +1,4407 @@
+{
+ "property|found in taxon": [
+  {
+   "id": "P703",
+   "label": "found in taxon",
+   "description": "the taxon in which the item can be found"
+  }
+ ],
+ "property|facet of": [
+  {
+   "id": "P1269",
+   "label": "facet of",
+   "description": "topic of which this item is an aspect; item that offers a broader perspective on the same topic"
+  },
+  {
+   "id": "P1312",
+   "label": "has facet polytope",
+   "description": "facet of a polytope, in the next-lower dimension"
+  }
+ ],
+ "property|official language": [
+  {
+   "id": "P37",
+   "label": "official language",
+   "description": "language designated as official by this item"
+  },
+  {
+   "id": "P1705",
+   "label": "native label",
+   "description": "label for the items in their official language or their original language"
+  }
+ ],
+ "property|WikiPathways ID": [
+  {
+   "id": "P2410",
+   "label": "WikiPathways ID",
+   "description": "describes in which biological pathways a biological entity occurs"
+  }
+ ],
+ "property|coordinates of geographic center": [
+  {
+   "id": "P5140",
+   "label": "coordinates of geographic center",
+   "description": "coordinates of the center of an area. Use qualifier \"determination method\" (P459) to indicate how"
+  }
+ ],
+ "property|life expectancy": [
+  {
+   "id": "P2250",
+   "label": "life expectancy",
+   "description": "average life expectancy for this group or species"
+  }
+ ],
+ "property|negative diagnostic predictor for": [
+  {
+   "id": "P3357",
+   "label": "negative diagnostic predictor for",
+   "description": "the presence of the genetic variant helps to diagnose the absence of disease, used as exclusion criteria"
+  }
+ ],
+ "property|collection or exhibition size": [
+  {
+   "id": "P1436",
+   "label": "collection or exhibition size",
+   "description": "number of items in a collection or exhibition"
+  }
+ ],
+ "property|Oxford Dictionary of National Biography ID": [
+  {
+   "id": "P1415",
+   "label": "Oxford Dictionary of National Biography ID",
+   "description": "identifier used by the Oxford Dictionary of National Biography"
+  }
+ ],
+ "property|DOI prefix": [
+  {
+   "id": "P1662",
+   "label": "DOI prefix",
+   "description": "identifier specific to a DOI registrant"
+  }
+ ],
+ "property|streaming media URL": [
+  {
+   "id": "P963",
+   "label": "streaming media URL",
+   "description": "URL where the subject's media stream exists"
+  }
+ ],
+ "property|property constraint": [
+  {
+   "id": "P2302",
+   "label": "property constraint",
+   "description": "constraint applicable to a Wikidata property"
+  },
+  {
+   "id": "P6607",
+   "label": "constraint clarification",
+   "description": "qualifier to provide details on the function or purpose of a property constraint on a given property"
+  }
+ ],
+ "property|elected in": [
+  {
+   "id": "P2715",
+   "label": "elected in",
+   "description": "election in which a person gained a position (as qualifier), or a position or legislative term is/was elected (as main value)"
+  }
+ ],
+ "property|atomic number": [
+  {
+   "id": "P1086",
+   "label": "atomic number",
+   "description": "number of protons found in the nucleus of the atom"
+  }
+ ],
+ "property|latest date": [
+  {
+   "id": "P1326",
+   "label": "latest date",
+   "description": "latest possible time that something could have occurred. Use as qualifier for other date properties"
+  },
+  {
+   "id": "P2311",
+   "label": "maximum date (property constraint)",
+   "description": "qualifier to define a property constraint in combination with \"property constraint\" (P2302). Use \"unknown value\" for current date."
+  }
+ ],
+ "property|position held": [
+  {
+   "id": "P39",
+   "label": "position held",
+   "description": "subject currently or formerly holds the object position or public office"
+  },
+  {
+   "id": "P1313",
+   "label": "office held by head of government",
+   "description": "political office that is fulfilled by the head of the government of this item"
+  },
+  {
+   "id": "P2388",
+   "label": "position held by head of the organization",
+   "description": "position of the head of this item"
+  },
+  {
+   "id": "P1308",
+   "label": "position holder",
+   "description": "persons who hold and/or held the position"
+  },
+  {
+   "id": "P1906",
+   "label": "office held by head of state",
+   "description": "political office that is fulfilled by the head of state of this item"
+  }
+ ],
+ "property|editor": [
+  {
+   "id": "P98",
+   "label": "editor",
+   "description": "person who checks and corrects a work (such as a book, newspaper, academic journal, etc.) to comply with a rules of certain genre. Also applies to person who establishes the text of an ancient written work or manuscript."
+  },
+  {
+   "id": "P1040",
+   "label": "film editor",
+   "description": "person who works with the raw footage, selecting shots and combining them into sequences to create a finished motion picture"
+  },
+  {
+   "id": "P2093",
+   "label": "author name string",
+   "description": "stores unspecified author or editor name for publications; use if Wikidata item for author (P50) or editor (P98) does not exist or is not known. Do not use both."
+  },
+  {
+   "id": "P195",
+   "label": "collection",
+   "description": "art, museum, archival, or bibliographic collection of which the subject is part (item is in the collection of X)"
+  },
+  {
+   "id": "P1142",
+   "label": "political ideology",
+   "description": "political ideology of an organization or person or of a work (such as a newspaper)"
+  },
+  {
+   "id": "P123",
+   "label": "publisher",
+   "description": "organization or person responsible for publishing a work, such as a book, periodical, printed music, podcast, game or software"
+  },
+  {
+   "id": "P5769",
+   "label": "editor-in-chief",
+   "description": "a publication's editorial leader who has final responsibility for its operations and policies and the selection of authors, translators, illustrators, and formats for publishing articles or books in collections or periodical papers"
+  }
+ ],
+ "property|VIAF ID": [
+  {
+   "id": "P214",
+   "label": "VIAF cluster ID",
+   "description": "identifier for the Virtual International Authority File database [format: up to 22 digits]; please note: VIAF is a cluster, the ID can include multiple items"
+  }
+ ],
+ "property|mother": [
+  {
+   "id": "P25",
+   "label": "mother",
+   "description": "female parent of the subject. For stepmother, use \"stepparent\" (P3448)"
+  },
+  {
+   "id": "P40",
+   "label": "child",
+   "description": "subject has object as child. Do not use for stepchildren\u2014use \"relative\" (P1038), qualified with \"kinship to subject\" (P1039)"
+  },
+  {
+   "id": "P103",
+   "label": "native language",
+   "description": "language or languages a person (or group) has learned from early childhood"
+  },
+  {
+   "id": "P1038",
+   "label": "relative",
+   "description": "family member (qualify with \"kinship to subject\", P1039; for direct family member please use specific property)"
+  },
+  {
+   "id": "P612",
+   "label": "mother house",
+   "description": "principal house or community for a religious institute"
+  }
+ ],
+ "property|Open Hub ID": [
+  {
+   "id": "P1972",
+   "label": "Open Hub ID",
+   "description": "identifier for free software at OpenHub.net"
+  }
+ ],
+ "property|category contains": [
+  {
+   "id": "P4224",
+   "label": "category contains",
+   "description": "category contains elements that are instances of this item"
+  }
+ ],
+ "property|total revenue": [
+  {
+   "id": "P2139",
+   "label": "total revenue",
+   "description": "income gained by an organization during a given time frame. Not to be confused with fiscal revenue"
+  }
+ ],
+ "property|organizer": [
+  {
+   "id": "P664",
+   "label": "organizer",
+   "description": "person or institution organizing an event"
+  },
+  {
+   "id": "P4339",
+   "label": "Radio Radicale organizer ID",
+   "description": "identifier for an organizer in the database of Radio Radicale"
+  }
+ ],
+ "property|formatter URL": [
+  {
+   "id": "P1630",
+   "label": "formatter URL",
+   "description": "web page URL; URI template from which \u201c$1\u201d can be automatically replaced with the effective property value on items. If the site goes offline, set it to deprecated rank. If the formatter URL changes, add a new statement with preferred rank"
+  },
+  {
+   "id": "P3303",
+   "label": "third-party formatter URL",
+   "description": "URI template from which \"$1\" can be automatically replaced with the effective property value on items; for sites other than the primary issuing body of the identifier concerned"
+  },
+  {
+   "id": "P1921",
+   "label": "formatter URI for RDF resource",
+   "description": "formatter URL for RDF resource: URI template from which \"$1\" can be automatically replaced with the effective property value on items (it is the URI of the resources, not the URI of the RDF file describing it)"
+  },
+  {
+   "id": "P2720",
+   "label": "embed URL template",
+   "description": "formatter URL for embeddable content: URI template from which \"$1\" can be automatically replaced with the effective property value on items"
+  },
+  {
+   "id": "P12605",
+   "label": "API formatter URL",
+   "description": "URI template from which \"$1\" can automatically be replaced with the effective property value on items; for API access and other machine-readable data"
+  },
+  {
+   "id": "P12463",
+   "label": "formatter URL for IIIF manifest",
+   "description": "URL to generate IIIF manifest from specific ID"
+  }
+ ],
+ "property|shares border with": [
+  {
+   "id": "P47",
+   "label": "shares border with",
+   "description": "countries or administrative subdivisions, of equal level, that this item borders, either by land or water. A single common point is enough."
+  }
+ ],
+ "property|PubMed ID": [
+  {
+   "id": "P698",
+   "label": "PubMed publication ID",
+   "description": "identifier\u00a0for journal articles/abstracts in PubMed"
+  }
+ ],
+ "property|conversion to SI unit": [
+  {
+   "id": "P2370",
+   "label": "conversion to SI unit",
+   "description": "conversion of the unit into a coherent SI unit"
+  }
+ ],
+ "property|negative therapeutic predictor for": [
+  {
+   "id": "P3355",
+   "label": "negative therapeutic predictor for",
+   "description": "the presence of the genetic variant helps to predict no response or resistance to a treatment"
+  }
+ ],
+ "property|sport": [
+  {
+   "id": "P641",
+   "label": "sport",
+   "description": "sport that the subject participates or participated in or is associated with"
+  },
+  {
+   "id": "P54",
+   "label": "member of sports team",
+   "description": "sports teams or clubs that the subject represents or represented"
+  },
+  {
+   "id": "P2348",
+   "label": "time period",
+   "description": "time period (historic period or era, sports season, theatre season, legislative period etc.) in which the subject occurred or with which it is associated"
+  },
+  {
+   "id": "P1532",
+   "label": "country for sport",
+   "description": "country a person or a team represents when playing a sport"
+  },
+  {
+   "id": "P118",
+   "label": "league or competition",
+   "description": "league or competition in which team or player has played, or in which an event occurs"
+  },
+  {
+   "id": "P1447",
+   "label": "Sports-Reference.com Olympic athlete ID (archived)",
+   "description": "identifier for an Olympic athlete (sportsperson) at sports-reference.com/olympics/athletes/"
+  },
+  {
+   "id": "P3696",
+   "label": "Sports Reference college basketball player ID",
+   "description": "identifier for a NCAA Division I college basketball player on the Sports-Reference.com college basketball website"
+  }
+ ],
+ "property|publisher": [
+  {
+   "id": "P123",
+   "label": "publisher",
+   "description": "organization or person responsible for publishing a work, such as a book, periodical, printed music, podcast, game or software"
+  }
+ ],
+ "property|start time": [
+  {
+   "id": "P580",
+   "label": "start time",
+   "description": "time an entity begins to exist or a statement starts being valid"
+  },
+  {
+   "id": "P2031",
+   "label": "start of work period",
+   "description": "start of period during which a person or group flourished (fl. = \"floruit\") in their professional activity"
+  },
+  {
+   "id": "P1319",
+   "label": "earliest date",
+   "description": "earliest date at which an event could have happened. Use as qualifier for other date properties"
+  },
+  {
+   "id": "P8555",
+   "label": "latest start date",
+   "description": "(qualifier) latest date on which the statement could have started to be true"
+  }
+ ],
+ "property|template has topic": [
+  {
+   "id": "P1423",
+   "label": "template has topic",
+   "description": "topic related to template"
+  }
+ ],
+ "property|topographic prominence": [
+  {
+   "id": "P2660",
+   "label": "topographic prominence",
+   "description": "height of a mountain or hill relative to the lowest contour line encircling it (on Earth, maximum 8,848 m)"
+  }
+ ],
+ "property|country of citizenship": [
+  {
+   "id": "P27",
+   "label": "country of citizenship",
+   "description": "the object is a country that recognizes the subject as its citizen"
+  }
+ ],
+ "property|location of sense usage": [
+  {
+   "id": "P6084",
+   "label": "location of sense usage",
+   "description": "for senses which are considered regional, the main locations where the sense is used"
+  }
+ ],
+ "property|family name": [
+  {
+   "id": "P734",
+   "label": "family name",
+   "description": "part of full name of person"
+  },
+  {
+   "id": "P1533",
+   "label": "family name identical to this given name",
+   "description": "last name that is the same as a given first name. Use on items for given names"
+  },
+  {
+   "id": "P5278",
+   "label": "surname for other gender",
+   "description": "gender inflection of surname, patronymic or matronymic"
+  },
+  {
+   "id": "P7377",
+   "label": "infix",
+   "description": "component of Dutch family name or similar of other languages, generally an unaffixed prefix. Depending on the language, country and application, it may be ignored in sorting. Note differences in capitalization and affixation (spaces)"
+  }
+ ],
+ "property|element symbol": [
+  {
+   "id": "P246",
+   "label": "element symbol",
+   "description": "identifier for a chemical element"
+  }
+ ],
+ "property|child": [
+  {
+   "id": "P40",
+   "label": "child",
+   "description": "subject has object as child. Do not use for stepchildren\u2014use \"relative\" (P1038), qualified with \"kinship to subject\" (P1039)"
+  },
+  {
+   "id": "P22",
+   "label": "father",
+   "description": "male parent of the subject. For stepfather, use \"stepparent\" (P3448)"
+  },
+  {
+   "id": "P25",
+   "label": "mother",
+   "description": "female parent of the subject. For stepmother, use \"stepparent\" (P3448)"
+  },
+  {
+   "id": "P1971",
+   "label": "number of children",
+   "description": "number of children of the person, animal, or character"
+  },
+  {
+   "id": "P355",
+   "label": "child organization or unit",
+   "description": "child organization/unit of an org./unit; usually a fully owned separate org.; for non-independent sub-units, see org. division (P199); opposite of parent org./unit (P749); use instance of (P31) to distinguish org. (Q43229) and org. unit (Q10387680)"
+  },
+  {
+   "id": "P6191",
+   "label": "language style",
+   "description": "to denote of the way a sense of a word is used, e.g., slang, vulgarism, babytalk, colloquialism, etc."
+  },
+  {
+   "id": "P398",
+   "label": "child astronomical body",
+   "description": "minor body that belongs to the item"
+  }
+ ],
+ "property|country for sport": [
+  {
+   "id": "P1532",
+   "label": "country for sport",
+   "description": "country a person or a team represents when playing a sport"
+  }
+ ],
+ "property|earliest date": [
+  {
+   "id": "P1319",
+   "label": "earliest date",
+   "description": "earliest date at which an event could have happened. Use as qualifier for other date properties"
+  },
+  {
+   "id": "P2310",
+   "label": "minimum date (property constraint)",
+   "description": "qualifier to define a property constraint in combination with \"property constraint\" (P2302)"
+  }
+ ],
+ "property|signature": [
+  {
+   "id": "P1684",
+   "label": "inscription",
+   "description": "inscriptions, markings and signatures on an object"
+  },
+  {
+   "id": "P109",
+   "label": "signature",
+   "description": "image of a person's signature"
+  },
+  {
+   "id": "P7589",
+   "label": "date of promulgation",
+   "description": "date on which a piece of legislation formally became law (whether by assent or some other procedure)"
+  },
+  {
+   "id": "P6364",
+   "label": "official color",
+   "description": "official colors chosen to represent or identify an item"
+  },
+  {
+   "id": "P7457",
+   "label": "creator's signature",
+   "description": "image of the artist's mark on the work that identifies their work"
+  },
+  {
+   "id": "P4152",
+   "label": "file format identification pattern",
+   "description": "pattern or string which is used to identify a file as having a particular known format"
+  },
+  {
+   "id": "P5316",
+   "label": "Swedish Signaturer.se ID",
+   "description": "the creator of ceramics and porcelain is described on signature.se and what stamps were used"
+  }
+ ],
+ "property|iNaturalist place ID": [
+  {
+   "id": "P7471",
+   "label": "iNaturalist place ID",
+   "description": "identifier for a place in iNaturalist"
+  }
+ ],
+ "property|member of cabinet": [
+  {
+   "id": "P5054",
+   "label": "member of cabinet",
+   "description": "qualifier for \"position held\" (P39) to indicate the cabinet to which a minister belongs"
+  }
+ ],
+ "property|category's main topic": [
+  {
+   "id": "P301",
+   "label": "category's main topic",
+   "description": "primary topic of the subject Wikimedia category"
+  }
+ ],
+ "property|grammatical gender": [
+  {
+   "id": "P5185",
+   "label": "grammatical gender",
+   "description": "grammatical gender of the word"
+  },
+  {
+   "id": "P5109",
+   "label": "has grammatical gender",
+   "description": "specific form of noun class system of a language. Use qualifier \"statement is subject of\" (P805) to link to language specific item if present"
+  }
+ ],
+ "property|P1773": [],
+ "property|parent taxon": [
+  {
+   "id": "P171",
+   "label": "parent taxon",
+   "description": "closest parent taxon of the taxon in question"
+  }
+ ],
+ "property|Uppsala University Alvin ID": [
+  {
+   "id": "P6821",
+   "label": "Alvin ID",
+   "description": "platform for digital collections and digitized cultural heritage in Uppsala about, managed by Uppsala university library"
+  }
+ ],
+ "property|genre": [
+  {
+   "id": "P136",
+   "label": "genre",
+   "description": "creative work's genre or an artist's field of work (P101). Use main subject (P921) to relate creative works to their topic"
+  },
+  {
+   "id": "P415",
+   "label": "radio format",
+   "description": "describes the overall content broadcast on a radio station"
+  },
+  {
+   "id": "P21",
+   "label": "sex or gender",
+   "description": "sex or gender identity of human or animal. For human: male, female, non-binary, intersex, transgender female, transgender male, agender, etc. For animal: male organism, female organism. Groups of same gender use subclass of (P279)"
+  },
+  {
+   "id": "P5185",
+   "label": "grammatical gender",
+   "description": "grammatical gender of the word"
+  },
+  {
+   "id": "P4953",
+   "label": "Library of Congress Genre/Form Terms ID",
+   "description": "ID in the Library of Congress controlled vocabulary for genres and forms"
+  },
+  {
+   "id": "P7419",
+   "label": "gender educated",
+   "description": "genders educated at this educational institution"
+  },
+  {
+   "id": "P1777",
+   "label": "manner of",
+   "description": "for unknown artists who worked in a similar style as the named author, but not necessary from the same period"
+  }
+ ],
+ "property|form of creative work": [
+  {
+   "id": "P7937",
+   "label": "form of creative work",
+   "description": "structure of a creative work"
+  }
+ ],
+ "property|cause of death": [
+  {
+   "id": "P509",
+   "label": "cause of death",
+   "description": "underlying or immediate cause of death. Underlying cause (e.g. car accident, stomach cancer) preferred. Use 'manner of death' (P1196) for broadest category, e.g. natural causes, accident, homicide, suicide"
+  }
+ ],
+ "property|start point": [
+  {
+   "id": "P1427",
+   "label": "start point",
+   "description": "starting place of this journey, flight, voyage, trek, migration etc."
+  }
+ ],
+ "property|The Peerage person ID": [
+  {
+   "id": "P4638",
+   "label": "The Peerage person ID",
+   "description": "identifier for a person on The Peerage genealogical website"
+  }
+ ],
+ "property|member of": [
+  {
+   "id": "P102",
+   "label": "member of political party",
+   "description": "the political party of which a person is or has been a member or otherwise affiliated"
+  },
+  {
+   "id": "P463",
+   "label": "member of",
+   "description": "organization, club or musical group to which the subject belongs. Do not use for membership in ethnic or social groups, nor for holding a political position, such as a member of parliament (use P39 for that)"
+  },
+  {
+   "id": "P54",
+   "label": "member of sports team",
+   "description": "sports teams or clubs that the subject represents or represented"
+  },
+  {
+   "id": "P53",
+   "label": "family",
+   "description": "family, including dynasty and nobility houses. Not family name (use P734 for family name)."
+  },
+  {
+   "id": "P10241",
+   "label": "individual of taxon",
+   "description": "the taxon of an individual named organism (animal, plant)"
+  },
+  {
+   "id": "P5054",
+   "label": "member of cabinet",
+   "description": "qualifier for \"position held\" (P39) to indicate the cabinet to which a minister belongs"
+  },
+  {
+   "id": "P7779",
+   "label": "military unit",
+   "description": "smallest military unit that a person is/was in"
+  }
+ ],
+ "property|type foundry": [
+  {
+   "id": "P4586",
+   "label": "type foundry",
+   "description": "company releasing or distributing a font or typeface"
+  }
+ ],
+ "property|Berlin cultural heritage ID": [
+  {
+   "id": "P2424",
+   "label": "Berlin cultural heritage ID",
+   "description": "identifier for an object in the cultural heritage database of Berlin"
+  }
+ ],
+ "property|hashtag": [
+  {
+   "id": "P2572",
+   "label": "hashtag",
+   "description": "reference keyword associated with this item for online communities (do not include the \"#\" symbol which is often used as a prefixed indicator)"
+  }
+ ],
+ "property|discoverer or inventor": [
+  {
+   "id": "P61",
+   "label": "discoverer or inventor",
+   "description": "subject who discovered, first described, invented, or developed this discovery or invention or scientific hypothesis or theory"
+  }
+ ],
+ "property|page banner": [
+  {
+   "id": "P948",
+   "label": "page banner",
+   "description": "image at top of an article about the topic, mainly used by Wikivoyage and Women in Red"
+  }
+ ],
+ "property|demonym of": [
+  {
+   "id": "P6271",
+   "label": "demonym of",
+   "description": "item that this sense is a demonym of"
+  }
+ ],
+ "property|founded by": [
+  {
+   "id": "P112",
+   "label": "founder",
+   "description": "founder or co-founder of this organization, religion, place or entity"
+  }
+ ],
+ "property|Dico en ligne Le Robert ID": [
+  {
+   "id": "P10338",
+   "label": "Dico en ligne Le Robert ID",
+   "description": "identifier in the online dictionary Le Robert"
+  }
+ ],
+ "property|usage example": [
+  {
+   "id": "P5831",
+   "label": "usage example",
+   "description": "example of how a lexeme sense might be used"
+  }
+ ],
+ "property|Internet Archive ID": [
+  {
+   "id": "P724",
+   "label": "Internet Archive ID",
+   "description": "identifier for an item on the Internet Archive"
+  }
+ ],
+ "property|population": [
+  {
+   "id": "P1082",
+   "label": "population",
+   "description": "number of people inhabiting the place; number of people of subject"
+  },
+  {
+   "id": "P4179",
+   "label": "tabular population",
+   "description": "same as population (P1082); used when there is data for many different points in time"
+  },
+  {
+   "id": "P1539",
+   "label": "female population",
+   "description": "number of female people inhabiting the place; number of female people of subject"
+  },
+  {
+   "id": "P1540",
+   "label": "male population",
+   "description": "number of male people inhabiting the place; number of male people of subject"
+  },
+  {
+   "id": "P6499",
+   "label": "literate population",
+   "description": "number of literate people within a territorial entity (typically determined during a census)"
+  },
+  {
+   "id": "P6498",
+   "label": "illiterate population",
+   "description": "number of illiterate people within a territorial entity (typically determined during a census)"
+  },
+  {
+   "id": "P12712",
+   "label": "population by native language",
+   "description": "native language population of a place"
+  }
+ ],
+ "property|manner of": [
+  {
+   "id": "P1777",
+   "label": "manner of",
+   "description": "for unknown artists who worked in a similar style as the named author, but not necessary from the same period"
+  },
+  {
+   "id": "P1196",
+   "label": "manner of death",
+   "description": "general circumstances of a person's death; e.g. natural causes, accident, suicide, homicide, etc. Use 'cause of death' (P509) for the specific physiological mechanism, e.g. heart attack, trauma, pneumonia etc."
+  },
+  {
+   "id": "P7160",
+   "label": "manner of inhumane treatment",
+   "description": "manner of torture and other cruel, inhumane or degrading treatment or punishments as covered by the UN Convention experienced by the subject"
+  }
+ ],
+ "property|movement": [
+  {
+   "id": "P135",
+   "label": "movement",
+   "description": "literary, artistic, scientific or philosophical movement or scene associated with this person or work. For political ideologies use P1142."
+  },
+  {
+   "id": "P6022",
+   "label": "expression, gesture or body pose",
+   "description": "qualifier on \"depicts\" (P180) for position of a figure in an artwork"
+  },
+  {
+   "id": "P2635",
+   "label": "number of parts of this work",
+   "description": "the number of parts that a work comprises"
+  }
+ ],
+ "property|award received": [
+  {
+   "id": "P166",
+   "label": "award received",
+   "description": "award or recognition received by a person, organization or creative work"
+  }
+ ],
+ "property|composer": [
+  {
+   "id": "P86",
+   "label": "composer",
+   "description": "person(s) who wrote the music [for lyricist, use \"lyrics by\" (P676)]"
+  },
+  {
+   "id": "P9628",
+   "label": "composers.am person ID",
+   "description": "identifier for a person in the site of Composers Union of Armenia"
+  },
+  {
+   "id": "P9587",
+   "label": "Canadian Music Centre Composer Showcase ID",
+   "description": "identifier for a composer in the Canadian Music Centre Composer Showcase database"
+  },
+  {
+   "id": "P12384",
+   "label": "Letterboxd user ID",
+   "description": "identifier for a user on Letterboxd"
+  }
+ ],
+ "property|has part(s)": [
+  {
+   "id": "P527",
+   "label": "has part(s)",
+   "description": "part of this subject; inverse property of \"part of\" (P361). See also \"has parts of the class\" (P2670)."
+  },
+  {
+   "id": "P2670",
+   "label": "has part(s) of the class",
+   "description": "the subject has one or more parts of the object class"
+  }
+ ],
+ "property|title": [
+  {
+   "id": "P1476",
+   "label": "title",
+   "description": "published name of a work, such as a newspaper article, a literary work, piece of music, a website, or a performance work"
+  },
+  {
+   "id": "P1705",
+   "label": "native label",
+   "description": "label for the items in their official language or their original language"
+  },
+  {
+   "id": "P1346",
+   "label": "winner",
+   "description": "winner of a competition or similar event, not to be used from the awardees record (instead use \"award received\" (P166), possibly qualified with \"for work\" (P1686)) nor for wars or battles"
+  },
+  {
+   "id": "P958",
+   "label": "section",
+   "description": "paragraph, or other kind of special indication to find information on a page or on a document (legal texts etc.)"
+  },
+  {
+   "id": "P1313",
+   "label": "office held by head of government",
+   "description": "political office that is fulfilled by the head of the government of this item"
+  },
+  {
+   "id": "P97",
+   "label": "noble title",
+   "description": "titles held by the person"
+  },
+  {
+   "id": "P2962",
+   "label": "title of chess person",
+   "description": "title awarded by a chess federation to a person"
+  }
+ ],
+ "property|applies to part": [
+  {
+   "id": "P518",
+   "label": "applies to part",
+   "description": "part, aspect, or form of the item to which the claim applies"
+  }
+ ],
+ "property|residence": [
+  {
+   "id": "P551",
+   "label": "residence",
+   "description": "the place where the person is or has been, resident"
+  },
+  {
+   "id": "P276",
+   "label": "location",
+   "description": "location of the object, structure or event; use P131 to indicate the containing administrative entity, P8138 for statistical entities, or P706 for geographic entities; use P7153 for locations associated with the object"
+  },
+  {
+   "id": "P3020",
+   "label": "residence time of water",
+   "description": "time water remains in a lake or sea"
+  },
+  {
+   "id": "P263",
+   "label": "official residence",
+   "description": "the residence at which heads of government and other senior figures officially reside"
+  }
+ ],
+ "property|location of formation": [
+  {
+   "id": "P740",
+   "label": "location of formation",
+   "description": "location where a group or organization was formed"
+  }
+ ],
+ "property|participant in": [
+  {
+   "id": "P1344",
+   "label": "participant in",
+   "description": "event in which a person, organization or creative work was/is a participant; inverse of P710 or P1923"
+  },
+  {
+   "id": "P607",
+   "label": "participated in conflict",
+   "description": "battles, wars or other military engagements in which the person or item participated"
+  },
+  {
+   "id": "P5030",
+   "label": "talk show guest",
+   "description": "person invited in a talk show"
+  },
+  {
+   "id": "P11108",
+   "label": "recorded participant",
+   "description": "agent taking an active role as a participant in a nonfiction moving image or other recorded work"
+  }
+ ],
+ "property|edition number": [
+  {
+   "id": "P393",
+   "label": "edition number",
+   "description": "number of an edition (first, second, ... as 1, 2, ...) or event"
+  }
+ ],
+ "property|of": [
+  {
+   "id": "P921",
+   "label": "main subject",
+   "description": "primary topic of a work or act of communication"
+  },
+  {
+   "id": "P361",
+   "label": "part of",
+   "description": "object of which the subject is a part (if this subject is already part of object A which is a part of object B, then please only make the subject part of object A), inverse property of \"has part\" (P527, see also \"has parts of the class\" (P2670))"
+  },
+  {
+   "id": "P1001",
+   "label": "applies to jurisdiction",
+   "description": "the item (institution, law, public office, public register, etc) or statement belongs to or has power over or applies to the value (a territorial jurisdiction: a country, state, municipality, etc)"
+  },
+  {
+   "id": "P518",
+   "label": "applies to part",
+   "description": "part, aspect, or form of the item to which the claim applies"
+  },
+  {
+   "id": "P1013",
+   "label": "criterion used",
+   "description": "property by which a distinction or classification is made"
+  },
+  {
+   "id": "P2210",
+   "label": "relative to",
+   "description": "qualifier: what a statement value is relative to"
+  },
+  {
+   "id": "P1535",
+   "label": "used by",
+   "description": "item or concept that makes use of the subject (use sub-properties when appropriate)"
+  }
+ ],
+ "property|CDLI ID": [
+  {
+   "id": "P2474",
+   "label": "CDLI ID",
+   "description": "unique identifier of an object in the Cuneiform Digital Library Initiative"
+  }
+ ],
+ "property|mouth of the watercourse": [
+  {
+   "id": "P403",
+   "label": "mouth of the watercourse",
+   "description": "the body of water to which the watercourse drains"
+  }
+ ],
+ "property|Carthalia ID": [
+  {
+   "id": "P5652",
+   "label": "Carthalia ID",
+   "description": "ID of a page at \"Carthalia\u2014Theatres on Postcards\""
+  }
+ ],
+ "property|is a list of": [
+  {
+   "id": "P360",
+   "label": "is a list of",
+   "description": "common element between all listed items"
+  }
+ ],
+ "property|native language": [
+  {
+   "id": "P103",
+   "label": "native language",
+   "description": "language or languages a person (or group) has learned from early childhood"
+  },
+  {
+   "id": "P12712",
+   "label": "population by native language",
+   "description": "native language population of a place"
+  }
+ ],
+ "property|taxon name": [
+  {
+   "id": "P225",
+   "label": "taxon name",
+   "description": "correct scientific name of a taxon (according to the reference given)"
+  }
+ ],
+ "property|legislative body": [
+  {
+   "id": "P194",
+   "label": "legislative body",
+   "description": "legislative body governing this entity; political institution with elected representatives, such as a parliament/legislature or council"
+  }
+ ],
+ "property|author": [
+  {
+   "id": "P50",
+   "label": "author",
+   "description": "main creator(s) of a written work (use on works, not humans); use P2093 (author name string) when Wikidata item is unknown or does not exist"
+  },
+  {
+   "id": "P676",
+   "label": "lyricist",
+   "description": "author of song lyrics"
+  },
+  {
+   "id": "P2093",
+   "label": "author name string",
+   "description": "stores unspecified author or editor name for publications; use if Wikidata item for author (P50) or editor (P98) does not exist or is not known. Do not use both."
+  },
+  {
+   "id": "P1932",
+   "label": "object named as",
+   "description": "use as qualifier to indicate how the object's value was given in the source"
+  },
+  {
+   "id": "P1810",
+   "label": "subject named as",
+   "description": "name by which a subject is recorded in a database, mentioned as a contributor of a work, or is referred to in a particular context"
+  },
+  {
+   "id": "P244",
+   "label": "Library of Congress Authorities ID",
+   "description": "Library of Congress name authority (persons, families, corporate bodies, events, places, works and expressions) and subject authority identifier [Format: 1-2 specific letters followed by 8-10 digits (see regex). For manifestations, use P1144]"
+  },
+  {
+   "id": "P405",
+   "label": "taxon author",
+   "description": "the author(s) that (optionally) may be cited with the scientific name"
+  }
+ ],
+ "property|capital": [
+  {
+   "id": "P36",
+   "label": "capital",
+   "description": "seat of government of a country, province, state or other type of administrative territorial entity"
+  },
+  {
+   "id": "P1376",
+   "label": "capital of",
+   "description": "country, state, department, canton or other administrative division of which the municipality is the governmental seat"
+  },
+  {
+   "id": "P2130",
+   "label": "capital cost",
+   "description": "amount of money spent on building or producing an object"
+  },
+  {
+   "id": "P6106",
+   "label": "uses capitalization for",
+   "description": "lexical classes and subclasses of words as well as other uses in the language where the first letter is written as a capital letter"
+  },
+  {
+   "id": "P2218",
+   "label": "net worth",
+   "description": "totality of wealth possessed by a person"
+  },
+  {
+   "id": "P2137",
+   "label": "total equity",
+   "description": "amount of equity value for an entity"
+  },
+  {
+   "id": "P2226",
+   "label": "market capitalization",
+   "description": "total value of issued shares by a publicly traded company"
+  }
+ ],
+ "property|image": [
+  {
+   "id": "P18",
+   "label": "image",
+   "description": "image of relevant illustration of the subject; if available, also use more specific properties (sample: coat of arms image, locator map, flag image, signature image, logo image, collage image)"
+  },
+  {
+   "id": "P2046",
+   "label": "area",
+   "description": "area occupied by an object"
+  },
+  {
+   "id": "P4640",
+   "label": "spherical panorama image",
+   "description": "image with the field of view 360\u00d7180 degrees"
+  },
+  {
+   "id": "P2096",
+   "label": "media legend",
+   "description": "qualifier to describe the media of the statement. This avoids legend storage in the local infobox when the media is defined at Wikidata. For the date, use P585 instead"
+  },
+  {
+   "id": "P94",
+   "label": "coat of arms image",
+   "description": "image of the item's coat of arms - for the shield part only use P4004"
+  },
+  {
+   "id": "P1442",
+   "label": "image of grave",
+   "description": "picture of a person or animal's grave, gravestone or tomb"
+  },
+  {
+   "id": "P41",
+   "label": "flag image",
+   "description": "image of the item's flag"
+  }
+ ],
+ "property|stock exchange": [
+  {
+   "id": "P414",
+   "label": "stock exchange",
+   "description": "exchange on which this company is traded"
+  }
+ ],
+ "property|part of": [
+  {
+   "id": "P361",
+   "label": "part of",
+   "description": "object of which the subject is a part (if this subject is already part of object A which is a part of object B, then please only make the subject part of object A), inverse property of \"has part\" (P527, see also \"has parts of the class\" (P2670))"
+  },
+  {
+   "id": "P749",
+   "label": "parent organization or unit",
+   "description": "parent organization or unit of an organization or unit, opposite of child organization or unit (P355); use instance of (P31) to distinguish organization (Q43229) and organization unit (Q10387680)"
+  },
+  {
+   "id": "P1433",
+   "label": "published in",
+   "description": "larger work that a given work was published in, like a journal, a website, a collection, a book or a music album"
+  },
+  {
+   "id": "P59",
+   "label": "constellation",
+   "description": "the area of the celestial sphere of which the subject is a part (from a scientific standpoint, not an astrological one)"
+  },
+  {
+   "id": "P5008",
+   "label": "on focus list of Wikimedia project",
+   "description": "property to indicate that an item is of particular interest for a Wikimedia project. This property does not add notability. Items should not be created with this property if they are not notable for Wikidata. See also P6104, P972, P2354"
+  },
+  {
+   "id": "P179",
+   "label": "part of the series",
+   "description": "series which contains the subject"
+  },
+  {
+   "id": "P54",
+   "label": "member of sports team",
+   "description": "sports teams or clubs that the subject represents or represented"
+  }
+ ],
+ "property|topic's main category": [
+  {
+   "id": "P910",
+   "label": "topic's main category",
+   "description": "main Wikimedia category"
+  }
+ ],
+ "property|external georeferencing URL": [
+  {
+   "id": "P9361",
+   "label": "external georeferencing URL",
+   "description": "URL where external georeferencing is available for a map"
+  }
+ ],
+ "property|said to be the same as": [
+  {
+   "id": "P460",
+   "label": "said to be the same as",
+   "description": "this item is said to be the same as that item, though this may be uncertain or disputed"
+  },
+  {
+   "id": "P11577",
+   "label": "said to be the same as lexeme",
+   "description": "some source considers this lexeme to be the same lexeme or a spelling variant of another lexeme"
+  }
+ ],
+ "property|original language of film or TV show": [
+  {
+   "id": "P364",
+   "label": "original language of film or TV show",
+   "description": "language in which a film or a performance work was originally created. Deprecated for written works and songs; use P407 (\"language of work or name\") instead."
+  }
+ ],
+ "property|creator": [
+  {
+   "id": "P50",
+   "label": "author",
+   "description": "main creator(s) of a written work (use on works, not humans); use P2093 (author name string) when Wikidata item is unknown or does not exist"
+  },
+  {
+   "id": "P170",
+   "label": "creator",
+   "description": "maker of this creative work or other object (where no more specific property exists)"
+  },
+  {
+   "id": "P112",
+   "label": "founder",
+   "description": "founder or co-founder of this organization, religion, place or entity"
+  },
+  {
+   "id": "P6241",
+   "label": "collection creator",
+   "description": "entity (person, organization, etc.) that caused a record or collection to be produced or gathered"
+  },
+  {
+   "id": "P1472",
+   "label": "Commons Creator page",
+   "description": "name of Commons Infobox template residing in \"Creator\" namespace on Wikimedia Commons"
+  },
+  {
+   "id": "P2093",
+   "label": "author name string",
+   "description": "stores unspecified author or editor name for publications; use if Wikidata item for author (P50) or editor (P98) does not exist or is not known. Do not use both."
+  },
+  {
+   "id": "P800",
+   "label": "notable work",
+   "description": "notable scientific, artistic or literary work, or other work of significance among subject's works"
+  }
+ ],
+ "property|Australian Faunal Directory publication ID": [
+  {
+   "id": "P6982",
+   "label": "Australian Faunal Directory publication ID",
+   "description": "identifier of a publication in Australian Faunal Directory (Australian Biological Resources Study) of the Australian Government's Department of Environment and Energy"
+  }
+ ],
+ "property|M\u00e9rim\u00e9e ID": [
+  {
+   "id": "P380",
+   "label": "M\u00e9rim\u00e9e ID",
+   "description": "identifier for a monument in the M\u00e9rim\u00e9e database of French cultural heritage"
+  }
+ ],
+ "property|mass": [
+  {
+   "id": "P2067",
+   "label": "mass",
+   "description": "mass (in colloquial usage also known as weight) of the item"
+  },
+  {
+   "id": "P8345",
+   "label": "media franchise",
+   "description": "this creative work belongs to this media franchise"
+  },
+  {
+   "id": "P6689",
+   "label": "MassBank accession ID",
+   "description": "accession number for entries in the MassBank database (records of mass spectrometry)"
+  },
+  {
+   "id": "P2160",
+   "label": "mass excess",
+   "description": "difference between its actual mass and its mass number in atomic mass units"
+  },
+  {
+   "id": "P8031",
+   "label": "perpetrator",
+   "description": "person or organization who carried out this harmful, illegal, or immoral act"
+  },
+  {
+   "id": "P8239",
+   "label": "MACRIS ID",
+   "description": "identifier for a structure or a building in the Massachusetts Cultural Resource Information System database"
+  },
+  {
+   "id": "P4552",
+   "label": "mountain range",
+   "description": "range or subrange to which the geographical item belongs"
+  }
+ ],
+ "property|transport network": [
+  {
+   "id": "P16",
+   "label": "transport network",
+   "description": "network the infrastructure is a part of"
+  }
+ ],
+ "property|Early Modern Letters Online person ID": [
+  {
+   "id": "P1802",
+   "label": "Early Modern Letters Online person ID",
+   "description": "identifier in the Early Modern Letters Online project run by the Bodleian Library"
+  }
+ ],
+ "property|writing system": [
+  {
+   "id": "P282",
+   "label": "writing system",
+   "description": "alphabet, character set or other system of writing used by a language, word, or text, supported by a typeface"
+  }
+ ],
+ "property|biological variant of": [
+  {
+   "id": "P3433",
+   "label": "biological variant of",
+   "description": "a variant of a physical biological entity (e.g., gene sequence, protein sequence, epigenetic mark)"
+  }
+ ],
+ "property|diameter": [
+  {
+   "id": "P2386",
+   "label": "diameter",
+   "description": "diameter of a circular or spherical object"
+  },
+  {
+   "id": "P7462",
+   "label": "graph diameter",
+   "description": "maximum eccentricity of any vertex in the graph"
+  }
+ ],
+ "property|screenwriter": [
+  {
+   "id": "P58",
+   "label": "screenwriter",
+   "description": "person(s) who wrote the script for subject item"
+  }
+ ],
+ "property|spouse": [
+  {
+   "id": "P26",
+   "label": "spouse",
+   "description": "the subject has the object as their spouse (husband, wife, partner, etc.). Use \"unmarried partner\" (P451) for non-married companions"
+  }
+ ],
+ "property|location of creation": [
+  {
+   "id": "P1071",
+   "label": "location of creation",
+   "description": "place where the item was conceived or made; where applicable, location of final assembly"
+  }
+ ],
+ "property|given name": [
+  {
+   "id": "P735",
+   "label": "given name",
+   "description": "first name or another given name of this person; values used with the property should not link disambiguations nor family names"
+  },
+  {
+   "id": "P9687",
+   "label": "author given names",
+   "description": "qualifier for string representation of given or secondary sorting portion of a name as represented in a bibliographic reference file (for example BibTeX)"
+  },
+  {
+   "id": "P1560",
+   "label": "given name version for other gender",
+   "description": "equivalent name (with respect to the meaning of the name) in the same language: female version of a male first name, male version of a female first name. Add primarily the closest matching one"
+  }
+ ],
+ "property|located in or next to body of water": [
+  {
+   "id": "P206",
+   "label": "located in or next to body of water",
+   "description": "body of water on or next to which a place is located"
+  }
+ ],
+ "property|total equity": [
+  {
+   "id": "P2137",
+   "label": "total equity",
+   "description": "amount of equity value for an entity"
+  }
+ ],
+ "property|narrative location": [
+  {
+   "id": "P840",
+   "label": "narrative location",
+   "description": "the narrative of the work is set in this location"
+  }
+ ],
+ "property|home venue": [
+  {
+   "id": "P115",
+   "label": "home venue",
+   "description": "home stadium or venue of a sports team or performing arts organization"
+  }
+ ],
+ "property|languages spoken, written or signed": [
+  {
+   "id": "P1412",
+   "label": "languages spoken, written or signed",
+   "description": "language(s) that a person or a people speaks, writes or signs, including the native language(s)"
+  }
+ ],
+ "property|doctoral advisor": [
+  {
+   "id": "P184",
+   "label": "doctoral advisor",
+   "description": "person who supervised the doctorate or PhD thesis of the subject"
+  }
+ ],
+ "property|academic thesis": [
+  {
+   "id": "P1026",
+   "label": "academic thesis",
+   "description": "thesis or dissertation written for a degree"
+  },
+  {
+   "id": "P12669",
+   "label": "Cerist ID",
+   "description": "identifier of a thesis or a diploma holder or a jury member or an institution, on the Algerian thesis database and recorded in the Centre de Recherche sur l'Information Scientifique et Technique (CERIST)"
+  }
+ ],
+ "property|taxon author": [
+  {
+   "id": "P405",
+   "label": "taxon author",
+   "description": "the author(s) that (optionally) may be cited with the scientific name"
+  },
+  {
+   "id": "P6507",
+   "label": "taxon author citation",
+   "description": "valid author citation for a name using the appropriate nomenclature (ICNafp, ICZN, etc.)"
+  }
+ ],
+ "property|has works in the collection": [
+  {
+   "id": "P6379",
+   "label": "has works in the collection",
+   "description": "collection that has works of this person or organisation (use archives at [P485] for archives)"
+  }
+ ],
+ "property|topographic isolation": [
+  {
+   "id": "P2659",
+   "label": "topographic isolation",
+   "description": "minimum distance to a point of higher elevation"
+  }
+ ],
+ "property|CBDB ID": [
+  {
+   "id": "P497",
+   "label": "CBDB ID",
+   "description": "identifier for a person in the China Biographical Database"
+  }
+ ],
+ "property|stated in": [
+  {
+   "id": "P248",
+   "label": "stated in",
+   "description": "to be used in the references field to refer to the information document or database in which a claim is made; for qualifiers use P805; for the type of document in which a claim is made use P3865"
+  },
+  {
+   "id": "P5997",
+   "label": "object stated in reference as",
+   "description": "for use in a reference section, to indicate how the object of the statement was stated in reference, if this is different to how the object of statement would have been referred to in the statement's original context"
+  },
+  {
+   "id": "P9073",
+   "label": "applicable 'stated in' value",
+   "description": "value suitable for \"stated in\" (P248) when property is used in references to refer to the primary publication/website/database associated with the property"
+  },
+  {
+   "id": "P7380",
+   "label": "identified in image by",
+   "description": "qualifier for the identification of a value/object with a number, letter or sign inscribed in the image"
+  },
+  {
+   "id": "P12132",
+   "label": "stated in source according to",
+   "description": "to be used together with P248 if the statement is taken from an aggregator rather than directly from the source"
+  }
+ ],
+ "property|subproperty of": [
+  {
+   "id": "P1647",
+   "label": "subproperty of",
+   "description": "all resources related by this property are also related by that property"
+  },
+  {
+   "id": "P2235",
+   "label": "external superproperty",
+   "description": "all resources related by this property are also related to that property from an external vocabulary"
+  },
+  {
+   "id": "P2236",
+   "label": "external subproperty",
+   "description": "all resources related by the property from external vocabularies are also related to this property"
+  }
+ ],
+ "property|place of publication": [
+  {
+   "id": "P291",
+   "label": "place of publication",
+   "description": "geographical place of publication of the edition (use 1st edition when referring to works)"
+  }
+ ],
+ "property|Dictionary of Welsh Biography ID": [
+  {
+   "id": "P1648",
+   "label": "Dictionary of Welsh Biography ID",
+   "description": "identifier per the Dictionary of Welsh Biography"
+  }
+ ],
+ "property|medical condition treated": [
+  {
+   "id": "P2175",
+   "label": "medical condition treated",
+   "description": "disease that this pharmaceutical drug, procedure, or therapy is used to treat"
+  }
+ ],
+ "property|date of birth": [
+  {
+   "id": "P569",
+   "label": "date of birth",
+   "description": "date on which the subject was born"
+  }
+ ],
+ "property|Wikidata property": [
+  {
+   "id": "P1855",
+   "label": "Wikidata property example",
+   "description": "example where this Wikidata property is used; target item is one that would use this property, with qualifier the property being described given the associated value"
+  },
+  {
+   "id": "P1629",
+   "label": "Wikidata item of this property",
+   "description": "item corresponding to the concept represented by the property"
+  },
+  {
+   "id": "P3254",
+   "label": "property proposal discussion",
+   "description": "URL of the page (or page section) on which the creation of the property was discussed"
+  },
+  {
+   "id": "P1896",
+   "label": "source website for the property",
+   "description": "URL of website acting as source of data for this Wikidata property"
+  },
+  {
+   "id": "P5192",
+   "label": "Wikidata property example for lexemes",
+   "description": "example where this Wikidata property is used; target lexeme is one that would use this property, with qualifier the property being described given the associated value"
+  },
+  {
+   "id": "P5193",
+   "label": "Wikidata property example for forms",
+   "description": "example where this Wikidata property is used; target form is one that would use this property, with qualifier the property being described given the associated value"
+  },
+  {
+   "id": "P5977",
+   "label": "Wikidata property example for senses",
+   "description": "example where this Wikidata property is used; target sense is one that would use this property, with qualifier the property being described given the associated value"
+  }
+ ],
+ "property|service entry": [
+  {
+   "id": "P729",
+   "label": "service entry",
+   "description": "date or point in time on which a piece or class of equipment entered operational service"
+  }
+ ],
+ "property|P2439": [],
+ "property|followed by": [
+  {
+   "id": "P156",
+   "label": "followed by",
+   "description": "immediately following item in a series of which the subject is a part, preferably use as qualifier of P179 [if the subject has been replaced, e.g. political offices, use \"replaced by\" (P1366)]"
+  }
+ ],
+ "property|BIU Sant\u00e9 person ID": [
+  {
+   "id": "P5375",
+   "label": "BIU Sant\u00e9 person ID",
+   "description": "identifier for a person on the Biblioth\u00e8que interuniversitaire de sant\u00e9 website"
+  }
+ ],
+ "property|image of design plans": [
+  {
+   "id": "P3311",
+   "label": "image of design plans",
+   "description": "image representing the plan of a building or place"
+  }
+ ],
+ "property|ticker symbol": [
+  {
+   "id": "P249",
+   "label": "ticker symbol",
+   "description": "identifier for a publicly traded share of a particular stock on a particular stock market or that of a cryptocurrency (qualifier for P414)"
+  }
+ ],
+ "property|official name": [
+  {
+   "id": "P1448",
+   "label": "official name",
+   "description": "official name of the subject in its official language(s)"
+  },
+  {
+   "id": "P1705",
+   "label": "native label",
+   "description": "label for the items in their official language or their original language"
+  }
+ ],
+ "property|taxon found at location": [
+  {
+   "id": "P6803",
+   "label": "taxon found at location",
+   "description": "plant or animals taxon described as present in location, not countries or first-level subnational entities. Requires reference. Ref should cover a limited number of taxa for specific location."
+  }
+ ],
+ "property|full work available at URL": [],
+ "property|3D model": [
+  {
+   "id": "P4896",
+   "label": "3D model",
+   "description": "representation of any three-dimensional surface of an object"
+  },
+  {
+   "id": "P3080",
+   "label": "game artist",
+   "description": "game artist(s) that produced art assets for role-playing games, collectible card games, video game, etc."
+  }
+ ],
+ "property|net profit": [
+  {
+   "id": "P2295",
+   "label": "net profit",
+   "description": "private entity profit after accounting for all costs"
+  }
+ ],
+ "property|towards": [
+  {
+   "id": "P5051",
+   "label": "towards",
+   "description": "qualifier for \"adjacent station\" (P197) to indicate the terminal station(s) of a transportation line or service in that direction"
+  }
+ ],
+ "property|total assets": [
+  {
+   "id": "P2403",
+   "label": "total assets",
+   "description": "value of assets held by a private or public entity"
+  }
+ ],
+ "property|GitHub username": [
+  {
+   "id": "P2037",
+   "label": "GitHub account",
+   "description": "account of this project, person or organization on GitHub"
+  }
+ ],
+ "property|floruit": [
+  {
+   "id": "P1317",
+   "label": "floruit",
+   "description": "date when the person was known to be active or alive, when birth or death not documented"
+  },
+  {
+   "id": "P2031",
+   "label": "start of work period",
+   "description": "start of period during which a person or group flourished (fl. = \"floruit\") in their professional activity"
+  },
+  {
+   "id": "P2032",
+   "label": "end of work period",
+   "description": "end of period during which a person or group flourished (fl. = \"floruit\") in their professional activity"
+  }
+ ],
+ "property|Slovene Cultural Heritage Register ID": [
+  {
+   "id": "P1587",
+   "label": "Slovene Cultural Heritage Register ID",
+   "description": "identifier for a cultural monument in the\u00a0Slovene Cultural Heritage Register"
+  }
+ ],
+ "property|location": [
+  {
+   "id": "P625",
+   "label": "coordinate location",
+   "description": "geocoordinates of the subject. For Earth, please note that only the WGS84 geodetic datum is currently supported"
+  },
+  {
+   "id": "P276",
+   "label": "location",
+   "description": "location of the object, structure or event; use P131 to indicate the containing administrative entity, P8138 for statistical entities, or P706 for geographic entities; use P7153 for locations associated with the object"
+  },
+  {
+   "id": "P937",
+   "label": "work location",
+   "description": "location where persons or organisations were actively participating in employment, business or other work"
+  },
+  {
+   "id": "P3005",
+   "label": "valid in place",
+   "description": "place where a statement is valid"
+  },
+  {
+   "id": "P304",
+   "label": "page(s)",
+   "description": "page number of source referenced for statement. Note \"column(s)\" (P3903) and \"folio(s)\" (P7416) for other numbering systems"
+  },
+  {
+   "id": "P131",
+   "label": "located in the administrative territorial entity",
+   "description": "the item is located on the territory of the following administrative entity. Use P276 for specifying locations that are non-administrative places and for items about events. Use P1382 if the item falls only partially into the administrative entity"
+  },
+  {
+   "id": "P1932",
+   "label": "object named as",
+   "description": "use as qualifier to indicate how the object's value was given in the source"
+  }
+ ],
+ "property|UniProt protein ID": [
+  {
+   "id": "P352",
+   "label": "UniProt protein ID",
+   "description": "identifier for a protein per the UniProt database"
+  }
+ ],
+ "property|width": [
+  {
+   "id": "P2049",
+   "label": "width",
+   "description": "width of an object"
+  },
+  {
+   "id": "P2261",
+   "label": "beam",
+   "description": "width of a ship at its widest point measured at its nominal waterline"
+  }
+ ],
+ "property|addressee": [
+  {
+   "id": "P1817",
+   "label": "addressee",
+   "description": "person or organization to whom a letter or note is addressed"
+  }
+ ],
+ "property|dissertation submitted to": [
+  {
+   "id": "P4101",
+   "label": "thesis submitted to",
+   "description": "institution to whom a thesis or dissertation is submitted"
+  }
+ ],
+ "property|continent": [
+  {
+   "id": "P30",
+   "label": "continent",
+   "description": "continent of which the subject is a part"
+  }
+ ],
+ "property|time of discovery or invention": [
+  {
+   "id": "P575",
+   "label": "time of discovery or invention",
+   "description": "date or point in time when the item was discovered or invented"
+  }
+ ],
+ "property|Bob ID": [
+  {
+   "id": "P7766",
+   "label": "Bob ID",
+   "description": "identifier for a French lexeme on Bob"
+  }
+ ],
+ "property|end cause": [
+  {
+   "id": "P1534",
+   "label": "end cause",
+   "description": "qualifier used together with the end date qualifier (P582) to specify the reason for the end"
+  }
+ ],
+ "property|anthem": [
+  {
+   "id": "P85",
+   "label": "anthem",
+   "description": "subject's official anthem"
+  }
+ ],
+ "property|ISO 639-1 code": [
+  {
+   "id": "P218",
+   "label": "ISO 639-1 code",
+   "description": "2-letter identifier for language or family of languages defined in ISO 639-1 standard"
+  }
+ ],
+ "property|depends on software": [
+  {
+   "id": "P1547",
+   "label": "depends on software",
+   "description": "subject software depends on object software"
+  }
+ ],
+ "property|image of grave": [
+  {
+   "id": "P1442",
+   "label": "image of grave",
+   "description": "picture of a person or animal's grave, gravestone or tomb"
+  }
+ ],
+ "property|parent astronomical body": [
+  {
+   "id": "P397",
+   "label": "parent astronomical body",
+   "description": "major astronomical body the item belongs to"
+  }
+ ],
+ "property|described at URL": [
+  {
+   "id": "P973",
+   "label": "described at URL",
+   "description": "item is described at the following URL"
+  }
+ ],
+ "property|educated at": [
+  {
+   "id": "P69",
+   "label": "educated at",
+   "description": "educational institution attended by subject"
+  }
+ ],
+ "property|field of work": [
+  {
+   "id": "P101",
+   "label": "field of work",
+   "description": "specialization of a person or organization; see P106 for the occupation/ P452 for industry"
+  }
+ ],
+ "property|member of sports team": [
+  {
+   "id": "P54",
+   "label": "member of sports team",
+   "description": "sports teams or clubs that the subject represents or represented"
+  }
+ ],
+ "property|edition or translation of": [
+  {
+   "id": "P629",
+   "label": "edition or translation of",
+   "description": "is an edition or translation of this entity"
+  }
+ ],
+ "property|occupation": [
+  {
+   "id": "P106",
+   "label": "occupation",
+   "description": "occupation of a person. See also \"field of work\" (Property:P101), \"position held\" (Property:P39). Not for groups of people. There, use \"field of work\" (Property:P101), \"industry\" (Property:P452), \"members have occupation\" (Property:P3989)."
+  },
+  {
+   "id": "P3095",
+   "label": "practiced by",
+   "description": "type of agents that study this subject or work in this field"
+  },
+  {
+   "id": "P3989",
+   "label": "members have occupation",
+   "description": "some or all members of this group share the occupation"
+  },
+  {
+   "id": "P8629",
+   "label": "Occupational Outlook Handbook ID",
+   "description": "identifier for occupations in the Occupational Outlook Handbook"
+  },
+  {
+   "id": "P8734",
+   "label": "O*NET OnLine code",
+   "description": "code for an occupation in O*NET OnLine"
+  }
+ ],
+ "property|canonization status": [
+  {
+   "id": "P411",
+   "label": "canonization status",
+   "description": "formal stage in the process of attaining sainthood per the subject's religious organization"
+  }
+ ],
+ "property|filming location": [
+  {
+   "id": "P915",
+   "label": "filming location",
+   "description": "actual place where this scene/film was shot. For the setting, use \"narrative location\" (P840)"
+  }
+ ],
+ "property|number of subscribers": [
+  {
+   "id": "P3744",
+   "label": "number of subscribers",
+   "description": "number of subscribers for subscription-based companies, e.g. telecommunication companies, newspapers, pay-TV channels, software, etc."
+  },
+  {
+   "id": "P8687",
+   "label": "social media followers",
+   "description": "number of subscribers on a particular social media website (use as main statement only; see P3744 instead for qualifier). Qualify with \"point in time\" and property for account. For Twitter, use numeric id."
+  }
+ ],
+ "property|item for this sense": [
+  {
+   "id": "P5137",
+   "label": "item for this sense",
+   "description": "concept corresponding to this sense of a lexeme. Use only on lexeme senses; do not use on items or properties"
+  }
+ ],
+ "property|taxon rank": [
+  {
+   "id": "P105",
+   "label": "taxon rank",
+   "description": "level in a taxonomic hierarchy"
+  }
+ ],
+ "property|number of cases": [
+  {
+   "id": "P1603",
+   "label": "number of cases",
+   "description": "cumulative number of confirmed, probable and suspected occurrences"
+  }
+ ],
+ "property|TLFi ID": [
+  {
+   "id": "P7722",
+   "label": "TLFi ID",
+   "description": "identifier for a lexeme on the Tr\u00e9sor de la langue fran\u00e7aise informatis\u00e9"
+  }
+ ],
+ "property|on focus list of Wikimedia project": [
+  {
+   "id": "P5008",
+   "label": "on focus list of Wikimedia project",
+   "description": "property to indicate that an item is of particular interest for a Wikimedia project. This property does not add notability. Items should not be created with this property if they are not notable for Wikidata. See also P6104, P972, P2354"
+  }
+ ],
+ "property|nature of statement": [
+  {
+   "id": "P5102",
+   "label": "nature of statement",
+   "description": "(qualifier only) the underlying circumstances of this statement"
+  }
+ ],
+ "property|coordinates of northernmost point": [
+  {
+   "id": "P1332",
+   "label": "coordinates of northernmost point",
+   "description": "northernmost point of a location. For an administrative entity this includes offshore islands"
+  }
+ ],
+ "property|CPAN author ID": [
+  {
+   "id": "P8124",
+   "label": "CPAN author ID",
+   "description": "ID of a author in CPAN"
+  }
+ ],
+ "property|DOI": [
+  {
+   "id": "P356",
+   "label": "DOI",
+   "description": "serial code used to uniquely identify physical, digital or abstract objects like scientific papers (upper case letters only)"
+  },
+  {
+   "id": "P699",
+   "label": "Disease Ontology ID",
+   "description": "identifier in the Disease Ontology database"
+  },
+  {
+   "id": "P1662",
+   "label": "DOI prefix",
+   "description": "identifier specific to a DOI registrant"
+  },
+  {
+   "id": "P2348",
+   "label": "time period",
+   "description": "time period (historic period or era, sports season, theatre season, legislative period etc.) in which the subject occurred or with which it is associated"
+  },
+  {
+   "id": "P6427",
+   "label": "trading name",
+   "description": "alternative name under which an entity legally trades"
+  },
+  {
+   "id": "P8404",
+   "label": "DOI formatter",
+   "description": "formatter string where '$1' can be automatically replaced to create a DOI"
+  },
+  {
+   "id": "P921",
+   "label": "main subject",
+   "description": "primary topic of a work or act of communication"
+  }
+ ],
+ "property|GADM ID": [
+  {
+   "id": "P8714",
+   "label": "GADM ID",
+   "description": "identifier in the Global Administrative Areas database"
+  }
+ ],
+ "property|Italian School ID": [
+  {
+   "id": "P5114",
+   "label": "Italian School ID",
+   "description": "school identifier used by Italian Ministry of Education, Universities and Research for identifying Italian schools"
+  },
+  {
+   "id": "P5120",
+   "label": "TFRRS athlete ID",
+   "description": "identifier for an athlete on the TFRRS track and field and cross country results website"
+  }
+ ],
+ "property|date of official opening": [
+  {
+   "id": "P1619",
+   "label": "date of official opening",
+   "description": "date or point in time a place, organization, or event officially opened"
+  }
+ ],
+ "property|inscription": [
+  {
+   "id": "P1684",
+   "label": "inscription",
+   "description": "inscriptions, markings and signatures on an object"
+  },
+  {
+   "id": "P1801",
+   "label": "plaque image",
+   "description": "image of plaque or inscription commemorating or mentioning the subject. For graves, use grave picture (P1442)"
+  },
+  {
+   "id": "P9906",
+   "label": "inscription image",
+   "description": "image of an inscription on the object that is the subject of the item. Use \"commemorative plaque image\" (P1801) for images of plaques with inscriptions about the subject"
+  },
+  {
+   "id": "P6568",
+   "label": "inscription mentions",
+   "description": "item about a person or an object mentioned in the inscription's text. Use on Wikimedia Commons on media files"
+  },
+  {
+   "id": "P7008",
+   "label": "unabbreviated text",
+   "description": "(qualifier) text in inscription with the abbreviations expanded in a fairly reliable way"
+  },
+  {
+   "id": "P1766",
+   "label": "place name sign",
+   "description": "image of (road) sign with place name on it"
+  },
+  {
+   "id": "P5214",
+   "label": "GONIAT paper ID",
+   "description": "identifier for a taxonomic paper about Paleozoic ammonoids, in the GONIAT database"
+  }
+ ],
+ "property|negative prognostic predictor for": [
+  {
+   "id": "P3359",
+   "label": "negative prognostic predictor for",
+   "description": "the presence of the genetic variant helps to prognose poor outcome for the disease"
+  }
+ ],
+ "property|relation": [
+  {
+   "id": "P1038",
+   "label": "relative",
+   "description": "family member (qualify with \"kinship to subject\", P1039; for direct family member please use specific property)"
+  },
+  {
+   "id": "P2309",
+   "label": "relation",
+   "description": "qualifier to define a property constraint in combination with P2302. Possible values are: \"instance of\", \"subclass of\" or \"instance or subclass of\". The qualifier to use with the property \"relative\" is \"type of kinship\" (P1039), not this"
+  },
+  {
+   "id": "P1039",
+   "label": "kinship to subject",
+   "description": "qualifier of \"relative\" (P1038) to indicate less usual family relationships (ancestor, son-in-law, adoptions, etc); indicate how the qualificator item is related to the main item"
+  },
+  {
+   "id": "P402",
+   "label": "OpenStreetMap relation ID",
+   "description": "identifier for a relation in OpenStreetMap"
+  },
+  {
+   "id": "P451",
+   "label": "unmarried partner",
+   "description": "someone with whom the person is in a relationship without being married. Use \"spouse\" (P26) for married couples"
+  },
+  {
+   "id": "P9763",
+   "label": "syntactic dependency head relationship",
+   "description": "type of dependency relationship between the part being qualified and its corresponding head (denoted with \"syntactic dependency head position\")"
+  },
+  {
+   "id": "P5181",
+   "label": "Relationship Science organization ID",
+   "description": "identifier for an organization in the Relationship Science database"
+  }
+ ],
+ "property|flag": [
+  {
+   "id": "P163",
+   "label": "flag",
+   "description": "subject's flag"
+  },
+  {
+   "id": "P8047",
+   "label": "country of registry",
+   "description": "country where a ship is or has been registered"
+  },
+  {
+   "id": "P41",
+   "label": "flag image",
+   "description": "image of the item's flag"
+  },
+  {
+   "id": "P3022",
+   "label": "flag bearer",
+   "description": "person who carries the national flag of their country at an opening or closing ceremony"
+  },
+  {
+   "id": "P3089",
+   "label": "Flags of the World ID",
+   "description": "identifier for a flag in the Flags of the World database"
+  },
+  {
+   "id": "P8058",
+   "label": "symbol of",
+   "description": "item of which the image is a symbol"
+  },
+  {
+   "id": "P10544",
+   "label": "cantilever sign",
+   "description": "image of a cantilever sign on the building"
+  }
+ ],
+ "property|cites work": [
+  {
+   "id": "P2860",
+   "label": "cites work",
+   "description": "citation from one creative or scholarly work to another"
+  }
+ ],
+ "property|quantity": [
+  {
+   "id": "P1114",
+   "label": "quantity",
+   "description": "number of instances of this subject in the universe of the subject (the actual number of instances in Wikidata may be lower or higher)"
+  },
+  {
+   "id": "P111",
+   "label": "measured physical quantity",
+   "description": "value of a physical property expressed as number multiplied by a unit"
+  },
+  {
+   "id": "P2234",
+   "label": "volume as quantity",
+   "description": "quantity of three-dimensional space"
+  },
+  {
+   "id": "P1092",
+   "label": "total produced",
+   "description": "quantity of item produced"
+  },
+  {
+   "id": "P1342",
+   "label": "number of seats",
+   "description": "total number of seats/members in an assembly (legislative house or similar)"
+  },
+  {
+   "id": "P2324",
+   "label": "quantity buried",
+   "description": "number of remains buried or interred"
+  },
+  {
+   "id": "P7973",
+   "label": "quantity symbol (LaTeX)",
+   "description": "symbol for a mathematical or physical quantity in LaTeX"
+  }
+ ],
+ "property|number of injured": [
+  {
+   "id": "P1339",
+   "label": "number of injured",
+   "description": "number of people with non-fatal injuries in an event"
+  }
+ ],
+ "property|head of government": [
+  {
+   "id": "P6",
+   "label": "head of government",
+   "description": "head of the executive power of this town, city, municipality, state, country, or other governmental body"
+  },
+  {
+   "id": "P1313",
+   "label": "office held by head of government",
+   "description": "political office that is fulfilled by the head of the government of this item"
+  }
+ ],
+ "property|subclass of": [
+  {
+   "id": "P279",
+   "label": "subclass of",
+   "description": "this item is a subclass (subset) of that item; ALL instances of this item are instances of that item; different from P31 (instance of), e.g.: volcano is a subclass of mountain; Everest is an instance of mountain"
+  },
+  {
+   "id": "P1647",
+   "label": "subproperty of",
+   "description": "all resources related by this property are also related by that property"
+  },
+  {
+   "id": "P10019",
+   "label": "equivalent in higher rank taxon",
+   "description": "an equivalent class that is species-neutral or scoped to higher ranking taxa"
+  }
+ ],
+ "property|numeric value": [
+  {
+   "id": "P1181",
+   "label": "numeric value",
+   "description": "numerical value of a number, a mathematical constant, or a physical constant"
+  },
+  {
+   "id": "P3934",
+   "label": "face value",
+   "description": "value printed on a coin, stamp or banknote by the issuing authority"
+  }
+ ],
+ "property|place of death": [
+  {
+   "id": "P20",
+   "label": "place of death",
+   "description": "most specific known (e.g. city instead of country, or hospital instead of city) death location of a person, animal or fictional character"
+  }
+ ],
+ "property|programmer": [
+  {
+   "id": "P943",
+   "label": "programmer",
+   "description": "the programmer that wrote the piece of software"
+  },
+  {
+   "id": "P277",
+   "label": "programmed in",
+   "description": "the programming language(s) in which the software is developed"
+  },
+  {
+   "id": "P3966",
+   "label": "programming paradigm",
+   "description": "programming paradigm in which a programming language is classified"
+  }
+ ],
+ "property|country of origin": [
+  {
+   "id": "P495",
+   "label": "country of origin",
+   "description": "country of origin of this item (creative work, food, phrase, product, etc.)"
+  }
+ ],
+ "property|coordinates of easternmost point": [
+  {
+   "id": "P1334",
+   "label": "coordinates of easternmost point",
+   "description": "easternmost point of a location"
+  }
+ ],
+ "property|reference URL": [
+  {
+   "id": "P854",
+   "label": "reference URL",
+   "description": "should be used for Internet URLs as references. Use \"Wikimedia import URL\" (P4656) for imports from Wikimedia sites"
+  },
+  {
+   "id": "P4656",
+   "label": "Wikimedia import URL",
+   "description": "URL of source to indicate the page or revision of an import source from another Wikimedia project (except actual references, such as Wikisource source texts). Use instead of \"reference URL\" (P854). Permalinks are preferred."
+  }
+ ],
+ "property|depicts": [
+  {
+   "id": "P180",
+   "label": "depicts",
+   "description": "entity visually depicted in an image, literarily described in a work, or otherwise incorporated into an audiovisual or other medium; see also P921, 'main subject'"
+  },
+  {
+   "id": "P1257",
+   "label": "depicts Iconclass notation",
+   "description": "Iconclass code depicted in an artwork, for linking Iconclass codes with their corresponding artistic themes or concepts, use P1256 (Iconclass notation)"
+  },
+  {
+   "id": "P2913",
+   "label": "date depicted",
+   "description": "date represented in a work (for narrative works use P2408)"
+  },
+  {
+   "id": "P14672",
+   "label": "still taken from the audiovisual work",
+   "description": "image comes from the given audiovisual work"
+  }
+ ],
+ "property|has use": [
+  {
+   "id": "P366",
+   "label": "has use",
+   "description": "main use of the subject (includes current and former usage)"
+  }
+ ],
+ "property|sourcing circumstances": [
+  {
+   "id": "P1480",
+   "label": "sourcing circumstances",
+   "description": "qualification of the truth or accuracy of a source: circa (Q5727902), near (Q21818619), presumably (Q18122778), etc."
+  }
+ ],
+ "property|connecting line": [
+  {
+   "id": "P81",
+   "label": "connecting line",
+   "description": "railway line(s) subject is directly connected to"
+  }
+ ],
+ "property|nominated by": [
+  {
+   "id": "P4353",
+   "label": "nominated by",
+   "description": "who nominated a person for an office or award; can be used as a qualifier"
+  }
+ ],
+ "property|Commons category": [
+  {
+   "id": "P373",
+   "label": "Commons category",
+   "description": "name of the Wikimedia Commons category containing files related to this item (without the prefix \"Category:\")"
+  },
+  {
+   "id": "P7782",
+   "label": "category for ship name",
+   "description": "Commons category for a name of a ship"
+  },
+  {
+   "id": "P7561",
+   "label": "category for the interior of the item",
+   "description": "Commons category for media files depicting interior views of this item (object, place)"
+  },
+  {
+   "id": "P8596",
+   "label": "category for the exterior of the item",
+   "description": "category for multimedia files depicting exterior views of this item (object, place)"
+  }
+ ],
+ "property|proportion": [
+  {
+   "id": "P1107",
+   "label": "proportion",
+   "description": "to be used as a qualifier, value must be between 0 and 1"
+  },
+  {
+   "id": "P2927",
+   "label": "water as percent of area",
+   "description": "which percentage of the territory of this item inside coast line and international bounderies is water. Use \"percent\" (Q11229) as unit"
+  },
+  {
+   "id": "P6076",
+   "label": "biobased content weight percentage",
+   "description": "weight percentage of content coming from the biomass"
+  }
+ ],
+ "property|twinned administrative body": [
+  {
+   "id": "P190",
+   "label": "twinned administrative body",
+   "description": "twin towns, sister cities, twinned municipalities and other localities that have a partnership or cooperative agreement, either legally or informally acknowledged by their governments"
+  }
+ ],
+ "property|botanist author abbreviation": [
+  {
+   "id": "P428",
+   "label": "botanist author abbreviation",
+   "description": "standard form (official abbreviation) of a personal name for use in an author citation (only for names of algae, fungi and plants)"
+  }
+ ],
+ "property|Littr\u00e9 ID": [
+  {
+   "id": "P7724",
+   "label": "Littr\u00e9 ID",
+   "description": "identifier for a French lexeme on the online Littr\u00e9"
+  }
+ ],
+ "property|sports discipline competed in": [
+  {
+   "id": "P2416",
+   "label": "sports discipline competed in",
+   "description": "discipline an athlete competed in within a sport"
+  }
+ ],
+ "property|date of death": [
+  {
+   "id": "P570",
+   "label": "date of death",
+   "description": "date on which the subject died"
+  }
+ ],
+ "property|influenced by": [
+  {
+   "id": "P737",
+   "label": "influenced by",
+   "description": "the subject (person, idea, etc.) was influenced or inspired by this object entity, e.g. \"Heidegger was influenced by Aristotle\""
+  }
+ ],
+ "property|UK Lakes Portal ID": [
+  {
+   "id": "P7548",
+   "label": "UK Lakes Portal ID",
+   "description": "identifier for a lake or loch in the UK Lakes Portal database and website"
+  }
+ ],
+ "property|described by source": [
+  {
+   "id": "P1343",
+   "label": "described by source",
+   "description": "work where this item is described, in statistical contexts, a methodological note describing the data"
+  }
+ ],
+ "property|PDB structure ID": [
+  {
+   "id": "P638",
+   "label": "PDB structure ID",
+   "description": "identifier for 3D structural data as per the PDB (Protein Data Bank) database"
+  }
+ ],
+ "property|Roman praenomen": [
+  {
+   "id": "P2358",
+   "label": "praenomen",
+   "description": "standard part of the name of a Roman (and related cultures), link to items for specific Roman praenomen only"
+  }
+ ],
+ "property|Project Gutenberg author ID": [
+  {
+   "id": "P1938",
+   "label": "Project Gutenberg author ID",
+   "description": "author identifier at Project Gutenberg"
+  }
+ ],
+ "property|present in work": [
+  {
+   "id": "P1441",
+   "label": "present in work",
+   "description": "this (fictional or fictionalized) entity, place, or person appears in that work as part of the narration (use P2860 for works citing other works, P361/P1433 for works being part of other works, P1343 for entities described in non-fictional accounts)"
+  }
+ ],
+ "property|tonality": [
+  {
+   "id": "P826",
+   "label": "tonality",
+   "description": "key of a musical composition"
+  }
+ ],
+ "property|area": [
+  {
+   "id": "P518",
+   "label": "applies to part",
+   "description": "part, aspect, or form of the item to which the claim applies"
+  },
+  {
+   "id": "P2046",
+   "label": "area",
+   "description": "area occupied by an object"
+  },
+  {
+   "id": "P101",
+   "label": "field of work",
+   "description": "specialization of a person or organization; see P106 for the occupation/ P452 for industry"
+  },
+  {
+   "id": "P473",
+   "label": "local dialing code",
+   "description": "identifier dedicated to subject city by the area communication network"
+  },
+  {
+   "id": "P982",
+   "label": "MusicBrainz area ID",
+   "description": "identifier for an area in the MusicBrainz open music database"
+  },
+  {
+   "id": "P2541",
+   "label": "operating area",
+   "description": "geographic area or jurisdiction an organisation or industry operates in, serves, or has responsibility for"
+  },
+  {
+   "id": "P2650",
+   "label": "interested in",
+   "description": "item of special or vested interest to this person or organisation"
+  }
+ ],
+ "property|RKDimages ID": [
+  {
+   "id": "P350",
+   "label": "RKDimages ID",
+   "description": "identifier per RKDimages of the Netherlands Institute for Art History"
+  }
+ ],
+ "property|manufacturer": [
+  {
+   "id": "P176",
+   "label": "manufacturer",
+   "description": "(main or final) manufacturer or producer of this product"
+  },
+  {
+   "id": "P1056",
+   "label": "product or material produced",
+   "description": "material or product, including services, produced or provided by an organization, industry, facility, or process"
+  },
+  {
+   "id": "P2598",
+   "label": "serial number",
+   "description": "an identifier for a specific object among the same product. Not a product code or model number"
+  }
+ ],
+ "property|performer": [
+  {
+   "id": "P175",
+   "label": "performer",
+   "description": "actor, musician, band or other performer associated with this role or musical work"
+  },
+  {
+   "id": "P453",
+   "label": "character role",
+   "description": "specific role played or filled by subject -- use only as qualifier of \"cast member\" (P161), \"voice actor\" (P725)"
+  },
+  {
+   "id": "P4633",
+   "label": "name of the character role",
+   "description": "name by which a character role is recorded in a database or mentioned in the context of a work, use as qualifier for cast; notably a specific performance of a theatrical production of a play"
+  },
+  {
+   "id": "P5053",
+   "label": "fastest lap",
+   "description": "person who does the fastest lap during a motorsport race"
+  },
+  {
+   "id": "P14427",
+   "label": "performer age-compliance documentation URL",
+   "description": "URL for a website's statement of compliance with legal record-keeping requirements related to visual depictions of actual sexually explicit conduct"
+  }
+ ],
+ "property|number of speakers, writers, or signers": [
+  {
+   "id": "P1098",
+   "label": "number of speakers, writers, or signers",
+   "description": "number of people who use a language"
+  }
+ ],
+ "property|commemorates": [
+  {
+   "id": "P547",
+   "label": "commemorates",
+   "description": "what or whom is commemorated by the place, monument, memorial, or holiday"
+  }
+ ],
+ "property|inventory number": [
+  {
+   "id": "P217",
+   "label": "inventory number",
+   "description": "identifier for a physical object or a set of physical objects in a collection"
+  },
+  {
+   "id": "P9471",
+   "label": "Art for the City inventory number",
+   "description": "alphanumeric inventory number of a work in the Art for the City database"
+  }
+ ],
+ "property|destination point": [
+  {
+   "id": "P1444",
+   "label": "destination point",
+   "description": "destination for this route (journey, flight, sailing, exploration, migration, etc.)"
+  }
+ ],
+ "property|SPARQL endpoint URL": [
+  {
+   "id": "P5305",
+   "label": "SPARQL endpoint URL",
+   "description": "URL of the SPARQL endpoint of the database/website"
+  }
+ ],
+ "property|exact match": [
+  {
+   "id": "P2888",
+   "label": "exact match",
+   "description": "URL used to link two items or properties, indicating a high degree of confidence that the concepts can be used interchangeably"
+  }
+ ],
+ "property|applies to jurisdiction": [
+  {
+   "id": "P1001",
+   "label": "applies to jurisdiction",
+   "description": "the item (institution, law, public office, public register, etc) or statement belongs to or has power over or applies to the value (a territorial jurisdiction: a country, state, municipality, etc)"
+  }
+ ],
+ "property|P794": [],
+ "property|geoshape": [
+  {
+   "id": "P3896",
+   "label": "geoshape",
+   "description": "geographic data from Wikimedia Commons"
+  }
+ ],
+ "property|number of deaths": [
+  {
+   "id": "P1120",
+   "label": "number of deaths",
+   "description": "total (cumulative) number of people/animals who died since start as a direct result of an event or cause"
+  },
+  {
+   "id": "P1590",
+   "label": "number of casualties",
+   "description": "number of people dead or injured because of this event. Used when precise data on number of deaths and number of injured is unavailable."
+  },
+  {
+   "id": "P1345",
+   "label": "number of victims of killer",
+   "description": "people killed by the subject, both legal and illegal"
+  }
+ ],
+ "property|illustrator": [
+  {
+   "id": "P110",
+   "label": "illustrator",
+   "description": "person drawing the pictures or taking the photographs in a book or similar work"
+  },
+  {
+   "id": "P10837",
+   "label": "penciller",
+   "description": "artist who works on the creation of comic books, graphic novels, and similar visual art forms, with a focus on the initial pencil illustrations"
+  }
+ ],
+ "property|end time": [
+  {
+   "id": "P582",
+   "label": "end time",
+   "description": "moment when an entity ceases to exist and a statement stops being entirely valid or no longer be true"
+  },
+  {
+   "id": "P2032",
+   "label": "end of work period",
+   "description": "end of period during which a person or group flourished (fl. = \"floruit\") in their professional activity"
+  },
+  {
+   "id": "P8554",
+   "label": "earliest end date",
+   "description": "(qualifier) earliest date on which the statement could have begun to no longer be true"
+  },
+  {
+   "id": "P12506",
+   "label": "latest end date",
+   "description": "latest date beyond which the statement could no longer be true"
+  }
+ ],
+ "property|inspired by": [
+  {
+   "id": "P144",
+   "label": "based on",
+   "description": "the work(s) or inputs used as the basis for subject item; for fictional analog use P1074"
+  },
+  {
+   "id": "P737",
+   "label": "influenced by",
+   "description": "the subject (person, idea, etc.) was influenced or inspired by this object entity, e.g. \"Heidegger was influenced by Aristotle\""
+  },
+  {
+   "id": "P941",
+   "label": "inspired by",
+   "description": "work, human, place or event which inspired this creative work or fictional entity"
+  }
+ ],
+ "property|CIViC variant ID": [
+  {
+   "id": "P3329",
+   "label": "CIViC variant ID",
+   "description": "identifier used in the CIViC database to identify specific variant"
+  }
+ ],
+ "property|point in time": [
+  {
+   "id": "P585",
+   "label": "point in time",
+   "description": "date something took place, existed or a statement was true; for providing time use the \"refine date\" property (P4241)"
+  }
+ ],
+ "property|noble title": [
+  {
+   "id": "P97",
+   "label": "noble title",
+   "description": "titles held by the person"
+  },
+  {
+   "id": "P1308",
+   "label": "position holder",
+   "description": "persons who hold and/or held the position"
+  }
+ ],
+ "property|located in the administrative territorial entity": [
+  {
+   "id": "P131",
+   "label": "located in the administrative territorial entity",
+   "description": "the item is located on the territory of the following administrative entity. Use P276 for specifying locations that are non-administrative places and for items about events. Use P1382 if the item falls only partially into the administrative entity"
+  }
+ ],
+ "property|ISO 3166-1 alpha-2 code": [
+  {
+   "id": "P297",
+   "label": "ISO 3166-1 alpha-2 code",
+   "description": "identifier for a country in two-letter format per ISO 3166-1"
+  }
+ ],
+ "property|Joconde work ID": [
+  {
+   "id": "P347",
+   "label": "Joconde work ID",
+   "description": "identifier in the Joconde database of the French Ministry of Culture"
+  }
+ ],
+ "property|class": [
+  {
+   "id": "P2308",
+   "label": "class",
+   "description": "qualifier to define a property constraint in combination with \"property constraint\" (P2302)"
+  },
+  {
+   "id": "P2094",
+   "label": "competition class",
+   "description": "official classification by a regulating body under which the subject (events, teams, participants, or equipment) qualifies for inclusion"
+  },
+  {
+   "id": "P7174",
+   "label": "school class",
+   "description": "(qualifier) class of a given year/time period to which the person belonged in an educational institution"
+  },
+  {
+   "id": "P1087",
+   "label": "Elo rating",
+   "description": "quantitative measure of one's game-playing ability, particularly in classical chess"
+  },
+  {
+   "id": "P2676",
+   "label": "rating certificate ID",
+   "description": "reference certificate identifier of content rating decisions"
+  },
+  {
+   "id": "P289",
+   "label": "vessel class",
+   "description": "series of vessels or other watercraft built to the same design of which this vessel is a member"
+  },
+  {
+   "id": "P5606",
+   "label": "class of station",
+   "description": "class of a railway station, assigned by its operator; \"issued by\" is a mandatory qualifier."
+  }
+ ],
+ "property|copyright license": [
+  {
+   "id": "P275",
+   "label": "copyright license",
+   "description": "license under which this copyrighted work is released"
+  }
+ ],
+ "property|adjacent station": [
+  {
+   "id": "P197",
+   "label": "adjacent station",
+   "description": "the stations next to this station, sharing the same line(s)"
+  }
+ ],
+ "property|owned by": [
+  {
+   "id": "P127",
+   "label": "owned by",
+   "description": "owner of the subject"
+  },
+  {
+   "id": "P749",
+   "label": "parent organization or unit",
+   "description": "parent organization or unit of an organization or unit, opposite of child organization or unit (P355); use instance of (P31) to distinguish organization (Q43229) and organization unit (Q10387680)"
+  }
+ ],
+ "property|cast member": [
+  {
+   "id": "P161",
+   "label": "cast member",
+   "description": "actor in the subject production [use \"character role\" (P453) and/or \"name of the character role\" (P4633) as qualifiers] [use \"voice actor\" (P725) for voice-only role] - [use \"recorded participant\" (P11108) for non-fiction productions]"
+  }
+ ],
+ "property|blood type": [
+  {
+   "id": "P1853",
+   "label": "blood type",
+   "description": "blood type of the human or animal"
+  }
+ ],
+ "property|Reactome ID": [
+  {
+   "id": "P3937",
+   "label": "Reactome ID",
+   "description": "Identifier used in Reactome to uniquely identify a biological pathway"
+  }
+ ],
+ "property|main subject": [
+  {
+   "id": "P921",
+   "label": "main subject",
+   "description": "primary topic of a work or act of communication"
+  },
+  {
+   "id": "P301",
+   "label": "category's main topic",
+   "description": "primary topic of the subject Wikimedia category"
+  },
+  {
+   "id": "P101",
+   "label": "field of work",
+   "description": "specialization of a person or organization; see P106 for the occupation/ P452 for industry"
+  }
+ ],
+ "property|Survey of Scottish Witchcraft - Accused witch ID": [
+  {
+   "id": "P4478",
+   "label": "Survey of Scottish Witchcraft - Accused witch ID",
+   "description": "Accused witch identifier in the Survey of Scottish Witchcraft database"
+  }
+ ],
+ "property|WikiTree person ID": [
+  {
+   "id": "P2949",
+   "label": "WikiTree person ID",
+   "description": "identifier for a person in the WikiTree genealogy website"
+  }
+ ],
+ "property|minimal incubation period in humans": [
+  {
+   "id": "P3488",
+   "label": "minimal incubation period in humans",
+   "description": "minimal time between an infection and the onset of disease symptoms in infected humans"
+  }
+ ],
+ "property|date of official closure": [
+  {
+   "id": "P3999",
+   "label": "date of official closure",
+   "description": "date of official closure of a building or event"
+  }
+ ],
+ "property|duration": [
+  {
+   "id": "P2047",
+   "label": "duration",
+   "description": "length of time of an event or process"
+  }
+ ],
+ "property|architect": [
+  {
+   "id": "P84",
+   "label": "architect",
+   "description": "person or architectural firm responsible for designing this building"
+  },
+  {
+   "id": "P149",
+   "label": "architectural style",
+   "description": "architectural style of a structure"
+  },
+  {
+   "id": "P3311",
+   "label": "image of design plans",
+   "description": "image representing the plan of a building or place"
+  },
+  {
+   "id": "P3058",
+   "label": "Architectuurgids architect ID",
+   "description": "identifier for an architect in the Dutch architectuurgids.nl database"
+  },
+  {
+   "id": "P3059",
+   "label": "Architectuurgids building ID",
+   "description": "unique identifier for a building in the Dutch architectuurgids.nl database"
+  },
+  {
+   "id": "P1068",
+   "label": "instruction set",
+   "description": "set of machine code instructions on which a processor architecture is based"
+  },
+  {
+   "id": "P11148",
+   "label": "AUTC heritage object ID",
+   "description": "building in the Architecture and Urbanism Research Centre database"
+  }
+ ],
+ "property|Online Books Page author ID": [
+  {
+   "id": "P4629",
+   "label": "Online Books Page author ID",
+   "description": "identifier for an author, at the Online Books Page website"
+  }
+ ],
+ "property|URL": [
+  {
+   "id": "P2699",
+   "label": "URL",
+   "description": "location of a resource"
+  },
+  {
+   "id": "P854",
+   "label": "reference URL",
+   "description": "should be used for Internet URLs as references. Use \"Wikimedia import URL\" (P4656) for imports from Wikimedia sites"
+  },
+  {
+   "id": "P856",
+   "label": "official website",
+   "description": "URL of the official page of an item (current or former). Usage: If a listed URL no longer points to the official website, do not remove it, but see the \"Hijacked or dead websites\" section of the Talk page"
+  },
+  {
+   "id": "P6954",
+   "label": "online access status",
+   "description": "property or qualifier for an ID property indicating whether linked content is directly readable online"
+  },
+  {
+   "id": "P953",
+   "label": "work available at URL",
+   "description": "URL of a web page containing this work"
+  },
+  {
+   "id": "P973",
+   "label": "described at URL",
+   "description": "item is described at the following URL"
+  },
+  {
+   "id": "P1065",
+   "label": "archive URL",
+   "description": "URL to the archived web page specified with URL property"
+  }
+ ],
+ "property|first line": [
+  {
+   "id": "P1922",
+   "label": "first line",
+   "description": "first line (incipit) of a poem, first sentence of a novel, speech, etc."
+  }
+ ],
+ "property|feast day": [
+  {
+   "id": "P841",
+   "label": "feast day",
+   "description": "saint's principal feast day"
+  }
+ ],
+ "property|elevation above sea level": [
+  {
+   "id": "P2044",
+   "label": "elevation above sea level",
+   "description": "height of the item (geographical object) as measured relative to sea level"
+  }
+ ],
+ "property|designed by": [
+  {
+   "id": "P287",
+   "label": "designed by",
+   "description": "person or organization which designed the object. For buildings use \"architect\" (Property:P84)"
+  },
+  {
+   "id": "P8670",
+   "label": "character designer",
+   "description": "person in charge of developing the style and concept of a character in a video game, anime or other creative work"
+  }
+ ],
+ "property|object has role": [
+  {
+   "id": "P3831",
+   "label": "object of statement has role",
+   "description": "(qualifier) role held by the predicate value (object) of a statement in the context of that statement; for the role of the item the statement appears on (subject), use P2868"
+  },
+  {
+   "id": "P12992",
+   "label": "objects of occurrence have role",
+   "description": "role that the object(s) of this occurrence take on in the context of this occurrence"
+  }
+ ],
+ "property|territory overlaps": [
+  {
+   "id": "P3179",
+   "label": "territory overlaps",
+   "description": "part or all of the area associated with (this) entity overlaps part or all of the area associated with that entity"
+  }
+ ],
+ "property|number of platform tracks": [
+  {
+   "id": "P1103",
+   "label": "number of platform tracks",
+   "description": "number of tracks served by the platforms at a railway station"
+  }
+ ],
+ "property|date of first performance": [
+  {
+   "id": "P1191",
+   "label": "date of first performance",
+   "description": "date a work was first debuted, performed or live-broadcasted (do not use for TV series episodes)"
+  }
+ ],
+ "property|UK National Archives ID": [
+  {
+   "id": "P3029",
+   "label": "UK National Archives ID",
+   "description": "identifier for a person, family or organisation, in the UK's National Archives database"
+  }
+ ],
+ "property|killed by": [
+  {
+   "id": "P157",
+   "label": "killed by",
+   "description": "person or organization who killed the subject"
+  }
+ ],
+ "property|official website": [
+  {
+   "id": "P856",
+   "label": "official website",
+   "description": "URL of the official page of an item (current or former). Usage: If a listed URL no longer points to the official website, do not remove it, but see the \"Hijacked or dead websites\" section of the Talk page"
+  },
+  {
+   "id": "P10225",
+   "label": "official shop URL",
+   "description": "URL of the official store operated by this item, or the official product page operated by this item's creator"
+  }
+ ],
+ "property|state of conservation": [
+  {
+   "id": "P5816",
+   "label": "state of conservation",
+   "description": "to indicate physical state of conservation of a building, monument, artifact, etc. E.g. ruinous, demolished, correct, etc."
+  }
+ ],
+ "property|Free Software Directory entry": [
+  {
+   "id": "P2537",
+   "label": "Free Software Directory entry",
+   "description": "link to the FSD page on a given software or license"
+  }
+ ],
+ "property|height": [
+  {
+   "id": "P2044",
+   "label": "elevation above sea level",
+   "description": "height of the item (geographical object) as measured relative to sea level"
+  },
+  {
+   "id": "P2048",
+   "label": "height",
+   "description": "vertical length of an entity"
+  },
+  {
+   "id": "P2793",
+   "label": "clearance",
+   "description": "distance between surface under bridge and bottom of a bridge deck"
+  },
+  {
+   "id": "P2923",
+   "label": "focal height",
+   "description": "height of the lamp of a lighthouse from water level"
+  },
+  {
+   "id": "P8497",
+   "label": "height of center of mass",
+   "description": "distance between the center of gravity and the bottom of this object"
+  },
+  {
+   "id": "P12549",
+   "label": "height of letters",
+   "description": "height of the letters of an inscription"
+  }
+ ],
+ "property|parliamentary group": [
+  {
+   "id": "P4100",
+   "label": "parliamentary group",
+   "description": "parliamentary group to which a member of a parliament belongs"
+  }
+ ],
+ "property|native label": [
+  {
+   "id": "P1705",
+   "label": "native label",
+   "description": "label for the items in their official language or their original language"
+  }
+ ],
+ "property|Electronic Enlightenment ID": [
+  {
+   "id": "P3429",
+   "label": "Electronic Enlightenment ID",
+   "description": "identifier in the Electronic Enlightenment database"
+  }
+ ],
+ "property|employer": [
+  {
+   "id": "P108",
+   "label": "employer",
+   "description": "person or organization for which the subject works or worked"
+  },
+  {
+   "id": "P1297",
+   "label": "IRS Employer Identification Number",
+   "description": "number given to businesses and charities by the United States Internal Revenue Service"
+  }
+ ],
+ "property|sex or gender": [
+  {
+   "id": "P21",
+   "label": "sex or gender",
+   "description": "sex or gender identity of human or animal. For human: male, female, non-binary, intersex, transgender female, transgender male, agender, etc. For animal: male organism, female organism. Groups of same gender use subclass of (P279)"
+  }
+ ],
+ "property|broadcast by": [
+  {
+   "id": "P3301",
+   "label": "broadcast by",
+   "description": "channel, network, website or service that broadcast this item over radio, television or the Internet"
+  }
+ ],
+ "property|instrumentation": [
+  {
+   "id": "P870",
+   "label": "instrumentation",
+   "description": "combination of musical instruments employed in a composition or accompanying a (folk) dance"
+  },
+  {
+   "id": "P11862",
+   "label": "orchestration",
+   "description": "an enumeration of the instruments used in a musical composition or arrangement described using any system of score notation"
+  }
+ ],
+ "property|state of use": [
+  {
+   "id": "P5817",
+   "label": "state of use",
+   "description": "to indicate state of use of a building, monument, etc. It is not related with its heritage protection (P1435), but to its present state of use. Ex.: abandoned, in use, temporarily closed, etc."
+  }
+ ],
+ "property|Twitter (X) username": [
+  {
+   "id": "P2002",
+   "label": "X (Twitter) username",
+   "description": "username on X (formerly Twitter); do not include the '@' symbol"
+  }
+ ],
+ "property|exhibition history": [
+  {
+   "id": "P608",
+   "label": "exhibition history",
+   "description": "exhibitions where the item is or was displayed"
+  }
+ ],
+ "property|language used": [
+  {
+   "id": "P1412",
+   "label": "languages spoken, written or signed",
+   "description": "language(s) that a person or a people speaks, writes or signs, including the native language(s)"
+  },
+  {
+   "id": "P2936",
+   "label": "language used",
+   "description": "language widely used (spoken or written) in this place or at this event or organisation"
+  }
+ ],
+ "property|total fertility rate": [
+  {
+   "id": "P4841",
+   "label": "total fertility rate",
+   "description": "average number of children that would be born to a woman over her lifetime who lives in this territorial entity"
+  }
+ ],
+ "property|published in": [
+  {
+   "id": "P1433",
+   "label": "published in",
+   "description": "larger work that a given work was published in, like a journal, a website, a collection, a book or a music album"
+  },
+  {
+   "id": "P6872",
+   "label": "has written for",
+   "description": "publication an author has contributed to"
+  },
+  {
+   "id": "P291",
+   "label": "place of publication",
+   "description": "geographical place of publication of the edition (use 1st edition when referring to works)"
+  }
+ ],
+ "property|social classification": [
+  {
+   "id": "P3716",
+   "label": "social classification",
+   "description": "social class as recognized in traditional or state law"
+  }
+ ],
+ "property|U.S. National Archives Identifier": [
+  {
+   "id": "P1225",
+   "label": "U.S. National Archives Identifier",
+   "description": "identifier for the United States National Archives and Records Administration's online catalog"
+  }
+ ],
+ "property|character role": [
+  {
+   "id": "P453",
+   "label": "character role",
+   "description": "specific role played or filled by subject -- use only as qualifier of \"cast member\" (P161), \"voice actor\" (P725)"
+  },
+  {
+   "id": "P4633",
+   "label": "name of the character role",
+   "description": "name by which a character role is recorded in a database or mentioned in the context of a work, use as qualifier for cast; notably a specific performance of a theatrical production of a play"
+  }
+ ],
+ "property|patron saint": [
+  {
+   "id": "P417",
+   "label": "patron saint",
+   "description": "patron saint adopted by the subject"
+  },
+  {
+   "id": "P2925",
+   "label": "domain of saint or deity",
+   "description": "domain(s) which this saint or deity controls or protects"
+  }
+ ],
+ "property|terminus": [
+  {
+   "id": "P5051",
+   "label": "towards",
+   "description": "qualifier for \"adjacent station\" (P197) to indicate the terminal station(s) of a transportation line or service in that direction"
+  },
+  {
+   "id": "P559",
+   "label": "terminus",
+   "description": "the feature (intersecting road, train station, etc.) at the end of a linear feature"
+  },
+  {
+   "id": "P609",
+   "label": "terminus location",
+   "description": "location of the terminus of a linear feature"
+  },
+  {
+   "id": "P1326",
+   "label": "latest date",
+   "description": "latest possible time that something could have occurred. Use as qualifier for other date properties"
+  },
+  {
+   "id": "P1319",
+   "label": "earliest date",
+   "description": "earliest date at which an event could have happened. Use as qualifier for other date properties"
+  }
+ ],
+ "property|political alignment": [
+  {
+   "id": "P1387",
+   "label": "political alignment",
+   "description": "political position within the left\u2013right political spectrum"
+  }
+ ],
+ "property|named after": [
+  {
+   "id": "P138",
+   "label": "named after",
+   "description": "entity or event that inspired the subject's name, or namesake (in at least one language). Qualifier \"applies to name\" (P5168) can be used to indicate which one"
+  }
+ ],
+ "property|instance of": [
+  {
+   "id": "P31",
+   "label": "instance of",
+   "description": "type to which this subject corresponds/belongs. Different from P279 (subclass of); for example: K2 is an instance of mountain; volcano is a subclass of mountain"
+  },
+  {
+   "id": "P10241",
+   "label": "individual of taxon",
+   "description": "the taxon of an individual named organism (animal, plant)"
+  },
+  {
+   "id": "P1647",
+   "label": "subproperty of",
+   "description": "all resources related by this property are also related by that property"
+  }
+ ],
+ "property|winner": [
+  {
+   "id": "P1346",
+   "label": "winner",
+   "description": "winner of a competition or similar event, not to be used from the awardees record (instead use \"award received\" (P166), possibly qualified with \"for work\" (P1686)) nor for wars or battles"
+  },
+  {
+   "id": "P166",
+   "label": "award received",
+   "description": "award or recognition received by a person, organization or creative work"
+  },
+  {
+   "id": "P991",
+   "label": "successful candidate",
+   "description": "person(s) or political organization(s) elected after the election"
+  },
+  {
+   "id": "P2522",
+   "label": "competition won",
+   "description": "competition or sports event won by the subject"
+  }
+ ],
+ "property|member of political party": [
+  {
+   "id": "P102",
+   "label": "member of political party",
+   "description": "the political party of which a person is or has been a member or otherwise affiliated"
+  }
+ ],
+ "property|National Portrait Gallery (London) person ID": [
+  {
+   "id": "P1816",
+   "label": "National Portrait Gallery (London) person ID",
+   "description": "identifier for sitters and artists represented in the National Portrait Gallery, London"
+  }
+ ],
+ "property|coordinates of southernmost point": [
+  {
+   "id": "P1333",
+   "label": "coordinates of southernmost point",
+   "description": "southernmost point of a place. For administrative entities this includes offshore islands"
+  }
+ ],
+ "property|language of work or name": [
+  {
+   "id": "P407",
+   "label": "language of work or name",
+   "description": "language associated with this creative work (such as books, shows, songs, broadcasts or websites) or a name (for persons use \"native language\" (P103) and \"languages spoken, written or signed\" (P1412))"
+  }
+ ],
+ "property|sibling": [
+  {
+   "id": "P3373",
+   "label": "sibling",
+   "description": "the subject and the object have at least one common parent (brother, sister, etc. including half-siblings); use \"relative\" (P1038) for siblings-in-law (brother-in-law, sister-in-law, etc.) and step-siblings (step-brothers, step-sisters, etc.)"
+  }
+ ],
+ "property|father": [
+  {
+   "id": "P22",
+   "label": "father",
+   "description": "male parent of the subject. For stepfather, use \"stepparent\" (P3448)"
+  },
+  {
+   "id": "P40",
+   "label": "child",
+   "description": "subject has object as child. Do not use for stepchildren\u2014use \"relative\" (P1038), qualified with \"kinship to subject\" (P1039)"
+  },
+  {
+   "id": "P1038",
+   "label": "relative",
+   "description": "family member (qualify with \"kinship to subject\", P1039; for direct family member please use specific property)"
+  }
+ ],
+ "property|place of birth": [
+  {
+   "id": "P19",
+   "label": "place of birth",
+   "description": "most specific known birth location of a person, animal or fictional character"
+  }
+ ],
+ "property|headquarters location": [
+  {
+   "id": "P159",
+   "label": "headquarters location",
+   "description": "city or town where an organization's headquarters is or has been situated. Use P276 qualifier for specific building"
+  }
+ ],
+ "property|announcement date": [
+  {
+   "id": "P6949",
+   "label": "announcement date",
+   "description": "time of the first public presentation of a subject by the creator, of information by the media"
+  }
+ ],
+ "property|subject has role": [
+  {
+   "id": "P2868",
+   "label": "subject has role",
+   "description": "role held by the item the statement appears on (\"subject\") in the context of that statement. For the role of the statement object/value, use P3831 (\"object has role\"). For acting roles, use P453 (\"character role\"). For persons, use P39."
+  }
+ ],
+ "property|presented in": [
+  {
+   "id": "P5072",
+   "label": "presented in",
+   "description": "event at which a talk, film, paper, or poster was presented"
+  },
+  {
+   "id": "P8345",
+   "label": "media franchise",
+   "description": "this creative work belongs to this media franchise"
+  }
+ ],
+ "property|parliamentary term": [
+  {
+   "id": "P2937",
+   "label": "legislative term",
+   "description": "period of a legislature between regular elections of members"
+  }
+ ],
+ "property|place of burial": [
+  {
+   "id": "P119",
+   "label": "place of burial",
+   "description": "location of grave, resting place, place of ash-scattering, etc. (e.g., town/city or cemetery) for a person or animal. There may be several places: e.g., re-burials, parts of body buried separately."
+  }
+ ],
+ "property|based on": [
+  {
+   "id": "P144",
+   "label": "based on",
+   "description": "the work(s) or inputs used as the basis for subject item; for fictional analog use P1074"
+  },
+  {
+   "id": "P887",
+   "label": "based on heuristic",
+   "description": "indicates that the property value is determined based on some heuristic (Q201413); to be used as source"
+  },
+  {
+   "id": "P1074",
+   "label": "fictional or mythical analog of",
+   "description": "used to link an entity or class of entities appearing in a creative work with the analogous entity or class of entities in the real world"
+  },
+  {
+   "id": "P1013",
+   "label": "criterion used",
+   "description": "property by which a distinction or classification is made"
+  },
+  {
+   "id": "P1877",
+   "label": "after a work by",
+   "description": "artist whose work strongly inspired / was copied in this item"
+  },
+  {
+   "id": "P8265",
+   "label": "based on tabular data",
+   "description": "Commons tabular data file that a Commons file (or statement) derives from"
+  },
+  {
+   "id": "P12346",
+   "label": "based on media",
+   "description": "media file or files that this media file is based on"
+  }
+ ],
+ "property|work location": [
+  {
+   "id": "P937",
+   "label": "work location",
+   "description": "location where persons or organisations were actively participating in employment, business or other work"
+  }
+ ],
+ "property|encodes": [
+  {
+   "id": "P688",
+   "label": "encodes",
+   "description": "the product of a gene (protein or RNA)"
+  }
+ ],
+ "property|ISO 3166-1 alpha-3 code": [
+  {
+   "id": "P298",
+   "label": "ISO 3166-1 alpha-3 code",
+   "description": "identifier for a country in three-letter format per ISO 3166-1"
+  }
+ ],
+ "property|series ordinal": [
+  {
+   "id": "P1545",
+   "label": "series ordinal",
+   "description": "position of an item in its parent series (most frequently a 1-based index), generally to be used as a qualifier (different from \"rank\" defined as a class, and from \"ranking\" defined as a property for evaluating a quality)"
+  }
+ ],
+ "property|made from material": [
+  {
+   "id": "P186",
+   "label": "made from material",
+   "description": "material the subject or the object is made of or derived from (do not confuse with P10672 which is used for processes)"
+  }
+ ],
+ "property|coordinates of westernmost point": [
+  {
+   "id": "P1335",
+   "label": "coordinates of westernmost point",
+   "description": "westernmost point of a location"
+  }
+ ],
+ "property|time period": [
+  {
+   "id": "P1264",
+   "label": "valid in period",
+   "description": "time period when a statement is valid"
+  },
+  {
+   "id": "P2348",
+   "label": "time period",
+   "description": "time period (historic period or era, sports season, theatre season, legislative period etc.) in which the subject occurred or with which it is associated"
+  },
+  {
+   "id": "P2408",
+   "label": "set in period",
+   "description": "historical, contemporary, or future period, year, century or day the work or genre is set in or event featured in the story of the work"
+  }
+ ],
+ "property|Mastodon address": [
+  {
+   "id": "P4033",
+   "label": "Mastodon address",
+   "description": "address on the Mastodon decentralized social network (the form is 'user@server.domain' without a leading '@')"
+  }
+ ],
+ "property|uses": [
+  {
+   "id": "P4510",
+   "label": "describes a project that uses",
+   "description": "essential component or tool that was used in this project"
+  },
+  {
+   "id": "P2283",
+   "label": "uses",
+   "description": "item or concept used by the subject or in the operation (see also instrument [P1303] and armament [P520])"
+  },
+  {
+   "id": "P1412",
+   "label": "languages spoken, written or signed",
+   "description": "language(s) that a person or a people speaks, writes or signs, including the native language(s)"
+  },
+  {
+   "id": "P1303",
+   "label": "instrument",
+   "description": "musical instrument that a person plays or teaches or used in a music occupation"
+  },
+  {
+   "id": "P2936",
+   "label": "language used",
+   "description": "language widely used (spoken or written) in this place or at this event or organisation"
+  },
+  {
+   "id": "P121",
+   "label": "item operated",
+   "description": "equipment, installation or service operated by the subject"
+  },
+  {
+   "id": "P5713",
+   "label": "requires grammatical feature",
+   "description": "grammatical features required or generally used with lexeme or form of lexeme"
+  }
+ ],
+ "property|positive diagnostic predictor for": [
+  {
+   "id": "P3356",
+   "label": "positive diagnostic predictor for",
+   "description": "the presence of the genetic variant helps to diagnose the presence of disease, used as inclusion criteria"
+  }
+ ],
+ "property|Facebook username": [
+  {
+   "id": "P2013",
+   "label": "Facebook username",
+   "description": "identifier for an official (preferably) Facebook person, product or organization page (everything that follows URL part 'https://www.facebook.com/')"
+  }
+ ],
+ "property|Instagram username": [
+  {
+   "id": "P2003",
+   "label": "Instagram username",
+   "description": "item's username on Instagram"
+  }
+ ],
+ "property|habitat": [
+  {
+   "id": "P2974",
+   "label": "habitat",
+   "description": "the natural environment in which an organism lives, or the physical environment that surrounds a species population"
+  }
+ ],
+ "property|Cadw Building ID": [
+  {
+   "id": "P1459",
+   "label": "Cadw Building ID",
+   "description": "identifier for listed buildings in Wales"
+  }
+ ],
+ "property|Wikimedia language code": [
+  {
+   "id": "P424",
+   "label": "Wikimedia language code",
+   "description": "identifier for a language or variant as used by Wikimedia projects"
+  }
+ ],
+ "property|kinship to subject": [
+  {
+   "id": "P1039",
+   "label": "kinship to subject",
+   "description": "qualifier of \"relative\" (P1038) to indicate less usual family relationships (ancestor, son-in-law, adoptions, etc); indicate how the qualificator item is related to the main item"
+  }
+ ],
+ "property|subject form": [
+  {
+   "id": "P5830",
+   "label": "subject lexeme form",
+   "description": "(qualifier) statement applies only to listed lexeme forms of statement's subject"
+  }
+ ],
+ "property|drainage basin": [
+  {
+   "id": "P4614",
+   "label": "drainage basin",
+   "description": "area where precipitation collects and drains off into a common outlet, such as into a river, bay, or other body of water"
+  },
+  {
+   "id": "P2053",
+   "label": "watershed area",
+   "description": "size of a stream's watershed (drainage basin)"
+  }
+ ],
+ "property|Find a Grave memorial ID": [
+  {
+   "id": "P535",
+   "label": "Find a Grave memorial ID",
+   "description": "identifier of an individual's burial place in the Find a Grave database"
+  }
+ ],
+ "property|social media followers": [
+  {
+   "id": "P8687",
+   "label": "social media followers",
+   "description": "number of subscribers on a particular social media website (use as main statement only; see P3744 instead for qualifier). Qualify with \"point in time\" and property for account. For Twitter, use numeric id."
+  }
+ ],
+ "property|affiliation": [
+  {
+   "id": "P1416",
+   "label": "affiliation",
+   "description": "organization that a person or organization is affiliated with (not necessarily member of or employed by)"
+  },
+  {
+   "id": "P6424",
+   "label": "affiliation string",
+   "description": "qualifier to provide the published string form of affiliation attached to an author"
+  },
+  {
+   "id": "P9447",
+   "label": "Olympedia affiliations ID",
+   "description": "identifier for the affiliation of athletes in Olympedia athlete database"
+  }
+ ],
+ "property|electoral district": [
+  {
+   "id": "P768",
+   "label": "electoral district",
+   "description": "electoral district this person is representing, or of the office that is being contested. Use as qualifier for \"position held\" (P39) or \"office contested\" (P541) or \"candidacy in election\" (P3602)"
+  },
+  {
+   "id": "P7938",
+   "label": "associated electoral district",
+   "description": "constituencies/electoral districts in which a place is located or is part of. If a municipality/county is split into or part of several districts: add several values. Use only if distinct from administrative entities (P131) in predefined countries"
+  },
+  {
+   "id": "P4565",
+   "label": "electoral district number",
+   "description": "number of the constituency/electoral district established by law. Only to be used if the number is established by law, regulation, or other legally-binding decision; not to be used for database identifier numbers which lack legal force, even if contained in a government database."
+  }
+ ],
+ "property|from narrative universe": [
+  {
+   "id": "P1080",
+   "label": "from narrative universe",
+   "description": "subject's fictional entity is in the object narrative. See also P1441 (present in work) and P1445 (fictional universe described in)"
+  }
+ ],
+ "property|author name string": [
+  {
+   "id": "P2093",
+   "label": "author name string",
+   "description": "stores unspecified author or editor name for publications; use if Wikidata item for author (P50) or editor (P98) does not exist or is not known. Do not use both."
+  }
+ ],
+ "property|developer": [
+  {
+   "id": "P61",
+   "label": "discoverer or inventor",
+   "description": "subject who discovered, first described, invented, or developed this discovery or invention or scientific hypothesis or theory"
+  },
+  {
+   "id": "P178",
+   "label": "developer",
+   "description": "organization or person that developed the item"
+  },
+  {
+   "id": "P88",
+   "label": "commissioned by",
+   "description": "person or organization that commissioned this work"
+  },
+  {
+   "id": "P6237",
+   "label": "real estate developer",
+   "description": "person or organization responsible for building this item"
+  }
+ ],
+ "property|positive therapeutic predictor for": [
+  {
+   "id": "P3354",
+   "label": "positive therapeutic predictor for",
+   "description": "the presence of the genetic variant helps to predict response to a treatment"
+  }
+ ],
+ "property|Framalibre ID": [
+  {
+   "id": "P4107",
+   "label": "Framalibre ID",
+   "description": "unique identifier in the Framalibre free software directory"
+  }
+ ],
+ "property|collection": [
+  {
+   "id": "P195",
+   "label": "collection",
+   "description": "art, museum, archival, or bibliographic collection of which the subject is part (item is in the collection of X)"
+  },
+  {
+   "id": "P179",
+   "label": "part of the series",
+   "description": "series which contains the subject"
+  },
+  {
+   "id": "P217",
+   "label": "inventory number",
+   "description": "identifier for a physical object or a set of physical objects in a collection"
+  },
+  {
+   "id": "P1640",
+   "label": "curator",
+   "description": "content specialist responsible for this collection or exhibition"
+  },
+  {
+   "id": "P1436",
+   "label": "collection or exhibition size",
+   "description": "number of items in a collection or exhibition"
+  },
+  {
+   "id": "P6954",
+   "label": "online access status",
+   "description": "property or qualifier for an ID property indicating whether linked content is directly readable online"
+  },
+  {
+   "id": "P6241",
+   "label": "collection creator",
+   "description": "entity (person, organization, etc.) that caused a record or collection to be produced or gathered"
+  }
+ ],
+ "property|announced at": [
+  {
+   "id": "P9731",
+   "label": "announced at",
+   "description": "event at which product or creative work was announced"
+  }
+ ],
+ "property|coordinate location": [
+  {
+   "id": "P625",
+   "label": "coordinate location",
+   "description": "geocoordinates of the subject. For Earth, please note that only the WGS84 geodetic datum is currently supported"
+  }
+ ],
+ "property|FIPS 5-2 alpha code (US states)": [
+  {
+   "id": "P5086",
+   "label": "FIPS 5-2 alpha code (US states)",
+   "description": "two-letter identifier for US states and other associated areas per former Federal Information Processing Standard FIPS 5-2 standard"
+  }
+ ],
+ "property|combines lexemes": [
+  {
+   "id": "P5238",
+   "label": "combines lexemes",
+   "description": "lexemes combined in this lexeme"
+  }
+ ],
+ "property|YouTube video ID": [
+  {
+   "id": "P1651",
+   "label": "YouTube video ID",
+   "description": "identifier of a video on YouTube; qualify trailers with \"object has role\" (P3831)=\"trailer\" (Q622550). For channels, use P2397; for playlists, use P4300"
+  }
+ ],
+ "property|positive prognostic predictor for": [
+  {
+   "id": "P3358",
+   "label": "positive prognostic predictor for",
+   "description": "the presence of the genetic variant helps to prognose good outcome for the disease"
+  }
+ ],
+ "property|Wikimedia username": [
+  {
+   "id": "P4174",
+   "label": "Wikimedia username",
+   "description": "user name of a person across all Wikimedia projects"
+  }
+ ],
+ "property|color": [
+  {
+   "id": "P462",
+   "label": "color",
+   "description": "color of subject"
+  },
+  {
+   "id": "P1884",
+   "label": "hair color",
+   "description": "person's hair color. Use P585 as qualifier if there's more than one value"
+  },
+  {
+   "id": "P465",
+   "label": "sRGB color hex triplet",
+   "description": "sRGB hex triplet format for subject color (e.g. 7FFFD4) specifying the 8-bit red, green and blue components"
+  },
+  {
+   "id": "P6338",
+   "label": "colorist",
+   "description": "artist in charge of adding colors to drawings, comics, movie film, etc."
+  },
+  {
+   "id": "P2827",
+   "label": "flower color",
+   "description": "colour of flowers of a plant species, hybrid or cultivar"
+  },
+  {
+   "id": "P8798",
+   "label": "for color scheme",
+   "description": "which color scheme this statement is designed for"
+  },
+  {
+   "id": "P7680",
+   "label": "Colorado Encyclopedia ID",
+   "description": "identifier for an entry on the Colorado Encyclopedia website"
+  }
+ ],
+ "property|Larousse Online French Dictionary ID": [
+  {
+   "id": "P11118",
+   "label": "Larousse Online French Dictionary ID",
+   "description": "identifier for a Lexeme in online Larousse French dictionary"
+  }
+ ],
+ "property|Dictionnaire de l'Acad\u00e9mie fran\u00e7aise ID (9th edition)": [
+  {
+   "id": "P7732",
+   "label": "Dictionnaire de l'Acad\u00e9mie fran\u00e7aise ID (9th edition)",
+   "description": "identifier for a lexeme on the 9th edition of the Dictionnaire de l'Acad\u00e9mie fran\u00e7aise on the Acad\u00e9mie fran\u00e7aise website"
+  }
+ ],
+ "property|interested in": [
+  {
+   "id": "P2650",
+   "label": "interested in",
+   "description": "item of special or vested interest to this person or organisation"
+  }
+ ],
+ "property|capital of": [
+  {
+   "id": "P1376",
+   "label": "capital of",
+   "description": "country, state, department, canton or other administrative division of which the municipality is the governmental seat"
+  }
+ ],
+ "property|periapsis": [
+  {
+   "id": "P2244",
+   "label": "periapsis",
+   "description": "distance, at which a celestial body is the closest to the object it orbits"
+  },
+  {
+   "id": "P2285",
+   "label": "periapsis date (DEPRECATED)",
+   "description": "time for perihelion/perigee in each orbit for an astronomical object (Deprecated property. Use P11796 instead.)"
+  },
+  {
+   "id": "P2248",
+   "label": "argument of periapsis",
+   "description": "angle from the body's ascending node to its periapsis"
+  },
+  {
+   "id": "P11796",
+   "label": "time of periapsis",
+   "description": "the time at which the orbit of an object in space, typically a planet or a satellite, goes through its periapsis"
+  }
+ ],
+ "property|follows": [
+  {
+   "id": "P155",
+   "label": "follows",
+   "description": "immediately prior item in a series of which the subject is a part, preferably use as qualifier of P179 [if the subject has replaced the preceding item, e.g. political offices, use \"replaces\" (P1365)]"
+  },
+  {
+   "id": "P144",
+   "label": "based on",
+   "description": "the work(s) or inputs used as the basis for subject item; for fictional analog use P1074"
+  },
+  {
+   "id": "P140",
+   "label": "religion or worldview",
+   "description": "religion of a person, organization or religious building, or associated with this subject"
+  },
+  {
+   "id": "P1576",
+   "label": "lifestyle",
+   "description": "typical way of life of an individual, group, or culture"
+  },
+  {
+   "id": "P11951",
+   "label": "appears after phonological feature",
+   "description": "this lexeme form appears only when it comes after another lexeme form with this phonological feature"
+  },
+  {
+   "id": "P12657",
+   "label": "follows spelling pattern",
+   "description": "spelling rule, pattern or paradigm followed by this form"
+  },
+  {
+   "id": "P11953",
+   "label": "appears after lexeme form",
+   "description": "this lexeme form appears only when it comes after this other specific lexeme form"
+  }
+ ],
+ "property|National Heritage List for England number": [
+  {
+   "id": "P1216",
+   "label": "National Heritage List for England number",
+   "description": "number on the National Heritage List for England"
+  }
+ ],
+ "property|maximal incubation period in humans": [
+  {
+   "id": "P3487",
+   "label": "maximal incubation period in humans",
+   "description": "maximal time between an infection and the onset of disease symptoms in infected humans"
+  }
+ ],
+ "property|Encyclop\u00e6dia Britannica Online ID": [
+  {
+   "id": "P1417",
+   "label": "Encyclop\u00e6dia Britannica Online ID",
+   "description": "identifier for an article in the online version of Encyclop\u00e6dia Britannica"
+  }
+ ],
+ "property|Atlas of Hillforts ID": [
+  {
+   "id": "P4102",
+   "label": "Atlas of Hillforts ID",
+   "description": "identifier in the Atlas of Hillforts database"
+  }
+ ],
+ "property|Twitter (X) numeric user ID": [
+  {
+   "id": "P6552",
+   "label": "X (Twitter) numeric user ID",
+   "description": "numeric identifier for a user on X; use as qualifier for P2002 \"X username\""
+  }
+ ],
+ "property|publication date": [
+  {
+   "id": "P577",
+   "label": "publication date",
+   "description": "date or point in time when a work or product was first published or released"
+  }
+ ],
+ "property|UTC date of spacecraft launch": [
+  {
+   "id": "P619",
+   "label": "UTC date of spacecraft launch",
+   "description": "date of spacecraft launch in UTC"
+  }
+ ],
+ "property|inception": [
+  {
+   "id": "P571",
+   "label": "inception",
+   "description": "time when an entity begins to exist; for date of official opening use P1619"
+  },
+  {
+   "id": "P3415",
+   "label": "start period",
+   "description": "initial period in which the statement is valid (including the period-value)"
+  }
+ ],
+ "property|GeoNames ID": [
+  {
+   "id": "P1566",
+   "label": "GeoNames ID",
+   "description": "identifier in the GeoNames geographical database"
+  },
+  {
+   "id": "P2326",
+   "label": "GNS Unique Feature ID",
+   "description": "identifier for geographic entities according to the National Geospatial-Intelligence Agency's GEOnet Names Server"
+  },
+  {
+   "id": "P2452",
+   "label": "GeoNames feature code",
+   "description": "identifier for feature classes in GeoNames & NGA GNS"
+  }
+ ],
+ "property|sRGB color hex triplet": [
+  {
+   "id": "P465",
+   "label": "sRGB color hex triplet",
+   "description": "sRGB hex triplet format for subject color (e.g. 7FFFD4) specifying the 8-bit red, green and blue components"
+  }
+ ],
+ "property|medical condition": [
+  {
+   "id": "P1050",
+   "label": "medical condition",
+   "description": "any state relevant to the health of an organism, including diseases and positive conditions"
+  },
+  {
+   "id": "P2175",
+   "label": "medical condition treated",
+   "description": "disease that this pharmaceutical drug, procedure, or therapy is used to treat"
+  }
+ ],
+ "property|Paris city digital code": [
+  {
+   "id": "P630",
+   "label": "Paris city digital code",
+   "description": "identifier for a street in Paris, France; format: 3 or 4 digits/letters"
+  }
+ ],
+ "property|flag image": [
+  {
+   "id": "P41",
+   "label": "flag image",
+   "description": "image of the item's flag"
+  }
+ ],
+ "property|director": [
+  {
+   "id": "P57",
+   "label": "director",
+   "description": "director(s) of film, TV-series, stageplay, video game or similar"
+  },
+  {
+   "id": "P2388",
+   "label": "position held by head of the organization",
+   "description": "position of the head of this item"
+  },
+  {
+   "id": "P1037",
+   "label": "director / manager",
+   "description": "person who manages any kind of group or organisation"
+  },
+  {
+   "id": "P344",
+   "label": "director of photography",
+   "description": "person responsible for the framing, lighting, and filtration of the subject work"
+  },
+  {
+   "id": "P5297",
+   "label": "Companies House officer ID",
+   "description": "identifier for an officer (natural person or legal person) of companies registered with Companies House in the United Kingdom"
+  },
+  {
+   "id": "P998",
+   "label": "Curlie ID",
+   "description": "category path at Open Directory Project"
+  },
+  {
+   "id": "P5115",
+   "label": "Directory of Open Access Journals ID",
+   "description": "ISSN identifier of a journal in the Directory of Open Access Journals. When statements with this property need correcting, property \"ISSN\" (P236) are likely to be wrong as well"
+  }
+ ],
+ "property|dissolved, abolished or demolished date": [
+  {
+   "id": "P576",
+   "label": "dissolved, abolished or demolished date",
+   "description": "point in time at which the subject (organisation, building) ceased to exist; see \"date of official closure\" (P3999) for closing a facility, \"service retirement\" (P730) for retiring equipment, \"discontinued date\" (P2669) for stopping a product"
+  }
+ ],
+ "property|translator": [
+  {
+   "id": "P655",
+   "label": "translator",
+   "description": "agent who adapts any kind of written text from one language to another"
+  }
+ ],
+ "property|market capitalization": [
+  {
+   "id": "P2226",
+   "label": "market capitalization",
+   "description": "total value of issued shares by a publicly traded company"
+  }
+ ],
+ "property|video": [
+  {
+   "id": "P10",
+   "label": "video",
+   "description": "relevant video; use property P18 for images; for film trailers, qualify with \"object has role\" (P3831)=\"trailer\" (Q622550); for films, qualify with \"object has role\" (P3831)=\"full video available on Wikimedia Commons\" (Q89347362)"
+  },
+  {
+   "id": "P123",
+   "label": "publisher",
+   "description": "organization or person responsible for publishing a work, such as a book, periodical, printed music, podcast, game or software"
+  },
+  {
+   "id": "P179",
+   "label": "part of the series",
+   "description": "series which contains the subject"
+  },
+  {
+   "id": "P2096",
+   "label": "media legend",
+   "description": "qualifier to describe the media of the statement. This avoids legend storage in the local infobox when the media is defined at Wikidata. For the date, use P585 instead"
+  },
+  {
+   "id": "P58",
+   "label": "screenwriter",
+   "description": "person(s) who wrote the script for subject item"
+  },
+  {
+   "id": "P178",
+   "label": "developer",
+   "description": "organization or person that developed the item"
+  },
+  {
+   "id": "P348",
+   "label": "software version identifier",
+   "description": "numeric or nominal identifier of a version of a software program or file format, current or past"
+  }
+ ],
+ "property|connecting service": [
+  {
+   "id": "P1192",
+   "label": "connecting service",
+   "description": "service stopping at a station"
+  }
+ ],
+ "property|OpenStreetMap relation ID": [
+  {
+   "id": "P402",
+   "label": "OpenStreetMap relation ID",
+   "description": "identifier for a relation in OpenStreetMap"
+  }
+ ],
+ "property|subject sense": [
+  {
+   "id": "P6072",
+   "label": "subject sense",
+   "description": "(qualifier for lexemes) statement applies only to listed senses of statement's subject"
+  }
+ ],
+ "property|part of the series": [
+  {
+   "id": "P179",
+   "label": "part of the series",
+   "description": "series which contains the subject"
+  }
+ ],
+ "property|length": [
+  {
+   "id": "P2043",
+   "label": "length",
+   "description": "measured dimension of an object"
+  },
+  {
+   "id": "P2047",
+   "label": "duration",
+   "description": "length of time of an event or process"
+  },
+  {
+   "id": "P2787",
+   "label": "longest span",
+   "description": "length of the longest span of a bridge, a natural arch"
+  },
+  {
+   "id": "P2097",
+   "label": "term length of position",
+   "description": "length of time in years (unit: Q577) a person (usually a politician) is to serve in a particular position. Do not add bounds."
+  }
+ ],
+ "property|category combines topics": [
+  {
+   "id": "P971",
+   "label": "category combines topics",
+   "description": "this category combines (intersects) these two or more topics"
+  }
+ ],
+ "property|section, verse, paragraph, or clause": [
+  {
+   "id": "P958",
+   "label": "section",
+   "description": "paragraph, or other kind of special indication to find information on a page or on a document (legal texts etc.)"
+  }
+ ],
+ "property|Historic Environment Scotland ID": [
+  {
+   "id": "P709",
+   "label": "Historic Environment Scotland ID",
+   "description": "identifier for a building in the Historic Environment Scotland database"
+  }
+ ],
+ "property|INSEE department code": [
+  {
+   "id": "P2586",
+   "label": "INSEE department code",
+   "description": "code for departments of France assigned by the National Institute of Statistics and Economic Studies (INSEE)"
+  }
+ ],
+ "property|indigenous to": [
+  {
+   "id": "P2341",
+   "label": "indigenous to",
+   "description": "place or ethnic group where a language, art genre, cultural tradition or expression, cooking style or food, or biological species or variety is found (or was originally found)"
+  }
+ ],
+ "property|product or material produced or service provided": [],
+ "property|logo image": [
+  {
+   "id": "P154",
+   "label": "logo image",
+   "description": "graphic mark, icon, logo, or emblem commonly used by commercial enterprises, organisations, and products"
+  }
+ ],
+ "property|page(s)": [
+  {
+   "id": "P304",
+   "label": "page(s)",
+   "description": "page number of source referenced for statement. Note \"column(s)\" (P3903) and \"folio(s)\" (P7416) for other numbering systems"
+  }
+ ],
+ "property|manner of death": [
+  {
+   "id": "P1196",
+   "label": "manner of death",
+   "description": "general circumstances of a person's death; e.g. natural causes, accident, suicide, homicide, etc. Use 'cause of death' (P509) for the specific physiological mechanism, e.g. heart attack, trauma, pneumonia etc."
+  }
+ ],
+ "property|coordinates of the point of view": [
+  {
+   "id": "P1259",
+   "label": "coordinates of the point of view",
+   "description": "point from which the scene depicted by the element is seen (element can be a photo, a painting, etc.)"
+  }
+ ],
+ "property|catchphrase": [
+  {
+   "id": "P6251",
+   "label": "catchphrase",
+   "description": "commonly used phrase by which someone or something may be recognized"
+  }
+ ],
+ "property|price": [
+  {
+   "id": "P2284",
+   "label": "price",
+   "description": "published price listed or paid for a product (use with unit of currency)"
+  },
+  {
+   "id": "P9622",
+   "label": "Price One Penny work ID",
+   "description": "identifier for a work in the Price One Penny database"
+  },
+  {
+   "id": "P4030",
+   "label": "PLU code",
+   "description": "identification numbers affixed to fruits and vegetables for sale, used in checkout and inventory"
+  },
+  {
+   "id": "P9619",
+   "label": "Price One Penny author ID",
+   "description": "identifier for an author in the Price One Penny database"
+  },
+  {
+   "id": "P9623",
+   "label": "Price One Penny library ID",
+   "description": "identifier for a library in the Price One Penny database"
+  },
+  {
+   "id": "P8340",
+   "label": "estimated value",
+   "description": "estimated value of a house, company, patent, etc"
+  },
+  {
+   "id": "P9624",
+   "label": "Price One Penny publisher ID",
+   "description": "identifier for individuals listed as publishers in the Price One Penny database"
+  }
+ ],
+ "property|burial plot reference": [
+  {
+   "id": "P965",
+   "label": "burial plot reference",
+   "description": "string of references which identify a specific plot in a burial area, e.g. cemetery"
+  }
+ ],
+ "property|heritage designation": [
+  {
+   "id": "P1435",
+   "label": "heritage designation",
+   "description": "heritage designation of a cultural or natural site"
+  }
+ ],
+ "property|notable work": [
+  {
+   "id": "P800",
+   "label": "notable work",
+   "description": "notable scientific, artistic or literary work, or other work of significance among subject's works"
+  }
+ ],
+ "property|country": [
+  {
+   "id": "P17",
+   "label": "country",
+   "description": "sovereign state that this subject item is in (not to be used for human beings)"
+  },
+  {
+   "id": "P27",
+   "label": "country of citizenship",
+   "description": "the object is a country that recognizes the subject as its citizen"
+  },
+  {
+   "id": "P495",
+   "label": "country of origin",
+   "description": "country of origin of this item (creative work, food, phrase, product, etc.)"
+  },
+  {
+   "id": "P3005",
+   "label": "valid in place",
+   "description": "place where a statement is valid"
+  },
+  {
+   "id": "P1001",
+   "label": "applies to jurisdiction",
+   "description": "the item (institution, law, public office, public register, etc) or statement belongs to or has power over or applies to the value (a territorial jurisdiction: a country, state, municipality, etc)"
+  },
+  {
+   "id": "P291",
+   "label": "place of publication",
+   "description": "geographical place of publication of the edition (use 1st edition when referring to works)"
+  },
+  {
+   "id": "P1532",
+   "label": "country for sport",
+   "description": "country a person or a team represents when playing a sport"
+  }
+ ]
+}

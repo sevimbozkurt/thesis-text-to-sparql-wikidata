@@ -1,0 +1,167 @@
+\documentclass[12pt,a4paper,oneside]{report}
+
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[main=english,ngerman]{babel}
+\usepackage{csquotes}
+
+\usepackage{microtype}
+
+\usepackage[a4paper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=3cm]{geometry}
+\usepackage{setspace}
+\setstretch{1.25}
+
+\usepackage{parskip}
+
+\usepackage{titlesec}
+\newif\ifrunningbodychapters
+\makeatletter
+\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}%
+  {\ifrunningbodychapters\par\else\if@openright\cleardoublepage\else\clearpage\fi\fi}{}{}
+\makeatother
+\titleformat{\chapter}[hang]{\normalfont\huge\bfseries}{\thechapter}{1em}{}
+\titlespacing*{\chapter}{0pt}{1.2ex plus .3ex minus .2ex}{0.6ex plus .2ex}
+\titlespacing*{\section}{0pt}{1.2ex plus .3ex minus .2ex}{0.6ex plus .2ex}
+\titlespacing*{\subsection}{0pt}{1.2ex plus .3ex minus .2ex}{0.6ex plus .2ex}
+\titlespacing*{\subsubsection}{0pt}{1.2ex plus .3ex minus .2ex}{0.6ex plus .2ex}
+
+\titleformat{\paragraph}[runin]{\normalfont\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\paragraph}{0pt}{2.2ex plus .6ex minus .2ex}{1em}
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{2}
+
+\setlength{\parskip}{0.3\baselineskip plus 1pt minus 1pt}
+
+\setlength{\floatsep}{8pt plus 2pt minus 2pt}
+\setlength{\textfloatsep}{10pt plus 2pt minus 3pt}
+\setlength{\intextsep}{8pt plus 2pt minus 2pt}
+\setlength{\abovecaptionskip}{5pt}
+\setlength{\belowcaptionskip}{0pt}
+
+\usepackage{enumitem}
+\setlist{itemsep=1pt, parsep=1pt, topsep=3pt, partopsep=0pt}
+
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.7}
+\renewcommand{\textfraction}{0.08}
+\renewcommand{\floatpagefraction}{0.75}
+\widowpenalty=8000
+\clubpenalty=8000
+
+\usepackage{url}
+\urlstyle{tt}
+
+\usepackage{emptypage}
+
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{rotating}
+\usepackage{caption}
+\captionsetup{font=small,labelfont=bf}
+\newcommand{\tabnote}[1]{\par\vspace{2pt}\footnotesize\textit{Note.} #1}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{listings}
+\usepackage{xcolor}
+\definecolor{codegray}{gray}{0.95}
+\definecolor{codekw}{RGB}{0,80,160}
+\definecolor{codecomment}{RGB}{110,110,110}
+\lstdefinelanguage{SPARQL}{
+  morekeywords={SELECT,DISTINCT,WHERE,FILTER,OPTIONAL,UNION,GROUP,BY,ORDER,
+                LIMIT,SERVICE,VALUES,MINUS,EXISTS,COUNT,ASK,PREFIX,AS,DESC,
+                BIND,HAVING},
+  sensitive=false,
+  morecomment=[l]{\#},
+  morestring=[b]",
+}
+\lstset{
+  basicstyle=\ttfamily\footnotesize,
+  backgroundcolor=\color{codegray},
+  keywordstyle=\color{codekw}\bfseries,
+  commentstyle=\color{codecomment}\itshape,
+  breaklines=true,
+  frame=single,
+  framesep=4pt,
+  rulecolor=\color{gray!40},
+  captionpos=b,
+  columns=fullflexible,
+  extendedchars=true,
+  inputencoding=utf8,
+  literate={—}{{---}}1 {–}{{--}}1 {§}{{\S}}1
+           {‘}{{`}}1 {’}{{'}}1 {“}{{``}}1 {”}{{''}}1
+           {…}{{\ldots}}1 {é}{{\'e}}1 {ü}{{\"u}}1
+           {ö}{{\"o}}1 {ä}{{\"a}}1 {ß}{{\ss}}1,
+}
+
+\usepackage[backend=biber,style=numeric,natbib=true]{biblatex}
+\addbibresource{references.bib}
+\setcounter{biburlnumpenalty}{7000}
+\setcounter{biburlucpenalty}{7000}
+\setcounter{biburllcpenalty}{7000}
+
+\AtEveryBibitem{\clearfield{note}}
+
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,filecolor=black,urlcolor=blue]{hyperref}
+\usepackage[capitalise,noabbrev]{cleveref}
+
+\makeatletter
+\let\thesis@addcontentsline\addcontentsline
+\renewcommand{\addcontentsline}[3]{%
+  \ifstrequal{#2}{paragraph}{}{\thesis@addcontentsline{#1}{#2}{#3}}%
+}
+\makeatother
+
+\newcommand{\qid}[1]{\texttt{#1}}
+\newcommand{\prop}[1]{\texttt{#1}}
+\newcommand{\method}{stage-wise diagnostic evaluation}
+\newcommand{\Method}{Stage-wise diagnostic evaluation}
+
+\begin{document}
+
+\newif\ifdeclarationupfront
+\declarationupfronttrue
+
+\pagenumbering{roman}
+\input{chapters/00_titlepage}
+
+\ifdeclarationupfront\input{chapters/10_declaration}\fi
+
+\input{chapters/00_frontmatter}
+\input{chapters/00_abstract}
+
+\tableofcontents
+\listoftables
+\listoffigures
+
+\cleardoublepage
+\pagenumbering{arabic}
+
+\runningbodychapterstrue
+\input{chapters/01_introduction}
+\input{chapters/02_background}
+\input{chapters/03_method}
+\input{chapters/04_results}
+\input{chapters/05_discussion}
+\input{chapters/06_conclusion}
+\runningbodychaptersfalse
+
+\printbibliography[heading=bibintoc,title={References}]
+
+\appendix
+\input{chapters/09_appendix}
+
+\ifdeclarationupfront\else
+  \cleardoublepage
+  \input{chapters/10_declaration}
+\fi
+
+\end{document}

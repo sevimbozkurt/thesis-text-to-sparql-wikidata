@@ -1,0 +1,28 @@
+pool,strategy,n,entity_jaccard,exact_match_pct
+"same generator, 3 prompts (arm-base, arm-idiom, e2e-clean)",single:arm-base,349,26.3,8.3
+"same generator, 3 prompts (arm-base, arm-idiom, e2e-clean)",single:arm-idiom,349,30.2,11.5
+"same generator, 3 prompts (arm-base, arm-idiom, e2e-clean)",single:e2e-clean,349,27.1,8.6
+"same generator, 3 prompts (arm-base, arm-idiom, e2e-clean)",cascade,349,33.5,12.3
+"same generator, 3 prompts (arm-base, arm-idiom, e2e-clean)",centroid,349,30.6,10.3
+"same generator, 3 prompts (arm-base, arm-idiom, e2e-clean)",centroid+prior,349,30.3,10.3
+"same generator, 3 prompts (arm-base, arm-idiom, e2e-clean)",oracle,349,35.4,14.0
+4 zero-shot models,single:zs-claude,330,22.5,8.2
+4 zero-shot models,single:zs-gpt,330,14.9,5.2
+4 zero-shot models,single:zs-gemini,330,9.8,2.7
+4 zero-shot models,single:zs-deepseek,330,12.3,3.9
+4 zero-shot models,cascade,330,23.7,8.2
+4 zero-shot models,centroid,330,24.5,8.5
+4 zero-shot models,centroid+prior,330,24.2,8.5
+4 zero-shot models,oracle,330,28.0,10.9
+all 8 runs,single:arm-idiom,327,32.2,12.2
+all 8 runs,single:e2e-clean,327,29.0,9.2
+all 8 runs,single:arm-base,327,28.1,8.9
+all 8 runs,single:fs-claude,327,23.4,7.3
+all 8 runs,single:zs-claude,327,22.6,8.3
+all 8 runs,single:zs-gpt,327,15.1,5.2
+all 8 runs,single:zs-deepseek,327,12.5,4.0
+all 8 runs,single:zs-gemini,327,9.8,2.8
+all 8 runs,cascade,327,37.0,13.5
+all 8 runs,centroid,327,33.8,10.7
+all 8 runs,centroid+prior,327,34.1,11.0
+all 8 runs,oracle,327,44.1,19.0

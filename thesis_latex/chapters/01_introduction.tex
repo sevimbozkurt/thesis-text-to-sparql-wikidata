@@ -1,0 +1,117 @@
+\chapter{Introduction}
+
+\label{ch:introduction}
+
+\section{Problem and Motivation}
+
+\label{sec:motivation}
+
+Wikidata is the largest openly licensed general-purpose knowledge graph, with more than one hundred million items.
+Volunteers and bots maintain it, and it supplies structured data to Wikipedia infoboxes, search-engine knowledge panels and many other applications~\citep{vrandecic2014wikidata}.
+Anyone can query it with SPARQL, but writing a correct query is hard.
+Even a moderately complex question needs two kinds of knowledge: which Wikidata entities and properties are involved, and how Wikidata represents the fact in question.
+The question itself usually reveals neither.
+Asking ``who directed Inception'' does not tell anyone that the film is Q25188 or that the director property is P57.
+Nor does it tell whether the answer sits on a direct property or behind a statement node.
+
+Translating questions into SPARQL is therefore more than a convenience.
+A language model that answers a question directly relies on what it stored in its parameters during training.
+Its answer cannot be traced to a source, does not follow changes in the data, and can be wrong while sounding plausible.
+An answer obtained by running a SPARQL query against Wikidata comes from a specific, inspectable source instead.
+It reflects the current contents of the graph, and anyone can check it by reading the query.
+
+Generating a query does not make the query correct, however.
+A system can still produce a query that runs but answers a different question.
+The difference is that such a failure can be traced to a specific step.
+A query with the right identifiers but the wrong structure, for example, often returns no results, so running it already shows that something went wrong.
+Execution thus becomes a signal for detecting, and sometimes recovering from, failures.
+
+The practical question is whether this works with models that are not fine-tuned for the task.
+Fine-tuning a model for one knowledge graph can be effective, as the benchmark used in this thesis shows.
+But it needs in-domain training data, it has to be repeated for every knowledge graph, and it is usually not possible for the frontier models that are strongest at code generation.
+If frozen models can be combined into an effective pipeline instead, the approach could carry over to any knowledge graph with a suitable label index.
+This thesis asks whether frozen models can do this task and, where they fail, why.
+
+Translating a question into a Wikidata query involves two problems that can fail independently but are usually evaluated together.
+
+The first is grounding: mapping the words in the question to Wikidata identifiers.
+Inception must become Q25188, and director must become P57.
+A single wrong identifier can produce wrong results or none at all.
+
+The second is query structure: combining these identifiers into a query that expresses the question correctly.
+In Wikidata this is difficult because the same fact can be stored in more than one way.
+A short query pattern returns only the main value of a fact, for example who held an office.
+Extra details need longer and more specific patterns: when the office was held, the unit of a quantity, or every member of a broad category.
+The next chapter introduces these patterns with examples.
+
+The short pattern is always valid SPARQL, and that is the problem.
+A model that does not know a longer pattern is needed can use the short one and still get a query that runs, sometimes with plausible results.
+A syntax check cannot catch this kind of error.
+Only comparing the query's result with the expected answer can.
+Because end-to-end evaluation folds grounding and structure into one score, it hides which of the two causes most errors.
+That matters, since the two problems need different solutions.
+Earlier error analyses have put most of the weight on entity linking.
+\citet{xu2023wikisp}, for example, attribute 35.1\,\% of their system's failures to entity linking and call it ``the biggest source of errors.''
+Much later work has accordingly focused on better grounding.
+
+Separating the two stages requires a benchmark that offers more than questions and final answers.
+Instruct-to-SPARQL~\citep{benamor2025instruct} provides each executable gold query together with an annotated version in which the Wikidata identifiers are replaced by human-readable labels.
+Since the two versions are aligned, they yield ground truth for the intermediate linking stage directly, with no extra annotation and no external linker index.
+One stage can then be held fixed while another is measured.
+The benchmark authors do not propose a linking strategy of their own and leave the problem open.
+This thesis takes up that open question.
+Its main contribution is an evaluation, not a new model or linking algorithm: it combines established components into a pipeline and measures, stage by stage, where and why that pipeline fails.
+
+\section{Research Questions}
+
+\begin{description}
+\item[RQ1]
+How well do frozen frontier models translate natural-language questions into executable SPARQL over Wikidata, without fine-tuning?
+\item[RQ2]
+How much of the remaining error is caused by entity and predicate linking, and how much by generating the query, that is, choosing its concepts and composing its structure?
+\item[RQ3]
+Under the same circumstances, how do the three linking paradigms---fine-tuned end-to-end linking, zero-shot bi-encoder retrieval, and large-language-model reasoning over retrieved candidates---compare, and how does each step depend on backbone scale?
+\item[RQ4]
+Which forms of inference-time guidance improve frozen-model query generation, and does their effect depend on whether they narrow or expand the generator's decision space?
+\item[RQ5]
+Can the remaining failures be detected and recovered \emph{without gold supervision}, using only signals that are available at inference time?
+\end{description}
+
+The discussion chapter answers these questions.
+
+\section{Research Approach and
+Contributions}
+
+\label{sec:rqs}
+
+\label{sec:contributions}
+
+The method used in this thesis, stage-wise diagnostic evaluation, has four steps.
+First, derive ground truth for an intermediate pipeline stage from the benchmark's own artefacts.
+Second, hold all other stages fixed to isolate the stage under test.
+Third, attribute the resulting errors to that stage.
+Fourth, test whether the identified cause responds to intervention.
+The method chapter defines each step in detail.
+
+The contributions of this thesis are:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+\textbf{Stage-wise diagnostic evaluation}, defined as a protocol and applied end to end (derive, isolate, attribute, intervene).
+It includes mention-level linking ground truth derived from the benchmark's aligned queries, without new annotation or an external linker index.
+\item
+\textbf{Evidence-based attribution of the binding constraint to query generation (concept selection and structural composition) rather than disambiguation}.
+Four linking approaches are compared on the same rows and ground truth, with the same candidate pools where a linker uses them, on two data splits, and the attribution is supported by a failure taxonomy, an analysis of Wikidata-specific constructs across the full corpus, and agreement across independent models.
+The same experiments show that backbone dependence differs between linking and generation.
+\item
+\textbf{Controlled interventions and the execution-guided cascade}: four plausible prompt-based interventions are tested.
+They rule out several approaches and lead to a design principle, \emph{ground by constraint, not by enumeration}.
+The thesis then introduces an execution-guided cascade that recovers some of the remaining errors from inference-time signals alone, without additional training, a reference query or new generation.
+Together, these experiments yield a configured pipeline in which every backbone is chosen on measured performance.
+\end{enumerate}
+
+The thesis also makes a methodological contribution.
+It identifies four measurement artefacts that can distort KGQA evaluation, such as a metric that rewards queries for returning nothing and silent API throttling that looks like a retrieval problem, and it shows how each can be detected.
+In three of the four cases the artefact produced a more striking conclusion than the true result, which is exactly why such artefacts are easy to miss.
+They motivate the validation practices used throughout this work.

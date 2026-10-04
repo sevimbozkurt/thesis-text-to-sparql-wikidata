@@ -1,0 +1,14 @@
+n,raw agreement,chance agreement,cohens kappa,second pass used finer scheme,n disagreements
+10,0.7,0.2,0.625,True,3
+
+index,pass 1,pass 2 (raw),pass 2 (mapped)
+12,structure,semantic_wrong_constraint,structure
+55,structure,semantic_missing_aggregation,structure
+3,near_miss,semantic_missing_constraint,structure
+8,execution,execution_result_too_large,execution
+14,benchmark_noise,gold_query_mismatch,benchmark_noise
+296,structure,semantic_wrong_property,wrong_property
+329,unresolved,linking_entity_not_resolved,unresolved
+422,structure,semantic_wrong_property,wrong_property
+155,unresolved,linking_entity_not_resolved,unresolved
+233,near_miss,semantic_wrong_result_variable,near_miss

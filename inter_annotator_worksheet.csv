@@ -1,0 +1,475 @@
+case,orig_index,complexity,question,reference_query,generated_query,fully_linked,executed,exec_error,jaccard,YOUR_CATEGORY,second_choice,your_note
+1,188,medium,List the top software titles with their dependency counts.,"SELECT ?application ?applicationLabel (COUNT(?software) AS ?count)
+WHERE
+{
+?application wdt:P31/wdt:P279* wd:Q7397.
+?application wdt:P1547 ?software.
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+}
+GROUP BY ?application ?applicationLabel
+ORDER BY DESC (?count)
+LIMIT 60","SELECT ?software ?softwareLabel (COUNT(?dependency) AS ?dependencyCount) WHERE {
+  ?software wdt:P31 wd:Q7397 .
+  ?software wdt:P1547 ?dependency .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?software ?softwareLabel
+ORDER BY DESC(?dependencyCount)
+LIMIT 100",True,True,,0.0191,structure,,"missing the subclass closure, plain P31 used instead of P31/P279*"
+2,12,simple,List all books on Bengali Wikisource that have been validated.,"SELECT
+?item ?itemLabel ?siteLink
+WHERE {
+?siteLink schema:about ?item;
+schema:isPartOf <https://bn.wikisource.org/>;
+wikibase:badge wd:Q20748093.
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""bn,en"".}
+}","SELECT ?book ?bookLabel WHERE {
+  ?book wdt:P31 wd:Q3331189 .
+  ?book wdt:P407 wd:Q9610 .
+  ?book wdt:P1957 ?index .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en,bn"". }
+}",True,True,,0.01,structure,,Uses P31/P407/P1957 instead of the badge model the reference relies on.
+3,57,medium,List all racing car drivers who died in a crash.,"SELECT ?item ?death ?itemLabel {
+?item wdt:P31 wd:Q5 ; wdt:P106 wd:Q10349745 ; wdt:P509 wd:Q61037771 .
+OPTIONAL { ?item wdt:P570 ?death }
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+}
+ORDER BY ?death","SELECT DISTINCT ?driver ?driverLabel WHERE {
+  ?driver wdt:P106 wd:Q10349745 .
+  ?driver wdt:P1196 wd:Q171558 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0,wrong_property,wrong_entity,"Manner of death P1196 (too general, e.g. Accident) instead of cause of death P509."
+4,439,complex,Find a list of diplomatic missions operated by the United Kingdom.,"SELECT distinct ?item ?itemLabel ?P31Label ?P17Label ?P131Label ?P137Label ?P361Label WHERE
+{
+?item wdt:P31/wdt:P279* wd:Q213283 .
+?item wdt:P137 wd:Q145.
+optional {?item wdt:P31 ?P31 . }
+optional {?item wdt:P17 ?P17 . }
+optional {?item wdt:P131 ?P131 . }
+optional {?item wdt:P137 ?P137 . }
+optional {?item wdt:P361 ?P361 . }
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+}","SELECT ?mission ?missionLabel WHERE {
+  ?mission wdt:P31 wd:Q213283 .
+  ?mission wdt:P137 wd:Q145 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0,structure,,"Same property and entities as the reference, just missing the P279* subclass closure on P31."
+5,324,complex,List all hillforts with their Atlas of Hillforts ID and a link to their Wikipedia page.,"SELECT DISTINCT ?subj (URI(CONCAT(""https://hillforts.arch.ox.ac.uk/?query=Atlas_of_Hillforts_4166_0%2CMain_Atlas_Number%2C"", ?atlasID)) AS ?atlas) ?english WHERE
+{ ?subj wdt:P31/wdt:P279? wd:Q744099 ;
+wdt:P4102 ?atlasID .
+?english schema:about ?subj ; schema:isPartOf <https://en.wikipedia.org/>
+} ORDER BY ?atlasID","SELECT ?hillfort ?hillfortLabel ?atlasID ?article WHERE {
+  ?hillfort wdt:P4102 ?atlasID .
+  OPTIONAL {
+    ?article schema:about ?hillfort ;
+             schema:isPartOf <https://en.wikipedia.org/> .
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.096,structure,,"Missing the type check entirely (wdt:P31/wdt:P279? For hillfort), generated query just grabs anything with an atlas ID."
+6,8,simple,List all literary works and their descriptions.,"SELECT ?s ?desc
+WHERE
+{
+?s wdt:P279 wd:Q7725634 .
+OPTIONAL {
+?s rdfs:label ?desc FILTER (lang(?desc) = ""en"").
+}
+}","SELECT ?work ?workLabel ?description WHERE {
+  ?work wdt:P31 wd:Q7725634 .
+  OPTIONAL {
+    ?work schema:description ?description .
+    FILTER(LANG(?description) = ""en"")
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,False,result_too_large,0,execution,,Fails with result_too_large.
+7,169,medium,Show me a map of the birthplaces of artists featured in Europeana 280.,"SELECT ?creator ?creatorLabel ?placebirthLabel ?geoloc where {
+?item wdt:P31/wdt:P279* wd:Q838948 . # oeuvre d'art et ss-classe
+?item wdt:P608 wd:Q20980830 . # du projet Europeana 280
+?item wdt:P170 ?creator . # createur
+?creator wdt:P19 ?placebirth . # lieu de naissance
+?placebirth wdt:P625 ?geoloc . #coordonnees geo
+SERVICE wikibase:label {
+bd:serviceParam wikibase:language ""fr,es,en"" .
+}
+}","SELECT ?artist ?artistLabel ?birthplace ?birthplaceLabel ?coord WHERE {
+  ?artist wdt:P1875* wd:Q20980830 .
+  ?artist wdt:P19 ?birthplace .
+  ?birthplace wdt:P625 ?coord .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+
+Note: ""Europeana 280"" artists are typically linked via a participant/featured-in relationship. A more accurate query:
+
+SELECT ?artist ?artistLabel ?birthplace ?birthplaceLabel ?coord WHERE {
+  ?artist wdt:P361 wd:Q20980830 .
+  ?artist wdt:P19 ?birthplace .
+  ?birthplace wdt:P625 ?coord .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,False,http_400,0,execution,,There's leftover prose and a second query appended after it.
+8,233,medium,Find the coordinates of places where people named Antoine were born.,"SELECT ?item ?itemLabel ?coord
+WHERE
+{
+?item wdt:P31 wd:Q5 . # human
+?item wdt:P735 wd:Q15235674.
+?item wdt:P19 ?place.
+?place wdt:P625 ?coord.
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""fr"". }
+}","SELECT DISTINCT ?place ?placeLabel ?coordinates WHERE {
+  ?person wdt:P735 wd:Q15235674 .
+  ?person wdt:P19 ?place .
+  ?place wdt:P625 ?coordinates .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0,near_miss,,"Projects the birthplace instead of the person, gold and generated return different columns even though the properties match."
+9,65,medium,List all software developed by the KDE community.,"SELECT ?software ?softwareLabel ?fsf ?hub ?fram ?logo WHERE {
+?software (wdt:P31/wdt:P279*) wd:Q7397.
+?software wdt:P361 wd:Q20712193.
+OPTIONAL {?software wdt:P2537 ?fsf.}
+OPTIONAL {?software wdt:P1972 ?hub.}
+OPTIONAL {?software wdt:P4107 ?fram.}
+OPTIONAL {?software wdt:P154 ?logo.}
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}","SELECT ?software ?softwareLabel WHERE {
+  ?software wdt:P178 wd:Q1431 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0746,structure,wrong_property,"Missing the software-type check entirely (P31/P279*), and also uses the wrong property (P178 developer instead of P361)."
+10,489,complex,List the members of scholarly societies who died before 1800.,"SELECT ?person ?personLabel ?group ?groupLabel (""7FFF00"" as ?rgb)
+WHERE {
+?person wdt:P570 ?death FILTER (YEAR(?death) < 1800).
+?person wdt:P463 wd:Q123885. # That ?person is a person is implicit through membership
+?person wdt:P463 ?group FILTER (?group != wd:Q123885).
+?group wdt:P31/wdt:P279? wd:Q955824.
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+}","SELECT DISTINCT ?member ?memberLabel WHERE {
+  ?society wdt:P31 wd:Q955824 .
+  ?member wdt:P463 ?society .
+  ?member wdt:P570 ?dod .
+  FILTER(YEAR(?dod) < 1800)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0677,structure,,"Property and entities all match, just missing the P279? Subclass closure on the society's P31 check."
+11,422,complex,What is the average height of male figure skaters in each discipline?,"SELECT ?disciplineLabel ?genderLabel (AVG(?height_in_m) AS ?averageheight) (COUNT(?person) AS ?number)
+WHERE {
+?person wdt:P2416 ?discipline ;
+wdt:P641 wd:Q38108 .
+?person wdt:P21 ?gender .
+?person p:P2048/psn:P2048/wikibase:quantityAmount ?height_in_m .
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+}
+GROUP BY ?disciplineLabel ?genderLabel
+ORDER BY ?averageheight","SELECT ?discipline ?disciplineLabel (AVG(?height) AS ?avgHeight) WHERE {
+  ?skater wdt:P31 wd:Q5 .
+  ?skater wdt:P21 wd:Q6581097 .
+  ?skater wdt:P641 wd:Q38108 .
+  ?skater wdt:P2048 ?height .
+  ?skater wdt:P106 ?discipline .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?discipline ?disciplineLabel",True,True,,0,structure,benchmark_noise,"Reference groups by gender instead of filtering to male, not sure this even answers the question as asked."
+12,126,medium,List Czech buildings that serve as both a place of worship and a fire station.,"select ?item ?itemLabel ?img where {
+?item wdt:P31 wd:Q1195942 .
+?item wdt:P31/wdt:P279* wd:Q24398318 .
+optional {?item wdt:P18 ?img .}
+}","SELECT DISTINCT ?building ?buildingLabel WHERE {
+  ?building wdt:P17 wd:Q213 .
+  ?building wdt:P31 wd:Q1370598 .
+  ?building wdt:P31 wd:Q1195942 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0,benchmark_noise,structure,Reference has no country constraint at all even though the question specifically asks for Czech buildings.
+13,332,complex,List the languages of poems and their first lines.,"SELECT (COUNT(?thing) AS ?count) ?langLabel ?langlineLabel WHERE {
+?thing wdt:P1922 ?line.
+BIND(lang(?line) AS ?langlinecode)
+?langline wdt:P218 ?langlinecode
+OPTIONAL { ?thing wdt:P364 ?lang }
+SERVICE wikibase:label {bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en,de,fr,ru""}
+} GROUP BY ?langLabel ?langlineLabel
+ORDER BY ?langLabel DESC(?count)","SELECT ?poem ?poemLabel ?language ?languageLabel ?firstLine WHERE {
+  ?poem wdt:P31 wd:Q5185279 .
+  OPTIONAL { ?poem wdt:P407 ?language . }
+  OPTIONAL { ?poem wdt:P1922 ?firstLine . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0,benchmark_noise,,"Reference never restricts to poems at all just anything with a first line, and returns a language-grouped count instead of listing poems with their line."
+14,477,complex,List all current US Supreme Court justices along with their date of birth.,"SELECT ?image ?partyLabel ?justiceLabel ?birthdate
+WHERE
+{
+?justice p:P39 ?statement .
+{ ?statement ps:P39 wd:Q11144 } UNION { ?statement ps:P39 wd:Q11147 }
+?statement pq:P580 ?appointed .
+FILTER NOT EXISTS { ?statement pq:P582 ?x }
+?justice wdt:P569 ?birthdate .
+?justice wdt:P102 ?party .
+?justice wdt:P18 ?image .
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"" }
+}","SELECT ?justice ?justiceLabel ?dob WHERE {
+  ?justice wdt:P39 wd:Q20706330 .
+  ?justice p:P39 ?statement .
+  ?statement ps:P39 wd:Q20706330 .
+  FILTER NOT EXISTS { ?statement pq:P582 ?endTime . }
+  OPTIONAL { ?justice wdt:P569 ?dob . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0,structure,wrong_entity,"Q20706330 is the correct parent class but used without the P279* closure, so it probably matches nobody."
+15,55,medium,List all things that have a first line.,"SELECT (COUNT(?thing) AS ?count) ?typeLabel WHERE {
+?thing wdt:P1922 [];
+wdt:P31 ?type.
+SERVICE wikibase:label {bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en,de,fr,ru""}
+} GROUP BY ?typeLabel
+ORDER BY DESC(?count)","SELECT DISTINCT ?item ?itemLabel WHERE {
+  ?item wdt:P1922 ?firstLine .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0,benchmark_noise,near_miss,"Reference returns a count grouped by type instead of listing the items themselves, so it's answering with different columns than what the question asks for."
+16,400,complex,"List all Basque people with known birthplaces on Wikipedia, grouped by the century they died in.","SELECT DISTINCT ?gizaki ?gizakiLabel ?jaiolekuaLabel ?heriotzalekuaLabel ?year ?layer ?data (CONCAT(STR(?year), ""-01-01 00:00:00"") as ?concat) ?lat ?lon ?lat2 ?lon2 WHERE {
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+?gizaki wdt:P31 wd:Q5;
+(wdt:P19/(wdt:P131*)/^wdt:P527) wd:Q47588.
+?gizaki wdt:P19 ?jaiolekua.
+?jaiolekua p:P625 ?koordenatuak.
+?koordenatuak psv:P625 ?koord.
+?koord wikibase:geoLatitude ?lat.
+?koord wikibase:geoLongitude ?lon.
+?gizaki wdt:P570 ?data.
+BIND(YEAR(?data) as ?year).
+BIND(FLOOR((?year-1)/100)+1 AS ?mende).
+BIND(?mende as ?layer)
+?gizaki wdt:P20 ?heriotzalekua.
+?heriotzalekua p:P625 ?koordenatuak2.
+?koordenatuak2 psv:P625 ?koord2.
+?koord2 wikibase:geoLatitude ?lat2.
+?koord2 wikibase:geoLongitude ?lon2.
+}","SELECT ?century (COUNT(DISTINCT ?person) AS ?count) WHERE {
+  ?person wdt:P31 wd:Q5 .
+  ?person wdt:P172 wd:Q47588 .
+  ?person wdt:P19 ?birthplace .
+  ?person wdt:P570 ?deathDate .
+  BIND(FLOOR((YEAR(?deathDate) - 1) / 100) + 1 AS ?century)
+}
+GROUP BY ?century
+ORDER BY ?century",True,True,,0,structure,wrong_property,"Generated turns ""grouped by century"" into a literal COUNT/GROUP BY, losing the individual listing the question asks for with ""list all""."
+17,155,medium,"Show me a map of parishes in New South Wales, Australia, organized by county.","SELECT DISTINCT ?parish ?parishLabel ?coords ?county ?countyLabel WHERE {
+?parish wdt:P31/wdt:P279* wd:Q28931907 .
+?county wdt:P31/wdt:P279* wd:Q20974973 .
+?parish wdt:P131 ?county .
+?parish wdt:P625 ?coords.
+SERVICE wikibase:label {
+bd:serviceParam wikibase:language ""en"" .
+}
+}
+LIMIT 15000","SELECT ?parish ?parishLabel ?county ?countyLabel ?coord WHERE {
+  ?parish wdt:P31 wd:[entity:cadastral division of New South Wales] .
+  ?parish wdt:P131 ?county .
+  ?county wdt:P31 wd:[entity:Cadastral divisions of New South Wales] .
+  OPTIONAL { ?parish wdt:P625 ?coord . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ?countyLabel ?parishLabel",False,False,not_linked,0,unresolved,,"Both entity mentions never got linked to a Wikidata ID, the query still has literal [entity:…] placeholders in it."
+18,296,complex,List all statues in the UK that depict women or nobles.,"SELECT
+?statue ?statueLabel (SAMPLE(?statueLocation) AS ?statueLocation_) (SAMPLE(?statueImage) AS ?statueImage_)
+?person ?personLabel
+(IF(?female, ""female""@en, ""not female""@en) AS ?femaleLabel)
+(IF(?hasNobleTitle, ""has noble title""@en, ""has no noble title""@en) AS ?hasNobleTitleLabel)
+(CONCAT(?femaleLabel, "", ""@en, ?hasNobleTitleLabel) AS ?layer)
+WHERE {
+?statue wdt:P31/wdt:P279* wd:Q860861;
+wdt:P17 wd:Q145;
+wdt:P180|wdt:P547 ?person.
+?person wdt:P31 wd:Q5.
+BIND(EXISTS { ?person wdt:P21/wdt:P279* wd:Q6581072. } AS ?female)
+BIND(EXISTS { ?person wdt:P97 ?nobleTitle. } AS ?hasNobleTitle)
+OPTIONAL { ?statue wdt:P625 ?statueLocation. }
+OPTIONAL { ?statue wdt:P18 ?statueImage. }
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+}
+GROUP BY ?statue ?statueLabel ?person ?personLabel ?female ?hasNobleTitle","SELECT DISTINCT ?statue ?statueLabel WHERE {
+  ?statue wdt:P31 wd:Q179700 .
+  ?statue wdt:P17 wd:Q145 .
+  ?statue wdt:P180 ?subject .
+  {
+    ?subject wdt:P21 wd:Q467 .
+  } UNION {
+    ?subject wdt:P106 wd:Q13417114 .
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0,benchmark_noise,,"Reference computes female/noble as flags but never filters on them; returns every statue, not just women/nobles."
+19,329,complex,Find the route of The Antartic Circumpolar Voyage expedition.,"SELECT * WHERE {
+wd:Q104863295 p:P276 ?stat .
+?stat ps:P276 ?location .
+?location p:P625 [ ps:P625 []; psv:P625 [ wikibase:geoLongitude ?coord1lon; wikibase:geoLatitude ?coord1lat; ] ].
+?stat pq:P1545 ?series .
+wd:Q104863295 p:P276 ?stat2 .
+?stat2 ps:P276 ?location2 .
+?location2 p:P625 [ ps:P625 []; psv:P625 [ wikibase:geoLongitude ?coord2lon; wikibase:geoLatitude ?coord2lat; ] ].
+?stat2 pq:P1545 ?series2 .
+filter (xsd:integer(?series) = xsd:integer(?series2) -1)
+BIND(CONCAT('LINESTRING (', STR(?coord1lon), ' ', STR(?coord1lat), ',', STR(?coord2lon), ' ', STR(?coord2lat), ')') AS ?str) .
+BIND(STRDT(?str, geo:wktLiteral) AS ?line)
+BIND(""ff0033"" as ?rgb)
+BIND(""voyage"" AS ?layer)
+}","SELECT ?route ?routeLabel WHERE {
+  wd:[entity:Antarctic Circumpolar Expedition] wdt:P15 ?route .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",False,False,not_linked,0,unresolved,,"The expedition entity never got linked, still shows as a literal [entity:…] placeholder in the query."
+20,268,complex,"What are the ingredients in a sandwich, excluding bread?","SELECT ?sandwich ?ingredient ?sandwichLabel ?ingredientLabel
+WHERE
+{
+?sandwich wdt:P31?/wdt:P279* wd:Q28803;
+wdt:P527 ?ingredient.
+MINUS { ?ingredient wdt:P279* wd:Q7802. }
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"", ""fr"". }
+}
+ORDER BY UCASE(STR(?sandwichLabel))","SELECT ?ingredient ?ingredientLabel WHERE {
+  wd:Q28803 wdt:P527 ?ingredient .
+  FILTER(?ingredient != wd:Q7802)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0,structure,,Missing subclass closure in two places: treats Q28803 as one fixed sandwich and only excludes bread by exact match.
+21,32,simple,What are the nodes and predicates related to 'Wikidata' in English?,"SELECT ?node ?predicate WHERE {
+?node ?predicate ""Wikidata""@en # @en is different from @en-gb and @en-ca
+}","SELECT ?predicate ?node WHERE {
+  wd:Q2013 ?predicate ?node .
+  FILTER(LANG(?node) = ""en"" || !isLiteral(?node))
+}",True,True,,0.0198,structure,wrong_entity,"Treats ""Wikidata"" as the entity Q2013 instead of the literal string the reference searches for, not fixable by just swapping the entity."
+22,205,medium,List all the birthplaces of Liverpool football players on a map.,"SELECT ?item ?itemLabel ?murLabel ?coordinates ?foto
+WHERE
+{
+?item wdt:P106 wd:Q937857;
+wdt:P54 wd:Q1130849 ;
+wdt:P19 ?mur.
+?mur wdt:P625 ?coordinates.
+OPTIONAL {?item wdt:P18 ?foto.}
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""pl, en"". }
+}","SELECT DISTINCT ?birthplace ?birthplaceLabel ?coord WHERE {
+  ?player wdt:P54 wd:Q1130849 .
+  ?player wdt:P19 ?birthplace .
+  ?birthplace wdt:P625 ?coord .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0,near_miss,,"Same relation and values as reference (P54/P19/P625), but generated projects the birthplace instead of the player."
+23,487,complex,Show me words that describe people from a certain place on the map.,"SELECT ?l ?lemma ?demoPlaceLabel ?coords WHERE {
+?l a ontolex:LexicalEntry ;
+dct:language ?language ;
+wikibase:lemma ?lemma .
+?language wdt:P218 'sv'. # language
+?l ontolex:sense ?sense.
+?sense wdt:P6271 ?demoPlace.
+?demoPlace wdt:P625 ?coords
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+}","SELECT ?item ?itemLabel ?demonym WHERE {
+  ?item wdt:P1549 ?demonym .
+  ?item wdt:P625 ?coord .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+LIMIT 100",True,True,,0,structure,,"Reference needs the lexeme model since the question asks for words, generated just uses a plain item property instead."
+24,337,complex,Show me a map of places where accused witches lived.,"SELECT ?person ?personLabel ?accusedwitch ?precision ?coords ?Occupation ?Residence ?image (?Occupation as ?layer)
+WHERE {
+?person wdt:P4478 ?accusedwitch .
+?person wdt:P31 wd:Q5.
+?person wdt:P21 ?gender .
+?person wdt:P551 ?residence .
+OPTIONAL { ?person wdt:P106 ?occupation}
+OPTIONAL { ?person wdt:P3716 ?socialclassification }
+?residence wdt:P625 ?coords.
+OPTIONAL { ?article schema:about ?person. }
+SERVICE wikibase:label {
+bd:serviceParam wikibase:language ""en"".
+?person rdfs:label ?personLabel.
+?residence rdfs:label ?Residence .
+?occupation rdfs:label ?Occupation.
+?gender rdfs:label ?Gender.
+?socialclassification rdfs:label ?SocialClassification .
+}
+}","SELECT DISTINCT ?person ?personLabel ?residence ?residenceLabel ?coord WHERE {
+  ?person wdt:P1595 wd:Q259745 .
+  ?person wdt:P551 ?residence .
+  ?residence wdt:P625 ?coord .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0,wrong_property,wrong_entity,P1595 tied to one specific entity instead of reference's open-ended check on P4478 for any accusation.
+25,271,complex,List all virtual conferences along with their environment and other details.,"SELECT DISTINCT
+?conf ?confLabel
+?startDate ?endDate
+?url
+?hashtag
+(GROUP_CONCAT(DISTINCT ?envLabel;separator="", "") AS ?environments)
+(GROUP_CONCAT(DISTINCT ?orgLabel;separator="", "") AS ?organizers)
+WHERE {
+# web conferences with homepage
+?conf wdt:P31/wdt:P279* wd:Q1543677 ;
+wdt:P856 ?url .
+OPTIONAL { # which software is used?
+?conf wdt:P2283 ?env .
+?env wdt:P31/wdt:P279* wd:Q7397
+}
+OPTIONAL { ?conf wdt:P580 ?startDate }
+OPTIONAL { ?conf wdt:P582 ?endDate }
+OPTIONAL { ?conf wdt:P2572 ?hashtag }
+OPTIONAL { ?conf wdt:P664 ?org }
+SERVICE wikibase:label {
+bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"" .
+?conf rdfs:label ?confLabel .
+?env rdfs:label ?envLabel .
+?org rdfs:label ?orgLabel .
+}
+} GROUP BY ?conf ?confLabel ?url ?startDate ?endDate ?hashtag ?organizers","SELECT ?conference ?conferenceLabel ?environment ?environmentLabel ?startTime ?endTime WHERE {
+  ?conference wdt:P31 wd:Q7935096 .
+  OPTIONAL { ?conference wdt:P276 ?environment . }
+  OPTIONAL { ?conference wdt:P580 ?startTime . }
+  OPTIONAL { ?conference wdt:P582 ?endTime . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.0211,wrong_property,structure,"Uses location (P276) instead of the software/platform property (P2283) the reference uses for ""environment"""
+26,3,simple,List politicians who have Mastodon accounts.,"SELECT ?politicianLabel ?mastodon ?countryLabel
+WHERE
+{
+?politician wdt:P4033 ?mastodon .
+?politician wdt:P106 wd:Q82955 . # occupation politician
+?politician wdt:P27 ?country .
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+}
+ORDER BY ?countryLabel","SELECT DISTINCT ?politician ?politicianLabel ?mastodon WHERE {
+  ?politician wdt:P106 wd:Q82955 .
+  ?politician wdt:P4033 ?mastodon .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"" . }
+}",True,True,,0,near_miss,,Same properties throughout but reference selects the label string while generated selects the entity URI.
+27,14,simple,List the top 20 humans with the highest recorded weight.,SELECT DISTINCT ?id WHERE { ?i wdt:P2067 ?v. ?i wdt:P31 ?id},"SELECT ?human ?humanLabel ?weight WHERE {
+  ?human wdt:P31 wd:Q5 .
+  ?human wdt:P2067 ?weight .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY DESC(?weight)
+LIMIT 20",True,True,,0,benchmark_noise,,"Reference selects the P31 class value instead of weight, with no ORDER BY or LIMIT, so it doesn't answer ""top 20 by weight"" at all."
+28,85,medium,Find the places where people named Michael or its variants were born.,"SELECT ?pertsona ?pertsonaLabel ?koord WHERE {
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+?Mikel wdt:P460 wd:Q4927524.
+?pertsona wdt:P735 ?Mikel.
+?pertsona wdt:P19 ?jaiolekua.
+?jaiolekua wdt:P625 ?koord.
+}","SELECT DISTINCT ?birthPlace ?birthPlaceLabel WHERE {
+  ?person wdt:P735 ?givenName .
+  ?givenName wdt:P460* wd:Q4927524 .
+  ?person wdt:P19 ?birthPlace .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0,near_miss,,"Reference returns the person plus coordinate, generated returns the birthplace entity itself."
+29,434,complex,List all individuals who are both parents and children of the same person.,"SELECT ?person1 ?person1Label ?person2 ?person2Label
+WHERE
+{
+{ ?person1 wdt:P22 ?person2 ; wdt:P31 wd:Q5 } UNION { ?person1 wdt:P25 ?person2 ; wdt:P31 wd:Q5 }
+?person1 wdt:P40 ?person2 ; wdt:P31 wd:Q5 .
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}","SELECT DISTINCT ?person ?personLabel WHERE {
+  ?person wdt:P40 ?other .
+  ?person wdt:P22 ?other .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,,0.4978,near_miss,,"Generated selects the anchor person instead of the entity that's actually both parent and child (?other), even though the relation logic itself matches."
+30,453,complex,"Find Swedish words with examples that show both a form and a sense, along with their sources.","select ?lexemeId ?lemma ?example ?sourceLabel ?source
+WHERE {
+?lexemeId <http://purl.org/dc/terms/language> wd:Q9027;
+wikibase:lemma ?lemma.
+?lexemeId p:P5831 ?statement.
+?statement ps:P5831 ?example;
+pq:P6072 [];
+pq:P5830 [].
+?lexemeId p:P5831 [ prov:wasDerivedFrom [ pr:P248 ?source ] ].
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""sv,en"". }
+}","SELECT ?lexeme ?lemma ?formExample ?senseExample ?source WHERE {
+  ?lexeme dct:language wd:Q9027 ;
+          wikibase:lemma ?lemma .
+  ?lexeme p:P5831 ?statement .
+  ?statement ps:P5831 ?example .
+  ?statement pq:P5830 ?form .
+  ?statement pq:P6072 ?sense .
+  OPTIONAL { ?statement prov:wasDerivedFrom ?source . }
+  BIND(?example AS ?formExample)
+  BIND(?example AS ?senseExample)
+}",True,True,,0,structure,benchmark_noise,"Generated makes source optional when the question requires it as part of the answer, not fixable by swapping one property."

@@ -1,0 +1,153 @@
+index,complexity,question,gold_query,linked_query,generated_ok,fully_linked,executed,exec_error,jaccard,error_category,notes
+12,simple,List all books on Bengali Wikisource that have been validated.,"SELECT
+?item ?itemLabel ?siteLink
+WHERE {
+?siteLink schema:about ?item;
+schema:isPartOf <https://bn.wikisource.org/>;
+wikibase:badge wd:Q20748093.
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""bn,en"".}
+}","SELECT ?book ?bookLabel WHERE {
+  ?book wdt:P31 wd:Q3331189 .
+  ?book wdt:P407 wd:Q9610 .
+  ?book wdt:P1957 ?index .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en,bn"". }
+}",,True,True,,0.01,semantic_wrong_constraint,
+55,medium,List all things that have a first line.,"SELECT (COUNT(?thing) AS ?count) ?typeLabel WHERE {
+?thing wdt:P1922 [];
+wdt:P31 ?type.
+SERVICE wikibase:label {bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en,de,fr,ru""}
+} GROUP BY ?typeLabel
+ORDER BY DESC(?count)","SELECT DISTINCT ?item ?itemLabel WHERE {
+  ?item wdt:P1922 ?firstLine .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",,True,True,,0.0,semantic_missing_aggregation,
+3,simple,List politicians who have Mastodon accounts.,"SELECT ?politicianLabel ?mastodon ?countryLabel
+WHERE
+{
+?politician wdt:P4033 ?mastodon .
+?politician wdt:P106 wd:Q82955 . # occupation politician
+?politician wdt:P27 ?country .
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+}
+ORDER BY ?countryLabel","SELECT DISTINCT ?politician ?politicianLabel ?mastodon WHERE {
+  ?politician wdt:P106 wd:Q82955 .
+  ?politician wdt:P4033 ?mastodon .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"" . }
+}",,True,True,,0.0,semantic_missing_constraint,
+8,simple,List all literary works and their descriptions.,"SELECT ?s ?desc
+WHERE
+{
+?s wdt:P279 wd:Q7725634 .
+OPTIONAL {
+?s rdfs:label ?desc FILTER (lang(?desc) = ""en"").
+}
+}","SELECT ?work ?workLabel ?description WHERE {
+  ?work wdt:P31 wd:Q7725634 .
+  OPTIONAL {
+    ?work schema:description ?description .
+    FILTER(LANG(?description) = ""en"")
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",,True,False,result_too_large,0.0,execution_result_too_large,
+14,simple,List the top 20 humans with the highest recorded weight.,SELECT DISTINCT ?id WHERE { ?i wdt:P2067 ?v. ?i wdt:P31 ?id},"SELECT ?human ?humanLabel ?weight WHERE {
+  ?human wdt:P31 wd:Q5 .
+  ?human wdt:P2067 ?weight .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY DESC(?weight)
+LIMIT 20",,True,True,,0.0,gold_query_mismatch,
+296,complex,List all statues in the UK that depict women or nobles.,"SELECT
+?statue ?statueLabel (SAMPLE(?statueLocation) AS ?statueLocation_) (SAMPLE(?statueImage) AS ?statueImage_)
+?person ?personLabel
+(IF(?female, ""female""@en, ""not female""@en) AS ?femaleLabel)
+(IF(?hasNobleTitle, ""has noble title""@en, ""has no noble title""@en) AS ?hasNobleTitleLabel)
+(CONCAT(?femaleLabel, "", ""@en, ?hasNobleTitleLabel) AS ?layer)
+WHERE {
+?statue wdt:P31/wdt:P279* wd:Q860861;
+wdt:P17 wd:Q145;
+wdt:P180|wdt:P547 ?person.
+?person wdt:P31 wd:Q5.
+BIND(EXISTS { ?person wdt:P21/wdt:P279* wd:Q6581072. } AS ?female)
+BIND(EXISTS { ?person wdt:P97 ?nobleTitle. } AS ?hasNobleTitle)
+OPTIONAL { ?statue wdt:P625 ?statueLocation. }
+OPTIONAL { ?statue wdt:P18 ?statueImage. }
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+}
+GROUP BY ?statue ?statueLabel ?person ?personLabel ?female ?hasNobleTitle","SELECT DISTINCT ?statue ?statueLabel WHERE {
+  ?statue wdt:P31 wd:Q179700 .
+  ?statue wdt:P17 wd:Q145 .
+  ?statue wdt:P180 ?subject .
+  {
+    ?subject wdt:P21 wd:Q467 .
+  } UNION {
+    ?subject wdt:P106 wd:Q13417114 .
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",,True,True,,0.0,semantic_wrong_property,
+329,complex,Find the route of The Antartic Circumpolar Voyage expedition.,"SELECT * WHERE {
+wd:Q104863295 p:P276 ?stat .
+?stat ps:P276 ?location .
+?location p:P625 [ ps:P625 []; psv:P625 [ wikibase:geoLongitude ?coord1lon; wikibase:geoLatitude ?coord1lat; ] ].
+?stat pq:P1545 ?series .
+wd:Q104863295 p:P276 ?stat2 .
+?stat2 ps:P276 ?location2 .
+?location2 p:P625 [ ps:P625 []; psv:P625 [ wikibase:geoLongitude ?coord2lon; wikibase:geoLatitude ?coord2lat; ] ].
+?stat2 pq:P1545 ?series2 .
+filter (xsd:integer(?series) = xsd:integer(?series2) -1)
+BIND(CONCAT('LINESTRING (', STR(?coord1lon), ' ', STR(?coord1lat), ',', STR(?coord2lon), ' ', STR(?coord2lat), ')') AS ?str) .
+BIND(STRDT(?str, geo:wktLiteral) AS ?line)
+BIND(""ff0033"" as ?rgb)
+BIND(""voyage"" AS ?layer)
+}","SELECT ?route ?routeLabel WHERE {
+  wd:[entity:Antarctic Circumpolar Expedition] wdt:P15 ?route .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",,False,False,not_linked,0.0,linking_entity_not_resolved,
+422,complex,What is the average height of male figure skaters in each discipline?,"SELECT ?disciplineLabel ?genderLabel (AVG(?height_in_m) AS ?averageheight) (COUNT(?person) AS ?number)
+WHERE {
+?person wdt:P2416 ?discipline ;
+wdt:P641 wd:Q38108 .
+?person wdt:P21 ?gender .
+?person p:P2048/psn:P2048/wikibase:quantityAmount ?height_in_m .
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+}
+GROUP BY ?disciplineLabel ?genderLabel
+ORDER BY ?averageheight","SELECT ?discipline ?disciplineLabel (AVG(?height) AS ?avgHeight) WHERE {
+  ?skater wdt:P31 wd:Q5 .
+  ?skater wdt:P21 wd:Q6581097 .
+  ?skater wdt:P641 wd:Q38108 .
+  ?skater wdt:P2048 ?height .
+  ?skater wdt:P106 ?discipline .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?discipline ?disciplineLabel",,True,True,,0.0,semantic_wrong_property,
+155,medium,"Show me a map of parishes in New South Wales, Australia, organized by county.","SELECT DISTINCT ?parish ?parishLabel ?coords ?county ?countyLabel WHERE {
+?parish wdt:P31/wdt:P279* wd:Q28931907 .
+?county wdt:P31/wdt:P279* wd:Q20974973 .
+?parish wdt:P131 ?county .
+?parish wdt:P625 ?coords.
+SERVICE wikibase:label {
+bd:serviceParam wikibase:language ""en"" .
+}
+}
+LIMIT 15000","SELECT ?parish ?parishLabel ?county ?countyLabel ?coord WHERE {
+  ?parish wdt:P31 wd:[entity:cadastral division of New South Wales] .
+  ?parish wdt:P131 ?county .
+  ?county wdt:P31 wd:[entity:Cadastral divisions of New South Wales] .
+  OPTIONAL { ?parish wdt:P625 ?coord . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ?countyLabel ?parishLabel",,False,False,not_linked,0.0,linking_entity_not_resolved,
+233,medium,Find the coordinates of places where people named Antoine were born.,"SELECT ?item ?itemLabel ?coord
+WHERE
+{
+?item wdt:P31 wd:Q5 . # human
+?item wdt:P735 wd:Q15235674.
+?item wdt:P19 ?place.
+?place wdt:P625 ?coord.
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""fr"". }
+}","SELECT DISTINCT ?place ?placeLabel ?coordinates WHERE {
+  ?person wdt:P735 wd:Q15235674 .
+  ?person wdt:P19 ?place .
+  ?place wdt:P625 ?coordinates .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",,True,True,,0.0,semantic_wrong_result_variable,

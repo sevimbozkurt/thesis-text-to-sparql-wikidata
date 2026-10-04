@@ -1,0 +1,54 @@
+{
+  // ---------------------------------------------------------------
+  // LaTeX Workshop, configured for this thesis.
+  // The two settings that matter most are rootFile and the PATH: the
+  // chapter files have no \documentclass, so without a root the
+  // extension tries to build the chapter you happen to have open and
+  // fails; and VS Code launched from Finder does not inherit the shell
+  // PATH, so it cannot find the Homebrew TeX Live without being told.
+  // ---------------------------------------------------------------
+  "latex-workshop.latex.rootFile": "thesis.tex",
+
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "/opt/homebrew/bin/latexmk",
+      "args": [
+        "-pdf",
+        "-interaction=nonstopmode",
+        "-synctex=1",
+        "-file-line-error",
+        "%DOC%"
+      ],
+      "env": { "PATH": "/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin" }
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    { "name": "latexmk", "tools": ["latexmk"] }
+  ],
+
+  // Build on save, and show the PDF beside the source.
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.synctex.afterBuild.enabled": true,
+
+  // The build leaves a dozen scratch files next to the chapters; hide
+  // them rather than delete them, latexmk reuses them to build faster.
+  "latex-workshop.latex.autoClean.run": "never",
+  "files.exclude": {
+    "**/*.aux": true, "**/*.bbl": true, "**/*.bcf": true, "**/*.blg": true,
+    "**/*.fdb_latexmk": true, "**/*.fls": true, "**/*.lof": true,
+    "**/*.log": true, "**/*.lot": true, "**/*.out": true,
+    "**/*.run.xml": true, "**/*.synctex.gz": true, "**/*.toc": true
+  },
+
+  // Prose settings: wrap at the width the chapters already use, and
+  // spell-check in English rather than flagging every LaTeX macro.
+  "[latex]": {
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80,
+    "editor.rulers": [80],
+    "editor.tabSize": 2,
+    "editor.quickSuggestions": { "comments": false, "strings": false, "other": false }
+  }
+}

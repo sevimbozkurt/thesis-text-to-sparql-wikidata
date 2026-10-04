@@ -1,0 +1,2661 @@
+{
+"452": {
+"cols": [
+"item",
+"itemLabel",
+"sense",
+"lexeme",
+"lemma",
+"genre",
+"genreLabel"
+],
+"rows": [
+[
+"Q100456061",
+"psychosociologue",
+"L621845-S1",
+"L621845",
+"psychosociologue",
+"Q1775415",
+"f\u00e9minin"
+],
+[
+"Q100456061",
+"psychosociologue",
+"L621845-S1",
+"L621845",
+"psychosociologue",
+"Q499327",
+"masculin"
+],
+[
+"Q101048549",
+"indienneur",
+"L621349-S1",
+"L621349",
+"indienneur",
+"Q499327",
+"masculin"
+],
+[
+"Q1028181",
+"artiste peintre",
+"L16436-S1",
+"L16436",
+"peintre",
+"Q1775415",
+"f\u00e9minin"
+],
+[
+"Q1028181",
+"artiste peintre",
+"L16436-S1",
+"L16436",
+"peintre",
+"Q499327",
+"masculin"
+],
+[
+"Q10301984",
+"indig\u00e9niste",
+"L621538-S1",
+"L621538",
+"indig\u00e9niste",
+"Q1775415",
+"f\u00e9minin"
+]
+],
+"n": 1605,
+"error": ""
+},
+"325": {
+"cols": [
+"q",
+"img",
+"label",
+"linkcount"
+],
+"rows": [
+[
+"Q12418",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Mona%20Lisa%2C%20by%20Leonardo%20da%20V",
+"",
+"144"
+],
+[
+"Q128910",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Leonardo%20da%20Vinci%20%281452-1519%29",
+"",
+"88"
+],
+[
+"Q471379",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Edvard%20Munch%2C%201893%2C%20The%20Scr",
+"",
+"79"
+],
+[
+"Q45585",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20-%20Starry%20Night%20-%20G",
+"",
+"76"
+],
+[
+"Q175036",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Mural%20del%20%22Guernica%22%20de%20Pic",
+"",
+"71"
+],
+[
+"Q185372",
+"http://commons.wikimedia.org/wiki/Special:FilePath/1665%20Girl%20with%20a%20Pearl%20Earrin",
+"",
+"71"
+]
+],
+"n": 500,
+"error": ""
+},
+"134": {
+"cols": [
+"Donejakue_bidea",
+"Donejakue_bideaLabel",
+"koordenatuak",
+"layerLabel"
+],
+"rows": [
+[
+"Q107156644",
+"",
+"POINT(-2.832583 42.634028)",
+""
+],
+[
+"Q107356676",
+"",
+"POINT(-1.282553 43.108846)",
+""
+],
+[
+"Q109330808",
+"",
+"POINT(-2.208700 43.047119)",
+""
+],
+[
+"Q1139113",
+"",
+"POINT(-2.570278 42.848333)",
+""
+],
+[
+"Q11682828",
+"",
+"POINT(-1.786966 43.340267)",
+""
+],
+[
+"Q11682867",
+"",
+"POINT(-2.029444 42.668889)",
+""
+]
+],
+"n": 765,
+"error": ""
+},
+"144": {
+"cols": [
+"q",
+"qLabel",
+"count"
+],
+"rows": [
+[
+"Q174097",
+"",
+"125"
+],
+[
+"Q60581845",
+"",
+"19"
+],
+[
+"Q61508261",
+"",
+"11"
+],
+[
+"Q515122",
+"",
+"7"
+],
+[
+"Q1771867",
+"",
+"4"
+],
+[
+"Q61415509",
+"",
+"4"
+]
+],
+"n": 14,
+"error": ""
+},
+"125": {
+"cols": [
+"q",
+"qLabel"
+],
+"rows": [
+[
+"Q1006",
+""
+],
+[
+"Q1009",
+""
+],
+[
+"Q1011",
+""
+],
+[
+"Q1013",
+""
+],
+[
+"Q1019",
+""
+],
+[
+"Q1020",
+""
+]
+],
+"n": 85,
+"error": ""
+},
+"38": {
+"cols": [
+"country",
+"countryLabel",
+"count"
+],
+"rows": [
+[
+"Q1030",
+"",
+"1"
+],
+[
+"Q1183",
+"",
+"1"
+],
+[
+"Q1246",
+"",
+"2"
+],
+[
+"Q142",
+"",
+"57"
+],
+[
+"Q145",
+"",
+"14"
+],
+[
+"Q148",
+"",
+"2"
+]
+],
+"n": 87,
+"error": ""
+},
+"408": {
+"cols": [
+"value",
+"lemma"
+],
+"rows": [],
+"n": 0,
+"error": ""
+},
+"89": {
+"cols": [
+"ingredienteLabel",
+"count"
+],
+"rows": [
+[
+"",
+"728"
+]
+],
+"n": 1,
+"error": ""
+},
+"23": {
+"cols": [
+"subj",
+"label"
+],
+"rows": [],
+"n": 0,
+"error": ""
+},
+"373": {
+"cols": [
+"q",
+"qLabel",
+"img"
+],
+"rows": [
+[
+"https://www.khalilicollections.org/collections/japanese-art-of-the-meiji-period/khalili-co",
+"",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Khalili%20Collection%20Japanese%20Meiji"
+],
+[
+"https://www.khalilicollections.org/collections/islamic-art/khalili-collection-islamic-art-",
+"",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Khalili%20Collection%20Islamic%20Art%20"
+],
+[
+"https://www.khalilicollections.org/collections/islamic-art/khalili-collection-islamic-art-",
+"",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Khalili%20Collection%20Islamic%20Art%20"
+],
+[
+"https://www.khalilicollections.org/collections/islamic-art/khalili-collection-islamic-art-",
+"",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Khalili%20Collection%20Islamic%20Art%20"
+],
+[
+"https://www.khalilicollections.org/collections/islamic-art/khalili-collection-islamic-art-",
+"",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Khalili%20Collection%20Islamic%20Art%20"
+],
+[
+"https://www.khalilicollections.org/collections/islamic-art/khalili-collection-islamic-art-",
+"",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Khalili%20Collection%20Islamic%20Art%20"
+]
+],
+"n": 243,
+"error": ""
+},
+"115": {
+"cols": [
+"site",
+"siteLabel",
+"siteDescription",
+"location",
+"photo",
+"placeNameLabel",
+"heritageLabel",
+"layer"
+],
+"rows": [
+[
+"Q1001379",
+"",
+"",
+"POINT(14.244200 50.191100)",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Budec%20CZ%20St%20Peter%20church%20134.",
+"",
+"",
+"Q385405"
+],
+[
+"Q1001379",
+"",
+"",
+"POINT(14.244200 50.191100)",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Budec%20CZ%20St%20Peter%20church%20134.",
+"",
+"",
+"Q649434"
+],
+[
+"Q1011123",
+"",
+"",
+"POINT(7.996110 51.147800)",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Ruine%20Burg%20Borghausen.jpg",
+"",
+"",
+"Q39422749"
+],
+[
+"Q1011123",
+"",
+"",
+"POINT(7.996110 51.147800)",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Ruine%20Burg%20Borghausen.jpg",
+"",
+"",
+"Q39422749"
+],
+[
+"Q101129478",
+"",
+"",
+"POINT(11.350833 63.849444)",
+"",
+"",
+"",
+"Q11970056"
+],
+[
+"Q1011348",
+"",
+"",
+"POINT(14.508056 50.589167)",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Chud%C3%BD%20hr%C3%A1dek%202.JPG",
+"",
+"",
+"Q385405"
+]
+],
+"n": 8710,
+"error": ""
+},
+"382": {
+"cols": [
+"software",
+"softwareLabel",
+"field",
+"fieldLabel"
+],
+"rows": [
+[
+"Q100364318",
+"",
+"Q102338867",
+""
+],
+[
+"Q100364318",
+"",
+"Q827792",
+""
+],
+[
+"Q1007056",
+"",
+"Q2544432",
+""
+],
+[
+"Q1007056",
+"",
+"Q2544432",
+""
+],
+[
+"Q100770934",
+"",
+"Q382741",
+""
+],
+[
+"Q101110286",
+"",
+"Q843958",
+""
+]
+],
+"n": 5135,
+"error": ""
+},
+"126": {
+"cols": [
+"item",
+"itemLabel",
+"img"
+],
+"rows": [
+[
+"Q108095293",
+"",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Zehntscheune%20Ballenberg%2000.jpg"
+],
+[
+"Q12057895",
+"",
+"http://commons.wikimedia.org/wiki/Special:FilePath/SynagogaLiten%208736.JPG"
+],
+[
+"Q37716320",
+"",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Feuerwehrhaus%20100967%20in%20A-2130%20"
+],
+[
+"Q38150955",
+"",
+"http://commons.wikimedia.org/wiki/Special:FilePath/KostelMistraJanaHusaUherskyBrod.JPG"
+],
+[
+"Q52225859",
+"",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Firefighting%20building%20and%20chapel%"
+],
+[
+"Q57201120",
+"",
+""
+]
+],
+"n": 9,
+"error": ""
+},
+"494": {
+"cols": [
+"companyLabel",
+"founders"
+],
+"rows": [
+[
+"",
+"Chris Urmson, Ted Arison, Ezra Uzi Yemin, Pradeep Sindhu, Jean Hoerni, Suhas Patil, Ivan T"
+]
+],
+"n": 1,
+"error": ""
+},
+"455": {
+"cols": [
+"item",
+"articlename",
+"itemLabel",
+"itemDescription",
+"sl"
+],
+"rows": [],
+"n": 0,
+"error": ""
+},
+"46": {
+"cols": [
+"Masonic_Lodge",
+"Masonic_LodgeLabel",
+"wpTitle"
+],
+"rows": [
+[
+"Q100155040",
+"",
+"Loja Ma\u00e7\u00f4nica Amor e Conc\u00f3rdia"
+],
+[
+"Q100257027",
+"",
+"Zur alten Linde"
+],
+[
+"Q100433520",
+"",
+"Loge De Gouden Driehoek"
+],
+[
+"Q100433670",
+"",
+"Loge De Stanfaste"
+],
+[
+"Q100458057",
+"",
+"Loge La Z\u00e9l\u00e9e (Paramaribo)"
+],
+[
+"Q100605053",
+"",
+"Loge L'Union (Paramaribo)"
+]
+],
+"n": 504,
+"error": ""
+},
+"167": {
+"cols": [
+"i",
+"iLabel",
+"coords",
+"url"
+],
+"rows": [
+[
+"Q10283668",
+"",
+"POINT(-34.876900 -8.060990)",
+"https://www.atlasofmutualheritage.nl/en/Ernest-fort.230c"
+],
+[
+"Q10283679",
+"",
+"POINT(-36.584900 -10.292400)",
+"https://www.atlasofmutualheritage.nl/en/Maurits-fort-(Penedo).249c"
+],
+[
+"Q10283691",
+"",
+"POINT(-34.876700 -8.055960)",
+"https://www.atlasofmutualheritage.nl/en/Waerdenburgh-fort-(Recife).231c"
+],
+[
+"Q10283701",
+"",
+"POINT(-34.881300 -8.091270)",
+"https://www.atlasofmutualheritage.nl/en/Barretta-fort.241c"
+],
+[
+"Q10283788",
+"",
+"POINT(123.574766 -10.162773)",
+"https://www.atlasofmutualheritage.nl/en/Concordia-fort-(Timor).92c"
+],
+[
+"Q10283788",
+"",
+"POINT(123.574766 -10.162773)",
+"https://www.atlasofmutualheritage.nl/en/Concordia-fort-(Timor).92c"
+]
+],
+"n": 351,
+"error": ""
+},
+"268": {
+"cols": [
+"sandwich",
+"ingredient",
+"sandwichLabel",
+"ingredientLabel"
+],
+"rows": [
+[
+"Q3472077",
+"Q170486",
+"",
+""
+],
+[
+"Q3412448",
+"Q3127593",
+"",
+""
+],
+[
+"Q3412448",
+"Q4302793",
+"",
+""
+],
+[
+"Q3412448",
+"Q47859",
+"",
+""
+],
+[
+"Q3412448",
+"Q57328174",
+"",
+""
+],
+[
+"Q3425450",
+"Q12334407",
+"",
+""
+]
+],
+"n": 556,
+"error": ""
+},
+"168": {
+"cols": [
+"item",
+"itemLabel",
+"itemDescription",
+"date"
+],
+"rows": [
+[
+"Q3549460",
+"",
+"",
+"1955-01-01T00:00:00Z"
+],
+[
+"Q978949",
+"",
+"",
+"1957-01-01T00:00:00Z"
+],
+[
+"Q2961046",
+"",
+"",
+"1958-01-01T00:00:00Z"
+],
+[
+"Q3354902",
+"",
+"",
+"1958-01-01T00:00:00Z"
+],
+[
+"Q1306407",
+"",
+"",
+"1958-01-01T00:00:00Z"
+],
+[
+"Q86427",
+"",
+"",
+"1960-01-01T00:00:00Z"
+]
+],
+"n": 102,
+"error": ""
+},
+"302": {
+"cols": [
+"itemLabel",
+"size",
+"percentage_online",
+"rgb"
+],
+"rows": [
+[
+"",
+"0.0",
+"",
+""
+],
+[
+"",
+"3.0",
+"0.0",
+"FF0000"
+],
+[
+"",
+"6.0",
+"0.0",
+"FF0000"
+],
+[
+"",
+"9.0",
+"0.0",
+"FF0000"
+],
+[
+"",
+"11.0",
+"0.0",
+"FF0000"
+],
+[
+"",
+"12.0",
+"0.0",
+"FF0000"
+]
+],
+"n": 377,
+"error": ""
+},
+"16": {
+"cols": [
+"item",
+"itemLabel",
+"pic"
+],
+"rows": [
+[
+"Q1004802",
+"",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Amazilia%20versicolor%20001%201280.jpg"
+],
+[
+"Q1006452",
+"",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Aruba-Zenaida-auriculata.JPG"
+],
+[
+"Q1006452",
+"",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Zenaida%20auriculata%20-Sao%20Lourenco%"
+],
+[
+"Q1024919",
+"",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Sporophila%20bouvreuil%20-Mogi%20das%20"
+],
+[
+"Q1024919",
+"",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Sporophila%20bouvreuil.jpg"
+],
+[
+"Q1029115",
+"",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Synallaxis%20hellmayri%20-%20Red-should"
+]
+],
+"n": 420,
+"error": ""
+},
+"215": {
+"cols": [
+"pride",
+"time",
+"image"
+],
+"rows": [
+[
+"Q10325209",
+"2000-01-01T00:00:00Z",
+""
+],
+[
+"Q10325211",
+"2006-01-01T00:00:00Z",
+"http://commons.wikimedia.org/wiki/Special:FilePath/View%20of%20Porto%2014.jpg"
+],
+[
+"Q104858272",
+"2015-01-01T00:00:00Z",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Salento%20Pride%202019.jpg"
+],
+[
+"Q105327820",
+"2008-06-28T00:00:00Z",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Orgullo%20Guayaquil%202024%20-%20Orgull"
+],
+[
+"Q105334529",
+"2002-01-01T00:00:00Z",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Caravana%20representativa%20con%20el%20"
+],
+[
+"Q105334529",
+"2002-01-01T00:00:00Z",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Marcha%20Orgullo%20Lima%202022%20-%2021"
+]
+],
+"n": 491,
+"error": ""
+},
+"329": {
+"cols": [
+"stat",
+"location",
+"coord1lon",
+"coord1lat",
+"series",
+"stat2",
+"location2",
+"coord2lon",
+"coord2lat",
+"series2",
+"str",
+"line",
+"rgb",
+"layer"
+],
+"rows": [
+[
+"stmt:Q104863295-7f44761f-46cc-da80-edf0-c07785882cad",
+"Q34497",
+"-5.716666666667",
+"-15.95",
+"7",
+"stmt:Q104863295-5ed34181-44d2-2c93-6126-1dd842fb2410",
+"Q4092",
+"18.47194444444",
+"-34.35805555556",
+"8",
+"LINESTRING (-5.716666666667 -15.95,18.47194444444 -34.35805555556)",
+"LINESTRING (-5.716666666667 -15.95,18.47194444444 -34.35805555556)",
+"ff0033",
+"voyage"
+],
+[
+"stmt:Q104863295-170b0a5b-4ae3-0746-7d8e-72db80979c75",
+"Q1105260",
+"-56.85",
+"-64.2",
+"25",
+"stmt:Q104863295-92ac327c-4a5a-2168-7e81-4855412a348a",
+"Q4092",
+"18.47194444444",
+"-34.35805555556",
+"26",
+"LINESTRING (-56.85 -64.2,18.47194444444 -34.35805555556)",
+"LINESTRING (-56.85 -64.2,18.47194444444 -34.35805555556)",
+"ff0033",
+"voyage"
+],
+[
+"stmt:Q104863295-a4d615b4-4bcb-6651-dacd-cd6f9b74e619",
+"Q3593036",
+"169.166525",
+"-52.534215",
+"15",
+"stmt:Q104863295-d2968bc4-4926-9e67-33ea-4e5da79c4da6",
+"Q208965",
+"163.0",
+"-71.25",
+"16",
+"LINESTRING (169.166525 -52.534215,163 -71.25)",
+"LINESTRING (169.166525 -52.534215,163 -71.25)",
+"ff0033",
+"voyage"
+],
+[
+"stmt:Q104863295-b0b11a69-4457-b783-ba3a-3781b6daf7ba",
+"Q241478",
+"-29.08333333333",
+"-20.51666666667",
+"6",
+"stmt:Q104863295-7f44761f-46cc-da80-edf0-c07785882cad",
+"Q34497",
+"-5.716666666667",
+"-15.95",
+"7",
+"LINESTRING (-29.08333333333 -20.51666666667,-5.716666666667 -15.95)",
+"LINESTRING (-29.08333333333 -20.51666666667,-5.716666666667 -15.95)",
+"ff0033",
+"voyage"
+],
+[
+"stmt:Q104863295-d8b45e4a-4e1b-e24c-c6a0-ba9c2c0c5a0b",
+"Q16508324",
+"68.8",
+"-48.45",
+"11",
+"stmt:Q104863295-5197af20-4e62-587a-add8-98da73a46e3f",
+"Q46772",
+"69.16666666667",
+"-49.25",
+"12",
+"LINESTRING (68.8 -48.45,69.16666666667 -49.25)",
+"LINESTRING (68.8 -48.45,69.16666666667 -49.25)",
+"ff0033",
+"voyage"
+],
+[
+"stmt:Q104863295-d2968bc4-4926-9e67-33ea-4e5da79c4da6",
+"Q208965",
+"163.0",
+"-71.25",
+"16",
+"stmt:Q104863295-36292360-4db3-abc7-8eab-31c8fcd466f8",
+"Q40191",
+"147.3166666667",
+"-42.88333333333",
+"17",
+"LINESTRING (163 -71.25,147.3166666667 -42.88333333333)",
+"LINESTRING (163 -71.25,147.3166666667 -42.88333333333)",
+"ff0033",
+"voyage"
+]
+],
+"n": 51,
+"error": ""
+},
+"484": {
+"cols": [
+"item",
+"itemLabel",
+"sample",
+"ct"
+],
+"rows": [
+[
+"Q100325240",
+"",
+"Q162456",
+"1"
+],
+[
+"Q100742089",
+"",
+"Q113697778",
+"2"
+],
+[
+"Q100785430",
+"",
+"Q7123152",
+"1"
+],
+[
+"Q100933398",
+"",
+"Q20003105",
+"1"
+],
+[
+"Q100934274",
+"",
+"Q11939008",
+"2"
+],
+[
+"Q100934292",
+"",
+"Q11939674",
+"1"
+]
+],
+"n": 82,
+"error": ""
+},
+"29": {
+"cols": [
+"item",
+"itemLabel",
+"official_website"
+],
+"rows": [
+[
+"Q21035326",
+"",
+"http://www.womenundersiegeproject.org/"
+],
+[
+"Q28403064",
+"",
+"https://americanarchive.org/"
+],
+[
+"Q28953956",
+"",
+"https://whoseknowledge.org/"
+],
+[
+"Q36885603",
+"",
+"http://digitaltransgenderarchive.net"
+],
+[
+"Q43648637",
+"",
+"http://www.womenofrock.org/"
+],
+[
+"Q50817399",
+"",
+"https://programminghistorian.org/"
+]
+],
+"n": 121,
+"error": ""
+},
+"422": {
+"cols": [
+"disciplineLabel",
+"genderLabel",
+"averageheight",
+"number"
+],
+"rows": [
+[
+"",
+"",
+"1.676304720617",
+"2076"
+]
+],
+"n": 1,
+"error": ""
+},
+"238": {
+"cols": [
+"coactorLabel",
+"films"
+],
+"rows": [
+[
+"",
+"593"
+]
+],
+"n": 1,
+"error": ""
+},
+"293": {
+"cols": [
+"item",
+"itemLabel",
+"num",
+"itemDescription"
+],
+"rows": [],
+"n": 0,
+"error": ""
+},
+"8": {
+"cols": [
+"s",
+"desc"
+],
+"rows": [
+[
+"Q1004",
+"comics"
+],
+[
+"Q10318950",
+""
+],
+[
+"Q1035168",
+"captivity narrative"
+],
+[
+"Q10381029",
+"Dramatic text"
+],
+[
+"Q103820137",
+"chess book"
+],
+[
+"Q10432278",
+"multi-volume work"
+]
+],
+"n": 171,
+"error": ""
+},
+"361": {
+"cols": [
+"article",
+"person",
+"personLabel",
+"picGrave",
+"coord",
+"bd",
+"graveplot2",
+"layer"
+],
+"rows": [
+[
+"https://fr.wikipedia.org/wiki/Abbas_Gharabaghi",
+"Q2026063",
+"",
+"http://commons.wikimedia.org/wiki/Special:FilePath/P%C3%A8re-Lachaise%20-%20Division%2019%",
+"POINT(46.296111 38.073889)",
+"1918-11-01T00:00:00Z",
+"Division 19",
+"20e siecle"
+],
+[
+"https://fr.wikipedia.org/wiki/Abdelghani_Bousta",
+"Q2821019",
+"",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Abdelghani%20Bousta%20grave%20in%20Pari",
+"POINT(-7.981080 31.629470)",
+"1949-02-18T00:00:00Z",
+"Division 35",
+"20e siecle"
+],
+[
+"https://fr.wikipedia.org/wiki/Abdelhalim_Hemche",
+"Q2821040",
+"",
+"http://commons.wikimedia.org/wiki/Special:FilePath/P%C3%A8re-Lachaise%20-%20Division%204%2",
+"POINT(-1.316667 34.882778)",
+"1908-02-05T00:00:00Z",
+"Division 4",
+"20e siecle"
+],
+[
+"https://fr.wikipedia.org/wiki/Abdul_Rahman_Ghassemlou",
+"Q317403",
+"",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Tombe%20Dr%20Abdul%20Rahman%20Ghassemlo",
+"POINT(45.067500 37.548611)",
+"1930-12-22T00:00:00Z",
+"Division 76",
+"20e siecle"
+],
+[
+"https://fr.wikipedia.org/wiki/Abel_Aubert_du_Petit-Thouars",
+"Q2821491",
+"",
+"",
+"POINT(-0.078055 47.259167)",
+"1793-08-03T00:00:00Z",
+"Division 17",
+"18e siecle"
+],
+[
+"https://fr.wikipedia.org/wiki/Abel_Barr%C3%A9",
+"Q111653204",
+"",
+"",
+"POINT(0.545278 46.816944)",
+"1854-02-27T00:00:00Z",
+"Division 95",
+"19e siecle"
+]
+],
+"n": 5202,
+"error": ""
+},
+"161": {
+"cols": [
+"place",
+"placeLabel"
+],
+"rows": [],
+"n": 0,
+"error": ""
+},
+"223": {
+"cols": [
+"i",
+"iLabel",
+"j",
+"jLabel"
+],
+"rows": [
+[
+"Q1507166",
+"",
+"Q1134781",
+""
+],
+[
+"Q15136",
+"",
+"Q1356097",
+""
+],
+[
+"Q15136",
+"",
+"Q1535742",
+""
+],
+[
+"Q15136",
+"",
+"Q2429655",
+""
+],
+[
+"Q15136",
+"",
+"Q15188",
+""
+],
+[
+"Q15136",
+"",
+"Q15155",
+""
+]
+],
+"n": 1549,
+"error": ""
+},
+"171": {
+"cols": [
+"lang1",
+"desc",
+"lang2"
+],
+"rows": [
+[
+"acar",
+"vegetable pickle made in Indonesia, Malaysia, Singapore and Brunei",
+"acar"
+],
+[
+"Acheke",
+"traditional Ivorian cassava dish",
+"Atti\u00e9k\u00e9"
+],
+[
+"ajvar",
+"Spread made from roasted red peppers, garlic and spices. Originating from Balkans.",
+"ajvar"
+],
+[
+"alambre",
+"Mexican food",
+"alambre"
+],
+[
+"Alinazik kebab",
+"Turkish dish",
+"Alinazik"
+],
+[
+"animal-based food",
+"food that comes from animals",
+"aliment d'origen animal"
+]
+],
+"n": 338,
+"error": ""
+},
+"532": {
+"cols": [
+"item",
+"itemLabel",
+"layer",
+"coordsLabel",
+"DOD",
+"coords"
+],
+"rows": [
+[
+"Q212284",
+"Knud den Hellige",
+"drab",
+"",
+"1086-07-16T00:00:00Z",
+"POINT(10.383333 55.400000)"
+],
+[
+"Q350226",
+"Erik Plovpenning",
+"drab",
+"",
+"1250-08-17T00:00:00Z",
+"POINT(9.830000 54.590000)"
+],
+[
+"Q359588",
+"Erik Klipping",
+"drab",
+"",
+"1286-11-29T00:00:00Z",
+"POINT(9.285400 56.412800)"
+],
+[
+"Q364751",
+"Niels af Danmark",
+"drab",
+"",
+"1134-07-02T00:00:00Z",
+"POINT(9.569722 54.515278)"
+],
+[
+"Q365085",
+"Erik Emune",
+"drab",
+"",
+"1137-09-18T00:00:00Z",
+"POINT(9.324400 54.990100)"
+],
+[
+"Q381042",
+"Svend Grathe",
+"drab",
+"",
+"1157-10-23T00:00:00Z",
+"POINT(9.288400 56.238800)"
+]
+],
+"n": 58,
+"error": ""
+},
+"232": {
+"cols": [
+"item",
+"itemLabel",
+"collection",
+"collectionLabel",
+"pic"
+],
+"rows": [
+[
+"Q104213122",
+"",
+"Q160236",
+"",
+""
+],
+[
+"Q104213333",
+"",
+"Q160236",
+"",
+""
+],
+[
+"Q115563259",
+"",
+"Q913672",
+"",
+""
+],
+[
+"Q115563261",
+"",
+"Q913672",
+"",
+""
+],
+[
+"Q115563262",
+"",
+"Q913672",
+"",
+""
+],
+[
+"Q115563263",
+"",
+"Q913672",
+"",
+""
+]
+],
+"n": 96,
+"error": ""
+},
+"147": {
+"cols": [
+"street",
+"streetLabel",
+"town",
+"coords"
+],
+"rows": [
+[
+"Q101064677",
+"",
+"Q193877",
+"POINT(2.387778 48.813889)"
+],
+[
+"Q1299740",
+"",
+"Q1241308",
+"POINT(2.284136 48.857111)"
+],
+[
+"Q14629257",
+"",
+"Q42810",
+"POINT(0.108056 49.494167)"
+],
+[
+"Q1513866",
+"",
+"Q16532200",
+"POINT(2.385149 48.835431)"
+],
+[
+"Q1626241",
+"",
+"Q6602",
+"POINT(7.752222 48.573333)"
+],
+[
+"Q1810764",
+"",
+"Q201982",
+"POINT(2.305556 48.903611)"
+]
+],
+"n": 183,
+"error": ""
+},
+"326": {
+"cols": [
+"q",
+"linkcount",
+"loc"
+],
+"rows": [],
+"n": 0,
+"error": ""
+},
+"117": {
+"cols": [
+"item",
+"itemLabel",
+"year"
+],
+"rows": [
+[
+"Q100440",
+"",
+"1959"
+],
+[
+"Q103578",
+"",
+"2001"
+],
+[
+"Q104067",
+"",
+"1951"
+],
+[
+"Q104791",
+"",
+"1986"
+],
+[
+"Q105825",
+"",
+"1978"
+],
+[
+"Q1060758",
+"",
+"2002"
+]
+],
+"n": 867,
+"error": ""
+},
+"555": {
+"cols": [
+"itemLabel",
+"cnt"
+],
+"rows": [
+[
+"",
+"56"
+],
+[
+"",
+"54"
+],
+[
+"",
+"53"
+],
+[
+"",
+"53"
+],
+[
+"",
+"53"
+],
+[
+"",
+"53"
+]
+],
+"n": 684,
+"error": ""
+},
+"229": {
+"cols": [
+"a",
+"aLabel",
+"b",
+"bLabel"
+],
+"rows": [],
+"n": 0,
+"error": ""
+},
+"159": {
+"cols": [
+"countryLabel",
+"count"
+],
+"rows": [
+[
+"",
+"2052"
+]
+],
+"n": 1,
+"error": ""
+},
+"45": {
+"cols": [
+"composition",
+"composerLabel",
+"compositionLabel"
+],
+"rows": [
+[
+"Q109824448",
+"",
+""
+],
+[
+"Q124151865",
+"",
+""
+],
+[
+"Q124151866",
+"",
+""
+],
+[
+"Q124151874",
+"",
+""
+],
+[
+"Q117024910",
+"",
+""
+],
+[
+"Q1192046",
+"",
+""
+]
+],
+"n": 45,
+"error": ""
+},
+"286": {
+"cols": [
+"depicted",
+"depictedLabel",
+"ashcount",
+"ashexample",
+"ashexampleLabel",
+"clevcount",
+"clevexample",
+"clevexampleLabel"
+],
+"rows": [
+[
+"Q10884",
+"",
+"3",
+"Q19863050",
+"",
+"276",
+"Q50819562",
+""
+],
+[
+"Q42891",
+"",
+"68",
+"Q50814347",
+"",
+"97",
+"Q60475053",
+""
+],
+[
+"Q345",
+"",
+"26",
+"Q118675973",
+"",
+"71",
+"Q132717651",
+""
+],
+[
+"Q8502",
+"",
+"1",
+"Q50818196",
+"",
+"89",
+"Q56879420",
+""
+],
+[
+"Q467",
+"",
+"29",
+"Q118882264",
+"",
+"59",
+"Q56678794",
+""
+],
+[
+"Q942467",
+"",
+"21",
+"Q118675973",
+"",
+"60",
+"Q18338472",
+""
+]
+],
+"n": 167,
+"error": ""
+},
+"145": {
+"cols": [
+"lieuLabel",
+"contLabel",
+"nb"
+],
+"rows": [
+[
+"",
+"",
+"191"
+]
+],
+"n": 1,
+"error": ""
+},
+"529": {
+"cols": [
+"label",
+"count",
+"streets"
+],
+"rows": [],
+"n": 0,
+"error": ""
+},
+"2": {
+"cols": [
+"item",
+"name"
+],
+"rows": [
+[
+"Q1139643",
+"Crepis sibthorpiana"
+],
+[
+"Q1145099",
+"Ornithogalum sibthorpii"
+],
+[
+"Q15289123",
+"Alchemilla sibthorpioides"
+],
+[
+"Q15312358",
+"Cochlidiosperma sibthorpioides"
+],
+[
+"Q15325009",
+"Ardisiandra sibthorpioides"
+],
+[
+"Q15327961",
+"Erodium sibthorpianum"
+]
+],
+"n": 55,
+"error": ""
+},
+"273": {
+"cols": [
+"p",
+"pLabel",
+"comparewithLabel",
+"url_comp2"
+],
+"rows": [],
+"n": 0,
+"error": ""
+},
+"67": {
+"cols": [
+"item",
+"itemLabel",
+"banner"
+],
+"rows": [
+[
+"Q456",
+"",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Banner%20Lyon%20Saint%20Jean.jpg"
+],
+[
+"Q279681",
+"",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Wikivoyage-banner-Thouars%20-%20Ch%C3%A"
+],
+[
+"Q144884",
+"",
+"http://commons.wikimedia.org/wiki/Special:FilePath/00%201222%20Georges%20d%60H%C3%A9rault%"
+],
+[
+"Q133824",
+"",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Issoire%20-%20panoramio%20%28cropped%29"
+],
+[
+"Q1083308",
+"",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Saint-Georges-d%E2%80%99Ol%C3%A9ron%20M"
+],
+[
+"Q104431",
+"",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Forcalquier%20France%20Luberon%20%28cro"
+]
+],
+"n": 1133,
+"error": ""
+},
+"0": {
+"cols": [
+"count"
+],
+"rows": [
+[
+"11886646"
+]
+],
+"n": 1,
+"error": ""
+},
+"424": {
+"cols": [
+"occupationLabel",
+"count"
+],
+"rows": [
+[
+"",
+"2152321"
+]
+],
+"n": 1,
+"error": ""
+},
+"420": {
+"cols": [
+"langLabel",
+"langDate",
+"humanLabel",
+"picture"
+],
+"rows": [
+[
+"",
+"",
+"",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Aad%20van%20Wijngaarden%20%281978%29.jp"
+],
+[
+"",
+"",
+"",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Aliceffekt%202008.jpg"
+],
+[
+"",
+"",
+"",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Armin%20Ronacher%20in%20August%202014.j"
+],
+[
+"",
+"",
+"",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Award%20for%20the%20Advancement%20of%20"
+],
+[
+"",
+"",
+"",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Bill%20Gates%20at%20the%20European%20Co"
+],
+[
+"",
+"",
+"",
+"http://commons.wikimedia.org/wiki/Special:FilePath/Brian%20Harvey%20%28lecturer%29.jpg"
+]
+],
+"n": 25,
+"error": ""
+},
+"318": {
+"cols": [
+"recipient",
+"recipientLabel",
+"recipientDescription",
+"count"
+],
+"rows": [
+[
+"Q63187307",
+"",
+"",
+"96"
+],
+[
+"Q3848492",
+"",
+"",
+"81"
+],
+[
+"Q225820",
+"",
+"",
+"78"
+],
+[
+"Q61389",
+"",
+"",
+"33"
+],
+[
+"Q2939269",
+"",
+"",
+"30"
+],
+[
+"Q95259721",
+"",
+"",
+"26"
+]
+],
+"n": 297,
+"error": ""
+},
+"169": {
+"cols": [
+"creator",
+"creatorLabel",
+"placebirthLabel",
+"geoloc"
+],
+"rows": [
+[
+"Q251217",
+"",
+"",
+"POINT(23.590660 46.768910)"
+],
+[
+"Q6450928",
+"",
+"",
+"POINT(-4.314000 53.256000)"
+],
+[
+"Q326493",
+"",
+"",
+"POINT(19.177222 51.076944)"
+],
+[
+"Q4422775",
+"",
+"",
+"POINT(16.923889 48.466111)"
+],
+[
+"Q328436",
+"",
+"",
+"POINT(14.355610 46.238870)"
+],
+[
+"Q6763312",
+"",
+"",
+"POINT(14.355610 46.238870)"
+]
+],
+"n": 327,
+"error": ""
+},
+"393": {
+"cols": [],
+"rows": [],
+"n": null,
+"error": "HTTP 400"
+},
+"458": {
+"cols": [],
+"rows": [],
+"n": null,
+"error": "HTTP 500"
+},
+"505": {
+"cols": [],
+"rows": [],
+"n": null,
+"error": "HTTP 400"
+},
+"220": {
+"cols": [
+"book",
+"title",
+"illustratorLabel",
+"publisherLabel",
+"published"
+],
+"rows": [
+[
+"Q100701554",
+"",
+"",
+"",
+""
+],
+[
+"Q100701555",
+"",
+"",
+"",
+""
+],
+[
+"Q100701556",
+"",
+"",
+"",
+""
+],
+[
+"Q100701557",
+"",
+"",
+"",
+""
+],
+[
+"Q101095488",
+"",
+"",
+"",
+""
+],
+[
+"Q101095628",
+"",
+"",
+"",
+""
+]
+],
+"n": 776,
+"error": ""
+},
+"511": {
+"cols": [],
+"rows": [],
+"n": null,
+"error": "HTTP 400"
+},
+"391": {
+"cols": [],
+"rows": [],
+"n": null,
+"error": "HTTP 400"
+},
+"396": {
+"cols": [],
+"rows": [],
+"n": null,
+"error": "HTTP 400"
+},
+"460": {
+"cols": [],
+"rows": [],
+"n": null,
+"error": "HTTP 500"
+},
+"507": {
+"cols": [],
+"rows": [],
+"n": null,
+"error": "HTTP 400"
+},
+"513": {
+"cols": [],
+"rows": [],
+"n": null,
+"error": "HTTP 400"
+},
+"402": {
+"cols": [],
+"rows": [],
+"n": null,
+"error": "HTTP 400"
+},
+"550": {
+"cols": [
+"party1",
+"party1Label",
+"rgb",
+"count"
+],
+"rows": [
+[
+"Q9630",
+"",
+"DC241F",
+"301"
+],
+[
+"Q9626",
+"",
+"0087DC",
+"296"
+],
+[
+"Q622441",
+"",
+"FFD700",
+"14"
+],
+[
+"Q10658",
+"",
+"FFF95D",
+"7"
+],
+[
+"Q841045",
+"",
+"9999FF",
+"7"
+],
+[
+"Q3896802",
+"",
+"FF8C00",
+"3"
+]
+],
+"n": 12,
+"error": ""
+},
+"564": {
+"cols": [],
+"rows": [],
+"n": null,
+"error": "HTTP 400"
+},
+"109": {
+"cols": [
+"id",
+"idLabel",
+"idDescription",
+"new"
+],
+"rows": [
+[
+"P14049",
+"",
+"",
+" 14049"
+],
+[
+"P14048",
+"",
+"",
+" 14048"
+],
+[
+"P14047",
+"",
+"",
+" 14047"
+],
+[
+"P14046",
+"",
+"",
+" 14046"
+],
+[
+"P14045",
+"",
+"",
+" 14045"
+],
+[
+"P14044",
+"",
+"",
+" 14044"
+]
+],
+"n": 13142,
+"error": ""
+},
+"547": {
+"cols": [
+"planet",
+"planetLabel",
+"satellite",
+"satelliteLabel",
+"namedLabel",
+"namedDescription"
+],
+"rows": [
+[
+"Q2",
+"",
+"Q405",
+"",
+"",
+""
+],
+[
+"Q111",
+"",
+"Q7548",
+"",
+"",
+""
+],
+[
+"Q111",
+"",
+"Q7547",
+"",
+"",
+""
+],
+[
+"Q319",
+"",
+"Q17002",
+"",
+"",
+""
+],
+[
+"Q319",
+"",
+"Q16904",
+"",
+"",
+""
+],
+[
+"Q319",
+"",
+"Q16755",
+"",
+"",
+""
+]
+],
+"n": 164,
+"error": ""
+},
+"260": {
+"cols": [
+"director",
+"director_label",
+"films",
+"sitelinks",
+"rank"
+],
+"rows": [
+[
+"Q51123",
+"D. W. Griffith",
+"530",
+"80",
+"42400"
+],
+[
+"Q152272",
+"Georges M\u00e9li\u00e8s",
+"431",
+"81",
+"34911"
+],
+[
+"Q8704",
+"Walt Disney",
+"123",
+"207",
+"25461"
+],
+[
+"Q882",
+"Charlie Chaplin",
+"77",
+"256",
+"19712"
+],
+[
+"Q951835",
+"Louis Feuillade",
+"682",
+"28",
+"19096"
+],
+[
+"Q44414",
+"Trey Parker",
+"328",
+"52",
+"17056"
+]
+],
+"n": 100,
+"error": ""
+},
+"183": {
+"cols": [
+"women",
+"womenLabel"
+],
+"rows": [
+[
+"Q10000001",
+""
+],
+[
+"Q10000101",
+""
+],
+[
+"Q1000089",
+""
+],
+[
+"Q100011609",
+""
+],
+[
+"Q100016875",
+""
+],
+[
+"Q1000204",
+""
+]
+],
+"n": 500,
+"error": ""
+},
+"276": {
+"cols": [
+"lexeme",
+"lemma",
+"length"
+],
+"rows": [
+[
+"L11419",
+"biopsy",
+"6"
+],
+[
+"L318016",
+"chintz",
+"6"
+],
+[
+"L1380301",
+"biopsy",
+"6"
+],
+[
+"L1408015",
+"abdest",
+"6"
+],
+[
+"L1420291",
+"ghosty",
+"6"
+],
+[
+"L4485",
+"almost",
+"6"
+]
+],
+"n": 40,
+"error": ""
+},
+"59": {
+"cols": [
+"obj",
+"objLabel",
+"objDescription",
+"char",
+"charLabel",
+"charDescription"
+],
+"rows": [
+[
+"Q100876421",
+"",
+"",
+"Q1248616",
+"",
+""
+],
+[
+"Q1057682",
+"",
+"",
+"Q5288312",
+"",
+""
+],
+[
+"Q106665525",
+"",
+"",
+"Q60834955",
+"",
+""
+],
+[
+"Q106665528",
+"",
+"",
+"Q7103025",
+"",
+""
+],
+[
+"Q107100111",
+"",
+"",
+"Q1092632",
+"",
+""
+],
+[
+"Q107100127",
+"",
+"",
+"Q673361",
+"",
+""
+]
+],
+"n": 94,
+"error": ""
+},
+"508": {
+"cols": [
+"language1Label",
+"language2Label",
+"count"
+],
+"rows": [
+[
+"zu",
+"zu",
+"27"
+],
+[
+"zu",
+"sa",
+"23"
+],
+[
+"zu",
+"br",
+"25"
+],
+[
+"zu",
+"es",
+"17"
+],
+[
+"zu",
+"ar",
+"17"
+],
+[
+"zu",
+"fi",
+"19"
+]
+],
+"n": 7914,
+"error": ""
+},
+"533": {
+"cols": [
+"via",
+"viaLabel",
+"rank",
+"rankLabel",
+"pic"
+],
+"rows": [
+[
+"Q25314",
+"",
+"",
+"",
+""
+]
+],
+"n": 1,
+"error": ""
+},
+"557": {
+"cols": [
+"firstnameLabel",
+"count"
+],
+"rows": [
+[
+"",
+"680"
+]
+],
+"n": 1,
+"error": ""
+},
+"37": {
+"cols": [
+"p",
+"pLabel",
+"size",
+"rgb"
+],
+"rows": [
+[
+"Q372973",
+"",
+"1",
+"7FFFD4"
+],
+[
+"Q3621276",
+"",
+"1",
+"CC5500"
+],
+[
+"Q3631631",
+"",
+"1",
+"AFEEEE"
+],
+[
+"Q3639460",
+"",
+"1",
+"FFFEEF"
+],
+[
+"Q3641120",
+"",
+"1",
+"4B61D1"
+],
+[
+"Q3641130",
+"",
+"1",
+"004958"
+]
+],
+"n": 579,
+"error": ""
+},
+"135": {
+"cols": [
+"place1",
+"place1Label",
+"place2",
+"place2Label",
+"refurl"
+],
+"rows": [
+[
+"Q23140",
+"",
+"Q23165",
+"",
+"http://data.ordnancesurvey.co.uk/doc/7000000000010049"
+],
+[
+"Q23140",
+"",
+"Q23169",
+"",
+"http://data.ordnancesurvey.co.uk/doc/7000000000010049"
+],
+[
+"Q23140",
+"",
+"Q23106",
+"",
+"http://data.ordnancesurvey.co.uk/doc/7000000000010049"
+],
+[
+"Q23140",
+"",
+"Q23115",
+"",
+"http://data.ordnancesurvey.co.uk/doc/7000000000010049"
+],
+[
+"Q23140",
+"",
+"Q23135",
+"",
+"http://data.ordnancesurvey.co.uk/doc/7000000000010049"
+],
+[
+"Q23140",
+"",
+"Q23105",
+"",
+"http://data.ordnancesurvey.co.uk/doc/7000000000010049"
+]
+],
+"n": 646,
+"error": ""
+},
+"360": {
+"cols": [],
+"rows": [],
+"n": null,
+"error": "HTTP 500"
+},
+"463": {
+"cols": [],
+"rows": [],
+"n": null,
+"error": "HTTP 400"
+},
+"482": {
+"cols": [],
+"rows": [],
+"n": null,
+"error": "HTTP 400"
+}
+}

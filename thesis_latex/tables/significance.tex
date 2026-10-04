@@ -1,0 +1,20 @@
+\begin{table}[htbp]
+  \centering
+  \caption{Prompt interventions against the baseline arm: paired tests.}
+  \label{tab:significance}
+  \small
+  \resizebox{\ifdim\width>\textwidth\textwidth\else\width\fi}{!}{%
+  \begin{tabular}{lrrrrrr}
+    \toprule
+    Comparison & n & Mean difference (pp) & CI low & CI high & Permutation $p$ & Wilcoxon $p$ \\
+    \midrule
+    idiom guidance & 354 & 3.88 & 1.18 & 6.66 & 0.0054 & 0.0581 \\
+    schema evidence, verbose & 336 & -14.65 & -18.94 & -10.38 & <0.001 & <0.001 \\
+    schema evidence, targeted & 339 & -12.66 & -17.35 & -8.1 & <0.001 & <0.001 \\
+    construct profile & 355 & 3.0 & 0.2 & 5.75 & 0.0342 & 0.0693 \\
+    constrained vocabulary & 356 & 18.99 & 15.03 & 23.11 & <0.001 & <0.001 \\
+    both oracles & 353 & 23.01 & 18.69 & 27.39 & <0.001 & <0.001 \\
+    \bottomrule
+  \end{tabular}}
+  \tabnote{Paired over questions scored in both arms. Confidence intervals are bootstrap percentile intervals; the permutation test is two-sided. Only the generation prompt differs between arms.}
+\end{table}

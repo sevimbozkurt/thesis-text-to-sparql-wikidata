@@ -1,0 +1,43 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\caption{Second-annotator comparison, all thirty cases.}
+\label{tab:app-interannotator}
+\resizebox{\ifdim\width>\textwidth\textwidth\else\width\fi}{!}{%
+\begin{tabular}{@{}r l l l l@{}}
+\toprule
+case & complexity & author & second annotator & agree \\ \midrule
+1 & medium & \texttt{structure} & \texttt{structure} & \checkmark \\
+2 & simple & \texttt{structure} & \texttt{structure} & \checkmark \\
+3 & medium & \texttt{wrong\_property} & \texttt{wrong\_property} & \checkmark \\
+4 & complex & \texttt{structure} & \texttt{structure} & \checkmark \\
+5 & complex & \texttt{structure} & \texttt{structure} & \checkmark \\
+6 & simple & \texttt{execution} & \texttt{execution} & \checkmark \\
+7 & medium & \texttt{execution} & \texttt{execution} & \checkmark \\
+8 & medium & \texttt{near\_miss} & \texttt{near\_miss} & \checkmark \\
+9 & medium & \texttt{wrong\_property} & \texttt{structure} &  \\
+10 & complex & \texttt{structure} & \texttt{structure} & \checkmark \\
+11 & complex & \texttt{structure} & \texttt{structure} & \checkmark \\
+12 & medium & \texttt{structure} & \texttt{benchmark\_noise} &  \\
+13 & complex & \texttt{structure} & \texttt{benchmark\_noise} &  \\
+14 & complex & \texttt{wrong\_entity} & \texttt{structure} &  \\
+15 & medium & \texttt{structure} & \texttt{benchmark\_noise} &  \\
+16 & complex & \texttt{structure} & \texttt{structure} & \checkmark \\
+17 & medium & \texttt{unresolved} & \texttt{unresolved} & \checkmark \\
+18 & complex & \texttt{structure} & \texttt{benchmark\_noise} &  \\
+19 & complex & \texttt{unresolved} & \texttt{unresolved} & \checkmark \\
+20 & complex & \texttt{structure} & \texttt{structure} & \checkmark \\
+21 & simple & \texttt{triple\_flip} & \texttt{structure} &  \\
+22 & medium & \texttt{near\_miss} & \texttt{near\_miss} & \checkmark \\
+23 & complex & \texttt{structure} & \texttt{structure} & \checkmark \\
+24 & complex & \texttt{wrong\_property} & \texttt{wrong\_property} & \checkmark \\
+25 & complex & \texttt{structure} & \texttt{wrong\_property} &  \\
+26 & simple & \texttt{near\_miss} & \texttt{near\_miss} & \checkmark \\
+27 & simple & \texttt{benchmark\_noise} & \texttt{benchmark\_noise} & \checkmark \\
+28 & medium & \texttt{near\_miss} & \texttt{near\_miss} & \checkmark \\
+29 & complex & \texttt{near\_miss} & \texttt{near\_miss} & \checkmark \\
+30 & complex & \texttt{near\_miss} & \texttt{structure} &  \\
+\bottomrule
+\end{tabular}}
+\tabnote{Raw agreement 21 of 30; Cohen's $\kappa = 0.595$. The second annotator worked only from the written category guide and had no prior involvement in this work. The study was designed and administered by the author.}
+\end{table}

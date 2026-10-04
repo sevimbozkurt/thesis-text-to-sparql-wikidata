@@ -1,0 +1,8 @@
+Linking facts quoted in the results chapter.
+
+Rows on which the reasoning linker (Claude Opus 4.8) resolves every entity and
+property mention correctly, working split:
+  481 of 535 rows = 89.9 %   (preds_reasoning_clean.jsonl + preds_props_clean.jsonl
+                              against gold_links.json)
+
+ELQ entity-library coverage: see RESULT_elq_coverage.txt (elq_library_coverage.py).

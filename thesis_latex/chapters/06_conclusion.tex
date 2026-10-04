@@ -1,0 +1,121 @@
+\chapter{Conclusion}
+
+\label{ch:conclusion}
+
+\section{Summary}
+
+\label{sec:conclusion-summary}
+
+This thesis examined where a frozen-model text-to-SPARQL pipeline over Wikidata fails and whether targeted interventions can reduce those failures.
+It uses \method{}, which keeps every stage fixed except the one under investigation and evaluates that stage on its own.
+\Cref{tab:conclusion-summary} collects the headline figures for each research question; the paragraphs below state the findings, and the results and discussion chapters give the full evidence and its limits.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Findings by research question. Evidence, intervals, caveats are in Results and Discussion.}
+\label{tab:conclusion-summary}
+\begin{tabular}{@{}p{0.9cm}p{7.6cm}p{4.4cm}@{}}
+\toprule
+RQ & Finding & Key figures \\
+\midrule
+1 & Frozen models parse and execute reliably but are rarely correct; failures are shared across models rather than model-specific & 24.5 best frozen baseline; 307/400 solved by none of four models \\
+2 & Under gold labels and near-ceiling candidate coverage, disambiguation is not the binding constraint; generating the query (concept selection and composition) is & 97.4 gold-label vs.\ 30.9 end-to-end (66.5-pt gap) \\
+3 & Reasoning over retrieved candidates outperforms specialised linkers; most of its accuracy comes from findable labels & +24.9 [22.3, 27.7] pts over GLiNKER on the same candidates; +4.1 [2.7, 5.6] over the first search result \\
+4 & General advice gives small gains; graph knowledge helps as a restriction, not as evidence & $-$14.65 pts (evidence) vs.\ $+$18.99 pts (closed vocabulary) \\
+5 & Some failures are detectable from execution alone, without gold supervision & +4.83 [2.93, 7.08] pts, 49/49 rows improved \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{RQ1.}
+
+Frozen frontier models write SPARQL that executes but is rarely correct, and their failures are shared across models rather than tied to one system.
+
+\paragraph{RQ2.}
+
+With gold-derived labels and near-ceiling candidate coverage, disambiguation is not the binding constraint; generating the query is, that is, choosing its concepts and composing its structure, with composition the larger part.
+
+\paragraph{RQ3.}
+
+Reasoning over retrieved candidates clearly outperforms specialised end-to-end linkers, and evaluation asymmetry alone does not explain the gap; disambiguation hardly depends on the backbone, while label generation does.
+
+\paragraph{RQ4.}
+
+General advice gives small gains; graph knowledge helps when it restricts the generator's choices, not when it merely informs them.
+
+\paragraph{RQ5.}
+
+Some of the remaining failures can be detected from execution alone, without gold supervision; the execution-guided cascade recovers about a third of the available oracle headroom.
+
+Together, these findings yield a working pipeline in which every step is chosen on experimental evidence rather than by convention, and a protocol for finding where such pipelines fail.
+
+\section{The Resulting System}
+
+\label{sec:conclusion-system}
+
+The measurements settle several design choices that are often made by convention.
+Taken together, they define a system that can be reused directly.
+
+Build labels with the strongest model available; disambiguate with the cheapest one that works.
+Scale matters at one stage only.
+The 14B open model produces unfindable labels at 4.9 times the frontier rate, whereas disambiguation varies by less than three percentage points across the three model sizes.
+
+Retrieve candidates, then reason over them; do not link end to end.
+Both fine-tuned linkers fail mainly because they detect mentions in the question text and therefore miss identifiers that the question never names (\cref{tab:conclusion-summary}, RQ3).
+On a second benchmark, reasoning over candidates again links entities accurately (90.6\,\% entity accuracy), so the result is not specific to one dataset.
+
+Constrain the vocabulary; do not enumerate the schema.
+In this pipeline, components that supply graph knowledge before generation should remove options rather than offer more of them.
+
+Prefer any query that returns something.
+Structurally wrong queries often return nothing, which makes an empty result a useful signal at inference time.
+It needs no training and no gold answers, it only replaces queries that failed, and it should be the baseline that any learned selector has to beat.
+
+Verify the candidate pools before trusting any linking number.
+Fixing silently truncated pools raised the gold-label condition by 26 points.
+The same issue appeared on the second benchmark: a retrieval layer that returns an empty list because of throttling looks exactly like one that returns an empty list because nothing matches.
+
+The main open problem is building a query around a construct that the model can identify but does not yet use correctly.
+The next section describes the research directions that follow from this.
+
+\section{Future Work}
+
+\label{sec:future-work}
+
+\paragraph{Grounding by constraint through
+filtering.}
+
+The prompt experiment in this thesis tests the framing side of this principle at the prompt level, whereas \citet{zhang2026saga} remove incompatible candidates mechanically.
+Such filtering replaces the model's obedience with the reliability of Wikidata's own assertions.
+The constraint-filtering experiment shows, however, that these assertions can be weak: filtering on every declared type constraint removes the reference property for 7.5\% of the mentions it affects, while filtering only on mandatory constraints is safe but does almost nothing.
+Whether the safe filter improves accuracy is still open.
+
+\paragraph{Closing the open model's vocabulary
+gap.}
+
+String normalisation is not enough: it repairs 43 of 270 unfindable labels, because the main problem is often a different property name rather than a malformed one.
+Supplying the vocabulary through constrained generation or light adaptation could make the hybrid deployment discussed earlier unnecessary.
+
+\paragraph{A learned selector over diverse
+generations.}
+
+About seven points of oracle headroom remain beyond the cascade.
+A learned selector should therefore be evaluated against the cascade, not only against the best single run.
+
+\paragraph{Extending the ground-truth
+derivation.}
+
+The linking ground-truth derivation used here needs only aligned gold and label-form queries.
+LC-QuAD 2.0~\parencite{dubey2019lcquad2} and the Wikidata Query Logs dataset~\parencite{walter2026wdql} are possible candidates.
+The latter would test whether the attribution holds for questions distributed like real query logs rather than drawn from tutorials.
+
+\paragraph{Assessing whether reference noise favours imitation over reasoning}
+
+The discussion identified a mechanism worth testing directly: a fine-tuned system reproduces reference queries (56\% character-identical), so an unsound reference rewards imitation over reasoning, and part of the measured gap may come from the answer key itself.
+Testing this requires extending the reference-query adjudication to the official split, since sixteen overlapping rows are not enough.
+
+\paragraph{Re-adjudicating the benchmark's reference
+queries.}
+
+Given the 24.6\% reference-noise estimate, a large-scale correction should judge the query text rather than the executed output, use two readers with reconciliation, and also sample queries that a heuristic did not flag, since every correction in this study came from that group.

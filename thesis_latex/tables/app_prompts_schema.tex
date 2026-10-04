@@ -1,0 +1,102 @@
+\begin{lstlisting}[caption={Schema-card construction: the first function produces the verbose arm's evidence and the second the targeted arm's.},label={lst:prompt-schema},basicstyle=\ttfamily\scriptsize,breaklines=true,captionpos=b]
+def build_card(entities, properties, prop_cache, ent_cache):
+    """Compose the compact evidence text placed in the generation prompt.
+    Entity evidence is included when the question mentions entities; property
+    evidence is always included, so property-only questions are covered too."""
+    lines = []
+    for qid in entities[:MAX_ENTS]:
+        info = ent_cache.get(qid)
+        if not info:
+            continue
+        head = f"{qid} ({info['label']})"
+        if info["is_class"]:
+            head += " — this is a class with subclasses; a question about it " \
+                    "usually means the class and everything below it"
+        lines.append(head)
+        if info["properties"]:
+            named = ", ".join(f"{p} ({prop_cache.get(p, {}).get('label', p)})"
+                              for p in info["properties"][:MAX_PROPS])
+            lines.append(f"  properties in use: {named}")
+        if info["qualified"]:
+            named = ", ".join(f"{p} ({prop_cache.get(p, {}).get('label', p)})"
+                              for p in info["qualified"][:8])
+            lines.append(f"  statements with qualifiers (need p:/pq: to read "
+                         f"the qualifier): {named}")
+        quants = [p for p in info["properties"]
+                  if prop_cache.get(p, {}).get("quantity")]
+        if quants:
+            lines.append(f"  quantity-valued (unit lives on the value node, "
+                         f"need p:/psv:): {', '.join(quants[:6])}")
+
+    prop_lines = []
+    for pid in properties[:MAX_PROPS]:
+        info = prop_cache.get(pid)
+        if not info:
+            continue
+        bits = []
+        if info.get("qualifiers"):
+            named = ", ".join(f"{q} ({prop_cache.get(q, {}).get('label', q)})"
+                              for q in info["qualifiers"][:5])
+            bits.append(f"used with qualifiers {named}, reachable only through "
+                        f"p:/pq:")
+        if info.get("quantity"):
+            bits.append("quantity-valued; the unit sits on the statement value "
+                        "node, reachable through p:/psv:")
+        if info.get("class_range"):
+            bits.append("its values are classes with subclasses, so filtering "
+                        "on one usually needs P279* closure")
+        if bits:
+            prop_lines.append(f"{pid} ({info.get('label', pid)}): " + "; ".join(bits))
+    if prop_lines:
+        lines.append("properties this question refers to:")
+        lines += ["  " + l for l in prop_lines]
+    return "\n".join(lines)
+
+def build_card_targeted(entities, properties, prop_cache, ent_cache):
+    """Targeted variant: evidence ONLY for the properties/entities the
+    question actually links to (gold mentions), no enumeration of everything
+    an entity happens to carry. Tests whether the full-listing version failed
+    from information overload/distraction rather than from the concept of
+    grounding itself."""
+    lines = []
+    for qid in entities[:MAX_ENTS]:
+        info = ent_cache.get(qid)
+        if info and info.get("is_class"):
+            lines.append(f"{qid} ({info['label']}) is a class with subclasses: "
+                         f"a question about it usually means the class and "
+                         f"everything below it (wdt:[property:instance of]/"
+                         f"wdt:[property:subclass of]*).")
+    seen = set()
+    for pid in properties[:MAX_PROPS]:
+        info = prop_cache.get(pid)
+        if not info or pid in seen:
+            continue
+        seen.add(pid)
+        label = info.get("label", pid)
+        bits = []
+        if info.get("qualifiers"):
+            bits.append("if the question asks for something beyond the plain "
+                        "value (e.g. a date, role or extra detail attached to "
+                        "this fact), it is recorded as a QUALIFIER and needs "
+                        "p:[property:" + label + "] / pq:[property:...], not "
+                        "wdt:[property:" + label + "] alone")
+        if info.get("quantity"):
+            bits.append("its value is a QUANTITY with a unit; if the unit or "
+                        "precision matters, use p:/psv: to reach the value node")
+        if info.get("class_range"):
+            bits.append("its value is itself a class; if the question means "
+                        "the value or anything below it, add "
+                        "wdt:[property:subclass of]* on the value")
+        if bits:
+            lines.append(f"{pid} ({label}): " + "; ".join(bits) + ".")
+    return "\n".join(lines)
+\end{lstlisting}
+
+\begin{lstlisting}[caption={Example schema cards, one of each form, as supplied to the generator.},label={lst:schema-cards},basicstyle=\ttfamily\scriptsize,breaklines=true,captionpos=b]
+--- verbose card (row 0) ---
+properties this question refers to:
+  P625 (coordinate location): used with qualifiers P2241 (reason for deprecated rank), P459 (determination method or standard), P518 (applies to part), P609 (terminus location), P813 (retrieved), reachable only through p:/pq:
+
+--- targeted card (row 0) ---
+P625 (coordinate location): if the question asks for something beyond the plain value (e.g. a date, role or extra detail attached to this fact), it is recorded as a QUALIFIER and needs p:[property:coordinate location] / pq:[property:...], not wdt:[property:coordinate location] alone.
+\end{lstlisting}

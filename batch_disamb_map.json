@@ -1,0 +1,6597 @@
+{
+ "d-1420-e-2": [
+  "1420",
+  "entity",
+  "female"
+ ],
+ "d-1420-e-3": [
+  "1420",
+  "entity",
+  "John"
+ ],
+ "d-1420-p-0": [
+  "1420",
+  "property",
+  "instance of"
+ ],
+ "d-1420-p-1": [
+  "1420",
+  "property",
+  "start time"
+ ],
+ "d-1420-p-2": [
+  "1420",
+  "property",
+  "position held"
+ ],
+ "d-1420-p-5": [
+  "1420",
+  "property",
+  "given name"
+ ],
+ "d-2358-e-0": [
+  "2358",
+  "entity",
+  "library"
+ ],
+ "d-2358-e-1": [
+  "2358",
+  "entity",
+  "Switzerland"
+ ],
+ "d-2358-p-0": [
+  "2358",
+  "property",
+  "instance of"
+ ],
+ "d-2358-p-1": [
+  "2358",
+  "property",
+  "country"
+ ],
+ "d-1152-e-0": [
+  "1152",
+  "entity",
+  "suffragette"
+ ],
+ "d-1152-p-0": [
+  "1152",
+  "property",
+  "occupation"
+ ],
+ "d-1147-e-0": [
+  "1147",
+  "entity",
+  "battle"
+ ],
+ "d-1147-e-1": [
+  "1147",
+  "entity",
+  "Edinburgh"
+ ],
+ "d-1147-p-0": [
+  "1147",
+  "property",
+  "instance of"
+ ],
+ "d-1147-p-1": [
+  "1147",
+  "property",
+  "location"
+ ],
+ "d-629-e-0": [
+  "629",
+  "entity",
+  "stateless"
+ ],
+ "d-1599-e-0": [
+  "1599",
+  "entity",
+  "human settlement"
+ ],
+ "d-1599-e-1": [
+  "1599",
+  "entity",
+  "Scotland"
+ ],
+ "d-1599-p-0": [
+  "1599",
+  "property",
+  "instance of"
+ ],
+ "d-1599-p-1": [
+  "1599",
+  "property",
+  "country"
+ ],
+ "d-2257-e-0": [
+  "2257",
+  "entity",
+  "female given name"
+ ],
+ "d-2257-e-1": [
+  "2257",
+  "entity",
+  "Germany"
+ ],
+ "d-2257-p-0": [
+  "2257",
+  "property",
+  "instance of"
+ ],
+ "d-2257-p-1": [
+  "2257",
+  "property",
+  "number of records"
+ ],
+ "d-2257-p-3": [
+  "2257",
+  "property",
+  "country"
+ ],
+ "d-1319-e-0": [
+  "1319",
+  "entity",
+  "sluice"
+ ],
+ "d-1319-e-1": [
+  "1319",
+  "entity",
+  "Brittany"
+ ],
+ "d-1319-p-0": [
+  "1319",
+  "property",
+  "instance of"
+ ],
+ "d-544-e-0": [
+  "544",
+  "entity",
+  "Landkreis Leipzig"
+ ],
+ "d-2088-e-0": [
+  "2088",
+  "entity",
+  "department of France"
+ ],
+ "d-2088-p-0": [
+  "2088",
+  "property",
+  "instance of"
+ ],
+ "d-2088-p-1": [
+  "2088",
+  "property",
+  "population"
+ ],
+ "d-2635-e-0": [
+  "2635",
+  "entity",
+  "P\u00e8re Lachaise Cemetery"
+ ],
+ "d-1442-e-0": [
+  "1442",
+  "entity",
+  "Nobel Prize in Physics"
+ ],
+ "d-1442-e-1": [
+  "1442",
+  "entity",
+  "female"
+ ],
+ "d-2233-p-1": [
+  "2233",
+  "property",
+  "Wikidata property"
+ ],
+ "d-1112-e-0": [
+  "1112",
+  "entity",
+  "human"
+ ],
+ "d-1112-p-0": [
+  "1112",
+  "property",
+  "instance of"
+ ],
+ "d-121-e-0": [
+  "121",
+  "entity",
+  "member of the United States House of Representatives"
+ ],
+ "d-121-p-0": [
+  "121",
+  "property",
+  "position held"
+ ],
+ "d-362-e-0": [
+  "362",
+  "entity",
+  "hillfort"
+ ],
+ "d-362-p-0": [
+  "362",
+  "property",
+  "instance of"
+ ],
+ "d-1215-p-0": [
+  "1215",
+  "property",
+  "instance of"
+ ],
+ "d-1215-p-1": [
+  "1215",
+  "property",
+  "location"
+ ],
+ "d-2239-e-0": [
+  "2239",
+  "entity",
+  "boundary stone"
+ ],
+ "d-2239-e-1": [
+  "2239",
+  "entity",
+  "Radibor"
+ ],
+ "d-2239-p-0": [
+  "2239",
+  "property",
+  "instance of"
+ ],
+ "d-2239-p-2": [
+  "2239",
+  "property",
+  "location"
+ ],
+ "d-643-e-0": [
+  "643",
+  "entity",
+  "Nobel Prize"
+ ],
+ "d-643-e-1": [
+  "643",
+  "entity",
+  "Academy Awards"
+ ],
+ "d-643-p-1": [
+  "643",
+  "property",
+  "instance of"
+ ],
+ "d-1710-p-0": [
+  "1710",
+  "property",
+  "father"
+ ],
+ "d-1408-e-0": [
+  "1408",
+  "entity",
+  "programming language"
+ ],
+ "d-1408-p-0": [
+  "1408",
+  "property",
+  "instance of"
+ ],
+ "d-1408-p-1": [
+  "1408",
+  "property",
+  "inception"
+ ],
+ "d-2117-e-0": [
+  "2117",
+  "entity",
+  "beach"
+ ],
+ "d-2117-e-1": [
+  "2117",
+  "entity",
+  "Mexico"
+ ],
+ "d-2117-p-0": [
+  "2117",
+  "property",
+  "instance of"
+ ],
+ "d-2117-p-1": [
+  "2117",
+  "property",
+  "country"
+ ],
+ "d-1682-e-0": [
+  "1682",
+  "entity",
+  "human"
+ ],
+ "d-1682-p-0": [
+  "1682",
+  "property",
+  "Wikidata property example"
+ ],
+ "d-1682-p-1": [
+  "1682",
+  "property",
+  "instance of"
+ ],
+ "d-206-e-0": [
+  "206",
+  "entity",
+  "taxon"
+ ],
+ "d-206-e-1": [
+  "206",
+  "entity",
+  "botanist"
+ ],
+ "d-206-p-0": [
+  "206",
+  "property",
+  "instance of"
+ ],
+ "d-206-p-2": [
+  "206",
+  "property",
+  "occupation"
+ ],
+ "d-2711-e-0": [
+  "2711",
+  "entity",
+  "annotation"
+ ],
+ "d-2711-p-0": [
+  "2711",
+  "property",
+  "instance of"
+ ],
+ "d-2711-p-1": [
+  "2711",
+  "property",
+  "host"
+ ],
+ "d-1257-e-0": [
+  "1257",
+  "entity",
+  "Z\u00fcrich Hauptbahnhof"
+ ],
+ "d-1257-e-1": [
+  "1257",
+  "entity",
+  "fountain"
+ ],
+ "d-1257-e-2": [
+  "1257",
+  "entity",
+  "Z\u00fcrich"
+ ],
+ "d-1257-p-1": [
+  "1257",
+  "property",
+  "instance of"
+ ],
+ "d-1401-e-0": [
+  "1401",
+  "entity",
+  "White House Chief of Staff"
+ ],
+ "d-1401-p-0": [
+  "1401",
+  "property",
+  "position held"
+ ],
+ "d-1401-p-1": [
+  "1401",
+  "property",
+  "start time"
+ ],
+ "d-1401-p-2": [
+  "1401",
+  "property",
+  "end time"
+ ],
+ "d-2647-e-0": [
+  "2647",
+  "entity",
+  "film"
+ ],
+ "d-2647-e-1": [
+  "2647",
+  "entity",
+  "Jean-Luc Godard"
+ ],
+ "d-2647-p-0": [
+  "2647",
+  "property",
+  "instance of"
+ ],
+ "d-2647-p-1": [
+  "2647",
+  "property",
+  "director"
+ ],
+ "d-496-e-0": [
+  "496",
+  "entity",
+  "lexeme"
+ ],
+ "d-496-e-1": [
+  "496",
+  "entity",
+  "Swedish"
+ ],
+ "d-496-e-2": [
+  "496",
+  "entity",
+  "Svenska Akademiens ordbok"
+ ],
+ "d-496-p-0": [
+  "496",
+  "property",
+  "instance of"
+ ],
+ "d-496-p-1": [
+  "496",
+  "property",
+  "language"
+ ],
+ "d-371-e-0": [
+  "371",
+  "entity",
+  "Christine de Pizan"
+ ],
+ "d-371-e-1": [
+  "371",
+  "entity",
+  "Mary Wollstonecraft"
+ ],
+ "d-371-p-0": [
+  "371",
+  "property",
+  "image"
+ ],
+ "d-1192-e-0": [
+  "1192",
+  "entity",
+  "Canada"
+ ],
+ "d-1192-e-1": [
+  "1192",
+  "entity",
+  "Doctor of Philosophy"
+ ],
+ "d-1368-p-0": [
+  "1368",
+  "property",
+  "instance of"
+ ],
+ "d-1368-p-1": [
+  "1368",
+  "property",
+  "subclass of"
+ ],
+ "d-1368-p-2": [
+  "1368",
+  "property",
+  "image"
+ ],
+ "d-727-e-0": [
+  "727",
+  "entity",
+  "work of art"
+ ],
+ "d-727-p-0": [
+  "727",
+  "property",
+  "instance of"
+ ],
+ "d-727-p-1": [
+  "727",
+  "property",
+  "subclass of"
+ ],
+ "d-1607-e-0": [
+  "1607",
+  "entity",
+  "Invader"
+ ],
+ "d-1607-e-1": [
+  "1607",
+  "entity",
+  "Versailles"
+ ],
+ "d-1607-p-0": [
+  "1607",
+  "property",
+  "creator"
+ ],
+ "d-1607-p-1": [
+  "1607",
+  "property",
+  "location"
+ ],
+ "d-1832-e-0": [
+  "1832",
+  "entity",
+  "country"
+ ],
+ "d-1832-e-1": [
+  "1832",
+  "entity",
+  "Nobel Peace Prize"
+ ],
+ "d-1832-p-0": [
+  "1832",
+  "property",
+  "instance of"
+ ],
+ "d-2325-e-0": [
+  "2325",
+  "entity",
+  "chocolate mousse"
+ ],
+ "d-1268-e-0": [
+  "1268",
+  "entity",
+  "pasta"
+ ],
+ "d-1268-p-0": [
+  "1268",
+  "property",
+  "subclass of"
+ ],
+ "d-1268-p-1": [
+  "1268",
+  "property",
+  "image"
+ ],
+ "d-1366-e-0": [
+  "1366",
+  "entity",
+  "IPv6"
+ ],
+ "d-1366-p-0": [
+  "1366",
+  "property",
+  "use"
+ ],
+ "d-1347-e-0": [
+  "1347",
+  "entity",
+  "country"
+ ],
+ "d-1347-e-1": [
+  "1347",
+  "entity",
+  "Sun"
+ ],
+ "d-1347-p-0": [
+  "1347",
+  "property",
+  "instance of"
+ ],
+ "d-1347-p-1": [
+  "1347",
+  "property",
+  "flag"
+ ],
+ "d-1347-p-2": [
+  "1347",
+  "property",
+  "depicts"
+ ],
+ "d-1899-p-0": [
+  "1899",
+  "property",
+  "position held"
+ ],
+ "d-1074-e-0": [
+  "1074",
+  "entity",
+  "sovereign state"
+ ],
+ "d-1074-p-0": [
+  "1074",
+  "property",
+  "instance of"
+ ],
+ "d-1074-p-1": [
+  "1074",
+  "property",
+  "area"
+ ],
+ "d-1412-e-0": [
+  "1412",
+  "entity",
+  "work of art"
+ ],
+ "d-1412-e-1": [
+  "1412",
+  "entity",
+  "musical instrument"
+ ],
+ "d-1412-p-0": [
+  "1412",
+  "property",
+  "instance of"
+ ],
+ "d-1412-p-1": [
+  "1412",
+  "property",
+  "subclass of"
+ ],
+ "d-1412-p-2": [
+  "1412",
+  "property",
+  "depicts"
+ ],
+ "d-1703-e-0": [
+  "1703",
+  "entity",
+  "enterprise"
+ ],
+ "d-1703-p-0": [
+  "1703",
+  "property",
+  "instance of"
+ ],
+ "d-1703-p-1": [
+  "1703",
+  "property",
+  "inception"
+ ],
+ "d-1557-e-0": [
+  "1557",
+  "entity",
+  "Concorde"
+ ],
+ "d-1557-p-0": [
+  "1557",
+  "property",
+  "instance of"
+ ],
+ "d-1557-p-1": [
+  "1557",
+  "property",
+  "location"
+ ],
+ "d-1869-e-0": [
+  "1869",
+  "entity",
+  "letter"
+ ],
+ "d-1869-e-1": [
+  "1869",
+  "entity",
+  "alphabet"
+ ],
+ "d-1869-p-0": [
+  "1869",
+  "property",
+  "instance of"
+ ],
+ "d-1869-p-1": [
+  "1869",
+  "property",
+  "part of"
+ ],
+ "d-1802-e-0": [
+  "1802",
+  "entity",
+  "lake"
+ ],
+ "d-1802-p-0": [
+  "1802",
+  "property",
+  "instance of"
+ ],
+ "d-1802-p-1": [
+  "1802",
+  "property",
+  "country"
+ ],
+ "d-733-e-0": [
+  "733",
+  "entity",
+  "sovereign state"
+ ],
+ "d-733-p-0": [
+  "733",
+  "property",
+  "instance of"
+ ],
+ "d-733-p-1": [
+  "733",
+  "property",
+  "population"
+ ],
+ "d-1182-e-0": [
+  "1182",
+  "entity",
+  "Mus\u00e9e Saint-Raymond"
+ ],
+ "d-1182-p-0": [
+  "1182",
+  "property",
+  "collection"
+ ],
+ "d-1182-p-1": [
+  "1182",
+  "property",
+  "instance of"
+ ],
+ "d-1182-p-2": [
+  "1182",
+  "property",
+  "subclass of"
+ ],
+ "d-2474-e-0": [
+  "2474",
+  "entity",
+  "Breton"
+ ],
+ "d-2357-e-0": [
+  "2357",
+  "entity",
+  "personal pronoun"
+ ],
+ "d-2357-p-0": [
+  "2357",
+  "property",
+  "instance of"
+ ],
+ "d-1364-e-0": [
+  "1364",
+  "entity",
+  "female given name"
+ ],
+ "d-1364-p-0": [
+  "1364",
+  "property",
+  "instance of"
+ ],
+ "d-1187-e-0": [
+  "1187",
+  "entity",
+  "musical work"
+ ],
+ "d-1187-p-0": [
+  "1187",
+  "property",
+  "instance of"
+ ],
+ "d-1187-p-1": [
+  "1187",
+  "property",
+  "subclass of"
+ ],
+ "d-1187-p-3": [
+  "1187",
+  "property",
+  "genre"
+ ],
+ "d-2102-e-0": [
+  "2102",
+  "entity",
+  "university"
+ ],
+ "d-2102-e-1": [
+  "2102",
+  "entity",
+  "India"
+ ],
+ "d-2102-p-0": [
+  "2102",
+  "property",
+  "instance of"
+ ],
+ "d-2102-p-1": [
+  "2102",
+  "property",
+  "subclass of"
+ ],
+ "d-2102-p-2": [
+  "2102",
+  "property",
+  "country"
+ ],
+ "d-2102-p-3": [
+  "2102",
+  "property",
+  "inception"
+ ],
+ "d-1191-e-0": [
+  "1191",
+  "entity",
+  "University of Virginia"
+ ],
+ "d-537-e-0": [
+  "537",
+  "entity",
+  "sovereign state"
+ ],
+ "d-537-e-1": [
+  "537",
+  "entity",
+  "United Nations"
+ ],
+ "d-537-p-0": [
+  "537",
+  "property",
+  "instance of"
+ ],
+ "d-537-p-1": [
+  "537",
+  "property",
+  "member of"
+ ],
+ "d-1477-e-0": [
+  "1477",
+  "entity",
+  "Vincent van Gogh"
+ ],
+ "d-1477-p-0": [
+  "1477",
+  "property",
+  "creator"
+ ],
+ "d-1316-e-0": [
+  "1316",
+  "entity",
+  "time zone"
+ ],
+ "d-1316-p-0": [
+  "1316",
+  "property",
+  "instance of"
+ ],
+ "d-1316-p-1": [
+  "1316",
+  "property",
+  "UTC date"
+ ],
+ "d-2620-e-0": [
+  "2620",
+  "entity",
+  "Vladimir Lenin"
+ ],
+ "d-373-e-0": [
+  "373",
+  "entity",
+  "Christine de Pizan"
+ ],
+ "d-1728-e-0": [
+  "1728",
+  "entity",
+  "India"
+ ],
+ "d-1728-e-1": [
+  "1728",
+  "entity",
+  "city"
+ ],
+ "d-1728-p-0": [
+  "1728",
+  "property",
+  "country"
+ ],
+ "d-1728-p-1": [
+  "1728",
+  "property",
+  "instance of"
+ ],
+ "d-1303-e-0": [
+  "1303",
+  "entity",
+  "book"
+ ],
+ "d-1303-p-0": [
+  "1303",
+  "property",
+  "instance of"
+ ],
+ "d-260-e-0": [
+  "260",
+  "entity",
+  "Ashmolean Museum"
+ ],
+ "d-260-e-1": [
+  "260",
+  "entity",
+  "Oxyrhynchus Papyri"
+ ],
+ "d-260-p-0": [
+  "260",
+  "property",
+  "collection"
+ ],
+ "d-260-p-1": [
+  "260",
+  "property",
+  "inventory number"
+ ],
+ "d-260-p-2": [
+  "260",
+  "property",
+  "part of"
+ ],
+ "d-1490-e-0": [
+  "1490",
+  "entity",
+  "chemical compound"
+ ],
+ "d-1490-p-0": [
+  "1490",
+  "property",
+  "instance of"
+ ],
+ "d-1526-e-0": [
+  "1526",
+  "entity",
+  "scholarly article"
+ ],
+ "d-1526-p-0": [
+  "1526",
+  "property",
+  "instance of"
+ ],
+ "d-1526-p-1": [
+  "1526",
+  "property",
+  "title"
+ ],
+ "d-1818-e-0": [
+  "1818",
+  "entity",
+  "programming language"
+ ],
+ "d-1818-p-0": [
+  "1818",
+  "property",
+  "instance of"
+ ],
+ "d-1818-p-1": [
+  "1818",
+  "property",
+  "inception"
+ ],
+ "d-1818-p-2": [
+  "1818",
+  "property",
+  "designed by"
+ ],
+ "d-1818-p-3": [
+  "1818",
+  "property",
+  "image"
+ ],
+ "d-1492-e-0": [
+  "1492",
+  "entity",
+  "human"
+ ],
+ "d-1492-e-1": [
+  "1492",
+  "entity",
+  "male"
+ ],
+ "d-1492-e-2": [
+  "1492",
+  "entity",
+  "France"
+ ],
+ "d-1492-p-0": [
+  "1492",
+  "property",
+  "instance of"
+ ],
+ "d-1492-p-4": [
+  "1492",
+  "property",
+  "country"
+ ],
+ "d-2016-p-0": [
+  "2016",
+  "property",
+  "creator"
+ ],
+ "d-599-e-0": [
+  "599",
+  "entity",
+  "chemical compound"
+ ],
+ "d-599-p-0": [
+  "599",
+  "property",
+  "instance of"
+ ],
+ "d-80-e-0": [
+  "80",
+  "entity",
+  "film"
+ ],
+ "d-80-p-0": [
+  "80",
+  "property",
+  "instance of"
+ ],
+ "d-1418-e-0": [
+  "1418",
+  "entity",
+  "Honor\u00e9 de Balzac"
+ ],
+ "d-1007-e-0": [
+  "1007",
+  "entity",
+  "human"
+ ],
+ "d-1007-p-0": [
+  "1007",
+  "property",
+  "instance of"
+ ],
+ "d-1007-p-1": [
+  "1007",
+  "property",
+  "position held"
+ ],
+ "d-959-p-0": [
+  "959",
+  "property",
+  "instance of"
+ ],
+ "d-2618-e-0": [
+  "2618",
+  "entity",
+  "\u00c9pinal"
+ ],
+ "d-2618-p-1": [
+  "2618",
+  "property",
+  "occupation"
+ ],
+ "d-425-e-0": [
+  "425",
+  "entity",
+  "museum"
+ ],
+ "d-425-e-1": [
+  "425",
+  "entity",
+  "Indonesia"
+ ],
+ "d-425-p-0": [
+  "425",
+  "property",
+  "instance of"
+ ],
+ "d-425-p-1": [
+  "425",
+  "property",
+  "country"
+ ],
+ "d-1663-e-0": [
+  "1663",
+  "entity",
+  "human"
+ ],
+ "d-1663-e-1": [
+  "1663",
+  "entity",
+  "witchcraft"
+ ],
+ "d-1663-e-2": [
+  "1663",
+  "entity",
+  "Scotland"
+ ],
+ "d-1663-p-0": [
+  "1663",
+  "property",
+  "instance of"
+ ],
+ "d-1663-p-2": [
+  "1663",
+  "property",
+  "residence"
+ ],
+ "d-1663-p-4": [
+  "1663",
+  "property",
+  "country"
+ ],
+ "d-2538-e-0": [
+  "2538",
+  "entity",
+  "University of Clermont"
+ ],
+ "d-2538-p-0": [
+  "2538",
+  "property",
+  "affiliation"
+ ],
+ "d-2538-p-1": [
+  "2538",
+  "property",
+  "occupation"
+ ],
+ "d-2610-e-0": [
+  "2610",
+  "entity",
+  "human"
+ ],
+ "d-2610-e-1": [
+  "2610",
+  "entity",
+  "river"
+ ],
+ "d-2610-p-0": [
+  "2610",
+  "property",
+  "instance of"
+ ],
+ "d-440-e-0": [
+  "440",
+  "entity",
+  "Madonna"
+ ],
+ "d-665-e-0": [
+  "665",
+  "entity",
+  "library"
+ ],
+ "d-665-e-1": [
+  "665",
+  "entity",
+  "Canada"
+ ],
+ "d-665-p-0": [
+  "665",
+  "property",
+  "instance of"
+ ],
+ "d-665-p-1": [
+  "665",
+  "property",
+  "country"
+ ],
+ "d-2686-e-0": [
+  "2686",
+  "entity",
+  "Paris"
+ ],
+ "d-2686-e-1": [
+  "2686",
+  "entity",
+  "street"
+ ],
+ "d-2686-p-1": [
+  "2686",
+  "property",
+  "instance of"
+ ],
+ "d-2282-e-0": [
+  "2282",
+  "entity",
+  "public toilet"
+ ],
+ "d-2282-e-1": [
+  "2282",
+  "entity",
+  "Wales"
+ ],
+ "d-2282-p-0": [
+  "2282",
+  "property",
+  "instance of"
+ ],
+ "d-2101-e-0": [
+  "2101",
+  "entity",
+  "artist"
+ ],
+ "d-2101-p-0": [
+  "2101",
+  "property",
+  "occupation"
+ ],
+ "d-2101-p-2": [
+  "2101",
+  "property",
+  "given name"
+ ],
+ "d-2101-p-3": [
+  "2101",
+  "property",
+  "family name"
+ ],
+ "d-2395-e-0": [
+  "2395",
+  "entity",
+  "Blaise Pascal"
+ ],
+ "d-2507-e-0": [
+  "2507",
+  "entity",
+  "programming language"
+ ],
+ "d-2507-p-0": [
+  "2507",
+  "property",
+  "instance of"
+ ],
+ "d-285-p-0": [
+  "285",
+  "property",
+  "inventory number"
+ ],
+ "d-285-p-1": [
+  "285",
+  "property",
+  "collection"
+ ],
+ "d-1880-e-0": [
+  "1880",
+  "entity",
+  "state of India"
+ ],
+ "d-1880-p-0": [
+  "1880",
+  "property",
+  "instance of"
+ ],
+ "d-1939-e-0": [
+  "1939",
+  "entity",
+  "human"
+ ],
+ "d-1939-e-1": [
+  "1939",
+  "entity",
+  "Member of the Riksdag"
+ ],
+ "d-1939-p-0": [
+  "1939",
+  "property",
+  "instance of"
+ ],
+ "d-1939-p-1": [
+  "1939",
+  "property",
+  "position held"
+ ],
+ "d-1939-p-2": [
+  "1939",
+  "property",
+  "start time"
+ ],
+ "d-1939-p-3": [
+  "1939",
+  "property",
+  "end time"
+ ],
+ "d-45-e-0": [
+  "45",
+  "entity",
+  "Edinburgh"
+ ],
+ "d-791-e-0": [
+  "791",
+  "entity",
+  "phrase"
+ ],
+ "d-791-p-0": [
+  "791",
+  "property",
+  "instance of"
+ ],
+ "d-112-e-0": [
+  "112",
+  "entity",
+  "country"
+ ],
+ "d-112-p-0": [
+  "112",
+  "property",
+  "instance of"
+ ],
+ "d-1622-e-0": [
+  "1622",
+  "entity",
+  "street sign"
+ ],
+ "d-1622-e-1": [
+  "1622",
+  "entity",
+  "Rennes"
+ ],
+ "d-1622-p-0": [
+  "1622",
+  "property",
+  "instance of"
+ ],
+ "d-1622-p-1": [
+  "1622",
+  "property",
+  "location"
+ ],
+ "d-65-p-0": [
+  "65",
+  "property",
+  "instance of"
+ ],
+ "d-1894-e-0": [
+  "1894",
+  "entity",
+  "human"
+ ],
+ "d-1894-e-1": [
+  "1894",
+  "entity",
+  "scientist"
+ ],
+ "d-1894-e-2": [
+  "1894",
+  "entity",
+  "Turkey"
+ ],
+ "d-1894-p-0": [
+  "1894",
+  "property",
+  "instance of"
+ ],
+ "d-1894-p-1": [
+  "1894",
+  "property",
+  "occupation"
+ ],
+ "d-539-e-0": [
+  "539",
+  "entity",
+  "Netherlands"
+ ],
+ "d-539-p-0": [
+  "539",
+  "property",
+  "language used"
+ ],
+ "d-248-e-0": [
+  "248",
+  "entity",
+  "human"
+ ],
+ "d-248-e-1": [
+  "248",
+  "entity",
+  "Ashmolean Museum"
+ ],
+ "d-248-e-2": [
+  "248",
+  "entity",
+  "Tokyo"
+ ],
+ "d-248-p-0": [
+  "248",
+  "property",
+  "instance of"
+ ],
+ "d-248-p-1": [
+  "248",
+  "property",
+  "location"
+ ],
+ "d-1993-e-0": [
+  "1993",
+  "entity",
+  "national anthem"
+ ],
+ "d-1993-p-0": [
+  "1993",
+  "property",
+  "instance of"
+ ],
+ "d-1390-e-0": [
+  "1390",
+  "entity",
+  "operating system"
+ ],
+ "d-1390-p-0": [
+  "1390",
+  "property",
+  "instance of"
+ ],
+ "d-1390-p-1": [
+  "1390",
+  "property",
+  "subclass of"
+ ],
+ "d-207-e-0": [
+  "207",
+  "entity",
+  "painting"
+ ],
+ "d-207-e-1": [
+  "207",
+  "entity",
+  "woman"
+ ],
+ "d-207-e-2": [
+  "207",
+  "entity",
+  "female"
+ ],
+ "d-207-p-0": [
+  "207",
+  "property",
+  "instance of"
+ ],
+ "d-207-p-1": [
+  "207",
+  "property",
+  "depicts"
+ ],
+ "d-207-p-2": [
+  "207",
+  "property",
+  "creator"
+ ],
+ "d-2718-e-0": [
+  "2718",
+  "entity",
+  "literary award"
+ ],
+ "d-2718-e-1": [
+  "2718",
+  "entity",
+  "male"
+ ],
+ "d-2718-e-2": [
+  "2718",
+  "entity",
+  "female"
+ ],
+ "d-2718-p-0": [
+  "2718",
+  "property",
+  "instance of"
+ ],
+ "d-2012-e-0": [
+  "2012",
+  "entity",
+  "Donald Trump"
+ ],
+ "d-2012-p-0": [
+  "2012",
+  "property",
+  "owned by"
+ ],
+ "d-719-e-0": [
+  "719",
+  "entity",
+  "Johann Sebastian Bach"
+ ],
+ "d-719-p-0": [
+  "719",
+  "property",
+  "father"
+ ],
+ "d-719-p-1": [
+  "719",
+  "property",
+  "mother"
+ ],
+ "d-1484-e-0": [
+  "1484",
+  "entity",
+  "Robert Louis Stevenson"
+ ],
+ "d-1484-p-7": [
+  "1484",
+  "property",
+  "significant event"
+ ],
+ "d-1909-p-1": [
+  "1909",
+  "property",
+  "image"
+ ],
+ "d-1354-e-0": [
+  "1354",
+  "entity",
+  "building"
+ ],
+ "d-1354-p-0": [
+  "1354",
+  "property",
+  "instance of"
+ ],
+ "d-1354-p-1": [
+  "1354",
+  "property",
+  "subclass of"
+ ],
+ "d-2352-e-0": [
+  "2352",
+  "entity",
+  "word"
+ ],
+ "d-2352-e-1": [
+  "2352",
+  "entity",
+  "Swedish"
+ ],
+ "d-2352-p-0": [
+  "2352",
+  "property",
+  "instance of"
+ ],
+ "d-2337-e-0": [
+  "2337",
+  "entity",
+  "Nobel Prize"
+ ],
+ "d-2337-e-1": [
+  "2337",
+  "entity",
+  "female"
+ ],
+ "d-423-e-0": [
+  "423",
+  "entity",
+  "taxon"
+ ],
+ "d-423-e-1": [
+  "423",
+  "entity",
+  "species"
+ ],
+ "d-423-e-2": [
+  "423",
+  "entity",
+  "bird"
+ ],
+ "d-423-p-0": [
+  "423",
+  "property",
+  "instance of"
+ ],
+ "d-735-e-0": [
+  "735",
+  "entity",
+  "Arthur Conan Doyle"
+ ],
+ "d-735-e-1": [
+  "735",
+  "entity",
+  "book"
+ ],
+ "d-735-p-0": [
+  "735",
+  "property",
+  "author"
+ ],
+ "d-735-p-1": [
+  "735",
+  "property",
+  "instance of"
+ ],
+ "d-1205-e-0": [
+  "1205",
+  "entity",
+  "human"
+ ],
+ "d-1205-p-0": [
+  "1205",
+  "property",
+  "instance of"
+ ],
+ "d-1205-p-2": [
+  "1205",
+  "property",
+  "country"
+ ],
+ "d-1205-p-3": [
+  "1205",
+  "property",
+  "given name"
+ ],
+ "d-1306-e-0": [
+  "1306",
+  "entity",
+  "female"
+ ],
+ "d-1306-e-1": [
+  "1306",
+  "entity",
+  "computational biologist"
+ ],
+ "d-1306-e-2": [
+  "1306",
+  "entity",
+  "bioinformatician"
+ ],
+ "d-1306-p-1": [
+  "1306",
+  "property",
+  "occupation"
+ ],
+ "d-78-e-0": [
+  "78",
+  "entity",
+  "poem"
+ ],
+ "d-78-e-1": [
+  "78",
+  "entity",
+  "poet"
+ ],
+ "d-78-p-0": [
+  "78",
+  "property",
+  "instance of"
+ ],
+ "d-78-p-1": [
+  "78",
+  "property",
+  "author"
+ ],
+ "d-78-p-2": [
+  "78",
+  "property",
+  "occupation"
+ ],
+ "d-2007-e-0": [
+  "2007",
+  "entity",
+  "film"
+ ],
+ "d-2007-p-0": [
+  "2007",
+  "property",
+  "instance of"
+ ],
+ "d-525-e-0": [
+  "525",
+  "entity",
+  "Canada"
+ ],
+ "d-525-p-0": [
+  "525",
+  "property",
+  "country"
+ ],
+ "d-766-e-0": [
+  "766",
+  "entity",
+  "real number"
+ ],
+ "d-766-p-0": [
+  "766",
+  "property",
+  "instance of"
+ ],
+ "d-766-p-1": [
+  "766",
+  "property",
+  "numeric value"
+ ],
+ "d-2280-e-0": [
+  "2280",
+  "entity",
+  "human"
+ ],
+ "d-2280-e-1": [
+  "2280",
+  "entity",
+  "association football player"
+ ],
+ "d-2280-p-0": [
+  "2280",
+  "property",
+  "instance of"
+ ],
+ "d-2280-p-1": [
+  "2280",
+  "property",
+  "occupation"
+ ],
+ "d-2763-e-0": [
+  "2763",
+  "entity",
+  "glacier"
+ ],
+ "d-2763-e-1": [
+  "2763",
+  "entity",
+  "Moby-Dick"
+ ],
+ "d-2763-p-0": [
+  "2763",
+  "property",
+  "instance of"
+ ],
+ "d-1142-e-0": [
+  "1142",
+  "entity",
+  "Liverpool F.C."
+ ],
+ "d-2122-e-0": [
+  "2122",
+  "entity",
+  "Bengali"
+ ],
+ "d-2122-p-1": [
+  "2122",
+  "property",
+  "usage"
+ ],
+ "d-545-e-0": [
+  "545",
+  "entity",
+  "Landkreis Leipzig"
+ ],
+ "d-1852-e-0": [
+  "1852",
+  "entity",
+  "protected area"
+ ],
+ "d-1852-e-1": [
+  "1852",
+  "entity",
+  "France"
+ ],
+ "d-1852-e-2": [
+  "1852",
+  "entity",
+  "Ramsar site"
+ ],
+ "d-1852-p-0": [
+  "1852",
+  "property",
+  "instance of"
+ ],
+ "d-595-e-0": [
+  "595",
+  "entity",
+  "software"
+ ],
+ "d-595-p-0": [
+  "595",
+  "property",
+  "instance of"
+ ],
+ "d-595-p-1": [
+  "595",
+  "property",
+  "inception"
+ ],
+ "d-1247-e-0": [
+  "1247",
+  "entity",
+  "Saint-Raymond Museum"
+ ],
+ "d-1247-p-0": [
+  "1247",
+  "property",
+  "collection"
+ ],
+ "d-2070-e-0": [
+  "2070",
+  "entity",
+  "rapid transit"
+ ],
+ "d-2070-p-0": [
+  "2070",
+  "property",
+  "instance of"
+ ],
+ "d-1888-e-0": [
+  "1888",
+  "entity",
+  "St. Jakobus"
+ ],
+ "d-169-e-0": [
+  "169",
+  "entity",
+  "India"
+ ],
+ "d-169-e-1": [
+  "169",
+  "entity",
+  "temple"
+ ],
+ "d-169-e-2": [
+  "169",
+  "entity",
+  "palace"
+ ],
+ "d-169-p-0": [
+  "169",
+  "property",
+  "country"
+ ],
+ "d-169-p-1": [
+  "169",
+  "property",
+  "instance of"
+ ],
+ "d-169-p-2": [
+  "169",
+  "property",
+  "subclass of"
+ ],
+ "d-2226-e-0": [
+  "2226",
+  "entity",
+  "head of state"
+ ],
+ "d-2226-e-1": [
+  "2226",
+  "entity",
+  "head of government"
+ ],
+ "d-2226-e-2": [
+  "2226",
+  "entity",
+  "killed in action"
+ ],
+ "d-2226-p-0": [
+  "2226",
+  "property",
+  "position held"
+ ],
+ "d-2226-p-1": [
+  "2226",
+  "property",
+  "subclass of"
+ ],
+ "d-1060-p-0": [
+  "1060",
+  "property",
+  "position held"
+ ],
+ "d-1060-p-1": [
+  "1060",
+  "property",
+  "ancestor"
+ ],
+ "d-1060-p-2": [
+  "1060",
+  "property",
+  "instance of"
+ ],
+ "d-1129-e-0": [
+  "1129",
+  "entity",
+  "programming language"
+ ],
+ "d-1129-p-0": [
+  "1129",
+  "property",
+  "instance of"
+ ],
+ "d-1129-p-1": [
+  "1129",
+  "property",
+  "developer"
+ ],
+ "d-1129-p-2": [
+  "1129",
+  "property",
+  "inception"
+ ],
+ "d-2258-e-0": [
+  "2258",
+  "entity",
+  "France"
+ ],
+ "d-2258-e-1": [
+  "2258",
+  "entity",
+  "human"
+ ],
+ "d-2258-p-1": [
+  "2258",
+  "property",
+  "country"
+ ],
+ "d-2258-p-2": [
+  "2258",
+  "property",
+  "instance of"
+ ],
+ "d-807-p-0": [
+  "807",
+  "property",
+  "occupation"
+ ],
+ "d-2652-e-0": [
+  "2652",
+  "entity",
+  "France"
+ ],
+ "d-2652-p-0": [
+  "2652",
+  "property",
+  "position held"
+ ],
+ "d-2652-p-3": [
+  "2652",
+  "property",
+  "country"
+ ],
+ "d-854-e-0": [
+  "854",
+  "entity",
+  "film"
+ ],
+ "d-854-e-1": [
+  "854",
+  "entity",
+  "Bud Spencer"
+ ],
+ "d-854-p-0": [
+  "854",
+  "property",
+  "instance of"
+ ],
+ "d-1425-e-0": [
+  "1425",
+  "entity",
+  "human"
+ ],
+ "d-1425-e-1": [
+  "1425",
+  "entity",
+  "Canada"
+ ],
+ "d-1425-e-2": [
+  "1425",
+  "entity",
+  "actor"
+ ],
+ "d-1425-e-3": [
+  "1425",
+  "entity",
+  "President of the United States"
+ ],
+ "d-1425-e-4": [
+  "1425",
+  "entity",
+  "film"
+ ],
+ "d-1425-p-0": [
+  "1425",
+  "property",
+  "instance of"
+ ],
+ "d-1425-p-2": [
+  "1425",
+  "property",
+  "occupation"
+ ],
+ "d-1425-p-3": [
+  "1425",
+  "property",
+  "position held"
+ ],
+ "d-1621-e-0": [
+  "1621",
+  "entity",
+  "newspaper"
+ ],
+ "d-1621-p-0": [
+  "1621",
+  "property",
+  "instance of"
+ ],
+ "d-1621-p-1": [
+  "1621",
+  "property",
+  "inception"
+ ],
+ "d-2319-e-0": [
+  "2319",
+  "entity",
+  "taxon"
+ ],
+ "d-2319-e-1": [
+  "2319",
+  "entity",
+  "musical group"
+ ],
+ "d-2319-e-2": [
+  "2319",
+  "entity",
+  "heavy metal"
+ ],
+ "d-2319-p-0": [
+  "2319",
+  "property",
+  "instance of"
+ ],
+ "d-2319-p-2": [
+  "2319",
+  "property",
+  "genre"
+ ],
+ "d-2319-p-3": [
+  "2319",
+  "property",
+  "subclass of"
+ ],
+ "d-982-e-0": [
+  "982",
+  "entity",
+  "deity"
+ ],
+ "d-982-p-0": [
+  "982",
+  "property",
+  "instance of"
+ ],
+ "d-982-p-1": [
+  "982",
+  "property",
+  "relative"
+ ],
+ "d-2196-e-0": [
+  "2196",
+  "entity",
+  "Donald P. Bellisario"
+ ],
+ "d-521-p-0": [
+  "521",
+  "property",
+  "property constraint"
+ ],
+ "d-306-e-0": [
+  "306",
+  "entity",
+  "Raphael"
+ ],
+ "d-306-p-0": [
+  "306",
+  "property",
+  "creator"
+ ],
+ "d-1018-e-0": [
+  "1018",
+  "entity",
+  "Norra begravningsplatsen"
+ ],
+ "d-1976-p-0": [
+  "1976",
+  "property",
+  "position held"
+ ],
+ "d-131-p-0": [
+  "131",
+  "property",
+  "instance of"
+ ],
+ "d-79-e-0": [
+  "79",
+  "entity",
+  "poem"
+ ],
+ "d-79-e-1": [
+  "79",
+  "entity",
+  "Florence Earle Coates"
+ ],
+ "d-79-p-0": [
+  "79",
+  "property",
+  "instance of"
+ ],
+ "d-79-p-1": [
+  "79",
+  "property",
+  "author"
+ ],
+ "d-1239-e-0": [
+  "1239",
+  "entity",
+  "Tux"
+ ],
+ "d-714-p-1": [
+  "714",
+  "property",
+  "taxon common name"
+ ],
+ "d-2261-p-0": [
+  "2261",
+  "property",
+  "official name"
+ ],
+ "d-2326-e-0": [
+  "2326",
+  "entity",
+  "female"
+ ],
+ "d-2326-e-1": [
+  "2326",
+  "entity",
+  "male"
+ ],
+ "d-2326-e-2": [
+  "2326",
+  "entity",
+  "economist"
+ ],
+ "d-2326-p-2": [
+  "2326",
+  "property",
+  "occupation"
+ ],
+ "d-763-e-0": [
+  "763",
+  "entity",
+  "human"
+ ],
+ "d-763-e-1": [
+  "763",
+  "entity",
+  "France"
+ ],
+ "d-763-p-0": [
+  "763",
+  "property",
+  "instance of"
+ ],
+ "d-768-e-0": [
+  "768",
+  "entity",
+  "country"
+ ],
+ "d-768-p-0": [
+  "768",
+  "property",
+  "instance of"
+ ],
+ "d-768-p-1": [
+  "768",
+  "property",
+  "demonym"
+ ],
+ "d-2382-e-0": [
+  "2382",
+  "entity",
+  "Auvergne"
+ ],
+ "d-2382-p-2": [
+  "2382",
+  "property",
+  "given name"
+ ],
+ "d-456-e-0": [
+  "456",
+  "entity",
+  "Cactaceae"
+ ],
+ "d-456-e-1": [
+  "456",
+  "entity",
+  "Das gro\u00dfe Kakteen-Lexikon"
+ ],
+ "d-456-p-2": [
+  "456",
+  "property",
+  "stated in"
+ ],
+ "d-1825-e-0": [
+  "1825",
+  "entity",
+  "river"
+ ],
+ "d-1825-p-0": [
+  "1825",
+  "property",
+  "instance of"
+ ],
+ "d-1825-p-2": [
+  "1825",
+  "property",
+  "length"
+ ],
+ "d-507-e-0": [
+  "507",
+  "entity",
+  "water"
+ ],
+ "d-2694-e-0": [
+  "2694",
+  "entity",
+  "human"
+ ],
+ "d-2694-e-1": [
+  "2694",
+  "entity",
+  "Sweden"
+ ],
+ "d-2694-e-2": [
+  "2694",
+  "entity",
+  "witchcraft"
+ ],
+ "d-2694-p-0": [
+  "2694",
+  "property",
+  "instance of"
+ ],
+ "d-1294-e-0": [
+  "1294",
+  "entity",
+  "P\u00e8re Lachaise Cemetery"
+ ],
+ "d-1294-e-1": [
+  "1294",
+  "entity",
+  "human"
+ ],
+ "d-1294-p-1": [
+  "1294",
+  "property",
+  "instance of"
+ ],
+ "d-613-e-0": [
+  "613",
+  "entity",
+  "scholarly article"
+ ],
+ "d-613-p-0": [
+  "613",
+  "property",
+  "instance of"
+ ],
+ "d-613-p-1": [
+  "613",
+  "property",
+  "author"
+ ],
+ "d-1323-p-0": [
+  "1323",
+  "property",
+  "population"
+ ],
+ "d-1086-e-0": [
+  "1086",
+  "entity",
+  "computer scientist"
+ ],
+ "d-1086-p-0": [
+  "1086",
+  "property",
+  "occupation"
+ ],
+ "d-1120-e-0": [
+  "1120",
+  "entity",
+  "television series"
+ ],
+ "d-1120-p-0": [
+  "1120",
+  "property",
+  "instance of"
+ ],
+ "d-1979-p-0": [
+  "1979",
+  "property",
+  "position held"
+ ],
+ "d-350-e-0": [
+  "350",
+  "entity",
+  "hillfort"
+ ],
+ "d-350-p-0": [
+  "350",
+  "property",
+  "instance of"
+ ],
+ "d-350-p-2": [
+  "350",
+  "property",
+  "video"
+ ],
+ "d-1069-e-0": [
+  "1069",
+  "entity",
+  "biologist"
+ ],
+ "d-1069-p-0": [
+  "1069",
+  "property",
+  "occupation"
+ ],
+ "d-883-e-0": [
+  "883",
+  "entity",
+  "Irish general election"
+ ],
+ "d-883-p-0": [
+  "883",
+  "property",
+  "instance of"
+ ],
+ "d-1502-e-0": [
+  "1502",
+  "entity",
+  "Christmas tradition"
+ ],
+ "d-1502-p-0": [
+  "1502",
+  "property",
+  "instance of"
+ ],
+ "d-1769-p-0": [
+  "1769",
+  "property",
+  "destination"
+ ],
+ "d-1017-e-0": [
+  "1017",
+  "entity",
+  "Theatre World Award"
+ ],
+ "d-1017-p-2": [
+  "1017",
+  "property",
+  "image"
+ ],
+ "d-942-e-0": [
+  "942",
+  "entity",
+  "drama school"
+ ],
+ "d-942-p-0": [
+  "942",
+  "property",
+  "instance of"
+ ],
+ "d-1784-e-0": [
+  "1784",
+  "entity",
+  "sovereign state"
+ ],
+ "d-1784-e-1": [
+  "1784",
+  "entity",
+  "Europe"
+ ],
+ "d-1784-p-0": [
+  "1784",
+  "property",
+  "instance of"
+ ],
+ "d-1784-p-3": [
+  "1784",
+  "property",
+  "official language"
+ ],
+ "d-835-e-0": [
+  "835",
+  "entity",
+  "chemical element"
+ ],
+ "d-835-p-0": [
+  "835",
+  "property",
+  "instance of"
+ ],
+ "d-876-e-0": [
+  "876",
+  "entity",
+  "metro station"
+ ],
+ "d-876-p-0": [
+  "876",
+  "property",
+  "instance of"
+ ],
+ "d-2394-e-0": [
+  "2394",
+  "entity",
+  "female"
+ ],
+ "d-2481-e-0": [
+  "2481",
+  "entity",
+  "statue"
+ ],
+ "d-2481-e-1": [
+  "2481",
+  "entity",
+  "Italy"
+ ],
+ "d-2481-e-2": [
+  "2481",
+  "entity",
+  "female"
+ ],
+ "d-2481-p-0": [
+  "2481",
+  "property",
+  "instance of"
+ ],
+ "d-2481-p-1": [
+  "2481",
+  "property",
+  "country"
+ ],
+ "d-2481-p-2": [
+  "2481",
+  "property",
+  "depicts"
+ ],
+ "d-2481-p-4": [
+  "2481",
+  "property",
+  "location"
+ ],
+ "d-1245-e-0": [
+  "1245",
+  "entity",
+  "software company"
+ ],
+ "d-1245-e-1": [
+  "1245",
+  "entity",
+  "female"
+ ],
+ "d-1245-p-0": [
+  "1245",
+  "property",
+  "instance of"
+ ],
+ "d-287-e-0": [
+  "287",
+  "entity",
+  "coin"
+ ],
+ "d-287-p-0": [
+  "287",
+  "property",
+  "subclass of"
+ ],
+ "d-2149-e-0": [
+  "2149",
+  "entity",
+  "The Mentalist"
+ ],
+ "d-2149-e-1": [
+  "2149",
+  "entity",
+  "television series episode"
+ ],
+ "d-2149-p-1": [
+  "2149",
+  "property",
+  "instance of"
+ ],
+ "d-1201-e-0": [
+  "1201",
+  "entity",
+  "software"
+ ],
+ "d-1201-p-0": [
+  "1201",
+  "property",
+  "instance of"
+ ],
+ "d-1201-p-1": [
+  "1201",
+  "property",
+  "inspired by"
+ ],
+ "d-2435-e-0": [
+  "2435",
+  "entity",
+  "controversy"
+ ],
+ "d-2435-p-0": [
+  "2435",
+  "property",
+  "instance of"
+ ],
+ "d-516-e-0": [
+  "516",
+  "entity",
+  "technical standard"
+ ],
+ "d-516-p-0": [
+  "516",
+  "property",
+  "instance of"
+ ],
+ "d-2188-e-0": [
+  "2188",
+  "entity",
+  "rapid transit"
+ ],
+ "d-2188-e-1": [
+  "2188",
+  "entity",
+  "Y"
+ ],
+ "d-2188-p-0": [
+  "2188",
+  "property",
+  "instance of"
+ ],
+ "d-2188-p-1": [
+  "2188",
+  "property",
+  "shape"
+ ],
+ "d-2188-p-2": [
+  "2188",
+  "property",
+  "terminus"
+ ],
+ "d-686-e-0": [
+  "686",
+  "entity",
+  "painter"
+ ],
+ "d-686-e-1": [
+  "686",
+  "entity",
+  "Wikidata property for authority control"
+ ],
+ "d-686-p-0": [
+  "686",
+  "property",
+  "occupation"
+ ],
+ "d-686-p-1": [
+  "686",
+  "property",
+  "instance of"
+ ],
+ "d-397-e-0": [
+  "397",
+  "entity",
+  "book"
+ ],
+ "d-397-p-0": [
+  "397",
+  "property",
+  "instance of"
+ ],
+ "d-397-p-1": [
+  "397",
+  "property",
+  "author"
+ ],
+ "d-397-p-2": [
+  "397",
+  "property",
+  "illustrator"
+ ],
+ "d-2201-e-0": [
+  "2201",
+  "entity",
+  "scholarly article"
+ ],
+ "d-2201-e-1": [
+  "2201",
+  "entity",
+  "multilingualism"
+ ],
+ "d-2201-e-2": [
+  "2201",
+  "entity",
+  "bilingualism"
+ ],
+ "d-2201-p-0": [
+  "2201",
+  "property",
+  "instance of"
+ ],
+ "d-2201-p-1": [
+  "2201",
+  "property",
+  "main subject"
+ ],
+ "d-1900-e-0": [
+  "1900",
+  "entity",
+  "slave trader"
+ ],
+ "d-1900-p-0": [
+  "1900",
+  "property",
+  "occupation"
+ ],
+ "d-84-p-0": [
+  "84",
+  "property",
+  "instance of"
+ ],
+ "d-2532-e-0": [
+  "2532",
+  "entity",
+  "chess opening"
+ ],
+ "d-2532-p-0": [
+  "2532",
+  "property",
+  "instance of"
+ ],
+ "d-989-e-0": [
+  "989",
+  "entity",
+  "Walt Disney Pictures"
+ ],
+ "d-989-p-2": [
+  "989",
+  "property",
+  "character role"
+ ],
+ "d-2600-e-0": [
+  "2600",
+  "entity",
+  "administrative territorial entity"
+ ],
+ "d-2600-p-0": [
+  "2600",
+  "property",
+  "instance of"
+ ],
+ "d-2600-p-1": [
+  "2600",
+  "property",
+  "subclass of"
+ ],
+ "d-2600-p-2": [
+  "2600",
+  "property",
+  "population"
+ ],
+ "d-2069-e-0": [
+  "2069",
+  "entity",
+  "dialect"
+ ],
+ "d-2069-p-0": [
+  "2069",
+  "property",
+  "instance of"
+ ],
+ "d-1218-e-0": [
+  "1218",
+  "entity",
+  "smartphone"
+ ],
+ "d-1218-p-0": [
+  "1218",
+  "property",
+  "instance of"
+ ],
+ "d-2401-e-0": [
+  "2401",
+  "entity",
+  "government agency"
+ ],
+ "d-2401-e-1": [
+  "2401",
+  "entity",
+  "Scotland"
+ ],
+ "d-2401-p-0": [
+  "2401",
+  "property",
+  "instance of"
+ ],
+ "d-2401-p-1": [
+  "2401",
+  "property",
+  "subclass of"
+ ],
+ "d-2401-p-2": [
+  "2401",
+  "property",
+  "country"
+ ],
+ "d-2573-e-0": [
+  "2573",
+  "entity",
+  "lexeme"
+ ],
+ "d-2573-p-0": [
+  "2573",
+  "property",
+  "instance of"
+ ],
+ "d-641-e-0": [
+  "641",
+  "entity",
+  "Steven Spielberg"
+ ],
+ "d-641-e-1": [
+  "641",
+  "entity",
+  "film"
+ ],
+ "d-641-p-0": [
+  "641",
+  "property",
+  "director"
+ ],
+ "d-641-p-1": [
+  "641",
+  "property",
+  "instance of"
+ ],
+ "d-641-p-2": [
+  "641",
+  "property",
+  "genre"
+ ],
+ "d-569-e-0": [
+  "569",
+  "entity",
+  "parliament building"
+ ],
+ "d-569-p-0": [
+  "569",
+  "property",
+  "instance of"
+ ],
+ "d-569-p-1": [
+  "569",
+  "property",
+  "country"
+ ],
+ "d-569-p-2": [
+  "569",
+  "property",
+  "image"
+ ],
+ "d-846-e-0": [
+  "846",
+  "entity",
+  "human"
+ ],
+ "d-846-e-1": [
+  "846",
+  "entity",
+  "death by burning"
+ ],
+ "d-846-p-0": [
+  "846",
+  "property",
+  "instance of"
+ ],
+ "d-479-e-0": [
+  "479",
+  "entity",
+  "hackerspace"
+ ],
+ "d-479-p-0": [
+  "479",
+  "property",
+  "instance of"
+ ],
+ "d-1954-e-0": [
+  "1954",
+  "entity",
+  "human"
+ ],
+ "d-1954-e-1": [
+  "1954",
+  "entity",
+  "female"
+ ],
+ "d-1954-e-2": [
+  "1954",
+  "entity",
+  "association football player"
+ ],
+ "d-1954-p-0": [
+  "1954",
+  "property",
+  "instance of"
+ ],
+ "d-1954-p-2": [
+  "1954",
+  "property",
+  "occupation"
+ ],
+ "d-1954-p-5": [
+  "1954",
+  "property",
+  "Facebook ID"
+ ],
+ "d-2321-p-0": [
+  "2321",
+  "property",
+  "candidate in"
+ ],
+ "d-857-e-0": [
+  "857",
+  "entity",
+  "continent"
+ ],
+ "d-857-p-0": [
+  "857",
+  "property",
+  "instance of"
+ ],
+ "d-243-e-0": [
+  "243",
+  "entity",
+  "Ashmolean Museum"
+ ],
+ "d-243-p-0": [
+  "243",
+  "property",
+  "collection"
+ ],
+ "d-243-p-1": [
+  "243",
+  "property",
+  "creator"
+ ],
+ "d-1951-p-0": [
+  "1951",
+  "property",
+  "child"
+ ],
+ "d-652-e-0": [
+  "652",
+  "entity",
+  "human"
+ ],
+ "d-652-e-1": [
+  "652",
+  "entity",
+  "Doctor"
+ ],
+ "d-652-p-0": [
+  "652",
+  "property",
+  "instance of"
+ ],
+ "d-652-p-1": [
+  "652",
+  "property",
+  "character role"
+ ],
+ "d-1849-p-0": [
+  "1849",
+  "property",
+  "position held"
+ ],
+ "d-1849-p-1": [
+  "1849",
+  "property",
+  "start time"
+ ],
+ "d-163-e-0": [
+  "163",
+  "entity",
+  "monastery"
+ ],
+ "d-163-e-1": [
+  "163",
+  "entity",
+  "United Kingdom"
+ ],
+ "d-163-p-0": [
+  "163",
+  "property",
+  "instance of"
+ ],
+ "d-163-p-1": [
+  "163",
+  "property",
+  "country"
+ ],
+ "d-1236-e-0": [
+  "1236",
+  "entity",
+  "Red Hat"
+ ],
+ "d-1236-p-0": [
+  "1236",
+  "property",
+  "owned by"
+ ],
+ "d-672-e-0": [
+  "672",
+  "entity",
+  "composer"
+ ],
+ "d-672-e-1": [
+  "672",
+  "entity",
+  "Vienna"
+ ],
+ "d-672-p-0": [
+  "672",
+  "property",
+  "occupation"
+ ],
+ "d-948-e-0": [
+  "948",
+  "entity",
+  "cocktail"
+ ],
+ "d-948-p-0": [
+  "948",
+  "property",
+  "instance of"
+ ],
+ "d-567-e-0": [
+  "567",
+  "entity",
+  "glacier"
+ ],
+ "d-567-p-0": [
+  "567",
+  "property",
+  "instance of"
+ ],
+ "d-503-e-0": [
+  "503",
+  "entity",
+  "Swedish"
+ ],
+ "d-370-e-0": [
+  "370",
+  "entity",
+  "human"
+ ],
+ "d-370-e-1": [
+  "370",
+  "entity",
+  "female"
+ ],
+ "d-370-p-0": [
+  "370",
+  "property",
+  "instance of"
+ ],
+ "d-34-e-0": [
+  "34",
+  "entity",
+  "University of Oxford"
+ ],
+ "d-2375-e-0": [
+  "2375",
+  "entity",
+  "town"
+ ],
+ "d-2375-e-1": [
+  "2375",
+  "entity",
+  "cathedral"
+ ],
+ "d-2375-p-0": [
+  "2375",
+  "property",
+  "instance of"
+ ],
+ "d-2375-p-1": [
+  "2375",
+  "property",
+  "population"
+ ],
+ "d-968-e-0": [
+  "968",
+  "entity",
+  "tripoint"
+ ],
+ "d-968-p-0": [
+  "968",
+  "property",
+  "instance of"
+ ],
+ "d-968-p-2": [
+  "968",
+  "property",
+  "country"
+ ],
+ "d-723-e-0": [
+  "723",
+  "entity",
+  "Johann Sebastian Bach"
+ ],
+ "d-723-p-0": [
+  "723",
+  "property",
+  "father"
+ ],
+ "d-723-p-1": [
+  "723",
+  "property",
+  "mother"
+ ],
+ "d-1343-e-0": [
+  "1343",
+  "entity",
+  "painting"
+ ],
+ "d-1343-e-1": [
+  "1343",
+  "entity",
+  "monkey"
+ ],
+ "d-1343-p-0": [
+  "1343",
+  "property",
+  "instance of"
+ ],
+ "d-1343-p-1": [
+  "1343",
+  "property",
+  "depicts"
+ ],
+ "d-1957-e-0": [
+  "1957",
+  "entity",
+  "musical composition"
+ ],
+ "d-1957-e-1": [
+  "1957",
+  "entity",
+  "Charlie Parker"
+ ],
+ "d-1957-p-0": [
+  "1957",
+  "property",
+  "instance of"
+ ],
+ "d-1957-p-1": [
+  "1957",
+  "property",
+  "composer"
+ ],
+ "d-2759-e-0": [
+  "2759",
+  "entity",
+  "University of Leeds"
+ ],
+ "d-2759-e-1": [
+  "2759",
+  "entity",
+  "human"
+ ],
+ "d-2759-p-1": [
+  "2759",
+  "property",
+  "employer"
+ ],
+ "d-2759-p-2": [
+  "2759",
+  "property",
+  "instance of"
+ ],
+ "d-146-e-0": [
+  "146",
+  "entity",
+  "fictional human"
+ ],
+ "d-146-e-1": [
+  "146",
+  "entity",
+  "human"
+ ],
+ "d-146-p-0": [
+  "146",
+  "property",
+  "instance of"
+ ],
+ "d-146-p-1": [
+  "146",
+  "property",
+  "based on"
+ ],
+ "d-758-e-0": [
+  "758",
+  "entity",
+  "Albert Einstein"
+ ],
+ "d-758-e-1": [
+  "758",
+  "entity",
+  "Johann Sebastian Bach"
+ ],
+ "d-758-p-0": [
+  "758",
+  "property",
+  "mother"
+ ],
+ "d-471-e-0": [
+  "471",
+  "entity",
+  "Berlin"
+ ],
+ "d-471-e-1": [
+  "471",
+  "entity",
+  "New York City"
+ ],
+ "d-272-e-0": [
+  "272",
+  "entity",
+  "Pitt Rivers Museum"
+ ],
+ "d-272-p-0": [
+  "272",
+  "property",
+  "archives at"
+ ],
+ "d-2480-e-0": [
+  "2480",
+  "entity",
+  "P\u00e8re Lachaise Cemetery"
+ ],
+ "d-505-e-1": [
+  "505",
+  "entity",
+  "German"
+ ],
+ "d-505-e-2": [
+  "505",
+  "entity",
+  "child"
+ ],
+ "d-505-p-0": [
+  "505",
+  "property",
+  "instance of"
+ ],
+ "d-505-p-2": [
+  "505",
+  "property",
+  "image"
+ ],
+ "d-505-p-3": [
+  "505",
+  "property",
+  "audience"
+ ],
+ "d-2030-e-0": [
+  "2030",
+  "entity",
+  "scholarly article"
+ ],
+ "d-2030-e-1": [
+  "2030",
+  "entity",
+  "backward contact tracing"
+ ],
+ "d-2030-p-0": [
+  "2030",
+  "property",
+  "instance of"
+ ],
+ "d-2030-p-1": [
+  "2030",
+  "property",
+  "main subject"
+ ],
+ "d-2030-p-2": [
+  "2030",
+  "property",
+  "DOI"
+ ],
+ "d-424-e-0": [
+  "424",
+  "entity",
+  "human"
+ ],
+ "d-424-p-0": [
+  "424",
+  "property",
+  "taxon author"
+ ],
+ "d-424-p-1": [
+  "424",
+  "property",
+  "instance of"
+ ],
+ "d-1194-e-0": [
+  "1194",
+  "entity",
+  "newspaper"
+ ],
+ "d-1194-p-0": [
+  "1194",
+  "property",
+  "instance of"
+ ],
+ "d-1798-e-0": [
+  "1798",
+  "entity",
+  "video game"
+ ],
+ "d-1798-e-1": [
+  "1798",
+  "entity",
+  "P\u00e9gases"
+ ],
+ "d-1798-p-0": [
+  "1798",
+  "property",
+  "instance of"
+ ],
+ "d-1798-p-1": [
+  "1798",
+  "property",
+  "nominated for"
+ ],
+ "d-882-e-0": [
+  "882",
+  "entity",
+  "human"
+ ],
+ "d-882-p-0": [
+  "882",
+  "property",
+  "instance of"
+ ],
+ "d-2589-e-0": [
+  "2589",
+  "entity",
+  "album"
+ ],
+ "d-2589-p-0": [
+  "2589",
+  "property",
+  "instance of"
+ ],
+ "d-1301-e-0": [
+  "1301",
+  "entity",
+  "France"
+ ],
+ "d-1301-e-1": [
+  "1301",
+  "entity",
+  "sovereign state"
+ ],
+ "d-1301-p-0": [
+  "1301",
+  "property",
+  "population"
+ ],
+ "d-1301-p-1": [
+  "1301",
+  "property",
+  "instance of"
+ ],
+ "d-1801-e-1": [
+  "1801",
+  "entity",
+  "state of India"
+ ],
+ "d-1801-p-0": [
+  "1801",
+  "property",
+  "instance of"
+ ],
+ "d-1801-p-1": [
+  "1801",
+  "property",
+  "location"
+ ],
+ "d-869-e-0": [
+  "869",
+  "entity",
+  "Antoine"
+ ],
+ "d-869-p-0": [
+  "869",
+  "property",
+  "given name"
+ ],
+ "d-2027-e-0": [
+  "2027",
+  "entity",
+  "river"
+ ],
+ "d-2027-e-1": [
+  "2027",
+  "entity",
+  "canal"
+ ],
+ "d-2027-e-2": [
+  "2027",
+  "entity",
+  "United Kingdom"
+ ],
+ "d-2027-p-0": [
+  "2027",
+  "property",
+  "instance of"
+ ],
+ "d-2027-p-1": [
+  "2027",
+  "property",
+  "subclass of"
+ ],
+ "d-2027-p-2": [
+  "2027",
+  "property",
+  "country"
+ ],
+ "d-2505-e-0": [
+  "2505",
+  "entity",
+  "programming language"
+ ],
+ "d-2505-p-0": [
+  "2505",
+  "property",
+  "instance of"
+ ],
+ "d-2505-p-2": [
+  "2505",
+  "property",
+  "number of subscribers"
+ ],
+ "d-994-e-0": [
+  "994",
+  "entity",
+  "human"
+ ],
+ "d-994-p-0": [
+  "994",
+  "property",
+  "instance of"
+ ],
+ "d-1204-e-0": [
+  "1204",
+  "entity",
+  "library"
+ ],
+ "d-1204-e-1": [
+  "1204",
+  "entity",
+  "Austria"
+ ],
+ "d-1204-p-0": [
+  "1204",
+  "property",
+  "instance of"
+ ],
+ "d-1204-p-1": [
+  "1204",
+  "property",
+  "country"
+ ],
+ "d-351-p-1": [
+  "351",
+  "property",
+  "image"
+ ],
+ "d-1646-e-0": [
+  "1646",
+  "entity",
+  "male given name"
+ ],
+ "d-1646-p-0": [
+  "1646",
+  "property",
+  "instance of"
+ ],
+ "d-2286-p-0": [
+  "2286",
+  "property",
+  "position held"
+ ],
+ "d-2286-p-1": [
+  "2286",
+  "property",
+  "member of"
+ ],
+ "d-2286-p-2": [
+  "2286",
+  "property",
+  "author"
+ ],
+ "d-2739-e-0": [
+  "2739",
+  "entity",
+  "human"
+ ],
+ "d-2739-e-1": [
+  "2739",
+  "entity",
+  "Finland"
+ ],
+ "d-2739-e-2": [
+  "2739",
+  "entity",
+  "ice hockey"
+ ],
+ "d-2739-p-0": [
+  "2739",
+  "property",
+  "instance of"
+ ],
+ "d-2739-p-2": [
+  "2739",
+  "property",
+  "sport"
+ ],
+ "d-2739-p-3": [
+  "2739",
+  "property",
+  "child"
+ ],
+ "d-43-e-0": [
+  "43",
+  "entity",
+  "University of Edinburgh"
+ ],
+ "d-43-e-1": [
+  "43",
+  "entity",
+  "female"
+ ],
+ "d-1773-e-0": [
+  "1773",
+  "entity",
+  "book"
+ ],
+ "d-1773-e-1": [
+  "1773",
+  "entity",
+  "LGBT"
+ ],
+ "d-1773-p-0": [
+  "1773",
+  "property",
+  "instance of"
+ ],
+ "d-1773-p-1": [
+  "1773",
+  "property",
+  "main subject"
+ ],
+ "d-1773-p-2": [
+  "1773",
+  "property",
+  "subclass of"
+ ],
+ "d-318-e-0": [
+  "318",
+  "entity",
+  "human"
+ ],
+ "d-318-p-0": [
+  "318",
+  "property",
+  "instance of"
+ ],
+ "d-318-p-2": [
+  "318",
+  "property",
+  "image"
+ ],
+ "d-2633-e-0": [
+  "2633",
+  "entity",
+  "human"
+ ],
+ "d-2633-e-1": [
+  "2633",
+  "entity",
+  "Olympic sport"
+ ],
+ "d-2633-p-0": [
+  "2633",
+  "property",
+  "instance of"
+ ],
+ "d-2633-p-1": [
+  "2633",
+  "property",
+  "sport"
+ ],
+ "d-2633-p-2": [
+  "2633",
+  "property",
+  "mass"
+ ],
+ "d-2633-p-3": [
+  "2633",
+  "property",
+  "height"
+ ],
+ "d-548-e-0": [
+  "548",
+  "entity",
+  "city"
+ ],
+ "d-548-e-1": [
+  "548",
+  "entity",
+  "municipality"
+ ],
+ "d-548-p-0": [
+  "548",
+  "property",
+  "instance of"
+ ],
+ "d-2091-e-0": [
+  "2091",
+  "entity",
+  "fortification"
+ ],
+ "d-2091-e-1": [
+  "2091",
+  "entity",
+  "Dutch East India Company"
+ ],
+ "d-2091-e-2": [
+  "2091",
+  "entity",
+  "Dutch West India Company"
+ ],
+ "d-2091-p-0": [
+  "2091",
+  "property",
+  "instance of"
+ ],
+ "d-2091-p-1": [
+  "2091",
+  "property",
+  "subclass of"
+ ],
+ "d-542-e-0": [
+  "542",
+  "entity",
+  "Landkreis Leipzig"
+ ],
+ "d-2238-e-0": [
+  "2238",
+  "entity",
+  "city"
+ ],
+ "d-2238-e-1": [
+  "2238",
+  "entity",
+  "female"
+ ],
+ "d-2238-p-0": [
+  "2238",
+  "property",
+  "instance of"
+ ],
+ "d-2238-p-1": [
+  "2238",
+  "property",
+  "subclass of"
+ ],
+ "d-2238-p-2": [
+  "2238",
+  "property",
+  "head of government"
+ ],
+ "d-2238-p-4": [
+  "2238",
+  "property",
+  "population"
+ ],
+ "d-1161-e-0": [
+  "1161",
+  "entity",
+  "museum"
+ ],
+ "d-1161-e-1": [
+  "1161",
+  "entity",
+  "Italy"
+ ],
+ "d-1161-p-0": [
+  "1161",
+  "property",
+  "instance of"
+ ],
+ "d-1161-p-1": [
+  "1161",
+  "property",
+  "country"
+ ],
+ "d-936-e-0": [
+  "936",
+  "entity",
+  "serial killer"
+ ],
+ "d-936-p-0": [
+  "936",
+  "property",
+  "occupation"
+ ],
+ "d-936-p-1": [
+  "936",
+  "property",
+  "nickname"
+ ],
+ "d-2581-e-0": [
+  "2581",
+  "entity",
+  "heritage site"
+ ],
+ "d-2581-p-0": [
+  "2581",
+  "property",
+  "instance of"
+ ],
+ "d-2581-p-1": [
+  "2581",
+  "property",
+  "subclass of"
+ ],
+ "d-1050-e-0": [
+  "1050",
+  "entity",
+  "male"
+ ],
+ "d-1050-e-1": [
+  "1050",
+  "entity",
+  "actor"
+ ],
+ "d-1050-p-1": [
+  "1050",
+  "property",
+  "occupation"
+ ],
+ "d-1050-p-3": [
+  "1050",
+  "property",
+  "character role"
+ ],
+ "d-2497-e-0": [
+  "2497",
+  "entity",
+  "lake"
+ ],
+ "d-2497-e-1": [
+  "2497",
+  "entity",
+  "United Kingdom"
+ ],
+ "d-2497-p-0": [
+  "2497",
+  "property",
+  "instance of"
+ ],
+ "d-2497-p-1": [
+  "2497",
+  "property",
+  "country"
+ ],
+ "d-777-p-0": [
+  "777",
+  "property",
+  "position held"
+ ],
+ "d-777-p-1": [
+  "777",
+  "property",
+  "start time"
+ ],
+ "d-777-p-2": [
+  "777",
+  "property",
+  "end time"
+ ],
+ "d-540-e-0": [
+  "540",
+  "entity",
+  "human settlement"
+ ],
+ "d-540-e-1": [
+  "540",
+  "entity",
+  "Denmark"
+ ],
+ "d-540-p-0": [
+  "540",
+  "property",
+  "instance of"
+ ],
+ "d-540-p-1": [
+  "540",
+  "property",
+  "subclass of"
+ ],
+ "d-540-p-2": [
+  "540",
+  "property",
+  "country"
+ ],
+ "d-540-p-3": [
+  "540",
+  "property",
+  "population"
+ ],
+ "d-2019-e-0": [
+  "2019",
+  "entity",
+  "A road"
+ ],
+ "d-2019-p-0": [
+  "2019",
+  "property",
+  "instance of"
+ ],
+ "d-2019-p-1": [
+  "2019",
+  "property",
+  "terminus"
+ ],
+ "d-1738-e-0": [
+  "1738",
+  "entity",
+  "National Gallery of Armenia"
+ ],
+ "d-1738-p-0": [
+  "1738",
+  "property",
+  "collection"
+ ],
+ "d-184-e-0": [
+  "184",
+  "entity",
+  "Mary Shelley"
+ ],
+ "d-184-e-1": [
+  "184",
+  "entity",
+  "kinship"
+ ],
+ "d-184-p-0": [
+  "184",
+  "property",
+  "subclass of"
+ ],
+ "d-2023-e-0": [
+  "2023",
+  "entity",
+  "astronaut"
+ ],
+ "d-2023-e-1": [
+  "2023",
+  "entity",
+  "International Space Station"
+ ],
+ "d-2023-p-1": [
+  "2023",
+  "property",
+  "occupation"
+ ],
+ "d-2023-p-3": [
+  "2023",
+  "property",
+  "part of"
+ ],
+ "d-1310-e-0": [
+  "1310",
+  "entity",
+  "Sun"
+ ],
+ "d-2285-e-0": [
+  "2285",
+  "entity",
+  "outdoor gym"
+ ],
+ "d-2285-e-1": [
+  "2285",
+  "entity",
+  "Sweden"
+ ],
+ "d-2285-p-0": [
+  "2285",
+  "property",
+  "instance of"
+ ],
+ "d-2285-p-1": [
+  "2285",
+  "property",
+  "country"
+ ],
+ "d-2629-e-0": [
+  "2629",
+  "entity",
+  "China"
+ ],
+ "d-2629-e-1": [
+  "2629",
+  "entity",
+  "human"
+ ],
+ "d-2629-p-1": [
+  "2629",
+  "property",
+  "instance of"
+ ],
+ "d-2629-p-3": [
+  "2629",
+  "property",
+  "official website"
+ ],
+ "d-930-e-0": [
+  "930",
+  "entity",
+  "historian"
+ ],
+ "d-930-p-0": [
+  "930",
+  "property",
+  "occupation"
+ ],
+ "d-1905-e-0": [
+  "1905",
+  "entity",
+  "statue"
+ ],
+ "d-1905-e-1": [
+  "1905",
+  "entity",
+  "monument"
+ ],
+ "d-1905-e-2": [
+  "1905",
+  "entity",
+  "slave trader"
+ ],
+ "d-1905-e-3": [
+  "1905",
+  "entity",
+  "slave owner"
+ ],
+ "d-1905-p-0": [
+  "1905",
+  "property",
+  "instance of"
+ ],
+ "d-1905-p-1": [
+  "1905",
+  "property",
+  "subclass of"
+ ],
+ "d-1905-p-3": [
+  "1905",
+  "property",
+  "occupation"
+ ],
+ "d-117-e-0": [
+  "117",
+  "entity",
+  "parliament"
+ ],
+ "d-117-p-0": [
+  "117",
+  "property",
+  "instance of"
+ ],
+ "d-434-p-0": [
+  "434",
+  "property",
+  "position held"
+ ],
+ "d-434-p-1": [
+  "434",
+  "property",
+  "image"
+ ],
+ "d-1212-e-0": [
+  "1212",
+  "entity",
+  "video game"
+ ],
+ "d-1212-p-0": [
+  "1212",
+  "property",
+  "instance of"
+ ],
+ "d-1297-e-0": [
+  "1297",
+  "entity",
+  "Afghanistan"
+ ],
+ "d-1297-p-0": [
+  "1297",
+  "property",
+  "flag"
+ ],
+ "d-2758-e-0": [
+  "2758",
+  "entity",
+  "literary work"
+ ],
+ "d-2758-p-0": [
+  "2758",
+  "property",
+  "instance of"
+ ],
+ "d-2361-e-0": [
+  "2361",
+  "entity",
+  "National Research Data Infrastructure"
+ ],
+ "d-2361-p-0": [
+  "2361",
+  "property",
+  "part of"
+ ],
+ "d-2651-e-0": [
+  "2651",
+  "entity",
+  "human"
+ ],
+ "d-2651-e-1": [
+  "2651",
+  "entity",
+  "Rennes"
+ ],
+ "d-2651-p-0": [
+  "2651",
+  "property",
+  "instance of"
+ ],
+ "d-2625-e-0": [
+  "2625",
+  "entity",
+  "river"
+ ],
+ "d-2625-e-1": [
+  "2625",
+  "entity",
+  "France"
+ ],
+ "d-2625-p-0": [
+  "2625",
+  "property",
+  "instance of"
+ ],
+ "d-2625-p-1": [
+  "2625",
+  "property",
+  "country"
+ ],
+ "d-2625-p-2": [
+  "2625",
+  "property",
+  "length"
+ ],
+ "d-858-e-0": [
+  "858",
+  "entity",
+  "Antarctica"
+ ],
+ "d-512-e-0": [
+  "512",
+  "entity",
+  "Standard Mandarin"
+ ],
+ "d-295-e-0": [
+  "295",
+  "entity",
+  "astrolabe"
+ ],
+ "d-295-p-0": [
+  "295",
+  "property",
+  "instance of"
+ ],
+ "d-295-p-1": [
+  "295",
+  "property",
+  "collection"
+ ],
+ "d-295-p-2": [
+  "295",
+  "property",
+  "image"
+ ],
+ "d-54-e-0": [
+  "54",
+  "entity",
+  "university"
+ ],
+ "d-54-e-1": [
+  "54",
+  "entity",
+  "United Kingdom"
+ ],
+ "d-54-p-0": [
+  "54",
+  "property",
+  "instance of"
+ ],
+ "d-54-p-1": [
+  "54",
+  "property",
+  "country"
+ ],
+ "d-357-e-0": [
+  "357",
+  "entity",
+  "hill fort"
+ ],
+ "d-357-p-0": [
+  "357",
+  "property",
+  "subclass of"
+ ],
+ "d-1547-e-0": [
+  "1547",
+  "entity",
+  "museum"
+ ],
+ "d-1547-e-1": [
+  "1547",
+  "entity",
+  "France"
+ ],
+ "d-1547-p-0": [
+  "1547",
+  "property",
+  "instance of"
+ ],
+ "d-1547-p-1": [
+  "1547",
+  "property",
+  "country"
+ ],
+ "d-1547-p-3": [
+  "1547",
+  "property",
+  "collection"
+ ],
+ "d-1547-p-4": [
+  "1547",
+  "property",
+  "creator"
+ ],
+ "d-1925-e-0": [
+  "1925",
+  "entity",
+  "painting"
+ ],
+ "d-1925-e-1": [
+  "1925",
+  "entity",
+  "fairy tale"
+ ],
+ "d-1925-p-0": [
+  "1925",
+  "property",
+  "instance of"
+ ],
+ "d-1925-p-1": [
+  "1925",
+  "property",
+  "depicts"
+ ],
+ "d-1925-p-2": [
+  "1925",
+  "property",
+  "subclass of"
+ ],
+ "d-2046-e-0": [
+  "2046",
+  "entity",
+  "human"
+ ],
+ "d-2046-e-1": [
+  "2046",
+  "entity",
+  "tuberculosis"
+ ],
+ "d-2046-p-0": [
+  "2046",
+  "property",
+  "instance of"
+ ],
+ "d-2127-e-0": [
+  "2127",
+  "entity",
+  "building"
+ ],
+ "d-2127-e-1": [
+  "2127",
+  "entity",
+  "Saint Roch"
+ ],
+ "d-2127-e-2": [
+  "2127",
+  "entity",
+  "Basque Country"
+ ],
+ "d-2127-p-0": [
+  "2127",
+  "property",
+  "instance of"
+ ],
+ "d-2127-p-1": [
+  "2127",
+  "property",
+  "subclass of"
+ ],
+ "d-75-e-0": [
+  "75",
+  "entity",
+  "poem"
+ ],
+ "d-75-p-0": [
+  "75",
+  "property",
+  "instance of"
+ ],
+ "d-75-p-1": [
+  "75",
+  "property",
+  "author"
+ ],
+ "d-822-e-0": [
+  "822",
+  "entity",
+  "given name"
+ ],
+ "d-822-p-0": [
+  "822",
+  "property",
+  "instance of"
+ ],
+ "d-822-p-1": [
+  "822",
+  "property",
+  "said to be the same as"
+ ],
+ "d-1527-e-0": [
+  "1527",
+  "entity",
+  "fictional school"
+ ],
+ "d-1527-p-0": [
+  "1527",
+  "property",
+  "instance of"
+ ],
+ "d-1765-p-0": [
+  "1765",
+  "property",
+  "instance of"
+ ],
+ "d-2041-e-0": [
+  "2041",
+  "entity",
+  "human"
+ ],
+ "d-2041-e-1": [
+  "2041",
+  "entity",
+  "female"
+ ],
+ "d-2041-e-2": [
+  "2041",
+  "entity",
+  "chess"
+ ],
+ "d-2041-p-0": [
+  "2041",
+  "property",
+  "instance of"
+ ],
+ "d-2041-p-2": [
+  "2041",
+  "property",
+  "sport"
+ ],
+ "d-1199-e-0": [
+  "1199",
+  "entity",
+  "literary work"
+ ],
+ "d-1199-p-0": [
+  "1199",
+  "property",
+  "instance of"
+ ],
+ "d-168-p-0": [
+  "168",
+  "property",
+  "instance of"
+ ],
+ "d-168-p-2": [
+  "168",
+  "property",
+  "GeoNames ID"
+ ],
+ "d-237-e-0": [
+  "237",
+  "entity",
+  "Bodleian Library"
+ ],
+ "d-237-p-0": [
+  "237",
+  "property",
+  "collection"
+ ],
+ "d-237-p-1": [
+  "237",
+  "property",
+  "image"
+ ],
+ "d-186-e-0": [
+  "186",
+  "entity",
+  "Trifolium"
+ ],
+ "d-186-p-1": [
+  "186",
+  "property",
+  "creator"
+ ],
+ "d-1638-e-0": [
+  "1638",
+  "entity",
+  "dune"
+ ],
+ "d-1638-p-0": [
+  "1638",
+  "property",
+  "instance of"
+ ],
+ "d-1638-p-1": [
+  "1638",
+  "property",
+  "country"
+ ],
+ "d-2769-e-0": [
+  "2769",
+  "entity",
+  "train wreck"
+ ],
+ "d-2769-p-0": [
+  "2769",
+  "property",
+  "instance of"
+ ],
+ "d-2769-p-1": [
+  "2769",
+  "property",
+  "number of deaths"
+ ],
+ "d-2769-p-2": [
+  "2769",
+  "property",
+  "country"
+ ],
+ "d-2022-e-0": [
+  "2022",
+  "entity",
+  "President of the United States"
+ ],
+ "d-2022-e-1": [
+  "2022",
+  "entity",
+  "Vice President of the United States"
+ ],
+ "d-2022-p-0": [
+  "2022",
+  "property",
+  "position held"
+ ],
+ "d-1498-p-1": [
+  "1498",
+  "property",
+  "mother"
+ ],
+ "d-2051-e-0": [
+  "2051",
+  "entity",
+  "human"
+ ],
+ "d-2051-p-0": [
+  "2051",
+  "property",
+  "instance of"
+ ],
+ "d-2540-e-0": [
+  "2540",
+  "entity",
+  "video game"
+ ],
+ "d-2540-e-1": [
+  "2540",
+  "entity",
+  "France"
+ ],
+ "d-2540-e-2": [
+  "2540",
+  "entity",
+  "adventure game"
+ ],
+ "d-2540-p-0": [
+  "2540",
+  "property",
+  "instance of"
+ ],
+ "d-2540-p-2": [
+  "2540",
+  "property",
+  "genre"
+ ],
+ "d-1973-e-0": [
+  "1973",
+  "entity",
+  "COVID-19 vaccine"
+ ],
+ "d-1973-p-0": [
+  "1973",
+  "property",
+  "instance of"
+ ],
+ "d-1973-p-1": [
+  "1973",
+  "property",
+  "manufacturer"
+ ],
+ "d-2443-e-0": [
+  "2443",
+  "entity",
+  "human"
+ ],
+ "d-2443-p-0": [
+  "2443",
+  "property",
+  "author"
+ ],
+ "d-2443-p-1": [
+  "2443",
+  "property",
+  "main subject"
+ ],
+ "d-2443-p-2": [
+  "2443",
+  "property",
+  "instance of"
+ ],
+ "d-1887-p-0": [
+  "1887",
+  "property",
+  "occupation"
+ ],
+ "d-2290-e-0": [
+  "2290",
+  "entity",
+  "city"
+ ],
+ "d-2290-e-1": [
+  "2290",
+  "entity",
+  "United States of America"
+ ],
+ "d-2290-p-0": [
+  "2290",
+  "property",
+  "instance of"
+ ],
+ "d-2290-p-1": [
+  "2290",
+  "property",
+  "subclass of"
+ ],
+ "d-2290-p-2": [
+  "2290",
+  "property",
+  "country"
+ ],
+ "d-2290-p-3": [
+  "2290",
+  "property",
+  "population"
+ ],
+ "d-2290-p-4": [
+  "2290",
+  "property",
+  "head of government"
+ ],
+ "d-2472-e-0": [
+  "2472",
+  "entity",
+  "Elizabeth Bennet"
+ ],
+ "d-2472-p-0": [
+  "2472",
+  "property",
+  "performer"
+ ],
+ "d-2472-p-1": [
+  "2472",
+  "property",
+  "based on"
+ ],
+ "d-94-e-0": [
+  "94",
+  "entity",
+  "human"
+ ],
+ "d-94-e-1": [
+  "94",
+  "entity",
+  "thesis"
+ ],
+ "d-94-e-2": [
+  "94",
+  "entity",
+  "publication"
+ ],
+ "d-94-p-0": [
+  "94",
+  "property",
+  "instance of"
+ ],
+ "d-94-p-1": [
+  "94",
+  "property",
+  "author"
+ ],
+ "d-1322-e-0": [
+  "1322",
+  "entity",
+  "human"
+ ],
+ "d-1322-e-1": [
+  "1322",
+  "entity",
+  "noble family"
+ ],
+ "d-1322-p-0": [
+  "1322",
+  "property",
+  "instance of"
+ ],
+ "d-1322-p-1": [
+  "1322",
+  "property",
+  "family"
+ ],
+ "d-1953-e-0": [
+  "1953",
+  "entity",
+  "Severe acute respiratory syndrome coronavirus 2"
+ ],
+ "d-1953-e-1": [
+  "1953",
+  "entity",
+  "protein"
+ ],
+ "d-1953-p-1": [
+  "1953",
+  "property",
+  "instance of"
+ ],
+ "d-1953-p-2": [
+  "1953",
+  "property",
+  "main subject"
+ ],
+ "d-391-e-0": [
+  "391",
+  "entity",
+  "Johann Sebastian Bach"
+ ],
+ "d-391-p-0": [
+  "391",
+  "property",
+  "child"
+ ],
+ "d-2473-e-0": [
+  "2473",
+  "entity",
+  "human"
+ ],
+ "d-2473-p-0": [
+  "2473",
+  "property",
+  "instance of"
+ ],
+ "d-1701-p-0": [
+  "1701",
+  "property",
+  "instance of"
+ ],
+ "d-1056-e-0": [
+  "1056",
+  "entity",
+  "xkcd"
+ ],
+ "d-2731-p-1": [
+  "2731",
+  "property",
+  "instance of"
+ ],
+ "d-1579-e-0": [
+  "1579",
+  "entity",
+  "software"
+ ],
+ "d-1579-p-0": [
+  "1579",
+  "property",
+  "instance of"
+ ],
+ "d-1579-p-1": [
+  "1579",
+  "property",
+  "subclass of"
+ ],
+ "d-1579-p-2": [
+  "1579",
+  "property",
+  "mascot"
+ ],
+ "d-2385-e-0": [
+  "2385",
+  "entity",
+  "fictional human"
+ ],
+ "d-2385-e-1": [
+  "2385",
+  "entity",
+  "France"
+ ],
+ "d-2385-p-0": [
+  "2385",
+  "property",
+  "instance of"
+ ],
+ "d-2385-p-1": [
+  "2385",
+  "property",
+  "creator"
+ ],
+ "d-2456-e-0": [
+  "2456",
+  "entity",
+  "honorary citizen"
+ ],
+ "d-2500-e-0": [
+  "2500",
+  "entity",
+  "coup d'\u00e9tat"
+ ],
+ "d-2500-e-2": [
+  "2500",
+  "entity",
+  "Africa"
+ ],
+ "d-2500-p-0": [
+  "2500",
+  "property",
+  "instance of"
+ ],
+ "d-2500-p-1": [
+  "2500",
+  "property",
+  "country"
+ ],
+ "d-494-e-0": [
+  "494",
+  "entity",
+  "\u00d8resund Region"
+ ],
+ "d-494-p-0": [
+  "494",
+  "property",
+  "population"
+ ],
+ "d-676-e-0": [
+  "676",
+  "entity",
+  "human"
+ ],
+ "d-676-e-1": [
+  "676",
+  "entity",
+  "musician"
+ ],
+ "d-676-p-0": [
+  "676",
+  "property",
+  "instance of"
+ ],
+ "d-676-p-1": [
+  "676",
+  "property",
+  "occupation"
+ ],
+ "d-2641-e-0": [
+  "2641",
+  "entity",
+  "Prime Minister of the United Kingdom"
+ ],
+ "d-2641-p-0": [
+  "2641",
+  "property",
+  "position held"
+ ],
+ "d-944-e-0": [
+  "944",
+  "entity",
+  "film"
+ ],
+ "d-944-e-1": [
+  "944",
+  "entity",
+  "Christopher Lee"
+ ],
+ "d-944-p-0": [
+  "944",
+  "property",
+  "instance of"
+ ],
+ "d-944-p-2": [
+  "944",
+  "property",
+  "director"
+ ],
+ "d-1906-e-0": [
+  "1906",
+  "entity",
+  "human"
+ ],
+ "d-1906-e-1": [
+  "1906",
+  "entity",
+  "Ku Klux Klan"
+ ],
+ "d-1906-p-0": [
+  "1906",
+  "property",
+  "instance of"
+ ],
+ "d-91-e-0": [
+  "91",
+  "entity",
+  "human"
+ ],
+ "d-91-e-1": [
+  "91",
+  "entity",
+  "Gloucestershire"
+ ],
+ "d-91-e-2": [
+  "91",
+  "entity",
+  "World War I"
+ ],
+ "d-91-p-0": [
+  "91",
+  "property",
+  "instance of"
+ ],
+ "d-1741-e-0": [
+  "1741",
+  "entity",
+  "Wikidata property for an identifier"
+ ],
+ "d-1741-p-0": [
+  "1741",
+  "property",
+  "instance of"
+ ],
+ "d-87-e-0": [
+  "87",
+  "entity",
+  "letter"
+ ],
+ "d-87-p-0": [
+  "87",
+  "property",
+  "instance of"
+ ],
+ "d-87-p-1": [
+  "87",
+  "property",
+  "author"
+ ],
+ "d-1098-e-0": [
+  "1098",
+  "entity",
+  "artificial satellite"
+ ],
+ "d-1098-p-0": [
+  "1098",
+  "property",
+  "instance of"
+ ],
+ "d-1098-p-1": [
+  "1098",
+  "property",
+  "launch date"
+ ],
+ "d-1098-p-2": [
+  "1098",
+  "property",
+  "image"
+ ],
+ "d-668-e-0": [
+  "668",
+  "entity",
+  "writer"
+ ],
+ "d-668-e-1": [
+  "668",
+  "entity",
+  "United States of America"
+ ],
+ "d-668-p-0": [
+  "668",
+  "property",
+  "occupation"
+ ],
+ "d-1500-e-0": [
+  "1500",
+  "entity",
+  "data set"
+ ],
+ "d-1500-p-0": [
+  "1500",
+  "property",
+  "instance of"
+ ],
+ "d-1500-p-2": [
+  "1500",
+  "property",
+  "subclass of"
+ ],
+ "d-926-e-0": [
+  "926",
+  "entity",
+  "film"
+ ],
+ "d-926-e-1": [
+  "926",
+  "entity",
+  "Jean Gabin"
+ ],
+ "d-926-p-0": [
+  "926",
+  "property",
+  "instance of"
+ ],
+ "d-2125-p-0": [
+  "2125",
+  "property",
+  "instance of"
+ ],
+ "d-2125-p-1": [
+  "2125",
+  "property",
+  "inception"
+ ],
+ "d-2335-e-0": [
+  "2335",
+  "entity",
+  "Right Livelihood Award"
+ ],
+ "d-37-e-0": [
+  "37",
+  "entity",
+  "Oxford"
+ ],
+ "d-37-e-1": [
+  "37",
+  "entity",
+  "university"
+ ],
+ "d-37-e-2": [
+  "37",
+  "entity",
+  "museum"
+ ],
+ "d-37-e-3": [
+  "37",
+  "entity",
+  "church building"
+ ],
+ "d-37-e-4": [
+  "37",
+  "entity",
+  "library"
+ ],
+ "d-37-e-5": [
+  "37",
+  "entity",
+  "park"
+ ],
+ "d-37-p-2": [
+  "37",
+  "property",
+  "instance of"
+ ],
+ "d-962-e-0": [
+  "962",
+  "entity",
+  "Moon tree"
+ ],
+ "d-962-p-0": [
+  "962",
+  "property",
+  "instance of"
+ ],
+ "d-1860-e-0": [
+  "1860",
+  "entity",
+  "country"
+ ],
+ "d-1860-e-1": [
+  "1860",
+  "entity",
+  "Africa"
+ ],
+ "d-1860-p-0": [
+  "1860",
+  "property",
+  "instance of"
+ ],
+ "d-1860-p-2": [
+  "1860",
+  "property",
+  "head of state"
+ ],
+ "d-825-e-0": [
+  "825",
+  "entity",
+  "cathedral"
+ ],
+ "d-825-e-1": [
+  "825",
+  "entity",
+  "Paris"
+ ],
+ "d-825-p-0": [
+  "825",
+  "property",
+  "instance of"
+ ],
+ "d-2679-e-0": [
+  "2679",
+  "entity",
+  "Nobel Prize"
+ ],
+ "d-2679-p-1": [
+  "2679",
+  "property",
+  "author"
+ ],
+ "d-2244-e-0": [
+  "2244",
+  "entity",
+  "poet"
+ ],
+ "d-2244-e-1": [
+  "2244",
+  "entity",
+  "lawyer"
+ ],
+ "d-2244-p-0": [
+  "2244",
+  "property",
+  "occupation"
+ ],
+ "d-2244-p-1": [
+  "2244",
+  "property",
+  "father"
+ ],
+ "d-338-e-0": [
+  "338",
+  "entity",
+  "learned society"
+ ],
+ "d-338-p-0": [
+  "338",
+  "property",
+  "member of"
+ ],
+ "d-338-p-1": [
+  "338",
+  "property",
+  "instance of"
+ ],
+ "d-2312-e-0": [
+  "2312",
+  "entity",
+  "film"
+ ],
+ "d-2312-e-1": [
+  "2312",
+  "entity",
+  "Jean-Paul Belmondo"
+ ],
+ "d-2312-p-0": [
+  "2312",
+  "property",
+  "instance of"
+ ],
+ "d-1564-e-0": [
+  "1564",
+  "entity",
+  "human"
+ ],
+ "d-1564-e-1": [
+  "1564",
+  "entity",
+  "female"
+ ],
+ "d-1564-e-2": [
+  "1564",
+  "entity",
+  "Africa"
+ ],
+ "d-1564-p-0": [
+  "1564",
+  "property",
+  "instance of"
+ ],
+ "d-2340-e-0": [
+  "2340",
+  "entity",
+  "book"
+ ],
+ "d-2340-e-1": [
+  "2340",
+  "entity",
+  "Semantic Web"
+ ],
+ "d-2340-e-2": [
+  "2340",
+  "entity",
+  "linked data"
+ ],
+ "d-2340-e-3": [
+  "2340",
+  "entity",
+  "semantic technology"
+ ],
+ "d-2340-p-0": [
+  "2340",
+  "property",
+  "instance of"
+ ],
+ "d-2340-p-1": [
+  "2340",
+  "property",
+  "main subject"
+ ],
+ "d-462-e-0": [
+  "462",
+  "entity",
+  "P\u00e8re Lachaise Cemetery"
+ ],
+ "d-273-e-0": [
+  "273",
+  "entity",
+  "Pitt Rivers Museum"
+ ],
+ "d-273-p-0": [
+  "273",
+  "property",
+  "archives at"
+ ],
+ "d-273-p-1": [
+  "273",
+  "property",
+  "image"
+ ],
+ "d-999-e-0": [
+  "999",
+  "entity",
+  "James Bond"
+ ],
+ "d-374-e-0": [
+  "374",
+  "entity",
+  "female"
+ ],
+ "d-97-e-0": [
+  "97",
+  "entity",
+  "doctoral thesis"
+ ],
+ "d-97-e-1": [
+  "97",
+  "entity",
+  "University of Oxford"
+ ],
+ "d-97-p-0": [
+  "97",
+  "property",
+  "instance of"
+ ],
+ "d-191-e-0": [
+  "191",
+  "entity",
+  "Ferdinand Bauer"
+ ],
+ "d-191-p-0": [
+  "191",
+  "property",
+  "creator"
+ ],
+ "d-191-p-1": [
+  "191",
+  "property",
+  "depicts"
+ ],
+ "d-1372-e-0": [
+  "1372",
+  "entity",
+  "band"
+ ],
+ "d-1372-e-1": [
+  "1372",
+  "entity",
+  "heavy metal"
+ ],
+ "d-1372-p-0": [
+  "1372",
+  "property",
+  "instance of"
+ ],
+ "d-1372-p-1": [
+  "1372",
+  "property",
+  "genre"
+ ],
+ "d-1372-p-3": [
+  "1372",
+  "property",
+  "subclass of"
+ ],
+ "d-428-e-0": [
+  "428",
+  "entity",
+  "scholarly article"
+ ],
+ "d-428-p-0": [
+  "428",
+  "property",
+  "instance of"
+ ],
+ "d-428-p-1": [
+  "428",
+  "property",
+  "title"
+ ],
+ "d-1968-e-0": [
+  "1968",
+  "entity",
+  "George Washington"
+ ],
+ "d-1968-p-0": [
+  "1968",
+  "property",
+  "father"
+ ],
+ "d-270-e-0": [
+  "270",
+  "entity",
+  "Ashmolean Museum"
+ ],
+ "d-270-e-1": [
+  "270",
+  "entity",
+  "Bodleian Library"
+ ],
+ "d-270-e-2": [
+  "270",
+  "entity",
+  "Pitt Rivers Museum"
+ ],
+ "d-270-e-3": [
+  "270",
+  "entity",
+  "History of Science Museum"
+ ],
+ "d-270-p-1": [
+  "270",
+  "property",
+  "collection"
+ ],
+ "d-1986-e-0": [
+  "1986",
+  "entity",
+  "street"
+ ],
+ "d-1986-e-1": [
+  "1986",
+  "entity",
+  "Leiden"
+ ],
+ "d-1986-p-0": [
+  "1986",
+  "property",
+  "instance of"
+ ],
+ "d-2246-e-0": [
+  "2246",
+  "entity",
+  "idiom"
+ ],
+ "d-2246-e-1": [
+  "2246",
+  "entity",
+  "Danish"
+ ],
+ "d-2246-p-0": [
+  "2246",
+  "property",
+  "instance of"
+ ],
+ "d-2048-e-0": [
+  "2048",
+  "entity",
+  "Museum of Modern Art"
+ ],
+ "d-2048-e-1": [
+  "2048",
+  "entity",
+  "museum"
+ ],
+ "d-2048-p-1": [
+  "2048",
+  "property",
+  "instance of"
+ ],
+ "d-2048-p-2": [
+  "2048",
+  "property",
+  "subclass of"
+ ],
+ "d-385-e-0": [
+  "385",
+  "entity",
+  "Johann Sebastian Bach"
+ ],
+ "d-385-p-0": [
+  "385",
+  "property",
+  "child"
+ ],
+ "d-2457-e-0": [
+  "2457",
+  "entity",
+  "medieval university"
+ ],
+ "d-2457-p-0": [
+  "2457",
+  "property",
+  "instance of"
+ ],
+ "d-2457-p-1": [
+  "2457",
+  "property",
+  "inception"
+ ],
+ "d-1249-e-0": [
+  "1249",
+  "entity",
+  "pirate"
+ ],
+ "d-1249-p-0": [
+  "1249",
+  "property",
+  "occupation"
+ ],
+ "d-1249-p-2": [
+  "1249",
+  "property",
+  "image"
+ ],
+ "d-552-e-0": [
+  "552",
+  "entity",
+  "river"
+ ],
+ "d-552-e-1": [
+  "552",
+  "entity",
+  "Antarctica"
+ ],
+ "d-552-p-0": [
+  "552",
+  "property",
+  "instance of"
+ ],
+ "d-156-e-0": [
+  "156",
+  "entity",
+  "Mammal"
+ ],
+ "d-2073-p-0": [
+  "2073",
+  "property",
+  "instance of"
+ ],
+ "d-2478-e-0": [
+  "2478",
+  "entity",
+  "country"
+ ],
+ "d-2478-p-0": [
+  "2478",
+  "property",
+  "instance of"
+ ],
+ "d-2150-e-0": [
+  "2150",
+  "entity",
+  "Australia"
+ ],
+ "d-2150-p-0": [
+  "2150",
+  "property",
+  "main subject"
+ ],
+ "d-2150-p-2": [
+  "2150",
+  "property",
+  "author"
+ ],
+ "d-234-e-0": [
+  "234",
+  "entity",
+  "manuscript"
+ ],
+ "d-234-p-0": [
+  "234",
+  "property",
+  "instance of"
+ ],
+ "d-234-p-1": [
+  "234",
+  "property",
+  "collection"
+ ],
+ "d-1068-e-0": [
+  "1068",
+  "entity",
+  "Austria"
+ ],
+ "d-1068-e-1": [
+  "1068",
+  "entity",
+  "German"
+ ],
+ "d-1068-p-0": [
+  "1068",
+  "property",
+  "language used"
+ ],
+ "d-1551-e-0": [
+  "1551",
+  "entity",
+  "Howard University College of Medicine"
+ ],
+ "d-1551-e-1": [
+  "1551",
+  "entity",
+  "female"
+ ],
+ "d-1551-e-2": [
+  "1551",
+  "entity",
+  "physician"
+ ],
+ "d-1551-p-2": [
+  "1551",
+  "property",
+  "occupation"
+ ],
+ "d-2750-e-0": [
+  "2750",
+  "entity",
+  "disaster"
+ ],
+ "d-2750-p-0": [
+  "2750",
+  "property",
+  "instance of"
+ ],
+ "d-2750-p-1": [
+  "2750",
+  "property",
+  "subclass of"
+ ],
+ "d-464-e-0": [
+  "464",
+  "entity",
+  "human"
+ ],
+ "d-464-p-0": [
+  "464",
+  "property",
+  "instance of"
+ ],
+ "d-1049-e-0": [
+  "1049",
+  "entity",
+  "malware"
+ ],
+ "d-1049-p-0": [
+  "1049",
+  "property",
+  "subclass of"
+ ],
+ "d-1821-e-0": [
+  "1821",
+  "entity",
+  "civil parish in England"
+ ],
+ "d-1821-p-0": [
+  "1821",
+  "property",
+  "instance of"
+ ],
+ "d-961-e-0": [
+  "961",
+  "entity",
+  "Brittany"
+ ],
+ "d-993-p-0": [
+  "993",
+  "property",
+  "position held"
+ ],
+ "d-993-p-1": [
+  "993",
+  "property",
+  "end time"
+ ],
+ "d-2513-e-0": [
+  "2513",
+  "entity",
+  "country"
+ ],
+ "d-2513-e-1": [
+  "2513",
+  "entity",
+  "Russia"
+ ],
+ "d-2513-p-0": [
+  "2513",
+  "property",
+  "instance of"
+ ],
+ "d-2513-p-2": [
+  "2513",
+  "property",
+  "population"
+ ],
+ "d-683-e-0": [
+  "683",
+  "entity",
+  "sculpture"
+ ],
+ "d-683-e-1": [
+  "683",
+  "entity",
+  "Max Bill"
+ ],
+ "d-683-p-0": [
+  "683",
+  "property",
+  "instance of"
+ ],
+ "d-683-p-1": [
+  "683",
+  "property",
+  "creator"
+ ],
+ "d-868-e-0": [
+  "868",
+  "entity",
+  "suicide attack"
+ ],
+ "d-868-p-0": [
+  "868",
+  "property",
+  "instance of"
+ ],
+ "d-868-p-1": [
+  "868",
+  "property",
+  "location"
+ ],
+ "d-2200-e-0": [
+  "2200",
+  "entity",
+  "musician"
+ ],
+ "d-2200-e-1": [
+  "2200",
+  "entity",
+  "female"
+ ],
+ "d-2200-e-2": [
+  "2200",
+  "entity",
+  "Nigeria"
+ ],
+ "d-2200-p-0": [
+  "2200",
+  "property",
+  "occupation"
+ ],
+ "d-703-e-0": [
+  "703",
+  "entity",
+  "brewery"
+ ],
+ "d-703-e-1": [
+  "703",
+  "entity",
+  "Germany"
+ ],
+ "d-703-p-0": [
+  "703",
+  "property",
+  "instance of"
+ ],
+ "d-703-p-1": [
+  "703",
+  "property",
+  "country"
+ ],
+ "d-1518-e-0": [
+  "1518",
+  "entity",
+  "scholarly article"
+ ],
+ "d-1518-p-0": [
+  "1518",
+  "property",
+  "instance of"
+ ],
+ "d-1518-p-1": [
+  "1518",
+  "property",
+  "author"
+ ],
+ "d-1345-e-0": [
+  "1345",
+  "entity",
+  "painting"
+ ],
+ "d-1345-p-0": [
+  "1345",
+  "property",
+  "instance of"
+ ],
+ "d-1345-p-1": [
+  "1345",
+  "property",
+  "collection"
+ ],
+ "d-1345-p-2": [
+  "1345",
+  "property",
+  "height"
+ ],
+ "d-1345-p-3": [
+  "1345",
+  "property",
+  "width"
+ ],
+ "d-286-e-0": [
+  "286",
+  "entity",
+  "Confucius"
+ ],
+ "d-2709-e-0": [
+  "2709",
+  "entity",
+  "Mastodon instance"
+ ],
+ "d-2709-p-0": [
+  "2709",
+  "property",
+  "instance of"
+ ],
+ "d-622-e-0": [
+  "622",
+  "entity",
+  "President of the United States"
+ ],
+ "d-622-p-0": [
+  "622",
+  "property",
+  "position held"
+ ],
+ "d-2350-e-0": [
+  "2350",
+  "entity",
+  "tautonym"
+ ],
+ "d-1172-e-0": [
+  "1172",
+  "entity",
+  "emulator"
+ ],
+ "d-1172-p-0": [
+  "1172",
+  "property",
+  "instance of"
+ ],
+ "d-1172-p-1": [
+  "1172",
+  "property",
+  "platform"
+ ],
+ "d-1337-e-0": [
+  "1337",
+  "entity",
+  "human"
+ ],
+ "d-1337-p-0": [
+  "1337",
+  "property",
+  "instance of"
+ ],
+ "d-1395-e-0": [
+  "1395",
+  "entity",
+  "metro station"
+ ],
+ "d-1395-e-1": [
+  "1395",
+  "entity",
+  "Germany"
+ ],
+ "d-1395-p-0": [
+  "1395",
+  "property",
+  "instance of"
+ ],
+ "d-1395-p-1": [
+  "1395",
+  "property",
+  "country"
+ ],
+ "d-1395-p-2": [
+  "1395",
+  "property",
+  "image"
+ ],
+ "d-209-e-0": [
+  "209",
+  "entity",
+  "collection"
+ ],
+ "d-209-p-0": [
+  "209",
+  "property",
+  "instance of"
+ ],
+ "d-2272-e-0": [
+  "2272",
+  "entity",
+  "John the Baptist"
+ ],
+ "d-2626-e-0": [
+  "2626",
+  "entity",
+  "Swedish"
+ ],
+ "d-2626-e-1": [
+  "2626",
+  "entity",
+  "verb"
+ ],
+ "d-1000-e-0": [
+  "1000",
+  "entity",
+  "National Register of Historic Places"
+ ],
+ "d-1000-e-1": [
+  "1000",
+  "entity",
+  "United States of America"
+ ],
+ "d-1000-p-1": [
+  "1000",
+  "property",
+  "country"
+ ],
+ "d-1635-e-0": [
+  "1635",
+  "entity",
+  "pride parade"
+ ],
+ "d-1635-e-1": [
+  "1635",
+  "entity",
+  "Italy"
+ ],
+ "d-1635-p-0": [
+  "1635",
+  "property",
+  "instance of"
+ ],
+ "d-1635-p-1": [
+  "1635",
+  "property",
+  "country"
+ ],
+ "d-1282-p-0": [
+  "1282",
+  "property",
+  "performer"
+ ],
+ "d-14-e-0": [
+  "14",
+  "entity",
+  "Nobel Memorial Prize in Economic Sciences"
+ ],
+ "d-172-e-0": [
+  "172",
+  "entity",
+  "chemical element"
+ ],
+ "d-172-p-0": [
+  "172",
+  "property",
+  "instance of"
+ ],
+ "d-708-e-0": [
+  "708",
+  "entity",
+  "scholarly article"
+ ],
+ "d-708-p-0": [
+  "708",
+  "property",
+  "instance of"
+ ],
+ "d-708-p-1": [
+  "708",
+  "property",
+  "title"
+ ],
+ "d-2362-e-0": [
+  "2362",
+  "entity",
+  "human"
+ ],
+ "d-2362-e-1": [
+  "2362",
+  "entity",
+  "writer"
+ ],
+ "d-2362-e-2": [
+  "2362",
+  "entity",
+  "South America"
+ ],
+ "d-2362-e-3": [
+  "2362",
+  "entity",
+  "Wikidata"
+ ],
+ "d-2362-p-0": [
+  "2362",
+  "property",
+  "instance of"
+ ],
+ "d-2362-p-1": [
+  "2362",
+  "property",
+  "occupation"
+ ],
+ "d-2362-p-5": [
+  "2362",
+  "property",
+  "author"
+ ],
+ "d-2362-p-6": [
+  "2362",
+  "property",
+  "published in"
+ ],
+ "d-509-e-0": [
+  "509",
+  "entity",
+  "sovereign state"
+ ],
+ "d-509-p-0": [
+  "509",
+  "property",
+  "instance of"
+ ],
+ "d-509-p-1": [
+  "509",
+  "property",
+  "demonym"
+ ],
+ "d-1864-p-0": [
+  "1864",
+  "property",
+  "instance of"
+ ],
+ "d-2402-e-0": [
+  "2402",
+  "entity",
+  "Mauthausen concentration camp"
+ ],
+ "d-1911-e-0": [
+  "1911",
+  "entity",
+  "researcher"
+ ],
+ "d-1911-e-1": [
+  "1911",
+  "entity",
+  "Native Americans in the United States"
+ ],
+ "d-1911-p-0": [
+  "1911",
+  "property",
+  "occupation"
+ ],
+ "d-1911-p-2": [
+  "1911",
+  "property",
+  "subclass of"
+ ],
+ "d-2369-e-0": [
+  "2369",
+  "entity",
+  "military operation"
+ ],
+ "d-2369-p-0": [
+  "2369",
+  "property",
+  "instance of"
+ ],
+ "d-1234-e-0": [
+  "1234",
+  "entity",
+  "human"
+ ],
+ "d-1234-p-0": [
+  "1234",
+  "property",
+  "instance of"
+ ],
+ "d-2664-e-0": [
+  "2664",
+  "entity",
+  "song"
+ ],
+ "d-2664-e-1": [
+  "2664",
+  "entity",
+  "Elizabeth II"
+ ],
+ "d-2664-p-0": [
+  "2664",
+  "property",
+  "instance of"
+ ],
+ "d-2664-p-1": [
+  "2664",
+  "property",
+  "main subject"
+ ],
+ "d-1981-e-0": [
+  "1981",
+  "entity",
+  "writer"
+ ],
+ "d-1981-p-1": [
+  "1981",
+  "property",
+  "occupation"
+ ],
+ "d-2479-e-0": [
+  "2479",
+  "entity",
+  "National Women's Football League"
+ ],
+ "d-2479-p-0": [
+  "2479",
+  "property",
+  "league"
+ ],
+ "d-2619-e-0": [
+  "2619",
+  "entity",
+  "taxon"
+ ],
+ "d-2619-e-1": [
+  "2619",
+  "entity",
+  "Esp\u00edrito Santo"
+ ],
+ "d-2619-p-0": [
+  "2619",
+  "property",
+  "instance of"
+ ],
+ "d-824-e-0": [
+  "824",
+  "entity",
+  "meme"
+ ],
+ "d-824-p-0": [
+  "824",
+  "property",
+  "instance of"
+ ],
+ "d-824-p-1": [
+  "824",
+  "property",
+  "subclass of"
+ ],
+ "d-2220-e-0": [
+  "2220",
+  "entity",
+  "chemical element"
+ ],
+ "d-2220-p-0": [
+  "2220",
+  "property",
+  "instance of"
+ ],
+ "d-388-e-0": [
+  "388",
+  "entity",
+  "Johann Sebastian Bach"
+ ],
+ "d-388-p-0": [
+  "388",
+  "property",
+  "father"
+ ],
+ "d-388-p-1": [
+  "388",
+  "property",
+  "mother"
+ ],
+ "d-2501-e-0": [
+  "2501",
+  "entity",
+  "human"
+ ],
+ "d-2501-e-1": [
+  "2501",
+  "entity",
+  "The New York Times"
+ ],
+ "d-2501-e-2": [
+  "2501",
+  "entity",
+  "journalist"
+ ],
+ "d-2501-p-0": [
+  "2501",
+  "property",
+  "instance of"
+ ],
+ "d-2501-p-1": [
+  "2501",
+  "property",
+  "employer"
+ ],
+ "d-2501-p-2": [
+  "2501",
+  "property",
+  "occupation"
+ ],
+ "d-832-e-0": [
+  "832",
+  "entity",
+  "taxon"
+ ],
+ "d-832-p-0": [
+  "832",
+  "property",
+  "instance of"
+ ],
+ "d-2021-e-0": [
+  "2021",
+  "entity",
+  "Horizon 2020"
+ ],
+ "d-2021-e-1": [
+  "2021",
+  "entity",
+  "Netherlands"
+ ],
+ "d-2021-p-0": [
+  "2021",
+  "property",
+  "funded by"
+ ],
+ "d-2021-p-1": [
+  "2021",
+  "property",
+  "country"
+ ],
+ "d-2021-p-3": [
+  "2021",
+  "property",
+  "start time"
+ ],
+ "d-1108-e-0": [
+  "1108",
+  "entity",
+  "weather satellite"
+ ],
+ "d-1108-p-0": [
+  "1108",
+  "property",
+  "instance of"
+ ],
+ "d-1137-e-0": [
+  "1137",
+  "entity",
+  "first-level administrative country subdivision"
+ ],
+ "d-1137-p-0": [
+  "1137",
+  "property",
+  "instance of"
+ ],
+ "d-1137-p-1": [
+  "1137",
+  "property",
+  "population"
+ ],
+ "d-1804-p-1": [
+  "1804",
+  "property",
+  "father"
+ ],
+ "d-1804-p-2": [
+  "1804",
+  "property",
+  "mother"
+ ],
+ "d-829-e-0": [
+  "829",
+  "entity",
+  "fictional planet"
+ ],
+ "d-829-p-0": [
+  "829",
+  "property",
+  "instance of"
+ ],
+ "d-787-e-0": [
+  "787",
+  "entity",
+  "public art"
+ ],
+ "d-787-e-1": [
+  "787",
+  "entity",
+  "Paris"
+ ],
+ "d-787-p-0": [
+  "787",
+  "property",
+  "instance of"
+ ],
+ "d-787-p-1": [
+  "787",
+  "property",
+  "location"
+ ],
+ "d-2483-p-0": [
+  "2483",
+  "property",
+  "position held"
+ ],
+ "d-1808-e-0": [
+  "1808",
+  "entity",
+  "megalith"
+ ],
+ "d-1808-e-1": [
+  "1808",
+  "entity",
+  "tumulus"
+ ],
+ "d-1808-e-2": [
+  "1808",
+  "entity",
+  "department of France"
+ ],
+ "d-1808-e-3": [
+  "1808",
+  "entity",
+  "Morbihan"
+ ],
+ "d-1808-p-0": [
+  "1808",
+  "property",
+  "instance of"
+ ],
+ "d-1808-p-1": [
+  "1808",
+  "property",
+  "subclass of"
+ ],
+ "d-805-e-0": [
+  "805",
+  "entity",
+  "software"
+ ],
+ "d-805-p-0": [
+  "805",
+  "property",
+  "instance of"
+ ],
+ "d-805-p-1": [
+  "805",
+  "property",
+  "inception"
+ ],
+ "d-223-e-0": [
+  "223",
+  "entity",
+  "Cleveland Museum of Art"
+ ],
+ "d-223-p-0": [
+  "223",
+  "property",
+  "collection"
+ ],
+ "d-223-p-1": [
+  "223",
+  "property",
+  "image"
+ ],
+ "d-1537-e-0": [
+  "1537",
+  "entity",
+  "ambassador"
+ ],
+ "d-1537-e-1": [
+  "1537",
+  "entity",
+  "India"
+ ],
+ "d-1537-p-0": [
+  "1537",
+  "property",
+  "position held"
+ ],
+ "d-1537-p-1": [
+  "1537",
+  "property",
+  "subclass of"
+ ],
+ "d-935-e-0": [
+  "935",
+  "entity",
+  "infectious disease"
+ ],
+ "d-935-p-0": [
+  "935",
+  "property",
+  "instance of"
+ ],
+ "d-935-p-1": [
+  "935",
+  "property",
+  "subclass of"
+ ],
+ "d-1861-e-0": [
+  "1861",
+  "entity",
+  "mathematics"
+ ],
+ "d-1861-e-1": [
+  "1861",
+  "entity",
+  "computer science"
+ ],
+ "d-478-e-0": [
+  "478",
+  "entity",
+  "hospital"
+ ],
+ "d-478-p-0": [
+  "478",
+  "property",
+  "instance of"
+ ],
+ "d-842-e-0": [
+  "842",
+  "entity",
+  "fictional character"
+ ],
+ "d-842-p-0": [
+  "842",
+  "property",
+  "instance of"
+ ],
+ "d-842-p-1": [
+  "842",
+  "property",
+  "family name"
+ ],
+ "d-1459-e-0": [
+  "1459",
+  "entity",
+  "electoral result"
+ ],
+ "d-1459-p-0": [
+  "1459",
+  "property",
+  "instance of"
+ ],
+ "d-1459-p-2": [
+  "1459",
+  "property",
+  "electoral district"
+ ],
+ "d-1459-p-4": [
+  "1459",
+  "property",
+  "proportion"
+ ],
+ "d-2444-e-1": [
+  "2444",
+  "entity",
+  "John"
+ ],
+ "d-2444-p-0": [
+  "2444",
+  "property",
+  "instance of"
+ ],
+ "d-2444-p-1": [
+  "2444",
+  "property",
+  "said to be the same as"
+ ],
+ "d-2444-p-2": [
+  "2444",
+  "property",
+  "given name"
+ ],
+ "d-2371-e-0": [
+  "2371",
+  "entity",
+  "National Research Data Infrastructure"
+ ],
+ "d-2371-p-0": [
+  "2371",
+  "property",
+  "part of"
+ ],
+ "d-510-e-0": [
+  "510",
+  "entity",
+  "Hebrew"
+ ],
+ "d-510-e-1": [
+  "510",
+  "entity",
+  "noun"
+ ],
+ "d-510-e-2": [
+  "510",
+  "entity",
+  "masculine"
+ ],
+ "d-510-e-3": [
+  "510",
+  "entity",
+  "feminine"
+ ],
+ "d-510-p-0": [
+  "510",
+  "property",
+  "grammatical gender"
+ ],
+ "d-1404-e-0": [
+  "1404",
+  "entity",
+  "Autodesk Maya"
+ ],
+ "d-2669-e-0": [
+  "2669",
+  "entity",
+  "railway station"
+ ],
+ "d-2669-e-1": [
+  "2669",
+  "entity",
+  "United Kingdom"
+ ],
+ "d-2669-p-0": [
+  "2669",
+  "property",
+  "instance of"
+ ],
+ "d-2669-p-1": [
+  "2669",
+  "property",
+  "country"
+ ],
+ "d-1803-e-0": [
+  "1803",
+  "entity",
+  "restaurant"
+ ],
+ "d-1803-e-1": [
+  "1803",
+  "entity",
+  "Luxembourg"
+ ],
+ "d-1803-p-0": [
+  "1803",
+  "property",
+  "instance of"
+ ],
+ "d-1803-p-1": [
+  "1803",
+  "property",
+  "country"
+ ],
+ "d-1122-e-0": [
+  "1122",
+  "entity",
+  "obelisk"
+ ],
+ "d-1122-e-1": [
+  "1122",
+  "entity",
+  "Rome"
+ ],
+ "d-1122-p-0": [
+  "1122",
+  "property",
+  "instance of"
+ ],
+ "d-1786-e-0": [
+  "1786",
+  "entity",
+  "United Kingdom"
+ ],
+ "d-1786-e-1": [
+  "1786",
+  "entity",
+  "Wales"
+ ],
+ "d-1786-e-2": [
+  "1786",
+  "entity",
+  "GLAM"
+ ],
+ "d-1786-p-0": [
+  "1786",
+  "property",
+  "country"
+ ],
+ "d-1786-p-2": [
+  "1786",
+  "property",
+  "instance of"
+ ],
+ "d-1786-p-3": [
+  "1786",
+  "property",
+  "subclass of"
+ ],
+ "d-2110-e-0": [
+  "2110",
+  "entity",
+  "mathematician"
+ ],
+ "d-2110-p-0": [
+  "2110",
+  "property",
+  "occupation"
+ ],
+ "d-99-e-0": [
+  "99",
+  "entity",
+  "doctoral thesis"
+ ],
+ "d-99-e-1": [
+  "99",
+  "entity",
+  "University of Oxford"
+ ],
+ "d-99-p-0": [
+  "99",
+  "property",
+  "instance of"
+ ],
+ "d-99-p-2": [
+  "99",
+  "property",
+  "main subject"
+ ],
+ "d-1445-e-0": [
+  "1445",
+  "entity",
+  "unit of measurement"
+ ],
+ "d-1445-e-1": [
+  "1445",
+  "entity",
+  "Germany"
+ ],
+ "d-1445-p-0": [
+  "1445",
+  "property",
+  "instance of"
+ ],
+ "d-1445-p-1": [
+  "1445",
+  "property",
+  "subclass of"
+ ],
+ "d-1830-e-0": [
+  "1830",
+  "entity",
+  "scholarly article"
+ ],
+ "d-1830-e-1": [
+  "1830",
+  "entity",
+  "COVID-19"
+ ],
+ "d-1830-p-0": [
+  "1830",
+  "property",
+  "instance of"
+ ],
+ "d-1830-p-1": [
+  "1830",
+  "property",
+  "main subject"
+ ],
+ "d-2115-e-0": [
+  "2115",
+  "entity",
+  "Olympique de Marseille"
+ ],
+ "d-1962-p-0": [
+  "1962",
+  "property",
+  "position held"
+ ],
+ "d-1962-p-1": [
+  "1962",
+  "property",
+  "end time"
+ ],
+ "d-1083-e-0": [
+  "1083",
+  "entity",
+  "national flag"
+ ],
+ "d-1083-e-1": [
+  "1083",
+  "entity",
+  "Union Jack"
+ ],
+ "d-1083-p-0": [
+  "1083",
+  "property",
+  "instance of"
+ ],
+ "d-1083-p-1": [
+  "1083",
+  "property",
+  "depicts"
+ ],
+ "d-2206-e-0": [
+  "2206",
+  "entity",
+  "female"
+ ],
+ "d-2206-e-1": [
+  "2206",
+  "entity",
+  "human"
+ ],
+ "d-2206-p-1": [
+  "2206",
+  "property",
+  "instance of"
+ ],
+ "d-2574-e-0": [
+  "2574",
+  "entity",
+  "Mario"
+ ],
+ "d-2574-e-1": [
+  "2574",
+  "entity",
+  "fictional character"
+ ],
+ "d-2574-p-2": [
+  "2574",
+  "property",
+  "instance of"
+ ],
+ "d-853-e-0": [
+  "853",
+  "entity",
+  "country"
+ ],
+ "d-853-e-1": [
+  "853",
+  "entity",
+  "left"
+ ],
+ "d-853-p-0": [
+  "853",
+  "property",
+  "instance of"
+ ],
+ "d-1641-e-0": [
+  "1641",
+  "entity",
+  "mosquito"
+ ],
+ "d-1641-e-1": [
+  "1641",
+  "entity",
+  "species"
+ ],
+ "d-2114-e-0": [
+  "2114",
+  "entity",
+  "Dibrugarh"
+ ],
+ "d-2114-e-1": [
+  "2114",
+  "entity",
+  "railway station"
+ ],
+ "d-2114-p-1": [
+  "2114",
+  "property",
+  "instance of"
+ ],
+ "d-489-e-0": [
+  "489",
+  "entity",
+  "human"
+ ],
+ "d-489-p-0": [
+  "489",
+  "property",
+  "instance of"
+ ],
+ "d-2288-e-0": [
+  "2288",
+  "entity",
+  "Sweden"
+ ],
+ "d-1664-e-0": [
+  "1664",
+  "entity",
+  "France"
+ ],
+ "d-1664-p-0": [
+  "1664",
+  "property",
+  "language used"
+ ],
+ "d-2129-e-0": [
+  "2129",
+  "entity",
+  "train"
+ ],
+ "d-2129-p-0": [
+  "2129",
+  "property",
+  "instance of"
+ ],
+ "d-2129-p-1": [
+  "2129",
+  "property",
+  "starting point"
+ ],
+ "d-894-e-0": [
+  "894",
+  "entity",
+  "musical composition"
+ ],
+ "d-894-e-1": [
+  "894",
+  "entity",
+  "organ"
+ ],
+ "d-894-e-2": [
+  "894",
+  "entity",
+  "orchestra"
+ ],
+ "d-894-p-0": [
+  "894",
+  "property",
+  "instance of"
+ ],
+ "d-894-p-1": [
+  "894",
+  "property",
+  "subclass of"
+ ],
+ "d-894-p-2": [
+  "894",
+  "property",
+  "instrumentation"
+ ],
+ "d-1429-e-0": [
+  "1429",
+  "entity",
+  "film"
+ ],
+ "d-1429-p-0": [
+  "1429",
+  "property",
+  "instance of"
+ ],
+ "d-2191-e-1": [
+  "2191",
+  "entity",
+  "2016 Kerala Legislative Assembly election"
+ ],
+ "d-2191-p-0": [
+  "2191",
+  "property",
+  "instance of"
+ ],
+ "d-2191-p-1": [
+  "2191",
+  "property",
+  "position held"
+ ],
+ "d-2191-p-2": [
+  "2191",
+  "property",
+  "of"
+ ],
+ "d-626-e-0": [
+  "626",
+  "entity",
+  "European Union"
+ ],
+ "d-626-p-1": [
+  "626",
+  "property",
+  "population"
+ ],
+ "d-2697-e-0": [
+  "2697",
+  "entity",
+  "United States presidential election"
+ ],
+ "d-2697-p-0": [
+  "2697",
+  "property",
+  "instance of"
+ ],
+ "d-2697-p-2": [
+  "2697",
+  "property",
+  "winner"
+ ]
+}

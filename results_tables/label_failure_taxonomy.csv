@@ -1,0 +1,10 @@
+backbone,category,n,pct_of_unfindable,unique_labels,total_unfindable,unfindable_rate_pct,examples
+Qwen2.5-14B (open),near-miss wording,138,51.1,1645,270,16.4,crew member(s); significant achievement; is named after; archival institution
+Qwen2.5-14B (open),camelCase / RDF style,78,28.9,1645,270,16.4,locatedInTheAdministrativeTerritoryWithOfficialCode; dateDiscovered; locatedInTheAdministrativeTerritory; academicAdvisor
+Qwen2.5-14B (open),verbose paraphrase,34,12.6,1645,270,16.4,full work available at URL; product or material produced or service provided; list of constituencies for the election to the German Bundestag 2017; has clinical trial phase number
+Qwen2.5-14B (open),snake_case,8,3.0,1645,270,16.4,has_wikimedia_site; orbited_around; seed_used_in_orbit; mentioned_in_Early_Modern_Letters_Online
+Qwen2.5-14B (open),qualified / suffixed name,7,2.6,1645,270,16.4,has Wikipedia URL; external identifier; has Mastodon ID; has eBird URL
+Qwen2.5-14B (open),bare identifier,5,1.9,1645,270,16.4,P7; P9; P1773; P794
+frontier model,near-miss wording,15,65.2,687,23,3.3,Japanese folklore creature; member of; citation count; sitelinks
+frontier model,verbose paraphrase,5,21.7,687,23,3.3,term of the Parliament of the United Kingdom; COVID-19 pandemic in a geographic region; full work available at URL; national Red Cross or Red Crescent society
+frontier model,qualified / suffixed name,3,13.0,687,23,3.3,OpenRefine reconciliation endpoint URL; georeferenced with URL; Genealogics person ID

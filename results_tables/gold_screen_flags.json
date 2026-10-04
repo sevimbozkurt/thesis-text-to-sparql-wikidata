@@ -1,0 +1,641 @@
+[
+ {
+  "row": 14,
+  "question": "List the top 20 humans with the highest recorded weight.",
+  "rules": [
+   "H2 superlative question, gold has no ORDER BY"
+  ]
+ },
+ {
+  "row": 23,
+  "question": "List all hill forts in the Atlas with their names written in Irish.",
+  "rules": [
+   "H5 question asks for two things, gold projects one"
+  ]
+ },
+ {
+  "row": 28,
+  "question": "List all individuals who studied at the University of Oxford.",
+  "rules": [
+   "H1 asks for items, gold returns only a count"
+  ]
+ },
+ {
+  "row": 55,
+  "question": "List all things that have a first line.",
+  "rules": [
+   "H1 asks for items, gold returns only a count"
+  ]
+ },
+ {
+  "row": 67,
+  "question": "List all French municipalities with their corresponding banners.",
+  "rules": [
+   "H3 question names a nationality, gold has no country property"
+  ]
+ },
+ {
+  "row": 89,
+  "question": "What are the most common ingredients used in a sandwich?",
+  "rules": [
+   "H1 asks for items, gold returns only a count"
+  ]
+ },
+ {
+  "row": 98,
+  "question": "List French-speaking female writers with their signatures.",
+  "rules": [
+   "H3 question names a nationality, gold has no country property"
+  ]
+ },
+ {
+  "row": 109,
+  "question": "List all Wikidata properties with their IDs and descriptions.",
+  "rules": [
+   "H5 question asks for two things, gold projects one"
+  ]
+ },
+ {
+  "row": 126,
+  "question": "List Czech buildings that serve as both a place of worship and a fire station.",
+  "rules": [
+   "H3 question names a nationality, gold has no country property"
+  ]
+ },
+ {
+  "row": 127,
+  "question": "List all Mexican presidents with their signature images on Wikidata.",
+  "rules": [
+   "H3 question names a nationality, gold has no country property"
+  ]
+ },
+ {
+  "row": 128,
+  "question": "List all megaliths in the Basque Country with their coordinates.",
+  "rules": [
+   "H4 binds ?layer but never filters or projects it"
+  ]
+ },
+ {
+  "row": 134,
+  "question": "List all the settlements along the Way of Saint James in Basque Country.",
+  "rules": [
+   "H4 binds ?layer but never filters or projects it"
+  ]
+ },
+ {
+  "row": 135,
+  "question": "What are the English, Welsh and Scottish counties that share borders?",
+  "rules": [
+   "H3 question names a nationality, gold has no country property"
+  ]
+ },
+ {
+  "row": 137,
+  "question": "List the top 100 lexemes with their corresponding lemmas, ordered by frequency of compound parts.",
+  "rules": [
+   "H5 question asks for two things, gold projects one"
+  ]
+ },
+ {
+  "row": 145,
+  "question": "List the countries of origin for people affiliated with Ghana's top 3 traditional universities.",
+  "rules": [
+   "H1 asks for items, gold returns only a count",
+   "H2 superlative question, gold has no ORDER BY"
+  ]
+ },
+ {
+  "row": 147,
+  "question": "List the French towns that have a street in Paris named after them.",
+  "rules": [
+   "H3 question names a nationality, gold has no country property"
+  ]
+ },
+ {
+  "row": 148,
+  "question": "Show me a map of German states with links to iNaturalist observations.",
+  "rules": [
+   "H3 question names a nationality, gold has no country property",
+   "H4 binds ?rgb but never filters or projects it"
+  ]
+ },
+ {
+  "row": 153,
+  "question": "List all winners of the FSF Award for the Advancement of Free Software along with their images.",
+  "rules": [
+   "H5 question asks for two things, gold projects one"
+  ]
+ },
+ {
+  "row": 159,
+  "question": "List the countries with the most metal bands.",
+  "rules": [
+   "H1 asks for items, gold returns only a count",
+   "H2 superlative question, gold has no ORDER BY"
+  ]
+ },
+ {
+  "row": 166,
+  "question": "List countries with featured articles on Russian Wikipedia.",
+  "rules": [
+   "H3 question names a nationality, gold has no country property"
+  ]
+ },
+ {
+  "row": 167,
+  "question": "List all fortifications related to the Dutch East India Company (VOC) and the Dutch West India Company (WIC).",
+  "rules": [
+   "H3 question names a nationality, gold has no country property"
+  ]
+ },
+ {
+  "row": 182,
+  "question": "List German movie titles that imply someone or something doesn't answer.",
+  "rules": [
+   "H3 question names a nationality, gold has no country property"
+  ]
+ },
+ {
+  "row": 199,
+  "question": "Show a bubble chart of occupations held by people affiliated with the University of Clermont.",
+  "rules": [
+   "H1 asks for items, gold returns only a count"
+  ]
+ },
+ {
+  "row": 223,
+  "question": "List all Indian districts that share a border with another district.",
+  "rules": [
+   "H3 question names a nationality, gold has no country property"
+  ]
+ },
+ {
+  "row": 238,
+  "question": "List the actors who have worked with Shah Rukh Khan in multiple films.",
+  "rules": [
+   "H1 asks for items, gold returns only a count"
+  ]
+ },
+ {
+  "row": 240,
+  "question": "What language do the labels of Q137 and Q12518 have in common?",
+  "rules": [
+   "H4 computes ?label1 as a flag but never filters on it"
+  ]
+ },
+ {
+  "row": 261,
+  "question": "List the countries with their corresponding number of coronavirus cases.",
+  "rules": [
+   "H4 computes ?nr_causes as a flag but never filters on it",
+   "H5 question asks for two things, gold projects one"
+  ]
+ },
+ {
+  "row": 266,
+  "question": "Find scholarly articles with 'Zika' in their title.",
+  "rules": [
+   "H4 binds ?searchfor but never filters or projects it"
+  ]
+ },
+ {
+  "row": 273,
+  "question": "List the identifiers present on Penelope Cruz's item but not on Sean Connery's.",
+  "rules": [
+   "H4 binds ?comparewith but never filters or projects it"
+  ]
+ },
+ {
+  "row": 276,
+  "question": "List the longest English words in alphabetical order.",
+  "rules": [
+   "H4 binds ?language but never filters or projects it"
+  ]
+ },
+ {
+  "row": 277,
+  "question": "List all Welsh journals and newspapers with their publication dates and places.",
+  "rules": [
+   "H3 question names a nationality, gold has no country property",
+   "H4 computes ?decade as a flag but never filters on it"
+  ]
+ },
+ {
+  "row": 296,
+  "question": "List all statues in the UK that depict women or nobles.",
+  "rules": [
+   "H4 computes ?female as a flag but never filters on it"
+  ]
+ },
+ {
+  "row": 300,
+  "question": "List all Swiss films along with their duration in minutes and release date.",
+  "rules": [
+   "H3 question names a nationality, gold has no country property"
+  ]
+ },
+ {
+  "row": 302,
+  "question": "List all Czech art collections with their sizes.",
+  "rules": [
+   "H4 computes ?percentage_online as a flag but never filters on it"
+  ]
+ },
+ {
+  "row": 304,
+  "question": "Show me a map of Italian cities with schools, highlighting areas with high school density.",
+  "rules": [
+   "H3 question names a nationality, gold has no country property",
+   "H4 computes ?ratio as a flag but never filters on it"
+  ]
+ },
+ {
+  "row": 313,
+  "question": "Find online travel stories with French texts and map the locations mentioned.",
+  "rules": [
+   "H3 question names a nationality, gold has no country property"
+  ]
+ },
+ {
+  "row": 322,
+  "question": "Show me a map of medical facilities in Kalimpong district, India, with different colors for each type.",
+  "rules": [
+   "H4 binds ?layer but never filters or projects it"
+  ]
+ },
+ {
+  "row": 326,
+  "question": "List all buildings with coordinates and at least one sitelink.",
+  "rules": [
+   "H2 superlative question, gold has no ORDER BY"
+  ]
+ },
+ {
+  "row": 329,
+  "question": "Find the route of The Antartic Circumpolar Voyage expedition.",
+  "rules": [
+   "H4 binds ?rgb but never filters or projects it"
+  ]
+ },
+ {
+  "row": 332,
+  "question": "List the languages of poems and their first lines.",
+  "rules": [
+   "H1 asks for items, gold returns only a count"
+  ]
+ },
+ {
+  "row": 334,
+  "question": "List the occupations of people born in New Zealand, ranked by popularity.",
+  "rules": [
+   "H1 asks for items, gold returns only a count"
+  ]
+ },
+ {
+  "row": 338,
+  "question": "What are the COVID-19 cases in different Indian states?",
+  "rules": [
+   "H4 computes ?cases as a flag but never filters on it"
+  ]
+ },
+ {
+  "row": 343,
+  "question": "List the awards with the highest percentage of female recipients.",
+  "rules": [
+   "H4 computes ?gender as a flag but never filters on it"
+  ]
+ },
+ {
+  "row": 344,
+  "question": "List the names of fictional characters created by French authors.",
+  "rules": [
+   "H4 binds ?language but never filters or projects it"
+  ]
+ },
+ {
+  "row": 345,
+  "question": "List names similar to Filaret.",
+  "rules": [
+   "H4 computes ?count as a flag but never filters on it"
+  ]
+ },
+ {
+  "row": 347,
+  "question": "List all World Snooker Champions along with their total number of wins.",
+  "rules": [
+   "H4 computes ?wins as a flag but never filters on it"
+  ]
+ },
+ {
+  "row": 351,
+  "question": "List the people buried at Pere Lachaise Cemetery along with their birthplace and date of birth.",
+  "rules": [
+   "H4 computes ?bd as a flag but never filters on it"
+  ]
+ },
+ {
+  "row": 352,
+  "question": "List all Swedish forms without examples.",
+  "rules": [
+   "H3 question names a nationality, gold has no country property"
+  ]
+ },
+ {
+  "row": 354,
+  "question": "What percentage of Nobel Prize winners are women?",
+  "rules": [
+   "H4 computes ?gender as a flag but never filters on it"
+  ]
+ },
+ {
+  "row": 360,
+  "question": "Find the railway stations between Dibrugarh and Scottish Highlands with the fewest stops.",
+  "rules": [
+   "H3 question names a nationality, gold has no country property"
+  ]
+ },
+ {
+  "row": 361,
+  "question": "Show me a map of people buried in Pere Lachaise Cemetery organized by their place of birth.",
+  "rules": [
+   "H4 computes ?bd as a flag but never filters on it"
+  ]
+ },
+ {
+  "row": 363,
+  "question": "List the languages with the most examples in Wikidata's lexicographical data.",
+  "rules": [
+   "H1 asks for items, gold returns only a count"
+  ]
+ },
+ {
+  "row": 369,
+  "question": "List the names of English monarchs and their causes of death.",
+  "rules": [
+   "H1 asks for items, gold returns only a count"
+  ]
+ },
+ {
+  "row": 373,
+  "question": "What are the artworks in the Khalili Collections that have images?",
+  "rules": [
+   "H1 asks for items, gold returns only a count"
+  ]
+ },
+ {
+  "row": 378,
+  "question": "List all Nobel Prize categories by gender of the winners.",
+  "rules": [
+   "H1 asks for items, gold returns only a count"
+  ]
+ },
+ {
+  "row": 388,
+  "question": "List the properties used in instances of public libraries along with their frequency.",
+  "rules": [
+   "H5 question asks for two things, gold projects one"
+  ]
+ },
+ {
+  "row": 393,
+  "question": "List song titles that are also female given names.",
+  "rules": [
+   "H4 binds ?note but never filters or projects it"
+  ]
+ },
+ {
+  "row": 402,
+  "question": "What are the most gender-imbalanced occupations in the US?",
+  "rules": [
+   "H4 binds ?country but never filters or projects it"
+  ]
+ },
+ {
+  "row": 421,
+  "question": "What are the professions of people whose works are kept in the Musee de Bretagne, categorized by gender?",
+  "rules": [
+   "H4 computes ?gender as a flag but never filters on it"
+  ]
+ },
+ {
+  "row": 422,
+  "question": "What is the average height of male figure skaters in each discipline?",
+  "rules": [
+   "H1 asks for items, gold returns only a count"
+  ]
+ },
+ {
+  "row": 424,
+  "question": "List the occupations of authors who have written scholarly articles.",
+  "rules": [
+   "H1 asks for items, gold returns only a count"
+  ]
+ },
+ {
+  "row": 426,
+  "question": "List the number of punk bands from each region in Indonesia.",
+  "rules": [
+   "H1 asks for items, gold returns only a count"
+  ]
+ },
+ {
+  "row": 428,
+  "question": "List all ancient Greek pottery items stored in Museum St-Raymond, France.",
+  "rules": [
+   "H3 question names a nationality, gold has no country property"
+  ]
+ },
+ {
+  "row": 444,
+  "question": "List languages with less than 10 lexemes without statements or senses.",
+  "rules": [
+   "H4 binds ?pc but never filters or projects it"
+  ]
+ },
+ {
+  "row": 447,
+  "question": "List all Italian ministers who served in multiple cabinets since 1990.",
+  "rules": [
+   "H3 question names a nationality, gold has no country property"
+  ]
+ },
+ {
+  "row": 452,
+  "question": "Find French occupation-related words with their grammatical gender.",
+  "rules": [
+   "H3 question names a nationality, gold has no country property"
+  ]
+ },
+ {
+  "row": 454,
+  "question": "List all composers along with their most frequently used tonalities.",
+  "rules": [
+   "H5 question asks for two things, gold projects one"
+  ]
+ },
+ {
+  "row": 458,
+  "question": "List all railway stations in the Netherlands with their connections.",
+  "rules": [
+   "H5 question asks for two things, gold projects one"
+  ]
+ },
+ {
+  "row": 463,
+  "question": "List all natural numbers from 1 to 2000.",
+  "rules": [
+   "H4 binds ?end but never filters or projects it"
+  ]
+ },
+ {
+  "row": 478,
+  "question": "What are the most common first names among people born in Auvergne?",
+  "rules": [
+   "H1 asks for items, gold returns only a count",
+   "H2 superlative question, gold has no ORDER BY"
+  ]
+ },
+ {
+  "row": 479,
+  "question": "What materials were used in the most paintings?",
+  "rules": [
+   "H2 superlative question, gold has no ORDER BY"
+  ]
+ },
+ {
+  "row": 482,
+  "question": "What are the most common election days in different countries?",
+  "rules": [
+   "H4 binds ?offsetInt but never filters or projects it"
+  ]
+ },
+ {
+  "row": 484,
+  "question": "What are the most common Roman praenomina?",
+  "rules": [
+   "H2 superlative question, gold has no ORDER BY"
+  ]
+ },
+ {
+  "row": 486,
+  "question": "List all landlocked countries that share a border with a coastal country.",
+  "rules": [
+   "H4 computes ?switch as a flag but never filters on it"
+  ]
+ },
+ {
+  "row": 491,
+  "question": "What are the screenwriting credits of Donald P. Bellisario?",
+  "rules": [
+   "H4 binds ?credit but never filters or projects it"
+  ]
+ },
+ {
+  "row": 494,
+  "question": "List US companies founded by people or their parents born outside the US.",
+  "rules": [
+   "H1 asks for items, gold returns only a count"
+  ]
+ },
+ {
+  "row": 505,
+  "question": "List female dancers and choreographers with an English Wikipedia article but not a French one.",
+  "rules": [
+   "H3 question names a nationality, gold has no country property"
+  ]
+ },
+ {
+  "row": 507,
+  "question": "List all lighthouses in South America along with their coordinates.",
+  "rules": [
+   "H4 computes ?functional as a flag but never filters on it"
+  ]
+ },
+ {
+  "row": 511,
+  "question": "Show me a map of French municipalities with homonymous names connected by lines based on their distance.",
+  "rules": [
+   "H3 question names a nationality, gold has no country property"
+  ]
+ },
+ {
+  "row": 512,
+  "question": "Show me a map of places with their standard English and Welsh spellings.",
+  "rules": [
+   "H3 question names a nationality, gold has no country property"
+  ]
+ },
+ {
+  "row": 521,
+  "question": "Show me a map of medical facilities in Murshidabad district, India, with different colors for each type.",
+  "rules": [
+   "H4 binds ?layer but never filters or projects it"
+  ]
+ },
+ {
+  "row": 527,
+  "question": "Show me a map of Wales with the percentage of Welsh speakers in each region.",
+  "rules": [
+   "H3 question names a nationality, gold has no country property",
+   "H4 binds ?2011_percent but never filters or projects it"
+  ]
+ },
+ {
+  "row": 529,
+  "question": "List all street names in Berlin that have multiple occurrences.",
+  "rules": [
+   "H1 asks for items, gold returns only a count"
+  ]
+ },
+ {
+  "row": 532,
+  "question": "List the Danish monarchs along with their places and dates of death.",
+  "rules": [
+   "H3 question names a nationality, gold has no country property"
+  ]
+ },
+ {
+  "row": 533,
+  "question": "What is the most specific taxonomic group that includes both Alocasia cuprea and Codiaeum variegatum?",
+  "rules": [
+   "H2 superlative question, gold has no ORDER BY"
+  ]
+ },
+ {
+  "row": 547,
+  "question": "List the moons of planets in our solar system and their namesakes.",
+  "rules": [
+   "H4 binds ?lightyears but never filters or projects it"
+  ]
+ },
+ {
+  "row": 550,
+  "question": "List all parties that had members elected in the February 1974 UK general election.",
+  "rules": [
+   "H4 computes ?party as a flag but never filters on it"
+  ]
+ },
+ {
+  "row": 552,
+  "question": "List all languages with their corresponding unique language codes used in lemmas.",
+  "rules": [
+   "H5 question asks for two things, gold projects one"
+  ]
+ },
+ {
+  "row": 554,
+  "question": "Show me a chart of astrolabes' diameters over time.",
+  "rules": [
+   "H4 computes ?unit as a flag but never filters on it"
+  ]
+ },
+ {
+  "row": 557,
+  "question": "What are the most common first names of current French members of Parliament?",
+  "rules": [
+   "H1 asks for items, gold returns only a count",
+   "H3 question names a nationality, gold has no country property"
+  ]
+ }
+]

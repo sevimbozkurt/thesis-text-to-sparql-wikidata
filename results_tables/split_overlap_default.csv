@@ -1,0 +1,6 @@
+official split (default configuration),working test rows,percent
+train,365,64.4
+test,95,16.8
+validation,24,4.2
+more than one split,6,1.1
+no counterpart,77,13.6

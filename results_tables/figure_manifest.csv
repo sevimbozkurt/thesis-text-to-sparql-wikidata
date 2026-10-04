@@ -1,0 +1,31 @@
+figure,thesis_section,shows,source_data
+fig_wikidata_model.pdf,2.2,the Wikidata statement model,--
+fig_method.pdf,4.1,the four moves of stage-wise diagnostic evaluation,--
+fig_pipeline.pdf,4.2,pipeline architecture and the two evaluation conditions,--
+fig_cascade_mechanism.pdf,4.5,the execution-guided cascade,--
+fig_splits.pdf,5.1,the two-split design,test.json; official_test.json
+fig_groundtruth.pdf,5.4,deriving linking ground truth from the benchmark,--
+fig_memorisation.pdf,6.10,structural similarity of generated queries,results_tables/memorisation_frontier.csv
+fig_wdql.pdf,6.10,construct prevalence vs real query logs,results_tables/wdql_construct_prevalence.csv
+fig_wdql_bysize.pdf,6.10,construct prevalence at matched query size,results_tables/wdql_construct_prevalence.csv
+fig_main_comparison.pdf,6.2,frozen models with and without the pipeline,results_tables/common_subset_metrics.csv
+fig_empty_rate.pdf,6.2,empty-result rate against accuracy,results_tables/empty_result_rate.csv
+fig_stage_funnel.pdf,6.3,stage-wise outcomes by complexity,results_e2e_clean.csv
+fig_gap_decomposition.pdf,6.3,what the 66.5-point gap is made of,results_tables/gap_decomposition.csv
+fig_linker_comparison.pdf,6.4,"entity linking F1, four paradigms, both splits",linker_comparison.csv
+fig_linker_pr.pdf,6.4,precision-recall signature per paradigm,linker_comparison.csv
+fig_linker_complexity.pdf,6.4,linking F1 by query complexity,linker_comparison.csv
+fig_linker_ci.pdf,6.4,linker F1 with bootstrap confidence intervals,results_tables/linker_confidence.csv
+fig_backbone.pdf,6.5,backbone dependence differs by stage,linker_comparison.csv; official_comparison.csv
+fig_label_failures.pdf,6.5,what the open model gets wrong when naming things,results_tables/label_failure_taxonomy.csv
+fig_constructs.pdf,6.6,"construct usage, gold against all runs",construct_analysis.csv
+fig_construct_agreement.pdf,6.6,agreement with gold on construct use,construct_analysis.csv
+fig_error_taxonomy.pdf,6.6,"error taxonomy, overall and by complexity",annotation_clean.csv
+fig_structural_predictors.pdf,6.6,gold-query features against achieved accuracy,complexity_features.csv
+fig_cross_model_agreement.pdf,6.6,cross-model agreement and hard-set features,agreement_analysis.csv
+fig_idiom_behaviour.pdf,6.7,what the idiom prompt changes in generated queries,construct_analysis.csv
+fig_prompt_arms.pdf,6.7,prompt arms: accuracy and effect with CIs,results_tables/significance_jaccard_entity.csv
+fig_cascade.pdf,6.8,selection strategies over diverse generations,results_tables/consensus_selection.csv
+fig_cascade_fallback.pdf,6.8,where the fallback fires and what it recovers,results_tables/consensus_robustness.txt
+fig_frozen_vs_finetuned.pdf,6.9,"frozen and fine-tuned systems, official split",official_comparison.py; results_tables/official_comparison.csv
+fig_candidate_ceiling.pdf,7.6,candidate ceiling before and after pool repair,candidates.json; candidates_expanded.json; gold_links.json

@@ -1,0 +1,26 @@
+\begin{table}[htbp]
+\centering
+\footnotesize
+\caption{Linking F1 with bootstrap confidence intervals.}
+\label{tab:app-linker-ci}
+\resizebox{\ifdim\width>\textwidth\textwidth\else\width\fi}{!}{%
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Linker or paired difference & F1 / difference & 95\% CI low & 95\% CI high \\ \midrule
+Reasoning (Opus 4.8) & 97.7 & 96.8 & 98.5 \\
+Reasoning (Qwen 14B) & 94.9 & 93.6 & 96.3 \\
+Reasoning (Qwen 7B) & 95.8 & 94.5 & 96.9 \\
+GLiNKER (bi-encoder) & 72.8 & 70.0 & 75.4 \\
+ELQ (fine-tuned) & 28.4 & 25.2 & 31.7 \\
+ReFinED (fine-tuned) & 26.6 & 23.2 & 29.8 \\
+First search result & 93.5 & 92.1 & 95.0 \\
+Reasoning (Opus 4.8) - GLiNKER (bi-encoder) & 24.9 & 22.3 & 27.7 \\
+Reasoning (Qwen 14B) - GLiNKER (bi-encoder) & 22.2 & 19.4 & 25.1 \\
+Reasoning (Qwen 7B) - GLiNKER (bi-encoder) & 23.0 & 20.3 & 25.8 \\
+Reasoning (Opus 4.8) - First search result & 4.1 & 2.7 & 5.6 \\
+Reasoning (Qwen 14B) - First search result & 1.4 & -0.4 & 3.1 \\
+Reasoning (Qwen 7B) - First search result & 2.2 & 0.6 & 3.9 \\
+\bottomrule
+\end{tabular}}
+\tabnote{$B = 2{,}000$ resamples over the 1,086 entity mentions every linker scored; the same resample is applied to all linkers on each draw.}
+\end{table}

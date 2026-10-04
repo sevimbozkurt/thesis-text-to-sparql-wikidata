@@ -1,0 +1,14 @@
+comparison,kind,estimate,ci_low,ci_high,n_mentions,bootstrap_B
+Reasoning (Opus 4.8),F1,97.7,96.8,98.5,1086,2000
+Reasoning (Qwen 14B),F1,94.9,93.6,96.3,1086,2000
+Reasoning (Qwen 7B),F1,95.8,94.5,96.9,1086,2000
+GLiNKER (bi-encoder),F1,72.8,70.0,75.4,1086,2000
+ELQ (fine-tuned),F1,28.4,25.2,31.7,1086,2000
+ReFinED (fine-tuned),F1,26.6,23.2,29.8,1086,2000
+First search result,F1,93.5,92.1,95.0,1086,2000
+Reasoning (Opus 4.8) - GLiNKER (bi-encoder),paired difference,24.9,22.3,27.7,1086,2000
+Reasoning (Qwen 14B) - GLiNKER (bi-encoder),paired difference,22.2,19.4,25.1,1086,2000
+Reasoning (Qwen 7B) - GLiNKER (bi-encoder),paired difference,23.0,20.3,25.8,1086,2000
+Reasoning (Opus 4.8) - First search result,paired difference,4.1,2.7,5.6,1086,2000
+Reasoning (Qwen 14B) - First search result,paired difference,1.4,-0.4,3.1,1086,2000
+Reasoning (Qwen 7B) - First search result,paired difference,2.2,0.6,3.9,1086,2000

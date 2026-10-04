@@ -1,0 +1,6 @@
+arm,unique_labels,overlap_with_baseline,accuracy_delta_pp,framing
+idiom guidance,762,0.727,+3.9,informative
+"schema evidence, verbose",914,0.383,-14.7,enumerative
+"schema evidence, targeted",921,0.382,-12.7,enumerative
+construct profile (X10),843,0.68,?,"informative, targeted"
+constrained vocab (X14),769,0.502,?,RESTRICTIVE

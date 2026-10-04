@@ -1,0 +1,11 @@
+ELQ entity catalogue (entity.jsonl): 5903527 entries, 672201 without a Wikidata ID
+
+official split: 454 of 627 distinct reference entities in the catalogue by ID = 72.4%
+working split: 445 of 649 distinct reference entities in the catalogue by ID = 68.6%
+
+official split, cross-check by current English Wikipedia title: 443 = 70.7%
+official split, without an English Wikipedia page: 104 = 16.6%
+sitelink lookups that failed after retries: 0
+
+(4 October 2026; catalogue streamed from dl.fbaipublicfiles.com/elq/entity.jsonl,
+Last-Modified 25 Aug 2020, 3,483,640,967 bytes; computed with elq_library_coverage.py)

@@ -1,0 +1,14 @@
+PROPERTY CEILING REPORT — 2766 property mentions
+
+old top-7 (as used)    2233/2766 =  80.7%   (simple 59/66 | medium 622/779 | complex 1552/1921)
+clean top-7            2146/2766 =  77.6%   (simple 60/66 | medium 618/779 | complex 1468/1921)
+clean top-20           2146/2766 =  77.6%   (simple 60/66 | medium 618/779 | complex 1468/1921)
+
+golds missing from OLD top-7 are now at:
+  still missing  311
+  rank 1-7       222
+
+Reading: many at rank 1-7 => the earlier property pools were affected by
+throttling, as the entity pools were, and property
+linking is re-run on the rate-limited pools. Many at rank 8-20 => a genuine depth effect.
+Mostly still missing => a real retrieval limit for properties.

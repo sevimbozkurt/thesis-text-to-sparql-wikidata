@@ -1,0 +1,726 @@
+index,complexity,question,gold_query,labeled_query,linked_query,generated_ok,fully_linked,executed,exec_error,jaccard,error_category,notes
+29,simple,List websites associated with projects in the Women's & Gender History DH list.,"SELECT ?item ?itemLabel ?official_website WHERE {
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+?item wdt:P1343 wd:Q76510930.
+OPTIONAL { ?item wdt:P856 ?official_website. }
+}
+ORDER BY ASC(?itemLabel)","SELECT DISTINCT ?project ?projectLabel ?website WHERE {
+  ?project wdt:[property:part of the series] wd:[entity:Women's & Gender History DH list] .
+  OPTIONAL { ?project wdt:[property:official website] ?website . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}","SELECT DISTINCT ?project ?projectLabel ?website WHERE {
+  ?project wdt:P179 wd:Q76510930 .
+  OPTIONAL { ?project wdt:P856 ?website . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,True,,0.0,,
+6,simple,List the Apple M series SoC models in chronological order of their announcement dates.,"SELECT ?itemLabel ?img ?ann_date WHERE {
+?item wdt:P361 wd:Q101791498;
+wdt:P18 ?img;
+wdt:P6949 ?ann_date
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+}","SELECT ?soc ?socLabel ?announcementDate WHERE {
+  ?soc wdt:[property:instance of] wd:[entity:system on a chip] .
+  ?soc wdt:[property:manufacturer] wd:[entity:Apple] .
+  ?soc wdt:[property:part of the series] wd:[entity:Apple silicon] .
+  OPTIONAL { ?soc wdt:[property:time of discovery or invention] ?announcementDate . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ?announcementDate","SELECT ?soc ?socLabel ?announcementDate WHERE {
+  ?soc wdt:P31 wd:Q610398 .
+  ?soc wdt:P176 wd:Q312 .
+  ?soc wdt:P179 wd:Q406283 .
+  OPTIONAL { ?soc wdt:P575 ?announcementDate . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ?announcementDate",True,True,True,,0.0,,
+1,simple,List all subproperties related to location.,"SELECT DISTINCT ?subProperties ?subPropertiesLabel WHERE {
+?subProperties wdt:P1647* wd:P276.
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+}","SELECT ?subproperty ?subpropertyLabel WHERE {
+  ?subproperty wdt:[property:subproperty of] wdt:[property:location].
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}","SELECT ?subproperty ?subpropertyLabel WHERE {
+  ?subproperty wdt:P1647 wdt:P276.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,True,,0.0,,
+32,simple,What are the nodes and predicates related to 'Wikidata' in English?,"SELECT ?node ?predicate WHERE {
+?node ?predicate ""Wikidata""@en # @en is different from @en-gb and @en-ca
+}","SELECT ?predicate ?node WHERE {
+  wd:[entity:Wikidata] ?predicate ?node .
+  FILTER(LANG(?node) = ""en"" || !isLiteral(?node))
+}","SELECT ?predicate ?node WHERE {
+  wd:Q2013 ?predicate ?node .
+  FILTER(LANG(?node) = ""en"" || !isLiteral(?node))
+}",True,True,True,,0.0104,,
+11,simple,Find 3D models of items from specific collections.,"SELECT ?item ?itemLabel ?itemDescription ?model WHERE {
+?item wdt:P4896 ?model; wdt:P195 [].
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en,fr"" }
+} ORDER BY ?itemLabel","SELECT DISTINCT ?item ?itemLabel ?collection ?collectionLabel ?model WHERE {
+  ?item wdt:[property:collection] ?collection .
+  ?item wdt:[property:3D model] ?model .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+LIMIT 100","SELECT DISTINCT ?item ?itemLabel ?collection ?collectionLabel ?model WHERE {
+  ?item wdt:P195 ?collection .
+  ?item wdt:P4896 ?model .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+LIMIT 100",True,True,True,,0.39,,
+124,medium,Show me the latest heatwaves that have occurred.,"SELECT ?item ?itemLabel ?itemDescription ?instance ?instanceLabel ?date WHERE {
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+wd:Q215864 ^(wdt:P279*) ?instance.
+?item wdt:P31 ?instance.
+OPTIONAL { ?item wdt:P585 ?date. }
+}
+ORDER BY DESC (?date)
+LIMIT 1000","SELECT ?heatwave ?heatwaveLabel ?startTime WHERE {
+  ?heatwave wdt:[property:instance of] wd:[entity:heat wave] .
+  OPTIONAL { ?heatwave wdt:[property:start time] ?startTime . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY DESC(?startTime)
+LIMIT 10","SELECT ?heatwave ?heatwaveLabel ?startTime WHERE {
+  ?heatwave wdt:P31 wd:Q215864 .
+  OPTIONAL { ?heatwave wdt:P580 ?startTime . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY DESC(?startTime)
+LIMIT 10",True,True,True,,0.0745,,
+117,medium,List all humans who received the Theatre World Award in 2016.,"SELECT DISTINCT ?item ?itemLabel (year(?date) as ?year)
+WHERE {
+?item wdt:P31 wd:Q5 .
+?item p:P166 ?award .
+?award ps:P166 wd:Q1131356 ;
+pq:P585 ?date .
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""fr"" . }
+}","SELECT DISTINCT ?human ?humanLabel WHERE {
+  ?human wdt:[property:instance of] wd:[entity:human] .
+  ?human p:[property:award received] ?statement .
+  ?statement ps:[property:award received] wd:[entity:Theatre World Award] .
+  ?statement pq:[property:point in time] ?date .
+  FILTER(YEAR(?date) = 2016)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}","SELECT DISTINCT ?human ?humanLabel WHERE {
+  ?human wdt:P31 wd:Q5 .
+  ?human p:P166 ?statement .
+  ?statement ps:P166 wd:Q1131356 .
+  ?statement pq:P585 ?date .
+  FILTER(YEAR(?date) = 2016)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,True,,0.0127,,
+88,medium,Find images of architectural drawings depicting cathedrals in France.,"SELECT ?dessin_d_architecture ?image ?geoloc ?cr_ateurLabel ?d_peintLabel WHERE {
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+?dessin_d_architecture wdt:P31 wd:Q184784.
+OPTIONAL { ?dessin_d_architecture wdt:P18 ?image. }
+OPTIONAL { ?dessin_d_architecture wdt:P625 ?geoloc. }
+OPTIONAL { }
+OPTIONAL { }
+OPTIONAL { ?dessin_d_architecture wdt:P170 ?cr_ateur. }
+OPTIONAL { ?dessin_d_architecture wdt:P180 ?d_peint. }
+}
+LIMIT 100","SELECT ?item ?itemLabel ?image WHERE {
+  ?item wdt:[property:instance of] wd:[entity:architectural drawing] .
+  ?item wdt:[property:depicts] ?cathedral .
+  ?cathedral wdt:[property:instance of] wd:[entity:cathedral] .
+  ?cathedral wdt:[property:country] wd:[entity:France] .
+  ?item wdt:[property:image] ?image .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}","SELECT ?item ?itemLabel ?image WHERE {
+  ?item wdt:P31 wd:Q184784 .
+  ?item wdt:P180 ?cathedral .
+  ?cathedral wdt:P31 wd:Q2977 .
+  ?cathedral wdt:P17 wd:Q142 .
+  ?item wdt:P18 ?image .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,True,,0.0,,
+72,medium,"Find parks in Oslo, Norway that are missing images on Wikidata.","SELECT ?item ?itemLabel ?coord
+WHERE
+{
+?item wdt:P31 wd:Q22698;
+wdt:P17 wd:Q20;
+wdt:P131 wd:Q5245991;
+wdt:P625 ?coord.
+MINUS { ?item wdt:P18 [] }
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""nb,en"". }
+}","SELECT ?park ?parkLabel WHERE {
+  ?park wdt:[property:instance of] wd:[entity:urban park] .
+  ?park wdt:[property:located in the administrative territorial entity] wd:[entity:Oslo] .
+  FILTER NOT EXISTS { ?park wdt:[property:image] ?image . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}","SELECT ?park ?parkLabel WHERE {
+  ?park wdt:P31 wd:Q22746 .
+  ?park wdt:P131 wd:Q585 .
+  FILTER NOT EXISTS { ?park wdt:P18 ?image . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,True,,0.0,,
+236,medium,List mathematicians who have siblings that are actors or musicians.,"SELECT ?mathematician ?mathematicianLabel ?dob ?sibling ?siblingLabel ?siblingProfessionsLabel
+WHERE
+{
+VALUES ?professions {wd:Q170790 wd:Q82594} .
+VALUES ?siblingProfessions {wd:Q639669 wd:Q33999}.
+?mathematician wdt:P106 ?professions ;
+wdt:P3373 ?sibling ;
+wdt:P569 ?dob .
+?sibling wdt:P106 ?siblingProfessions .
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE]"". }
+}
+ORDER BY ASC(?dob)","SELECT DISTINCT ?mathematician ?mathematicianLabel WHERE {
+  ?mathematician wdt:[property:occupation] wd:[entity:mathematician] .
+  ?mathematician wdt:[property:sibling] ?sibling .
+  ?sibling wdt:[property:occupation] ?occupation .
+  VALUES ?occupation { wd:[entity:actor] wd:[entity:musician] }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}","SELECT DISTINCT ?mathematician ?mathematicianLabel WHERE {
+  ?mathematician wdt:P106 wd:Q170790 .
+  ?mathematician wdt:P3373 ?sibling .
+  ?sibling wdt:P106 ?occupation .
+  VALUES ?occupation { wd:Q33999 wd:Q639669 }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,True,,0.2857,,
+66,medium,List all places with the most public art installations.,"SELECT ?place ?placeLabel (COUNT(*) AS ?count) WHERE {
+?item wdt:P136 wd:Q557141 .
+?item wdt:P131 ?place .
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"" . }
+}
+GROUP BY ?place ?placeLabel
+ORDER BY DESC(?count) ?placeLabel","SELECT ?place ?placeLabel (COUNT(?artwork) AS ?count) WHERE {
+  ?artwork wdt:[property:instance of] wd:[entity:public art].
+  ?artwork wdt:[property:location] ?place.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?place ?placeLabel
+ORDER BY DESC(?count)","SELECT ?place ?placeLabel (COUNT(?artwork) AS ?count) WHERE {
+  ?artwork wdt:P31 wd:Q557141.
+  ?artwork wdt:P276 ?place.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?place ?placeLabel
+ORDER BY DESC(?count)",True,True,True,,0.0005,,
+193,medium,List all individuals buried in Pere-Lachaise cemetery who were born in a Ukrainian city.,"SELECT ?human ?humanLabel ?humanDescription ?cityLabel ?naissance ?deces WHERE {
+?human wdt:P119 wd:Q311 .
+?human wdt:P19 ?city .
+?city wdt:P17 wd:Q212 .
+?human wdt:P569 ?naissance .
+?human wdt:P570 ?deces .
+SERVICE wikibase:label {bd:serviceParam wikibase:language ""fr,en"" .}
+}
+ORDER BY ?countryLabel ?cityLabel","SELECT DISTINCT ?person ?personLabel ?birthplaceLabel WHERE {
+  ?person wdt:[property:place of burial] wd:[entity:Père Lachaise Cemetery] .
+  ?person wdt:[property:place of birth] ?birthplace .
+  ?birthplace wdt:[property:country] wd:[entity:Ukraine] .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}","SELECT DISTINCT ?person ?personLabel ?birthplaceLabel WHERE {
+  ?person wdt:P119 wd:Q311 .
+  ?person wdt:P19 ?birthplace .
+  ?birthplace wdt:[property:country] wd:Q212 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,False,False,no_query,0.0,,
+48,medium,What are the names of pyramids in Egypt?,"SELECT ?item ?itemLabel ?image ?coords WHERE {
+?item wdt:P31/wdt:P279* wd:Q12516 .
+?item wdt:P17 wd:Q79 .
+OPTIONAL { ?item wdt:P625 ?coords }
+OPTIONAL { ?item wdt:P18 ?image }
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"" . }
+} ORDER BY ?itemLabel","SELECT ?pyramid ?pyramidLabel WHERE {
+  ?pyramid wdt:[property:instance of] wd:[entity:pyramid] .
+  ?pyramid wdt:[property:country] wd:[entity:Egypt] .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}","SELECT ?pyramid ?pyramidLabel WHERE {
+  ?pyramid wdt:P31 wd:Q12516 .
+  ?pyramid wdt:P17 wd:Q79 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,True,,0.0092,,
+47,medium,List all countries that are part of a free trade area.,"SELECT ?c ?cLabel ?item ?itemLabel WHERE {
+?item wdt:P31 wd:Q5335686.
+?c wdt:P463 ?item
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+} ORDER BY ?itemLabel","SELECT DISTINCT ?country ?countryLabel WHERE {
+  ?country wdt:[property:instance of] wd:[entity:country] .
+  ?country wdt:[property:part of] ?fta .
+  ?fta wdt:[property:instance of] wd:[entity:free trade area] .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}","SELECT DISTINCT ?country ?countryLabel WHERE {
+  ?country wdt:P31 wd:Q6256 .
+  ?country wdt:P361 ?fta .
+  ?fta wdt:P31 wd:Q5335686 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,True,,0.08,,
+67,medium,List all French municipalities with their corresponding banners.,"SELECT ?item ?itemLabel ?banner WHERE {
+?item wdt:P31/wdt:P279* wd:Q484170 .
+?item wdt:P948 ?banner .
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""fr"". }
+} ORDER BY ?itemLabel","SELECT ?municipality ?municipalityLabel ?banner WHERE {
+  ?municipality wdt:[property:instance of] wd:[entity:commune of France] .
+  ?municipality wdt:[property:flag] ?banner .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}","SELECT ?municipality ?municipalityLabel ?banner WHERE {
+  ?municipality wdt:P31 wd:Q484170 .
+  ?municipality wdt:P163 ?banner .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,True,,0.0475,,
+374,complex,List all individuals with multiple social media accounts that differ only in capitalization.,"select distinct ?item ?itemLabel ?twitter1 ?twitter2 ?facebook1 ?facebook2 where
+{
+{ ?item wdt:P2002 ?twitter1 . ?item wdt:P2002 ?twitter2 .
+filter(?twitter1 > ?twitter2) .
+# item has two values for twitter account
+filter((lcase(?twitter1)) = (lcase(?twitter2)) ) . }
+# but they are the same case-insensitive text
+union
+{ ?item wdt:P2013 ?facebook1 . ?item wdt:P2013 ?facebook2 .
+filter(?facebook1 > ?facebook2) .
+filter((lcase(?facebook1)) = (lcase(?facebook2)) ) . }
+# same but for facebook
+# as of 2019-03-19, 176 Twitter and 27 Facebook
+# nb please do *not* fix automatically by removing entries without checking them first
+# as one value may have key qualifiers (follower count, verification, sources, etc)!
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+}","SELECT DISTINCT ?person ?personLabel ?account1 ?account2 WHERE {
+  ?person wdt:[property:instance of] wd:[entity:human] .
+  
+  {
+    ?person wdt:[property:Twitter username] ?account1 .
+    ?person wdt:[property:Twitter username] ?account2 .
+  }
+  UNION
+  {
+    ?person wdt:[property:Instagram username] ?account1 .
+    ?person wdt:[property:Instagram username] ?account2 .
+  }
+  UNION
+  {
+    ?person wdt:[property:Facebook ID] ?account1 .
+    ?person wdt:[property:Facebook ID] ?account2 .
+  }
+  UNION
+  {
+    ?person wdt:[property:TikTok username] ?account1 .
+    ?person wdt:[property:TikTok username] ?account2 .
+  }
+  
+  FILTER(?account1 != ?account2)
+  FILTER(LCASE(STR(?account1)) = LCASE(STR(?account2)))
+  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}","SELECT DISTINCT ?person ?personLabel ?account1 ?account2 WHERE {
+  ?person wdt:P31 wd:Q5 .
+  
+  {
+    ?person wdt:P2002 ?account1 .
+    ?person wdt:P2002 ?account2 .
+  }
+  UNION
+  {
+    ?person wdt:P2003 ?account1 .
+    ?person wdt:P2003 ?account2 .
+  }
+  UNION
+  {
+    ?person wdt:P2013 ?account1 .
+    ?person wdt:P2013 ?account2 .
+  }
+  UNION
+  {
+    ?person wdt:P7085 ?account1 .
+    ?person wdt:P7085 ?account2 .
+  }
+  
+  FILTER(?account1 != ?account2)
+  FILTER(LCASE(STR(?account1)) = LCASE(STR(?account2)))
+  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,True,,0.4301,,
+381,complex,How many French words are linked to a single dictionary?,"SELECT (COUNT(DISTINCT ?lexeme) AS ?lexeme_count) ?dictionaries_count (SAMPLE(?lexeme) AS ?sample) {
+SELECT ?lexeme (COUNT(DISTINCT ?wdt) AS ?dictionaries_count) {
+?lexeme dct:language wd:Q150 .
+OPTIONAL {
+?lexeme ?wdt [] .
+VALUES ?wdt { wdt:P7722 wdt:P7724 wdt:P7732 wdt:P7766 wdt:P10338 wdt:P11118 }
+}
+}
+GROUP BY ?lexeme
+}
+GROUP BY ?dictionaries_count
+ORDER BY ?dictionaries_count","SELECT (COUNT(DISTINCT ?word) AS ?count) WHERE {
+  ?word wdt:[property:language of work or name] wd:[entity:French].
+  ?word wdt:[property:described by source] ?dictionary.
+}
+GROUP BY ?word
+HAVING (COUNT(DISTINCT ?dictionary) = 1)","SELECT (COUNT(DISTINCT ?word) AS ?count) WHERE {
+  ?word wdt:P407 wd:Q150.
+  ?word wdt:P1343 ?dictionary.
+}
+GROUP BY ?word
+HAVING (COUNT(DISTINCT ?dictionary) = 1)",True,True,True,,0.0476,,
+532,complex,List the Danish monarchs along with their places and dates of death.,"SELECT ?item ?itemLabel ?layer ?coordsLabel ?DOD ?coords WHERE {
+?item wdt:P39 wd:Q18341329;
+wdt:P20 ?PoD.
+?item rdfs:label ?itemLabel.
+?item wdt:P570 ?DOD.
+?PoD wdt:P625 ?coords.
+FILTER((LANG(?itemLabel)) = ""da"")
+OPTIONAL {
+?item wdt:P1196 ?manner.
+?manner rdfs:label ?mannerLabel.
+FILTER((LANG(?mannerLabel)) = ""da"")
+BIND(?mannerLabel AS ?layer)
+}
+}","SELECT ?monarch ?monarchLabel ?placeOfDeath ?placeOfDeathLabel ?dateOfDeath WHERE {
+  ?monarch wdt:[property:position held] wd:[entity:monarch of Denmark] .
+  OPTIONAL { ?monarch wdt:[property:place of death] ?placeOfDeath . }
+  OPTIONAL { ?monarch wdt:[property:date of death] ?dateOfDeath . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}","SELECT ?monarch ?monarchLabel ?placeOfDeath ?placeOfDeathLabel ?dateOfDeath WHERE {
+  ?monarch wdt:P39 wd:Q18341329 .
+  OPTIONAL { ?monarch wdt:P20 ?placeOfDeath . }
+  OPTIONAL { ?monarch wdt:P570 ?dateOfDeath . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,True,,0.3986,,
+276,complex,List the longest English words in alphabetical order.,"PREFIX dct: <http://purl.org/dc/terms/> # workaround for T233148
+SELECT ?lexeme ?lemma (STRLEN(?lemma) AS ?length) WHERE {
+BIND(wd:Q1860 AS ?language)
+?lexeme dct:language ?language;
+wikibase:lemma ?lemma.
+FILTER(STRLEN(?lemma) >= 5)
+# first version allows repeated letters, second one doesn't
+# FILTER(REGEX(?lemma, ""^A*B*C*D*E*F*G*H*I*J*K*L*M*N*O*P*Q*R*S*T*U*V*Q*X*Y*Z*$"", ""i""))
+FILTER(REGEX(?lemma, ""^A?B?C?D?E?F?G?H?I?J?K?L?M?N?O?P?Q?R?S?T?U?V?Q?X?Y?Z?$"", ""i""))
+}
+ORDER BY DESC(?length)","SELECT DISTINCT ?word ?wordLabel WHERE {
+  ?word wdt:[property:instance of] wd:[entity:longest word in English] .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ?wordLabel","SELECT DISTINCT ?word ?wordLabel WHERE {
+  ?word wdt:P31 wd:Q4135602 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ?wordLabel",True,True,True,,0.0,,
+559,complex,What are the key dates in Honoré de Balzac's life?,"SELECT DISTINCT ?t ?ppLabel ?valueLabel ?rrLabel ?image
+WHERE
+{
+{wd:Q9711 ?prop ?t FILTER (datatype(?t)=xsd:dateTime) .
+?value wikibase:directClaim ?prop. }
+UNION
+{
+wd:Q9711 ?q ?statement FILTER regex (STR(?q),""prop/P"") .
+?statement ?p ?t FILTER regex (STR(?p), ""prop/qualifier/P"") FILTER (datatype(?t)=xsd:dateTime) .
+?statement ?r ?value FILTER regex (STR(?r),""prop/statement/"") .
+BIND(IRI(CONCAT(CONCAT(SUBSTR(STR(?r),1,29),""direct/""),SUBSTR(STR(?r),40))) as ?rprop)
+?rr wikibase:directClaim ?rprop .
+BIND(IRI(CONCAT(CONCAT(SUBSTR(STR(?p),1,29),""direct/""),SUBSTR(STR(?p),40))) as ?pprop)
+?pp wikibase:directClaim ?pprop .
+OPTIONAL {?value wdt:P18 ?image}
+}
+UNION
+{
+wd:Q9711 wdt:P800 ?value .
+?value ?prop ?t FILTER (datatype(?t)=xsd:dateTime) .
+?rr wikibase:directClaim wdt:P800 .
+?pp wikibase:directClaim ?prop.
+OPTIONAL {?value wdt:P18 ?image}
+}
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ?t","SELECT ?birthDate ?deathDate WHERE {
+  wd:[entity:Honoré de Balzac] wdt:[property:date of birth] ?birthDate.
+  wd:[entity:Honoré de Balzac] wdt:[property:date of death] ?deathDate.
+}","SELECT ?birthDate ?deathDate WHERE {
+  wd:Q9711 wdt:P569 ?birthDate.
+  wd:Q9711 wdt:P570 ?deathDate.
+}",True,True,True,,0.0526,,
+367,complex,List the female Oxford University alumni who are not from the United Kingdom.,"SELECT DISTINCT ?alum ?alumLabel ?alumDescription ?image
+WHERE {
+{?alum wdt:P69 wd:Q34433 .}
+UNION {?college wdt:P31 wd:Q2581649.
+?alum wdt:P69 ?college.}
+?alum wdt:P21 wd:Q6581072 .
+MINUS { ?alum wdt:P27 wd:Q145 }.
+OPTIONAL {?alum wdt:P18 ?image }.
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"" }
+}","SELECT DISTINCT ?person ?personLabel WHERE {
+  ?person wdt:[property:educated at] wd:[entity:University of Oxford] .
+  ?person wdt:[property:sex or gender] wd:[entity:female] .
+  ?person wdt:[property:country of citizenship] ?country .
+  FILTER NOT EXISTS {
+    ?person wdt:[property:country of citizenship] wd:[entity:United Kingdom] .
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}","SELECT DISTINCT ?person ?personLabel WHERE {
+  ?person wdt:P69 wd:Q34433 .
+  ?person wdt:[property:sex or gender] wd:Q6581072 .
+  ?person wdt:[property:country of citizenship] ?country .
+  FILTER NOT EXISTS {
+    ?person wdt:[property:country of citizenship] wd:Q145 .
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,False,False,no_query,0.0,,
+554,complex,Show me a chart of astrolabes' diameters over time.,"SELECT (YEAR(SAMPLE(?date)) as ?year) (SAMPLE(?diam) as ?diam1) (CONCAT(?itemLabel,"" "",SUBSTR(str(?item),32) ) as ?name) WHERE {
+?item wdt:P31 wd:Q164992; wdt:P571 ?date; p:P2386/psv:P2386 ?valuenode. # astrolabes with a diameter property
+?valuenode wikibase:quantityAmount ?length; wikibase:quantityUnit ?unit.
+BIND(IF(?unit = wd:Q174728, ?length * 10,?length) as ?diam) # diameter in millimetres (unit is cm or mm)
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". ?item rdfs:label ?itemLabel }
+} group by ?item ?itemLabel","SELECT ?item ?itemLabel ?diameter ?time WHERE {
+  ?item wdt:[property:instance of] wd:[entity:astrolabe] .
+  ?item wdt:[property:diameter] ?diameter .
+  ?item wdt:[property:inception] ?time .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"" . }
+}
+ORDER BY ?time","SELECT ?item ?itemLabel ?diameter ?time WHERE {
+  ?item wdt:P31 wd:Q164992 .
+  ?item wdt:P2386 ?diameter .
+  ?item wdt:P571 ?time .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"" . }
+}
+ORDER BY ?time",True,True,True,,0.1257,,
+479,complex,What materials were used in the most paintings?,"SELECT ?material (COUNT(?painting) AS ?count)
+WHERE
+{
+?painting wdt:P31/wdt:P279* wd:Q3305213;
+p:P186 [ ps:P186 ?material; pq:P518 wd:Q861259 ].
+}
+GROUP BY ?material","SELECT ?material ?materialLabel (COUNT(?painting) AS ?count) WHERE {
+  ?painting wdt:[property:instance of] wd:[entity:painting] .
+  ?painting wdt:[property:made from material] ?material .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?material ?materialLabel
+ORDER BY DESC(?count)
+LIMIT 10","SELECT ?material ?materialLabel (COUNT(?painting) AS ?count) WHERE {
+  ?painting wdt:P31 wd:Q3305213 .
+  ?painting wdt:P186 ?material .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?material ?materialLabel
+ORDER BY DESC(?count)
+LIMIT 10",True,True,True,,0.0286,,
+375,complex,What are the first letters of free software names?,"SELECT ?character (COUNT(DISTINCT ?item) AS ?count) WHERE {
+{ ?item p:P31/ps:P31/wdt:P279* wd:Q341. } UNION
+{ ?item wdt:P31/wdt:P279* wd:Q7397; wdt:P275/(wdt:P31|wdt:P279)* wd:Q3943414. }
+?item rdfs:label ?label.
+FILTER(LANG(?label) = ""en"")
+BIND(UCASE(SUBSTR(?label, 1, 1)) AS ?character)
+}
+GROUP BY ?character","SELECT DISTINCT ?firstLetter WHERE {
+  ?software wdt:[property:instance of] wd:[entity:free software] .
+  ?software rdfs:label ?label .
+  FILTER(LANG(?label) = ""en"")
+  BIND(SUBSTR(?label, 1, 1) AS ?firstLetter)
+}
+ORDER BY ?firstLetter","SELECT DISTINCT ?firstLetter WHERE {
+  ?software wdt:P31 wd:Q341 .
+  ?software rdfs:label ?label .
+  FILTER(LANG(?label) = ""en"")
+  BIND(SUBSTR(?label, 1, 1) AS ?firstLetter)
+}
+ORDER BY ?firstLetter",True,True,True,,0.3786,,
+494,complex,List US companies founded by people or their parents born outside the US.,"SELECT ?companyLabel (GROUP_CONCAT(DISTINCT ?founderLabel; separator="", "") AS ?founders) WHERE {
+?company wdt:P112 ?founder;
+wdt:P17 wd:Q30.
+FILTER EXISTS { ?company wdt:P414|wdt:P249 []. }
+?founder (wdt:P22|wdt:P25)?/wdt:P19 ?placeOfBirth.
+MINUS { ?placeOfBirth wdt:P17 wd:Q30. }
+OPTIONAL { ?founder rdfs:label ?founderLabel. FILTER(LANG(?founderLabel) = ""en""). }
+OPTIONAL { ?company wdt:P2403|wdt:P2137|wdt:P2139|wdt:P2226|wdt:P2295 ?money. }
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?companyLabel
+ORDER BY DESC(MAX(?money)) ?companyLabel","SELECT DISTINCT ?company ?companyLabel ?founder ?founderLabel WHERE {
+  ?company wdt:[property:country] wd:[entity:United States] .
+  ?company wdt:[property:instance of] wd:[entity:business] .
+  ?company wdt:[property:founded by] ?founder .
+  {
+    ?founder wdt:[property:place of birth] ?birthPlace .
+    ?birthPlace wdt:[property:country] ?birthCountry .
+    FILTER(?birthCountry != wd:[entity:United States])
+  }
+  UNION
+  {
+    ?founder wdt:[property:father] ?parent .
+    ?parent wdt:[property:place of birth] ?parentBirthPlace .
+    ?parentBirthPlace wdt:[property:country] ?parentBirthCountry .
+    FILTER(?parentBirthCountry != wd:[entity:United States])
+  }
+  UNION
+  {
+    ?founder wdt:[property:mother] ?parent .
+    ?parent wdt:[property:place of birth] ?parentBirthPlace .
+    ?parentBirthPlace wdt:[property:country] ?parentBirthCountry .
+    FILTER(?parentBirthCountry != wd:[entity:United States])
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}","SELECT DISTINCT ?company ?companyLabel ?founder ?founderLabel WHERE {
+  ?company wdt:P17 wd:Q30 .
+  ?company wdt:P31 wd:Q4830453 .
+  ?company wdt:P112 ?founder .
+  {
+    ?founder wdt:P19 ?birthPlace .
+    ?birthPlace wdt:P17 ?birthCountry .
+    FILTER(?birthCountry != wd:Q30)
+  }
+  UNION
+  {
+    ?founder wdt:P22 ?parent .
+    ?parent wdt:P19 ?parentBirthPlace .
+    ?parentBirthPlace wdt:P17 ?parentBirthCountry .
+    FILTER(?parentBirthCountry != wd:Q30)
+  }
+  UNION
+  {
+    ?founder wdt:P25 ?parent .
+    ?parent wdt:P19 ?parentBirthPlace .
+    ?parentBirthPlace wdt:P17 ?parentBirthCountry .
+    FILTER(?parentBirthCountry != wd:Q30)
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,True,,0.0,,
+405,complex,Show me a map of people buried at Norra Begravningsplatsen cemetery.,"select distinct ?groupLabel (?groupLabel as ?layer) ?article ?person ?personLabel ?personDescription ?graveplot ?coord ?pic ?picGrave ?WikiTree ?FindAGrave{
+{
+?person wdt:P119 wd:Q252312; #Place of burial
+p:P119 [
+pq:P965 ?graveplot;
+pq:P625 ?coord].
+OPTIONAL { ?person wdt:P2949 ?WikiTreeID .} # If we have a WikiTree profile
+OPTIONAL { ?person wdt:P535 ?FindAGraveID .} # If we have a FindAGrave ID
+OPTIONAL{ ?person wdt:P18 ?pic .} # If we have an illustration
+OPTIONAL{ ?person wdt:P1442 ?picGrave .} # If we have a picture of the grave
+BIND (URI(CONCAT(""http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&df=all&GRid="",?FindAGraveID)) AS ?FindAGrave)
+BIND (URI(CONCAT(""http://www.wikitree.com/wiki"",?WikiTreeID)) AS ?WikiTree)
+OPTIONAL {
+?article schema:about ?person .
+?article schema:inLanguage ""en"" .
+?article schema:isPartOf <https://sv.wikipedia.org/> .
+}
+OPTIONAL {
+?article schema:about ?person .
+?article schema:inLanguage ""sv"" .
+?article schema:isPartOf <https://sv.wikipedia.org/> .
+}
+OPTIONAL { ?person wdt:P106 ?group .} # Occupation in Layer
+}
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"",""sv""}
+}
+Order by ?personLabel","SELECT ?person ?personLabel ?coord WHERE {
+  ?person wdt:[property:place of burial] wd:[entity:Norra begravningsplatsen] .
+  ?person wdt:[property:coordinate location] ?coord .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}","SELECT ?person ?personLabel ?coord WHERE {
+  ?person wdt:P119 wd:Q252312 .
+  ?person wdt:P625 ?coord .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,True,,0.0,,
+261,complex,List the countries with their corresponding number of coronavirus cases.,"SELECT ?geo ?causes ?countryLabel ?rgb ?population (CONCAT(str(year(?datum)),""-"",CONCAT(IF(month(?datum)<10,""0"",""""),str(month(?datum))),""-"",CONCAT(IF(day(?datum)<10,""0"",""""),str(day(?datum)))) AS ?when) {
+?item wdt:P1269 wd:Q81068910 .
+?item wdt:P17 ?country .
+?country wdt:P1082 ?pop.
+?country wdt:P3896 ?geo .
+MINUS { ?item wdt:P31 wd:Q186117 . }
+OPTIONAL { ?item p:P1603 ?p1603stm .
+?p1603stm ps:P1603 ?nr_causes .
+?p1603stm wikibase:rank ?rank . FILTER(?rank=wikibase:PreferredRank)
+OPTIONAL{?p1603stm pq:P585 ?datum }
+}
+BIND(IF(?nr_causes>=100,'FF0000',IF(?nr_causes>=10,'FF3333',IF(?nr_causes>=5,'FF6666',IF(?nr_causes>=2,'FF9999',IF(?nr_causes>0,'FFCCCC','FFFFFF'))))) AS ?rgb)
+BIND(CONCAT(""Number of cases coronavirus reported: "", str(?nr_causes)) AS ?causes)
+BIND((round(?pop/100000)/10) AS ?popM )
+BIND(CONCAT(""Population (million): "", str(round(?popM))) AS ?population)
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}","SELECT ?country ?countryLabel ?cases WHERE {
+  ?country wdt:[property:instance of] wd:[entity:sovereign state] .
+  ?country p:[property:number of cases] ?statement .
+  ?statement ps:[property:number of cases] ?cases .
+  ?statement pq:[property:of] wd:[entity:COVID-19 pandemic] .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY DESC(?cases)","SELECT ?country ?countryLabel ?cases WHERE {
+  ?country wdt:P31 wd:Q3624078 .
+  ?country p:P1603 ?statement .
+  ?statement ps:P1603 ?cases .
+  ?statement pq:P2210 wd:Q83741704 .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY DESC(?cases)",True,True,True,,0.0,,
+351,complex,List the people buried at Pere Lachaise Cemetery along with their birthplace and date of birth.,"SELECT ?article ?person ?personLabel ?picGrave ?coord ?bd ?graveplot2 ?layer WHERE {
+{
+?person wdt:P119 wd:Q311 ;
+p:P119 [
+pq:P965 ?graveplot];
+wdt:P569 ?bd .
+?person wdt:P19 ?city .
+?city wdt:P625 ?coord .
+OPTIONAL{ ?person wdt:P1442 ?picGrave .}
+OPTIONAL {
+?article schema:about ?person .
+?article schema:inLanguage ""fr"" .
+?article schema:isPartOf <https://fr.wikipedia.org/> .}
+BIND (CONCAT(""Division "",?graveplot) AS ?graveplot2)
+BIND(
+IF(?bd < ""1700-01-01T00:00:00Z""^^xsd:dateTime, ""<1700"",
+IF(?bd < ""1800-01-01T00:00:00Z""^^xsd:dateTime, ""18e siecle"",
+IF(?bd < ""1900-01-01T00:00:00Z""^^xsd:dateTime, ""19e siecle"",
+IF(?bd < ""2000-01-01T00:00:00Z""^^xsd:dateTime, ""20e siecle"",
+""21e siecle""))))
+AS ?layer).
+}
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""fr""}
+}
+Order by ?personLabel","SELECT ?person ?personLabel ?birthplaceLabel ?dateOfBirth WHERE {
+  ?person wdt:[property:place of burial] wd:[entity:Père Lachaise Cemetery] .
+  OPTIONAL { ?person wdt:[property:place of birth] ?birthplace . }
+  OPTIONAL { ?person wdt:[property:date of birth] ?dateOfBirth . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}","SELECT ?person ?personLabel ?birthplaceLabel ?dateOfBirth WHERE {
+  ?person wdt:P119 wd:Q311 .
+  OPTIONAL { ?person wdt:P19 ?birthplace . }
+  OPTIONAL { ?person wdt:P569 ?dateOfBirth . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,True,,0.4526,,
+480,complex,"What are the names of stars, galaxies, star clusters and nebulae inspired by?","SELECT DISTINCT ?obj ?objLabel ?objDescription ?nom ?nomLabel ?nomDescription
+WHERE {
+{?obj wdt:P31/wdt:P279* wd:Q318} UNION {?obj wdt:P31/wdt:P279* wd:Q523}
+UNION {?obj wdt:P31/wdt:P279* wd:Q1054444}
+UNION {?obj wdt:P31/wdt:P279* wd:Q168845}
+?obj wdt:P138 ?nom
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"" }
+} ORDER BY ASC(?objLabel)","SELECT DISTINCT ?item ?itemLabel ?inspiredByLabel WHERE {
+  VALUES ?type {
+    wd:[entity:star]
+    wd:[entity:galaxy]
+    wd:[entity:star cluster]
+    wd:[entity:nebula]
+  }
+  ?item wdt:[property:instance of] ?type .
+  ?item wdt:[property:named after] ?inspiredBy .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}","SELECT DISTINCT ?item ?itemLabel ?inspiredByLabel WHERE {
+  VALUES ?type {
+    wd:Q523
+    wd:Q318
+    wd:Q168845
+    wd:Q42372
+  }
+  ?item wdt:P31 ?type .
+  ?item wdt:P138 ?inspiredBy .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,True,True,,0.1527,,
+431,complex,List people who have received economics awards but are not classified as economists.,"SELECT DISTINCT ?person ?personLabel ?award ?awardLabel ?year WHERE {
+?person p:P166 ?statement.
+?statement ps:P166 ?award.
+?award wdt:P31 wd:Q17701409
+MINUS { ?person wdt:P106 wd:Q188094 }
+MINUS{ ?person wdt:P31/wdt:P279? wd:Q15632617 } # exclude fictional people
+OPTIONAL { ?statement pq:P585 ?date. BIND(YEAR(?date) AS ?year) }
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"" }
+} ORDER BY ASC(?awardLabel) ASC(?year)","SELECT DISTINCT ?person ?personLabel WHERE {
+  ?award wdt:[property:instance of]/wdt:[property:subclass of]* wd:[entity:economics award] .
+  ?person wdt:[property:award received] ?award .
+  FILTER NOT EXISTS {
+    ?person wdt:[property:occupation] wd:[entity:economist] .
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}","SELECT DISTINCT ?person ?personLabel WHERE {
+  ?award wdt:P31/wdt:P279* wd:Q17701409 .
+  ?person wdt:P166 ?award .
+  FILTER NOT EXISTS {
+    ?person wdt:[property:occupation] wd:Q188094 .
+  }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",True,False,False,no_query,0.0,,

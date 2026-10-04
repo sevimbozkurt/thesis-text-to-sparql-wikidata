@@ -1,0 +1,11 @@
+Approach,Questions scored,Pooled (%),Simple,Medium,Complex,Entity-level (%),Entity rows
+Zero-shot GPT-5.4,400,12.8,21.7,13.1,10.7,14.7,350
+Zero-shot Claude Opus 4.8,400,17.8,29.7,18.8,14.2,21.7,355
+Zero-shot Gemini 3.1 Flash Lite,400,8.6,13.9,10.4,5.4,9.8,342
+Zero-shot DeepSeek V4 Flash,400,10.4,21.2,11.2,7.4,12.5,346
+Few-shot GPT-5.4,400,14.9,33.2,14.9,11.2,17.1,355
+Few-shot Claude Opus 4.8,400,18.7,36.9,19.4,14.2,22.4,357
+Few-shot Gemini 3.1 Flash Lite,400,10.8,14.1,12.5,8.1,13.1,346
+Few-shot DeepSeek V4 Flash,400,10.3,24.7,10.5,7.1,11.7,348
+Gold-label condition,390,94.9,97.1,95.8,93.4,97.1,317
+End-to-end pipeline,400,22.4,32.3,25.5,16.8,27.5,363

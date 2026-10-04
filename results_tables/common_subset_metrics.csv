@@ -1,0 +1,11 @@
+Approach,Pooled (%),Entity-level (%),Entity simple,Entity medium,Entity complex
+Zero-shot GPT-5.4,14.0,16.2,23.9,15.6,15.3
+Zero-shot Claude,19.1,23.5,35.3,24.4,19.8
+Zero-shot Gemini,9.1,10.5,14.6,12.9,6.5
+Zero-shot DeepSeek,10.9,13.6,27.1,14.0,10.2
+Few-shot GPT-5.4,15.9,18.8,38.7,18.4,15.0
+Few-shot Claude,20.2,24.5,40.7,25.7,19.4
+Few-shot Gemini,12.0,14.3,14.5,15.3,12.9
+Few-shot DeepSeek,10.2,12.5,28.0,11.9,10.0
+"Linking (gold labels, clean)",97.4,97.4,96.3,98.7,95.9
+End-to-end (clean pools),25.1,30.9,37.6,34.3,24.7

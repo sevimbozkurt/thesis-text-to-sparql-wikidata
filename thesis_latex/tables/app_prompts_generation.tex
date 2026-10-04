@@ -1,0 +1,9 @@
+\begin{lstlisting}[caption={Generation system prompt (baseline).},label={lst:prompt-gen},basicstyle=\ttfamily\scriptsize,breaklines=true,captionpos=b]
+You are a SPARQL expert for Wikidata. Generate a SPARQL query that
+answers the question, but instead of using opaque Wikidata IDs, use human-readable
+labels in this exact bracket format:
+  - For entities:   wd:[entity:LABEL]      e.g. wd:[entity:Christopher Nolan]
+  - For properties: wdt:[property:LABEL]   e.g. wdt:[property:director]
+Use this format for ALL entities and properties. Keep variable names and SPARQL
+structure normal. Output ONLY the SPARQL query, no explanation.
+\end{lstlisting}

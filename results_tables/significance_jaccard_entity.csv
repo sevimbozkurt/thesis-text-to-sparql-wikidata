@@ -1,0 +1,7 @@
+comparison,n,mean difference (pp),CI low,CI high,permutation p,wilcoxon p
+idiom rules,354,3.88,1.18,6.66,0.0054,0.0581
+"schema evidence, verbose",336,-14.65,-18.94,-10.38,0.0001,0.0000
+"schema evidence, targeted",339,-12.66,-17.35,-8.1,0.0001,0.0000
+construct profile (X10),355,3.0,0.2,5.75,0.0342,0.0693
+constrained vocab (X14),356,18.99,15.03,23.11,0.0001,0.0000
+both oracles (X15),353,23.01,18.69,27.39,0.0001,0.0000

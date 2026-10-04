@@ -1,0 +1,967 @@
+row,stratum,question,reference_query,screen_said,DOES_THE_REFERENCE_ANSWER_THE_QUESTION,your_note
+452,flagged,Find French occupation-related words with their grammatical gender.,"SELECT DISTINCT ?item ?itemLabel ?sense ?lexeme ?lemma ?genre ?genreLabel WHERE {
+?lexeme rdf:type ontolex:LexicalEntry;
+dct:language wd:Q150;
+wikibase:lemma ?lemma;
+ontolex:sense ?sense;
+wdt:P5185 ?genre.
+?sense wdt:P5137 ?item.
+?item (wdt:P31/(wdt:P279*)) wd:Q12737077;
+rdfs:label ?itemLabel.
+FILTER((LANG(?itemLabel)) = ""fr"")
+?genre rdfs:label ?genreLabel.
+FILTER((LANG(?genreLabel)) = ""fr"")
+}
+ORDER BY (?item) (?lemma) (?genre)","H3 question names a nationality, gold has no country property",yes,"Correct as written: French lexemes (Q150) with grammatical gender P5185, sense denotes an occupation via P5137 + P31/P279* Q12737077. Nothing missing, nothing extra.  [reconciled]"
+325,unflagged,List the top 500 paintings according to their importance on Wikidata.,"SELECT ?q (min(?image) AS ?img) (GROUP_CONCAT(DISTINCT(?qLabel); separator="", "") AS ?label) (COUNT(DISTINCT ?sitelink) as ?linkcount) {
+?q (wdt:P31/wdt:P279*) wd:Q3305213 .
+?sitelink schema:about ?q .
+OPTIONAL { ?q wdt:P18 ?image }
+SERVICE wikibase:label {
+bd:serviceParam wikibase:language ""en"" .
+?q rdfs:label ?qLabel .
+}
+}
+GROUP BY ?q
+ORDER BY DESC(?linkcount)
+LIMIT 500",,yes,
+134,flagged,List all the settlements along the Way of Saint James in Basque Country.,"SELECT DISTINCT ?Donejakue_bidea ?Donejakue_bideaLabel ?koordenatuak ?layerLabel WHERE {
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""eu,es,en"". }
+?Donejakue_bidea (wdt:P361*) wd:Q41150.
+?Donejakue_bidea wdt:P131*/^wdt:P527 wd:Q47588.
+?Donejakue_bidea wdt:P625 ?koordenatuak.
+?Donejakue_bidea wdt:P361 ?bidea.
+?bidea wdt:P31 wd:Q337912.
+BIND (?bidea AS ?layer)
+}",H4 binds ?layer but never filters or projects it,no,"""Settlement"" is never expressed. The only type constraint is on ?bidea, the route stage, not on the returned entity, so churches and sanctuaries qualify. Route and region encoded, head noun not.  [reconciled]"
+144,unflagged,List the top magic schools by student enrollment.,"SELECT ?q ?qLabel (COUNT(?person) AS ?count) WHERE {
+?q wdt:P31/wdt:P279* wd:Q52085914.
+?person wdt:P69 ?q.
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?q ?qLabel
+ORDER BY DESC(?count)",,yes,
+125,unflagged,Show me the list of countries with multiple official languages.,"SELECT DISTINCT ?q ?qLabel WHERE {
+?q wdt:P31 wd:Q3624078 ; wdt:P37 ?l1 ; wdt:P37 ?l2 .
+FILTER ( STR(?l1) < STR(?l2) ) .
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+}
+ORDER BY ?qLabel",,yes,
+38,unflagged,List all countries where a pride parade has taken place.,"SELECT ?country ?countryLabel (COUNT(DISTINCT ?item) AS ?count) WHERE {
+?item (wdt:P31|wdt:P279) wd:Q51404;
+wdt:P17 ?country;
+wdt:P571 ?time.
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+}
+GROUP BY ?country ?countryLabel
+ORDER BY (?countryLabel)",,yes,
+408,unflagged,List the numbers from 0 to 20 in alphabetical order.,"SELECT ?value ?lemma {
+?number wdt:P31 wd:Q21199 ; wdt:P1181 ?value .
+FILTER (?value >= 0 && ?value <= 20) .
+?lexeme dct:language wd:Q150 ; wikibase:lemma ?lemma ; ontolex:sense ?sense .
+?sense wdt:P5137 ?number .
+}
+ORDER BY ?lemma",,no,
+89,flagged,What are the most common ingredients used in a sandwich?,"SELECT ?ingredienteLabel (COUNT (?ingrediente) AS ?count)
+WHERE
+{
+?sandwich wdt:P31?/wdt:P279* wd:Q28803;
+wdt:P527 ?ingrediente.
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""es"", ""en"". }
+}
+GROUP BY ?ingredienteLabel
+ORDER BY DESC (?count)","H1 asks for items, gold returns only a count",no,
+169,unflagged,Show me a map of the birthplaces of artists featured in Europeana 280.,"SELECT ?creator ?creatorLabel ?placebirthLabel ?geoloc where {
+?item wdt:P31/wdt:P279* wd:Q838948 . # oeuvre d'art et ss-classe
+?item wdt:P608 wd:Q20980830 . # du projet Europeana 280
+?item wdt:P170 ?creator . # createur
+?creator wdt:P19 ?placebirth . # lieu de naissance
+?placebirth wdt:P625 ?geoloc . #coordonnees geo
+SERVICE wikibase:label {
+bd:serviceParam wikibase:language ""fr,es,en"" .
+}
+}",,yes,
+23,flagged,List all hill forts in the Atlas with their names written in Irish.,"SELECT ?subj ?label WHERE
+{ ?subj wdt:P4102 ?atlasID ;
+rdfs:label ?label filter (lang(?label) = ""g1"")
+}","H5 question asks for two things, gold projects one",no,
+373,flagged,What are the artworks in the Khalili Collections that have images?,"SELECT (?link as ?q) (?nameplusdesc AS ?qLabel) (SAMPLE(?image) AS ?img) WHERE {
+?work wdt:P195/wdt:P361 wd:Q63160499; wdt:P18 ?image ; wdt:P973 ?link; wdt:P180 ?depicted.
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"".
+?depicted rdfs:label ?name . ?depicted schema:description ?desc }
+BIND(IF(BOUND(?desc), CONCAT(?name, "", "", ?desc), ?name) AS ?nameplusdesc)
+} GROUP BY ?link ?nameplusdesc
+ORDER BY UCASE(?qLabel)","H1 asks for items, gold returns only a count",no,"Head of the answer is the P973 URL, not ?work; ?qLabel describes the depicted subject, not the artwork. Separately, P180 is required, dropping artworks with an image but no depicts statement.  [reconciled]"
+115,unflagged,Show me hillforts with their protection status on a map.,"select ?site ?siteLabel ?siteDescription ?location ?photo ?placeNameLabel ?heritageLabel (?heritage as ?layer)
+WHERE {
+?site wdt:P31 ?place. ?place wdt:P279* wd:Q744099 .
+?site wdt:P625 ?location.
+optional {
+?site wdt:P31 ?placeName.
+?site wdt:P18 ?photo.
+}
+?site wdt:P1435 ?heritage.
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""en,lt,es,[AUTO_LANGUAGE]"". }
+}
+#defaultView:Map",,yes,
+382,unflagged,List all open-source research software categorized by field.,"SELECT ?software ?softwareLabel ?field ?fieldLabel {
+{ ?software wdt:P31/wdt:P279* wd:Q5500964. }
+UNION
+{ ?software wdt:P275/wdt:P279* wd:Q1156659. }
+?software wdt:P101|wdt:P136|wdt:P366 ?field.
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+}",,no,"UNION, not intersection: software qualifies by being research software OR by carrying an open-source licence, so the licence branch alone admits GNUnet and Animate.css. Question asks for both.  [reconciled]"
+126,flagged,List Czech buildings that serve as both a place of worship and a fire station.,"select ?item ?itemLabel ?img where {
+?item wdt:P31 wd:Q1195942 .
+?item wdt:P31/wdt:P279* wd:Q24398318 .
+optional {?item wdt:P18 ?img .}
+}","H3 question names a nationality, gold has no country property",no,"No country constraint anywhere, and it shows: Gerätehaus Mistelbach is Austrian, Hindmarsh is Australian, Zehntscheune is German."
+494,flagged,List US companies founded by people or their parents born outside the US.,"SELECT ?companyLabel (GROUP_CONCAT(DISTINCT ?founderLabel; separator="", "") AS ?founders) WHERE {
+?company wdt:P112 ?founder;
+wdt:P17 wd:Q30.
+FILTER EXISTS { ?company wdt:P414|wdt:P249 []. }
+?founder (wdt:P22|wdt:P25)?/wdt:P19 ?placeOfBirth.
+MINUS { ?placeOfBirth wdt:P17 wd:Q30. }
+OPTIONAL { ?founder rdfs:label ?founderLabel. FILTER(LANG(?founderLabel) = ""en""). }
+OPTIONAL { ?company wdt:P2403|wdt:P2137|wdt:P2139|wdt:P2226|wdt:P2295 ?money. }
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?companyLabel
+ORDER BY DESC(MAX(?money)) ?companyLabel","H1 asks for items, gold returns only a count",no,
+455,unflagged,"List all humans who died on August 25, 2001, according to the English Wikipedia.","SELECT ?item ?articlename ?itemLabel ?itemDescription ?sl
+WHERE {
+VALUES ?dod {""+2001-08-25""^^xsd:dateTime}
+?dod ^wdt:P570 ?item .
+?item wikibase:sitelinks ?sl .
+?item ^schema:about ?article .
+?article schema:isPartOf <https://en.wikipedia.org/>;
+schema:name ?articlename .
+SERVICE wikibase:label
+{
+bd:serviceParam wikibase:language ""en"" .
+?item rdfs:label ?itemLabel .
+?item schema:description ?itemDescription .
+}
+BIND(REPLACE(?itemLabel, ""^.*(?<! [Vv][ao]n| [Dd][aeiu]| [Dd][e][lns]| [Ll][ae]) (?!([SJ]r\\.?|[XVI]+)$)"", """") AS ?sortname)
+} ORDER BY ASC(UCASE(?sortname)) ASC(UCASE(?itemLabel))",,no,
+393,flagged,List song titles that are also female given names.,"SELECT ?song ?female_name ?title (LANG(?title) AS ?title_language) ?note
+WITH
+{
+SELECT DISTINCT ?song ?title
+{
+?song wdt:P31 / wdt:P279 * wd:Q105543609 .
+?song wdt:P1476 ?title .
+}
+} AS %songs
+{
+{
+INCLUDE %songs
+?female_name wdt:P1705 ?title .
+?female_name wdt:P31 wd:Q11879590 .
+}
+UNION
+{
+INCLUDE %songs
+FILTER (LANG(?title) != ""mul"")
+BIND (STRLANG(STR(?title), ""mul"") AS ?title_mul)
+?female_name wdt:P1705 ?title_mul .
+?female_name wdt:P31 wd:Q11879590 . hint:Prior hint:runLast true.
+BIND (""match one to multiple"" AS ?note)
+}
+}",H4 binds ?note but never filters or projects it,no,
+46,unflagged,List all masonic lodges with a Wikipedia article but no label.,"SELECT ?Masonic_Lodge ?Masonic_LodgeLabel (sample(?Masonic_LodgeTitle) as ?wpTitle) WHERE {
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+?Masonic_Lodge wdt:P31 wd:Q1454597.
+OPTIONAL {
+?article schema:about ?Masonic_Lodge ;
+schema:name ?Masonic_LodgeTitle
+}
+} group by ?Masonic_Lodge ?Masonic_LodgeLabel",,no,"Neither half enforced. Article block is OPTIONAL and never tested with BOUND, and there is no test for an absent label (would need FILTER NOT EXISTS on rdfs:label). Returns every masonic lodge.  [reconciled]"
+458,flagged,List all railway stations in the Netherlands with their connections.,"SELECT ?station ?stationLabel ?cds ?line ?trackLabel ?track ?image {
+{SELECT * {
+SERVICE gas:service {
+gas:program gas:gasClass ""com.bigdata.rdf.graph.analytics.BFS"" ; gas:in wd:Q1990205 ; gas:out ?station ; gas:out1 ?depth ; gas:out2 ?pred .
+gas:program gas:linkType wdt:P197 . }
+FILTER(?station != wd:Q1990205)
+?station wdt:P625 ?cds ;
+wdt:P17 wd:Q55 .
+?station p:P197 ?adjST .
+?adjST ps:P197 ?adj ;
+pq:P81 ?track .
+?pred p:P625/psv:P625/wikibase:geoLatitude ?lat1 ; p:P625/psv:P625/wikibase:geoLongitude ?lon1 .
+?station p:P625/psv:P625/wikibase:geoLatitude ?lat2 ; p:P625/psv:P625/wikibase:geoLongitude ?lon2 .
+BIND(CONCAT('LINESTRING(', STR(?lon1), ' ', STR(?lat1), ',', STR(?lon2), ' ', STR(?lat2), ')') AS ?str) . BIND(STRDT(?str, geo:wktLiteral) AS ?line)}
+}
+OPTIONAL { ?station wdt:P18 ?image .}
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}","H5 question asks for two things, gold projects one",no,
+505,flagged,List female dancers and choreographers with an English Wikipedia article but not a French one.,"SELECT ?item ?itemLabel (COUNT(distinct ?sitelink) as ?count) (SAMPLE(?picture) as ?picture)
+WHERE
+{
+?item wdt:P31 wd:Q5 .
+?item wdt:P21 wd:Q6581072 .
+?item wdt:P106 ?dancer .
+VALUES ?dancer {
+wd:Q5716684
+wd:Q805221
+wd:Q2490358
+}
+?item wdt:P18 ?picture .
+?sitelink schema:about ?item .
+FILTER EXISTS { ?wen schema:about ?item . ?wen schema:inLanguage ""en"" }
+FILTER NOT EXISTS { ?wfr schema:about ?item . ?wfr schema:inLanguage ""fr"" }
+SERVICE wikibase:label {
+bd:serviceParam wikibase:language ""fr,en"" .
+}
+}
+GROUP BY ?item ?itemLabel
+ORDER BY DESC(?count)","H3 question names a nationality, gold has no country property",no,
+167,flagged,List all fortifications related to the Dutch East India Company (VOC) and the Dutch West India Company (WIC).,"SELECT ?i ?iLabel ?coords ?url WHERE {
+?i wdt:P31/wdt:P279* wd:Q57821 .
+?i wdt:P973 ?url .
+?i wdt:P625 ?coords .
+FILTER (REGEX(STR(?url),""atlasofmutualheritage""))
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+}","H3 question names a nationality, gold has no country property",yes,
+268,unflagged,"What are the ingredients in a sandwich, excluding bread?","SELECT ?sandwich ?ingredient ?sandwichLabel ?ingredientLabel
+WHERE
+{
+?sandwich wdt:P31?/wdt:P279* wd:Q28803;
+wdt:P527 ?ingredient.
+MINUS { ?ingredient wdt:P279* wd:Q7802. }
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"", ""fr"". }
+}
+ORDER BY UCASE(STR(?sandwichLabel))",,yes,
+220,unflagged,"List all books written by Arthur Conan Doyle, including their titles, illustrators, publishers, and publication dates if available.","SELECT ?book ?title ?illustratorLabel ?publisherLabel ?published
+WHERE
+{
+?book wdt:P50 wd:Q35610. # required wdt:P50
+OPTIONAL { # match all or none from group:
+?book wdt:P1476 ?title; # required wdt:P1476
+wdt:P110 ?illustrator; # required wdt:P110
+wdt:P123 ?publisher; # required wdt:P123
+wdt:P577 ?published. # required wdt:P577
+}
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+}",,no,"Four attributes in one OPTIONAL bind all-or-none, so a book with a title but no illustrator returns neither. ""If available"" needs four separate OPTIONAL blocks. Blank attribute columns in the output confirm it.  [reconciled]"
+168,unflagged,List all movies directed by Jean-Luc Godard in chronological order.,"SELECT DISTINCT ?item ?itemLabel ?itemDescription (MIN(?date2) AS ?date) WHERE {
+?item wdt:P57 wd:Q53001;
+wdt:P577 ?date2.
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""en, fr"". }
+}
+GROUP BY ?item ?itemLabel ?itemDescription
+ORDER BY (?date)",,yes,
+511,flagged,Show me a map of French municipalities with homonymous names connected by lines based on their distance.,"SELECT ?q1 ?q2 ?label ?coord1 ?coord2 ?dist ?layer ?line WHERE {
+?q1 wdt:P31 wd:Q484170 ; rdfs:label ?label ; wdt:P625 ?coord1 . FILTER (lang(?label) = ""fr"").
+?q1 p:P625/psv:P625 ?valuenode1. ?valuenode1 wikibase:geoLatitude ?lat1 . ?valuenode1 wikibase:geoLongitude ?lon1.
+?q2 wdt:P31 wd:Q484170 ; rdfs:label ?label ; wdt:P625 ?coord2 . FILTER (lang(?label) = ""fr"").
+?q2 p:P625/psv:P625 ?valuenode2. ?valuenode2 wikibase:geoLatitude ?lat2 . ?valuenode2 wikibase:geoLongitude ?lon2.
+FILTER ( str(?q1) > str(?q2) )
+BIND(geof:distance(?coord1, ?coord2) AS ?dist).
+BIND(floor(?dist/100) AS ?layer).
+BIND(CONCAT('LINESTRING (', STR(?lon1), ' ', STR(?lat1), ',', STR(?lon2), ' ', STR(?lat2), ')') AS ?str) .
+BIND(STRDT(?str, geo:wktLiteral) AS ?line)
+FILTER ( ?dist > 100 )
+}
+LIMIT 100","H3 question names a nationality, gold has no country property",no,
+302,flagged,List all Czech art collections with their sizes.,"select distinct ?itemLabel ?size ?percentage_online ?rgb where {
+?item wdt:P17 wd:Q213 .
+?item p:P1436 ?statement.
+?statement ps:P1436 ?size ;
+pq:P585 ?date filter(year(?date)= 2021 )
+minus {?statement pq:P518 [] .}
+optional {?item p:P1436 [ps:P1436 ?size_online ; pq:P518 wd:Q106474029 ; pq:P585 ?date ] .}
+bind ((100 * ?size_online / ?size) as ?percentage_online)
+BIND(if
+(?percentage_online < 10, ""FF0000"",
+if (?percentage_online < 20, ""E21C00"",
+if (?percentage_online < 30,""C63800"",
+if (?percentage_online < 40, ""AA5500"",
+if (?percentage_online < 50, ""8D7100"",
+if (?percentage_online < 60, ""718D00"",
+if (?percentage_online < 70, ""55AA00"",
+if (?percentage_online < 80, ""38C600"",
+if (?percentage_online < 90, ""1CE200"", ""00FF00""))))))))) as ?rgb) .
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""en,cs"". }
+}",H4 computes ?percentage_online as a flag but never filters on it,no,"Neither ""art"" nor ""collection"" expressed: only P17 = Czechia plus the existence of a P1436 statement, which any museum, library or archive satisfies. filter(year(?date) = 2021) is an extra constraint the question never asks for.  [reconciled]"
+16,unflagged,What species are commonly found at Fazenda Tamandua?,"SELECT
+?item ?itemLabel ?pic
+WHERE
+{
+wd:Q109639255 wdt:P6803 ?item .
+OPTIONAL {?item wdt:P18 ?pic}
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"" }
+}",,yes,
+391,unflagged,List the most populous first-level country subdivisions without a legislative body.,"SELECT DISTINCT ?item ?itemLabel ?countryLabel ?area ?population
+WHERE
+{
+?item wdt:P31/wdt:P279* wd:Q10864048 ; # first-level subdivision
+wdt:P17 ?country ; # country
+p:P2046/psv:P2046 [ # area
+wikibase:quantityAmount ?baseArea;
+wikibase:quantityUnit [
+p:P2370/psv:P2370 [
+wikibase:quantityAmount ?unitArea;
+wikibase:quantityUnit wd:Q25343
+]
+]
+] ;
+wdt:P1082 ?population . # population
+BIND(ROUND(?baseArea * ?unitArea / 1000000) AS ?area) .
+FILTER NOT EXISTS { ?item wdt:P194 [] } # without legislature
+FILTER NOT EXISTS { ?item wdt:P576 [] } # filter dissolved subdivisions
+FILTER NOT EXISTS { ?country wdt:P576 [] } # filter dissolved countries
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+}
+ORDER BY DESC(?population)
+LIMIT 500",,yes,
+215,unflagged,List the years when pride parades started.,"SELECT ?pride ?time ?image {
+?pride (wdt:P31|wdt:P279) wd:Q51404;
+wdt:P571 ?time.
+OPTIONAL {?pride wdt:P18 ?image}
+}",,yes,
+329,flagged,Find the route of The Antartic Circumpolar Voyage expedition.,"SELECT * WHERE {
+wd:Q104863295 p:P276 ?stat .
+?stat ps:P276 ?location .
+?location p:P625 [ ps:P625 []; psv:P625 [ wikibase:geoLongitude ?coord1lon; wikibase:geoLatitude ?coord1lat; ] ].
+?stat pq:P1545 ?series .
+wd:Q104863295 p:P276 ?stat2 .
+?stat2 ps:P276 ?location2 .
+?location2 p:P625 [ ps:P625 []; psv:P625 [ wikibase:geoLongitude ?coord2lon; wikibase:geoLatitude ?coord2lat; ] ].
+?stat2 pq:P1545 ?series2 .
+filter (xsd:integer(?series) = xsd:integer(?series2) -1)
+BIND(CONCAT('LINESTRING (', STR(?coord1lon), ' ', STR(?coord1lat), ',', STR(?coord2lon), ' ', STR(?coord2lat), ')') AS ?str) .
+BIND(STRDT(?str, geo:wktLiteral) AS ?line)
+BIND(""ff0033"" as ?rgb)
+BIND(""voyage"" AS ?layer)
+}",H4 binds ?rgb but never filters or projects it,yes,
+484,flagged,What are the most common Roman praenomina?,"SELECT ?item ?itemLabel (SAMPLE(?holder) as ?sample) (COUNT(DISTINCT ?holder) as ?ct)
+{
+?item wdt:P31 wd:Q1240901 .
+OPTIONAL { ?holder wdt:P2358 ?item }
+MINUS { ?item wdt:P31 wd:Q4167410 }
+MINUS { ?item wdt:P31 wd:Q101352 }
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"" .}
+}
+GROUP BY ?item ?itemLabel","H2 superlative question, gold has no ORDER BY",no,GROUP BY with no ORDER BY. Superlative unanswered.
+29,unflagged,List websites associated with projects in the Women's & Gender History DH list.,"SELECT ?item ?itemLabel ?official_website WHERE {
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+?item wdt:P1343 wd:Q76510930.
+OPTIONAL { ?item wdt:P856 ?official_website. }
+}
+ORDER BY ASC(?itemLabel)",,yes,
+422,flagged,What is the average height of male figure skaters in each discipline?,"SELECT ?disciplineLabel ?genderLabel (AVG(?height_in_m) AS ?averageheight) (COUNT(?person) AS ?number)
+WHERE {
+?person wdt:P2416 ?discipline ;
+wdt:P641 wd:Q38108 .
+?person wdt:P21 ?gender .
+?person p:P2048/psn:P2048/wikibase:quantityAmount ?height_in_m .
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+}
+GROUP BY ?disciplineLabel ?genderLabel
+ORDER BY ?averageheight","H1 asks for items, gold returns only a count",no,
+238,flagged,List the actors who have worked with Shah Rukh Khan in multiple films.,"SELECT DISTINCT ?coactorLabel (COUNT(?film) as ?films) WHERE {
+?film wdt:P31 wd:Q11424 ; wdt:P161 wd:Q9535 ; wdt:P161 ?coactor.
+FILTER(?coactor != wd:Q9535)
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?coactorLabel","H1 asks for items, gold returns only a count",no,
+396,unflagged,"Show me the relationships between Elsa Lanchester, Charles Laughton, and other notable individuals.","SELECT ?item1 ?image ?item1Label ?item2 ?image2 ?item2Label ?edgeLabel
+WITH { SELECT ?item1 WHERE {
+VALUES ?item1 {wd:Q233009 wd:Q55264 wd:Q18527930 wd:Q61412 wd:Q9061 wd:Q1170115 wd:Q1453055 wd:Q5541515 wd:Q5729524 wd:Q1138080 wd:Q82133 wd:Q20081025 wd:Q860807}
+} } AS %item1
+WITH {SELECT (?item1 AS ?item2) WHERE {INCLUDE %item1} } AS %item2
+WHERE {
+INCLUDE %item1.
+INCLUDE %item2.
+?item1 ?prop ?item2.
+?edge wikibase:directClaim ?prop ; a wikibase:Property
+OPTIONAL {?item1 wdt:P18 ?image}
+OPTIONAL {?item2 wdt:P18 ?image2}
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"" }
+}",,yes,
+293,unflagged,List famous Latin American female musicians who don't have a Wikipedia article in Spanish.,"SELECT DISTINCT ?item ?itemLabel ?num ?itemDescription WHERE {
+VALUES ?occ {wd:Q639669}
+?item wdt:P31 wd:Q5 ;
+wdt:P21 wd:Q6581072 ;
+(wdt:P106/(wdt:P279*)) ?occ;
+wdt:P106 ?occupation .
+?item wikibase:sitelinks ?num.
+?item wdt:P27 ?nacionalidad .
+?nacionalidad wdt:P17 ?country .
+?country (wdt:P361/(wdt:P361*)) wd:Q12585 .
+FILTER(?num >= 1)
+MINUS {
+?art schema:about ?item.
+?art schema:isPartOf <https://es.wikipedia.org/>.
+}
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""es,en"". }
+}
+ORDER BY DESC(?num)",,no,
+8,unflagged,List all literary works and their descriptions.,"SELECT ?s ?desc
+WHERE
+{
+?s wdt:P279 wd:Q7725634 .
+OPTIONAL {
+?s rdfs:label ?desc FILTER (lang(?desc) = ""en"").
+}
+}",,yes,
+460,unflagged,Show me a map of railway stations in Wales.,"SELECT ?station ?stationLabel ?cds ?line ?trackLabel ?track ?image {
+{SELECT * {
+SERVICE gas:service {
+gas:program gas:gasClass ""com.bigdata.rdf.graph.analytics.BFS"" ; gas:in wd:Q1990205 ; gas:out ?station ; gas:out1 ?depth ; gas:out2 ?pred .
+gas:program gas:linkType wdt:P197 . }
+FILTER(?station != wd:Q1990205)
+?station wdt:P625 ?cds ;
+wdt:P17 wd:Q145 .
+?station p:P197 ?adjST .
+?adjST ps:P197 ?adj ;
+pq:P81 ?track .
+?pred p:P625/psv:P625/wikibase:geoLatitude ?lat1 ; p:P625/psv:P625/wikibase:geoLongitude ?lon1 .
+?station p:P625/psv:P625/wikibase:geoLatitude ?lat2 ; p:P625/psv:P625/wikibase:geoLongitude ?lon2 .
+BIND(CONCAT('LINESTRING(', STR(?lon1), ' ', STR(?lat1), ',', STR(?lon2), ' ', STR(?lat2), ')') AS ?str) . BIND(STRDT(?str, geo:wktLiteral) AS ?line)}
+}
+OPTIONAL { ?station wdt:P18 ?image .}
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",,yes,
+361,flagged,Show me a map of people buried in Pere Lachaise Cemetery organized by their place of birth.,"SELECT ?article ?person ?personLabel ?picGrave ?coord ?bd ?graveplot2 ?layer WHERE {
+{
+?person wdt:P119 wd:Q311 ;
+p:P119 [
+pq:P965 ?graveplot];
+wdt:P569 ?bd .
+?person wdt:P19 ?city .
+?city wdt:P625 ?coord .
+OPTIONAL{ ?person wdt:P1442 ?picGrave .}
+OPTIONAL {
+?article schema:about ?person .
+?article schema:inLanguage ""fr"" .
+?article schema:isPartOf <https://fr.wikipedia.org/> .}
+BIND (CONCAT(""Division "",?graveplot) AS ?graveplot2)
+BIND(
+IF(?bd < ""1700-01-01T00:00:00Z""^^xsd:dateTime, ""<1700"",
+IF(?bd < ""1800-01-01T00:00:00Z""^^xsd:dateTime, ""18e siecle"",
+IF(?bd < ""1900-01-01T00:00:00Z""^^xsd:dateTime, ""19e siecle"",
+IF(?bd < ""2000-01-01T00:00:00Z""^^xsd:dateTime, ""20e siecle"",
+""21e siecle""))))
+AS ?layer).
+}
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""fr""}
+}
+Order by ?personLabel",H4 computes ?bd as a flag but never filters on it,yes,
+507,flagged,List all lighthouses in South America along with their coordinates.,"SELECT DISTINCT ?lighthouse ?lighthouseName ?countryLabel (concat(str(?latitude), "", "", str(?longitude)) AS ?coordinates) ?height ?builtDateLabel ?functionalLabel ?wikipediaUrl
+WHERE
+{
+?lighthouse wdt:P31 wd:Q39715. # find all instances of lighthouse
+?country wdt:P30 wd:Q18. # find all instances of country in South America
+?lighthouse wdt:P17 ?country. # find lighthouses in South American countries
+OPTIONAL {
+?lighthouse wdt:P17 ?country.
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+OPTIONAL {
+?lighthouse wdt:P625 ?coordinates.
+BIND(xsd:float(STRAFTER(STR(?coordinates), ""Point("")) AS ?longitude)
+BIND(xsd:float(STRAFTER(STR(?coordinates), "" "" )) AS ?latitude)
+}
+OPTIONAL { ?lighthouse wdt:P2048 ?height. }
+OPTIONAL { ?lighthouse wdt:P571 ?builtDate. }
+OPTIONAL {
+?lighthouse p:P1433/ps:P1433 ?wikipediaUrl. # get the English Wikipedia page URL
+FILTER (LANG(?wikipediaUrl) = '' || LANG(?wikipediaUrl) = 'en')
+}
+OPTIONAL {
+?lighthouse p:P1317 ?functionalClaim.
+?functionalClaim ps:P1317 ?functional.
+BIND(IF(?functional, ""Operational"", ""Not operational"") AS ?functionalLabel)
+}
+OPTIONAL {
+?lighthouse rdfs:label ?lighthouseName.
+FILTER (LANG(?lighthouseName) = 'en')
+}
+OPTIONAL {
+?lighthouse schema:description ?lighthouseName.
+FILTER (LANG(?lighthouseName) = 'en')
+}
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY ?lighthouseName",H4 computes ?functional as a flag but never filters on it,yes,
+513,unflagged,What are the most common properties used in maps?,"SELECT ?prop ?propLabel ?prop_items ?prop_stmts ?val ?valLabel ?val_count ?samp ?sampLabel
+WITH {
+SELECT ?item ?prop ?stmt ?val WHERE {
+hint:Query hint:optimizer ""None"" .
+wd:Q4006 ^wdt:P279*/^wdt:P31 ?item .
+MINUS {?item wdt:P31 wd:Q17146139}
+?item ?p ?stmt .
+?prop wikibase:claim ?p .
+?prop wikibase:statementProperty ?ps .
+MINUS {
+{?prop wdt:P31/wdt:P279* wd:Q19847637} # Wikidata property representing a unique identifier
+UNION
+{?prop wdt:P31/wdt:P279* wd:Q18614948} # Wikidata property for authority control
+}
+?stmt ?ps ?val .
+} #LIMIT 2000
+} AS %maps_props_vals
+WITH {
+SELECT ?prop (COUNT(DISTINCT(?item)) AS ?prop_items) (COUNT(DISTINCT(?stmt)) AS ?prop_stmts) WHERE {
+INCLUDE %maps_props_vals
+} GROUP BY ?prop
+} AS %prop_stats
+WITH {
+SELECT ?prop ?val (COUNT(DISTINCT(?item)) AS ?val_count) (SAMPLE(?item) AS ?samp) WHERE {
+INCLUDE %maps_props_vals
+} GROUP BY ?prop ?val
+HAVING (?val_count > 3)
+} AS %prop_val_counts
+WITH {
+SELECT ?prop ?val ?samp ?val_count (COUNT(DISTINCT(?val1)) AS ?val_rank) WHERE {
+INCLUDE %prop_val_counts .
+{
+SELECT ?prop (?val AS ?val1) (?val_count AS ?val1_count) WHERE {
+INCLUDE %prop_val_counts
+}
+}
+FILTER (?val1_count >= ?val_count)
+} GROUP BY ?prop ?val ?val_count ?samp
+} AS %prop_val_ranks
+WHERE {
+INCLUDE %prop_stats .
+INCLUDE %prop_val_ranks .
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+FILTER (?val_rank < 6) .
+} ORDER BY DESC(?prop_items) DESC(?prop_stmts) ?prop ?val_rank",,no,
+402,flagged,What are the most gender-imbalanced occupations in the US?,"SELECT ?occupationLabel ?women ?men WITH {
+SELECT ?occupation (SUM(?woman) AS ?women) (SUM(?man) AS ?men) WHERE {
+BIND(wd:Q30 AS ?country). # substitute country of your choice here (remove the Q30, hit Ctrl+Space and start typing the country name, select the right one from the suggestions with the arrow keys and insert it with Enter)
+?person wdt:P31 wd:Q5;
+wdt:P27 ?country; # remove this to search world-wide - results in query timeout unless you reduce the dataset in some other fashion
+p:P106/ps:P106 ?occupation.
+{ ?person wdt:P21 wd:Q6581097. BIND(1 AS ?man). } UNION
+{ ?person wdt:P21 wd:Q2449503. BIND(1 AS ?man). } UNION
+{ ?person wdt:P21 wd:Q6581072. BIND(1 AS ?woman). } UNION
+{ ?person wdt:P21 wd:Q1052281. BIND(1 AS ?woman). }
+# TODO consider how to count P21: Q48270 (genderqueer) and Q1097630 (intersex)
+}
+GROUP BY ?occupation
+} AS %results WHERE {
+INCLUDE %results. # subquery as optimization: don't make the label service fetch labels for every ?person in the subquery
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+ORDER BY
+# divide ?variable+1 instead of ?variable to avoid division by zero
+# (unfortunately, we can't use ABS(LOG(x/y)) instead of the IF() because SPARQL has no LOG function)
+DESC(IF(?women > ?men, (?women+1)/(?men+1), (?men+1)/(?women+1)))
+# if the ratio is the same, show results with more people in total first
+DESC(?women+?men)",H4 binds ?country but never filters or projects it,no,
+550,flagged,List all parties that had members elected in the February 1974 UK general election.,"SELECT DISTINCT ?party1 ?party1Label ?rgb (count(DISTINCT(?item)) as ?count)
+{
+?item p:P39 ?positionStatement . ?positionStatement ps:P39 ?term . ?term wdt:P279* wd:Q16707842 .
+?positionStatement ps:P39 ?term .
+?positionStatement pq:P768 ?constituency .
+?positionStatement pq:P2715 wd:Q119524 . # relevant general election
+?positionStatement pq:P4100 ?party .
+BIND(IF(?party = wd:Q6467393, wd:Q9630 , ?party) AS ?party1) .
+optional { ?party1 wdt:P465 ?rgb } . # colour if known
+SERVICE wikibase:label { bd:serviceParam wikibase:language 'en' }
+} group by ?party1 ?party1Label ?rgb order by desc(?count)
+#defaultView:BubbleChart",H4 computes ?party as a flag but never filters on it,yes,
+161,unflagged,List all locations with the name 'Earth' in any language.,"SELECT DISTINCT ?place (STR(?label) AS ?placeLabel) WHERE {
+hint:Query hint:optimizer 'None' .
+BIND(wd:Q2 AS ?earth) .
+?earth rdfs:label ?label .
+?place rdfs:label ?label .
+FILTER (?earth != ?place) .
+?place wdt:P31/wdt:P279* wd:Q17334923 .
+}",,no,
+564,unflagged,"List countries with their ISO codes, flag features, and fertility rates.","SELECT ?iso ?countryLabel (SUM(?stars) as ?stars) ?fertility WHERE {
+{SELECT DISTINCT ?country ?iso WHERE {
+VALUES ?countrytypes {wd:Q6256 wd:Q3624078} # country and sovereign state
+?country wdt:P31 ?countrytypes ; wdt:P298 ?iso
+MINUS {?country wdt:P576 []} # Not dissolved
+} }
+?country wdt:P163 ?flag.
+OPTIONAL{
+?flag p:P180 [ps:P180 ?feature ; pq:P1114 ?stars] . # quantity of feature
+?feature wdt:P279? wd:Q836708 # type of star polygon
+}
+OPTIONAL { ?country wdt:P4841 ?fertility }
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+} GROUP BY ?iso ?countryLabel ?fertility
+ORDER BY DESC(?stars) ?countryLabel",,no,
+223,flagged,List all Indian districts that share a border with another district.,"SELECT ?i ?iLabel ?j ?jLabel {
+?i wdt:P31/wdt:P279* wd:Q1149652; wdt:P47 ?j. ?j wdt:P31/wdt:P279* wd:Q1149652.
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+}","H3 question names a nationality, gold has no country property",yes,
+109,flagged,List all Wikidata properties with their IDs and descriptions.,"SELECT ?id ?idLabel ?idDescription ?new {
+?id wikibase:directClaim ?pid .
+# ?id wikibase:propertyType wikibase:ExternalId .
+BIND(Replace(STR(?id),""http://www.wikidata.org/entity/P"","" "") as ?new)
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""en,sv"". }
+}
+ORDER BY DESC(xsd:integer(?new))","H5 question asks for two things, gold projects one",yes,
+171,unflagged,List all types of food in English.,"SELECT ?lang1 ?desc ?lang2 WHERE {
+?item wdt:P279 wd:Q2095.
+?item rdfs:label ?lang1 FILTER(lang(?lang1) = ""en"").
+?item schema:description ?desc FILTER(lang(?desc) = ""en"").
+?item rdfs:label ?lang2 FILTER(lang(?lang2) = ""ca"")
+} ORDER BY ?lang1",,no,
+532,flagged,List the Danish monarchs along with their places and dates of death.,"SELECT ?item ?itemLabel ?layer ?coordsLabel ?DOD ?coords WHERE {
+?item wdt:P39 wd:Q18341329;
+wdt:P20 ?PoD.
+?item rdfs:label ?itemLabel.
+?item wdt:P570 ?DOD.
+?PoD wdt:P625 ?coords.
+FILTER((LANG(?itemLabel)) = ""da"")
+OPTIONAL {
+?item wdt:P1196 ?manner.
+?manner rdfs:label ?mannerLabel.
+FILTER((LANG(?mannerLabel)) = ""da"")
+BIND(?mannerLabel AS ?layer)
+}
+}","H3 question names a nationality, gold has no country property",yes,"Head is correct: monarchs via P39, dates via P570. Place of death appears only as ?coords from P625, never as the place item, so scoring must accept coordinates where a system would return the place. Answer-shape mismatch, not a wrong answer. Note itemLabel is bound via rdfs:label, so it survives this endpoint.  [reconciled]"
+547,flagged,List the moons of planets in our solar system and their namesakes.,"SELECT distinct ?planet ?planetLabel ?satellite ?satelliteLabel ?namedLabel ?namedDescription WHERE {
+?planet wdt:P31/wdt:P279* wd:Q13205267.
+?satellite wdt:P31/wdt:P279* wd:Q2537.
+?satellite wdt:P397 ?planet.
+?satellite wdt:P138 ?named.
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+?planet p:P2244/psv:P2244 ?statement.
+?statement wikibase:quantityUnit ?unit.
+?statement wikibase:quantityAmount ?distance.
+?statement wikibase:quantityNormalized/wikibase:quantityAmount ?distanceNormalized. # convert to normalized unit (meter)
+BIND (?distanceNormalized / 9460800000000000 AS ?lightyears)
+}
+ORDER BY ?lightyears",H4 binds ?lightyears but never filters or projects it,yes,
+232,unflagged,List all the collections that have photos taken by Carleton Watkins.,"SELECT ?item ?itemLabel ?collection ?collectionLabel ?pic
+WHERE
+{
+?item wdt:P170 wd:Q2939083 .
+?item wdt:P276 ?collection.
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+}
+ORDER BY ?collectionLabel",,yes,
+260,unflagged,List the top film directors by their number of films and sitelinks.,"SELECT ?director ?director_label (count(distinct ?film) as ?films) (count(distinct ?sitelink) as ?sitelinks) ((?films * ?sitelinks) as ?rank)
+WHERE
+{
+?director wdt:P106 wd:Q2526255 . # has ""film director"" as occupation
+?film wdt:P57 ?director . # get all films directed by the director
+?sitelink schema:about ?director . # get all the sitelinks about the director
+OPTIONAL {?director rdfs:label ?director_label # get the label of the director (if it exists)
+FILTER (lang(?director_label) = ""en"") # filter for only English labels
+}
+}
+GROUP BY ?director ?director_label
+ORDER BY DESC(?rank)
+LIMIT 100",,yes,
+183,unflagged,List all female artists.,"select distinct ?women ?womenLabel
+where {
+?women wdt:P31 wd:Q5 .
+?women wdt:P21 wd:Q6581072 .
+?women wdt:P106/wdt:P279* wd:Q483501 . # artists
+SERVICE wikibase:label {
+bd:serviceParam wikibase:language ""fr,en"" .
+}
+} LIMIT 500",,yes,Pattern correct; LIMIT 500 truncates 'all'. Gold answer set is a partial slice. Label column blank = page bug.
+276,flagged,List the longest English words in alphabetical order.,"PREFIX dct: <http://purl.org/dc/terms/> # workaround for T233148
+SELECT ?lexeme ?lemma (STRLEN(?lemma) AS ?length) WHERE {
+BIND(wd:Q1860 AS ?language)
+?lexeme dct:language ?language;
+wikibase:lemma ?lemma.
+FILTER(STRLEN(?lemma) >= 5)
+# first version allows repeated letters, second one doesn't
+# FILTER(REGEX(?lemma, ""^A*B*C*D*E*F*G*H*I*J*K*L*M*N*O*P*Q*R*S*T*U*V*Q*X*Y*Z*$"", ""i""))
+FILTER(REGEX(?lemma, ""^A?B?C?D?E?F?G?H?I?J?K?L?M?N?O?P?Q?R?S?T?U?V?Q?X?Y?Z?$"", ""i""))
+}
+ORDER BY DESC(?length)",H4 binds ?language but never filters or projects it,no,
+147,flagged,List the French towns that have a street in Paris named after them.,"SELECT DISTINCT ?street ?streetLabel ?town ?coords WHERE {
+?street wdt:P630 ?code .
+?street wdt:P138 ?town .
+?town wdt:P31 wd:Q484170 .
+?town wdt:P625 ?coords .
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""fr"" . }
+} ORDER BY ?itemLabel","H3 question names a nationality, gold has no country property",yes,"is P630 the Paris street code property? If yes, Paris is encoded the same way India is in 223, and the row passes. If P630 is something generic, nothing ties these streets to Paris and it's a No. The ORDER BY ?itemLabel on an unbound variable is sloppy copy-paste but changes nothing."
+59,unflagged,What are the things named after characters from William Shakespeare's works?,"SELECT DISTINCT ?obj ?objLabel ?objDescription ?char ?charLabel ?charDescription
+WHERE {
+?obj wdt:P138 ?char.
+?char wdt:P1441/wdt:P50 wd:Q692 # Present in a work written by William Shakespeare
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"" }
+} ORDER By ASC(?work)",,yes,
+326,flagged,List all buildings with coordinates and at least one sitelink.,"SELECT ?q ?linkcount ?loc {
+?q wdt:P31 wd:Q41176 ; wdt:P625 ?loc ; wikibase:sitelinks ?linkcount MINUS { ?q wdt:P18 [] } FILTER ( ?linkcount >= 1 )
+}","H2 superlative question, gold has no ORDER BY",no,
+117,unflagged,List all humans who received the Theatre World Award in 2016.,"SELECT DISTINCT ?item ?itemLabel (year(?date) as ?year)
+WHERE {
+?item wdt:P31 wd:Q5 .
+?item p:P166 ?award .
+?award ps:P166 wd:Q1131356 ;
+pq:P585 ?date .
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""fr"" . }
+}",,no,No year filter at all. 867 rows from 1951 to 2002. The question says 2016.
+555,unflagged,How many alphabets use a specific letter?,"SELECT ?itemLabel (COUNT(distinct ?alfabet) AS ?cnt) WHERE {
+?item wdt:P31/wdt:P279* wd:Q9788.
+FILTER NOT EXISTS {?alfabet wdt:P31/wdt:P279* wd:Q3241972.}
+FILTER NOT EXISTS {?alfabet wdt:P279+ wd:Q9788.}
+FILTER NOT EXISTS {?alfabet wdt:P31/wdt:P279* wd:Q15139721.}
+FILTER NOT EXISTS {?alfabet wdt:P31/wdt:P279* wd:Q10856962.}
+FILTER NOT EXISTS {?alfabet wdt:P31/wdt:P279* wd:Q188725.}
+?alfabet wdt:P527 ?item.
+SERVICE wikibase:label {
+bd:serviceParam wikibase:language ""ru, en"" .
+}
+}
+GROUP BY ?item ?itemLabel
+ORDER BY DESC(?cnt)",,yes,
+229,unflagged,List the influential people born between 1590 and 1750 who were influenced by other humans.,"SELECT DISTINCT ?a ?aLabel ?b ?bLabel
+{?a wdt:P31 wd:Q5;
+wdt:P569 ?birth;
+wdt:P737 ?b .
+?b wdt:P31 wd:Q5 .
+FILTER (?birth > ""1590-01-01""^^xsd:dateTime && ?birth < ""1750-01-01""^^xsd:dateTime)
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+}",,no,
+508,unflagged,List languages with overlapping lexemes.,"SELECT
+# ?language1
+?language1Label
+# ?language2
+?language2Label
+(COUNT(?concept) AS ?count)
+{
+?concept ^wdt:P5137 / ^ontolex:sense ?lexeme1, ?lexeme2 .
+?lexeme1 dct:language ?language1 .
+?lexeme2 dct:language ?language2 .
+?language1 wdt:P218 ?language1Label .
+?language2 wdt:P218 ?language2Label .
+# FILTER (?language1 != ?language2)
+}
+GROUP BY ?language1 ?language1Label ?language2 ?language2Label
+HAVING (COUNT(?concept) > 10)",,no,"FILTER (?language1 != ?language2) is commented out, so every language pairs with itself (zu → zu, 27). Self-pairs are not overlaps, and they outrank real pairs.  [reconciled]"
+533,flagged,What is the most specific taxonomic group that includes both Alocasia cuprea and Codiaeum variegatum?,"# Find parent taxon shared by two taxa:
+SELECT ?via ?viaLabel ?rank ?rankLabel ?pic WHERE {
+?via ^(wdt:P171*) wd:Q15314291; # Alocasia cuprea (Q15314291)
+^(wdt:P171*) wd:Q1345646. # Codiaeum variegatum (Q1345646)
+FILTER(NOT EXISTS {
+?via2 ^(wdt:P171*) wd:Q15314291; # Alocasia cuprea (Q15314291)
+^(wdt:P171*) wd:Q1345646; # Codiaeum variegatum (Q1345646)
+wdt:P171 ?via.
+})
+OPTIONAL {
+?via wdt:P18 ?pic;
+wdt:P105 ?rank.
+}
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+}","H2 superlative question, gold has no ORDER BY",yes,The FILTER NOT EXISTS does the superlative: it drops any common ancestor that has a common-ancestor child. Flowering plant is the correct lowest common ancestor of an aroid and a euphorb.
+557,flagged,What are the most common first names of current French members of Parliament?,"SELECT ?firstnameLabel (COUNT(*) AS ?count)
+WHERE {
+?depute wdt:P31 wd:Q5 .
+?depute p:P39 ?mandate .
+?mandate ps:P39 wd:Q3044918 . # French depute
+?mandate pq:P2937 wd:Q24939798 . # 15th legislature
+?depute wdt:P735 ?firstname .
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""fr"" . }
+}
+GROUP BY ?firstnameLabel
+HAVING (?count >= 3)
+ORDER BY DESC(?count)","H1 asks for items, gold returns only a count; H3 question names a nationality, gold has no country property",no,
+37,unflagged,List all colors with their corresponding sRGB hex triplets.,"SELECT ?p ?pLabel ?size ?rgb WHERE {
+?p wdt:P31 wd:Q1075 .
+?p wdt:P465 ?rgb . # sRGB color hex triplet
+BIND (1 AS ?size)
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+}
+ORDER BY ASC (LCASE(?pLabel))",,yes,
+135,flagged,"What are the English, Welsh and Scottish counties that share borders?","SELECT ?place1 ?place1Label ?place2 ?place2Label ?refurl WHERE {
+?place1 p:P47 ?statement;
+wdt:P31 ?place1type.
+?statement ps:P47 ?place2;
+FILTER (?place1type IN (wd:Q180673, wd:Q1138494, wd:Q15979307, wd:Q202435, wd:Q15060255)).
+OPTIONAL {?statement prov:wasDerivedFrom/pr:P854 ?refurl}
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"" }
+}","H3 question names a nationality, gold has no country property",yes,"do those five Q-IDs actually cover English, Welsh and Scottish county types? If they're all English, the question isn't answered. Also ?place2 is unconstrained, so a county bordering a sea or a non-county counts. Same minor gap as 223, not a No on its own."
+360,flagged,Find the railway stations between Dibrugarh and Scottish Highlands with the fewest stops.,"SELECT ?station ?stationLabel ?cds ?line ?layer WHERE {
+{ SERVICE gas:service {
+gas:program gas:gasClass ""com.bigdata.rdf.graph.analytics.BFS"" ; gas:in wd:Q15213944 ; gas:target wd:Q2784062 ; gas:out ?station ; gas:out1 [] ; gas:out2 ?pred .
+gas:program gas:linkType wdt:P197 . } }
+FILTER(?station != wd:Q15213944)
+?pred p:P625/psv:P625/wikibase:geoLatitude ?lat1 ; p:P625/psv:P625/wikibase:geoLongitude ?lon1 .
+?station p:P625/psv:P625/wikibase:geoLatitude ?lat2 ; p:P625/psv:P625/wikibase:geoLongitude ?lon2 .
+BIND(CONCAT('LINESTRING(', STR(?lon1), ' ', STR(?lat1), ',', STR(?lon2), ' ', STR(?lat2), ')') AS ?str) . BIND(STRDT(?str, geo:wktLiteral) AS ?line)
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}","H3 question names a nationality, gold has no country property",no,
+463,flagged,List all natural numbers from 1 to 2000.,"SELECT ?xLabel ?size ?rgb WITH {
+SELECT DISTINCT ?n WHERE { # generate a sequence of natural numbers
+VALUES ?start { 1 }
+BIND (2000 AS ?end)
+BIND ( (?end - ?start ) + 1 AS ?x )
+[] p:P31 [
+ps:P31 wd:Q21199 ; # is a natural number
+pq:P155 ?prev
+] .
+?prev wdt:P1181 ?n .
+FILTER (?n > 0 && ?n < ?x + 1)
+}
+} AS %numbers
+WHERE {
+INCLUDE %numbers
+?x wdt:P31 wd:Q21199 .
+?x wdt:P1181 ?n .
+FILTER (?x NOT IN (wd:Q713113)) # exclude the annoying 0.999
+OPTIONAL { ?x wdt:P31 wd:Q49008 . BIND (true AS ?prime) } # highlight prime numbers
+BIND(1 AS ?size) # used for the size of the bubble: want them all the same size
+BIND ( COALESCE(IF(?prime, ""FD7F7F"", 1/0),""71C1FD"") AS ?rgb )
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+}
+ORDER BY ?n",H4 binds ?end but never filters or projects it,no,
+159,flagged,List the countries with the most metal bands.,"SELECT ?countryLabel (COUNT(?item) AS ?count)
+WHERE
+{
+?item wdt:P31/wdt:P279* wd:Q2088357 ; wdt:P136/wdt:P279* wd:Q38848 ; wdt:P495 ?country .
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}
+GROUP BY ?countryLabel","H1 asks for items, gold returns only a count; H2 superlative question, gold has no ORDER BY",no,
+45,unflagged,List the compositions that feature both organ and orchestra.,"SELECT ?composition ?composerLabel ?compositionLabel
+WHERE
+{
+?composition wdt:P870/wdt:P279* wd:Q1444;
+wdt:P870/wdt:P279* wd:Q42998;
+wdt:P86 ?composer.
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+}",,yes,
+482,flagged,What are the most common election days in different countries?,"SELECT ?countryLabel ?weekday ?count ?totalCount ?percentage
+WITH {
+SELECT ?country ?offset (COUNT(DISTINCT ?election) AS ?count) WHERE {
+?election wdt:P31/wdt:P279* wd:Q40231;
+wdt:P17 ?country;
+p:P585/psv:P585 [
+wikibase:timeValue ?date;
+wikibase:timePrecision ?precision
+].
+FILTER(?precision >= ""11""^^xsd:integer)
+MINUS { ?country wdt:P156|wdt:P576|wdt:P582 ?end. }
+BIND(?date - ""1776-07-04""^^xsd:dateTime AS ?offsetInt)
+BIND(?offsetInt - (7 * xsd:integer(xsd:float(?offsetInt) / 7.0)) AS ?offsetSigned)
+BIND(IF(?offsetSigned < 0, ?offsetSigned + 7, ?offsetSigned) AS ?offset)
+}
+GROUP BY ?country ?offset
+} AS %offsets
+WITH {
+SELECT ?country ?weekday ?count WHERE {
+INCLUDE %offsets.
+BIND(IF(?offset = 0, ""Thursday""@en,
+IF(?offset = 1, ""Friday""@en,
+IF(?offset = 2, ""Saturday""@en,
+IF(?offset = 3, ""Sunday""@en,
+IF(?offset = 4, ""Monday""@en,
+IF(?offset = 5, ""Tuesday""@en,
+IF(?offset = 6, ""Wednesday""@en,
+""unknown day""@en)))))))
+AS ?weekday)
+}
+} AS %weekdays
+WITH {
+SELECT ?country (MAX(?count) AS ?maxCount) (SUM(?count) AS ?totalCount) WHERE {
+INCLUDE %weekdays.
+}
+GROUP BY ?country
+HAVING(?totalCount >= 3) # filter out countries with not enough data (3 is a very generous limit)
+} AS %maxWeekdayCount
+WITH {
+SELECT ?country (SAMPLE(?weekday) AS ?weekday) ?count ?totalCount WHERE {
+INCLUDE %weekdays.
+INCLUDE %maxWeekdayCount.
+FILTER(?count = ?maxCount)
+}
+GROUP BY ?country ?count ?totalCount
+} AS %maxWeekday
+WHERE {
+INCLUDE %maxWeekday.
+BIND(?count / ?totalCount AS ?ratio)
+BIND(CONCAT(SUBSTR(STR(100 * ?ratio), 1, 5), ""%"") AS ?percentage)
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+}
+ORDER BY DESC(?totalCount)",H4 binds ?offsetInt but never filters or projects it,no,
+286,unflagged,What artworks are commonly depicted in both the Ashmolean Museum and the Cleveland Museum of Art?,"SELECT ?depicted ?depictedLabel ?ashcount ?ashexample ?ashexampleLabel ?clevcount ?clevexample ?clevexampleLabel WHERE {
+{SELECT ?depicted (Sample(?itemash) AS ?ashexample) (COUNT(DISTINCT ?itemash) AS ?ashcount) (sample(?itemclev) as ?clevexample) (COUNT(DISTINCT ?itemclev) AS ?clevcount) WHERE {
+?itemclev wdt:P195 wd:Q657415; wdt:P180 ?depicted.
+?itemash wdt:P195 wd:Q636400 ; wdt:P180 ?depicted.
+} GROUP BY ?depicted }
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+} ORDER BY DESC(?ashcount + ?clevcount)",,yes,
+145,flagged,List the countries of origin for people affiliated with Ghana's top 3 traditional universities.,"SELECT ?lieuLabel ?contLabel (COUNT(DISTINCT ?researcher) AS ?nb) WHERE {
+VALUES ?univ { wd:Q2303765 wd:Q1654025 wd:Q746079 }
+?researcher (wdt:P108|wdt:P463|wdt:P1416) ?univ .
+?researcher wdt:P27 ?lieu .
+?lieu wdt:P30 ?cont .
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"". }
+}
+GROUP BY ?lieuLabel ?contLabel","H1 asks for items, gold returns only a count; H2 superlative question, gold has no ORDER BY",no,
+529,flagged,List all street names in Berlin that have multiple occurrences.,"SELECT ?label (COUNT(?street) AS ?count) (GROUP_CONCAT(?street) AS ?streets) WHERE {
+?street wdt:P31/wdt:P279* wd:Q79007;
+wdt:P17 wd:Q183;
+wdt:P131+ wd:Q64. hint:Prior hint:gearing ""forward"".
+?street rdfs:label ?label.
+FILTER(LANG(?label) = ""de"")
+}
+GROUP BY ?label
+HAVING(?count > 1)","H1 asks for items, gold returns only a count",no,
+2,unflagged,List all organisms named in honor of John Sibthorp.,"SELECT ?item ?name WHERE {
+?item wdt:P138 wd:Q936580; wdt:P225 ?name
+}",,yes,
+273,flagged,List the identifiers present on Penelope Cruz's item but not on Sean Connery's.,"SELECT
+?p ?pLabel ?comparewithLabel
+(SAMPLE(?url) AS ?url_comp2)
+WHERE
+{
+BIND(wd:Q39666 as ?comparewith)
+hint:Query hint:optimizer ""None"".
+{ ?comparewith ?wdt ?v.
+?p wikibase:directClaim ?wdt; wikibase:propertyType wikibase:ExternalId.
+FILTER NOT EXISTS { wd:Q4573 ?wdt [] }
+FILTER NOT EXISTS { ?p wdt:P31 wd:Q66712599 }
+FILTER NOT EXISTS { ?p wdt:P31 wd:Q27525351 }
+FILTER NOT EXISTS { ?p wdt:P31 wd:Q66118402 }
+OPTIONAL { ?p wdt:P1630 ?f. } BIND(URI(REPLACE(?f, ""\\$1"", ?v)) AS ?url)
+} UNION { BIND( wd:Q4573 as ?p) }
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en""}
+}
+GROUP BY ?p ?pLabel ?comparewithLabel
+ORDER BY (?url_comp2)",H4 binds ?comparewith but never filters or projects it,no,
+67,flagged,List all French municipalities with their corresponding banners.,"SELECT ?item ?itemLabel ?banner WHERE {
+?item wdt:P31/wdt:P279* wd:Q484170 .
+?item wdt:P948 ?banner .
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""fr"". }
+} ORDER BY ?itemLabel","H3 question names a nationality, gold has no country property",yes,"Q484170 = commune of France, P948 = banner. Same false positive as 223."
+0,unflagged,How many items on Wikidata have a coordinate location?,"SELECT (COUNT(?item) AS ?count)
+WHERE { ?item wdt:P625 [] }",,yes,
+424,flagged,List the occupations of authors who have written scholarly articles.,"SELECT ?occupationLabel (count(DISTINCT ?author) as ?count)
+WHERE
+{
+?object wdt:P31 wd:Q13442814
+; wdt:P50 ?author .
+?author wdt:P106 ?occupation .
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""en,fr"" }
+}
+GROUP BY ?occupationLabel
+ORDER BY DESC(?count)","H1 asks for items, gold returns only a count",yes,"Query is sound: scholarly articles → authors → P106, grouped and ranked. The single blank row with count 2,152,321 is the label service being off: ?occupationLabel is unbound, so every author collapses into one group. Minor wart: groups on the label rather than the occupation item.  [reconciled]"
+420,unflagged,List the names of programming languages along with their creation years and images of their inventors.,"SELECT DISTINCT ?langLabel ?langDate ?humanLabel ?picture WHERE {
+?lang (wdt:P31/(wdt:P279*)) wd:Q9143.
+?human wdt:P31 wd:Q5;
+wdt:P18 ?picture.
+{ ?lang wdt:P287 ?human. }
+UNION
+{ ?lang wdt:P170 ?human. }
+UNION
+{ ?lang wdt:P943 ?human. }
+UNION
+{ ?lang wdt:P178 ?human. }
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""en"". }
+OPTIONAL { ?lang wdt:P571 ?langDate. }
+}
+LIMIT 25",,yes,
+318,unflagged,List the people who received the most letters.,"SELECT ?recipient ?recipientLabel ?recipientDescription (COUNT(?letter) as ?count)
+WHERE {
+?letter wdt:P1817 ?recipient;
+wdt:P31 wd:Q133492.
+SERVICE wikibase:label { bd:serviceParam wikibase:language ""[AUTO_LANGUAGE],en"" }
+} GROUP BY ?recipient ?recipientLabel ?recipientDescription
+ORDER BY DESC(?count)",,yes,Has ORDER BY DESC(?count). That's exactly what 484 was missing.

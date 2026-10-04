@@ -1,0 +1,50 @@
+accuracy source: results_e2e_clean.csv (jaccard_entity), 363 scored strict rows
+
+PART 1 — structural features of the GOLD query vs achieved accuracy
+
+feature                      n present  acc present  acc absent     gap     rho
+------------------------------------------------------------------------------
+path operator (/ or |)             114        22.7%       29.7%   -7.1   -0.06
+transitive star (*)                 97        21.2%       29.8%   -8.6   -0.06
+statement node (p:)                 75        21.0%       29.2%   -8.2   -0.10
+qualifier (pq:)                     52        24.1%       28.1%   -4.0   -0.04
+value node (psv:)                   16        17.8%       27.9%  -10.1   -0.04
+aggregation                         75        17.5%       30.1%  -12.6   -0.15
+GROUP BY                            94        21.2%       29.7%   -8.5   -0.12
+alternation (VALUES/UNION)          56        19.4%       29.0%   -9.6   -0.03
+subquery                            15        22.6%       27.7%   -5.1   -0.03
+OPTIONAL                           151        33.9%       23.0%  +10.9    0.10
+FILTER                              86        24.0%       28.6%   -4.5   -0.06
+triples (approx)                   354        27.4%       30.2%   -2.8   -0.03
+projected vars                     327        27.9%       24.2%   +3.6    0.10
+
+
+PART 2 — how many of the 4 zero-shot models solve each question (Jaccard >= 0.5), n = 400
+
+  solved by 0/4 models:  307 ( 76.8%)
+  solved by 1/4 models:   37 (  9.2%)
+  solved by 2/4 models:   28 (  7.0%)
+  solved by 3/4 models:   13 (  3.2%)
+  solved by 4/4 models:   15 (  3.8%)
+
+intrinsically hard (no model): 307  |  solved by all: 15
+complexity of the hard set: {'simple': 23, 'medium': 143, 'complex': 141}
+complexity of the easy set: {'simple': 4, 'medium': 8, 'complex': 3}
+
+structural features: hard set vs easy set (mean count per query)
+feature                          hard     easy
+path operator (/ or |)           0.48     0.27
+transitive star (*)              0.34     0.13
+statement node (p:)              0.30     0.07
+qualifier (pq:)                  0.22     0.00
+value node (psv:)                0.08     0.07
+aggregation                      0.32     0.00
+GROUP BY                         0.32     0.07
+alternation (VALUES/UNION)       0.29     0.13
+subquery                         0.05     0.00
+OPTIONAL                         0.68     0.67
+FILTER                           0.47     0.40
+triples (approx)                 3.29     2.13
+projected vars                   4.05     3.53
+
+written complexity_features.csv, agreement_analysis.csv

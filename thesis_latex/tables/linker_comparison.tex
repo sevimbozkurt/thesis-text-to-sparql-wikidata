@@ -1,0 +1,29 @@
+\begin{table}[htbp]
+  \centering
+  \caption{Entity and property linking across four paradigms, both splits.}
+  \label{tab:linkers}
+  \small
+  \setlength{\tabcolsep}{3pt}
+  \begin{tabular}{lllrrrr}
+    \toprule
+    Split & Linker & Backbone & Mentions & P (\%) & R (\%) & F1 (\%) \\
+    \midrule
+    working & Reasoning over candidates & Claude Opus 4.8 & entity & 97.8 & 97.6 & 97.7 \\
+    working & Reasoning over candidates & Claude Opus 4.8 & property & 98.7 & 98.4 & 98.5 \\
+    working & Reasoning over candidates & Qwen2.5-14B-Instruct & entity & 95.0 & 94.8 & 94.9 \\
+    working & Reasoning over candidates & Qwen2.5-14B-Instruct & property & 98.0 & 97.7 & 97.9 \\
+    working & Reasoning over candidates & Qwen2.5-7B-Instruct & entity & 95.8 & 95.7 & 95.8 \\
+    working & GLiNKER gliner-linker-large-v1.0 & - & entity & 74.6 & 71.0 & 72.8 \\
+    working & ELQ elq\_wiki\_large & - & entity & 67.1 & 18.0 & 28.4 \\
+    working & ReFinED questions\_model & - & entity & 79.7 & 15.9 & 26.6 \\
+    working & First search result & - & entity & 93.6 & 93.5 & 93.5 \\
+    official & Reasoning over candidates & Qwen2.5-14B-Instruct & entity & 93.1 & 92.6 & 92.9 \\
+    official & Reasoning over candidates & Qwen2.5-14B-Instruct & property & 97.8 & 97.0 & 97.4 \\
+    official & GLiNKER gliner-linker-large-v1.0 & - & entity & 72.5 & 69.7 & 71.0 \\
+    official & ELQ elq\_wiki\_large & - & entity & 71.7 & 22.1 & 33.8 \\
+    official & ReFinED questions\_model & - & entity & 77.2 & 16.4 & 27.1 \\
+    official & First search result & - & entity & 90.5 & 90.0 & 90.2 \\
+    \bottomrule
+  \end{tabular}
+  \tabnote{Identical rows, identical ground truth and identical candidate pools within each split. P/R/F1 are mention-level; a prediction counts as correct only on exact identifier match. ELQ and ReFinED detect their own mentions, so their set-based figures are reported in the text instead. GLiNKER chooses among the same seven candidates per label as the reasoning linker. \emph{First search result} takes the first Wikidata search hit among those candidates, without any model, as a reference. Per-complexity F1 is plotted in Figure~\ref{fig:linker-cx} rather than repeated here.}
+\end{table}

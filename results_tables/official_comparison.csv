@@ -1,0 +1,10 @@
+system,questions with output,pooled_exact,pooled,executed_pct
+this pipeline (frozen),357,23.37,23.4,90.8
+open 14B for both stages,370,4.77,4.8,44.6
+mistral-7b-sparql,360,61.22,61.2,91.9
+llama3-8b-sparql,356,58.33,58.3,89.7
+gpt4,362,11.48,11.5,85.7
+gpt3.5,357,4.43,4.4,70.3
+llama3-70b,364,0.21,0.2,14.2
+llama3-8b,363,0.02,0.0,51.4
+mistral-7b,365,0.01,0.0,36.8

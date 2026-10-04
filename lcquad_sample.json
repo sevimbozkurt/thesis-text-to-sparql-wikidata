@@ -1,0 +1,1811 @@
+[
+ {
+  "uid": 5189,
+  "question": "In which country was Ahmad ibn Hanbal born in the city of Baghdad?",
+  "sparql": "SELECT ?value WHERE { wd:Q194442 p:P19 ?s . ?s ps:P19 wd:Q1530 . ?s pq:P17 ?value}",
+  "gold_entities": [
+   "Q1530",
+   "Q194442"
+  ],
+  "gold_properties": [
+   "P17",
+   "P19"
+  ]
+ },
+ {
+  "uid": 2116,
+  "question": "How many times has Joseph Barbera been an executive producer?",
+  "sparql": "SELECT (COUNT(?sub) AS ?value ) { ?sub wdt:P1431 wd:Q190373 }",
+  "gold_entities": [
+   "Q190373"
+  ],
+  "gold_properties": [
+   "P1431"
+  ]
+ },
+ {
+  "uid": 3892,
+  "question": "What degree did Katherine Dunham earn at the University of Chicago?",
+  "sparql": "SELECT ?value WHERE { wd:Q272637 p:P69 ?s . ?s ps:P69 wd:Q131252 . ?s pq:P512 ?value}",
+  "gold_entities": [
+   "Q131252",
+   "Q272637"
+  ],
+  "gold_properties": [
+   "P512",
+   "P69"
+  ]
+ },
+ {
+  "uid": 21639,
+  "question": "What is the enterprise of the developer of Skype?",
+  "sparql": "select distinct ?obj where { wd:Q40984 wdt:P178 ?obj . ?obj wdt:P31 wd:Q6881511 }",
+  "gold_entities": [
+   "Q40984",
+   "Q6881511"
+  ],
+  "gold_properties": [
+   "P178",
+   "P31"
+  ]
+ },
+ {
+  "uid": 26120,
+  "question": "What is exclave of Sharjah Emirate?",
+  "sparql": "select distinct ?answer where { ?answer wdt:P500 wd:Q188810}",
+  "gold_entities": [
+   "Q188810"
+  ],
+  "gold_properties": [
+   "P500"
+  ]
+ },
+ {
+  "uid": 10474,
+  "question": "When did Ossie Davis receive his award for the NAACP Image Award \u2013 Hall of Fame Award.",
+  "sparql": "SELECT ?value1 ?value2 WHERE { wd:Q515632 p:P166 ?s . ?s ps:P166 wd:Q6952076 . ?s pq:P585 ?value1 . ?s pq:P1346 ?value2 }",
+  "gold_entities": [
+   "Q515632",
+   "Q6952076"
+  ],
+  "gold_properties": [
+   "P1346",
+   "P166",
+   "P585"
+  ]
+ },
+ {
+  "uid": 13191,
+  "question": "Who is the male lead actor in the movie \"Brokeback Mountain?\"",
+  "sparql": "SELECT ?answer WHERE { wd:Q160618 wdt:P161 ?answer . ?answer wdt:P21 wd:Q6581097}",
+  "gold_entities": [
+   "Q160618",
+   "Q6581097"
+  ],
+  "gold_properties": [
+   "P161",
+   "P21"
+  ]
+ },
+ {
+  "uid": 17398,
+  "question": "What is lake of of Doordarshan?",
+  "sparql": "SELECT ?answer WHERE { wd:Q1763315 wdt:P159 ?X . ?X wdt:P206 ?answer}",
+  "gold_entities": [
+   "Q1763315"
+  ],
+  "gold_properties": [
+   "P159",
+   "P206"
+  ]
+ },
+ {
+  "uid": 2804,
+  "question": "What Microsoft Mobile smartphone has the largest battery capacity ?",
+  "sparql": "select ?ent where { ?ent wdt:P31 wd:Q19723451 . ?ent wdt:P4140 ?obj . ?ent wdt:P176 wd:Q16538568 } ORDER BY DESC(?obj)LIMIT 5",
+  "gold_entities": [
+   "Q16538568",
+   "Q19723451"
+  ],
+  "gold_properties": [
+   "P176",
+   "P31",
+   "P4140"
+  ]
+ },
+ {
+  "uid": 3939,
+  "question": "What award was received by Mary Ainsworth  in 1989?",
+  "sparql": "SELECT ?obj WHERE { wd:Q242625 p:P166 ?s . ?s ps:P166 ?obj . ?s pq:P585 ?x filter(contains(YEAR(?x),'1989')) }",
+  "gold_entities": [
+   "Q242625"
+  ],
+  "gold_properties": [
+   "P166",
+   "P585"
+  ]
+ },
+ {
+  "uid": 15058,
+  "question": "What method of murder is mentioned in the dedication of Church of St Peter and St Paul, in the Church of England?",
+  "sparql": "SELECT ?answer WHERE { wd:Q17528852 wdt:P825 ?X . ?X wdt:P509 ?answer}",
+  "gold_entities": [
+   "Q17528852"
+  ],
+  "gold_properties": [
+   "P509",
+   "P825"
+  ]
+ },
+ {
+  "uid": 5713,
+  "question": "Whose incarnation was Voltaire according to Jean-Baptiste Fiard?",
+  "sparql": "SELECT ?obj WHERE { wd:Q9068 p:P3701 ?s . ?s ps:P3701 ?obj . ?s pq:P3680 wd:Q29886576 }",
+  "gold_entities": [
+   "Q29886576",
+   "Q9068"
+  ],
+  "gold_properties": [
+   "P3680",
+   "P3701"
+  ]
+ },
+ {
+  "uid": 12459,
+  "question": "What did Albus Dumbledore die from in the story cycle of Harry Potter universe?",
+  "sparql": "SELECT ?answer WHERE { wd:Q712548 wdt:P509 ?answer . ?answer wdt:P1080 wd:Q5410773}",
+  "gold_entities": [
+   "Q5410773",
+   "Q712548"
+  ],
+  "gold_properties": [
+   "P1080",
+   "P509"
+  ]
+ },
+ {
+  "uid": 12617,
+  "question": "Which is the rural city of Fukushim?",
+  "sparql": "SELECT ?answer WHERE { wd:Q161176 wdt:P131 ?answer . ?answer wdt:P150 wd:Q1347240}",
+  "gold_entities": [
+   "Q1347240",
+   "Q161176"
+  ],
+  "gold_properties": [
+   "P131",
+   "P150"
+  ]
+ },
+ {
+  "uid": 10211,
+  "question": "Who are the followers of Hu Yaobang the chairperson of the Communist Party of China?",
+  "sparql": "SELECT ?value1 ?value2 WHERE { wd:Q17427 p:P488 ?s . ?s ps:P488 wd:Q99850 . ?s pq:P155 ?value1 . ?s pq:P156 ?value2 }",
+  "gold_entities": [
+   "Q17427",
+   "Q99850"
+  ],
+  "gold_properties": [
+   "P155",
+   "P156",
+   "P488"
+  ]
+ },
+ {
+  "uid": 491,
+  "question": "Does Chris Martin used the piano as an instrument?",
+  "sparql": "ASK WHERE { wd:Q712860 wdt:P1303 wd:Q5994 }",
+  "gold_entities": [
+   "Q5994",
+   "Q712860"
+  ],
+  "gold_properties": [
+   "P1303"
+  ]
+ },
+ {
+  "uid": 4884,
+  "question": "When was Cesare lombroso was nominated for Nobel pirze in Physiology or Medicine?",
+  "sparql": "SELECT ?value WHERE { wd:Q202420 p:P1411 ?s . ?s ps:P1411 wd:Q80061 . ?s pq:P585 ?value}",
+  "gold_entities": [
+   "Q202420",
+   "Q80061"
+  ],
+  "gold_properties": [
+   "P1411",
+   "P585"
+  ]
+ },
+ {
+  "uid": 18676,
+  "question": "Is the oxidation state of phosphorus equal to 3?",
+  "sparql": "ASK WHERE { wd:Q674 wdt:P1121 ?obj filter(?obj = 3) }",
+  "gold_entities": [
+   "Q674"
+  ],
+  "gold_properties": [
+   "P1121"
+  ]
+ },
+ {
+  "uid": 3084,
+  "question": "Name the short-chain fatty acid causing acetic acid exposure with the highest dynamic viscosity ?",
+  "sparql": "select ?ent where { ?ent wdt:P31 wd:Q2698455 . ?ent wdt:P3070 ?obj . ?ent wdt:P1542 wd:Q21167527 } ORDER BY DESC(?obj)LIMIT 5",
+  "gold_entities": [
+   "Q21167527",
+   "Q2698455"
+  ],
+  "gold_properties": [
+   "P1542",
+   "P3070",
+   "P31"
+  ]
+ },
+ {
+  "uid": 18645,
+  "question": "Is the wavelength of 2MASS equal to 1.662?",
+  "sparql": "ASK WHERE { wd:Q1454942 wdt:P2808 ?obj filter(?obj = 1.662) }",
+  "gold_entities": [
+   "Q1454942"
+  ],
+  "gold_properties": [
+   "P2808"
+  ]
+ },
+ {
+  "uid": 15046,
+  "question": "Bo\u00f6tes III is located in what part of the constellation?",
+  "sparql": "SELECT ?answer WHERE { wd:Q45975 wdt:P397 ?X . ?X wdt:P59 ?answer}",
+  "gold_entities": [
+   "Q45975"
+  ],
+  "gold_properties": [
+   "P397",
+   "P59"
+  ]
+ },
+ {
+  "uid": 3619,
+  "question": "What was the population of Florida in 1940?",
+  "sparql": "SELECT ?obj WHERE { wd:Q812 p:P1082 ?s . ?s ps:P1082 ?obj . ?s pq:P585 ?x filter(contains(YEAR(?x),'1940')) }",
+  "gold_entities": [
+   "Q812"
+  ],
+  "gold_properties": [
+   "P1082",
+   "P585"
+  ]
+ },
+ {
+  "uid": 4503,
+  "question": "Who was Hayao Miyazaki's last employer in the year 1984?",
+  "sparql": "SELECT ?obj WHERE { wd:Q55400 p:P108 ?s . ?s ps:P108 ?obj . ?s pq:P582 ?x filter(contains(YEAR(?x),'1984')) }",
+  "gold_entities": [
+   "Q55400"
+  ],
+  "gold_properties": [
+   "P108",
+   "P582"
+  ]
+ },
+ {
+  "uid": 26937,
+  "question": "What is Quecha's Wikimedia language code?",
+  "sparql": "select distinct ?answer where { wd:Q5218 wdt:P424 ?answer}",
+  "gold_entities": [
+   "Q5218"
+  ],
+  "gold_properties": [
+   "P424"
+  ]
+ },
+ {
+  "uid": 18603,
+  "question": "Is the borrowing rate of a Consorsbank VISA card less than 9.3?",
+  "sparql": "ASK WHERE { wd:Q57047474 wdt:P5898 ?obj filter(?obj < 9.3) }",
+  "gold_entities": [
+   "Q57047474"
+  ],
+  "gold_properties": [
+   "P5898"
+  ]
+ },
+ {
+  "uid": 27102,
+  "question": "What is Janet Jackson's genre?",
+  "sparql": "select distinct ?answer where { wd:Q131324 wdt:P136 ?answer}",
+  "gold_entities": [
+   "Q131324"
+  ],
+  "gold_properties": [
+   "P136"
+  ]
+ },
+ {
+  "uid": 13900,
+  "question": "\"What is the science that study of Indian subcontinent that has study of the history of India",
+  "sparql": "SELECT ?answer WHERE { wd:Q60140 wdt:P2579 ?answer . ?answer wdt:P2578 wd:Q133136}",
+  "gold_entities": [
+   "Q133136",
+   "Q60140"
+  ],
+  "gold_properties": [
+   "P2578",
+   "P2579"
+  ]
+ },
+ {
+  "uid": 13007,
+  "question": "who is the teacher of nikolay yegorovich Zhukovshy, the member of Russian Academy of sciences?",
+  "sparql": "SELECT ?answer WHERE { wd:Q271956 wdt:P802 ?answer . ?answer wdt:P463 wd:Q83172}",
+  "gold_entities": [
+   "Q271956",
+   "Q83172"
+  ],
+  "gold_properties": [
+   "P463",
+   "P802"
+  ]
+ },
+ {
+  "uid": 12083,
+  "question": "Where did Boleslaw Prus pass away? It is a sister city of Vilnius.",
+  "sparql": "SELECT ?answer WHERE { wd:Q144439 wdt:P20 ?answer . ?answer wdt:P190 wd:Q216}",
+  "gold_entities": [
+   "Q144439",
+   "Q216"
+  ],
+  "gold_properties": [
+   "P190",
+   "P20"
+  ]
+ },
+ {
+  "uid": 10975,
+  "question": "Where was Joseph Chamberlain elected as Member of the 27th Parliament of the United Kingdom and why did it end?",
+  "sparql": "SELECT ?value1 ?value2 WHERE { wd:Q315999 p:P39 ?s . ?s ps:P39 wd:Q41582575 . ?s pq:P2715 ?value1 . ?s pq:P1534 ?value2 }",
+  "gold_entities": [
+   "Q315999",
+   "Q41582575"
+  ],
+  "gold_properties": [
+   "P1534",
+   "P2715",
+   "P39"
+  ]
+ },
+ {
+  "uid": 17905,
+  "question": "What is on the tracklist of the art collection of Papryus Oxyrchynchus 223?",
+  "sparql": "SELECT ?answer WHERE { wd:Q7133388 wdt:P1433 ?X . ?X wdt:P195 ?answer}",
+  "gold_entities": [
+   "Q7133388"
+  ],
+  "gold_properties": [
+   "P1433",
+   "P195"
+  ]
+ },
+ {
+  "uid": 2855,
+  "question": "Which outer planet orbiting the Sun has the highest albedo ?",
+  "sparql": "select ?ent where { ?ent wdt:P31 wd:Q30014 . ?ent wdt:P4501 ?obj . ?ent wdt:P397 wd:Q525 } ORDER BY DESC(?obj)LIMIT 5",
+  "gold_entities": [
+   "Q30014",
+   "Q525"
+  ],
+  "gold_properties": [
+   "P31",
+   "P397",
+   "P4501"
+  ]
+ },
+ {
+  "uid": 7396,
+  "question": "What was the name of the second work published by Oscar Wilde?",
+  "sparql": "SELECT ?obj WHERE { wd:Q30875 p:P735 ?s . ?s ps:P735 ?obj . ?s pq:P1545 ?x filter(contains(?x,'2')) }",
+  "gold_entities": [
+   "Q30875"
+  ],
+  "gold_properties": [
+   "P1545",
+   "P735"
+  ]
+ },
+ {
+  "uid": 29086,
+  "question": "What do Wikidata usage instructions say about legend?",
+  "sparql": "select distinct ?answer where { wd:Q44342 wdt:P2559 ?answer}",
+  "gold_entities": [
+   "Q44342"
+  ],
+  "gold_properties": [
+   "P2559"
+  ]
+ },
+ {
+  "uid": 26323,
+  "question": "What is the DBS ID of the Technical University of Munich?",
+  "sparql": "select distinct ?answer where { wd:Q157808 wdt:P4007 ?answer}",
+  "gold_entities": [
+   "Q157808"
+  ],
+  "gold_properties": [
+   "P4007"
+  ]
+ },
+ {
+  "uid": 15070,
+  "question": "What is the local calling code of twin town of Le\u00f3n ?",
+  "sparql": "SELECT ?answer WHERE { wd:Q189128 wdt:P190 ?X . ?X wdt:P473 ?answer}",
+  "gold_entities": [
+   "Q189128"
+  ],
+  "gold_properties": [
+   "P190",
+   "P473"
+  ]
+ },
+ {
+  "uid": 27450,
+  "question": "which  candidate of John Howard?",
+  "sparql": "select distinct ?answer where { ?answer wdt:P726 wd:Q51330}",
+  "gold_entities": [
+   "Q51330"
+  ],
+  "gold_properties": [
+   "P726"
+  ]
+ },
+ {
+  "uid": 22444,
+  "question": "Who started a conflict by overthrowing Idi Amin?",
+  "sparql": "select distinct ?obj where { wd:Q48231 wdt:P607 ?obj . ?obj wdt:P31 wd:Q45382 }",
+  "gold_entities": [
+   "Q45382",
+   "Q48231"
+  ],
+  "gold_properties": [
+   "P31",
+   "P607"
+  ]
+ },
+ {
+  "uid": 16328,
+  "question": "Who is the husband of the child of Emmanuel Bourdieu?",
+  "sparql": "SELECT ?answer WHERE { wd:Q1338188 wdt:P25 ?X . ?X wdt:P26 ?answer}",
+  "gold_entities": [
+   "Q1338188"
+  ],
+  "gold_properties": [
+   "P25",
+   "P26"
+  ]
+ },
+ {
+  "uid": 14826,
+  "question": "What is the municipal council of diplomatic relations for the Turkish Republic of Northern Cyprus?",
+  "sparql": "SELECT ?answer WHERE { wd:Q23681 wdt:P530 ?X . ?X wdt:P194 ?answer}",
+  "gold_entities": [
+   "Q23681"
+  ],
+  "gold_properties": [
+   "P194",
+   "P530"
+  ]
+ },
+ {
+  "uid": 3195,
+  "question": "Which landlocked country diplomatically related to Serbia has the lowest minimum age for compulsory education ?",
+  "sparql": "select ?ent where { ?ent wdt:P31 wd:Q123480 . ?ent wdt:P3270 ?obj . ?ent wdt:P530 wd:Q403. } ORDER BY ASC(?obj)LIMIT 5",
+  "gold_entities": [
+   "Q123480",
+   "Q403"
+  ],
+  "gold_properties": [
+   "P31",
+   "P3270",
+   "P530"
+  ]
+ },
+ {
+  "uid": 6588,
+  "question": "When did Lesotho start using a flag image as the Flag of Lesotho in 1966?",
+  "sparql": "SELECT ?value WHERE { wd:Q1013 p:P41 ?s . ?s ps:P41 ?x filter(contains(?x,'Flag of Lesotho (1966).svg')) . ?s pq:P580 ?value}",
+  "gold_entities": [
+   "Q1013"
+  ],
+  "gold_properties": [
+   "P41",
+   "P580"
+  ]
+ },
+ {
+  "uid": 8370,
+  "question": "Who was awarded Olympic bronze medal in Ryan Lochte?",
+  "sparql": "SELECT ?obj WHERE { wd:Q201517 p:P1344 ?s . ?s ps:P1344 ?obj . ?s pq:P166 wd:Q15889643 }",
+  "gold_entities": [
+   "Q15889643",
+   "Q201517"
+  ],
+  "gold_properties": [
+   "P1344",
+   "P166"
+  ]
+ },
+ {
+  "uid": 21955,
+  "question": "The Hittites ethnic group has what mythology?",
+  "sparql": "select distinct ?sbj where { ?sbj wdt:P172 wd:Q5406 . ?sbj wdt:P31 wd:Q9134 }",
+  "gold_entities": [
+   "Q5406",
+   "Q9134"
+  ],
+  "gold_properties": [
+   "P172",
+   "P31"
+  ]
+ },
+ {
+  "uid": 21568,
+  "question": "which sculpture depicted by lroquois",
+  "sparql": "select distinct ?obj where { wd:Q68518 wdt:P1299 ?obj . ?obj wdt:P31 wd:Q860861 }",
+  "gold_entities": [
+   "Q68518",
+   "Q860861"
+  ],
+  "gold_properties": [
+   "P1299",
+   "P31"
+  ]
+ },
+ {
+  "uid": 29459,
+  "question": "What is the RKDlibrary ID for Henry Peach Robinson?",
+  "sparql": "select distinct ?answer where { wd:Q574144 wdt:P4989 ?answer}",
+  "gold_entities": [
+   "Q574144"
+  ],
+  "gold_properties": [
+   "P4989"
+  ]
+ },
+ {
+  "uid": 16997,
+  "question": "What is the  permanent duplicated item  made  by  blackberry ?",
+  "sparql": "SELECT ?answer WHERE { wd:Q19842373 wdt:P1582 ?X . ?X wdt:P2959 ?answer}",
+  "gold_entities": [
+   "Q19842373"
+  ],
+  "gold_properties": [
+   "P1582",
+   "P2959"
+  ]
+ },
+ {
+  "uid": 8512,
+  "question": "When did Stanislav Cherchesov start playing for FC Lokomotiv Moscow?",
+  "sparql": "SELECT ?value WHERE { wd:Q699557 p:P54 ?s . ?s ps:P54 wd:Q29115 . ?s pq:P580 ?value}",
+  "gold_entities": [
+   "Q29115",
+   "Q699557"
+  ],
+  "gold_properties": [
+   "P54",
+   "P580"
+  ]
+ },
+ {
+  "uid": 14479,
+  "question": "Which label is preceded by Dr. Hee?",
+  "sparql": "SELECT ?answer WHERE { wd:Q5304139 wdt:P155 ?X . ?X wdt:P264 ?answer}",
+  "gold_entities": [
+   "Q5304139"
+  ],
+  "gold_properties": [
+   "P155",
+   "P264"
+  ]
+ },
+ {
+  "uid": 15270,
+  "question": "Who is brother of musician of Duchess?",
+  "sparql": "SELECT ?answer WHERE { wd:Q27237663 wdt:P175 ?X . ?X wdt:P3373 ?answer}",
+  "gold_entities": [
+   "Q27237663"
+  ],
+  "gold_properties": [
+   "P175",
+   "P3373"
+  ]
+ },
+ {
+  "uid": 6663,
+  "question": "What was located in the administrative territorial entity of Ivanovo which begun in 1918-6-20?",
+  "sparql": "SELECT ?obj WHERE { wd:Q2630 p:P131 ?s . ?s ps:P131 ?obj . ?s pq:P580 ?x filter(contains(YEAR(?x),'1918')) }",
+  "gold_entities": [
+   "Q2630"
+  ],
+  "gold_properties": [
+   "P131",
+   "P580"
+  ]
+ },
+ {
+  "uid": 19173,
+  "question": "Is the female population of The Spectacles less than 0?",
+  "sparql": "ASK WHERE { wd:Q7765761 wdt:P1539 ?obj filter(?obj < 0.0) }",
+  "gold_entities": [
+   "Q7765761"
+  ],
+  "gold_properties": [
+   "P1539"
+  ]
+ },
+ {
+  "uid": 5767,
+  "question": "Was the award received by Tran Anh Hung in thea year 1995-0-0?",
+  "sparql": "SELECT ?obj WHERE { wd:Q557546 p:P166 ?s . ?s ps:P166 ?obj . ?s pq:P585 ?x filter(contains(YEAR(?x),'1995')) }",
+  "gold_entities": [
+   "Q557546"
+  ],
+  "gold_properties": [
+   "P166",
+   "P585"
+  ]
+ },
+ {
+  "uid": 23870,
+  "question": "What are the index number which start with the letter vix",
+  "sparql": "SELECT DISTINCT ?sbj ?sbj_label WHERE { ?sbj wdt:P31 wd:Q1738991 . ?sbj rdfs:label ?sbj_label . FILTER(CONTAINS(lcase(?sbj_label), 'vix')) . FILTER (lang(?sbj_label) = 'en') } LIMIT 25",
+  "gold_entities": [
+   "Q1738991"
+  ],
+  "gold_properties": [
+   "P31"
+  ]
+ },
+ {
+  "uid": 23348,
+  "question": "tell me jurisdiction that name has the word viguerie in it",
+  "sparql": "SELECT DISTINCT ?sbj ?sbj_label WHERE { ?sbj wdt:P31 wd:Q471855 . ?sbj rdfs:label ?sbj_label . FILTER(CONTAINS(lcase(?sbj_label), 'viguerie')) . FILTER (lang(?sbj_label) = 'en') } LIMIT 25",
+  "gold_entities": [
+   "Q471855"
+  ],
+  "gold_properties": [
+   "P31"
+  ]
+ },
+ {
+  "uid": 25061,
+  "question": "Name the country formerly known as Old Toronto that contains the word \"Cn\" in its name",
+  "sparql": "SELECT DISTINCT ?sbj ?sbj_label WHERE { ?sbj wdt:P31 wd:Q2319498 . ?sbj wdt:P131 wd:Q919169 . ?sbj rdfs:label ?sbj_label . FILTER(CONTAINS(lcase(?sbj_label), 'cn')) . FILTER (lang(?sbj_label) = 'en') } LIMIT 25",
+  "gold_entities": [
+   "Q2319498",
+   "Q919169"
+  ],
+  "gold_properties": [
+   "P131",
+   "P31"
+  ]
+ },
+ {
+  "uid": 18500,
+  "question": "Is the JMA Magnitude of the 2016 Kumamoto earthquakes greater than 5.84?",
+  "sparql": "ASK WHERE { wd:Q23825118 wdt:P5900 ?obj filter(?obj > 5.84) }",
+  "gold_entities": [
+   "Q23825118"
+  ],
+  "gold_properties": [
+   "P5900"
+  ]
+ },
+ {
+  "uid": 23845,
+  "question": "Tell me  world view  whose name has the word theism  in it.",
+  "sparql": "SELECT DISTINCT ?sbj ?sbj_label WHERE { ?sbj wdt:P31 wd:Q49447 . ?sbj rdfs:label ?sbj_label . FILTER(CONTAINS(lcase(?sbj_label), 'theism')) . FILTER (lang(?sbj_label) = 'en') } LIMIT 25",
+  "gold_entities": [
+   "Q49447"
+  ],
+  "gold_properties": [
+   "P31"
+  ]
+ },
+ {
+  "uid": 8187,
+  "question": "What movie was Janet Gaynor nominated for an Academy Award for Best Actress?",
+  "sparql": "SELECT ?value WHERE { wd:Q182462 p:P1411 ?s . ?s ps:P1411 wd:Q103618 . ?s pq:P1686 ?value}",
+  "gold_entities": [
+   "Q103618",
+   "Q182462"
+  ],
+  "gold_properties": [
+   "P1411",
+   "P1686"
+  ]
+ },
+ {
+  "uid": 24026,
+  "question": "what are the fossil taxon was starts with z",
+  "sparql": "SELECT DISTINCT ?sbj ?sbj_label WHERE { ?sbj wdt:P31 wd:Q23038290 . ?sbj rdfs:label ?sbj_label . FILTER(STRSTARTS(lcase(?sbj_label), 'z')) . FILTER (lang(?sbj_label) = 'en') } LIMIT 25",
+  "gold_entities": [
+   "Q23038290"
+  ],
+  "gold_properties": [
+   "P31"
+  ]
+ },
+ {
+  "uid": 28535,
+  "question": "Which is the ORCID iD of Steven Pinker?",
+  "sparql": "select distinct ?answer where { wd:Q212730 wdt:P496 ?answer}",
+  "gold_entities": [
+   "Q212730"
+  ],
+  "gold_properties": [
+   "P496"
+  ]
+ },
+ {
+  "uid": 20657,
+  "question": "Who is the doctoral student Richard Dawkins?",
+  "sparql": "select distinct ?sbj where { ?sbj wdt:P185 wd:Q44461 . ?sbj wdt:P31 wd:Q5 }",
+  "gold_entities": [
+   "Q44461",
+   "Q5"
+  ],
+  "gold_properties": [
+   "P185",
+   "P31"
+  ]
+ },
+ {
+  "uid": 26455,
+  "question": "Which is the patronage of the Berlin U-Bahn?",
+  "sparql": "select distinct ?answer where { wd:Q68646 wdt:P3872 ?answer}",
+  "gold_entities": [
+   "Q68646"
+  ],
+  "gold_properties": [
+   "P3872"
+  ]
+ },
+ {
+  "uid": 17536,
+  "question": "The individual who discovered pulsar is in which field of study?",
+  "sparql": "SELECT ?answer WHERE { wd:Q4360 wdt:P61 ?X . ?X wdt:P101 ?answer}",
+  "gold_entities": [
+   "Q4360"
+  ],
+  "gold_properties": [
+   "P101",
+   "P61"
+  ]
+ },
+ {
+  "uid": 29810,
+  "question": "When did khanate for country of Golden Horde?",
+  "sparql": "select distinct ?sbj where { ?sbj wdt:P17 wd:Q79965 . ?sbj wdt:P31 wd:Q331644 }",
+  "gold_entities": [
+   "Q331644",
+   "Q79965"
+  ],
+  "gold_properties": [
+   "P17",
+   "P31"
+  ]
+ },
+ {
+  "uid": 27446,
+  "question": "What is Armenian Cinema ID for Aram Khachaturian ?",
+  "sparql": "select distinct ?answer where { wd:Q152293 wdt:P5218 ?answer}",
+  "gold_entities": [
+   "Q152293"
+  ],
+  "gold_properties": [
+   "P5218"
+  ]
+ },
+ {
+  "uid": 24803,
+  "question": "what is academy that starts with u",
+  "sparql": "SELECT DISTINCT ?sbj ?sbj_label WHERE { ?sbj wdt:P31 wd:Q162633 . ?sbj rdfs:label ?sbj_label . FILTER(STRSTARTS(lcase(?sbj_label), 'u')) . FILTER (lang(?sbj_label) = 'en') } LIMIT 25",
+  "gold_entities": [
+   "Q162633"
+  ],
+  "gold_properties": [
+   "P31"
+  ]
+ },
+ {
+  "uid": 24773,
+  "question": "tell me stylistic device starts with T",
+  "sparql": "SELECT DISTINCT ?sbj ?sbj_label WHERE { ?sbj wdt:P31 wd:Q182545 . ?sbj rdfs:label ?sbj_label . FILTER(STRSTARTS(lcase(?sbj_label), '\u012b')) . FILTER (lang(?sbj_label) = 'en') } LIMIT 25",
+  "gold_entities": [
+   "Q182545"
+  ],
+  "gold_properties": [
+   "P31"
+  ]
+ },
+ {
+  "uid": 2047,
+  "question": "What is the number of copyright owners for Nintendo?",
+  "sparql": "SELECT (COUNT(?sub) AS ?value ) { ?sub wdt:P3931 wd:Q8093 }",
+  "gold_entities": [
+   "Q8093"
+  ],
+  "gold_properties": [
+   "P3931"
+  ]
+ },
+ {
+  "uid": 11995,
+  "question": "What is the quantity of square metre whose symbol is A?",
+  "sparql": "SELECT ?answer WHERE { wd:Q25343 wdt:P111 ?answer . ?answer wdt:P416 ?x FILTER(contains(?x,'A'))}",
+  "gold_entities": [
+   "Q25343"
+  ],
+  "gold_properties": [
+   "P111",
+   "P416"
+  ]
+ },
+ {
+  "uid": 23741,
+  "question": "Tell me experiment whose name has the word totem in it.",
+  "sparql": "SELECT DISTINCT ?sbj ?sbj_label WHERE { ?sbj wdt:P31 wd:Q101965 . ?sbj rdfs:label ?sbj_label . FILTER(CONTAINS(lcase(?sbj_label), 'totem')) . FILTER (lang(?sbj_label) = 'en') } LIMIT 25",
+  "gold_entities": [
+   "Q101965"
+  ],
+  "gold_properties": [
+   "P31"
+  ]
+ },
+ {
+  "uid": 1736,
+  "question": "How many movies in the fictional universe are from the Marvel Cinematic Universe?",
+  "sparql": "SELECT (COUNT(?sub) AS ?value ) { ?sub wdt:P1434 wd:Q642878 }",
+  "gold_entities": [
+   "Q642878"
+  ],
+  "gold_properties": [
+   "P1434"
+  ]
+ },
+ {
+  "uid": 1904,
+  "question": "How many islands are located by Saint Vincent?",
+  "sparql": "SELECT (COUNT(?sub) AS ?value ) { ?sub wdt:P5130 wd:Q379656 }",
+  "gold_entities": [
+   "Q379656"
+  ],
+  "gold_properties": [
+   "P5130"
+  ]
+ },
+ {
+  "uid": 14384,
+  "question": "What nation was made by WWE Raw?",
+  "sparql": "SELECT ?answer WHERE { wd:Q18754 wdt:P170 ?X . ?X wdt:P27 ?answer}",
+  "gold_entities": [
+   "Q18754"
+  ],
+  "gold_properties": [
+   "P170",
+   "P27"
+  ]
+ },
+ {
+  "uid": 11283,
+  "question": "When did significant event of Nancy Pelosi and location?",
+  "sparql": "SELECT ?value1 ?obj WHERE { wd:Q170581 p:P793 ?s . ?s ps:P793 ?obj . ?s pq:P276 ?value1 . }",
+  "gold_entities": [
+   "Q170581"
+  ],
+  "gold_properties": [
+   "P276",
+   "P793"
+  ]
+ },
+ {
+  "uid": 1923,
+  "question": "How many conflicts were in the Korean War?",
+  "sparql": "SELECT (COUNT(?sub) AS ?value ) { ?sub wdt:P607 wd:Q8663 }",
+  "gold_entities": [
+   "Q8663"
+  ],
+  "gold_properties": [
+   "P607"
+  ]
+ },
+ {
+  "uid": 5614,
+  "question": "For which production was Philippe Noiret the Cesar Award Best Actor nominee?",
+  "sparql": "SELECT ?value WHERE { wd:Q106482 p:P1411 ?s . ?s ps:P1411 wd:Q900494 . ?s pq:P1686 ?value}",
+  "gold_entities": [
+   "Q106482",
+   "Q900494"
+  ],
+  "gold_properties": [
+   "P1411",
+   "P1686"
+  ]
+ },
+ {
+  "uid": 4879,
+  "question": "What is the work done by David MCCullough that won him the Pulitzer Prize for Biography or Autobiography?",
+  "sparql": "SELECT ?value WHERE { wd:Q374610 p:P166 ?s . ?s ps:P166 wd:Q285117 . ?s pq:P1686 ?value}",
+  "gold_entities": [
+   "Q285117",
+   "Q374610"
+  ],
+  "gold_properties": [
+   "P166",
+   "P1686"
+  ]
+ },
+ {
+  "uid": 27621,
+  "question": "What is the Lemon 64 identifier of Frogger?",
+  "sparql": "select distinct ?answer where { wd:Q524267 wdt:P4816 ?answer}",
+  "gold_entities": [
+   "Q524267"
+  ],
+  "gold_properties": [
+   "P4816"
+  ]
+ },
+ {
+  "uid": 9405,
+  "question": "What is Beyonc\u00e9 awarded for her work Obsessed?",
+  "sparql": "SELECT ?obj WHERE { wd:Q36153 p:P166 ?s . ?s ps:P166 ?obj . ?s pq:P1686 wd:Q149358 }",
+  "gold_entities": [
+   "Q149358",
+   "Q36153"
+  ],
+  "gold_properties": [
+   "P166",
+   "P1686"
+  ]
+ },
+ {
+  "uid": 28279,
+  "question": "Which is the category that contains the dress?",
+  "sparql": "select distinct ?answer where { ?answer wdt:P4224 wd:Q200539}",
+  "gold_entities": [
+   "Q200539"
+  ],
+  "gold_properties": [
+   "P4224"
+  ]
+ },
+ {
+  "uid": 23231,
+  "question": "What are the literary work which start with the letter war",
+  "sparql": "SELECT DISTINCT ?sbj ?sbj_label WHERE { ?sbj wdt:P31 wd:Q7725634 . ?sbj rdfs:label ?sbj_label . FILTER(CONTAINS(lcase(?sbj_label), 'war')) . FILTER (lang(?sbj_label) = 'en') } LIMIT 25",
+  "gold_entities": [
+   "Q7725634"
+  ],
+  "gold_properties": [
+   "P31"
+  ]
+ },
+ {
+  "uid": 3945,
+  "question": "Which part of Guangzhou Metro runs on 1500 V DC railway electrification?",
+  "sparql": "SELECT ?value WHERE { wd:Q660751 p:P930 ?s . ?s ps:P930 wd:Q21253457 . ?s pq:P518 ?value}",
+  "gold_entities": [
+   "Q21253457",
+   "Q660751"
+  ],
+  "gold_properties": [
+   "P518",
+   "P930"
+  ]
+ },
+ {
+  "uid": 24487,
+  "question": "What are the cooking method which start with the letter s",
+  "sparql": "SELECT DISTINCT ?sbj ?sbj_label WHERE { ?sbj wdt:P31 wd:Q1039303 . ?sbj rdfs:label ?sbj_label . FILTER(STRSTARTS(lcase(?sbj_label), 's')) . FILTER (lang(?sbj_label) = 'en') } LIMIT 25",
+  "gold_entities": [
+   "Q1039303"
+  ],
+  "gold_properties": [
+   "P31"
+  ]
+ },
+ {
+  "uid": 16052,
+  "question": "What dates was Margarita Simonyan married to her husbands?",
+  "sparql": "SELECT ?answer WHERE { wd:Q4419809 wdt:P26 ?X . ?X wdt:P2031 ?answer}",
+  "gold_entities": [
+   "Q4419809"
+  ],
+  "gold_properties": [
+   "P2031",
+   "P26"
+  ]
+ },
+ {
+  "uid": 26859,
+  "question": "Which are the coordinates for northernmost point of Afghanistan?",
+  "sparql": "select distinct ?answer where { wd:Q889 wdt:P1332 ?answer}",
+  "gold_entities": [
+   "Q889"
+  ],
+  "gold_properties": [
+   "P1332"
+  ]
+ },
+ {
+  "uid": 23803,
+  "question": "What are the internet working devices that contain the word internet in their name",
+  "sparql": "SELECT DISTINCT ?sbj ?sbj_label WHERE { ?sbj wdt:P31 wd:Q1067099 . ?sbj rdfs:label ?sbj_label . FILTER(CONTAINS(lcase(?sbj_label), 'internet')) . FILTER (lang(?sbj_label) = 'en') } LIMIT 25",
+  "gold_entities": [
+   "Q1067099"
+  ],
+  "gold_properties": [
+   "P31"
+  ]
+ },
+ {
+  "uid": 18087,
+  "question": "Does the 6626 mattgenge from the argument of periapsis equal to 2.12179?",
+  "sparql": "ASK WHERE { wd:Q72208 wdt:P2248 ?obj filter(?obj = 2.12179) }",
+  "gold_entities": [
+   "Q72208"
+  ],
+  "gold_properties": [
+   "P2248"
+  ]
+ },
+ {
+  "uid": 20159,
+  "question": "Who is the mother of Kathie Lee Gifford?",
+  "sparql": "select distinct ?sbj where { ?sbj wdt:P25 wd:Q465695 . ?sbj wdt:P31 wd:Q5 }",
+  "gold_entities": [
+   "Q465695",
+   "Q5"
+  ],
+  "gold_properties": [
+   "P25",
+   "P31"
+  ]
+ },
+ {
+  "uid": 27655,
+  "question": "What is partnered with W.S. Gilbert?",
+  "sparql": "select distinct ?answer where { wd:Q348513 wdt:P2652 ?answer}",
+  "gold_entities": [
+   "Q348513"
+  ],
+  "gold_properties": [
+   "P2652"
+  ]
+ },
+ {
+  "uid": 14843,
+  "question": "Who are the daughters that were written by The Meaning of Matthew?",
+  "sparql": "SELECT ?answer WHERE { wd:Q16205446 wdt:P50 ?X . ?X wdt:P40 ?answer}",
+  "gold_entities": [
+   "Q16205446"
+  ],
+  "gold_properties": [
+   "P40",
+   "P50"
+  ]
+ },
+ {
+  "uid": 4805,
+  "question": "Who replaced Chris Watson as Prime Minister of Australia?",
+  "sparql": "SELECT ?value WHERE { wd:Q23347 p:P39 ?s . ?s ps:P39 wd:Q319145 . ?s pq:P1365 ?value}",
+  "gold_entities": [
+   "Q23347",
+   "Q319145"
+  ],
+  "gold_properties": [
+   "P1365",
+   "P39"
+  ]
+ },
+ {
+  "uid": 13570,
+  "question": "What musical instrument, played by Bill Withers, is constructed out of the source material maple?",
+  "sparql": "SELECT ?answer WHERE { wd:Q346565 wdt:P1303 ?answer . ?answer wdt:P186 wd:Q402516}",
+  "gold_entities": [
+   "Q346565",
+   "Q402516"
+  ],
+  "gold_properties": [
+   "P1303",
+   "P186"
+  ]
+ },
+ {
+  "uid": 3633,
+  "question": "WHEN WAS HURREM SULTAN AS CROWN OF THE KINGDOM OF POLAND",
+  "sparql": "SELECT ?value WHERE { wd:Q255809 p:P27 ?s . ?s ps:P27 wd:Q171348 . ?s pq:P580 ?value}",
+  "gold_entities": [
+   "Q171348",
+   "Q255809"
+  ],
+  "gold_properties": [
+   "P27",
+   "P580"
+  ]
+ },
+ {
+  "uid": 18717,
+  "question": "Is the price of the Macanese pataca equal to 0.105079?",
+  "sparql": "ASK WHERE { wd:Q241214 wdt:P2284 ?obj filter(?obj = 0.105079) }",
+  "gold_entities": [
+   "Q241214"
+  ],
+  "gold_properties": [
+   "P2284"
+  ]
+ },
+ {
+  "uid": 29198,
+  "question": "Which is the drainage basin for Tarim Basin?",
+  "sparql": "select distinct ?answer where { ?answer wdt:P4614 wd:Q216622}",
+  "gold_entities": [
+   "Q216622"
+  ],
+  "gold_properties": [
+   "P4614"
+  ]
+ },
+ {
+  "uid": 6265,
+  "question": "When did the Republic of Bashkortostan cease to be under the administrative territorial entity of the Russian Soviet Federative Socialist Republic?",
+  "sparql": "SELECT ?value WHERE { wd:Q5710 p:P131 ?s . ?s ps:P131 wd:Q2184 . ?s pq:P582 ?value}",
+  "gold_entities": [
+   "Q2184",
+   "Q5710"
+  ],
+  "gold_properties": [
+   "P131",
+   "P582"
+  ]
+ },
+ {
+  "uid": 12339,
+  "question": "\"Where is the birthplace of Philippe Quintais, which is considered the sister city to Bethlehem?\"",
+  "sparql": "SELECT ?answer WHERE { wd:Q3380589 wdt:P19 ?answer . ?answer wdt:P190 wd:Q5776}",
+  "gold_entities": [
+   "Q3380589",
+   "Q5776"
+  ],
+  "gold_properties": [
+   "P19",
+   "P190"
+  ]
+ },
+ {
+  "uid": 29805,
+  "question": "When did noble family for family of Genghis Khan?",
+  "sparql": "select distinct ?obj where { wd:Q720 wdt:P53 ?obj . ?obj wdt:P31 wd:Q13417114 }",
+  "gold_entities": [
+   "Q13417114",
+   "Q720"
+  ],
+  "gold_properties": [
+   "P31",
+   "P53"
+  ]
+ },
+ {
+  "uid": 1269,
+  "question": "How many persons are convicted in the Chopper Read} ?",
+  "sparql": "SELECT (COUNT(?obj) AS ?value ) { wd:Q2428420 wdt:P1399 ?obj }",
+  "gold_entities": [
+   "Q2428420"
+  ],
+  "gold_properties": [
+   "P1399"
+  ]
+ },
+ {
+  "uid": 16167,
+  "question": "Which battle is for the son of Uday Hussein?",
+  "sparql": "SELECT ?answer WHERE { wd:Q311916 wdt:P22 ?X . ?X wdt:P607 ?answer}",
+  "gold_entities": [
+   "Q311916"
+  ],
+  "gold_properties": [
+   "P22",
+   "P607"
+  ]
+ },
+ {
+  "uid": 29289,
+  "question": "Which is the honorific prefix for Dame?",
+  "sparql": "select distinct ?answer where { ?answer wdt:P511 wd:Q901407}",
+  "gold_entities": [
+   "Q901407"
+  ],
+  "gold_properties": [
+   "P511"
+  ]
+ },
+ {
+  "uid": 14618,
+  "question": "What did Christie Brinkley's husband say",
+  "sparql": "SELECT ?answer WHERE { wd:Q253476 wdt:P26 ?X . ?X wdt:P737 ?answer}",
+  "gold_entities": [
+   "Q253476"
+  ],
+  "gold_properties": [
+   "P26",
+   "P737"
+  ]
+ },
+ {
+  "uid": 1041,
+  "question": "How many cases of Malaria were reported?",
+  "sparql": "SELECT (COUNT(?obj) AS ?value ) { wd:Q12156 wdt:P1603 ?obj }",
+  "gold_entities": [
+   "Q12156"
+  ],
+  "gold_properties": [
+   "P1603"
+  ]
+ },
+ {
+  "uid": 14532,
+  "question": "What field does Scott Denning work in?",
+  "sparql": "SELECT ?answer WHERE { wd:Q18157846 wdt:P106 ?X . ?X wdt:P425 ?answer}",
+  "gold_entities": [
+   "Q18157846"
+  ],
+  "gold_properties": [
+   "P106",
+   "P425"
+  ]
+ },
+ {
+  "uid": 20737,
+  "question": "What Vostok mission did Yuri Gagarin fly in?",
+  "sparql": "select distinct ?obj where { wd:Q7327 wdt:P450 ?obj . ?obj wdt:P31 wd:Q624038 }",
+  "gold_entities": [
+   "Q624038",
+   "Q7327"
+  ],
+  "gold_properties": [
+   "P31",
+   "P450"
+  ]
+ },
+ {
+  "uid": 29331,
+  "question": "Which is encoded by L-Tyrosine?",
+  "sparql": "select distinct ?answer where { wd:Q188017 wdt:P702 ?answer}",
+  "gold_entities": [
+   "Q188017"
+  ],
+  "gold_properties": [
+   "P702"
+  ]
+ },
+ {
+  "uid": 7795,
+  "question": "Who was Herbert von Karajan employed by when he was replaced by Paul van Kempen?",
+  "sparql": "SELECT ?obj WHERE { wd:Q154895 p:P108 ?s . ?s ps:P108 ?obj . ?s pq:P1366 wd:Q529444 }",
+  "gold_entities": [
+   "Q154895",
+   "Q529444"
+  ],
+  "gold_properties": [
+   "P108",
+   "P1366"
+  ]
+ },
+ {
+  "uid": 26718,
+  "question": "how many  number of spans for Ponte Sant'Angelo ?",
+  "sparql": "select distinct ?answer where { wd:Q870476 wdt:P1314 ?answer}",
+  "gold_entities": [
+   "Q870476"
+  ],
+  "gold_properties": [
+   "P1314"
+  ]
+ },
+ {
+  "uid": 23627,
+  "question": "Tell me comic book series whose name has the word valentina in it.",
+  "sparql": "SELECT DISTINCT ?sbj ?sbj_label WHERE { ?sbj wdt:P31 wd:Q14406742 . ?sbj rdfs:label ?sbj_label . FILTER(CONTAINS(lcase(?sbj_label), 'valentina')) . FILTER (lang(?sbj_label) = 'en') } LIMIT 25",
+  "gold_entities": [
+   "Q14406742"
+  ],
+  "gold_properties": [
+   "P31"
+  ]
+ },
+ {
+  "uid": 10053,
+  "question": "Who is in charge of Toronto's  government and what is the title of the office he/she holds?",
+  "sparql": "SELECT ?ans_1 ?ans_2 WHERE { wd:Q172 wdt:P6 ?ans_1 . wd:Q172 wdt:P1313 ?ans_2 }",
+  "gold_entities": [
+   "Q172"
+  ],
+  "gold_properties": [
+   "P1313",
+   "P6"
+  ]
+ },
+ {
+  "uid": 13968,
+  "question": "Who is the discoverer of proton and is doctoral student of Norman Alexander ?",
+  "sparql": "SELECT ?answer WHERE { wd:Q2294 wdt:P61 ?answer . ?answer wdt:P185 wd:Q11181006}",
+  "gold_entities": [
+   "Q11181006",
+   "Q2294"
+  ],
+  "gold_properties": [
+   "P185",
+   "P61"
+  ]
+ },
+ {
+  "uid": 15196,
+  "question": "Who wrote Trishira?",
+  "sparql": "SELECT ?answer WHERE { wd:Q7844041 wdt:P1441 ?X . ?X wdt:P50 ?answer}",
+  "gold_entities": [
+   "Q7844041"
+  ],
+  "gold_properties": [
+   "P1441",
+   "P50"
+  ]
+ },
+ {
+  "uid": 18874,
+  "question": "is the number of players in region in rugby league in france equal to 47992.8?",
+  "sparql": "ASK WHERE { wd:Q3452882 wdt:P4909 ?obj filter(?obj = 47992.8) }",
+  "gold_entities": [
+   "Q3452882"
+  ],
+  "gold_properties": [
+   "P4909"
+  ]
+ },
+ {
+  "uid": 6658,
+  "question": "What is  doctoral advisor  of Johann Bernoulli  that is  it has a role  is  first doctoral advisor ?",
+  "sparql": "SELECT ?obj WHERE { wd:Q227897 p:P184 ?s . ?s ps:P184 ?obj . ?s pq:P3831 wd:Q26236695 }",
+  "gold_entities": [
+   "Q227897",
+   "Q26236695"
+  ],
+  "gold_properties": [
+   "P184",
+   "P3831"
+  ]
+ },
+ {
+  "uid": 22043,
+  "question": "What show did Sarah Silverman star in?",
+  "sparql": "select distinct ?sbj where { ?sbj wdt:P725 wd:Q229013 . ?sbj wdt:P31 wd:Q21188110 }",
+  "gold_entities": [
+   "Q21188110",
+   "Q229013"
+  ],
+  "gold_properties": [
+   "P31",
+   "P725"
+  ]
+ },
+ {
+  "uid": 12089,
+  "question": "Where is the sculptors of  male Smurfs?",
+  "sparql": "SELECT ?answer WHERE { wd:Q11221 wdt:P170 ?answer . ?answer wdt:P21 wd:Q6581097}",
+  "gold_entities": [
+   "Q11221",
+   "Q6581097"
+  ],
+  "gold_properties": [
+   "P170",
+   "P21"
+  ]
+ },
+ {
+  "uid": 24256,
+  "question": "Name a kind of leather that starts with letter S",
+  "sparql": "SELECT DISTINCT ?sbj ?sbj_label WHERE { ?sbj wdt:P31 wd:Q286 . ?sbj rdfs:label ?sbj_label . FILTER(STRSTARTS(lcase(?sbj_label), 's')) . FILTER (lang(?sbj_label) = 'en') } LIMIT 25",
+  "gold_entities": [
+   "Q286"
+  ],
+  "gold_properties": [
+   "P31"
+  ]
+ },
+ {
+  "uid": 6199,
+  "question": "When did Oscar Robertson receive the All-NBA Team award?",
+  "sparql": "SELECT ?value WHERE { wd:Q17717 p:P166 ?s . ?s ps:P166 wd:Q674359 . ?s pq:P585 ?value}",
+  "gold_entities": [
+   "Q17717",
+   "Q674359"
+  ],
+  "gold_properties": [
+   "P166",
+   "P585"
+  ]
+ },
+ {
+  "uid": 19459,
+  "question": "Is it true that the Scoville grade of the Bhut Jolokia equals to 1000000?",
+  "sparql": "ASK WHERE { wd:Q426850 wdt:P2658 ?obj filter(?obj = 1000000) }",
+  "gold_entities": [
+   "Q426850"
+  ],
+  "gold_properties": [
+   "P2658"
+  ]
+ },
+ {
+  "uid": 9526,
+  "question": "What is said in Robin Hood's work?",
+  "sparql": "SELECT ?ans_1 ?ans_2 WHERE { wd:Q122634 wdt:P460 ?ans_1 . wd:Q122634 wdt:P1441 ?ans_2 }",
+  "gold_entities": [
+   "Q122634"
+  ],
+  "gold_properties": [
+   "P1441",
+   "P460"
+  ]
+ },
+ {
+  "uid": 28260,
+  "question": "What is the Annie Award for?",
+  "sparql": "select distinct ?answer where { ?answer wdt:P1411 wd:Q566905}",
+  "gold_entities": [
+   "Q566905"
+  ],
+  "gold_properties": [
+   "P1411"
+  ]
+ },
+ {
+  "uid": 26061,
+  "question": "Which is the Olympic Committee of Serbia athlete ID for Novak Djokovic?",
+  "sparql": "select distinct ?answer where { wd:Q5812 wdt:P4547 ?answer}",
+  "gold_entities": [
+   "Q5812"
+  ],
+  "gold_properties": [
+   "P4547"
+  ]
+ },
+ {
+  "uid": 19789,
+  "question": "What is the best route?",
+  "sparql": "select distinct ?sbj where { ?sbj wdt:P609 wd:Q23768 . ?sbj wdt:P31 wd:Q34442 }",
+  "gold_entities": [
+   "Q23768",
+   "Q34442"
+  ],
+  "gold_properties": [
+   "P31",
+   "P609"
+  ]
+ },
+ {
+  "uid": 17862,
+  "question": "Who is incumbent of the position of William Jennings Bryan ?",
+  "sparql": "SELECT ?answer WHERE { wd:Q205282 wdt:P39 ?X . ?X wdt:P1308 ?answer}",
+  "gold_entities": [
+   "Q205282"
+  ],
+  "gold_properties": [
+   "P1308",
+   "P39"
+  ]
+ },
+ {
+  "uid": 13009,
+  "question": "What partner city of South CHungcheong Province has wgs84 of 34.5667?",
+  "sparql": "SELECT ?answer WHERE { wd:Q41070 wdt:P190 ?answer . ?answer wdt:P625 ?x FILTER(contains(?x,'34.5667'))}",
+  "gold_entities": [
+   "Q41070"
+  ],
+  "gold_properties": [
+   "P190",
+   "P625"
+  ]
+ },
+ {
+  "uid": 21076,
+  "question": "Which company created Space X",
+  "sparql": "select distinct ?sbj where { ?sbj wdt:P178 wd:Q193701 . ?sbj wdt:P31 wd:Q431289 }",
+  "gold_entities": [
+   "Q193701",
+   "Q431289"
+  ],
+  "gold_properties": [
+   "P178",
+   "P31"
+  ]
+ },
+ {
+  "uid": 29317,
+  "question": "What is the B.R.A.H.M.S artist ID of Lou Harrison?",
+  "sparql": "select distinct ?answer where { wd:Q590911 wdt:P5226 ?answer}",
+  "gold_entities": [
+   "Q590911"
+  ],
+  "gold_properties": [
+   "P5226"
+  ]
+ },
+ {
+  "uid": 7311,
+  "question": "When did Luhansk start when he was in the Luhansk People's Republic?",
+  "sparql": "SELECT ?value WHERE { wd:Q134279 p:P131 ?s . ?s ps:P131 wd:Q16746854 . ?s pq:P580 ?value}",
+  "gold_entities": [
+   "Q134279",
+   "Q16746854"
+  ],
+  "gold_properties": [
+   "P131",
+   "P580"
+  ]
+ },
+ {
+  "uid": 15957,
+  "question": "which has  towns in the continent  of gamburtsev mouuntain range?",
+  "sparql": "SELECT ?answer WHERE { wd:Q1422867 wdt:P30 ?X . ?X wdt:P150 ?answer}",
+  "gold_entities": [
+   "Q1422867"
+  ],
+  "gold_properties": [
+   "P150",
+   "P30"
+  ]
+ },
+ {
+  "uid": 19127,
+  "question": "Is the IDLH of the graphite less than 1500?",
+  "sparql": "ASK WHERE { wd:Q5309 wdt:P2129 ?obj filter(?obj < 1500.0) }",
+  "gold_entities": [
+   "Q5309"
+  ],
+  "gold_properties": [
+   "P2129"
+  ]
+ },
+ {
+  "uid": 3429,
+  "question": "What circular saw model has the least frequency in its saw blade?",
+  "sparql": "select ?ent where { ?ent wdt:P31 wd:Q23811261 . ?ent wdt:P2144 ?obj . ?ent wdt:P527 wd:Q23824398} ORDER BY ASC(?obj)LIMIT 5",
+  "gold_entities": [
+   "Q23811261",
+   "Q23824398"
+  ],
+  "gold_properties": [
+   "P2144",
+   "P31",
+   "P527"
+  ]
+ },
+ {
+  "uid": 9486,
+  "question": "What is the  country and heritage designation for the Battle of Hastings?",
+  "sparql": "SELECT ?ans_1 ?ans_2 WHERE { wd:Q83224 wdt:P17 ?ans_1 . wd:Q83224 wdt:P1435 ?ans_2 }",
+  "gold_entities": [
+   "Q83224"
+  ],
+  "gold_properties": [
+   "P1435",
+   "P17"
+  ]
+ },
+ {
+  "uid": 23023,
+  "question": "What associations use Latin?",
+  "sparql": "select distinct ?obj where { wd:Q397 wdt:P1018 ?obj . ?obj wdt:P31 wd:Q29300714 }",
+  "gold_entities": [
+   "Q29300714",
+   "Q397"
+  ],
+  "gold_properties": [
+   "P1018",
+   "P31"
+  ]
+ },
+ {
+  "uid": 7301,
+  "question": "What was the population of Gyeongju in December of 2012?",
+  "sparql": "SELECT ?obj WHERE { wd:Q42097 p:P1082 ?s . ?s ps:P1082 ?obj . ?s pq:P585 ?x filter(contains(YEAR(?x),'2012')) }",
+  "gold_entities": [
+   "Q42097"
+  ],
+  "gold_properties": [
+   "P1082",
+   "P585"
+  ]
+ },
+ {
+  "uid": 1522,
+  "question": "How many official residences are there in the Parthian Empire?",
+  "sparql": "SELECT (COUNT(?obj) AS ?value ) { wd:Q1986139 wdt:P263 ?obj }",
+  "gold_entities": [
+   "Q1986139"
+  ],
+  "gold_properties": [
+   "P263"
+  ]
+ },
+ {
+  "uid": 366,
+  "question": "Was Abigail Adams Smith the daughter of John Adams?",
+  "sparql": "ASK WHERE { wd:Q11806 wdt:P40 wd:Q4667661 }",
+  "gold_entities": [
+   "Q11806",
+   "Q4667661"
+  ],
+  "gold_properties": [
+   "P40"
+  ]
+ },
+ {
+  "uid": 2608,
+  "question": "Which public company has the most debt?",
+  "sparql": "select ?ent where { ?ent wdt:P31 wd:Q891723 . ?ent wdt:P2133 ?obj } ORDER BY DESC(?obj)LIMIT 5",
+  "gold_entities": [
+   "Q891723"
+  ],
+  "gold_properties": [
+   "P2133",
+   "P31"
+  ]
+ },
+ {
+  "uid": 6163,
+  "question": "Where was The Shining published on November 7, 1980?",
+  "sparql": "SELECT ?value WHERE { wd:Q186341 p:P577 ?s . ?s ps:P577 ?x filter(contains(YEAR(?x),'1980')) . ?s pq:P291 ?value}",
+  "gold_entities": [
+   "Q186341"
+  ],
+  "gold_properties": [
+   "P291",
+   "P577"
+  ]
+ },
+ {
+  "uid": 21478,
+  "question": "What motorcycle does Honda make?",
+  "sparql": "select distinct ?sbj where { ?sbj wdt:P176 wd:Q9584 . ?sbj wdt:P31 wd:Q23866334 }",
+  "gold_entities": [
+   "Q23866334",
+   "Q9584"
+  ],
+  "gold_properties": [
+   "P176",
+   "P31"
+  ]
+ },
+ {
+  "uid": 29972,
+  "question": "Which is the music term for partially coincident with classical music?",
+  "sparql": "select distinct ?sbj where { ?sbj wdt:P1382 wd:Q9730 . ?sbj wdt:P31 wd:Q20202269 }",
+  "gold_entities": [
+   "Q20202269",
+   "Q9730"
+  ],
+  "gold_properties": [
+   "P1382",
+   "P31"
+  ]
+ },
+ {
+  "uid": 19637,
+  "question": "Does the yield strength of the Alloy 718 equal 828?",
+  "sparql": "ASK WHERE { wd:Q55843475 wdt:P5529 ?obj filter(?obj = 828.0) }",
+  "gold_entities": [
+   "Q55843475"
+  ],
+  "gold_properties": [
+   "P5529"
+  ]
+ },
+ {
+  "uid": 5115,
+  "question": "/For what type of work John Galsworthy has nominated in 1932?",
+  "sparql": "SELECT ?obj WHERE { wd:Q82248 p:P1411 ?s . ?s ps:P1411 ?obj . ?s pq:P585 ?x filter(contains(YEAR(?x),'1932')) }",
+  "gold_entities": [
+   "Q82248"
+  ],
+  "gold_properties": [
+   "P1411",
+   "P585"
+  ]
+ },
+ {
+  "uid": 4532,
+  "question": "Did Jayne Mansfield portray Bettie Page?",
+  "sparql": "SELECT ?obj WHERE { wd:Q229507 p:P106 ?s . ?s ps:P106 ?obj . ?s pq:P155 wd:Q61898 }",
+  "gold_entities": [
+   "Q229507",
+   "Q61898"
+  ],
+  "gold_properties": [
+   "P106",
+   "P155"
+  ]
+ },
+ {
+  "uid": 10537,
+  "question": "When did James Matheson held a position as the Member of the 19th Parliament of the United Kingdom and why did it end?",
+  "sparql": "SELECT ?value1 ?value2 WHERE { wd:Q4870843 p:P39 ?s . ?s ps:P39 wd:Q41582559 . ?s pq:P582 ?value1 . ?s pq:P1534 ?value2 }",
+  "gold_entities": [
+   "Q41582559",
+   "Q4870843"
+  ],
+  "gold_properties": [
+   "P1534",
+   "P39",
+   "P582"
+  ]
+ },
+ {
+  "uid": 19527,
+  "question": "Is the cash back of the Amazon Rewards Visa Card less than 1.6?",
+  "sparql": "ASK WHERE { wd:Q56510553 wdt:P4448 ?obj filter(?obj < 1.6) }",
+  "gold_entities": [
+   "Q56510553"
+  ],
+  "gold_properties": [
+   "P4448"
+  ]
+ },
+ {
+  "uid": 19631,
+  "question": "Is the discharge of Cherio River more than 1.8?",
+  "sparql": "ASK WHERE { wd:Q1058115 wdt:P2225 ?obj filter(?obj > 1.8) }",
+  "gold_entities": [
+   "Q1058115"
+  ],
+  "gold_properties": [
+   "P2225"
+  ]
+ },
+ {
+  "uid": 11116,
+  "question": "When did educated at of Saul Kripke and academic major?",
+  "sparql": "SELECT ?value1 ?obj WHERE { wd:Q298521 p:P69 ?s . ?s ps:P69 ?obj . ?s pq:P812 ?value1 . }",
+  "gold_entities": [
+   "Q298521"
+  ],
+  "gold_properties": [
+   "P69",
+   "P812"
+  ]
+ },
+ {
+  "uid": 17430,
+  "question": "Who is character of portrayed by Sythians?",
+  "sparql": "SELECT ?answer WHERE { wd:Q131802 wdt:P1299 ?X . ?X wdt:P674 ?answer}",
+  "gold_entities": [
+   "Q131802"
+  ],
+  "gold_properties": [
+   "P1299",
+   "P674"
+  ]
+ },
+ {
+  "uid": 14847,
+  "question": "What is the energy source of gamma-aminobutyric acid?",
+  "sparql": "SELECT ?answer WHERE { wd:Q210021 wdt:P703 ?X . ?X wdt:P618 ?answer}",
+  "gold_entities": [
+   "Q210021"
+  ],
+  "gold_properties": [
+   "P618",
+   "P703"
+  ]
+ }
+]

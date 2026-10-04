@@ -1,0 +1,2271 @@
+{"index": "1663", "kind": "property", "label": "Survey of Scottish Witchcraft - Person ID", "pred_id": ""}
+{"index": "1663", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1663", "kind": "property", "label": "sex or gender", "pred_id": "P21"}
+{"index": "1663", "kind": "property", "label": "residence", "pred_id": "P551"}
+{"index": "1663", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2117", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "2117", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2117", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1803", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1803", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1803", "kind": "property", "label": "award received", "pred_id": "P166"}
+{"index": "1803", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "1803", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1803", "kind": "property", "label": "award received", "pred_id": "P166"}
+{"index": "1803", "kind": "property", "label": "award received", "pred_id": "P166"}
+{"index": "1803", "kind": "property", "label": "quantity", "pred_id": "P1114"}
+{"index": "1803", "kind": "property", "label": "dissolved, abolished or demolished date", "pred_id": "P576"}
+{"index": "387", "kind": "property", "label": "father", "pred_id": "P22"}
+{"index": "387", "kind": "property", "label": "mother", "pred_id": "P25"}
+{"index": "2739", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2739", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "2739", "kind": "property", "label": "country of citizenship", "pred_id": "P27"}
+{"index": "2739", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "2739", "kind": "property", "label": "child", "pred_id": "P40"}
+{"index": "2739", "kind": "property", "label": "sex or gender", "pred_id": "P21"}
+{"index": "2739", "kind": "property", "label": "position played on team / speciality", "pred_id": "P413"}
+{"index": "2739", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2739", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "2739", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "2739", "kind": "property", "label": "sex or gender", "pred_id": "P21"}
+{"index": "2739", "kind": "property", "label": "position played on team / speciality", "pred_id": "P413"}
+{"index": "2382", "kind": "property", "label": "place of birth", "pred_id": "P19"}
+{"index": "2382", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "2382", "kind": "property", "label": "given name", "pred_id": "P735"}
+{"index": "2382", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "2382", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "2382", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2352", "kind": "property", "label": "not found in", "pred_id": "P9660"}
+{"index": "2357", "kind": "property", "label": "personal pronoun", "pred_id": "P6553"}
+{"index": "2357", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2574", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2574", "kind": "property", "label": "characters", "pred_id": "P674"}
+{"index": "2574", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2574", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "37", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "37", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "37", "kind": "property", "label": "dissolved, abolished or demolished date", "pred_id": "P576"}
+{"index": "37", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "37", "kind": "property", "label": "headquarters location", "pred_id": "P159"}
+{"index": "37", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "542", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "542", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "542", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "542", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "542", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "542", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "542", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "542", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "961", "kind": "property", "label": "place of birth", "pred_id": "P19"}
+{"index": "961", "kind": "property", "label": "place of death", "pred_id": "P20"}
+{"index": "961", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "961", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "961", "kind": "property", "label": "located in/on physical feature", "pred_id": "P706"}
+{"index": "961", "kind": "property", "label": "location", "pred_id": "P276"}
+{"index": "961", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "961", "kind": "property", "label": "located in/on physical feature", "pred_id": "P706"}
+{"index": "961", "kind": "property", "label": "location", "pred_id": "P276"}
+{"index": "961", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "961", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "287", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "206", "kind": "property", "label": "botanist author abbreviation", "pred_id": "P428"}
+{"index": "206", "kind": "property", "label": "named after", "pred_id": "P138"}
+{"index": "206", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "206", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "944", "kind": "property", "label": "cast member", "pred_id": "P161"}
+{"index": "944", "kind": "property", "label": "publication date", "pred_id": "P577"}
+{"index": "944", "kind": "property", "label": "director", "pred_id": "P57"}
+{"index": "2102", "kind": "property", "label": "AISHE code", "pred_id": "P6392"}
+{"index": "2102", "kind": "property", "label": "inception", "pred_id": "P571"}
+{"index": "54", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "54", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "54", "kind": "property", "label": "official website", "pred_id": "P856"}
+{"index": "54", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "54", "kind": "property", "label": "dissolved, abolished or demolished date", "pred_id": "P576"}
+{"index": "54", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "727", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "727", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1249", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "1249", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1249", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "1249", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "854", "kind": "property", "label": "cast member", "pred_id": "P161"}
+{"index": "854", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1395", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1395", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "1395", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "424", "kind": "property", "label": "taxon name", "pred_id": "P225"}
+{"index": "424", "kind": "property", "label": "taxon author", "pred_id": "P405"}
+{"index": "424", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "424", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "2114", "kind": "property", "label": "adjacent station", "pred_id": "P197"}
+{"index": "2114", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2114", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2114", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2114", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2114", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2114", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2114", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2114", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1147", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1147", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1147", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1147", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2694", "kind": "property", "label": "exonerated of", "pred_id": "P7781"}
+{"index": "2694", "kind": "property", "label": "convicted of", "pred_id": "P1399"}
+{"index": "2694", "kind": "property", "label": "country of citizenship", "pred_id": "P27"}
+{"index": "2694", "kind": "property", "label": "cause of death", "pred_id": "P509"}
+{"index": "2694", "kind": "property", "label": "place of death", "pred_id": "P20"}
+{"index": "2694", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "2694", "kind": "property", "label": "place of birth", "pred_id": "P19"}
+{"index": "2694", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "2694", "kind": "property", "label": "place of death", "pred_id": "P20"}
+{"index": "2694", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "209", "kind": "property", "label": "collection or exhibition size", "pred_id": "P1436"}
+{"index": "209", "kind": "property", "label": "collection or exhibition size", "pred_id": "P1436"}
+{"index": "209", "kind": "property", "label": "applies to part", "pred_id": "P518"}
+{"index": "209", "kind": "property", "label": "part of", "pred_id": "P361"}
+{"index": "209", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "209", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "2023", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2023", "kind": "property", "label": "significant event", "pred_id": "P793"}
+{"index": "2023", "kind": "property", "label": "significant event", "pred_id": "P793"}
+{"index": "2023", "kind": "property", "label": "location", "pred_id": "P276"}
+{"index": "2023", "kind": "property", "label": "crew member(s)", "pred_id": ""}
+{"index": "2023", "kind": "property", "label": "place of birth", "pred_id": "P19"}
+{"index": "2023", "kind": "property", "label": "country", "pred_id": "P27"}
+{"index": "260", "kind": "property", "label": "collection", "pred_id": "P195"}
+{"index": "260", "kind": "property", "label": "inventory number", "pred_id": "P217"}
+{"index": "260", "kind": "property", "label": "IETF language tag", "pred_id": "P305"}
+{"index": "1490", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1490", "kind": "property", "label": "discoverer or inventor", "pred_id": "P61"}
+{"index": "1490", "kind": "property", "label": "time of discovery or invention", "pred_id": "P575"}
+{"index": "652", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "652", "kind": "property", "label": "series ordinal", "pred_id": "P1545"}
+{"index": "652", "kind": "property", "label": "performer", "pred_id": "P175"}
+{"index": "652", "kind": "property", "label": "performer", "pred_id": "P175"}
+{"index": "2312", "kind": "property", "label": "cast member", "pred_id": "P161"}
+{"index": "2312", "kind": "property", "label": "director", "pred_id": "P57"}
+{"index": "2312", "kind": "property", "label": "publication date", "pred_id": "P577"}
+{"index": "2312", "kind": "property", "label": "publication date", "pred_id": "P577"}
+{"index": "521", "kind": "property", "label": "property constraint", "pred_id": "P2302"}
+{"index": "521", "kind": "property", "label": "property constraint", "pred_id": "P2302"}
+{"index": "521", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1234", "kind": "property", "label": "depicts", "pred_id": "P180"}
+{"index": "1234", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1234", "kind": "property", "label": "sex or gender", "pred_id": "P21"}
+{"index": "2350", "kind": "property", "label": "taxon name", "pred_id": "P225"}
+{"index": "1738", "kind": "property", "label": "collection", "pred_id": "P195"}
+{"index": "548", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "548", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "548", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "548", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "548", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "548", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "548", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "548", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "548", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "548", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "548", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "548", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2610", "kind": "property", "label": "place of birth", "pred_id": "P19"}
+{"index": "2610", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2610", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1769", "kind": "property", "label": "scheduled service destination", "pred_id": "P521"}
+{"index": "1769", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1769", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1769", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1769", "kind": "property", "label": "scheduled service destination", "pred_id": "P521"}
+{"index": "1769", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1769", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1769", "kind": "property", "label": "scheduled service destination", "pred_id": "P521"}
+{"index": "1769", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1769", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1769", "kind": "property", "label": "operator", "pred_id": "P137"}
+{"index": "351", "kind": "property", "label": "Atlas of Hillforts ID", "pred_id": "P4102"}
+{"index": "351", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "237", "kind": "property", "label": "collection", "pred_id": "P195"}
+{"index": "237", "kind": "property", "label": "full work available at URL", "pred_id": ""}
+{"index": "237", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "237", "kind": "property", "label": "Commons category", "pred_id": "P373"}
+{"index": "2091", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2091", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2091", "kind": "property", "label": "described at URL", "pred_id": "P973"}
+{"index": "2091", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1268", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1268", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1268", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "626", "kind": "property", "label": "contains the administrative territorial entity", "pred_id": "P150"}
+{"index": "626", "kind": "property", "label": "population", "pred_id": "P4179"}
+{"index": "626", "kind": "property", "label": "population", "pred_id": "P4179"}
+{"index": "626", "kind": "property", "label": "point in time", "pred_id": "P585"}
+{"index": "1120", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1120", "kind": "property", "label": "narrative location", "pred_id": "P840"}
+{"index": "1120", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1120", "kind": "property", "label": "part of the series", "pred_id": "P179"}
+{"index": "1120", "kind": "property", "label": "narrative location", "pred_id": "P840"}
+{"index": "1120", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1120", "kind": "property", "label": "part of the series", "pred_id": "P179"}
+{"index": "1120", "kind": "property", "label": "narrative location", "pred_id": "P840"}
+{"index": "1120", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1120", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1120", "kind": "property", "label": "genre", "pred_id": "P136"}
+{"index": "1120", "kind": "property", "label": "genre", "pred_id": "P136"}
+{"index": "1120", "kind": "property", "label": "title", "pred_id": "P1476"}
+{"index": "1954", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "1954", "kind": "property", "label": "sex or gender", "pred_id": "P21"}
+{"index": "1954", "kind": "property", "label": "Facebook username", "pred_id": "P2013"}
+{"index": "1954", "kind": "property", "label": "X username", "pred_id": "P2002"}
+{"index": "1954", "kind": "property", "label": "Instagram username", "pred_id": "P2003"}
+{"index": "1954", "kind": "property", "label": "Facebook username", "pred_id": "P2013"}
+{"index": "1954", "kind": "property", "label": "X username", "pred_id": "P2002"}
+{"index": "1954", "kind": "property", "label": "Instagram username", "pred_id": "P2003"}
+{"index": "1954", "kind": "property", "label": "sex or gender", "pred_id": "P21"}
+{"index": "1954", "kind": "property", "label": "country of citizenship", "pred_id": "P27"}
+{"index": "423", "kind": "property", "label": "eBird taxon ID", "pred_id": "P3444"}
+{"index": "423", "kind": "property", "label": "ABA bird ID", "pred_id": "P4526"}
+{"index": "942", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "942", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "942", "kind": "property", "label": "official website", "pred_id": "P856"}
+{"index": "942", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "942", "kind": "property", "label": "educated at", "pred_id": "P69"}
+{"index": "1245", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1245", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1245", "kind": "property", "label": "product or material produced or service provided", "pred_id": ""}
+{"index": "1245", "kind": "property", "label": "founded by", "pred_id": "P112"}
+{"index": "1245", "kind": "property", "label": "sex or gender", "pred_id": "P21"}
+{"index": "1646", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1646", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1646", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1122", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1122", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "1122", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1122", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "99", "kind": "property", "label": "dissertation submitted to", "pred_id": "P4101"}
+{"index": "99", "kind": "property", "label": "main subject", "pred_id": "P921"}
+{"index": "99", "kind": "property", "label": "full work available at URL", "pred_id": ""}
+{"index": "99", "kind": "property", "label": "author", "pred_id": "P50"}
+{"index": "99", "kind": "property", "label": "author name string", "pred_id": "P2093"}
+{"index": "99", "kind": "property", "label": "inception", "pred_id": "P571"}
+{"index": "1894", "kind": "property", "label": "country of citizenship", "pred_id": "P27"}
+{"index": "1894", "kind": "property", "label": "affiliation", "pred_id": "P1416"}
+{"index": "1894", "kind": "property", "label": "country", "pred_id": "P27"}
+{"index": "1894", "kind": "property", "label": "employer", "pred_id": "P108"}
+{"index": "1894", "kind": "property", "label": "country", "pred_id": "P27"}
+{"index": "1894", "kind": "property", "label": "author", "pred_id": "P50"}
+{"index": "1894", "kind": "property", "label": "cites work", "pred_id": "P2860"}
+{"index": "1894", "kind": "property", "label": "affiliation", "pred_id": "P1416"}
+{"index": "1894", "kind": "property", "label": "employer", "pred_id": "P108"}
+{"index": "1894", "kind": "property", "label": "country", "pred_id": "P27"}
+{"index": "2097", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "2097", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2160", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "2160", "kind": "property", "label": "parent taxon", "pred_id": "P171"}
+{"index": "2160", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "2160", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "852", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "852", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "852", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "223", "kind": "property", "label": "inventory number", "pred_id": "P217"}
+{"index": "223", "kind": "property", "label": "inventory number", "pred_id": "P217"}
+{"index": "223", "kind": "property", "label": "collection", "pred_id": "P195"}
+{"index": "223", "kind": "property", "label": "on focus list of Wikimedia project", "pred_id": "P5008"}
+{"index": "223", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "223", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "352", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "352", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "352", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "352", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "352", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "352", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "352", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "352", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1765", "kind": "property", "label": "pronunciation audio", "pred_id": "P443"}
+{"index": "1591", "kind": "property", "label": "imported from Wikimedia project", "pred_id": "P143"}
+{"index": "1981", "kind": "property", "label": "Enciclopedia de la Literatura en M\u00e9xico ID", "pred_id": "P1565"}
+{"index": "1981", "kind": "property", "label": "place of birth", "pred_id": "P19"}
+{"index": "1981", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1981", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "356", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "356", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "356", "kind": "property", "label": "Atlas of Hillforts ID", "pred_id": "P4102"}
+{"index": "94", "kind": "property", "label": "academic thesis", "pred_id": "P1026"}
+{"index": "94", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "94", "kind": "property", "label": "full work available at URL", "pred_id": ""}
+{"index": "390", "kind": "property", "label": "child", "pred_id": "P40"}
+{"index": "390", "kind": "property", "label": "child", "pred_id": "P40"}
+{"index": "1498", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1498", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "1498", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "1498", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1498", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "1498", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "1498", "kind": "property", "label": "mother", "pred_id": "P25"}
+{"index": "1498", "kind": "property", "label": "cause of death", "pred_id": "P509"}
+{"index": "768", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "768", "kind": "property", "label": "demonym", "pred_id": "P1549"}
+{"index": "1056", "kind": "property", "label": "part of", "pred_id": "P361"}
+{"index": "1056", "kind": "property", "label": "depicts", "pred_id": "P180"}
+{"index": "2244", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "2244", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "2244", "kind": "property", "label": "father", "pred_id": "P22"}
+{"index": "1354", "kind": "property", "label": "number of elevators", "pred_id": "P1301"}
+{"index": "1354", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "2361", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2361", "kind": "property", "label": "field of work", "pred_id": "P101"}
+{"index": "2361", "kind": "property", "label": "logo image", "pred_id": "P154"}
+{"index": "936", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "936", "kind": "property", "label": "nickname", "pred_id": "P1449"}
+{"index": "1112", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1112", "kind": "property", "label": "killed by", "pred_id": "P157"}
+{"index": "1112", "kind": "property", "label": "killed by", "pred_id": "P157"}
+{"index": "595", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "595", "kind": "property", "label": "P139", "pred_id": ""}
+{"index": "595", "kind": "property", "label": "inception", "pred_id": "P571"}
+{"index": "595", "kind": "property", "label": "software version identifier", "pred_id": "P348"}
+{"index": "595", "kind": "property", "label": "publication date", "pred_id": "P577"}
+{"index": "2497", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2497", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "117", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "117", "kind": "property", "label": "part of", "pred_id": "P361"}
+{"index": "117", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "117", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "1337", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "1337", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1337", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "1957", "kind": "property", "label": "composer", "pred_id": "P86"}
+{"index": "1957", "kind": "property", "label": "composer", "pred_id": "P86"}
+{"index": "1957", "kind": "property", "label": "based on", "pred_id": "P144"}
+{"index": "1957", "kind": "property", "label": "publication date", "pred_id": "P577"}
+{"index": "2261", "kind": "property", "label": "official name", "pred_id": "P1448"}
+{"index": "2261", "kind": "property", "label": "stated in", "pred_id": "P248"}
+{"index": "2261", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2261", "kind": "property", "label": "official name", "pred_id": "P1448"}
+{"index": "2261", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "2110", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2110", "kind": "property", "label": "numeric value", "pred_id": "P1181"}
+{"index": "2110", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "2110", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "672", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "672", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "672", "kind": "property", "label": "place of birth", "pred_id": "P19"}
+{"index": "672", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2340", "kind": "property", "label": "title", "pred_id": "P1476"}
+{"index": "2340", "kind": "property", "label": "author", "pred_id": "P50"}
+{"index": "2340", "kind": "property", "label": "editor", "pred_id": "P98"}
+{"index": "2340", "kind": "property", "label": "author name string", "pred_id": "P2093"}
+{"index": "2340", "kind": "property", "label": "publication date", "pred_id": "P577"}
+{"index": "45", "kind": "property", "label": "place of birth", "pred_id": "P19"}
+{"index": "45", "kind": "property", "label": "founded by", "pred_id": "P112"}
+{"index": "2483", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2483", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "2483", "kind": "property", "label": "place of birth", "pred_id": "P19"}
+{"index": "2483", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1459", "kind": "property", "label": "geoshape", "pred_id": "P3896"}
+{"index": "1459", "kind": "property", "label": "successful candidate", "pred_id": "P991"}
+{"index": "1459", "kind": "property", "label": "successful candidate", "pred_id": "P991"}
+{"index": "1459", "kind": "property", "label": "parliamentary term", "pred_id": "P2937"}
+{"index": "1459", "kind": "property", "label": "represents", "pred_id": "P1268"}
+{"index": "1459", "kind": "property", "label": "votes received", "pred_id": "P1111"}
+{"index": "1459", "kind": "property", "label": "catalog code", "pred_id": "P528"}
+{"index": "1459", "kind": "property", "label": "catalog code", "pred_id": "P528"}
+{"index": "1459", "kind": "property", "label": "catalog", "pred_id": "P972"}
+{"index": "1459", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "1459", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "1459", "kind": "property", "label": "parliamentary term", "pred_id": "P2937"}
+{"index": "1459", "kind": "property", "label": "electoral district", "pred_id": "P7938"}
+{"index": "1459", "kind": "property", "label": "parliamentary group", "pred_id": "P4100"}
+{"index": "1459", "kind": "property", "label": "color", "pred_id": "P462"}
+{"index": "1459", "kind": "property", "label": "sRGB color hex triplet", "pred_id": "P465"}
+{"index": "1864", "kind": "property", "label": "geoshape", "pred_id": "P3896"}
+{"index": "1864", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "1864", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1564", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1564", "kind": "property", "label": "sex or gender", "pred_id": "P21"}
+{"index": "1564", "kind": "property", "label": "country of citizenship", "pred_id": "P27"}
+{"index": "1564", "kind": "property", "label": "continent", "pred_id": "P30"}
+{"index": "1564", "kind": "property", "label": "country of citizenship", "pred_id": "P27"}
+{"index": "1564", "kind": "property", "label": "continent", "pred_id": "P30"}
+{"index": "131", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "131", "kind": "property", "label": "shares border with", "pred_id": "P47"}
+{"index": "131", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "121", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "121", "kind": "property", "label": "educated at", "pred_id": "P69"}
+{"index": "1798", "kind": "property", "label": "nominated for", "pred_id": "P1411"}
+{"index": "1798", "kind": "property", "label": "nominated for", "pred_id": "P1411"}
+{"index": "1798", "kind": "property", "label": "statement is subject of", "pred_id": "P805"}
+{"index": "1798", "kind": "property", "label": "developer", "pred_id": "P178"}
+{"index": "1798", "kind": "property", "label": "publisher", "pred_id": "P123"}
+{"index": "331", "kind": "property", "label": "Electronic Enlightenment ID", "pred_id": "P3429"}
+{"index": "2358", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2358", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2358", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "2358", "kind": "property", "label": "X username", "pred_id": "P2002"}
+{"index": "2358", "kind": "property", "label": "logo image", "pred_id": "P154"}
+{"index": "2358", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1477", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1477", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1477", "kind": "property", "label": "creator", "pred_id": "P170"}
+{"index": "1477", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1477", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1477", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "350", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "350", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "350", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "350", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "350", "kind": "property", "label": "video", "pred_id": "P10"}
+{"index": "350", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "350", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "350", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "425", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "425", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "425", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "2394", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2394", "kind": "property", "label": "named after", "pred_id": "P138"}
+{"index": "2394", "kind": "property", "label": "sex or gender", "pred_id": "P21"}
+{"index": "2394", "kind": "property", "label": "place of birth", "pred_id": "P19"}
+{"index": "2394", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2478", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2478", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2478", "kind": "property", "label": "member of", "pred_id": "P463"}
+{"index": "2478", "kind": "property", "label": "member of", "pred_id": "P463"}
+{"index": "2478", "kind": "property", "label": "end time", "pred_id": "P582"}
+{"index": "2478", "kind": "property", "label": "dissolved, abolished or demolished date", "pred_id": "P576"}
+{"index": "2478", "kind": "property", "label": "end time", "pred_id": "P582"}
+{"index": "1032", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1032", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "1635", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1635", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "1635", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "1635", "kind": "property", "label": "part of", "pred_id": "P361"}
+{"index": "1635", "kind": "property", "label": "point in time", "pred_id": "P585"}
+{"index": "1635", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1635", "kind": "property", "label": "Facebook username", "pred_id": "P2013"}
+{"index": "1482", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1482", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "1482", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "34", "kind": "property", "label": "educated at", "pred_id": "P69"}
+{"index": "34", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "34", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "34", "kind": "property", "label": "educated at", "pred_id": "P69"}
+{"index": "34", "kind": "property", "label": "discoverer or inventor", "pred_id": "P61"}
+{"index": "2021", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2021", "kind": "property", "label": "start time", "pred_id": "P580"}
+{"index": "2021", "kind": "property", "label": "location", "pred_id": "P276"}
+{"index": "2021", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2021", "kind": "property", "label": "start time", "pred_id": "P580"}
+{"index": "2021", "kind": "property", "label": "funding scheme", "pred_id": "P6195"}
+{"index": "1218", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1218", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1218", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1218", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1218", "kind": "property", "label": "inception", "pred_id": "P571"}
+{"index": "1218", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "569", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "569", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "569", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "14", "kind": "property", "label": "award received", "pred_id": "P166"}
+{"index": "14", "kind": "property", "label": "educated at", "pred_id": "P69"}
+{"index": "14", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "14", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "14", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "14", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "440", "kind": "property", "label": "spouse", "pred_id": "P26"}
+{"index": "559", "kind": "property", "label": "elevation above sea level", "pred_id": "P2044"}
+{"index": "559", "kind": "property", "label": "elevation above sea level", "pred_id": "P2044"}
+{"index": "559", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "559", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1976", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "1976", "kind": "property", "label": "place of death", "pred_id": "P20"}
+{"index": "1976", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "1976", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1976", "kind": "property", "label": "manner of death", "pred_id": "P1196"}
+{"index": "207", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "207", "kind": "property", "label": "creator", "pred_id": "P170"}
+{"index": "207", "kind": "property", "label": "genre", "pred_id": "P136"}
+{"index": "207", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "207", "kind": "property", "label": "sex or gender", "pred_id": "P21"}
+{"index": "735", "kind": "property", "label": "author", "pred_id": "P50"}
+{"index": "2703", "kind": "property", "label": "intangible cultural heritage status", "pred_id": "P3259"}
+{"index": "2703", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1366", "kind": "property", "label": "IPv6 routing prefix", "pred_id": "P3793"}
+{"index": "2507", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2507", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2507", "kind": "property", "label": "copyright license", "pred_id": "P275"}
+{"index": "2507", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2507", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2507", "kind": "property", "label": "ISO 639-1 code", "pred_id": "P218"}
+{"index": "78", "kind": "property", "label": "author", "pred_id": "P50"}
+{"index": "78", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "78", "kind": "property", "label": "notable work", "pred_id": "P800"}
+{"index": "825", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "825", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "825", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "825", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "825", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "686", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "686", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "686", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1161", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1161", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "1161", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1161", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1161", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "514", "kind": "property", "label": "subproperty of", "pred_id": "P1647"}
+{"index": "514", "kind": "property", "label": "location", "pred_id": "P276"}
+{"index": "1979", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1979", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "1979", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "1979", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1979", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "1979", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "1319", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1319", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1319", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1319", "kind": "property", "label": "part of", "pred_id": "P361"}
+{"index": "1319", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "2479", "kind": "property", "label": "member of sports team", "pred_id": "P54"}
+{"index": "2479", "kind": "property", "label": "member of sports team", "pred_id": "P54"}
+{"index": "2479", "kind": "property", "label": "member of sports team", "pred_id": "P54"}
+{"index": "2479", "kind": "property", "label": "position played on team / speciality", "pred_id": "P413"}
+{"index": "2479", "kind": "property", "label": "start time", "pred_id": "P580"}
+{"index": "2479", "kind": "property", "label": "end time", "pred_id": "P582"}
+{"index": "2479", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2479", "kind": "property", "label": "member of", "pred_id": "P54"}
+{"index": "1861", "kind": "property", "label": "doctoral advisor", "pred_id": "P184"}
+{"index": "1861", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "1861", "kind": "property", "label": "academic thesis", "pred_id": "P1026"}
+{"index": "1861", "kind": "property", "label": "academic thesis", "pred_id": "P1026"}
+{"index": "1861", "kind": "property", "label": "point in time", "pred_id": "P585"}
+{"index": "1869", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1869", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1869", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1869", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1869", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1869", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1869", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1869", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1869", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1869", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1869", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1869", "kind": "property", "label": "has part(s)", "pred_id": "P527"}
+{"index": "478", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "478", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "478", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "91", "kind": "property", "label": "place of birth", "pred_id": "P19"}
+{"index": "91", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "91", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "91", "kind": "property", "label": "shares border with", "pred_id": "P47"}
+{"index": "91", "kind": "property", "label": "conflict", "pred_id": "P607"}
+{"index": "91", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "91", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "91", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "91", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "1345", "kind": "property", "label": "collection", "pred_id": "P195"}
+{"index": "1345", "kind": "property", "label": "height", "pred_id": "P2048"}
+{"index": "1345", "kind": "property", "label": "width", "pred_id": "P2049"}
+{"index": "832", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "832", "kind": "property", "label": "named after", "pred_id": "P138"}
+{"index": "777", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "777", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "777", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "777", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "777", "kind": "property", "label": "start time", "pred_id": "P580"}
+{"index": "777", "kind": "property", "label": "end time", "pred_id": "P582"}
+{"index": "777", "kind": "property", "label": "P794", "pred_id": ""}
+{"index": "1390", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1390", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "168", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "168", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "168", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "168", "kind": "property", "label": "dissolved, abolished or demolished date", "pred_id": "P576"}
+{"index": "168", "kind": "property", "label": "GeoNames ID", "pred_id": "P1566"}
+{"index": "516", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "816", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "816", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1821", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1821", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1821", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1821", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "1821", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "1821", "kind": "property", "label": "end time", "pred_id": "P582"}
+{"index": "1821", "kind": "property", "label": "OpenStreetMap relation ID", "pred_id": "P402"}
+{"index": "1821", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1821", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "1821", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "285", "kind": "property", "label": "inventory number", "pred_id": "P217"}
+{"index": "285", "kind": "property", "label": "collection", "pred_id": "P195"}
+{"index": "285", "kind": "property", "label": "inventory number", "pred_id": "P217"}
+{"index": "285", "kind": "property", "label": "collection", "pred_id": "P195"}
+{"index": "1526", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1526", "kind": "property", "label": "title", "pred_id": "P1476"}
+{"index": "1201", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1201", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1201", "kind": "property", "label": "inspired by", "pred_id": "P941"}
+{"index": "1205", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1205", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1205", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "1205", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1205", "kind": "property", "label": "given name", "pred_id": "P735"}
+{"index": "1205", "kind": "property", "label": "place of birth", "pred_id": "P19"}
+{"index": "1205", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "1445", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1445", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1445", "kind": "property", "label": "named after", "pred_id": "P138"}
+{"index": "1445", "kind": "property", "label": "country of citizenship", "pred_id": "P27"}
+{"index": "1445", "kind": "property", "label": "followed by", "pred_id": "P156"}
+{"index": "1445", "kind": "property", "label": "native language", "pred_id": "P103"}
+{"index": "343", "kind": "property", "label": "Early Modern Letters Online person ID", "pred_id": "P1802"}
+{"index": "599", "kind": "property", "label": "CAS Registry Number", "pred_id": "P231"}
+{"index": "2290", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2290", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2290", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "2290", "kind": "property", "label": "population", "pred_id": "P1082"}
+{"index": "2290", "kind": "property", "label": "head of government", "pred_id": "P6"}
+{"index": "2290", "kind": "property", "label": "sex or gender", "pred_id": "P21"}
+{"index": "1830", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1830", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1830", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1830", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "2641", "kind": "property", "label": "official website", "pred_id": "P856"}
+{"index": "2641", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "994", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "994", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "272", "kind": "property", "label": "archives at", "pred_id": "P485"}
+{"index": "272", "kind": "property", "label": "archives at", "pred_id": "P485"}
+{"index": "272", "kind": "property", "label": "described at URL", "pred_id": "P973"}
+{"index": "272", "kind": "property", "label": "VIAF ID", "pred_id": "P214"}
+{"index": "272", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "272", "kind": "property", "label": "Oxford Dictionary of National Biography ID", "pred_id": "P1415"}
+{"index": "2369", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2369", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2369", "kind": "property", "label": "point in time", "pred_id": "P585"}
+{"index": "2369", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "930", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "930", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "930", "kind": "property", "label": "VIAF ID", "pred_id": "P214"}
+{"index": "930", "kind": "property", "label": "VIAF ID", "pred_id": "P214"}
+{"index": "2286", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "2286", "kind": "property", "label": "participant", "pred_id": "P710"}
+{"index": "2286", "kind": "property", "label": "participant", "pred_id": "P710"}
+{"index": "2286", "kind": "property", "label": "object has role", "pred_id": "P3831"}
+{"index": "2286", "kind": "property", "label": "notable work", "pred_id": "P800"}
+{"index": "2286", "kind": "property", "label": "legal citation of this text", "pred_id": "P1031"}
+{"index": "2286", "kind": "property", "label": "judge", "pred_id": "P1594"}
+{"index": "2286", "kind": "property", "label": "cites work", "pred_id": "P2860"}
+{"index": "2286", "kind": "property", "label": "judge", "pred_id": "P1594"}
+{"index": "2286", "kind": "property", "label": "judge", "pred_id": "P1594"}
+{"index": "2286", "kind": "property", "label": "object has role", "pred_id": "P3831"}
+{"index": "1484", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "1484", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "1484", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1484", "kind": "property", "label": "author", "pred_id": "P50"}
+{"index": "1484", "kind": "property", "label": "editor", "pred_id": "P98"}
+{"index": "1484", "kind": "property", "label": "translator", "pred_id": "P655"}
+{"index": "1484", "kind": "property", "label": "P1773", "pred_id": ""}
+{"index": "1484", "kind": "property", "label": "creator", "pred_id": "P170"}
+{"index": "1484", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "1484", "kind": "property", "label": "inception", "pred_id": "P571"}
+{"index": "1484", "kind": "property", "label": "publication date", "pred_id": "P577"}
+{"index": "1484", "kind": "property", "label": "edition or translation of", "pred_id": "P629"}
+{"index": "1484", "kind": "property", "label": "notable work", "pred_id": "P800"}
+{"index": "1484", "kind": "property", "label": "published in", "pred_id": "P1433"}
+{"index": "1484", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1484", "kind": "property", "label": "notable work", "pred_id": "P800"}
+{"index": "1484", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "1484", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "1484", "kind": "property", "label": "publication date", "pred_id": "P577"}
+{"index": "1484", "kind": "property", "label": "inception", "pred_id": "P571"}
+{"index": "1484", "kind": "property", "label": "date of first performance", "pred_id": "P1191"}
+{"index": "1484", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1484", "kind": "property", "label": "discoverer or inventor", "pred_id": "P61"}
+{"index": "1484", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "1484", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "1484", "kind": "property", "label": "time of discovery or invention", "pred_id": "P575"}
+{"index": "1484", "kind": "property", "label": "inception", "pred_id": "P571"}
+{"index": "1484", "kind": "property", "label": "point in time", "pred_id": "P585"}
+{"index": "1484", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1484", "kind": "property", "label": "architect", "pred_id": "P84"}
+{"index": "1484", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "1484", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "1484", "kind": "property", "label": "inception", "pred_id": "P571"}
+{"index": "1484", "kind": "property", "label": "date of official opening", "pred_id": "P1619"}
+{"index": "1484", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1484", "kind": "property", "label": "composer", "pred_id": "P86"}
+{"index": "1484", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "1484", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "1484", "kind": "property", "label": "inception", "pred_id": "P571"}
+{"index": "1484", "kind": "property", "label": "date of first performance", "pred_id": "P1191"}
+{"index": "1484", "kind": "property", "label": "publication date", "pred_id": "P577"}
+{"index": "1484", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "434", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "434", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "434", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "434", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "434", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "434", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "434", "kind": "property", "label": "History of Parliament ID", "pred_id": "P1614"}
+{"index": "434", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "434", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "434", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "1518", "kind": "property", "label": "given name", "pred_id": "P735"}
+{"index": "1518", "kind": "property", "label": "author", "pred_id": "P50"}
+{"index": "1518", "kind": "property", "label": "cites work", "pred_id": "P2860"}
+{"index": "1442", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1442", "kind": "property", "label": "sex or gender", "pred_id": "P21"}
+{"index": "1442", "kind": "property", "label": "award received", "pred_id": "P166"}
+{"index": "1442", "kind": "property", "label": "award received", "pred_id": "P166"}
+{"index": "1442", "kind": "property", "label": "point in time", "pred_id": "P585"}
+{"index": "87", "kind": "property", "label": "author", "pred_id": "P50"}
+{"index": "87", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1925", "kind": "property", "label": "depicts", "pred_id": "P180"}
+{"index": "1925", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1925", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1925", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "388", "kind": "property", "label": "father", "pred_id": "P22"}
+{"index": "388", "kind": "property", "label": "mother", "pred_id": "P25"}
+{"index": "388", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "388", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "397", "kind": "property", "label": "Kinopolis film ID", "pred_id": "P2970"}
+{"index": "1728", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "1728", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1728", "kind": "property", "label": "twinned administrative body", "pred_id": "P190"}
+{"index": "1728", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1728", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1728", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1728", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1728", "kind": "property", "label": "twinned administrative body", "pred_id": "P190"}
+{"index": "1728", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1728", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1728", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1728", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1294", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1294", "kind": "property", "label": "place of burial", "pred_id": "P119"}
+{"index": "512", "kind": "property", "label": "pinyin transliteration", "pred_id": "P1721"}
+{"index": "1418", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1418", "kind": "property", "label": "notable work", "pred_id": "P800"}
+{"index": "1418", "kind": "property", "label": "notable work", "pred_id": "P800"}
+{"index": "1418", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "2473", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "2473", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "2473", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "2473", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "2473", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "829", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "829", "kind": "property", "label": "from narrative universe", "pred_id": "P1080"}
+{"index": "1182", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1182", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1182", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1182", "kind": "property", "label": "collection", "pred_id": "P195"}
+{"index": "1182", "kind": "property", "label": "inventory number", "pred_id": "P217"}
+{"index": "1182", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1182", "kind": "property", "label": "culture", "pred_id": "P2596"}
+{"index": "1557", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1557", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1557", "kind": "property", "label": "location", "pred_id": "P276"}
+{"index": "1557", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "2070", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2070", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "2070", "kind": "property", "label": "patronage", "pred_id": "P3872"}
+{"index": "1808", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1808", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1808", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1808", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1808", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "1808", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1808", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "1808", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1808", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1808", "kind": "property", "label": "end time", "pred_id": "P582"}
+{"index": "1808", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1808", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "2480", "kind": "property", "label": "place of burial", "pred_id": "P119"}
+{"index": "2480", "kind": "property", "label": "place of burial", "pred_id": "P119"}
+{"index": "2480", "kind": "property", "label": "burial plot reference", "pred_id": "P965"}
+{"index": "2480", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2480", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "2480", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "2480", "kind": "property", "label": "image of grave", "pred_id": "P1442"}
+{"index": "2480", "kind": "property", "label": "sex or gender", "pred_id": "P21"}
+{"index": "989", "kind": "property", "label": "original broadcaster", "pred_id": "P449"}
+{"index": "989", "kind": "property", "label": "production company", "pred_id": "P272"}
+{"index": "989", "kind": "property", "label": "owned by", "pred_id": "P127"}
+{"index": "989", "kind": "property", "label": "parent organization", "pred_id": "P749"}
+{"index": "989", "kind": "property", "label": "original broadcaster", "pred_id": "P449"}
+{"index": "989", "kind": "property", "label": "cast member", "pred_id": "P161"}
+{"index": "989", "kind": "property", "label": "voice actor", "pred_id": "P725"}
+{"index": "989", "kind": "property", "label": "cast member", "pred_id": "P161"}
+{"index": "989", "kind": "property", "label": "voice actor", "pred_id": "P725"}
+{"index": "989", "kind": "property", "label": "character role", "pred_id": "P453"}
+{"index": "989", "kind": "property", "label": "given name", "pred_id": "P735"}
+{"index": "989", "kind": "property", "label": "given name", "pred_id": "P735"}
+{"index": "1343", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1343", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1343", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1343", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "525", "kind": "property", "label": "country of citizenship", "pred_id": "P27"}
+{"index": "525", "kind": "property", "label": "basin country", "pred_id": "P205"}
+{"index": "525", "kind": "property", "label": "country", "pred_id": "P27"}
+{"index": "525", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "525", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "525", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "84", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "84", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "703", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "703", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "703", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "703", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1701", "kind": "property", "label": "catalog code", "pred_id": "P528"}
+{"index": "1701", "kind": "property", "label": "catalog code", "pred_id": "P528"}
+{"index": "1701", "kind": "property", "label": "catalog", "pred_id": "P972"}
+{"index": "1701", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "1701", "kind": "property", "label": "start time", "pred_id": "P580"}
+{"index": "1701", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "1701", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "1701", "kind": "property", "label": "end time", "pred_id": "P582"}
+{"index": "1701", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "1701", "kind": "property", "label": "area", "pred_id": "P2046"}
+{"index": "1701", "kind": "property", "label": "population", "pred_id": "P1082"}
+{"index": "1701", "kind": "property", "label": "Vision of Britain unit ID", "pred_id": "P3615"}
+{"index": "1701", "kind": "property", "label": "Vision of Britain unit ID", "pred_id": "P3615"}
+{"index": "1701", "kind": "property", "label": "formatter URL", "pred_id": "P1630"}
+{"index": "2625", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2625", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2625", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "2625", "kind": "property", "label": "length", "pred_id": "P2043"}
+{"index": "2625", "kind": "property", "label": "length", "pred_id": "P2043"}
+{"index": "2625", "kind": "property", "label": "conversion to SI unit", "pred_id": "P2370"}
+{"index": "2625", "kind": "property", "label": "conversion to SI unit", "pred_id": "P2370"}
+{"index": "248", "kind": "property", "label": "collection", "pred_id": "P195"}
+{"index": "248", "kind": "property", "label": "described at URL", "pred_id": "P973"}
+{"index": "248", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "248", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "248", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "248", "kind": "property", "label": "floruit", "pred_id": "P1317"}
+{"index": "248", "kind": "property", "label": "time period", "pred_id": "P2348"}
+{"index": "248", "kind": "property", "label": "start time", "pred_id": "P580"}
+{"index": "2769", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2769", "kind": "property", "label": "number of deaths", "pred_id": "P1120"}
+{"index": "2769", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "1069", "kind": "property", "label": "X username", "pred_id": "P2002"}
+{"index": "1069", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "1069", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1069", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1347", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1347", "kind": "property", "label": "image", "pred_id": "P41"}
+{"index": "1347", "kind": "property", "label": "applies to jurisdiction", "pred_id": "P1001"}
+{"index": "1347", "kind": "property", "label": "image", "pred_id": "P41"}
+{"index": "357", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "357", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "357", "kind": "property", "label": "reference URL", "pred_id": "P854"}
+{"index": "876", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "876", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "876", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2335", "kind": "property", "label": "award received", "pred_id": "P166"}
+{"index": "2335", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "968", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "968", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "968", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "968", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "613", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "613", "kind": "property", "label": "author", "pred_id": "P50"}
+{"index": "1372", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1372", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1372", "kind": "property", "label": "genre", "pred_id": "P136"}
+{"index": "1372", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1372", "kind": "property", "label": "country of origin", "pred_id": "P495"}
+{"index": "2129", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2129", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2129", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2129", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2129", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2129", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "2129", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2129", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "2129", "kind": "property", "label": "start point", "pred_id": "P1427"}
+{"index": "2129", "kind": "property", "label": "connecting service", "pred_id": "P1192"}
+{"index": "2129", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2129", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2129", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2129", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2129", "kind": "property", "label": "connecting service", "pred_id": "P1192"}
+{"index": "2129", "kind": "property", "label": "connecting service", "pred_id": "P1192"}
+{"index": "2129", "kind": "property", "label": "followed by", "pred_id": "P156"}
+{"index": "2129", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2129", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "2129", "kind": "property", "label": "start point", "pred_id": "P1427"}
+{"index": "2129", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2129", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2129", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2129", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "104", "kind": "property", "label": "CDLI ID", "pred_id": "P2474"}
+{"index": "2573", "kind": "property", "label": "item for this sense", "pred_id": "P5137"}
+{"index": "2573", "kind": "property", "label": "item for this sense", "pred_id": "P5137"}
+{"index": "1966", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1966", "kind": "property", "label": "patron saint", "pred_id": "P417"}
+{"index": "1966", "kind": "property", "label": "patron saint", "pred_id": "P417"}
+{"index": "1966", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1966", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "1966", "kind": "property", "label": "patron saint", "pred_id": "P417"}
+{"index": "1966", "kind": "property", "label": "patron saint", "pred_id": "P417"}
+{"index": "184", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "184", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "184", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1323", "kind": "property", "label": "population", "pred_id": "P1082"}
+{"index": "1323", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "1323", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2664", "kind": "property", "label": "main subject", "pred_id": "P921"}
+{"index": "2664", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2664", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2664", "kind": "property", "label": "performer", "pred_id": "P175"}
+{"index": "2664", "kind": "property", "label": "publication date", "pred_id": "P577"}
+{"index": "2375", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2375", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2375", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "2375", "kind": "property", "label": "population", "pred_id": "P1082"}
+{"index": "2375", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "2375", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2375", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "2385", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2385", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2385", "kind": "property", "label": "country of citizenship", "pred_id": "P27"}
+{"index": "2385", "kind": "property", "label": "official language", "pred_id": "P37"}
+{"index": "2385", "kind": "property", "label": "native language", "pred_id": "P103"}
+{"index": "2385", "kind": "property", "label": "languages spoken, written or signed", "pred_id": "P1412"}
+{"index": "2385", "kind": "property", "label": "given name", "pred_id": "P735"}
+{"index": "2385", "kind": "property", "label": "creator", "pred_id": "P170"}
+{"index": "2385", "kind": "property", "label": "country of citizenship", "pred_id": "P27"}
+{"index": "2385", "kind": "property", "label": "official language", "pred_id": "P37"}
+{"index": "2385", "kind": "property", "label": "native language", "pred_id": "P103"}
+{"index": "2385", "kind": "property", "label": "languages spoken, written or signed", "pred_id": "P1412"}
+{"index": "454", "kind": "property", "label": "award received", "pred_id": "P166"}
+{"index": "454", "kind": "property", "label": "award received", "pred_id": "P166"}
+{"index": "1664", "kind": "property", "label": "part of", "pred_id": "P361"}
+{"index": "1664", "kind": "property", "label": "part of", "pred_id": "P361"}
+{"index": "2257", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2257", "kind": "property", "label": "country of citizenship", "pred_id": "P27"}
+{"index": "2257", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "2257", "kind": "property", "label": "given name", "pred_id": "P735"}
+{"index": "2257", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "2257", "kind": "property", "label": "native label", "pred_id": "P1705"}
+{"index": "2127", "kind": "property", "label": "dedicated to", "pred_id": "P825"}
+{"index": "2127", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "2127", "kind": "property", "label": "has part(s)", "pred_id": "P527"}
+{"index": "2127", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2686", "kind": "property", "label": "part of", "pred_id": "P361"}
+{"index": "2686", "kind": "property", "label": "shares border with", "pred_id": "P47"}
+{"index": "1215", "kind": "property", "label": "location", "pred_id": "P625"}
+{"index": "1215", "kind": "property", "label": "location", "pred_id": "P625"}
+{"index": "1215", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1215", "kind": "property", "label": "point in time", "pred_id": "P585"}
+{"index": "1215", "kind": "property", "label": "official website", "pred_id": "P856"}
+{"index": "665", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "665", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "665", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "665", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1906", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1906", "kind": "property", "label": "member of", "pred_id": "P463"}
+{"index": "373", "kind": "property", "label": "named after", "pred_id": "P138"}
+{"index": "373", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "926", "kind": "property", "label": "cast member", "pred_id": "P161"}
+{"index": "926", "kind": "property", "label": "publication date", "pred_id": "P577"}
+{"index": "1599", "kind": "property", "label": "Historic Environment Scotland ID", "pred_id": "P709"}
+{"index": "1599", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "1599", "kind": "property", "label": "object has role", "pred_id": "P3831"}
+{"index": "1599", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "1599", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1599", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1599", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1599", "kind": "property", "label": "contains settlement", "pred_id": "P1383"}
+{"index": "1599", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1599", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1599", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1599", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "97", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "97", "kind": "property", "label": "dissertation submitted to", "pred_id": "P4101"}
+{"index": "97", "kind": "property", "label": "full work available at URL", "pred_id": ""}
+{"index": "97", "kind": "property", "label": "author", "pred_id": "P50"}
+{"index": "1654", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1654", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1654", "kind": "property", "label": "country of origin", "pred_id": "P495"}
+{"index": "1654", "kind": "property", "label": "official website", "pred_id": "P856"}
+{"index": "1654", "kind": "property", "label": "location of formation", "pred_id": "P740"}
+{"index": "1303", "kind": "property", "label": "first line", "pred_id": "P1922"}
+{"index": "1303", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1303", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "2472", "kind": "property", "label": "based on", "pred_id": "P144"}
+{"index": "2472", "kind": "property", "label": "cast member", "pred_id": "P161"}
+{"index": "2472", "kind": "property", "label": "cast member", "pred_id": "P161"}
+{"index": "2472", "kind": "property", "label": "character role", "pred_id": "P453"}
+{"index": "2472", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "2472", "kind": "property", "label": "publication date", "pred_id": "P577"}
+{"index": "1939", "kind": "property", "label": "Swedish Riksdag document ID", "pred_id": "P8433"}
+{"index": "1939", "kind": "property", "label": "author", "pred_id": "P50"}
+{"index": "1939", "kind": "property", "label": "publication date", "pred_id": "P577"}
+{"index": "1939", "kind": "property", "label": "member of political party", "pred_id": "P102"}
+{"index": "1939", "kind": "property", "label": "logo image", "pred_id": "P154"}
+{"index": "1939", "kind": "property", "label": "sRGB color hex triplet", "pred_id": "P465"}
+{"index": "1247", "kind": "property", "label": "collection", "pred_id": "P195"}
+{"index": "1247", "kind": "property", "label": "inception", "pred_id": "P571"}
+{"index": "1247", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1247", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1247", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1247", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1247", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "2046", "kind": "property", "label": "cause of death", "pred_id": "P509"}
+{"index": "2046", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "2321", "kind": "property", "label": "candidacy in election", "pred_id": "P3602"}
+{"index": "2321", "kind": "property", "label": "candidacy in election", "pred_id": "P3602"}
+{"index": "2321", "kind": "property", "label": "represents", "pred_id": "P1268"}
+{"index": "1852", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1852", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1852", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "1852", "kind": "property", "label": "area", "pred_id": "P2046"}
+{"index": "1852", "kind": "property", "label": "heritage designation", "pred_id": "P1435"}
+{"index": "1852", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1852", "kind": "property", "label": "heritage designation", "pred_id": "P1435"}
+{"index": "1852", "kind": "property", "label": "start time", "pred_id": "P580"}
+{"index": "1852", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "2012", "kind": "property", "label": "owner of", "pred_id": "P1830"}
+{"index": "2012", "kind": "property", "label": "owner of", "pred_id": "P1830"}
+{"index": "2012", "kind": "property", "label": "owner of", "pred_id": "P1830"}
+{"index": "2012", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "2012", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "539", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "539", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "539", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "539", "kind": "property", "label": "language of work or name", "pred_id": "P407"}
+{"index": "1682", "kind": "property", "label": "Wikidata property example", "pred_id": "P1855"}
+{"index": "1682", "kind": "property", "label": "Wikidata property example", "pred_id": "P1855"}
+{"index": "1682", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "365", "kind": "property", "label": "Atlas of Hillforts ID", "pred_id": "P4102"}
+{"index": "1425", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1425", "kind": "property", "label": "country of citizenship", "pred_id": "P27"}
+{"index": "1425", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "1425", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "1425", "kind": "property", "label": "cast member", "pred_id": "P161"}
+{"index": "1425", "kind": "property", "label": "cast member", "pred_id": "P161"}
+{"index": "1425", "kind": "property", "label": "character role", "pred_id": "P453"}
+{"index": "1425", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "1425", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "1194", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1194", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1194", "kind": "property", "label": "place of publication", "pred_id": "P291"}
+{"index": "1194", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2196", "kind": "property", "label": "screenwriter", "pred_id": "P58"}
+{"index": "2196", "kind": "property", "label": "director", "pred_id": "P57"}
+{"index": "2196", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2196", "kind": "property", "label": "part of the series", "pred_id": "P179"}
+{"index": "2196", "kind": "property", "label": "publication date", "pred_id": "P577"}
+{"index": "1968", "kind": "property", "label": "child", "pred_id": "P40"}
+{"index": "1050", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1050", "kind": "property", "label": "sex or gender", "pred_id": "P21"}
+{"index": "1050", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "1050", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1050", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1050", "kind": "property", "label": "part of the series", "pred_id": "P179"}
+{"index": "1050", "kind": "property", "label": "cast member", "pred_id": "P161"}
+{"index": "1050", "kind": "property", "label": "cast member", "pred_id": "P161"}
+{"index": "1050", "kind": "property", "label": "character role", "pred_id": "P453"}
+{"index": "1050", "kind": "property", "label": "publication date", "pred_id": "P577"}
+{"index": "1050", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1050", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1050", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1050", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1050", "kind": "property", "label": "cast member", "pred_id": "P161"}
+{"index": "1050", "kind": "property", "label": "cast member", "pred_id": "P161"}
+{"index": "1050", "kind": "property", "label": "character role", "pred_id": "P453"}
+{"index": "1050", "kind": "property", "label": "publication date", "pred_id": "P577"}
+{"index": "2500", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2500", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "2500", "kind": "property", "label": "continent", "pred_id": "P30"}
+{"index": "2500", "kind": "property", "label": "point in time", "pred_id": "P585"}
+{"index": "1899", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "1899", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "1899", "kind": "property", "label": "spouse", "pred_id": "P26"}
+{"index": "962", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "962", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "962", "kind": "property", "label": "location", "pred_id": "P276"}
+{"index": "962", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "962", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "962", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "962", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "962", "kind": "property", "label": "taxon common name", "pred_id": "P1843"}
+{"index": "2007", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2007", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2007", "kind": "property", "label": "cast member", "pred_id": "P161"}
+{"index": "2007", "kind": "property", "label": "educated at", "pred_id": "P69"}
+{"index": "2007", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2007", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2007", "kind": "property", "label": "cast member", "pred_id": "P161"}
+{"index": "857", "kind": "property", "label": "continent", "pred_id": "P30"}
+{"index": "1880", "kind": "property", "label": "has part(s)", "pred_id": "P527"}
+{"index": "1880", "kind": "property", "label": "location", "pred_id": "P276"}
+{"index": "1880", "kind": "property", "label": "number of cases", "pred_id": "P1603"}
+{"index": "1880", "kind": "property", "label": "geoshape", "pred_id": "P3896"}
+{"index": "1880", "kind": "property", "label": "number of cases", "pred_id": "P1603"}
+{"index": "1880", "kind": "property", "label": "point in time", "pred_id": "P585"}
+{"index": "1880", "kind": "property", "label": "has part(s)", "pred_id": "P527"}
+{"index": "1880", "kind": "property", "label": "number of cases", "pred_id": "P1603"}
+{"index": "1880", "kind": "property", "label": "number of cases", "pred_id": "P1603"}
+{"index": "1880", "kind": "property", "label": "point in time", "pred_id": "P585"}
+{"index": "2030", "kind": "property", "label": "main subject", "pred_id": "P921"}
+{"index": "2030", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "2030", "kind": "property", "label": "DOI", "pred_id": "P356"}
+{"index": "2030", "kind": "property", "label": "published in", "pred_id": "P1433"}
+{"index": "80", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "80", "kind": "property", "label": "title", "pred_id": "P1476"}
+{"index": "2220", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2220", "kind": "property", "label": "time of discovery or invention", "pred_id": "P575"}
+{"index": "2669", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2669", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2669", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "2669", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2669", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2669", "kind": "property", "label": "imported from Wikimedia project", "pred_id": "P143"}
+{"index": "1316", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1316", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1316", "kind": "property", "label": "UTC timezone offset", "pred_id": "P2907"}
+{"index": "1316", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "1316", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2647", "kind": "property", "label": "director", "pred_id": "P57"}
+{"index": "2647", "kind": "property", "label": "publication date", "pred_id": "P577"}
+{"index": "2566", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2566", "kind": "property", "label": "candidacy in election", "pred_id": "P3602"}
+{"index": "2566", "kind": "property", "label": "candidacy in election", "pred_id": "P3602"}
+{"index": "2566", "kind": "property", "label": "electoral district", "pred_id": "P768"}
+{"index": "2566", "kind": "property", "label": "represents", "pred_id": "P1268"}
+{"index": "2566", "kind": "property", "label": "votes received", "pred_id": "P1111"}
+{"index": "2443", "kind": "property", "label": "main subject", "pred_id": "P921"}
+{"index": "2443", "kind": "property", "label": "author", "pred_id": "P50"}
+{"index": "2443", "kind": "property", "label": "field of work", "pred_id": "P101"}
+{"index": "2337", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2337", "kind": "property", "label": "award received", "pred_id": "P166"}
+{"index": "2337", "kind": "property", "label": "sex or gender", "pred_id": "P21"}
+{"index": "2201", "kind": "property", "label": "main subject", "pred_id": "P921"}
+{"index": "2201", "kind": "property", "label": "publication date", "pred_id": "P577"}
+{"index": "1492", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1068", "kind": "property", "label": "place of birth", "pred_id": "P19"}
+{"index": "1068", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "1068", "kind": "property", "label": "languages spoken, written or signed", "pred_id": "P1412"}
+{"index": "1068", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1068", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "629", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "629", "kind": "property", "label": "country of citizenship", "pred_id": "P27"}
+{"index": "629", "kind": "property", "label": "country of citizenship", "pred_id": "P27"}
+{"index": "629", "kind": "property", "label": "start time", "pred_id": "P580"}
+{"index": "629", "kind": "property", "label": "end time", "pred_id": "P582"}
+{"index": "1301", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1301", "kind": "property", "label": "population", "pred_id": "P1082"}
+{"index": "1301", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1301", "kind": "property", "label": "population", "pred_id": "P1082"}
+{"index": "1137", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1137", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1137", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "1137", "kind": "property", "label": "area", "pred_id": "P2046"}
+{"index": "1137", "kind": "property", "label": "area", "pred_id": "P2046"}
+{"index": "1137", "kind": "property", "label": "conversion to SI unit", "pred_id": "P2370"}
+{"index": "1137", "kind": "property", "label": "conversion to SI unit", "pred_id": "P2370"}
+{"index": "1137", "kind": "property", "label": "population", "pred_id": "P1082"}
+{"index": "1137", "kind": "property", "label": "legislative body", "pred_id": "P194"}
+{"index": "1137", "kind": "property", "label": "dissolved, abolished or demolished date", "pred_id": "P576"}
+{"index": "1137", "kind": "property", "label": "dissolved, abolished or demolished date", "pred_id": "P576"}
+{"index": "43", "kind": "property", "label": "educated at", "pred_id": "P69"}
+{"index": "43", "kind": "property", "label": "sex or gender", "pred_id": "P21"}
+{"index": "43", "kind": "property", "label": "award received", "pred_id": "P166"}
+{"index": "2149", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2149", "kind": "property", "label": "season", "pred_id": "P4908"}
+{"index": "2149", "kind": "property", "label": "part of the series", "pred_id": "P179"}
+{"index": "2149", "kind": "property", "label": "part of the series", "pred_id": "P179"}
+{"index": "2149", "kind": "property", "label": "series ordinal", "pred_id": "P1545"}
+{"index": "2149", "kind": "property", "label": "season", "pred_id": "P4908"}
+{"index": "2149", "kind": "property", "label": "series ordinal", "pred_id": "P1545"}
+{"index": "2149", "kind": "property", "label": "part of the series", "pred_id": "P179"}
+{"index": "2149", "kind": "property", "label": "series ordinal", "pred_id": "P1545"}
+{"index": "2149", "kind": "property", "label": "title", "pred_id": "P1476"}
+{"index": "1784", "kind": "property", "label": "member of", "pred_id": "P463"}
+{"index": "1784", "kind": "property", "label": "native label", "pred_id": "P1705"}
+{"index": "1784", "kind": "property", "label": "ISO 3166-1 alpha-2 code", "pred_id": "P297"}
+{"index": "999", "kind": "property", "label": "character role", "pred_id": "P453"}
+{"index": "999", "kind": "property", "label": "cast member", "pred_id": "P161"}
+{"index": "999", "kind": "property", "label": "cast member", "pred_id": "P161"}
+{"index": "999", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "999", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "999", "kind": "property", "label": "filming location", "pred_id": "P915"}
+{"index": "999", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "999", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "453", "kind": "property", "label": "award received", "pred_id": "P166"}
+{"index": "453", "kind": "property", "label": "award received", "pred_id": "P166"}
+{"index": "2238", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2238", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2238", "kind": "property", "label": "head of government", "pred_id": "P6"}
+{"index": "2238", "kind": "property", "label": "head of government", "pred_id": "P6"}
+{"index": "2238", "kind": "property", "label": "sex or gender", "pred_id": "P21"}
+{"index": "2238", "kind": "property", "label": "end time", "pred_id": "P582"}
+{"index": "2238", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "2238", "kind": "property", "label": "population", "pred_id": "P1082"}
+{"index": "1804", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1804", "kind": "property", "label": "country of citizenship", "pred_id": "P27"}
+{"index": "1804", "kind": "property", "label": "mother", "pred_id": "P25"}
+{"index": "1804", "kind": "property", "label": "father", "pred_id": "P22"}
+{"index": "1804", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "1804", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "1804", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "1804", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "1804", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "1804", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "371", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "462", "kind": "property", "label": "place of burial", "pred_id": "P119"}
+{"index": "462", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "2069", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2041", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "2041", "kind": "property", "label": "sex or gender", "pred_id": "P21"}
+{"index": "766", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "766", "kind": "property", "label": "numeric value", "pred_id": "P1181"}
+{"index": "2226", "kind": "property", "label": "manner of death", "pred_id": "P1196"}
+{"index": "2226", "kind": "property", "label": "cause of death", "pred_id": "P509"}
+{"index": "2226", "kind": "property", "label": "military casualty classification", "pred_id": "P1347"}
+{"index": "2226", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2226", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "2226", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "2226", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2226", "kind": "property", "label": "head of government", "pred_id": "P6"}
+{"index": "2226", "kind": "property", "label": "office held by head of government", "pred_id": "P1313"}
+{"index": "2226", "kind": "property", "label": "head of state", "pred_id": "P35"}
+{"index": "2226", "kind": "property", "label": "office held by head of state", "pred_id": "P1906"}
+{"index": "2326", "kind": "property", "label": "sex or gender", "pred_id": "P21"}
+{"index": "2326", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "2326", "kind": "property", "label": "spouse", "pred_id": "P26"}
+{"index": "2371", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2371", "kind": "property", "label": "field of work", "pred_id": "P101"}
+{"index": "2371", "kind": "property", "label": "partnership with", "pred_id": "P2652"}
+{"index": "2371", "kind": "property", "label": "affiliation", "pred_id": "P1416"}
+{"index": "2371", "kind": "property", "label": "logo image", "pred_id": "P154"}
+{"index": "2718", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2718", "kind": "property", "label": "award received", "pred_id": "P166"}
+{"index": "2718", "kind": "property", "label": "sex or gender", "pred_id": "P21"}
+{"index": "2718", "kind": "property", "label": "award received", "pred_id": "P166"}
+{"index": "2718", "kind": "property", "label": "sex or gender", "pred_id": "P21"}
+{"index": "1911", "kind": "property", "label": "child", "pred_id": "P40"}
+{"index": "1911", "kind": "property", "label": "ethnic group", "pred_id": "P172"}
+{"index": "1911", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1911", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "1911", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1911", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "683", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "683", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "683", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "683", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "683", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "683", "kind": "property", "label": "inception", "pred_id": "P571"}
+{"index": "683", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "683", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "982", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "982", "kind": "property", "label": "sex or gender", "pred_id": "P21"}
+{"index": "982", "kind": "property", "label": "worshipped by", "pred_id": "P1049"}
+{"index": "982", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "982", "kind": "property", "label": "spouse", "pred_id": "P26"}
+{"index": "982", "kind": "property", "label": "child", "pred_id": "P40"}
+{"index": "982", "kind": "property", "label": "mother", "pred_id": "P25"}
+{"index": "982", "kind": "property", "label": "father", "pred_id": "P22"}
+{"index": "982", "kind": "property", "label": "P9", "pred_id": ""}
+{"index": "982", "kind": "property", "label": "P7", "pred_id": ""}
+{"index": "1547", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1547", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1547", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "1547", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1547", "kind": "property", "label": "collection", "pred_id": "P195"}
+{"index": "1547", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "1547", "kind": "property", "label": "place of birth", "pred_id": "P19"}
+{"index": "1547", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2705", "kind": "property", "label": "Mastodon address", "pred_id": "P4033"}
+{"index": "2705", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "2705", "kind": "property", "label": "country of citizenship", "pred_id": "P27"}
+{"index": "1297", "kind": "property", "label": "applies to jurisdiction", "pred_id": "P1001"}
+{"index": "1297", "kind": "property", "label": "inception", "pred_id": "P571"}
+{"index": "1297", "kind": "property", "label": "image", "pred_id": "P41"}
+{"index": "1297", "kind": "property", "label": "replaced by", "pred_id": "P1366"}
+{"index": "1297", "kind": "property", "label": "dissolved, abolished or demolished date", "pred_id": "P576"}
+{"index": "1297", "kind": "property", "label": "applies to jurisdiction", "pred_id": "P1001"}
+{"index": "1802", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1802", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1802", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "1802", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "868", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "868", "kind": "property", "label": "number of injured", "pred_id": "P1339"}
+{"index": "868", "kind": "property", "label": "number of deaths", "pred_id": "P1120"}
+{"index": "868", "kind": "property", "label": "location", "pred_id": "P276"}
+{"index": "868", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "868", "kind": "property", "label": "point in time", "pred_id": "P585"}
+{"index": "868", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1368", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1368", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "2513", "kind": "property", "label": "shares border with", "pred_id": "P47"}
+{"index": "2513", "kind": "property", "label": "member of", "pred_id": "P463"}
+{"index": "2513", "kind": "property", "label": "member of", "pred_id": "P463"}
+{"index": "2513", "kind": "property", "label": "population", "pred_id": "P1082"}
+{"index": "2513", "kind": "property", "label": "P583", "pred_id": ""}
+{"index": "2088", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2088", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2088", "kind": "property", "label": "population", "pred_id": "P1082"}
+{"index": "2088", "kind": "property", "label": "geoshape", "pred_id": "P3896"}
+{"index": "2088", "kind": "property", "label": "shares border with", "pred_id": "P47"}
+{"index": "2088", "kind": "property", "label": "shares border with", "pred_id": "P47"}
+{"index": "2088", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2088", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2088", "kind": "property", "label": "population", "pred_id": "P1082"}
+{"index": "634", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "634", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "634", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "807", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "1786", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "1786", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1786", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1786", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1786", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1786", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1786", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1786", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1786", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1786", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1786", "kind": "property", "label": "official website", "pred_id": "P856"}
+{"index": "1786", "kind": "property", "label": "dissolved, abolished or demolished date", "pred_id": "P576"}
+{"index": "1786", "kind": "property", "label": "end time", "pred_id": "P582"}
+{"index": "1786", "kind": "property", "label": "dissolved, abolished or demolished date", "pred_id": "P576"}
+{"index": "1786", "kind": "property", "label": "end time", "pred_id": "P582"}
+{"index": "75", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "75", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "75", "kind": "property", "label": "author", "pred_id": "P50"}
+{"index": "75", "kind": "property", "label": "full work available at URL", "pred_id": ""}
+{"index": "1098", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1098", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1098", "kind": "property", "label": "UTC date of spacecraft launch", "pred_id": "P619"}
+{"index": "1098", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1818", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1818", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1818", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1818", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1818", "kind": "property", "label": "designed by", "pred_id": "P287"}
+{"index": "1818", "kind": "property", "label": "creator", "pred_id": "P170"}
+{"index": "1818", "kind": "property", "label": "programmer", "pred_id": "P943"}
+{"index": "1818", "kind": "property", "label": "developer", "pred_id": "P178"}
+{"index": "1818", "kind": "property", "label": "inception", "pred_id": "P571"}
+{"index": "1607", "kind": "property", "label": "creator", "pred_id": "P170"}
+{"index": "1607", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "1607", "kind": "property", "label": "located on street", "pred_id": "P669"}
+{"index": "1607", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1703", "kind": "property", "label": "legal form", "pred_id": "P1454"}
+{"index": "1703", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1703", "kind": "property", "label": "inception", "pred_id": "P571"}
+{"index": "1703", "kind": "property", "label": "dissolved, abolished or demolished date", "pred_id": "P576"}
+{"index": "1257", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1257", "kind": "property", "label": "catalog code", "pred_id": "P528"}
+{"index": "1257", "kind": "property", "label": "catalog", "pred_id": "P972"}
+{"index": "1257", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "270", "kind": "property", "label": "described at URL", "pred_id": "P973"}
+{"index": "270", "kind": "property", "label": "full work available at URL", "pred_id": ""}
+{"index": "270", "kind": "property", "label": "collection", "pred_id": "P195"}
+{"index": "935", "kind": "property", "label": "Disease Ontology ID", "pred_id": "P699"}
+{"index": "935", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "935", "kind": "property", "label": "drug or therapy used for treatment", "pred_id": "P2176"}
+{"index": "791", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2319", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2319", "kind": "property", "label": "named after", "pred_id": "P138"}
+{"index": "2319", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1404", "kind": "property", "label": "uses", "pred_id": "P2283"}
+{"index": "1007", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1007", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "1007", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "1007", "kind": "property", "label": "cause of death", "pred_id": "P509"}
+{"index": "1007", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "1007", "kind": "property", "label": "end time", "pred_id": "P582"}
+{"index": "2444", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2444", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2444", "kind": "property", "label": "has part(s)", "pred_id": "P527"}
+{"index": "2444", "kind": "property", "label": "has part(s)", "pred_id": "P527"}
+{"index": "2444", "kind": "property", "label": "has part(s)", "pred_id": "P527"}
+{"index": "2444", "kind": "property", "label": "series ordinal", "pred_id": "P1545"}
+{"index": "2444", "kind": "property", "label": "has part(s)", "pred_id": "P527"}
+{"index": "2444", "kind": "property", "label": "series ordinal", "pred_id": "P1545"}
+{"index": "2444", "kind": "property", "label": "given name", "pred_id": "P735"}
+{"index": "2619", "kind": "property", "label": "named after", "pred_id": "P138"}
+{"index": "2619", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2619", "kind": "property", "label": "taxon rank", "pred_id": "P105"}
+{"index": "2619", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "215", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "215", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "215", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "215", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "215", "kind": "property", "label": "sex or gender", "pred_id": "P21"}
+{"index": "215", "kind": "property", "label": "country of citizenship", "pred_id": "P27"}
+{"index": "2635", "kind": "property", "label": "place of burial", "pred_id": "P119"}
+{"index": "2635", "kind": "property", "label": "place of burial", "pred_id": "P119"}
+{"index": "2635", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2711", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2711", "kind": "property", "label": "Mastodon address", "pred_id": "P4033"}
+{"index": "2759", "kind": "property", "label": "ORCID iD", "pred_id": "P496"}
+{"index": "2759", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "758", "kind": "property", "label": "mother", "pred_id": "P25"}
+{"index": "993", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "993", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "993", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "993", "kind": "property", "label": "start time", "pred_id": "P580"}
+{"index": "993", "kind": "property", "label": "end time", "pred_id": "P582"}
+{"index": "993", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "993", "kind": "property", "label": "member of political party", "pred_id": "P102"}
+{"index": "993", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "2191", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2191", "kind": "property", "label": "office contested", "pred_id": "P541"}
+{"index": "2191", "kind": "property", "label": "applies to jurisdiction", "pred_id": "P1001"}
+{"index": "2191", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2191", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2191", "kind": "property", "label": "series ordinal", "pred_id": "P1545"}
+{"index": "2191", "kind": "property", "label": "total valid votes", "pred_id": "P1697"}
+{"index": "2191", "kind": "property", "label": "successful candidate", "pred_id": "P991"}
+{"index": "2191", "kind": "property", "label": "electorate", "pred_id": "P768"}
+{"index": "2191", "kind": "property", "label": "successful candidate", "pred_id": "P991"}
+{"index": "2191", "kind": "property", "label": "votes received", "pred_id": "P1111"}
+{"index": "2191", "kind": "property", "label": "member of political party", "pred_id": "P102"}
+{"index": "2073", "kind": "property", "label": "has part(s)", "pred_id": "P527"}
+{"index": "2073", "kind": "property", "label": "series ordinal", "pred_id": "P1545"}
+{"index": "2073", "kind": "property", "label": "sRGB color hex triplet", "pred_id": "P465"}
+{"index": "2073", "kind": "property", "label": "collection", "pred_id": "P195"}
+{"index": "2073", "kind": "property", "label": "coordinates of northernmost point", "pred_id": "P1332"}
+{"index": "2073", "kind": "property", "label": "coordinates of northernmost point", "pred_id": "P1332"}
+{"index": "2073", "kind": "property", "label": "coordinates of southernmost point", "pred_id": "P1333"}
+{"index": "2073", "kind": "property", "label": "coordinates of southernmost point", "pred_id": "P1333"}
+{"index": "2073", "kind": "property", "label": "coordinates of easternmost point", "pred_id": "P1334"}
+{"index": "2073", "kind": "property", "label": "coordinates of easternmost point", "pred_id": "P1334"}
+{"index": "2073", "kind": "property", "label": "coordinates of westernmost point", "pred_id": "P1335"}
+{"index": "2073", "kind": "property", "label": "coordinates of westernmost point", "pred_id": "P1335"}
+{"index": "2073", "kind": "property", "label": "inception", "pred_id": "P571"}
+{"index": "2073", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "2073", "kind": "property", "label": "described at URL", "pred_id": "P973"}
+{"index": "2073", "kind": "property", "label": "external georeferencing URL", "pred_id": "P9361"}
+{"index": "505", "kind": "property", "label": "item for this sense", "pred_id": "P5137"}
+{"index": "505", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "505", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "505", "kind": "property", "label": "item for this sense", "pred_id": "P5137"}
+{"index": "505", "kind": "property", "label": "language style", "pred_id": "P6191"}
+{"index": "822", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "822", "kind": "property", "label": "said to be the same as", "pred_id": "P11577"}
+{"index": "342", "kind": "property", "label": "Early Modern Letters Online person ID", "pred_id": "P1802"}
+{"index": "2348", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2348", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "2348", "kind": "property", "label": "length", "pred_id": "P2043"}
+{"index": "2348", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2348", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2348", "kind": "property", "label": "named after", "pred_id": "P138"}
+{"index": "2348", "kind": "property", "label": "drainage basin", "pred_id": "P4614"}
+{"index": "2348", "kind": "property", "label": "continent", "pred_id": "P30"}
+{"index": "545", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "545", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "545", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "545", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "545", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "545", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "545", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "545", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1500", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1500", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1500", "kind": "property", "label": "copyright license", "pred_id": "P275"}
+{"index": "1500", "kind": "property", "label": "edition or translation of", "pred_id": "P629"}
+{"index": "1500", "kind": "property", "label": "followed by", "pred_id": "P156"}
+{"index": "869", "kind": "property", "label": "given name", "pred_id": "P735"}
+{"index": "869", "kind": "property", "label": "place of birth", "pred_id": "P19"}
+{"index": "869", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1401", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1401", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "1401", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "1401", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "1401", "kind": "property", "label": "start time", "pred_id": "P580"}
+{"index": "1401", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1401", "kind": "property", "label": "end time", "pred_id": "P582"}
+{"index": "1953", "kind": "property", "label": "found in taxon", "pred_id": "P703"}
+{"index": "1953", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1953", "kind": "property", "label": "main subject", "pred_id": "P921"}
+{"index": "1953", "kind": "property", "label": "publication date", "pred_id": "P577"}
+{"index": "1953", "kind": "property", "label": "DOI", "pred_id": "P356"}
+{"index": "1825", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1825", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1825", "kind": "property", "label": "mouth of the watercourse", "pred_id": "P403"}
+{"index": "1825", "kind": "property", "label": "length", "pred_id": "P2043"}
+{"index": "1825", "kind": "property", "label": "length", "pred_id": "P2043"}
+{"index": "1825", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1825", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1236", "kind": "property", "label": "followed by", "pred_id": "P156"}
+{"index": "1236", "kind": "property", "label": "dissolved, abolished or demolished date", "pred_id": "P576"}
+{"index": "2402", "kind": "property", "label": "start time", "pred_id": "P580"}
+{"index": "2402", "kind": "property", "label": "end time", "pred_id": "P582"}
+{"index": "2402", "kind": "property", "label": "place of death", "pred_id": "P20"}
+{"index": "2402", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "2402", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "2402", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "1860", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1860", "kind": "property", "label": "continent", "pred_id": "P30"}
+{"index": "1860", "kind": "property", "label": "head of government", "pred_id": "P6"}
+{"index": "1860", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "2239", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2239", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2239", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2239", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2239", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1579", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1579", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1579", "kind": "property", "label": "mascot", "pred_id": "P822"}
+{"index": "1579", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "959", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "959", "kind": "property", "label": "genre", "pred_id": "P136"}
+{"index": "959", "kind": "property", "label": "applies to jurisdiction", "pred_id": "P1001"}
+{"index": "959", "kind": "property", "label": "image", "pred_id": "P41"}
+{"index": "2233", "kind": "property", "label": "SPARQL endpoint URL", "pred_id": "P5305"}
+{"index": "2233", "kind": "property", "label": "Wikidata property", "pred_id": "P1629"}
+{"index": "1619", "kind": "property", "label": "named after", "pred_id": "P138"}
+{"index": "1619", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1619", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1619", "kind": "property", "label": "named after", "pred_id": "P138"}
+{"index": "1619", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1083", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1083", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1083", "kind": "property", "label": "image", "pred_id": "P41"}
+{"index": "1083", "kind": "property", "label": "image", "pred_id": "P41"}
+{"index": "1083", "kind": "property", "label": "applies to part", "pred_id": "P518"}
+{"index": "1083", "kind": "property", "label": "shown with features", "pred_id": "P1354"}
+{"index": "1083", "kind": "property", "label": "image", "pred_id": "P41"}
+{"index": "1887", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "1887", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1986", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1986", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "1986", "kind": "property", "label": "named after", "pred_id": "P138"}
+{"index": "1986", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1239", "kind": "property", "label": "named after", "pred_id": "P138"}
+{"index": "1239", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "2538", "kind": "property", "label": "employer", "pred_id": "P108"}
+{"index": "2538", "kind": "property", "label": "member of", "pred_id": "P463"}
+{"index": "2538", "kind": "property", "label": "affiliation", "pred_id": "P1416"}
+{"index": "2538", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "2652", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "2652", "kind": "property", "label": "place of birth", "pred_id": "P19"}
+{"index": "2652", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "2652", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2652", "kind": "property", "label": "country", "pred_id": "P27"}
+{"index": "2652", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2652", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2652", "kind": "property", "label": "applies to jurisdiction", "pred_id": "P1001"}
+{"index": "2652", "kind": "property", "label": "applies to jurisdiction", "pred_id": "P1001"}
+{"index": "2652", "kind": "property", "label": "country", "pred_id": "P27"}
+{"index": "2652", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2652", "kind": "property", "label": "country", "pred_id": "P27"}
+{"index": "1187", "kind": "property", "label": "tonality", "pred_id": "P826"}
+{"index": "1187", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1187", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1187", "kind": "property", "label": "genre", "pred_id": "P136"}
+{"index": "1187", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1187", "kind": "property", "label": "tonality", "pred_id": "P826"}
+{"index": "1187", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1322", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1322", "kind": "property", "label": "family", "pred_id": "P53"}
+{"index": "1322", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1322", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "1322", "kind": "property", "label": "family", "pred_id": "P53"}
+{"index": "1322", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1322", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "1322", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "2613", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2613", "kind": "property", "label": "place of birth", "pred_id": "P19"}
+{"index": "2613", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "509", "kind": "property", "label": "ISO 639-1 code", "pred_id": "P218"}
+{"index": "509", "kind": "property", "label": "demonym of", "pred_id": "P6271"}
+{"index": "509", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "503", "kind": "property", "label": "usage example", "pred_id": "P5831"}
+{"index": "503", "kind": "property", "label": "usage example", "pred_id": "P5831"}
+{"index": "503", "kind": "property", "label": "subject sense", "pred_id": "P6072"}
+{"index": "503", "kind": "property", "label": "subject form", "pred_id": "P5830"}
+{"index": "929", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "929", "kind": "property", "label": "educated at", "pred_id": "P69"}
+{"index": "842", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "842", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "842", "kind": "property", "label": "family name", "pred_id": "P734"}
+{"index": "374", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "374", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "374", "kind": "property", "label": "place of birth", "pred_id": "P19"}
+{"index": "374", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "306", "kind": "property", "label": "IIIF manifest URL", "pred_id": "P6108"}
+{"index": "306", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "306", "kind": "property", "label": "creator", "pred_id": "P170"}
+{"index": "306", "kind": "property", "label": "collection", "pred_id": "P195"}
+{"index": "306", "kind": "property", "label": "collection", "pred_id": "P195"}
+{"index": "306", "kind": "property", "label": "end time", "pred_id": "P582"}
+{"index": "1711", "kind": "property", "label": "part of", "pred_id": "P361"}
+{"index": "1711", "kind": "property", "label": "award received", "pred_id": "P166"}
+{"index": "1711", "kind": "property", "label": "award received", "pred_id": "P166"}
+{"index": "1711", "kind": "property", "label": "point in time", "pred_id": "P585"}
+{"index": "1711", "kind": "property", "label": "sex or gender", "pred_id": "P21"}
+{"index": "714", "kind": "property", "label": "taxon name", "pred_id": "P225"}
+{"index": "714", "kind": "property", "label": "taxon common name", "pred_id": "P1843"}
+{"index": "714", "kind": "property", "label": "length", "pred_id": "P2043"}
+{"index": "714", "kind": "property", "label": "life expectancy", "pred_id": "P2250"}
+{"index": "714", "kind": "property", "label": "height", "pred_id": "P2048"}
+{"index": "714", "kind": "property", "label": "wingspan", "pred_id": "P2050"}
+{"index": "714", "kind": "property", "label": "mass", "pred_id": "P2067"}
+{"index": "714", "kind": "property", "label": "of", "pred_id": "P2210"}
+{"index": "714", "kind": "property", "label": "mass", "pred_id": "P2067"}
+{"index": "391", "kind": "property", "label": "child", "pred_id": "P40"}
+{"index": "391", "kind": "property", "label": "child", "pred_id": "P40"}
+{"index": "1282", "kind": "property", "label": "cast member", "pred_id": "P161"}
+{"index": "1282", "kind": "property", "label": "cast member", "pred_id": "P161"}
+{"index": "1282", "kind": "property", "label": "character role", "pred_id": "P453"}
+{"index": "1282", "kind": "property", "label": "performer", "pred_id": "P175"}
+{"index": "1282", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1282", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1282", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "2618", "kind": "property", "label": "place of birth", "pred_id": "P19"}
+{"index": "2618", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "641", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "641", "kind": "property", "label": "genre", "pred_id": "P136"}
+{"index": "641", "kind": "property", "label": "director", "pred_id": "P57"}
+{"index": "641", "kind": "property", "label": "publication date", "pred_id": "P577"}
+{"index": "186", "kind": "property", "label": "parent taxon", "pred_id": "P171"}
+{"index": "186", "kind": "property", "label": "taxon name", "pred_id": "P225"}
+{"index": "186", "kind": "property", "label": "depicts", "pred_id": "P180"}
+{"index": "186", "kind": "property", "label": "creator", "pred_id": "P170"}
+{"index": "186", "kind": "property", "label": "full work available at URL", "pred_id": ""}
+{"index": "2540", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2540", "kind": "property", "label": "genre", "pred_id": "P136"}
+{"index": "2540", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2540", "kind": "property", "label": "country of origin", "pred_id": "P495"}
+{"index": "2540", "kind": "property", "label": "publication date", "pred_id": "P577"}
+{"index": "2540", "kind": "property", "label": "developer", "pred_id": "P178"}
+{"index": "2540", "kind": "property", "label": "publisher", "pred_id": "P123"}
+{"index": "2540", "kind": "property", "label": "platform", "pred_id": "P400"}
+{"index": "846", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "846", "kind": "property", "label": "cause of death", "pred_id": "P509"}
+{"index": "846", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "882", "kind": "property", "label": "country of citizenship", "pred_id": "P27"}
+{"index": "65", "kind": "property", "label": "UNESCO Biosphere Reserve URL", "pred_id": "P2520"}
+{"index": "65", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "65", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "2581", "kind": "property", "label": "heritage designation", "pred_id": "P1435"}
+{"index": "2581", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1773", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1773", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1773", "kind": "property", "label": "main subject", "pred_id": "P921"}
+{"index": "234", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "234", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "234", "kind": "property", "label": "collection", "pred_id": "P195"}
+{"index": "1551", "kind": "property", "label": "educated at", "pred_id": "P69"}
+{"index": "1551", "kind": "property", "label": "educated at", "pred_id": "P69"}
+{"index": "1551", "kind": "property", "label": "end time", "pred_id": "P582"}
+{"index": "1551", "kind": "property", "label": "sex or gender", "pred_id": "P21"}
+{"index": "1551", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1551", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "1551", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "2022", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "2022", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "2022", "kind": "property", "label": "name in native language", "pred_id": "P1559"}
+{"index": "2022", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "544", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "544", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "544", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "544", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "544", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "544", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "544", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "544", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1429", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1429", "kind": "property", "label": "cast member", "pred_id": "P161"}
+{"index": "1429", "kind": "property", "label": "title", "pred_id": "P1476"}
+{"index": "1429", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1429", "kind": "property", "label": "cast member", "pred_id": "P161"}
+{"index": "1429", "kind": "property", "label": "title", "pred_id": "P1476"}
+{"index": "1537", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1537", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "456", "kind": "property", "label": "parent taxon", "pred_id": "P171"}
+{"index": "456", "kind": "property", "label": "parent taxon", "pred_id": "P171"}
+{"index": "456", "kind": "property", "label": "taxon name", "pred_id": "P225"}
+{"index": "456", "kind": "property", "label": "stated in", "pred_id": "P248"}
+{"index": "456", "kind": "property", "label": "taxon name", "pred_id": "P225"}
+{"index": "456", "kind": "property", "label": "stated in", "pred_id": "P248"}
+{"index": "456", "kind": "property", "label": "taxon name", "pred_id": "P225"}
+{"index": "456", "kind": "property", "label": "taxon name", "pred_id": "P225"}
+{"index": "456", "kind": "property", "label": "stated in", "pred_id": "P248"}
+{"index": "456", "kind": "property", "label": "taxon name", "pred_id": "P225"}
+{"index": "456", "kind": "property", "label": "taxon name", "pred_id": "P225"}
+{"index": "456", "kind": "property", "label": "stated in", "pred_id": "P248"}
+{"index": "2016", "kind": "property", "label": "creator", "pred_id": "P170"}
+{"index": "2016", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2016", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "2016", "kind": "property", "label": "creator", "pred_id": "P170"}
+{"index": "2016", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "2016", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1017", "kind": "property", "label": "award received", "pred_id": "P166"}
+{"index": "1017", "kind": "property", "label": "award received", "pred_id": "P166"}
+{"index": "1017", "kind": "property", "label": "point in time", "pred_id": "P585"}
+{"index": "1017", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "643", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "643", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "643", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "643", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "643", "kind": "property", "label": "award received", "pred_id": "P166"}
+{"index": "643", "kind": "property", "label": "award received", "pred_id": "P166"}
+{"index": "2731", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2731", "kind": "property", "label": "Mastodon address", "pred_id": "P4033"}
+{"index": "567", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "567", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "567", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "567", "kind": "property", "label": "area", "pred_id": "P2046"}
+{"index": "567", "kind": "property", "label": "area", "pred_id": "P2046"}
+{"index": "2280", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "2280", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "2280", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "2280", "kind": "property", "label": "country for sport", "pred_id": "P1532"}
+{"index": "2051", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2051", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "2051", "kind": "property", "label": "name in native language", "pred_id": "P1559"}
+{"index": "1638", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1638", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "1638", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "723", "kind": "property", "label": "father", "pred_id": "P22"}
+{"index": "723", "kind": "property", "label": "mother", "pred_id": "P25"}
+{"index": "723", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "2115", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2115", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "2115", "kind": "property", "label": "family name", "pred_id": "P734"}
+{"index": "2115", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "2115", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "2115", "kind": "property", "label": "place of birth", "pred_id": "P19"}
+{"index": "2115", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2115", "kind": "property", "label": "member of sports team", "pred_id": "P54"}
+{"index": "2115", "kind": "property", "label": "member of sports team", "pred_id": "P54"}
+{"index": "2115", "kind": "property", "label": "start time", "pred_id": "P580"}
+{"index": "2115", "kind": "property", "label": "end time", "pred_id": "P582"}
+{"index": "2115", "kind": "property", "label": "number of matches played/races/starts", "pred_id": "P1350"}
+{"index": "2027", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "2027", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2027", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "2027", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "2027", "kind": "property", "label": "carries", "pred_id": "P10228"}
+{"index": "2027", "kind": "property", "label": "carries", "pred_id": "P10228"}
+{"index": "2027", "kind": "property", "label": "located in or next to body of water", "pred_id": "P206"}
+{"index": "2027", "kind": "property", "label": "located in or next to body of water", "pred_id": "P206"}
+{"index": "2027", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2027", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "172", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "172", "kind": "property", "label": "atomic number", "pred_id": "P1086"}
+{"index": "172", "kind": "property", "label": "discoverer or inventor", "pred_id": "P61"}
+{"index": "172", "kind": "property", "label": "time of discovery or invention", "pred_id": "P575"}
+{"index": "172", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "172", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "719", "kind": "property", "label": "father", "pred_id": "P22"}
+{"index": "719", "kind": "property", "label": "mother", "pred_id": "P25"}
+{"index": "2456", "kind": "property", "label": "category for honorary citizens of entity", "pred_id": "P10280"}
+{"index": "2456", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2456", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "2258", "kind": "property", "label": "place of birth", "pred_id": "P19"}
+{"index": "2258", "kind": "property", "label": "country", "pred_id": "P30"}
+{"index": "2258", "kind": "property", "label": "country of citizenship", "pred_id": "P27"}
+{"index": "2258", "kind": "property", "label": "country of citizenship", "pred_id": "P27"}
+{"index": "2258", "kind": "property", "label": "place of birth", "pred_id": "P19"}
+{"index": "2258", "kind": "property", "label": "country", "pred_id": "P30"}
+{"index": "2258", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2258", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1909", "kind": "property", "label": "award received", "pred_id": "P166"}
+{"index": "1909", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1909", "kind": "property", "label": "award received", "pred_id": "P166"}
+{"index": "1909", "kind": "property", "label": "point in time", "pred_id": "P585"}
+{"index": "1909", "kind": "property", "label": "nominated by", "pred_id": "P4353"}
+{"index": "1909", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "2125", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2125", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2125", "kind": "property", "label": "inception", "pred_id": "P571"}
+{"index": "2125", "kind": "property", "label": "official website", "pred_id": "P856"}
+{"index": "2125", "kind": "property", "label": "X username", "pred_id": "P2002"}
+{"index": "2125", "kind": "property", "label": "Facebook username", "pred_id": "P2013"}
+{"index": "2125", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "2125", "kind": "property", "label": "population", "pred_id": "P1082"}
+{"index": "2125", "kind": "property", "label": "dissolved, abolished or demolished date", "pred_id": "P576"}
+{"index": "2763", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2763", "kind": "property", "label": "named after", "pred_id": "P138"}
+{"index": "2763", "kind": "property", "label": "present in work", "pred_id": "P1441"}
+{"index": "1641", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1641", "kind": "property", "label": "taxon rank", "pred_id": "P105"}
+{"index": "1641", "kind": "property", "label": "parent taxon", "pred_id": "P171"}
+{"index": "1641", "kind": "property", "label": "taxon name", "pred_id": "P225"}
+{"index": "479", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "479", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2620", "kind": "property", "label": "named after", "pred_id": "P138"}
+{"index": "2620", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2200", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2200", "kind": "property", "label": "sex or gender", "pred_id": "P21"}
+{"index": "2200", "kind": "property", "label": "country of citizenship", "pred_id": "P27"}
+{"index": "2200", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "2200", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2200", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "2200", "kind": "property", "label": "place of birth", "pred_id": "P19"}
+{"index": "1951", "kind": "property", "label": "child", "pred_id": "P40"}
+{"index": "1951", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "1951", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "1951", "kind": "property", "label": "spouse", "pred_id": "P26"}
+{"index": "1951", "kind": "property", "label": "spouse", "pred_id": "P26"}
+{"index": "169", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "169", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "169", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "169", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "169", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1908", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1908", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1908", "kind": "property", "label": "official website", "pred_id": "P856"}
+{"index": "1908", "kind": "property", "label": "uses", "pred_id": "P2283"}
+{"index": "1908", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1908", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1908", "kind": "property", "label": "start time", "pred_id": "P580"}
+{"index": "1908", "kind": "property", "label": "end time", "pred_id": "P582"}
+{"index": "1908", "kind": "property", "label": "hashtag", "pred_id": "P2572"}
+{"index": "1908", "kind": "property", "label": "organizer", "pred_id": "P664"}
+{"index": "428", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "428", "kind": "property", "label": "title", "pred_id": "P1476"}
+{"index": "428", "kind": "property", "label": "publication date", "pred_id": "P577"}
+{"index": "2150", "kind": "property", "label": "Australian Faunal Directory publication ID", "pred_id": "P6982"}
+{"index": "2150", "kind": "property", "label": "author", "pred_id": "P50"}
+{"index": "2150", "kind": "property", "label": "country of citizenship", "pred_id": "P27"}
+{"index": "2048", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2048", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2048", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2048", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2048", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "146", "kind": "property", "label": "inspired by", "pred_id": "P941"}
+{"index": "146", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "146", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "146", "kind": "property", "label": "inspired by", "pred_id": "P941"}
+{"index": "146", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "146", "kind": "property", "label": "P794", "pred_id": ""}
+{"index": "2600", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2600", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2600", "kind": "property", "label": "population", "pred_id": "P1082"}
+{"index": "2600", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "2600", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2600", "kind": "property", "label": "dissolved, abolished or demolished date", "pred_id": "P576"}
+{"index": "2600", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2600", "kind": "property", "label": "geoshape", "pred_id": "P3896"}
+{"index": "1849", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1849", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "1849", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "1849", "kind": "property", "label": "electoral district", "pred_id": "P768"}
+{"index": "1849", "kind": "property", "label": "parliamentary group", "pred_id": "P4100"}
+{"index": "1849", "kind": "property", "label": "start time", "pred_id": "P580"}
+{"index": "1849", "kind": "property", "label": "end time", "pred_id": "P582"}
+{"index": "1849", "kind": "property", "label": "elected in", "pred_id": "P2715"}
+{"index": "1849", "kind": "property", "label": "parliamentary term", "pred_id": "P2937"}
+{"index": "1849", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1849", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "1849", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "1849", "kind": "property", "label": "end time", "pred_id": "P582"}
+{"index": "1849", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1849", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "1849", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "1849", "kind": "property", "label": "end time", "pred_id": "P582"}
+{"index": "1849", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "894", "kind": "property", "label": "instrumentation", "pred_id": "P870"}
+{"index": "894", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "894", "kind": "property", "label": "instrumentation", "pred_id": "P870"}
+{"index": "894", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "894", "kind": "property", "label": "composer", "pred_id": "P86"}
+{"index": "2501", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "2501", "kind": "property", "label": "employer", "pred_id": "P108"}
+{"index": "2501", "kind": "property", "label": "employer", "pred_id": "P108"}
+{"index": "2501", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "2501", "kind": "property", "label": "end time", "pred_id": "P582"}
+{"index": "2501", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "1049", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1049", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1049", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1129", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1129", "kind": "property", "label": "inception", "pred_id": "P571"}
+{"index": "1129", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "853", "kind": "property", "label": "driving side", "pred_id": "P1622"}
+{"index": "2019", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2019", "kind": "property", "label": "terminus location", "pred_id": "P609"}
+{"index": "2019", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "824", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "824", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2679", "kind": "property", "label": "author", "pred_id": "P50"}
+{"index": "2679", "kind": "property", "label": "ORCID iD", "pred_id": "P496"}
+{"index": "2679", "kind": "property", "label": "publication date", "pred_id": "P577"}
+{"index": "2679", "kind": "property", "label": "cites work", "pred_id": "P2860"}
+{"index": "2679", "kind": "property", "label": "author", "pred_id": "P50"}
+{"index": "2679", "kind": "property", "label": "award received", "pred_id": "P166"}
+{"index": "1364", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1364", "kind": "property", "label": "native label", "pred_id": "P1705"}
+{"index": "338", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "338", "kind": "property", "label": "member of", "pred_id": "P463"}
+{"index": "338", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "338", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "338", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "338", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "338", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "338", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "338", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "338", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "338", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "1412", "kind": "property", "label": "depicts", "pred_id": "P180"}
+{"index": "1412", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1412", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1310", "kind": "property", "label": "parent astronomical body", "pred_id": "P397"}
+{"index": "1310", "kind": "property", "label": "part of", "pred_id": "P361"}
+{"index": "1310", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "2401", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2401", "kind": "property", "label": "applies to jurisdiction", "pred_id": "P1001"}
+{"index": "2401", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2401", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2401", "kind": "property", "label": "owned by", "pred_id": "P127"}
+{"index": "2401", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2401", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "2401", "kind": "property", "label": "applies to jurisdiction", "pred_id": "P1001"}
+{"index": "2401", "kind": "property", "label": "applies to jurisdiction", "pred_id": "P1001"}
+{"index": "2401", "kind": "property", "label": "applies to jurisdiction", "pred_id": "P1001"}
+{"index": "2401", "kind": "property", "label": "end time", "pred_id": "P582"}
+{"index": "2401", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2401", "kind": "property", "label": "part of", "pred_id": "P361"}
+{"index": "2401", "kind": "property", "label": "dissolved, abolished or demolished date", "pred_id": "P576"}
+{"index": "2401", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "489", "kind": "property", "label": "sex or gender", "pred_id": "P21"}
+{"index": "1408", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1408", "kind": "property", "label": "inception", "pred_id": "P571"}
+{"index": "327", "kind": "property", "label": "Electronic Enlightenment ID", "pred_id": "P3429"}
+{"index": "327", "kind": "property", "label": "genealogics.org person ID", "pred_id": "P1819"}
+{"index": "2272", "kind": "property", "label": "dedicated to", "pred_id": "P825"}
+{"index": "2272", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "362", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "362", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "362", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "362", "kind": "property", "label": "Atlas of Hillforts ID", "pred_id": "P4102"}
+{"index": "273", "kind": "property", "label": "archives at", "pred_id": "P485"}
+{"index": "273", "kind": "property", "label": "archives at", "pred_id": "P485"}
+{"index": "273", "kind": "property", "label": "described at URL", "pred_id": "P973"}
+{"index": "273", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1993", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1993", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "1993", "kind": "property", "label": "tonality", "pred_id": "P826"}
+{"index": "1993", "kind": "property", "label": "geoshape", "pred_id": "P3896"}
+{"index": "1204", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1204", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1204", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "1204", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "1204", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1801", "kind": "property", "label": "has part(s)", "pred_id": "P527"}
+{"index": "1801", "kind": "property", "label": "location", "pred_id": "P276"}
+{"index": "1801", "kind": "property", "label": "number of cases", "pred_id": "P1603"}
+{"index": "1801", "kind": "property", "label": "number of cases", "pred_id": "P1603"}
+{"index": "1801", "kind": "property", "label": "point in time", "pred_id": "P585"}
+{"index": "2206", "kind": "property", "label": "sex or gender", "pred_id": "P21"}
+{"index": "2206", "kind": "property", "label": "country of citizenship", "pred_id": "P27"}
+{"index": "2101", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "2101", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "2101", "kind": "property", "label": "given name", "pred_id": "P735"}
+{"index": "2101", "kind": "property", "label": "native label", "pred_id": "P1705"}
+{"index": "2101", "kind": "property", "label": "family name", "pred_id": "P734"}
+{"index": "2101", "kind": "property", "label": "native label", "pred_id": "P1705"}
+{"index": "2101", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "2101", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2101", "kind": "property", "label": "signature", "pred_id": "P109"}
+{"index": "295", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "295", "kind": "property", "label": "part of", "pred_id": "P361"}
+{"index": "295", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "295", "kind": "property", "label": "collection", "pred_id": "P195"}
+{"index": "2633", "kind": "property", "label": "Sports-Reference.com Olympic athlete ID (archived)", "pred_id": "P1447"}
+{"index": "2633", "kind": "property", "label": "sport", "pred_id": "P641"}
+{"index": "2633", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2633", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2633", "kind": "property", "label": "mass", "pred_id": "P2067"}
+{"index": "2633", "kind": "property", "label": "height", "pred_id": "P2048"}
+{"index": "2633", "kind": "property", "label": "sex or gender", "pred_id": "P21"}
+{"index": "2633", "kind": "property", "label": "mass", "pred_id": "P2067"}
+{"index": "2633", "kind": "property", "label": "height", "pred_id": "P2048"}
+{"index": "733", "kind": "property", "label": "mouth of the watercourse", "pred_id": "P403"}
+{"index": "540", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "540", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "540", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "540", "kind": "property", "label": "population", "pred_id": "P1082"}
+{"index": "540", "kind": "property", "label": "OpenStreetMap relation ID", "pred_id": "P402"}
+{"index": "1086", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "1086", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1086", "kind": "property", "label": "DBLP author ID", "pred_id": "P2456"}
+{"index": "1086", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "2709", "kind": "property", "label": "Mastodon address", "pred_id": "P4033"}
+{"index": "948", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "948", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "948", "kind": "property", "label": "made from material", "pred_id": "P186"}
+{"index": "948", "kind": "property", "label": "made from material", "pred_id": "P186"}
+{"index": "948", "kind": "property", "label": "made from material", "pred_id": "P186"}
+{"index": "948", "kind": "property", "label": "quantity", "pred_id": "P1114"}
+{"index": "948", "kind": "property", "label": "made from material", "pred_id": "P186"}
+{"index": "948", "kind": "property", "label": "quantity", "pred_id": "P1114"}
+{"index": "79", "kind": "property", "label": "author", "pred_id": "P50"}
+{"index": "79", "kind": "property", "label": "publication date", "pred_id": "P577"}
+{"index": "79", "kind": "property", "label": "first line", "pred_id": "P1922"}
+{"index": "1108", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1108", "kind": "property", "label": "UTC date of spacecraft launch", "pred_id": "P619"}
+{"index": "1108", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "835", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "835", "kind": "property", "label": "atomic number", "pred_id": "P1086"}
+{"index": "835", "kind": "property", "label": "element symbol", "pred_id": "P246"}
+{"index": "835", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "835", "kind": "property", "label": "neutron number", "pred_id": "P1148"}
+{"index": "1060", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "1060", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "1060", "kind": "property", "label": "mother", "pred_id": "P25"}
+{"index": "1060", "kind": "property", "label": "father", "pred_id": "P22"}
+{"index": "1060", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1060", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1060", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "1060", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "112", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2629", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2629", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2629", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "464", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "464", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "318", "kind": "property", "label": "Electronic Enlightenment ID", "pred_id": "P3429"}
+{"index": "318", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "318", "kind": "property", "label": "National Portrait Gallery (London) person ID", "pred_id": "P1816"}
+{"index": "2362", "kind": "property", "label": "main subject", "pred_id": "P921"}
+{"index": "2362", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2362", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2362", "kind": "property", "label": "main subject", "pred_id": "P921"}
+{"index": "2362", "kind": "property", "label": "part of", "pred_id": "P361"}
+{"index": "2362", "kind": "property", "label": "main subject", "pred_id": "P921"}
+{"index": "2362", "kind": "property", "label": "facet of", "pred_id": "P1269"}
+{"index": "2362", "kind": "property", "label": "author", "pred_id": "P50"}
+{"index": "2362", "kind": "property", "label": "employer", "pred_id": "P108"}
+{"index": "2362", "kind": "property", "label": "affiliation", "pred_id": "P1416"}
+{"index": "2362", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "2362", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2362", "kind": "property", "label": "headquarters location", "pred_id": "P159"}
+{"index": "2362", "kind": "property", "label": "country", "pred_id": "P27"}
+{"index": "2362", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2362", "kind": "property", "label": "country", "pred_id": "P27"}
+{"index": "2362", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2362", "kind": "property", "label": "ORCID iD", "pred_id": "P496"}
+{"index": "998", "kind": "property", "label": "signatory", "pred_id": "P1891"}
+{"index": "2457", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2457", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2457", "kind": "property", "label": "inception", "pred_id": "P571"}
+{"index": "2457", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2457", "kind": "property", "label": "headquarters location", "pred_id": "P159"}
+{"index": "2457", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2651", "kind": "property", "label": "place of birth", "pred_id": "P19"}
+{"index": "1502", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1502", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1502", "kind": "property", "label": "part of", "pred_id": "P361"}
+{"index": "1502", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1502", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1905", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1905", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1905", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1905", "kind": "property", "label": "commemorates", "pred_id": "P547"}
+{"index": "1905", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1905", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1905", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1905", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "1905", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1905", "kind": "property", "label": "owned by", "pred_id": "P127"}
+{"index": "1905", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1905", "kind": "property", "label": "social classification", "pred_id": "P3716"}
+{"index": "1905", "kind": "property", "label": "social classification", "pred_id": "P3716"}
+{"index": "355", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "355", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "355", "kind": "property", "label": "Atlas of Hillforts ID", "pred_id": "P4102"}
+{"index": "2750", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2750", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2750", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2750", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "163", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "163", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "163", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "163", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "163", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "163", "kind": "property", "label": "religious order", "pred_id": "P611"}
+{"index": "163", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "163", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "163", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "163", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2531", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2531", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "883", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "883", "kind": "property", "label": "point in time", "pred_id": "P585"}
+{"index": "883", "kind": "property", "label": "successful candidate", "pred_id": "P991"}
+{"index": "2505", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2505", "kind": "property", "label": "social media followers", "pred_id": "P8687"}
+{"index": "2505", "kind": "property", "label": "social media followers", "pred_id": "P8687"}
+{"index": "2505", "kind": "property", "label": "X numeric user ID", "pred_id": "P6552"}
+{"index": "2505", "kind": "property", "label": "point in time", "pred_id": "P585"}
+{"index": "2505", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2505", "kind": "property", "label": "social media followers", "pred_id": "P8687"}
+{"index": "2505", "kind": "property", "label": "social media followers", "pred_id": "P8687"}
+{"index": "2505", "kind": "property", "label": "point in time", "pred_id": "P585"}
+{"index": "2122", "kind": "property", "label": "dialect of", "pred_id": "P4913"}
+{"index": "2122", "kind": "property", "label": "usage example", "pred_id": "P5831"}
+{"index": "2122", "kind": "property", "label": "usage example", "pred_id": "P5831"}
+{"index": "2122", "kind": "property", "label": "subject form", "pred_id": "P5830"}
+{"index": "2122", "kind": "property", "label": "subject sense", "pred_id": "P6072"}
+{"index": "2122", "kind": "property", "label": "stated in", "pred_id": "P248"}
+{"index": "2122", "kind": "property", "label": "reference URL", "pred_id": "P854"}
+{"index": "2122", "kind": "property", "label": "document file on Wikimedia Commons", "pred_id": "P996"}
+{"index": "2122", "kind": "property", "label": "Wikimedia import URL", "pred_id": "P4656"}
+{"index": "1000", "kind": "property", "label": "heritage designation", "pred_id": "P1435"}
+{"index": "1000", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1000", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "1000", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "1000", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "537", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "537", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "537", "kind": "property", "label": "member of", "pred_id": "P463"}
+{"index": "537", "kind": "property", "label": "member of", "pred_id": "P463"}
+{"index": "537", "kind": "property", "label": "end time", "pred_id": "P582"}
+{"index": "537", "kind": "property", "label": "dissolved, abolished or demolished date", "pred_id": "P576"}
+{"index": "537", "kind": "property", "label": "end time", "pred_id": "P582"}
+{"index": "1152", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1152", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "1152", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "1152", "kind": "property", "label": "place of birth", "pred_id": "P19"}
+{"index": "1152", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1152", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "2285", "kind": "property", "label": "maintained by WikiProject", "pred_id": "P6104"}
+{"index": "2285", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "2285", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "2285", "kind": "property", "label": "official website", "pred_id": "P856"}
+{"index": "2285", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2285", "kind": "property", "label": "inventory number", "pred_id": "P217"}
+{"index": "1622", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1622", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1622", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "1622", "kind": "property", "label": "located in the administrative territorial entity", "pred_id": "P131"}
+{"index": "1622", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "1622", "kind": "property", "label": "named after", "pred_id": "P138"}
+{"index": "1622", "kind": "property", "label": "FANTOIR code", "pred_id": "P3182"}
+{"index": "156", "kind": "property", "label": "taxon rank", "pred_id": "P105"}
+{"index": "1888", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1888", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1888", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1888", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1888", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1621", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1621", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1621", "kind": "property", "label": "inception", "pred_id": "P571"}
+{"index": "1621", "kind": "property", "label": "hashtag", "pred_id": "P2572"}
+{"index": "858", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "858", "kind": "property", "label": "continent", "pred_id": "P30"}
+{"index": "858", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2481", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2481", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "2481", "kind": "property", "label": "country", "pred_id": "P17"}
+{"index": "2481", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "2481", "kind": "property", "label": "commemorates", "pred_id": "P547"}
+{"index": "2481", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2481", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "2481", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2481", "kind": "property", "label": "sex or gender", "pred_id": "P21"}
+{"index": "2481", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1018", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1018", "kind": "property", "label": "place of burial", "pred_id": "P119"}
+{"index": "1018", "kind": "property", "label": "place of birth", "pred_id": "P19"}
+{"index": "1018", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1018", "kind": "property", "label": "country of citizenship", "pred_id": "P27"}
+{"index": "496", "kind": "property", "label": "not found in", "pred_id": "P9660"}
+{"index": "1172", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1172", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1172", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1172", "kind": "property", "label": "emulates", "pred_id": "P4043"}
+{"index": "471", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "471", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2288", "kind": "property", "label": "unemployment rate", "pred_id": "P1198"}
+{"index": "2288", "kind": "property", "label": "point in time", "pred_id": "P585"}
+{"index": "2288", "kind": "property", "label": "unemployment rate", "pred_id": "P1198"}
+{"index": "1199", "kind": "property", "label": "has edition or translation", "pred_id": "P747"}
+{"index": "1199", "kind": "property", "label": "edition or translation of", "pred_id": "P629"}
+{"index": "1142", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "1142", "kind": "property", "label": "member of sports team", "pred_id": "P54"}
+{"index": "1142", "kind": "property", "label": "place of birth", "pred_id": "P19"}
+{"index": "1142", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1142", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "1212", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1212", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1212", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1212", "kind": "property", "label": "formatter URL", "pred_id": "P1630"}
+{"index": "1710", "kind": "property", "label": "father", "pred_id": "P22"}
+{"index": "1710", "kind": "property", "label": "mother", "pred_id": "P25"}
+{"index": "1710", "kind": "property", "label": "father", "pred_id": "P22"}
+{"index": "1710", "kind": "property", "label": "mother", "pred_id": "P25"}
+{"index": "1710", "kind": "property", "label": "father", "pred_id": "P22"}
+{"index": "1710", "kind": "property", "label": "mother", "pred_id": "P25"}
+{"index": "1710", "kind": "property", "label": "father", "pred_id": "P22"}
+{"index": "1710", "kind": "property", "label": "mother", "pred_id": "P25"}
+{"index": "1710", "kind": "property", "label": "father", "pred_id": "P22"}
+{"index": "1710", "kind": "property", "label": "mother", "pred_id": "P25"}
+{"index": "1710", "kind": "property", "label": "father", "pred_id": "P22"}
+{"index": "1710", "kind": "property", "label": "mother", "pred_id": "P25"}
+{"index": "1710", "kind": "property", "label": "father", "pred_id": "P22"}
+{"index": "1710", "kind": "property", "label": "mother", "pred_id": "P25"}
+{"index": "1710", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "2188", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "2188", "kind": "property", "label": "terminus", "pred_id": "P559"}
+{"index": "2188", "kind": "property", "label": "end time", "pred_id": "P582"}
+{"index": "2188", "kind": "property", "label": "route map", "pred_id": "P15"}
+{"index": "676", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "676", "kind": "property", "label": "occupation", "pred_id": "P106"}
+{"index": "676", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "676", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "676", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "676", "kind": "property", "label": "date of birth", "pred_id": "P569"}
+{"index": "676", "kind": "property", "label": "date of death", "pred_id": "P570"}
+{"index": "2532", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "805", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "805", "kind": "property", "label": "P139", "pred_id": ""}
+{"index": "805", "kind": "property", "label": "inception", "pred_id": "P571"}
+{"index": "805", "kind": "property", "label": "software version identifier", "pred_id": "P348"}
+{"index": "805", "kind": "property", "label": "publication date", "pred_id": "P577"}
+{"index": "1074", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1074", "kind": "property", "label": "area", "pred_id": "P2046"}
+{"index": "1074", "kind": "property", "label": "shares border with", "pred_id": "P47"}
+{"index": "1074", "kind": "property", "label": "shares border with", "pred_id": "P47"}
+{"index": "1074", "kind": "property", "label": "statement is subject of", "pred_id": "P805"}
+{"index": "1074", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1074", "kind": "property", "label": "shares border with", "pred_id": "P47"}
+{"index": "1074", "kind": "property", "label": "shares border with", "pred_id": "P47"}
+{"index": "1074", "kind": "property", "label": "statement is subject of", "pred_id": "P805"}
+{"index": "1074", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1074", "kind": "property", "label": "area", "pred_id": "P2046"}
+{"index": "1832", "kind": "property", "label": "Nobel Laureate API ID", "pred_id": "P8024"}
+{"index": "1832", "kind": "property", "label": "place of birth", "pred_id": "P19"}
+{"index": "1832", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "1832", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1832", "kind": "property", "label": "award received", "pred_id": "P166"}
+{"index": "1832", "kind": "property", "label": "image", "pred_id": "P18"}
+{"index": "522", "kind": "property", "label": "described by source", "pred_id": "P1343"}
+{"index": "522", "kind": "property", "label": "described by source", "pred_id": "P1343"}
+{"index": "522", "kind": "property", "label": "section, verse, paragraph, or clause", "pred_id": "P958"}
+{"index": "341", "kind": "property", "label": "Early Modern Letters Online person ID", "pred_id": "P1802"}
+{"index": "1527", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "1527", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "1527", "kind": "property", "label": "educated at", "pred_id": "P69"}
+{"index": "763", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "763", "kind": "property", "label": "country of citizenship", "pred_id": "P27"}
+{"index": "243", "kind": "property", "label": "collection", "pred_id": "P195"}
+{"index": "243", "kind": "property", "label": "creator", "pred_id": "P170"}
+{"index": "243", "kind": "property", "label": "Union List of Artist Names ID", "pred_id": "P245"}
+{"index": "35", "kind": "property", "label": "award received", "pred_id": "P166"}
+{"index": "622", "kind": "property", "label": "position held", "pred_id": "P39"}
+{"index": "622", "kind": "property", "label": "cause of death", "pred_id": "P509"}
+{"index": "191", "kind": "property", "label": "creator", "pred_id": "P170"}
+{"index": "191", "kind": "property", "label": "depicts", "pred_id": "P180"}
+{"index": "191", "kind": "property", "label": "published in", "pred_id": "P1433"}
+{"index": "552", "kind": "property", "label": "instance of", "pred_id": "P31"}
+{"index": "552", "kind": "property", "label": "subclass of", "pred_id": "P279"}
+{"index": "552", "kind": "property", "label": "continent", "pred_id": "P30"}
+{"index": "552", "kind": "property", "label": "coordinate location", "pred_id": "P625"}
+{"index": "2399", "kind": "property", "label": "API endpoint URL", "pred_id": "P6269"}
+{"index": "2399", "kind": "property", "label": "API endpoint URL", "pred_id": "P6269"}
+{"index": "2399", "kind": "property", "label": "protocol", "pred_id": "P2700"}
+{"index": "2399", "kind": "property", "label": "described at URL", "pred_id": "P973"}
+{"index": "2399", "kind": "property", "label": "user manual URL", "pred_id": "P2078"}
+{"index": "2399", "kind": "property", "label": "source code repository URL", "pred_id": "P1324"}

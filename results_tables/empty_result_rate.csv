@@ -1,0 +1,9 @@
+run,n,executed_pct,empty_result_pct,error_pct,entity_jaccard,entity_jaccard_nonempty_only
+Zero-shot GPT-5.4,400,93.8,42.8,6.2,14.2,26.9
+Zero-shot Claude,400,98.8,31.2,1.2,20.9,30.3
+Zero-shot Gemini,400,95.2,56.8,4.8,9.5,24.4
+Zero-shot DeepSeek,400,91.8,49.2,8.2,11.9,27.9
+Few-shot Claude,400,98.0,32.5,2.0,21.5,32.0
+Pipeline end-to-end,400,91.8,17.8,8.2,26.5,34.3
+Baseline arm,400,93.8,21.8,6.2,25.8,34.2
+Idiom arm,397,91.2,18.4,8.8,29.5,39.7

@@ -1,0 +1,22 @@
+\begin{table}[htbp]
+  \centering
+  \caption{Error taxonomy of a stratified sample of 30 failing questions.}
+  \label{tab:errors}
+  \small
+  \resizebox{\ifdim\width>\textwidth\textwidth\else\width\fi}{!}{%
+  \begin{tabular}{lrr}
+    \toprule
+    Category & n & Share (\%) \\
+    \midrule
+    structure & 14 & 46.7 \\
+    near miss (projection) & 6 & 20.0 \\
+    wrong property & 3 & 10.0 \\
+    execution error & 2 & 6.7 \\
+    unresolved label & 2 & 6.7 \\
+    triple flip & 1 & 3.3 \\
+    reference noise & 1 & 3.3 \\
+    wrong entity & 1 & 3.3 \\
+    \bottomrule
+  \end{tabular}}
+  \tabnote{Complexity-stratified random sample (seed 42) drawn from the reported clean-pool run and categorised by dominant error type. Each case was categorised by the author; an independent second annotator agreed on 21 of 30 cases. Proportions are indicative rather than population estimates.}
+\end{table}

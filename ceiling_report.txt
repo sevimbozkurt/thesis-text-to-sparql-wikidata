@@ -1,0 +1,7 @@
+CEILING REPORT — 1086 entity mentions
+
+top-7 (baseline)             873/1086 =  80.4%   (simple 22/28 | medium 267/338 | complex 584/720)
+top-20 (E1)                  1078/1086 =  99.3%   (simple 27/28 | medium 336/338 | complex 715/720)
+top-20 + fulltext (E1+E2)    1080/1086 =  99.4%   (simple 27/28 | medium 337/338 | complex 716/720)
+
+mean pool size: 12.4 candidates (baseline was <=7)

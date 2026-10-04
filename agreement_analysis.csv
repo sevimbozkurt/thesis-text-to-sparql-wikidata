@@ -1,0 +1,21 @@
+questions solved by k models,count
+0,307
+1,37
+2,28
+3,13
+4,15
+
+feature,mean in hard set,mean in easy set
+path operator (/ or |),0.48,0.27
+transitive star (*),0.34,0.13
+statement node (p:),0.3,0.07
+qualifier (pq:),0.22,0.0
+value node (psv:),0.08,0.07
+aggregation,0.32,0.0
+GROUP BY,0.32,0.07
+alternation (VALUES/UNION),0.29,0.13
+subquery,0.05,0.0
+OPTIONAL,0.68,0.67
+FILTER,0.47,0.4
+triples (approx),3.29,2.13
+projected vars,4.05,3.53

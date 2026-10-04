@@ -1,0 +1,4632 @@
+{
+ "454": {
+  "entity": {
+   "Commander of the Legion of Honour": "Q10855212"
+  },
+  "property": {
+   "award received": "P166"
+  }
+ },
+ "1420": {
+  "entity": {
+   "term of the Parliament of the United Kingdom": "",
+   "Member of Parliament of the United Kingdom": "Q18952564",
+   "female": "Q6581072",
+   "John": "Q4925477"
+  },
+  "property": {
+   "parliamentary term": "P2937",
+   "sex or gender": "P21",
+   "position held": "P39",
+   "instance of": "P31",
+   "start time": "P580",
+   "given name": "P735"
+  }
+ },
+ "2358": {
+  "property": {
+   "Twitter username": "P2002",
+   "country": "P17",
+   "instance of": "P31"
+  },
+  "entity": {
+   "Switzerland": "Q39",
+   "library": "Q7075"
+  }
+ },
+ "1152": {
+  "property": {
+   "place of birth": "P19",
+   "coordinate location": "P625",
+   "occupation": "P106"
+  },
+  "entity": {
+   "suffragette": "Q322170"
+  }
+ },
+ "1147": {
+  "property": {
+   "located in the administrative territorial entity": "P131",
+   "location": "P276",
+   "instance of": "P31"
+  },
+  "entity": {
+   "battle": "Q178561",
+   "Edinburgh": "Q23436"
+  }
+ },
+ "629": {
+  "property": {
+   "country of citizenship": "P27"
+  },
+  "entity": {
+   "stateless": "Q223050"
+  }
+ },
+ "1599": {
+  "property": {
+   "coordinate location": "P625",
+   "country": "P17",
+   "instance of": "P31"
+  },
+  "entity": {
+   "Scotland": "Q22",
+   "human settlement": "Q486972"
+  }
+ },
+ "2257": {
+  "property": {
+   "point in time": "P585",
+   "country": "P17",
+   "instance of": "P31",
+   "number of records": "P4876"
+  },
+  "entity": {
+   "Germany": "Q183",
+   "female given name": "Q11879590"
+  }
+ },
+ "1319": {
+  "property": {
+   "located in the administrative territorial entity": "P131",
+   "instance of": "P31"
+  },
+  "entity": {
+   "Brittany": "Q12130",
+   "sluice": "Q610559"
+  }
+ },
+ "544": {
+  "property": {
+   "located in the administrative territorial entity": "P131",
+   "coordinate location": "P625"
+  },
+  "entity": {
+   "Landkreis Leipzig": "Q6308"
+  }
+ },
+ "2088": {
+  "property": {
+   "shares border with": "P47",
+   "population": "P1082",
+   "instance of": "P31"
+  },
+  "entity": {
+   "department of France": "Q6465"
+  }
+ },
+ "2635": {
+  "property": {
+   "place of burial": "P119"
+  },
+  "entity": {
+   "P\u00e8re Lachaise Cemetery": "Q311"
+  }
+ },
+ "1442": {
+  "property": {
+   "award received": "P166",
+   "sex or gender": "P21"
+  },
+  "entity": {
+   "female": "Q6581072",
+   "Nobel Prize in Physics": "Q38104"
+  }
+ },
+ "2233": {
+  "property": {
+   "SPARQL endpoint URL": "P5305",
+   "Wikidata property": "P1629"
+  }
+ },
+ "1619": {
+  "property": {
+   "named after": "P138"
+  }
+ },
+ "1112": {
+  "property": {
+   "killed by": "P157",
+   "instance of": "P31"
+  },
+  "entity": {
+   "human": "Q5"
+  }
+ },
+ "121": {
+  "property": {
+   "educated at": "P69",
+   "position held": "P39"
+  },
+  "entity": {
+   "member of the United States House of Representatives": "Q13218630"
+  }
+ },
+ "362": {
+  "property": {
+   "coordinate location": "P625",
+   "instance of": "P31"
+  },
+  "entity": {
+   "hillfort": "Q744099"
+  }
+ },
+ "1215": {
+  "entity": {
+   "Wikidata's 6th birthday": "Q56458770"
+  },
+  "property": {
+   "coordinate location": "P625",
+   "instance of": "P31",
+   "location": "P276"
+  }
+ },
+ "2239": {
+  "property": {
+   "coordinate location": "P625",
+   "instance of": "P31",
+   "location": "P276"
+  },
+  "entity": {
+   "boundary stone": "Q921099",
+   "Radibor": "Q93286"
+  }
+ },
+ "643": {
+  "property": {
+   "award received": "P166",
+   "instance of": "P31"
+  },
+  "entity": {
+   "Academy Awards": "Q19020",
+   "Nobel Prize": "Q7191"
+  }
+ },
+ "1710": {
+  "entity": {
+   "Prithviraj Kapoor": "Q560197"
+  },
+  "property": {
+   "father": "P22"
+  }
+ },
+ "998": {
+  "property": {
+   "signatory": "P1891"
+  }
+ },
+ "2117": {
+  "property": {
+   "coordinate location": "P625",
+   "country": "P17",
+   "instance of": "P31"
+  },
+  "entity": {
+   "beach": "Q40080",
+   "Mexico": "Q96"
+  }
+ },
+ "206": {
+  "property": {
+   "named after": "P138",
+   "instance of": "P31",
+   "occupation": "P106"
+  },
+  "entity": {
+   "botanist": "Q2374149",
+   "taxon": "Q16521"
+  }
+ },
+ "1257": {
+  "property": {
+   "coordinate location": "P625",
+   "located in the administrative territorial entity": "P131",
+   "instance of": "P31"
+  },
+  "entity": {
+   "fountain": "Q483453",
+   "Z\u00fcrich": "Q72",
+   "Z\u00fcrich Hauptbahnhof": "Q224494"
+  }
+ },
+ "2647": {
+  "property": {
+   "publication date": "P577",
+   "director": "P57",
+   "instance of": "P31"
+  },
+  "entity": {
+   "Jean-Luc Godard": "Q53001",
+   "film": "Q11424"
+  }
+ },
+ "496": {
+  "property": {
+   "described by source": "P1343",
+   "instance of": "P31",
+   "language": "P407"
+  },
+  "entity": {
+   "Svenska Akademiens ordbok": "Q1935308",
+   "lexeme": "Q111352",
+   "Swedish": "Q9027"
+  }
+ },
+ "1192": {
+  "property": {
+   "country of citizenship": "P27",
+   "academic degree": "P512",
+   "educated at": "P69"
+  },
+  "entity": {
+   "Canada": "Q16",
+   "Doctor of Philosophy": "Q752297"
+  }
+ },
+ "1368": {
+  "entity": {
+   "Japanese folklore creature": ""
+  },
+  "property": {
+   "instance of": "P31",
+   "subclass of": "P279",
+   "image": "P18"
+  }
+ },
+ "1832": {
+  "property": {
+   "award received": "P166",
+   "coordinate location": "P625",
+   "instance of": "P31"
+  },
+  "entity": {
+   "country": "Q6256",
+   "Nobel Peace Prize": "Q35637"
+  }
+ },
+ "1899": {
+  "entity": {
+   "member of the German Bundestag": "Q1939555"
+  },
+  "property": {
+   "spouse": "P26",
+   "position held": "P39"
+  }
+ },
+ "1074": {
+  "property": {
+   "shares border with": "P47",
+   "instance of": "P31",
+   "area": "P2046"
+  },
+  "entity": {
+   "sovereign state": "Q3624078"
+  }
+ },
+ "343": {
+  "property": {
+   "Early Modern Letters Online person ID": "P1802"
+  }
+ },
+ "1703": {
+  "property": {
+   "dissolved, abolished or demolished date": "P576",
+   "instance of": "P31",
+   "inception": "P571"
+  },
+  "entity": {
+   "enterprise": "Q6881511"
+  }
+ },
+ "1557": {
+  "property": {
+   "coordinate location": "P625",
+   "location": "P276",
+   "instance of": "P31"
+  },
+  "entity": {
+   "Concorde": "Q6505"
+  }
+ },
+ "1182": {
+  "entity": {
+   "ancient Greek pottery": "Q122031115",
+   "Mus\u00e9e Saint-Raymond": "Q1376"
+  },
+  "property": {
+   "collection": "P195",
+   "instance of": "P31",
+   "subclass of": "P279"
+  }
+ },
+ "356": {
+  "property": {
+   "Atlas of Hillforts ID": "P4102"
+  }
+ },
+ "1187": {
+  "property": {
+   "tonality": "P826",
+   "subclass of": "P279",
+   "instance of": "P31",
+   "genre": "P136"
+  },
+  "entity": {
+   "musical work": "Q2188189"
+  }
+ },
+ "1477": {
+  "property": {
+   "location of the point of view": "P7108",
+   "creator": "P170"
+  },
+  "entity": {
+   "Vincent van Gogh": "Q5582"
+  }
+ },
+ "2620": {
+  "property": {
+   "named after": "P138"
+  },
+  "entity": {
+   "Vladimir Lenin": "Q1394"
+  }
+ },
+ "373": {
+  "property": {
+   "named after": "P138"
+  },
+  "entity": {
+   "Christine de Pizan": "Q234816"
+  }
+ },
+ "1728": {
+  "property": {
+   "coordinate location": "P625",
+   "twinned administrative body": "P190",
+   "instance of": "P31",
+   "country": "P17"
+  },
+  "entity": {
+   "India": "Q668",
+   "city": "Q515"
+  }
+ },
+ "1303": {
+  "property": {
+   "first line": "P1922",
+   "language of work or name": "P407",
+   "instance of": "P31"
+  },
+  "entity": {
+   "book": "Q571"
+  }
+ },
+ "1490": {
+  "property": {
+   "discoverer or inventor": "P61",
+   "instance of": "P31"
+  },
+  "entity": {
+   "chemical compound": "Q11173"
+  }
+ },
+ "1492": {
+  "property": {
+   "sex or gender": "P21",
+   "religion or worldview": "P140",
+   "canonization status": "P411",
+   "named after": "P138",
+   "country": "P17",
+   "instance of": "P31"
+  },
+  "entity": {
+   "male": "Q6581097",
+   "human": "Q5",
+   "France": "Q142"
+  }
+ },
+ "2016": {
+  "entity": {
+   "Charles Heaphy": "Q1064767"
+  },
+  "property": {
+   "creator": "P170"
+  }
+ },
+ "599": {
+  "property": {
+   "CAS Registry Number": "P231",
+   "instance of": "P31"
+  },
+  "entity": {
+   "chemical compound": "Q11173"
+  }
+ },
+ "1418": {
+  "property": {
+   "date of birth": "P569",
+   "date of death": "P570"
+  },
+  "entity": {
+   "Honor\u00e9 de Balzac": "Q9711"
+  }
+ },
+ "1007": {
+  "entity": {
+   "member of the French National Assembly": "Q3044918",
+   "death in office": "Q5247364",
+   "human": "Q5"
+  },
+  "property": {
+   "end cause": "P1534",
+   "instance of": "P31",
+   "position held": "P39"
+  }
+ },
+ "959": {
+  "entity": {
+   "Nordic cross flag": "Q208324"
+  },
+  "property": {
+   "instance of": "P31"
+  }
+ },
+ "2618": {
+  "property": {
+   "place of birth": "P19",
+   "occupation": "P106"
+  },
+  "entity": {
+   "\u00c9pinal": "Q173695"
+  }
+ },
+ "1663": {
+  "property": {
+   "accusation": "P1595",
+   "coordinate location": "P625",
+   "residence": "P551",
+   "instance of": "P31",
+   "country": "P17"
+  },
+  "entity": {
+   "witchcraft": "Q259745",
+   "Scotland": "Q22",
+   "human": "Q5"
+  }
+ },
+ "2610": {
+  "property": {
+   "place of birth": "P19",
+   "instance of": "P31"
+  },
+  "entity": {
+   "river": "Q4022",
+   "human": "Q5"
+  }
+ },
+ "440": {
+  "property": {
+   "spouse": "P26"
+  },
+  "entity": {
+   "Madonna": "Q1744"
+  }
+ },
+ "665": {
+  "property": {
+   "coordinate location": "P625",
+   "instance of": "P31",
+   "country": "P17"
+  },
+  "entity": {
+   "library": "Q7075",
+   "Canada": "Q16"
+  }
+ },
+ "2686": {
+  "property": {
+   "located in the administrative territorial entity": "P131",
+   "shares border with": "P47",
+   "instance of": "P31"
+  },
+  "entity": {
+   "Paris": "Q90",
+   "street": "Q79007"
+  }
+ },
+ "2282": {
+  "property": {
+   "located in the administrative territorial entity": "P131",
+   "instance of": "P31"
+  },
+  "entity": {
+   "public toilet": "Q813966",
+   "Wales": "Q25"
+  }
+ },
+ "2101": {
+  "property": {
+   "date of birth": "P569",
+   "given name": "P735",
+   "occupation": "P106",
+   "family name": "P734"
+  },
+  "entity": {
+   "artist": "Q483501"
+  }
+ },
+ "2507": {
+  "entity": {
+   "Wikipedia language edition": "Q10876391",
+   "programming language": "Q9143"
+  },
+  "property": {
+   "instance of": "P31"
+  }
+ },
+ "1880": {
+  "property": {
+   "number of cases": "P1603",
+   "instance of": "P31"
+  },
+  "entity": {
+   "state of India": "Q12443800"
+  }
+ },
+ "1939": {
+  "property": {
+   "member of political party": "P102",
+   "position held": "P39",
+   "start time": "P580",
+   "instance of": "P31",
+   "end time": "P582"
+  },
+  "entity": {
+   "Member of the Riksdag": "Q82697153",
+   "human": "Q5"
+  }
+ },
+ "45": {
+  "property": {
+   "place of birth": "P19",
+   "founded by": "P112"
+  },
+  "entity": {
+   "Edinburgh": "Q23436"
+  }
+ },
+ "112": {
+  "entity": {
+   "featured article badge": "Q17437796",
+   "country": "Q6256"
+  },
+  "property": {
+   "instance of": "P31"
+  }
+ },
+ "1622": {
+  "property": {
+   "located in the administrative territorial entity": "P131",
+   "location": "P276",
+   "instance of": "P31"
+  },
+  "entity": {
+   "street sign": "Q1969455",
+   "Rennes": "Q647"
+  }
+ },
+ "65": {
+  "entity": {
+   "UNESCO biosphere reserve": "Q113572160"
+  },
+  "property": {
+   "coordinate location": "P625",
+   "instance of": "P31"
+  }
+ },
+ "1894": {
+  "property": {
+   "country of citizenship": "P27",
+   "citation count": "",
+   "instance of": "P31",
+   "occupation": "P106"
+  },
+  "entity": {
+   "scientist": "Q901",
+   "human": "Q5",
+   "Turkey": "Q43"
+  }
+ },
+ "342": {
+  "property": {
+   "Early Modern Letters Online person ID": "P1802"
+  }
+ },
+ "1993": {
+  "property": {
+   "tonality": "P826",
+   "instance of": "P31"
+  },
+  "entity": {
+   "national anthem": "Q23691"
+  }
+ },
+ "207": {
+  "property": {
+   "sex or gender": "P21",
+   "depicts": "P180",
+   "instance of": "P31",
+   "creator": "P170"
+  },
+  "entity": {
+   "woman": "Q467",
+   "painting": "Q3305213",
+   "female": "Q6581072"
+  }
+ },
+ "2718": {
+  "property": {
+   "award received": "P166",
+   "sex or gender": "P21",
+   "instance of": "P31"
+  },
+  "entity": {
+   "literary award": "Q378427",
+   "male": "Q6581097",
+   "female": "Q6581072"
+  }
+ },
+ "719": {
+  "entity": {
+   "Maria Barbara Bach": "Q57487",
+   "Johann Sebastian Bach": "Q1339"
+  },
+  "property": {
+   "father": "P22",
+   "mother": "P25"
+  }
+ },
+ "1484": {
+  "property": {
+   "date of birth": "P569",
+   "date of death": "P570",
+   "place of birth": "P19",
+   "place of death": "P20",
+   "educated at": "P69",
+   "spouse": "P26",
+   "notable work": "P800",
+   "point in time": "P585",
+   "significant event": "P793"
+  },
+  "entity": {
+   "Robert Louis Stevenson": "Q1512"
+  }
+ },
+ "1909": {
+  "entity": {
+   "Erich Fried Prize": "Q339982"
+  },
+  "property": {
+   "award received": "P166",
+   "image": "P18"
+  }
+ },
+ "1354": {
+  "property": {
+   "number of elevators": "P1301",
+   "instance of": "P31",
+   "subclass of": "P279"
+  },
+  "entity": {
+   "building": "Q41176"
+  }
+ },
+ "2352": {
+  "property": {
+   "language of work or name": "P407",
+   "SAOB ID": "P8478",
+   "instance of": "P31"
+  },
+  "entity": {
+   "word": "Q8171",
+   "Swedish": "Q9027"
+  }
+ },
+ "2337": {
+  "property": {
+   "award received": "P166",
+   "part of the series": "P179",
+   "sex or gender": "P21"
+  },
+  "entity": {
+   "female": "Q6581072",
+   "Nobel Prize": "Q7191"
+  }
+ },
+ "423": {
+  "property": {
+   "taxon rank": "P105",
+   "parent taxon": "P171",
+   "eBird taxon ID": "P3444",
+   "ABA bird ID": "P4526",
+   "instance of": "P31"
+  },
+  "entity": {
+   "taxon": "Q16521",
+   "species": "Q7432",
+   "bird": "Q5113"
+  }
+ },
+ "2097": {
+  "property": {
+   "date of death": "P570"
+  }
+ },
+ "735": {
+  "property": {
+   "publication date": "P577",
+   "instance of": "P31",
+   "author": "P50"
+  },
+  "entity": {
+   "book": "Q571",
+   "Arthur Conan Doyle": "Q35610"
+  }
+ },
+ "1205": {
+  "property": {
+   "place of birth": "P19",
+   "instance of": "P31",
+   "country": "P27",
+   "given name": "P735"
+  },
+  "entity": {
+   "human": "Q5"
+  }
+ },
+ "1306": {
+  "property": {
+   "sex or gender": "P21",
+   "occupation": "P106"
+  },
+  "entity": {
+   "female": "Q6581072",
+   "bioinformatician": "Q2904006",
+   "computational biologist": "Q15709480"
+  }
+ },
+ "78": {
+  "property": {
+   "notable work": "P800",
+   "author": "P50",
+   "occupation": "P106",
+   "instance of": "P31"
+  },
+  "entity": {
+   "poet": "Q49757",
+   "poem": "Q5185279"
+  }
+ },
+ "2007": {
+  "entity": {
+   "Royal Academy of Dramatic Art": "Q523926",
+   "film": "Q11424"
+  },
+  "property": {
+   "cast member": "P161",
+   "educated at": "P69",
+   "instance of": "P31"
+  }
+ },
+ "2280": {
+  "property": {
+   "date of birth": "P569",
+   "date of death": "P570",
+   "instance of": "P31",
+   "occupation": "P106"
+  },
+  "entity": {
+   "human": "Q5",
+   "association football player": "Q937857"
+  }
+ },
+ "2763": {
+  "property": {
+   "named after": "P138",
+   "present in work": "P1441",
+   "instance of": "P31"
+  },
+  "entity": {
+   "Moby-Dick": "Q174596",
+   "glacier": "Q35666"
+  }
+ },
+ "1142": {
+  "property": {
+   "member of sports team": "P54",
+   "place of birth": "P19",
+   "coordinate location": "P625"
+  },
+  "entity": {
+   "Liverpool F.C.": "Q1130849"
+  }
+ },
+ "816": {
+  "property": {
+   "coordinate location": "P625"
+  }
+ },
+ "2122": {
+  "property": {
+   "language of work or name": "P407",
+   "usage": "P5831"
+  },
+  "entity": {
+   "Bengali": "Q9610"
+  }
+ },
+ "35": {
+  "entity": {
+   "Bodley Medal": "Q4936657"
+  },
+  "property": {
+   "award received": "P166"
+  }
+ },
+ "545": {
+  "property": {
+   "located in the administrative territorial entity": "P131",
+   "coordinate location": "P625"
+  },
+  "entity": {
+   "Landkreis Leipzig": "Q6308"
+  }
+ },
+ "1852": {
+  "property": {
+   "country": "",
+   "heritage designation": "",
+   "coordinate location": "P625",
+   "instance of": "P31"
+  },
+  "entity": {
+   "France": "Q142",
+   "protected area": "Q473972",
+   "Ramsar site": "Q19683138"
+  }
+ },
+ "1247": {
+  "property": {
+   "time of discovery or invention": "P575",
+   "collection": "P195"
+  },
+  "entity": {
+   "Saint-Raymond Museum": "Q1376"
+  }
+ },
+ "2070": {
+  "property": {
+   "patronage": "P3872",
+   "instance of": "P31"
+  },
+  "entity": {
+   "rapid transit": "Q5503"
+  }
+ },
+ "522": {
+  "property": {
+   "described by source": "P1343"
+  }
+ },
+ "1888": {
+  "property": {
+   "coordinate location": "P625"
+  },
+  "entity": {
+   "St. Jakobus": "Q112903"
+  }
+ },
+ "2226": {
+  "property": {
+   "manner of death": "P1196",
+   "subclass of": "P279",
+   "position held": "P39"
+  },
+  "entity": {
+   "head of state": "Q48352",
+   "head of government": "Q2285706",
+   "killed in action": "Q210392"
+  }
+ },
+ "1060": {
+  "entity": {
+   "Member of Parliament of the United Kingdom": "Q18952564",
+   "mythical character": "Q4271324"
+  },
+  "property": {
+   "position held": "P39",
+   "ancestor": "P1038",
+   "instance of": "P31"
+  }
+ },
+ "2258": {
+  "property": {
+   "place of birth": "P19",
+   "country of citizenship": "P27",
+   "sitelinks": "",
+   "country": "P27",
+   "instance of": "P31"
+  },
+  "entity": {
+   "human": "Q5",
+   "France": "Q142"
+  }
+ },
+ "2652": {
+  "property": {
+   "applies to jurisdiction": "P1001",
+   "place of birth": "P19",
+   "date of birth": "P569",
+   "country": "P27",
+   "position held": "P39"
+  },
+  "entity": {
+   "France": "Q142"
+  }
+ },
+ "365": {
+  "property": {
+   "Atlas of Hillforts ID": "P4102",
+   "name in native language": "P1559"
+  }
+ },
+ "854": {
+  "property": {
+   "cast member": "P161",
+   "instance of": "P31"
+  },
+  "entity": {
+   "Bud Spencer": "Q221074",
+   "film": "Q11424"
+  }
+ },
+ "1425": {
+  "property": {
+   "country of citizenship": "P27",
+   "cast member": "P161",
+   "characters": "P674",
+   "instance of": "P31",
+   "position held": "P39",
+   "occupation": "P106"
+  },
+  "entity": {
+   "actor": "Q33999",
+   "film": "Q11424",
+   "Canada": "Q16",
+   "human": "Q5",
+   "President of the United States": "Q11696"
+  }
+ },
+ "1621": {
+  "property": {
+   "hashtag": "P2572",
+   "instance of": "P31",
+   "inception": "P571"
+  },
+  "entity": {
+   "newspaper": "Q11032"
+  }
+ },
+ "2319": {
+  "property": {
+   "named after": "P138",
+   "subclass of": "P279",
+   "genre": "P136",
+   "instance of": "P31"
+  },
+  "entity": {
+   "heavy metal": "Q38848",
+   "taxon": "Q16521",
+   "musical group": "Q215380"
+  }
+ },
+ "2399": {
+  "property": {
+   "OpenRefine reconciliation endpoint URL": ""
+  }
+ },
+ "2196": {
+  "property": {
+   "screenwriter": "P58"
+  },
+  "entity": {
+   "Donald P. Bellisario": "Q710739"
+  }
+ },
+ "521": {
+  "entity": {
+   "type constraint": "Q21503250",
+   "property scope constraint": "Q53869507"
+  },
+  "property": {
+   "property constraint": "P2302"
+  }
+ },
+ "306": {
+  "property": {
+   "IIIF manifest": "P6108",
+   "creator": "P170"
+  },
+  "entity": {
+   "Raphael": "Q5597"
+  }
+ },
+ "1018": {
+  "property": {
+   "place of burial": "P119",
+   "place of birth": "P19"
+  },
+  "entity": {
+   "Norra begravningsplatsen": "Q252312"
+  }
+ },
+ "1976": {
+  "entity": {
+   "monarchy of Denmark": "Q1273134"
+  },
+  "property": {
+   "place of death": "P20",
+   "date of death": "P570",
+   "position held": "P39"
+  }
+ },
+ "131": {
+  "entity": {
+   "state of the United States": "Q35657"
+  },
+  "property": {
+   "shares border with": "P47",
+   "instance of": "P31"
+  }
+ },
+ "1239": {
+  "property": {
+   "named after": "P138"
+  },
+  "entity": {
+   "Tux": "Q131200"
+  }
+ },
+ "714": {
+  "property": {
+   "taxon name": "P225",
+   "taxon common name": "P1843"
+  }
+ },
+ "2261": {
+  "property": {
+   "coordinate location": "P625",
+   "official name": "P1448"
+  }
+ },
+ "2326": {
+  "property": {
+   "sex or gender": "P21",
+   "spouse": "P26",
+   "occupation": "P106"
+  },
+  "entity": {
+   "economist": "Q188094",
+   "male": "Q6581097",
+   "female": "Q6581072"
+  }
+ },
+ "763": {
+  "property": {
+   "country of citizenship": "P27",
+   "instance of": "P31"
+  },
+  "entity": {
+   "human": "Q5",
+   "France": "Q142"
+  }
+ },
+ "2382": {
+  "property": {
+   "place of birth": "P19",
+   "located in the administrative territorial entity": "P131",
+   "given name": "P735"
+  },
+  "entity": {
+   "Auvergne": "Q1152"
+  }
+ },
+ "456": {
+  "entity": {
+   "The New Cactus Lexicon": "Q10695694",
+   "Cactaceae": "Q14560",
+   "Das gro\u00dfe Kakteen-Lexikon": "Q13520496"
+  },
+  "property": {
+   "parent taxon": "P171",
+   "taxon name": "P225",
+   "stated in": "P248"
+  }
+ },
+ "1825": {
+  "property": {
+   "mouth of the watercourse": "P403",
+   "instance of": "P31",
+   "length": "P2043"
+  },
+  "entity": {
+   "river": "Q4022"
+  }
+ },
+ "507": {
+  "property": {
+   "item for this sense": "P5137"
+  },
+  "entity": {
+   "water": "Q283"
+  }
+ },
+ "2694": {
+  "property": {
+   "country of citizenship": "P27",
+   "convicted of": "P1399",
+   "instance of": "P31"
+  },
+  "entity": {
+   "Sweden": "Q34",
+   "witchcraft": "Q259745",
+   "human": "Q5"
+  }
+ },
+ "1294": {
+  "property": {
+   "place of burial": "P119",
+   "instance of": "P31"
+  },
+  "entity": {
+   "P\u00e8re Lachaise Cemetery": "Q311",
+   "human": "Q5"
+  }
+ },
+ "613": {
+  "entity": {
+   "Lydia Pintscher": "Q18016466",
+   "scholarly article": "Q13442814"
+  },
+  "property": {
+   "instance of": "P31",
+   "author": "P50"
+  }
+ },
+ "1086": {
+  "property": {
+   "date of birth": "P569",
+   "occupation": "P106"
+  },
+  "entity": {
+   "computer scientist": "Q82594"
+  }
+ },
+ "1120": {
+  "property": {
+   "narrative location": "P840",
+   "instance of": "P31"
+  },
+  "entity": {
+   "television series": "Q5398426"
+  }
+ },
+ "1979": {
+  "entity": {
+   "Prime Minister of Japan": "Q274948"
+  },
+  "property": {
+   "astrological sign": "",
+   "position held": "P39"
+  }
+ },
+ "350": {
+  "property": {
+   "coordinate location": "P625",
+   "instance of": "P31",
+   "video": "P10"
+  },
+  "entity": {
+   "hillfort": "Q744099"
+  }
+ },
+ "1069": {
+  "property": {
+   "Twitter username": "P2002",
+   "occupation": "P106"
+  },
+  "entity": {
+   "biologist": "Q864503"
+  }
+ },
+ "883": {
+  "property": {
+   "point in time": "P585",
+   "instance of": "P31"
+  },
+  "entity": {
+   "Irish general election": "Q22266583"
+  }
+ },
+ "1502": {
+  "property": {
+   "coordinate location": "P625",
+   "instance of": "P31"
+  },
+  "entity": {
+   "Christmas tradition": "Q717040"
+  }
+ },
+ "1769": {
+  "entity": {
+   "Wuhan Tianhe International Airport": "Q601091"
+  },
+  "property": {
+   "destination": "P521"
+  }
+ },
+ "1017": {
+  "property": {
+   "award received": "P166",
+   "point in time": "P585",
+   "image": "P18"
+  },
+  "entity": {
+   "Theatre World Award": "Q1131356"
+  }
+ },
+ "942": {
+  "property": {
+   "students count": "P2196",
+   "instance of": "P31"
+  },
+  "entity": {
+   "drama school": "Q2143781"
+  }
+ },
+ "1784": {
+  "property": {
+   "continent": "P30",
+   "ISO 3166-1 alpha-2 code": "P297",
+   "Wikimedia language code": "P424",
+   "instance of": "P31",
+   "official language": "P37"
+  },
+  "entity": {
+   "Europe": "Q46",
+   "sovereign state": "Q3624078"
+  }
+ },
+ "835": {
+  "property": {
+   "minimal number of neutrons": "",
+   "maximum number of neutrons": "",
+   "instance of": "P31"
+  },
+  "entity": {
+   "chemical element": "Q11344"
+  }
+ },
+ "876": {
+  "property": {
+   "coordinate location": "P625",
+   "instance of": "P31"
+  },
+  "entity": {
+   "metro station": "Q928830"
+  }
+ },
+ "2394": {
+  "property": {
+   "taxon name": "P225",
+   "named after": "P138",
+   "sex or gender": "P21",
+   "place of birth": "P19"
+  },
+  "entity": {
+   "female": "Q6581072"
+  }
+ },
+ "2481": {
+  "property": {
+   "sex or gender": "P21",
+   "instance of": "P31",
+   "location": "P276",
+   "depicts": "P180",
+   "country": "P17"
+  },
+  "entity": {
+   "Italy": "Q38",
+   "female": "Q467",
+   "statue": "Q179700"
+  }
+ },
+ "1245": {
+  "property": {
+   "founded by": "P112",
+   "sex or gender": "P21",
+   "instance of": "P31"
+  },
+  "entity": {
+   "female": "Q6581072",
+   "software company": "Q1058914"
+  }
+ },
+ "2149": {
+  "property": {
+   "part of the series": "P179",
+   "series ordinal": "P1545",
+   "instance of": "P31"
+  },
+  "entity": {
+   "television series episode": "Q21191270",
+   "The Mentalist": "Q204228"
+  }
+ },
+ "397": {
+  "entity": {
+   "Q35610": "Q35610",
+   "book": "Q571"
+  },
+  "property": {
+   "publisher": "P123",
+   "publication date": "P577",
+   "author": "P50",
+   "illustrator": "P110",
+   "instance of": "P31"
+  }
+ },
+ "2201": {
+  "property": {
+   "publication date": "P577",
+   "instance of": "P31",
+   "main subject": "P921"
+  },
+  "entity": {
+   "bilingualism": "Q10779529",
+   "scholarly article": "Q13442814",
+   "multilingualism": "Q30081"
+  }
+ },
+ "1900": {
+  "property": {
+   "country of citizenship": "P27",
+   "occupation": "P106"
+  },
+  "entity": {
+   "slave trader": "Q17769800"
+  }
+ },
+ "989": {
+  "property": {
+   "production company": "P272",
+   "cast member": "P161",
+   "character role": "P453"
+  },
+  "entity": {
+   "Walt Disney Pictures": "Q191224"
+  }
+ },
+ "1218": {
+  "property": {
+   "publication date": "P577",
+   "instance of": "P31"
+  },
+  "entity": {
+   "smartphone": "Q19723451"
+  }
+ },
+ "846": {
+  "property": {
+   "manner of death": "P1196",
+   "date of death": "P570",
+   "instance of": "P31"
+  },
+  "entity": {
+   "human": "Q5",
+   "death by burning": "Q468455"
+  }
+ },
+ "479": {
+  "property": {
+   "coordinate location": "P625",
+   "instance of": "P31"
+  },
+  "entity": {
+   "hackerspace": "Q1032372"
+  }
+ },
+ "1954": {
+  "property": {
+   "sex or gender": "P21",
+   "Instagram username": "P2003",
+   "Twitter username": "P2002",
+   "instance of": "P31",
+   "occupation": "P106",
+   "Facebook ID": "P2013"
+  },
+  "entity": {
+   "female": "Q6581072",
+   "human": "Q5",
+   "association football player": "Q937857"
+  }
+ },
+ "2321": {
+  "entity": {
+   "2021 Czech parliamentary election": ""
+  },
+  "property": {
+   "member of political party": "P102",
+   "page views": "",
+   "candidate in": "P3602"
+  }
+ },
+ "243": {
+  "property": {
+   "Union List of Artist Names ID": "P245",
+   "collection": "P195",
+   "creator": "P170"
+  },
+  "entity": {
+   "Ashmolean Museum": "Q636400"
+  }
+ },
+ "1951": {
+  "entity": {
+   "Robert Emett": "Q75891071"
+  },
+  "property": {
+   "date of birth": "P569",
+   "date of death": "P570",
+   "child": "P40"
+  }
+ },
+ "331": {
+  "property": {
+   "Electronic Enlightenment ID": "P3429"
+  }
+ },
+ "1849": {
+  "entity": {
+   "Member of Parliament of the United Kingdom": "Q18952564"
+  },
+  "property": {
+   "date of death": "P570",
+   "start time": "P580",
+   "position held": "P39"
+  }
+ },
+ "1236": {
+  "property": {
+   "dissolved, abolished or demolished date": "P576",
+   "owned by": "P127"
+  },
+  "entity": {
+   "Red Hat": "Q485593"
+  }
+ },
+ "672": {
+  "property": {
+   "place of birth": "P19",
+   "occupation": "P106"
+  },
+  "entity": {
+   "Vienna": "Q1741",
+   "composer": "Q36834"
+  }
+ },
+ "2566": {
+  "entity": {
+   "next French legislative election": "Q130653198"
+  },
+  "property": {
+   "candidacy in election": "P3602"
+  }
+ },
+ "948": {
+  "property": {
+   "has part or parts": "P527",
+   "instance of": "P31"
+  },
+  "entity": {
+   "cocktail": "Q134768"
+  }
+ },
+ "567": {
+  "property": {
+   "coordinate location": "P625",
+   "instance of": "P31"
+  },
+  "entity": {
+   "glacier": "Q35666"
+  }
+ },
+ "503": {
+  "property": {
+   "usage example": "P5831",
+   "demonstrates form": "P5830",
+   "demonstrates sense": "P6072"
+  },
+  "entity": {
+   "Swedish": "Q9027"
+  }
+ },
+ "355": {
+  "property": {
+   "Atlas of Hillforts ID": "P4102"
+  }
+ },
+ "370": {
+  "property": {
+   "sex or gender": "P21",
+   "instance of": "P31"
+  },
+  "entity": {
+   "female": "Q6581072",
+   "human": "Q5"
+  }
+ },
+ "34": {
+  "property": {
+   "educated at": "P69",
+   "discoverer or inventor": "P61"
+  },
+  "entity": {
+   "University of Oxford": "Q34433"
+  }
+ },
+ "2375": {
+  "property": {
+   "located in the administrative territorial entity": "P131",
+   "instance of": "P31",
+   "population": "P1082"
+  },
+  "entity": {
+   "town": "Q3957",
+   "cathedral": "Q2977"
+  }
+ },
+ "968": {
+  "property": {
+   "coordinate location": "P625",
+   "instance of": "P31",
+   "country": "P17"
+  },
+  "entity": {
+   "tripoint": "Q316655"
+  }
+ },
+ "723": {
+  "entity": {
+   "Maria Barbara Bach": "Q57487",
+   "Johann Sebastian Bach": "Q1339"
+  },
+  "property": {
+   "father": "P22",
+   "mother": "P25"
+  }
+ },
+ "2759": {
+  "property": {
+   "educated at": "P69",
+   "instance of": "P31",
+   "employer": "P108"
+  },
+  "entity": {
+   "human": "Q5",
+   "University of Leeds": "Q503424"
+  }
+ },
+ "471": {
+  "property": {
+   "coordinate location": "P625"
+  },
+  "entity": {
+   "Berlin": "Q64",
+   "New York City": "Q60"
+  }
+ },
+ "2480": {
+  "property": {
+   "place of burial": "P119",
+   "date of death": "P570"
+  },
+  "entity": {
+   "P\u00e8re Lachaise Cemetery": "Q311"
+  }
+ },
+ "505": {
+  "entity": {
+   "picture dictionary entry": "",
+   "child": "Q7569",
+   "German": "Q188"
+  },
+  "property": {
+   "language of work or name": "P407",
+   "audience": "P2360",
+   "instance of": "P31",
+   "image": "P18"
+  }
+ },
+ "424": {
+  "property": {
+   "date of death": "P570",
+   "instance of": "P31",
+   "taxon author": "P405"
+  },
+  "entity": {
+   "human": "Q5"
+  }
+ },
+ "1194": {
+  "property": {
+   "place of publication": "P291",
+   "instance of": "P31"
+  },
+  "entity": {
+   "newspaper": "Q11032"
+  }
+ },
+ "1798": {
+  "property": {
+   "point in time": "P585",
+   "instance of": "P31",
+   "nominated for": "P1411"
+  },
+  "entity": {
+   "video game": "Q7889",
+   "P\u00e9gases": "Q64485080"
+  }
+ },
+ "882": {
+  "property": {
+   "country of citizenship": "P27",
+   "instance of": "P31"
+  },
+  "entity": {
+   "human": "Q5"
+  }
+ },
+ "2589": {
+  "property": {
+   "language of work or name": "P407",
+   "instance of": "P31"
+  },
+  "entity": {
+   "album": "Q482994"
+  }
+ },
+ "1801": {
+  "entity": {
+   "COVID-19 pandemic in a geographic region": "",
+   "state of India": "Q12443800"
+  },
+  "property": {
+   "number of cases": "P1603",
+   "point in time": "P585",
+   "location": "P276",
+   "instance of": "P31"
+  }
+ },
+ "869": {
+  "property": {
+   "place of birth": "P19",
+   "given name": "P735"
+  },
+  "entity": {
+   "Antoine": "Q15235674"
+  }
+ },
+ "104": {
+  "property": {
+   "CDLI ID": "P2474"
+  }
+ },
+ "2027": {
+  "property": {
+   "coordinate location": "P625",
+   "instance of": "P31",
+   "country": "P17",
+   "subclass of": "P279"
+  },
+  "entity": {
+   "United Kingdom": "Q145",
+   "canal": "Q12284",
+   "river": "Q4022"
+  }
+ },
+ "2505": {
+  "property": {
+   "Twitter username": "P2002",
+   "point in time": "P585",
+   "instance of": "P31",
+   "number of subscribers": "P8687"
+  },
+  "entity": {
+   "programming language": "Q9143"
+  }
+ },
+ "994": {
+  "property": {
+   "date of death": "P570",
+   "instance of": "P31"
+  },
+  "entity": {
+   "human": "Q5"
+  }
+ },
+ "1204": {
+  "property": {
+   "coordinate location": "",
+   "instance of": "P31",
+   "country": "P17"
+  },
+  "entity": {
+   "Austria": "Q40",
+   "library": "Q7075"
+  }
+ },
+ "351": {
+  "property": {
+   "Atlas of Hillforts ID": "P4102",
+   "image": "P18"
+  }
+ },
+ "1646": {
+  "property": {
+   "native label": "P1705",
+   "instance of": "P31"
+  },
+  "entity": {
+   "male given name": "Q12308941"
+  }
+ },
+ "2286": {
+  "entity": {
+   "Justice of the Supreme Court of Sweden": "Q96336792"
+  },
+  "property": {
+   "cites work": "P2860",
+   "commissioned by": "P88",
+   "member of": "P463",
+   "author": "P50",
+   "position held": "P39"
+  }
+ },
+ "2739": {
+  "property": {
+   "country of citizenship": "P27",
+   "sport": "P641",
+   "instance of": "P31",
+   "child": "P40"
+  },
+  "entity": {
+   "Finland": "Q33",
+   "ice hockey": "Q41466",
+   "human": "Q5"
+  }
+ },
+ "43": {
+  "property": {
+   "educated at": "P69",
+   "sex or gender": "P21",
+   "award received": "P166"
+  },
+  "entity": {
+   "female": "Q6581072",
+   "University of Edinburgh": "Q160302"
+  }
+ },
+ "318": {
+  "property": {
+   "Electronic Enlightenment ID": "P3429",
+   "image": "P18",
+   "instance of": "P31"
+  },
+  "entity": {
+   "human": "Q5"
+  }
+ },
+ "548": {
+  "property": {
+   "located in the administrative territorial entity": "P131",
+   "coordinate location": "P625",
+   "instance of": "P31"
+  },
+  "entity": {
+   "city": "Q515",
+   "municipality": "Q15284"
+  }
+ },
+ "542": {
+  "property": {
+   "located in the administrative territorial entity": "P131",
+   "coordinate location": "P625"
+  },
+  "entity": {
+   "Landkreis Leipzig": "Q6308"
+  }
+ },
+ "2238": {
+  "property": {
+   "sex or gender": "P21",
+   "head of government": "P6",
+   "population": "P1082",
+   "instance of": "P31",
+   "subclass of": "P279"
+  },
+  "entity": {
+   "female": "Q6581072",
+   "city": "Q515"
+  }
+ },
+ "1050": {
+  "property": {
+   "sex or gender": "P21",
+   "cast member": "P161",
+   "publication date": "P577",
+   "character role": "P453",
+   "occupation": "P106"
+  },
+  "entity": {
+   "actor": "Q33999",
+   "male": "Q6581097"
+  }
+ },
+ "1591": {
+  "property": {
+   "source of file": "P7482"
+  }
+ },
+ "777": {
+  "entity": {
+   "Prime Minister of France": "Q1587677"
+  },
+  "property": {
+   "end time": "P582",
+   "start time": "P580",
+   "position held": "P39"
+  }
+ },
+ "540": {
+  "property": {
+   "OpenStreetMap relation ID": "P402",
+   "instance of": "P31",
+   "subclass of": "P279",
+   "population": "P1082",
+   "country": "P17"
+  },
+  "entity": {
+   "human settlement": "Q486972",
+   "Denmark": "Q35"
+  }
+ },
+ "2023": {
+  "property": {
+   "astronaut mission": "",
+   "country of citizenship": "P27",
+   "part of": "P361",
+   "occupation": "P106"
+  },
+  "entity": {
+   "International Space Station": "Q25271",
+   "astronaut": "Q11631"
+  }
+ },
+ "1310": {
+  "property": {
+   "parent astronomical body": "P397"
+  },
+  "entity": {
+   "Sun": "Q525"
+  }
+ },
+ "2285": {
+  "property": {
+   "coordinate location": "P625",
+   "country": "P17",
+   "instance of": "P31"
+  },
+  "entity": {
+   "outdoor gym": "Q692630",
+   "Sweden": "Q34"
+  }
+ },
+ "2629": {
+  "property": {
+   "country of citizenship": "P27",
+   "social media followers": "P8687",
+   "instance of": "P31",
+   "official website": "P856"
+  },
+  "entity": {
+   "China": "Q148",
+   "human": "Q5"
+  }
+ },
+ "930": {
+  "property": {
+   "VIAF ID": "P214",
+   "occupation": "P106"
+  },
+  "entity": {
+   "historian": "Q201788"
+  }
+ },
+ "1905": {
+  "property": {
+   "commemorates": "P547",
+   "instance of": "P31",
+   "occupation": "P106",
+   "subclass of": "P279"
+  },
+  "entity": {
+   "slave owner": "Q10076267",
+   "statue": "Q179700",
+   "slave trader": "Q17769800",
+   "monument": "Q4989906"
+  }
+ },
+ "434": {
+  "entity": {
+   "Member of Parliament of the United Kingdom": "Q18952564"
+  },
+  "property": {
+   "image": "P18",
+   "position held": "P39"
+  }
+ },
+ "1212": {
+  "property": {
+   "publication date": "P577",
+   "instance of": "P31"
+  },
+  "entity": {
+   "video game": "Q7889"
+  }
+ },
+ "2758": {
+  "property": {
+   "language of work or name": "P407",
+   "instance of": "P31"
+  },
+  "entity": {
+   "literary work": "Q7725634"
+  }
+ },
+ "2361": {
+  "property": {
+   "field of work": "P101",
+   "part of": "P361"
+  },
+  "entity": {
+   "National Research Data Infrastructure": "Q96678466"
+  }
+ },
+ "2651": {
+  "property": {
+   "place of birth": "P19",
+   "instance of": "P31"
+  },
+  "entity": {
+   "Rennes": "Q647",
+   "human": "Q5"
+  }
+ },
+ "858": {
+  "property": {
+   "continent": "P30",
+   "coordinate location": "P625"
+  },
+  "entity": {
+   "Antarctica": "Q51"
+  }
+ },
+ "54": {
+  "property": {
+   "located in the administrative territorial entity": "P131",
+   "country": "P17",
+   "instance of": "P31"
+  },
+  "entity": {
+   "university": "Q3918",
+   "United Kingdom": "Q145"
+  }
+ },
+ "1547": {
+  "property": {
+   "coordinate location": "P625",
+   "place of birth": "P19",
+   "instance of": "P31",
+   "country": "P17",
+   "creator": "P170",
+   "collection": "P195"
+  },
+  "entity": {
+   "museum": "Q33506",
+   "France": "Q142"
+  }
+ },
+ "2046": {
+  "property": {
+   "date of death": "P570",
+   "cause of death": "P509",
+   "instance of": "P31"
+  },
+  "entity": {
+   "human": "Q5",
+   "tuberculosis": "Q12204"
+  }
+ },
+ "2127": {
+  "property": {
+   "dedicated to": "P825",
+   "located in the administrative territorial entity": "P131",
+   "instance of": "P31",
+   "subclass of": "P279"
+  },
+  "entity": {
+   "Saint Roch": "Q152457",
+   "building": "Q41176",
+   "Basque Country": "Q47588"
+  }
+ },
+ "75": {
+  "property": {
+   "full work available at URL": "",
+   "instance of": "P31",
+   "author": "P50"
+  },
+  "entity": {
+   "poem": "Q5185279"
+  }
+ },
+ "1527": {
+  "property": {
+   "number of students": "P2196",
+   "instance of": "P31"
+  },
+  "entity": {
+   "fictional school": "Q89375447"
+  }
+ },
+ "1765": {
+  "entity": {
+   "Lingua Libre recording": ""
+  },
+  "property": {
+   "language of work or name": "P407",
+   "instance of": "P31"
+  }
+ },
+ "2041": {
+  "property": {
+   "sex or gender": "P21",
+   "sport": "P641",
+   "instance of": "P31"
+  },
+  "entity": {
+   "chess": "Q718",
+   "human": "Q5",
+   "female": "Q6581072"
+  }
+ },
+ "1199": {
+  "property": {
+   "language of work or name": "P407",
+   "instance of": "P31"
+  },
+  "entity": {
+   "literary work": "Q7725634"
+  }
+ },
+ "168": {
+  "entity": {
+   "district of India": "Q1149652"
+  },
+  "property": {
+   "located in the administrative territorial entity": "P131",
+   "GeoNames ID": "P1566",
+   "instance of": "P31"
+  }
+ },
+ "237": {
+  "entity": {
+   "Sackler Library": "Q2210813",
+   "Bodleian Library": "Q82133"
+  },
+  "property": {
+   "collection": "P195",
+   "image": "P18"
+  }
+ },
+ "186": {
+  "property": {
+   "parent taxon": "P171",
+   "creator": "P170"
+  },
+  "entity": {
+   "Trifolium": "Q101538"
+  }
+ },
+ "1638": {
+  "property": {
+   "coordinate location": "P625",
+   "country": "P17",
+   "instance of": "P31"
+  },
+  "entity": {
+   "dune": "Q25391"
+  }
+ },
+ "1498": {
+  "property": {
+   "date of birth": "P569",
+   "date of death": "P570",
+   "mother": "P25"
+  }
+ },
+ "2051": {
+  "property": {
+   "date of birth": "P569",
+   "name in native language": "P1559",
+   "instance of": "P31"
+  },
+  "entity": {
+   "human": "Q5"
+  }
+ },
+ "2540": {
+  "property": {
+   "country of origin": "P495",
+   "publication date": "P577",
+   "instance of": "P31",
+   "genre": "P136"
+  },
+  "entity": {
+   "adventure game": "Q23916",
+   "video game": "Q7889",
+   "France": "Q142"
+  }
+ },
+ "341": {
+  "property": {
+   "Early Modern Letters Online person ID": "P1802"
+  }
+ },
+ "2443": {
+  "property": {
+   "field of work": "P101",
+   "main subject": "P921",
+   "author": "P50",
+   "instance of": "P31"
+  },
+  "entity": {
+   "human": "Q5"
+  }
+ },
+ "1887": {
+  "entity": {
+   "selenographer": "Q17276298"
+  },
+  "property": {
+   "date of birth": "P569",
+   "occupation": "P106"
+  }
+ },
+ "2290": {
+  "property": {
+   "sex or gender": "P21",
+   "instance of": "P31",
+   "country": "P17",
+   "head of government": "P6",
+   "subclass of": "P279",
+   "population": "P1082"
+  },
+  "entity": {
+   "United States of America": "Q30",
+   "city": "Q515"
+  }
+ },
+ "2472": {
+  "property": {
+   "date of birth": "P569",
+   "performer": "P175",
+   "based on": "P144"
+  },
+  "entity": {
+   "Elizabeth Bennet": "Q2223341"
+  }
+ },
+ "1322": {
+  "property": {
+   "date of birth": "P569",
+   "family": "P53",
+   "instance of": "P31"
+  },
+  "entity": {
+   "noble family": "Q13417114",
+   "human": "Q5"
+  }
+ },
+ "559": {
+  "property": {
+   "elevation above sea level": "P2044"
+  }
+ },
+ "1953": {
+  "property": {
+   "found in taxon": "P703",
+   "instance of": "P31",
+   "main subject": "P921"
+  },
+  "entity": {
+   "Severe acute respiratory syndrome coronavirus 2": "Q82069695",
+   "protein": "Q8054"
+  }
+ },
+ "2473": {
+  "property": {
+   "date of birth": "P569",
+   "date of death": "P570",
+   "instance of": "P31"
+  },
+  "entity": {
+   "human": "Q5"
+  }
+ },
+ "1701": {
+  "entity": {
+   "civil parish in Scotland": "Q5124673"
+  },
+  "property": {
+   "located in the administrative territorial entity": "P131",
+   "located in the present-day administrative territorial entity": "P3842",
+   "instance of": "P31"
+  }
+ },
+ "1056": {
+  "property": {
+   "depicted by": "P1299",
+   "part of the series": "P179"
+  },
+  "entity": {
+   "xkcd": "Q13915"
+  }
+ },
+ "2731": {
+  "property": {
+   "Mastodon address": "P4033",
+   "instance of": "P31"
+  }
+ },
+ "2385": {
+  "property": {
+   "country of citizenship": "P27",
+   "instance of": "P31",
+   "creator": "P170"
+  },
+  "entity": {
+   "fictional human": "Q15632617",
+   "France": "Q142"
+  }
+ },
+ "2456": {
+  "property": {
+   "category's main topic": "P301"
+  },
+  "entity": {
+   "honorary citizen": "Q987080"
+  }
+ },
+ "2500": {
+  "entity": {
+   "attempted coup d'\u00e9tat": "Q25906438",
+   "Africa": "Q15",
+   "coup d'\u00e9tat": "Q45382"
+  },
+  "property": {
+   "continent": "P30",
+   "country": "P17",
+   "instance of": "P31"
+  }
+ },
+ "676": {
+  "property": {
+   "date of birth": "P569",
+   "date of death": "P570",
+   "occupation": "P106",
+   "instance of": "P31"
+  },
+  "entity": {
+   "musician": "Q639669",
+   "human": "Q5"
+  }
+ },
+ "634": {
+  "property": {
+   "point in time": "P585"
+  }
+ },
+ "944": {
+  "property": {
+   "cast member": "P161",
+   "publication date": "P577",
+   "director": "P57",
+   "instance of": "P31"
+  },
+  "entity": {
+   "Christopher Lee": "Q180338",
+   "film": "Q11424"
+  }
+ },
+ "1906": {
+  "property": {
+   "member of": "",
+   "instance of": "P31"
+  },
+  "entity": {
+   "human": "Q5",
+   "Ku Klux Klan": "Q47131"
+  }
+ },
+ "91": {
+  "property": {
+   "place of birth": "P19",
+   "located in the administrative territorial entity": "P131",
+   "conflict": "P607",
+   "instance of": "P31"
+  },
+  "entity": {
+   "Gloucestershire": "Q23165",
+   "human": "Q5",
+   "World War I": "Q361"
+  }
+ },
+ "668": {
+  "property": {
+   "country of citizenship": "P27",
+   "Goodreads author ID": "P2963",
+   "occupation": "P106"
+  },
+  "entity": {
+   "writer": "Q36180",
+   "United States of America": "Q30"
+  }
+ },
+ "1500": {
+  "entity": {
+   "Creative Commons NoDerivs license": "",
+   "data set": "Q1172284"
+  },
+  "property": {
+   "copyright license": "P275",
+   "subclass of": "P279",
+   "instance of": "P31"
+  }
+ },
+ "926": {
+  "property": {
+   "cast member": "P161",
+   "instance of": "P31"
+  },
+  "entity": {
+   "Jean Gabin": "Q23842",
+   "film": "Q11424"
+  }
+ },
+ "2125": {
+  "entity": {
+   "national Red Cross or Red Crescent society": ""
+  },
+  "property": {
+   "instance of": "P31",
+   "inception": "P571"
+  }
+ },
+ "2335": {
+  "property": {
+   "award received": "P166"
+  },
+  "entity": {
+   "Right Livelihood Award": "Q152770"
+  }
+ },
+ "37": {
+  "property": {
+   "located in the administrative territorial entity": "P131",
+   "coordinate location": "P625",
+   "instance of": "P31"
+  },
+  "entity": {
+   "museum": "Q33506",
+   "library": "Q7075",
+   "park": "Q22698",
+   "university": "Q3918",
+   "Oxford": "Q34217",
+   "church building": "Q16970"
+  }
+ },
+ "1860": {
+  "property": {
+   "continent": "P30",
+   "date of birth": "P569",
+   "instance of": "P31",
+   "head of state": "P35"
+  },
+  "entity": {
+   "country": "Q6256",
+   "Africa": "Q15"
+  }
+ },
+ "825": {
+  "property": {
+   "located in the administrative territorial entity": "P131",
+   "instance of": "P31"
+  },
+  "entity": {
+   "Paris": "Q90",
+   "cathedral": "Q2977"
+  }
+ },
+ "2679": {
+  "property": {
+   "award received": "P166",
+   "cites work": "P2860",
+   "author": "P50"
+  },
+  "entity": {
+   "Nobel Prize": "Q7191"
+  }
+ },
+ "338": {
+  "property": {
+   "Early Modern Letters Online ID": "P1802",
+   "instance of": "P31",
+   "member of": "P463"
+  },
+  "entity": {
+   "learned society": "Q955824"
+  }
+ },
+ "2312": {
+  "property": {
+   "cast member": "P161",
+   "instance of": "P31"
+  },
+  "entity": {
+   "Jean-Paul Belmondo": "Q106255",
+   "film": "Q11424"
+  }
+ },
+ "1564": {
+  "property": {
+   "sex or gender": "P21",
+   "country of citizenship": "P27",
+   "continent": "P30",
+   "instance of": "P31"
+  },
+  "entity": {
+   "human": "Q5",
+   "Africa": "Q15",
+   "female": "Q6581072"
+  }
+ },
+ "462": {
+  "property": {
+   "place of burial": "P119",
+   "date of death": "P570"
+  },
+  "entity": {
+   "P\u00e8re Lachaise Cemetery": "Q311"
+  }
+ },
+ "999": {
+  "property": {
+   "part of the series": "P179",
+   "narrative location": "P840"
+  },
+  "entity": {
+   "James Bond": "Q2484680"
+  }
+ },
+ "374": {
+  "property": {
+   "sex or gender": "P21",
+   "place of birth": "P19",
+   "coordinate location": "P625",
+   "sitelinks": ""
+  },
+  "entity": {
+   "female": "Q6581072"
+  }
+ },
+ "97": {
+  "property": {
+   "publisher": "P123",
+   "full work available at URL": "",
+   "instance of": "P31"
+  },
+  "entity": {
+   "doctoral thesis": "Q187685",
+   "University of Oxford": "Q34433"
+  }
+ },
+ "1372": {
+  "property": {
+   "country of origin": "P495",
+   "genre": "P136",
+   "instance of": "P31",
+   "subclass of": "P279"
+  },
+  "entity": {
+   "heavy metal": "Q38848",
+   "band": "Q215380"
+  }
+ },
+ "428": {
+  "property": {
+   "publication date": "P577",
+   "instance of": "P31",
+   "title": "P1476"
+  },
+  "entity": {
+   "scholarly article": "Q13442814"
+  }
+ },
+ "270": {
+  "entity": {
+   "Sherardian Library of Plant Taxonomy": "Q52556635",
+   "Pitt Rivers Museum": "Q1456119",
+   "Ashmolean Museum": "Q636400",
+   "History of Science Museum": "Q6941088",
+   "Bodleian Library": "Q82133"
+  },
+  "property": {
+   "described at URL": "P973",
+   "collection": "P195"
+  }
+ },
+ "1986": {
+  "property": {
+   "located in the administrative territorial entity": "P131",
+   "named after": "P138",
+   "instance of": "P31"
+  },
+  "entity": {
+   "street": "Q79007",
+   "Leiden": "Q43631"
+  }
+ },
+ "2246": {
+  "property": {
+   "language of work or name": "P407",
+   "instance of": "P31"
+  },
+  "entity": {
+   "idiom": "Q184511",
+   "Danish": "Q9035"
+  }
+ },
+ "929": {
+  "entity": {
+   "Royal Academy of Dramatic Art": "Q523926",
+   "Wikipedia good article": "Q21167453",
+   "Wikipedia featured article": "Q21163207"
+  },
+  "property": {
+   "educated at": "P69"
+  }
+ },
+ "2048": {
+  "property": {
+   "coordinate location": "P625",
+   "instance of": "P31",
+   "subclass of": "P279"
+  },
+  "entity": {
+   "Museum of Modern Art": "Q188740",
+   "museum": "Q33506"
+  }
+ },
+ "1249": {
+  "property": {
+   "date of birth": "P569",
+   "occupation": "P106",
+   "image": "P18"
+  },
+  "entity": {
+   "pirate": "Q10729326"
+  }
+ },
+ "552": {
+  "property": {
+   "continent": "P30",
+   "instance of": "P31"
+  },
+  "entity": {
+   "river": "Q4022",
+   "Antarctica": "Q51"
+  }
+ },
+ "156": {
+  "property": {
+   "parent taxon": "P171",
+   "taxon rank": "P105"
+  },
+  "entity": {
+   "Mammal": "Q7377"
+  }
+ },
+ "2073": {
+  "entity": {
+   "Ordnance Survey Drawings": "Q7100888"
+  },
+  "property": {
+   "georeferenced with URL": "",
+   "instance of": "P31"
+  }
+ },
+ "2150": {
+  "property": {
+   "endemic to": "P183",
+   "country of citizenship": "P27",
+   "author": "P50",
+   "main subject": "P921"
+  },
+  "entity": {
+   "Australia": "Q408"
+  }
+ },
+ "1551": {
+  "property": {
+   "educated at": "P69",
+   "sex or gender": "P21",
+   "date of birth": "P569",
+   "work period (start)": "P2031",
+   "occupation": "P106"
+  },
+  "entity": {
+   "physician": "Q39631",
+   "female": "Q6581072",
+   "Howard University College of Medicine": "Q5921129"
+  }
+ },
+ "2750": {
+  "property": {
+   "coordinate location": "P625",
+   "subclass of": "P279",
+   "instance of": "P31"
+  },
+  "entity": {
+   "disaster": "Q3839081"
+  }
+ },
+ "464": {
+  "property": {
+   "date of birth": "P569",
+   "instance of": "P31"
+  },
+  "entity": {
+   "human": "Q5"
+  }
+ },
+ "1821": {
+  "property": {
+   "OpenStreetMap relation ID": "P402",
+   "instance of": "P31"
+  },
+  "entity": {
+   "civil parish in England": "Q1115575"
+  }
+ },
+ "961": {
+  "property": {
+   "place of birth": "P19",
+   "located in the administrative territorial entity": "P131",
+   "place of death": "P20"
+  },
+  "entity": {
+   "Brittany": "Q327"
+  }
+ },
+ "993": {
+  "entity": {
+   "Justice of the Supreme Court of the United States": "Q20706330"
+  },
+  "property": {
+   "date of birth": "P569",
+   "position held": "P39",
+   "end time": "P582"
+  }
+ },
+ "2513": {
+  "property": {
+   "shares border with": "P47",
+   "instance of": "P31",
+   "population": "P1082"
+  },
+  "entity": {
+   "country": "Q6256",
+   "Russia": "Q159"
+  }
+ },
+ "868": {
+  "property": {
+   "number of injured": "P1339",
+   "location": "P276",
+   "instance of": "P31"
+  },
+  "entity": {
+   "suicide attack": "Q217327"
+  }
+ },
+ "2200": {
+  "property": {
+   "sex or gender": "P21",
+   "country of citizenship": "P27",
+   "date of birth": "P569",
+   "place of birth": "P19",
+   "occupation": "P106"
+  },
+  "entity": {
+   "musician": "Q639669",
+   "female": "Q6581072",
+   "Nigeria": "Q1033"
+  }
+ },
+ "703": {
+  "property": {
+   "coordinate location": "P625",
+   "country": "P17",
+   "instance of": "P31"
+  },
+  "entity": {
+   "Germany": "Q183",
+   "brewery": "Q131734"
+  }
+ },
+ "1345": {
+  "entity": {
+   "Department of Paintings of the Louvre": "Q3044768",
+   "painting": "Q3305213"
+  },
+  "property": {
+   "width": "P2049",
+   "instance of": "P31",
+   "collection": "P195",
+   "height": "P2048"
+  }
+ },
+ "286": {
+  "property": {
+   "name in native language": "P1559"
+  },
+  "entity": {
+   "Confucius": "Q4604"
+  }
+ },
+ "2709": {
+  "property": {
+   "number of users": "P1833",
+   "instance of": "P31"
+  },
+  "entity": {
+   "Mastodon instance": "Q72705885"
+  }
+ },
+ "622": {
+  "property": {
+   "cause of death": "P509",
+   "position held": "P39"
+  },
+  "entity": {
+   "President of the United States": "Q11696"
+  }
+ },
+ "2350": {
+  "property": {
+   "taxon name type": ""
+  },
+  "entity": {
+   "tautonym": "Q1399774"
+  }
+ },
+ "1337": {
+  "property": {
+   "date of death": "P570",
+   "instance of": "P31"
+  },
+  "entity": {
+   "human": "Q5"
+  }
+ },
+ "453": {
+  "entity": {
+   "Commander of the Legion of Honour": "Q10855212"
+  },
+  "property": {
+   "award received": "P166"
+  }
+ },
+ "209": {
+  "property": {
+   "collection or exhibition size": "P1436",
+   "instance of": "P31"
+  },
+  "entity": {
+   "collection": "Q2668072"
+  }
+ },
+ "2272": {
+  "property": {
+   "dedicated to": "P825"
+  },
+  "entity": {
+   "John the Baptist": "Q40662"
+  }
+ },
+ "1000": {
+  "property": {
+   "heritage designation": "P1435",
+   "country": "P17"
+  },
+  "entity": {
+   "National Register of Historic Places": "Q3719",
+   "United States of America": "Q30"
+  }
+ },
+ "1635": {
+  "property": {
+   "point in time": "P585",
+   "instance of": "P31",
+   "country": "P17"
+  },
+  "entity": {
+   "pride parade": "Q51404",
+   "Italy": "Q38"
+  }
+ },
+ "1282": {
+  "property": {
+   "date of death": "P570",
+   "performer": "P175"
+  }
+ },
+ "14": {
+  "property": {
+   "award received": "P166",
+   "educated at": "P69"
+  },
+  "entity": {
+   "Nobel Memorial Prize in Economic Sciences": "Q47170"
+  }
+ },
+ "172": {
+  "property": {
+   "atomic number": "P1086",
+   "discoverer or inventor": "P61",
+   "instance of": "P31"
+  },
+  "entity": {
+   "chemical element": "Q11344"
+  }
+ },
+ "2362": {
+  "property": {
+   "country of citizenship": "P27",
+   "continent": "P30",
+   "work location": "P937",
+   "occupation": "P106",
+   "author": "P50",
+   "instance of": "P31",
+   "published in": "P6872"
+  },
+  "entity": {
+   "human": "Q5",
+   "writer": "Q36180",
+   "Wikidata": "Q2013",
+   "South America": "Q18"
+  }
+ },
+ "1864": {
+  "entity": {
+   "state of the United States": "Q35657"
+  },
+  "property": {
+   "instance of": "P31"
+  }
+ },
+ "2402": {
+  "property": {
+   "place of death": "P20",
+   "date of death": "P570"
+  },
+  "entity": {
+   "Mauthausen concentration camp": "Q160139"
+  }
+ },
+ "1911": {
+  "property": {
+   "ethnic group": "P172",
+   "occupation": "P106",
+   "subclass of": "P279"
+  },
+  "entity": {
+   "researcher": "Q1650915",
+   "Native Americans in the United States": "Q49297"
+  }
+ },
+ "2369": {
+  "property": {
+   "coordinate location": "P625",
+   "instance of": "P31"
+  },
+  "entity": {
+   "military operation": "Q645883"
+  }
+ },
+ "1234": {
+  "property": {
+   "sex or gender": "P21",
+   "instance of": "P31"
+  },
+  "entity": {
+   "human": "Q5"
+  }
+ },
+ "1981": {
+  "property": {
+   "ELEM ID": "P1565",
+   "place of birth": "P19",
+   "occupation": "P106"
+  },
+  "entity": {
+   "writer": "Q36180"
+  }
+ },
+ "2479": {
+  "property": {
+   "member of sports team": "P54",
+   "position played on team / speciality": "P413",
+   "league": "P118"
+  },
+  "entity": {
+   "National Women's Football League": "Q109743445"
+  }
+ },
+ "2619": {
+  "property": {
+   "named after": "P138",
+   "located in the administrative territorial entity": "P131",
+   "instance of": "P31"
+  },
+  "entity": {
+   "Esp\u00edrito Santo": "Q43233",
+   "taxon": "Q16521"
+  }
+ },
+ "2220": {
+  "property": {
+   "time of discovery or invention": "P575",
+   "instance of": "P31"
+  },
+  "entity": {
+   "chemical element": "Q11344"
+  }
+ },
+ "388": {
+  "entity": {
+   "Maria Barbara Bach": "Q57487",
+   "Johann Sebastian Bach": "Q1339"
+  },
+  "property": {
+   "mother": "P25",
+   "father": "P22"
+  }
+ },
+ "2501": {
+  "property": {
+   "date of death": "P570",
+   "instance of": "P31",
+   "occupation": "P106",
+   "employer": "P108"
+  },
+  "entity": {
+   "The New York Times": "Q9684",
+   "journalist": "Q1930187",
+   "human": "Q5"
+  }
+ },
+ "832": {
+  "property": {
+   "named after": "P138",
+   "instance of": "P31"
+  },
+  "entity": {
+   "taxon": "Q16521"
+  }
+ },
+ "2021": {
+  "property": {
+   "coordinate location": "P625",
+   "start time": "P580",
+   "funded by": "P8324",
+   "country": "P17"
+  },
+  "entity": {
+   "Horizon 2020": "Q13583472",
+   "Netherlands": "Q55"
+  }
+ },
+ "1108": {
+  "property": {
+   "time of spacecraft launch": "P619",
+   "instance of": "P31"
+  },
+  "entity": {
+   "weather satellite": "Q209363"
+  }
+ },
+ "1137": {
+  "property": {
+   "legislative body": "P194",
+   "instance of": "P31",
+   "population": "P1082"
+  },
+  "entity": {
+   "first-level administrative country subdivision": "Q10864048"
+  }
+ },
+ "1804": {
+  "property": {
+   "date of birth": "P569",
+   "date of death": "P570",
+   "father": "P22",
+   "mother": "P25"
+  }
+ },
+ "829": {
+  "property": {
+   "from fictional universe": "P1080",
+   "instance of": "P31"
+  },
+  "entity": {
+   "fictional planet": "Q2775969"
+  }
+ },
+ "2483": {
+  "entity": {
+   "General Secretary of the Communist Party of the Soviet Union": "Q1048744"
+  },
+  "property": {
+   "place of birth": "P19",
+   "position held": "P39"
+  }
+ },
+ "1808": {
+  "property": {
+   "located in the administrative territorial entity": "P131",
+   "coordinate location": "P625",
+   "subclass of": "P279",
+   "instance of": "P31"
+  },
+  "entity": {
+   "Morbihan": "Q12642",
+   "tumulus": "Q34023",
+   "department of France": "Q6465",
+   "megalith": "Q164240"
+  }
+ },
+ "1537": {
+  "property": {
+   "applies to jurisdiction": "P1001",
+   "position held": "P39",
+   "subclass of": "P279"
+  },
+  "entity": {
+   "India": "Q668",
+   "ambassador": "Q121998"
+  }
+ },
+ "935": {
+  "property": {
+   "medical condition treated": "P2175",
+   "instance of": "P31",
+   "subclass of": "P279"
+  },
+  "entity": {
+   "infectious disease": "Q18123741"
+  }
+ },
+ "1861": {
+  "property": {
+   "doctoral advisor": "P184",
+   "field of work": "P101"
+  },
+  "entity": {
+   "computer science": "Q21198",
+   "mathematics": "Q395"
+  }
+ },
+ "478": {
+  "property": {
+   "coordinate location": "P625",
+   "instance of": "P31"
+  },
+  "entity": {
+   "hospital": "Q16917"
+  }
+ },
+ "1459": {
+  "property": {
+   "point in time": "P585",
+   "geoshape": "P3896",
+   "instance of": "P31",
+   "electoral district": "P7938",
+   "proportion": "P1107"
+  },
+  "entity": {
+   "electoral result": "Q19571328"
+  }
+ },
+ "2444": {
+  "entity": {
+   "compound given name": "Q122068532",
+   "John": "Q4925477"
+  },
+  "property": {
+   "instance of": "P31",
+   "given name": "P735",
+   "said to be the same as": "P460"
+  }
+ },
+ "2371": {
+  "property": {
+   "field of work": "P101",
+   "part of": "P361"
+  },
+  "entity": {
+   "National Research Data Infrastructure": "Q96678466"
+  }
+ },
+ "2703": {
+  "entity": {
+   "Representative List of the Intangible Cultural Heritage of Humanity": "Q110319947"
+  },
+  "property": {
+   "heritage designation": "P1435"
+  }
+ },
+ "327": {
+  "property": {
+   "Electronic Enlightenment ID": "P3429",
+   "Genealogics person ID": ""
+  }
+ },
+ "1404": {
+  "property": {
+   "made from material": "P186",
+   "software engine": "P408"
+  },
+  "entity": {
+   "Autodesk Maya": "Q272597"
+  }
+ },
+ "1032": {
+  "property": {
+   "date of death": "P570"
+  }
+ },
+ "2669": {
+  "property": {
+   "coordinate location": "P625",
+   "instance of": "P31",
+   "country": "P17"
+  },
+  "entity": {
+   "railway station": "Q55488",
+   "United Kingdom": "Q145"
+  }
+ },
+ "1803": {
+  "property": {
+   "Michelin Guide star rating": "",
+   "country": "P17",
+   "instance of": "P31"
+  },
+  "entity": {
+   "restaurant": "Q11707",
+   "Luxembourg": "Q32"
+  }
+ },
+ "1122": {
+  "property": {
+   "located in the administrative territorial entity": "P131",
+   "instance of": "P31"
+  },
+  "entity": {
+   "Rome": "Q220",
+   "obelisk": "Q170980"
+  }
+ },
+ "1786": {
+  "property": {
+   "located in the administrative territorial entity": "P131",
+   "coordinate location": "P625",
+   "subclass of": "P279",
+   "country": "P17",
+   "instance of": "P31"
+  },
+  "entity": {
+   "GLAM": "Q1030034",
+   "Wales": "Q25",
+   "United Kingdom": "Q145"
+  }
+ },
+ "2110": {
+  "property": {
+   "date of birth": "P569",
+   "occupation": "P106"
+  },
+  "entity": {
+   "mathematician": "Q170790"
+  }
+ },
+ "99": {
+  "property": {
+   "publisher": "P123",
+   "main subject": "P921",
+   "instance of": "P31"
+  },
+  "entity": {
+   "doctoral thesis": "Q187685",
+   "University of Oxford": "Q34433"
+  }
+ },
+ "1445": {
+  "property": {
+   "named after": "P138",
+   "country of citizenship": "P27",
+   "subclass of": "P279",
+   "instance of": "P31"
+  },
+  "entity": {
+   "unit of measurement": "Q47574",
+   "Germany": "Q183"
+  }
+ },
+ "1830": {
+  "property": {
+   "publication date": "P577",
+   "main subject": "P921",
+   "instance of": "P31"
+  },
+  "entity": {
+   "scholarly article": "Q13442814",
+   "COVID-19": "Q84263196"
+  }
+ },
+ "2115": {
+  "property": {
+   "member of sports team": "P54",
+   "place of birth": "P19",
+   "coordinate location": "P625"
+  },
+  "entity": {
+   "Olympique de Marseille": "Q132885"
+  }
+ },
+ "1962": {
+  "entity": {
+   "Member of Parliament of the United Kingdom": "Q18952564"
+  },
+  "property": {
+   "date of birth": "P569",
+   "end time": "P582",
+   "position held": "P39"
+  }
+ },
+ "2206": {
+  "entity": {
+   "Wikipedia featured article": "Q21163207",
+   "human": "Q5",
+   "female": "Q6581072"
+  },
+  "property": {
+   "sex or gender": "P21",
+   "instance of": "P31"
+  }
+ },
+ "2574": {
+  "property": {
+   "present in work": "P1441",
+   "part of the series": "P179",
+   "instance of": "P31"
+  },
+  "entity": {
+   "Mario": "Q97371666",
+   "fictional character": "Q95074"
+  }
+ },
+ "853": {
+  "property": {
+   "traffic side": "P1622",
+   "instance of": "P31"
+  },
+  "entity": {
+   "left": "Q37195793",
+   "country": "Q6256"
+  }
+ },
+ "1641": {
+  "property": {
+   "parent taxon": "P171",
+   "taxon rank": "P105"
+  },
+  "entity": {
+   "species": "Q7432",
+   "mosquito": "Q7367"
+  }
+ },
+ "2114": {
+  "property": {
+   "adjacent station": "P197",
+   "instance of": "P31"
+  },
+  "entity": {
+   "Dibrugarh": "Q15213944",
+   "railway station": "Q55488"
+  }
+ },
+ "489": {
+  "property": {
+   "sex or gender": "P21",
+   "instance of": "P31"
+  },
+  "entity": {
+   "human": "Q5"
+  }
+ },
+ "2288": {
+  "property": {
+   "unemployment rate": "P1198",
+   "point in time": "P585"
+  },
+  "entity": {
+   "Sweden": "Q34"
+  }
+ },
+ "2129": {
+  "entity": {
+   "Howrah Junction railway station": "Q986105",
+   "train": "Q870"
+  },
+  "property": {
+   "instance of": "P31",
+   "starting point": "P1427"
+  }
+ },
+ "1429": {
+  "property": {
+   "cast member": "P161",
+   "instance of": "P31"
+  },
+  "entity": {
+   "film": "Q11424"
+  }
+ },
+ "2191": {
+  "entity": {
+   "legislative assembly constituency of Kerala": "",
+   "2016 Kerala Legislative Assembly election": "Q23013679"
+  },
+  "property": {
+   "elected in": "P2715",
+   "position held": "P39",
+   "of": "P1001",
+   "instance of": "P31"
+  }
+ },
+ "626": {
+  "property": {
+   "member of": "",
+   "point in time": "P585",
+   "population": "P1082"
+  },
+  "entity": {
+   "European Union": "Q458"
+  }
+ },
+ "2697": {
+  "property": {
+   "point in time": "P585",
+   "date of birth": "P569",
+   "instance of": "P31",
+   "winner": "P991"
+  },
+  "entity": {
+   "United States presidential election": "Q47566"
+  }
+ },
+ "260": {
+  "property": {
+   "part of": "P361",
+   "inventory number": "P217",
+   "collection": "P195"
+  },
+  "entity": {
+   "Ashmolean Museum": "Q636400",
+   "Oxyrhynchus Papyri": "Q1249435"
+  }
+ },
+ "842": {
+  "property": {
+   "instance of": "P31",
+   "family name": "P734"
+  },
+  "entity": {
+   "fictional character": "Q95074"
+  }
+ },
+ "2188": {
+  "property": {
+   "shape": "P1419",
+   "instance of": "P31",
+   "terminus": "P559"
+  },
+  "entity": {
+   "Y": "Q9973",
+   "rapid transit": "Q5503"
+  }
+ },
+ "894": {
+  "entity": {
+   "organ": "Q1444",
+   "orchestra": "Q42998",
+   "musical composition": "Q207628"
+  },
+  "property": {
+   "instrumentation": "P870",
+   "instance of": "P31",
+   "subclass of": "P279"
+  }
+ },
+ "1957": {
+  "property": {
+   "composer": "P86",
+   "instance of": "P31"
+  },
+  "entity": {
+   "Charlie Parker": "Q103767",
+   "musical composition": "Q207628"
+  }
+ },
+ "1579": {
+  "property": {
+   "instance of": "P31",
+   "subclass of": "P279",
+   "mascot": "P822"
+  },
+  "entity": {
+   "software": "Q7397"
+  }
+ },
+ "2244": {
+  "entity": {
+   "lawyer": "Q40348",
+   "poet": "Q49757"
+  },
+  "property": {
+   "father": "P22",
+   "occupation": "P106"
+  }
+ },
+ "1316": {
+  "entity": {
+   "time zone": "Q12143"
+  },
+  "property": {
+   "instance of": "P31",
+   "UTC date": "P619"
+  }
+ },
+ "758": {
+  "entity": {
+   "Albert Einstein": "Q937",
+   "Johann Sebastian Bach": "Q1339"
+  },
+  "property": {
+   "mother": "P25"
+  }
+ },
+ "1802": {
+  "entity": {
+   "lake": "Q23397"
+  },
+  "property": {
+   "instance of": "P31",
+   "country": "P17"
+  }
+ },
+ "94": {
+  "property": {
+   "author": "P50",
+   "instance of": "P31"
+  },
+  "entity": {
+   "thesis": "Q1266946",
+   "publication": "Q732577",
+   "human": "Q5"
+  }
+ },
+ "708": {
+  "entity": {
+   "scholarly article": "Q13442814"
+  },
+  "property": {
+   "title": "P1476",
+   "instance of": "P31"
+  }
+ },
+ "2102": {
+  "entity": {
+   "India": "Q668",
+   "university": "Q3918"
+  },
+  "property": {
+   "country": "P17",
+   "instance of": "P31",
+   "inception": "P571",
+   "subclass of": "P279"
+  }
+ },
+ "1161": {
+  "entity": {
+   "Italy": "Q38",
+   "museum": "Q33506"
+  },
+  "property": {
+   "instance of": "P31",
+   "country": "P17"
+  }
+ },
+ "234": {
+  "property": {
+   "collection": "P195",
+   "instance of": "P31"
+  },
+  "entity": {
+   "manuscript": "Q87167"
+  }
+ },
+ "2573": {
+  "property": {
+   "instance of": "P31"
+  },
+  "entity": {
+   "lexeme": "Q51885771"
+  }
+ },
+ "1083": {
+  "property": {
+   "depicts": "P180",
+   "instance of": "P31"
+  },
+  "entity": {
+   "Union Jack": "Q83278",
+   "national flag": "Q186516"
+  }
+ },
+ "425": {
+  "entity": {
+   "museum": "Q33506",
+   "Indonesia": "Q252"
+  },
+  "property": {
+   "country": "P17",
+   "instance of": "P31"
+  }
+ },
+ "982": {
+  "entity": {
+   "deity": "Q178885"
+  },
+  "property": {
+   "relative": "P1038",
+   "instance of": "P31"
+  }
+ },
+ "2474": {
+  "entity": {
+   "Breton": "Q12107"
+  }
+ },
+ "727": {
+  "property": {
+   "instance of": "P31",
+   "subclass of": "P279"
+  },
+  "entity": {
+   "work of art": "Q838948"
+  }
+ },
+ "1347": {
+  "property": {
+   "depicts": "P180",
+   "flag": "P163",
+   "instance of": "P31"
+  },
+  "entity": {
+   "country": "Q6256",
+   "Sun": "Q525"
+  }
+ },
+ "223": {
+  "entity": {
+   "Cleveland Museum of Art": "Q657415"
+  },
+  "property": {
+   "image": "P18",
+   "collection": "P195"
+  }
+ },
+ "295": {
+  "property": {
+   "image": "P18",
+   "instance of": "P31",
+   "collection": "P195"
+  },
+  "entity": {
+   "astrolabe": "Q164992"
+  }
+ },
+ "2030": {
+  "property": {
+   "DOI": "P356",
+   "main subject": "P921",
+   "instance of": "P31"
+  },
+  "entity": {
+   "scholarly article": "Q13442814",
+   "backward contact tracing": "Q98969121"
+  }
+ },
+ "87": {
+  "entity": {
+   "letter": "Q133492"
+  },
+  "property": {
+   "instance of": "P31",
+   "author": "P50"
+  }
+ },
+ "822": {
+  "property": {
+   "instance of": "P31",
+   "said to be the same as": "P460"
+  },
+  "entity": {
+   "given name": "Q202444"
+  }
+ },
+ "169": {
+  "property": {
+   "subclass of": "P279",
+   "country": "P17",
+   "instance of": "P31"
+  },
+  "entity": {
+   "palace": "Q16560",
+   "India": "Q668",
+   "temple": "Q44539"
+  }
+ },
+ "1925": {
+  "property": {
+   "instance of": "P31",
+   "depicts": "P180",
+   "subclass of": "P279"
+  },
+  "entity": {
+   "fairy tale": "Q699",
+   "painting": "Q3305213"
+  }
+ },
+ "2633": {
+  "entity": {
+   "Olympic sport": "Q212434",
+   "human": "Q5"
+  },
+  "property": {
+   "mass": "P2067",
+   "instance of": "P31",
+   "sport": "P641",
+   "height": "P2048"
+  }
+ },
+ "2012": {
+  "entity": {
+   "Donald Trump": "Q22686"
+  },
+  "property": {
+   "owned by": "P127"
+  }
+ },
+ "683": {
+  "entity": {
+   "sculpture": "Q860861",
+   "Max Bill": "Q123454"
+  },
+  "property": {
+   "creator": "P170",
+   "instance of": "P31"
+  }
+ },
+ "2581": {
+  "property": {
+   "instance of": "P31",
+   "subclass of": "P279"
+  },
+  "entity": {
+   "heritage site": "Q358"
+  }
+ },
+ "2626": {
+  "entity": {
+   "verb": "Q24905",
+   "Swedish": "Q9027"
+  }
+ },
+ "2022": {
+  "entity": {
+   "Vice President of the United States": "Q11699",
+   "President of the United States": "Q11696"
+  },
+  "property": {
+   "position held": "P39"
+  }
+ },
+ "766": {
+  "entity": {
+   "real number": "Q12916"
+  },
+  "property": {
+   "instance of": "P31",
+   "numeric value": "P1181"
+  }
+ },
+ "2769": {
+  "property": {
+   "instance of": "P31",
+   "number of deaths": "P1120",
+   "country": "P17"
+  },
+  "entity": {
+   "train wreck": "Q1078765"
+  }
+ },
+ "1068": {
+  "entity": {
+   "German": "Q188",
+   "Austria": "Q40"
+  },
+  "property": {
+   "language used": "P2936"
+  }
+ },
+ "357": {
+  "property": {
+   "subclass of": "P279"
+  },
+  "entity": {
+   "hill fort": "Q744099"
+  }
+ },
+ "768": {
+  "property": {
+   "instance of": "P31",
+   "demonym": "P1549"
+  },
+  "entity": {
+   "country": "Q6256"
+  }
+ },
+ "1818": {
+  "property": {
+   "inception": "P571",
+   "image": "P18",
+   "instance of": "P31",
+   "designed by": "P287"
+  },
+  "entity": {
+   "programming language": "Q9143"
+  }
+ },
+ "510": {
+  "entity": {
+   "noun": "Q1084",
+   "feminine": "Q1775415",
+   "masculine": "Q499327",
+   "Hebrew": "Q9288"
+  },
+  "property": {
+   "grammatical gender": "P5185"
+  }
+ },
+ "652": {
+  "entity": {
+   "human": "Q5",
+   "Doctor": "Q34316"
+  },
+  "property": {
+   "instance of": "P31",
+   "character role": "P453"
+  }
+ },
+ "686": {
+  "property": {
+   "instance of": "P31",
+   "occupation": "P106"
+  },
+  "entity": {
+   "painter": "Q1028181",
+   "Wikidata property for authority control": "Q18614948"
+  }
+ },
+ "2357": {
+  "property": {
+   "instance of": "P31"
+  },
+  "entity": {
+   "personal pronoun": "Q468801"
+  }
+ },
+ "1268": {
+  "property": {
+   "subclass of": "P279",
+   "image": "P18"
+  },
+  "entity": {
+   "pasta": "Q178"
+  }
+ },
+ "1607": {
+  "property": {
+   "location": "P276",
+   "creator": "P170"
+  },
+  "entity": {
+   "Invader": "Q1671666",
+   "Versailles": "Q621"
+  }
+ },
+ "525": {
+  "entity": {
+   "Canada": "Q16"
+  },
+  "property": {
+   "country": "P17"
+  }
+ },
+ "569": {
+  "property": {
+   "instance of": "P31",
+   "image": "P18",
+   "country": "P17"
+  },
+  "entity": {
+   "parliament building": "Q7138926"
+  }
+ },
+ "1390": {
+  "entity": {
+   "operating system": "Q9135"
+  },
+  "property": {
+   "subclass of": "P279",
+   "instance of": "P31"
+  }
+ },
+ "1172": {
+  "property": {
+   "platform": "P400",
+   "instance of": "P31"
+  },
+  "entity": {
+   "emulator": "Q202871"
+  }
+ },
+ "2340": {
+  "entity": {
+   "semantic technology": "Q7449091",
+   "book": "Q571",
+   "linked data": "Q515701",
+   "Semantic Web": "Q54837"
+  },
+  "property": {
+   "instance of": "P31",
+   "main subject": "P921"
+  }
+ },
+ "2401": {
+  "entity": {
+   "government agency": "Q327333",
+   "Scotland": "Q22"
+  },
+  "property": {
+   "instance of": "P31",
+   "subclass of": "P279",
+   "country": "P17"
+  }
+ },
+ "1201": {
+  "entity": {
+   "software": "Q7397"
+  },
+  "property": {
+   "instance of": "P31",
+   "inspired by": "P941"
+  }
+ },
+ "2091": {
+  "entity": {
+   "Dutch West India Company": "Q617066",
+   "fortification": "Q57821",
+   "Dutch East India Company": "Q159766"
+  },
+  "property": {
+   "subclass of": "P279",
+   "instance of": "P31"
+  }
+ },
+ "1518": {
+  "property": {
+   "author": "P50",
+   "instance of": "P31"
+  },
+  "entity": {
+   "scholarly article": "Q13442814"
+  }
+ },
+ "1408": {
+  "entity": {
+   "programming language": "Q9143"
+  },
+  "property": {
+   "instance of": "P31",
+   "inception": "P571"
+  }
+ },
+ "80": {
+  "property": {
+   "instance of": "P31"
+  },
+  "entity": {
+   "film": "Q11424"
+  }
+ },
+ "509": {
+  "property": {
+   "demonym": "P1549",
+   "instance of": "P31"
+  },
+  "entity": {
+   "sovereign state": "Q3624078"
+  }
+ },
+ "936": {
+  "property": {
+   "nickname": "P1449",
+   "occupation": "P106"
+  },
+  "entity": {
+   "serial killer": "Q484188"
+  }
+ },
+ "1526": {
+  "property": {
+   "instance of": "P31",
+   "title": "P1476"
+  },
+  "entity": {
+   "scholarly article": "Q13442814"
+  }
+ },
+ "1395": {
+  "property": {
+   "image": "P18",
+   "country": "P17",
+   "instance of": "P31"
+  },
+  "entity": {
+   "Germany": "Q183",
+   "metro station": "Q928830"
+  }
+ },
+ "2664": {
+  "property": {
+   "instance of": "P31",
+   "main subject": "P921"
+  },
+  "entity": {
+   "song": "Q7366",
+   "Elizabeth II": "Q9682"
+  }
+ },
+ "2625": {
+  "property": {
+   "instance of": "P31",
+   "length": "P2043",
+   "country": "P17"
+  },
+  "entity": {
+   "river": "Q4022",
+   "France": "Q142"
+  }
+ },
+ "1412": {
+  "property": {
+   "depicts": "P180",
+   "subclass of": "P279",
+   "instance of": "P31"
+  },
+  "entity": {
+   "musical instrument": "Q34379",
+   "work of art": "Q838948"
+  }
+ },
+ "248": {
+  "entity": {
+   "Ashmolean Museum": "Q636400",
+   "human": "Q5",
+   "Tokyo": "Q1490"
+  },
+  "property": {
+   "location": "P276",
+   "instance of": "P31"
+  }
+ },
+ "2069": {
+  "property": {
+   "instance of": "P31"
+  },
+  "entity": {
+   "dialect": "Q33384"
+  }
+ },
+ "272": {
+  "property": {
+   "archives at": "P485"
+  },
+  "entity": {
+   "Pitt Rivers Museum": "Q1456119"
+  }
+ },
+ "1297": {
+  "entity": {
+   "Afghanistan": "Q889"
+  },
+  "property": {
+   "flag": "P163"
+  }
+ },
+ "2600": {
+  "property": {
+   "instance of": "P31",
+   "population": "P1082",
+   "subclass of": "P279"
+  },
+  "entity": {
+   "administrative territorial entity": "Q56061"
+  }
+ },
+ "857": {
+  "entity": {
+   "continent": "Q5107"
+  },
+  "property": {
+   "instance of": "P31"
+  }
+ },
+ "787": {
+  "property": {
+   "location": "P276",
+   "instance of": "P31"
+  },
+  "entity": {
+   "public art": "Q557141",
+   "Paris": "Q90"
+  }
+ },
+ "371": {
+  "property": {
+   "image": "P18"
+  },
+  "entity": {
+   "Mary Wollstonecraft": "Q101638",
+   "Christine de Pizan": "Q234816"
+  }
+ },
+ "537": {
+  "entity": {
+   "sovereign state": "Q3624078",
+   "United Nations": "Q1065"
+  },
+  "property": {
+   "member of": "P463",
+   "instance of": "P31"
+  }
+ },
+ "1773": {
+  "property": {
+   "main subject": "P921",
+   "instance of": "P31",
+   "subclass of": "P279"
+  },
+  "entity": {
+   "LGBT": "Q17884",
+   "book": "Q571"
+  }
+ },
+ "2395": {
+  "entity": {
+   "Blaise Pascal": "Q1290"
+  }
+ },
+ "2532": {
+  "entity": {
+   "chess opening": "Q103632"
+  },
+  "property": {
+   "instance of": "P31"
+  }
+ },
+ "1343": {
+  "property": {
+   "instance of": "P31",
+   "depicts": "P180"
+  },
+  "entity": {
+   "painting": "Q3305213",
+   "monkey": "Q1367"
+  }
+ },
+ "146": {
+  "entity": {
+   "human": "Q5",
+   "fictional human": "Q15632617"
+  },
+  "property": {
+   "instance of": "P31",
+   "based on": "P1074"
+  }
+ },
+ "494": {
+  "property": {
+   "population": "P1082"
+  },
+  "entity": {
+   "\u00d8resund Region": "Q297853"
+  }
+ },
+ "1682": {
+  "property": {
+   "Wikidata property example": "P1855",
+   "instance of": "P31"
+  },
+  "entity": {
+   "human": "Q5"
+  }
+ },
+ "2478": {
+  "entity": {
+   "country": "Q6256"
+  },
+  "property": {
+   "instance of": "P31"
+  }
+ },
+ "539": {
+  "entity": {
+   "Netherlands": "Q55"
+  },
+  "property": {
+   "language used": "P2936"
+  }
+ },
+ "273": {
+  "property": {
+   "archives at": "P485",
+   "image": "P18"
+  },
+  "entity": {
+   "Pitt Rivers Museum": "Q1456119"
+  }
+ },
+ "79": {
+  "property": {
+   "author": "P50",
+   "instance of": "P31"
+  },
+  "entity": {
+   "Florence Earle Coates": "Q5460603",
+   "poem": "Q5185279"
+  }
+ },
+ "641": {
+  "entity": {
+   "film": "Q11424",
+   "Steven Spielberg": "Q8877"
+  },
+  "property": {
+   "genre": "P136",
+   "director": "P57",
+   "instance of": "P31"
+  }
+ },
+ "2435": {
+  "property": {
+   "instance of": "P31"
+  },
+  "entity": {
+   "controversy": "Q1255828"
+  }
+ },
+ "385": {
+  "property": {
+   "child": "P40"
+  },
+  "entity": {
+   "Johann Sebastian Bach": "Q1339"
+  }
+ },
+ "733": {
+  "property": {
+   "instance of": "P31",
+   "population": "P1082"
+  },
+  "entity": {
+   "sovereign state": "Q3624078"
+  }
+ },
+ "1098": {
+  "entity": {
+   "artificial satellite": "Q26540"
+  },
+  "property": {
+   "image": "P18",
+   "instance of": "P31",
+   "launch date": "P619"
+  }
+ },
+ "516": {
+  "property": {
+   "instance of": "P31"
+  },
+  "entity": {
+   "technical standard": "Q317623"
+  }
+ },
+ "805": {
+  "property": {
+   "instance of": "P31",
+   "inception": "P571"
+  },
+  "entity": {
+   "software": "Q7397"
+  }
+ },
+ "2457": {
+  "entity": {
+   "medieval university": "Q1143413"
+  },
+  "property": {
+   "instance of": "P31",
+   "inception": "P571"
+  }
+ },
+ "2019": {
+  "property": {
+   "terminus": "P559",
+   "instance of": "P31"
+  },
+  "entity": {
+   "A road": "Q18019452"
+  }
+ },
+ "2641": {
+  "property": {
+   "position held": "P39"
+  },
+  "entity": {
+   "Prime Minister of the United Kingdom": "Q14211"
+  }
+ },
+ "2711": {
+  "property": {
+   "host": "P2975",
+   "instance of": "P31"
+  },
+  "entity": {
+   "annotation": "Q857525"
+  }
+ },
+ "1664": {
+  "property": {
+   "language used": "P2936"
+  },
+  "entity": {
+   "France": "Q142"
+  }
+ },
+ "1973": {
+  "property": {
+   "manufacturer": "P176",
+   "instance of": "P31"
+  },
+  "entity": {
+   "COVID-19 vaccine": "Q87719492"
+  }
+ },
+ "1364": {
+  "entity": {
+   "female given name": "Q11879590"
+  },
+  "property": {
+   "instance of": "P31"
+  }
+ },
+ "287": {
+  "property": {
+   "subclass of": "P279"
+  },
+  "entity": {
+   "coin": "Q41207"
+  }
+ },
+ "1366": {
+  "property": {
+   "use": "P366"
+  },
+  "entity": {
+   "IPv6": "Q2551624"
+  }
+ },
+ "163": {
+  "property": {
+   "instance of": "P31",
+   "country": "P17"
+  },
+  "entity": {
+   "monastery": "Q44613",
+   "United Kingdom": "Q145"
+  }
+ },
+ "1301": {
+  "entity": {
+   "France": "Q142",
+   "sovereign state": "Q3624078"
+  },
+  "property": {
+   "population": "P1082",
+   "instance of": "P31"
+  }
+ },
+ "2538": {
+  "entity": {
+   "University of Clermont": "Q3551576"
+  },
+  "property": {
+   "affiliation": "P1416",
+   "occupation": "P106"
+  }
+ },
+ "1129": {
+  "property": {
+   "developer": "P178",
+   "instance of": "P31",
+   "inception": "P571"
+  },
+  "entity": {
+   "programming language": "Q9143"
+  }
+ },
+ "1049": {
+  "property": {
+   "subclass of": "P279"
+  },
+  "entity": {
+   "malware": "Q14001"
+  }
+ },
+ "1323": {
+  "property": {
+   "population": "P1082"
+  }
+ },
+ "2497": {
+  "property": {
+   "instance of": "P31",
+   "country": "P17"
+  },
+  "entity": {
+   "lake": "Q23397",
+   "United Kingdom": "Q145"
+  }
+ },
+ "285": {
+  "property": {
+   "inventory number": "P217",
+   "collection": "P195"
+  }
+ },
+ "1401": {
+  "entity": {
+   "White House Chief of Staff": "Q786242"
+  },
+  "property": {
+   "position held": "P39",
+   "end time": "P582",
+   "start time": "P580"
+  }
+ },
+ "184": {
+  "property": {
+   "subclass of": "P279"
+  },
+  "entity": {
+   "kinship": "Q171318",
+   "Mary Shelley": "Q47152"
+  }
+ },
+ "824": {
+  "property": {
+   "instance of": "P31",
+   "subclass of": "P279"
+  },
+  "entity": {
+   "meme": "Q978"
+  }
+ },
+ "1869": {
+  "entity": {
+   "alphabet": "Q9779",
+   "letter": "Q9788"
+  },
+  "property": {
+   "part of": "P361",
+   "instance of": "P31"
+  }
+ },
+ "791": {
+  "entity": {
+   "phrase": "Q187931"
+  },
+  "property": {
+   "instance of": "P31"
+  }
+ },
+ "191": {
+  "property": {
+   "depicts": "P180",
+   "creator": "P170"
+  },
+  "entity": {
+   "Ferdinand Bauer": "Q79012"
+  }
+ },
+ "962": {
+  "property": {
+   "instance of": "P31"
+  },
+  "entity": {
+   "Moon tree": "Q6907628"
+  }
+ },
+ "595": {
+  "property": {
+   "instance of": "P31",
+   "inception": "P571"
+  },
+  "entity": {
+   "software": "Q7397"
+  }
+ },
+ "1741": {
+  "entity": {
+   "Wikidata property for an identifier": "Q19847637"
+  },
+  "property": {
+   "instance of": "P31"
+  }
+ },
+ "1968": {
+  "entity": {
+   "George Washington": "Q23"
+  },
+  "property": {
+   "father": "P22"
+  }
+ },
+ "512": {
+  "entity": {
+   "Standard Mandarin": "Q727694"
+  }
+ },
+ "1191": {
+  "entity": {
+   "University of Virginia": "Q213439"
+  }
+ },
+ "391": {
+  "entity": {
+   "Johann Sebastian Bach": "Q1339"
+  },
+  "property": {
+   "child": "P40"
+  }
+ },
+ "2325": {
+  "entity": {
+   "chocolate mousse": "Q1381277"
+  }
+ },
+ "84": {
+  "property": {
+   "instance of": "P31"
+  }
+ },
+ "117": {
+  "property": {
+   "instance of": "P31"
+  },
+  "entity": {
+   "parliament": "Q35749"
+  }
+ },
+ "1738": {
+  "entity": {
+   "National Gallery of Armenia": "Q3844310"
+  },
+  "property": {
+   "collection": "P195"
+  }
+ },
+ "807": {
+  "property": {
+   "occupation": "P106"
+  }
+ }
+}

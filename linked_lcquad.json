@@ -1,0 +1,752 @@
+{
+ "0": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Baghdad] wd:[entity:Ahmad ibn Hanbal] wdt:[property:country] wdt:[property:place of birth] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q1530 wd:Q194442 wdt:P27 wdt:P19 }",
+  "fully_linked": true
+ },
+ "1": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Joseph Barbera] wdt:[property:executive producer] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q190373 wdt:P1431 }",
+  "fully_linked": true
+ },
+ "2": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:University of Chicago] wd:[entity:Katherine Dunham] wdt:[property:academic degree] wdt:[property:educated at] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q131252 wd:Q272637 wdt:P512 wdt:P69 }",
+  "fully_linked": true
+ },
+ "3": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Skype] wd:[entity:enterprise] wdt:[property:developer] wdt:[property:instance of] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q246125 wd:Q6881511 wdt:P178 wdt:P31 }",
+  "fully_linked": true
+ },
+ "4": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Emirate of Sharjah] wdt:[property:exclave of] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q188810 wdt:P500 }",
+  "fully_linked": true
+ },
+ "5": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Ossie Davis] wd:[entity:NAACP Image Award \u2013 Hall of Fame Award] wdt:[property:winner] wdt:[property:award received] wdt:[property:point in time] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q515632 wd:Q6952076 wdt:P166 wdt:P166 wdt:P585 }",
+  "fully_linked": true
+ },
+ "6": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Brokeback Mountain] wd:[entity:male] wdt:[property:cast member] wdt:[property:sex or gender] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q160618 wd:Q6581097 wdt:P161 wdt:P21 }",
+  "fully_linked": true
+ },
+ "7": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Doordarshan] wdt:[property:headquarters location] wdt:[property:located in or next to body of water] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q1763315 wdt:P159 wdt:P206 }",
+  "fully_linked": true
+ },
+ "8": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Microsoft Mobile] wd:[entity:smartphone model] wdt:[property:manufacturer] wdt:[property:instance of] wdt:[property:energy storage capacity] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q16538568 wd:Q19723451 wdt:P176 wdt:P31 wdt:P4140 }",
+  "fully_linked": true
+ },
+ "9": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Mary Ainsworth] wdt:[property:award received] wdt:[property:point in time] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q242625 wdt:P166 wdt:P585 }",
+  "fully_linked": true
+ },
+ "10": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Church of St Peter St Paul (church of England)] wdt:[property:cause of death] wdt:[property:dedicated to] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q17528852 wdt:P509 wdt:P825 }",
+  "fully_linked": true
+ },
+ "11": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Jean-Baptiste Fiard] wdt:[property:statement supported by] wdt:[property:incarnation of] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q29886576 wdt:P3680 wdt:P3701 }",
+  "fully_linked": true
+ },
+ "12": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Harry Potter universe] wd:[entity:Albus Dumbledore] wdt:[property:from narrative universe] wdt:[property:cause of death] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q5410773 wd:Q712548 wdt:P1080 wdt:P509 }",
+  "fully_linked": true
+ },
+ "13": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Kawamata] wd:[entity:Fukushima] wdt:[property:located in the administrative territorial entity] wdt:[property:contains the administrative territorial entity] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q1347240 wd:Q161176 wdt:P131 wdt:P150 }",
+  "fully_linked": true
+ },
+ "14": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Chinese Communist Party] wd:[entity:Hu Yaobang] wdt:[property:follows] wdt:[property:followed by] wdt:[property:chairperson] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q17427 wd:Q99850 wdt:P155 wdt:P156 wdt:P488 }",
+  "fully_linked": true
+ },
+ "15": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:piano] wd:[entity:Chris Martin] wdt:[property:instrument] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q5994 wd:Q712860 wdt:P1303 }",
+  "fully_linked": true
+ },
+ "16": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Cesare Lombroso] wd:[entity:Nobel Prize in Physiology or Medicine] wdt:[property:nominated for] wdt:[property:point in time] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q202420 wd:Q80061 wdt:P1411 wdt:P585 }",
+  "fully_linked": true
+ },
+ "17": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:phosphorus] wdt:[property:oxidation state] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q674 wdt:P1121 }",
+  "fully_linked": true
+ },
+ "18": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:acetic acid exposure] wd:[entity:short-chain fatty acid] wdt:[property:has effect] wdt:[property:dynamic viscosity] wdt:[property:instance of] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q21167527 wd:Q2698455 wdt:P1542 wdt:P3070 wdt:P31 }",
+  "fully_linked": true
+ },
+ "19": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:2MASS] wdt:[property:wavelength] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q1454942 wdt:P2808 }",
+  "fully_linked": true
+ },
+ "20": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Bo\u00f6tes III] wdt:[property:parent astronomical body] wdt:[property:constellation] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q45975 wdt:P397 wdt:P59 }",
+  "fully_linked": true
+ },
+ "21": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Florida] wdt:[property:population] wdt:[property:point in time] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q812 wdt:P4179 wdt:P585 }",
+  "fully_linked": true
+ },
+ "22": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Hayao Miyazaki] wdt:[property:employer] wdt:[property:end time] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q55400 wdt:P108 wdt:P2032 }",
+  "fully_linked": true
+ },
+ "23": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Quechua] wdt:[property:Wikimedia language code] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q5218 wdt:P424 }",
+  "fully_linked": true
+ },
+ "24": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Consorsbank VISA Card] wdt:[property:borrowing rate] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q57047474 wdt:P5898 }",
+  "fully_linked": true
+ },
+ "25": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Janet Jackson] wdt:[property:genre] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q131324 wdt:P136 }",
+  "fully_linked": true
+ },
+ "26": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:history of India] wd:[entity:Indian subcontinent] wdt:[property:is the study of] wdt:[property:studied by] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q133136 wd:Q60140 wdt:P2578 wdt:P2579 }",
+  "fully_linked": true
+ },
+ "27": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Nikolay Zhukovsky] wd:[entity:Russian Academy of Sciences] wdt:[property:member of] wdt:[property:student] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q271956 wd:Q83172 wdt:P463 wdt:P1066 }",
+  "fully_linked": true
+ },
+ "28": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Boles\u0142aw Prus] wd:[entity:Vilnius] wdt:[property:twinned administrative body] wdt:[property:place of death] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q144439 wd:Q216 wdt:P190 wdt:P20 }",
+  "fully_linked": true
+ },
+ "29": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Joseph Chamberlain] wd:[entity:member of the 27th Parliament of the United Kingdom] wdt:[property:end cause] wdt:[property:elected in] wdt:[property:position held] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q315999 wd:Q41582575 wdt:P1534 wdt:P2715 wdt:P39 }",
+  "fully_linked": true
+ },
+ "30": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Papyrus Oxyrhynchus 223] wdt:[property:published in] wdt:[property:collection] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q7133388 wdt:P1433 wdt:P195 }",
+  "fully_linked": true
+ },
+ "31": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:outer planet] wd:[entity:Sun] wdt:[property:instance of] wdt:[property:parent astronomical body] wdt:[property:albedo] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q30014 wd:Q525 wdt:P31 wdt:P397 wdt:P4501 }",
+  "fully_linked": true
+ },
+ "32": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Oscar Wilde] wdt:[property:series ordinal] wdt:[property:given name] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q30875 wdt:P1545 wdt:P735 }",
+  "fully_linked": true
+ },
+ "33": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:legend] wdt:[property:Wikidata usage instructions] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q1640824 wdt:P2559 }",
+  "fully_linked": true
+ },
+ "34": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Technical University of Munich] wdt:[property:DBS ID] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q157808 wdt:P4007 }",
+  "fully_linked": true
+ },
+ "35": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Le\u00f3n de Los Aldama] wdt:[property:twinned administrative body] wdt:[property:local dialing code] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q189128 wdt:P190 wdt:P473 }",
+  "fully_linked": true
+ },
+ "36": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:John Howard] wdt:[property:candidate] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q51330 wdt:P726 }",
+  "fully_linked": true
+ },
+ "37": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:coup d'\u00e9tat] wd:[entity:Idi Amin] wdt:[property:instance of] wdt:[property:participated in conflict] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q45382 wd:Q48231 wdt:P31 wdt:P607 }",
+  "fully_linked": true
+ },
+ "38": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Emmanuel Bourdieu] wdt:[property:mother] wdt:[property:spouse] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q1338188 wdt:P25 wdt:P26 }",
+  "fully_linked": true
+ },
+ "39": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Northern Cyprus] wdt:[property:legislative body] wdt:[property:diplomatic relation] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q23681 wdt:P194 wdt:P530 }",
+  "fully_linked": true
+ },
+ "40": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:landlocked country] wd:[entity:Serbia] wdt:[property:instance of] wdt:[property:compulsory education (minimum age)] wdt:[property:diplomatic relation] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q123480 wd:Q403 wdt:P31 wdt:P3270 wdt:P530 }",
+  "fully_linked": true
+ },
+ "41": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Lesotho] wdt:[property:flag image] wdt:[property:start time] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q1013 wdt:P41 wdt:P580 }",
+  "fully_linked": true
+ },
+ "42": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Olympic bronze medal] wd:[entity:Ryan Lochte] wdt:[property:participant in] wdt:[property:award received] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q15889643 wd:Q201517 wdt:P1344 wdt:P166 }",
+  "fully_linked": true
+ },
+ "43": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Hittites] wd:[entity:mythology] wdt:[property:ethnic group] wdt:[property:instance of] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q5406 wd:Q9134 wdt:P172 wdt:P31 }",
+  "fully_linked": true
+ },
+ "44": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Iroquois] wd:[entity:sculpture] wdt:[property:depicted by] wdt:[property:instance of] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q68518 wd:Q860861 wdt:[property:depicted by] wdt:P31 }",
+  "fully_linked": false
+ },
+ "45": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Henry Peach Robinson] wdt:[property:RKDlibrary ID] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q574144 wdt:P4989 }",
+  "fully_linked": true
+ },
+ "46": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:blackberry] wdt:[property:natural product of taxon] wdt:[property:permanent duplicated item] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q171819 wdt:P1582 wdt:P2959 }",
+  "fully_linked": true
+ },
+ "47": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:FC Lokomotiv Moscow] wd:[entity:Stanislav Cherchesov] wdt:[property:member of sports team] wdt:[property:start time] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q29115 wd:Q55633880 wdt:P54 wdt:P580 }",
+  "fully_linked": true
+ },
+ "48": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Dr. Hee] wdt:[property:follows] wdt:[property:record label] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q5304139 wdt:P155 wdt:P264 }",
+  "fully_linked": true
+ },
+ "49": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Duchess] wdt:[property:performer] wdt:[property:sibling] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q3646349 wdt:P175 wdt:P3373 }",
+  "fully_linked": true
+ },
+ "50": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Ivanovo] wdt:[property:located in the administrative territorial entity] wdt:[property:start time] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q2654 wdt:P131 wdt:P580 }",
+  "fully_linked": true
+ },
+ "51": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:The Spectacles] wdt:[property:female population] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q7765761 wdt:P1539 }",
+  "fully_linked": true
+ },
+ "52": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Tr\u1ea7n Anh H\u00f9ng] wdt:[property:award received] wdt:[property:point in time] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q557546 wdt:P166 wdt:P585 }",
+  "fully_linked": true
+ },
+ "53": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:index number] wdt:[property:instance of] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q1738991 wdt:P31 }",
+  "fully_linked": true
+ },
+ "54": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:jurisdiction] wdt:[property:instance of] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q5982983 wdt:P31 }",
+  "fully_linked": true
+ },
+ "55": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:architectural landmark] wd:[entity:Old Toronto] wdt:[property:located in the administrative territorial entity] wdt:[property:instance of] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q2319498 wd:Q919169 wdt:P131 wdt:P31 }",
+  "fully_linked": true
+ },
+ "56": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:2016 Kumamoto earthquakes] wdt:[property:JMA Magnitude] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q23825118 wdt:P5900 }",
+  "fully_linked": true
+ },
+ "57": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:world view] wdt:[property:instance of] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q49447 wdt:P31 }",
+  "fully_linked": true
+ },
+ "58": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Academy Award for Best Actress] wd:[entity:Janet Gaynor] wdt:[property:nominated for] wdt:[property:for work] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q103618 wd:Q182462 wdt:P1411 wdt:P1686 }",
+  "fully_linked": true
+ },
+ "59": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:fossil taxon] wdt:[property:instance of] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q23038290 wdt:P31 }",
+  "fully_linked": true
+ },
+ "60": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Steven Pinker] wdt:[property:ORCID iD] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q212730 wdt:P496 }",
+  "fully_linked": true
+ },
+ "61": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Richard Dawkins] wd:[entity:human] wdt:[property:doctoral student] wdt:[property:instance of] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q44461 wd:Q5 wdt:P185 wdt:P31 }",
+  "fully_linked": true
+ },
+ "62": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Berlin U-Bahn] wdt:[property:patronage] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q68646 wdt:P3872 }",
+  "fully_linked": true
+ },
+ "63": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:pulsar] wdt:[property:field of work] wdt:[property:discoverer or inventor] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q4360 wdt:P101 wdt:P61 }",
+  "fully_linked": true
+ },
+ "64": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:khanate] wd:[entity:Golden Horde] wdt:[property:country] wdt:[property:instance of] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q331644 wd:Q79965 wdt:P17 wdt:P31 }",
+  "fully_linked": true
+ },
+ "65": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Aram Khachaturian] wdt:[property:Armenian Cinema ID] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q152293 wdt:P5218 }",
+  "fully_linked": true
+ },
+ "66": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:academy] wdt:[property:instance of] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q162633 wdt:P31 }",
+  "fully_linked": true
+ },
+ "67": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:stylistic device] wdt:[property:instance of] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q182545 wdt:P31 }",
+  "fully_linked": true
+ },
+ "68": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Nintendo] wdt:[property:copyright holder] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q8093 wdt:P3931 }",
+  "fully_linked": true
+ },
+ "69": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:square metre] wdt:[property:measured physical quantity] wdt:[property:quantity symbol (string)] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q25343 wdt:P111 wdt:P416 }",
+  "fully_linked": true
+ },
+ "70": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:experiment] wdt:[property:instance of] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q101965 wdt:P31 }",
+  "fully_linked": true
+ },
+ "71": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Marvel Cinematic Universe] wdt:[property:takes place in fictional universe] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q642878 wdt:P1434 }",
+  "fully_linked": true
+ },
+ "72": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Saint Vincent] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q757 }",
+  "fully_linked": true
+ },
+ "73": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:WWE Raw] wdt:[property:creator] wdt:[property:country of citizenship] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q18754 wdt:P170 wdt:P27 }",
+  "fully_linked": true
+ },
+ "74": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Nancy Pelosi] wdt:[property:location] wdt:[property:significant event] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q113375803 wdt:P276 wdt:P793 }",
+  "fully_linked": true
+ },
+ "75": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Korean War] wdt:[property:participated in conflict] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q8663 wdt:P607 }",
+  "fully_linked": true
+ },
+ "76": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Philippe Noiret] wd:[entity:C\u00e9sar Award for Best Actor] wdt:[property:nominated for] wdt:[property:for work] }",
+  "linked_query": "SELECT ?x WHERE { wd:[entity:Philippe Noiret] wd:Q900494 wdt:P1411 wdt:P1686 }",
+  "fully_linked": false
+ },
+ "77": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Pulitzer Prize for Biography] wd:[entity:David G. McCullough] wdt:[property:award received] wdt:[property:for work] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q285117 wd:Q374610 wdt:P166 wdt:P1686 }",
+  "fully_linked": true
+ },
+ "78": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Frogger] wdt:[property:Lemon 64 ID] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q524267 wdt:P4816 }",
+  "fully_linked": true
+ },
+ "79": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Obsessed] wdt:[property:award received] wdt:[property:for work] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q1089544 wdt:P166 wdt:P1686 }",
+  "fully_linked": true
+ },
+ "80": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:dress] wdt:[property:category contains] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q200539 wdt:P4224 }",
+  "fully_linked": true
+ },
+ "81": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:literary work] wdt:[property:instance of] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q7725634 wdt:P31 }",
+  "fully_linked": true
+ },
+ "82": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:1500 V DC railway electrification] wd:[entity:Guangzhou Metro] wdt:[property:applies to part] wdt:[property:type of electrification] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q21253457 wd:Q660751 wdt:P518 wdt:P930 }",
+  "fully_linked": true
+ },
+ "83": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:food preparation technique] wdt:[property:instance of] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q1039303 wdt:P31 }",
+  "fully_linked": true
+ },
+ "84": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Margarita Simonyan] wdt:[property:start of work period] wdt:[property:spouse] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q4419809 wdt:P2031 wdt:P26 }",
+  "fully_linked": true
+ },
+ "85": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Afghanistan] wdt:[property:coordinates of northernmost point] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q889 wdt:P1332 }",
+  "fully_linked": true
+ },
+ "86": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:internetworking] wdt:[property:instance of] }",
+  "linked_query": "SELECT ?x WHERE { wd:[entity:internetworking] wdt:P31 }",
+  "fully_linked": false
+ },
+ "87": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:6626 Mattgenge] wdt:[property:argument of periapsis] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q72208 wdt:P2248 }",
+  "fully_linked": true
+ },
+ "88": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Kathie Lee Gifford] wd:[entity:human] wdt:[property:mother] wdt:[property:instance of] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q465695 wd:Q5 wdt:P25 wdt:P31 }",
+  "fully_linked": true
+ },
+ "89": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:W. S. Gilbert] wdt:[property:partnership with] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q1146602 wdt:P1327 }",
+  "fully_linked": true
+ },
+ "90": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:The Meaning of Matthew] wdt:[property:child] wdt:[property:author] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q16205446 wdt:P40 wdt:P50 }",
+  "fully_linked": true
+ },
+ "91": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Chris Watson] wd:[entity:Prime Minister of Australia] wdt:[property:replaces] wdt:[property:position held] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q23347 wd:Q319145 wdt:P1365 wdt:P39 }",
+  "fully_linked": true
+ },
+ "92": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Bill Withers] wd:[entity:maple wood] wdt:[property:instrument] wdt:[property:made from material] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q346565 wd:Q402516 wdt:P1303 wdt:P186 }",
+  "fully_linked": true
+ },
+ "93": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Crown of the Kingdom of Poland] wd:[entity:H\u00fcrrem Sultan] wdt:[property:country of citizenship] wdt:[property:start time] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q171348 wd:Q255809 wdt:P27 wdt:P580 }",
+  "fully_linked": true
+ },
+ "94": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Macanese pataca] wdt:[property:price] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q241214 wdt:P2284 }",
+  "fully_linked": true
+ },
+ "95": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Tarim Basin] wdt:[property:drainage basin] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q216622 wdt:P4614 }",
+  "fully_linked": true
+ },
+ "96": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Russian Soviet Federative Socialist Republic] wd:[entity:Bashkortostan] wdt:[property:located in the administrative territorial entity] wdt:[property:end time] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q2184 wd:Q4080196 wdt:P131 wdt:P582 }",
+  "fully_linked": true
+ },
+ "97": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Philippe Quintais] wd:[entity:Bethlehem] wdt:[property:place of birth] wdt:[property:twinned administrative body] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q3380589 wd:Q5776 wdt:P19 wdt:P190 }",
+  "fully_linked": true
+ },
+ "98": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:noble family] wd:[entity:Genghis Khan] wdt:[property:instance of] wdt:[property:family] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q13417114 wd:Q720 wdt:P31 wdt:P53 }",
+  "fully_linked": true
+ },
+ "99": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Chopper Read] wdt:[property:convicted of] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q2428420 wdt:P1399 }",
+  "fully_linked": true
+ },
+ "100": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Uday Hussein] wdt:[property:father] wdt:[property:participated in conflict] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q311916 wdt:P22 wdt:P607 }",
+  "fully_linked": true
+ },
+ "101": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Dame] wdt:[property:honorific prefix] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q901407 wdt:P511 }",
+  "fully_linked": true
+ },
+ "102": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Christie Brinkley] wdt:[property:spouse] wdt:[property:influenced by] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q253476 wdt:P26 wdt:P737 }",
+  "fully_linked": true
+ },
+ "103": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:malaria] wdt:[property:number of cases] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q12156 wdt:P1603 }",
+  "fully_linked": true
+ },
+ "104": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Scott Denning] wdt:[property:occupation] wdt:[property:field of this occupation] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q18157846 wdt:P106 wdt:P425 }",
+  "fully_linked": true
+ },
+ "105": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Vostok] wd:[entity:Yuri Gagarin] wdt:[property:instance of] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q182524 wd:Q7327 wdt:P31 }",
+  "fully_linked": true
+ },
+ "106": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:L-tyrosine] wdt:[property:encoded by] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q188017 wdt:P702 }",
+  "fully_linked": true
+ },
+ "107": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Herbert von Karajan] wd:[entity:Paul van Kempen] wdt:[property:employer] wdt:[property:replaced by] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q154895 wd:Q529444 wdt:P108 wdt:P1366 }",
+  "fully_linked": true
+ },
+ "108": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Ponte Sant'Angelo] wdt:[property:number of spans] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q870476 wdt:[property:number of spans] }",
+  "fully_linked": false
+ },
+ "109": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:comic book series] wdt:[property:instance of] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q14406742 wdt:P31 }",
+  "fully_linked": true
+ },
+ "110": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Toronto] wdt:[property:office held by the head of government] wdt:[property:head of government] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q172 wdt:P1313 wdt:P6 }",
+  "fully_linked": true
+ },
+ "111": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Norman Alexander] wd:[entity:proton] wdt:[property:doctoral student] wdt:[property:discoverer or inventor] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q11181006 wd:Q2294 wdt:P185 wdt:P61 }",
+  "fully_linked": true
+ },
+ "112": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Trishira] wdt:[property:present in work] wdt:[property:author] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q7844041 wdt:P1441 wdt:P50 }",
+  "fully_linked": true
+ },
+ "113": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:rugby league in France] wdt:[property:number of players in region] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q3452882 wdt:P4909 }",
+  "fully_linked": true
+ },
+ "114": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Johann Bernoulli] wd:[entity:first doctoral advisor] wdt:[property:doctoral advisor] wdt:[property:object of statement has role] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q227897 wd:Q26236695 wdt:P184 wdt:P3831 }",
+  "fully_linked": true
+ },
+ "115": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Sarah Silverman] wdt:[property:instance of] wdt:[property:voice actor] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q1786313 wdt:P31 wdt:P725 }",
+  "fully_linked": true
+ },
+ "116": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:The Smurfs] wd:[entity:male] wdt:[property:creator] wdt:[property:sex or gender] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q11221 wd:Q6581097 wdt:P170 wdt:P21 }",
+  "fully_linked": true
+ },
+ "117": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:leather] wdt:[property:instance of] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q286 wdt:P31 }",
+  "fully_linked": true
+ },
+ "118": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Oscar Robertson] wd:[entity:All-NBA Team] wdt:[property:award received] wdt:[property:point in time] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q17717 wd:Q674359 wdt:P166 wdt:P585 }",
+  "fully_linked": true
+ },
+ "119": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:bhut jolokia] wdt:[property:Scoville grade] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q426850 wdt:P2658 }",
+  "fully_linked": true
+ },
+ "120": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Robin Hood] wdt:[property:present in work] wdt:[property:said to be the same as] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q122634 wdt:P1441 wdt:P460 }",
+  "fully_linked": true
+ },
+ "121": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Annie Award] wdt:[property:nominated for] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q566905 wdt:P1411 }",
+  "fully_linked": true
+ },
+ "122": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Novak Djokovic] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q5812 }",
+  "fully_linked": true
+ },
+ "123": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Las Vegas] wd:[entity:road] wdt:[property:instance of] wdt:[property:terminus location] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q23768 wd:Q34442 wdt:P31 wdt:P609 }",
+  "fully_linked": true
+ },
+ "124": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:William Jennings Bryan] wdt:[property:position holder] wdt:[property:position held] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q205282 wdt:P1308 wdt:P39 }",
+  "fully_linked": true
+ },
+ "125": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:South Chungcheong] wdt:[property:twinned administrative body] wdt:[property:coordinate location] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q41070 wdt:P190 wdt:P625 }",
+  "fully_linked": true
+ },
+ "126": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:SpaceX] wd:[entity:brand] wdt:[property:developer] wdt:[property:instance of] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q193701 wd:Q431289 wdt:P178 wdt:P31 }",
+  "fully_linked": true
+ },
+ "127": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Lou Harrison] wdt:[property:BRAHMS artist ID] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q590911 wdt:P5226 }",
+  "fully_linked": true
+ },
+ "128": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Luhansk] wd:[entity:Luhansk People's Republic] wdt:[property:located in the administrative territorial entity] wdt:[property:start time] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q16746854 wd:Q16746854 wdt:P131 wdt:P580 }",
+  "fully_linked": true
+ },
+ "129": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Gamburtsev Mountain Range] wdt:[property:contains the administrative territorial entity] wdt:[property:continent] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q1422867 wdt:P150 wdt:P30 }",
+  "fully_linked": true
+ },
+ "130": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:graphite] wdt:[property:immediately dangerous to life or health] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q5309 wdt:P2129 }",
+  "fully_linked": true
+ },
+ "131": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:circular saw model] wd:[entity:saw blade] wdt:[property:frequency] wdt:[property:instance of] wdt:[property:has part(s)] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q23811261 wd:Q4683254 wdt:P2144 wdt:P31 wdt:P527 }",
+  "fully_linked": true
+ },
+ "132": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Battle of Hastings] wdt:[property:heritage designation] wdt:[property:country] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q83224 wdt:P1435 wdt:P17 }",
+  "fully_linked": true
+ },
+ "133": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:international association] wd:[entity:Latin] wdt:[property:language regulatory body] wdt:[property:instance of] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q29300714 wd:Q397 wdt:P1018 wdt:P31 }",
+  "fully_linked": true
+ },
+ "134": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Gyeongju] wdt:[property:population] wdt:[property:point in time] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q42097 wdt:P1082 wdt:P585 }",
+  "fully_linked": true
+ },
+ "135": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Parthian Empire] wdt:[property:official residence] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q1986139 wdt:P263 }",
+  "fully_linked": true
+ },
+ "136": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:John Adams] wd:[entity:Abigail Adams Smith] wdt:[property:child] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q11806 wd:Q4667661 wdt:P40 }",
+  "fully_linked": true
+ },
+ "137": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:public company] wdt:[property:total debt] wdt:[property:instance of] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q891723 wdt:P2133 wdt:P31 }",
+  "fully_linked": true
+ },
+ "138": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:The Shining] wdt:[property:place of publication] wdt:[property:publication date] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q470937 wdt:P291 wdt:P577 }",
+  "fully_linked": true
+ },
+ "139": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:motorcycle model] wd:[entity:Honda] wdt:[property:manufacturer] wdt:[property:instance of] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q23866334 wd:Q9584 wdt:P176 wdt:P31 }",
+  "fully_linked": true
+ },
+ "140": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:musical term] wd:[entity:classical music] wdt:[property:partially coincident with] wdt:[property:instance of] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q20202269 wd:Q9730 wdt:P1382 wdt:P31 }",
+  "fully_linked": true
+ },
+ "141": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Alloy 718] wdt:[property:yield strength] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q55843475 wdt:P5529 }",
+  "fully_linked": true
+ },
+ "142": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:John Galsworthy] wdt:[property:nominated for] wdt:[property:point in time] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q82248 wdt:P1411 wdt:P585 }",
+  "fully_linked": true
+ },
+ "143": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Jayne Mansfield] wd:[entity:Bettie Page] wdt:[property:occupation] wdt:[property:follows] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q229507 wd:Q61898 wdt:P106 wdt:P155 }",
+  "fully_linked": true
+ },
+ "144": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:member of the 19th Parliament of the United Kingdom] wd:[entity:James Matheson] wdt:[property:end cause] wdt:[property:position held] wdt:[property:end time] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q41582559 wd:Q4870843 wdt:P1534 wdt:P39 wdt:P582 }",
+  "fully_linked": true
+ },
+ "145": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Amazon Rewards Visa Card] wdt:[property:cash back] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q56510553 wdt:P4448 }",
+  "fully_linked": true
+ },
+ "146": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Cherio River] wdt:[property:discharge] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q1058115 wdt:P2225 }",
+  "fully_linked": true
+ },
+ "147": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Saul Kripke] wdt:[property:educated at] wdt:[property:academic major] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q298521 wdt:P69 wdt:P812 }",
+  "fully_linked": true
+ },
+ "148": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:Scythians] wdt:[property:depicted by] wdt:[property:characters] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q131802 wdt:[property:depicted by] wdt:P674 }",
+  "fully_linked": false
+ },
+ "149": {
+  "labeled_query": "SELECT ?x WHERE { wd:[entity:\u03b3-aminobutyric acid] wdt:[property:source of energy] wdt:[property:found in taxon] }",
+  "linked_query": "SELECT ?x WHERE { wd:Q210021 wdt:P618 wdt:P703 }",
+  "fully_linked": true
+ }
+}

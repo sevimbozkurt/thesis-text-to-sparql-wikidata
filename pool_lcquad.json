@@ -1,0 +1,7220 @@
+{
+ "entity|1500 V DC railway electrification": [
+  {
+   "id": "Q21253457",
+   "label": "1500 V DC railway electrification",
+   "description": "railway electrification system, used mostly in the Netherlands, southern France, and so on"
+  }
+ ],
+ "entity|2016 Kumamoto earthquakes": [
+  {
+   "id": "Q23825118",
+   "label": "2016 Kumamoto earthquakes",
+   "description": "natural disaster in Japan"
+  }
+ ],
+ "entity|2MASS": [
+  {
+   "id": "Q1454942",
+   "label": "2MASS",
+   "description": "astronomical survey"
+  },
+  {
+   "id": "Q66309067",
+   "label": "VizieR Online Data Catalog: 2MASS All-Sky Catalog of Point Sources (Cutri+ 2003)",
+   "description": "scientific article published in January 2003"
+  },
+  {
+   "id": "Q54196767",
+   "label": "The Two Micron All Sky Survey (2MASS)",
+   "description": "scientific article published in 'The Astronomical Journal' in February 2006"
+  },
+  {
+   "id": "Q55693523",
+   "label": "2MASS Flat Galaxy Catalog",
+   "description": ""
+  },
+  {
+   "id": "Q2664525",
+   "label": "WASP-16",
+   "description": "star in the constellation Virgo"
+  },
+  {
+   "id": "Q222239",
+   "label": "2MASS 0348-6022",
+   "description": "brown dwarf"
+  },
+  {
+   "id": "Q92049258",
+   "label": "TYC 9486-927-1b",
+   "description": "exoplanet orbiting the red dwarf TYC 9486-927-1"
+  }
+ ],
+ "entity|6626 Mattgenge": [
+  {
+   "id": "Q72208",
+   "label": "6626 Mattgenge",
+   "description": "asteroid"
+  }
+ ],
+ "entity|Abigail Adams Smith": [
+  {
+   "id": "Q4667661",
+   "label": "Abigail Adams Smith",
+   "description": "daughter of John Adams (1765-1813)"
+  },
+  {
+   "id": "Q6924383",
+   "label": "Mount Vernon Hotel Museum",
+   "description": "1799 building in Manhattan; open to the public as a museum"
+  }
+ ],
+ "entity|Academy Award for Best Actress": [
+  {
+   "id": "Q103618",
+   "label": "Academy Award for Best Actress",
+   "description": "award presented annually by the Academy of Motion Picture Arts and Sciences"
+  }
+ ],
+ "entity|Afghanistan": [
+  {
+   "id": "Q889",
+   "label": "Afghanistan",
+   "description": "country in Central and South Asia"
+  },
+  {
+   "id": "Q27715795",
+   "label": "Afghanistan",
+   "description": "academic journal"
+  },
+  {
+   "id": "Q1138904",
+   "label": "Kingdom of Afghanistan",
+   "description": "kingdom in Central Asia between 1926\u20131973"
+  },
+  {
+   "id": "Q140029805",
+   "label": "Afghanistan",
+   "description": "edited book published by Oxford University Press (2020)"
+  },
+  {
+   "id": "Q192966",
+   "label": "Afghanistan men's national football team",
+   "description": "men's national association football team representing Afghanistan"
+  },
+  {
+   "id": "Q182865",
+   "label": "War in Afghanistan (2001\u20132021)",
+   "description": "armed conflict between NATO countries and Afghanistan from 2001 to 2021"
+  },
+  {
+   "id": "Q86992888",
+   "label": "Afghanistan '11",
+   "description": "2017 video game"
+  }
+ ],
+ "entity|Ahmad ibn Hanbal": [
+  {
+   "id": "Q194442",
+   "label": "Ahmad ibn Hanbal",
+   "description": "Muslim jurist and theologian (780\u2013855)"
+  },
+  {
+   "id": "Q22689898",
+   "label": "Ahmad ibn Hanbal Mosque",
+   "description": "Shrine and mosque of Ahmad ibn Hanbal"
+  },
+  {
+   "id": "Q137807675",
+   "label": "Ahmad ibn Hanbal Mosque",
+   "description": "mosque in Laghouat, Laghouat District, Laghouat Province, Algeria"
+  },
+  {
+   "id": "Q138062073",
+   "label": "Ahmad ibn Hanbal Mosque 4",
+   "description": "Mosque in Saudi Arabia"
+  },
+  {
+   "id": "Q137855387",
+   "label": "Ahmad ibn Hanbal Mosque in Ksar Chellala",
+   "description": "mosque in Ksar Chellala, Ksar Chellala District, Tiaret Province, Algeria"
+  },
+  {
+   "id": "Q138064362",
+   "label": "Ahmad ibn Hanbal Mosque 5",
+   "description": "Mosque in Saudi Arabia"
+  },
+  {
+   "id": "Q138057751",
+   "label": "Ahmad ibn Hanbal Mosque 3",
+   "description": "Mosque in Saudi Arabia"
+  }
+ ],
+ "entity|Albus Dumbledore": [
+  {
+   "id": "Q712548",
+   "label": "Albus Dumbledore",
+   "description": "fictional character from Harry Potter"
+  }
+ ],
+ "entity|All-NBA Team": [
+  {
+   "id": "Q674359",
+   "label": "All-NBA Team",
+   "description": "National Basketball Association honor"
+  },
+  {
+   "id": "Q3612052",
+   "label": "All-NBA Team 1990-2000",
+   "description": ""
+  },
+  {
+   "id": "Q3612051",
+   "label": "All-NBA Team 2000-2010",
+   "description": ""
+  },
+  {
+   "id": "Q3612054",
+   "label": "All-NBA Team 1980-1990",
+   "description": ""
+  },
+  {
+   "id": "Q3612055",
+   "label": "All-NBA Team 1970-1980",
+   "description": ""
+  },
+  {
+   "id": "Q3612050",
+   "label": "All-NBA Team 1960-1970",
+   "description": ""
+  },
+  {
+   "id": "Q3612047",
+   "label": "All-NBA Team 1950-1960",
+   "description": ""
+  }
+ ],
+ "entity|Alloy 718": [
+  {
+   "id": "Q55843475",
+   "label": "Alloy 718",
+   "description": "common superalloy based on nickel, chromium and iron; well known under the Inconel 718 brand."
+  }
+ ],
+ "entity|Amazon Rewards Visa Card": [
+  {
+   "id": "Q56510553",
+   "label": "Amazon Rewards Visa Card",
+   "description": ""
+  }
+ ],
+ "entity|Annie Award": [
+  {
+   "id": "Q566905",
+   "label": "Annie Award",
+   "description": "film award"
+  },
+  {
+   "id": "Q1800189",
+   "label": "Annie Award for Best Animated Feature",
+   "description": "list of award winners"
+  },
+  {
+   "id": "Q24199571",
+   "label": "Annie Awards: The Complete Winners List",
+   "description": "The Hollywood Reporter article"
+  },
+  {
+   "id": "Q4769234",
+   "label": "Annie Award for Best Animated Video Game",
+   "description": "retired annual US animation award"
+  },
+  {
+   "id": "Q24199703",
+   "label": "Annie Award for Outstanding Achievement for Character Animation in a Live Action Production",
+   "description": "award"
+  },
+  {
+   "id": "Q4769235",
+   "label": "Annie Award for Voice Acting in a Feature Production",
+   "description": "Annie Award"
+  },
+  {
+   "id": "Q4769236",
+   "label": "Annie Award for Writing in a Feature Production",
+   "description": "Annual US film award"
+  }
+ ],
+ "entity|Aram Khachaturian": [
+  {
+   "id": "Q152293",
+   "label": "Aram Khachaturian",
+   "description": "Soviet Armenian composer (1903\u20131978)"
+  },
+  {
+   "id": "Q5913529",
+   "label": "Aram Khachaturian Museum",
+   "description": "biographical museum in Yerevan, Armenia"
+  },
+  {
+   "id": "Q20517628",
+   "label": "Aram Khachaturian street",
+   "description": "street in Yerevan"
+  },
+  {
+   "id": "Q136838687",
+   "label": "Aram Khachaturian String Quartet",
+   "description": ""
+  },
+  {
+   "id": "Q129034479",
+   "label": "Aram Khachaturian (1903-1978): A Retrospective",
+   "description": "scholarly article"
+  }
+ ],
+ "entity|Baghdad": [
+  {
+   "id": "Q1530",
+   "label": "Baghdad",
+   "description": "capital city of Iraq"
+  },
+  {
+   "id": "Q62",
+   "label": "San Francisco",
+   "description": "consolidated city and county in California, United States"
+  },
+  {
+   "id": "Q191075",
+   "label": "Baghdad Governorate",
+   "description": "governorate of Iraq"
+  },
+  {
+   "id": "Q135476315",
+   "label": "Baghdad",
+   "description": "Village in Chama, Zambia"
+  },
+  {
+   "id": "Q550376",
+   "label": "University of Baghdad",
+   "description": "university in Iraq"
+  },
+  {
+   "id": "Q581569",
+   "label": "7079 Baghdad",
+   "description": "asteroid"
+  },
+  {
+   "id": "Q788465",
+   "label": "Baghdad",
+   "description": "EP released by American punk rock band The Offspring"
+  }
+ ],
+ "entity|Bashkortostan": [
+  {
+   "id": "Q5710",
+   "label": "Bashkortostan",
+   "description": "federal subject of Russia"
+  },
+  {
+   "id": "Q4080196",
+   "label": "Bashkiria",
+   "description": "Bashkir national and territorial autonomy in 1917-1919"
+  },
+  {
+   "id": "Q4080200",
+   "label": "Bashkortostan",
+   "description": "Bashkir-language newspaper published in Ufa"
+  },
+  {
+   "id": "Q16535915",
+   "label": "Bashkortostan",
+   "description": "State TV and radio company in Bashkortostan, Russia"
+  },
+  {
+   "id": "Q1051637",
+   "label": "Bashkortostan",
+   "description": "village in Askinsky District, Russia"
+  },
+  {
+   "id": "Q135216363",
+   "label": "WikiProject Virtual front/Bashkortostan",
+   "description": "sub-project of WikiProject Virtual front"
+  },
+  {
+   "id": "Q4315030",
+   "label": "National Museum of the Republic of Bashkortostan",
+   "description": "museum in Ufa, Russia"
+  }
+ ],
+ "entity|Battle of Hastings": [
+  {
+   "id": "Q83224",
+   "label": "Battle of Hastings",
+   "description": "battle which occurred on 14 October 1066"
+  },
+  {
+   "id": "Q4871193",
+   "label": "Battle of Hastings reenactment",
+   "description": "battle reenactment"
+  },
+  {
+   "id": "Q4871192",
+   "label": "Battle of Hastings",
+   "description": "Wikimedia disambiguation page"
+  }
+ ],
+ "entity|Berlin U-Bahn": [
+  {
+   "id": "Q68646",
+   "label": "Berlin U-Bahn",
+   "description": "rapid transport system of Berlin, Germany"
+  },
+  {
+   "id": "Q110977120",
+   "label": "Berlin U-Bahn station",
+   "description": ""
+  },
+  {
+   "id": "Q99697",
+   "label": "U2",
+   "description": "Underground line in Berlin"
+  },
+  {
+   "id": "Q99725",
+   "label": "U7",
+   "description": "Berlin U-Bahn line"
+  },
+  {
+   "id": "Q99702",
+   "label": "U3",
+   "description": "Berlin U-Bahn line"
+  },
+  {
+   "id": "Q99711",
+   "label": "U5",
+   "description": "Berlin U-Bahn line"
+  },
+  {
+   "id": "Q99720",
+   "label": "U6",
+   "description": "Berlin U-Bahn line"
+  }
+ ],
+ "entity|Bethlehem": [
+  {
+   "id": "Q5776",
+   "label": "Bethlehem",
+   "description": "city in the West Bank, Palestine"
+  },
+  {
+   "id": "Q755397",
+   "label": "Bethlehem",
+   "description": "town in Litchfield County, Connecticut, United States"
+  },
+  {
+   "id": "Q565380",
+   "label": "Bethlehem",
+   "description": "German metal band"
+  },
+  {
+   "id": "Q4898021",
+   "label": "Bethlehem",
+   "description": "given name"
+  },
+  {
+   "id": "Q164380",
+   "label": "Bethlehem",
+   "description": "city in Lehigh and Northampton counties, Pennsylvania, USA"
+  },
+  {
+   "id": "Q14693138",
+   "label": "Bethlehem",
+   "description": "town in Mississippi, United States"
+  },
+  {
+   "id": "Q31732",
+   "label": "nativity scene",
+   "description": "representation of the birth of Christ"
+  }
+ ],
+ "entity|Bettie Page": [
+  {
+   "id": "Q61898",
+   "label": "Bettie Page",
+   "description": "American pin-up model (1923\u20132008)"
+  },
+  {
+   "id": "Q16248679",
+   "label": "Bettie Page Reveals All",
+   "description": "2012 documentary film directed by Mark Mori"
+  },
+  {
+   "id": "Q4898600",
+   "label": "Bettie Page: Dark Angel",
+   "description": "2004 film by Nico B."
+  },
+  {
+   "id": "Q129676446",
+   "label": "Bettie Page: The Girl in the Leopard Print Bikini",
+   "description": "2004 documentary"
+  },
+  {
+   "id": "Q123735899",
+   "label": "Bettie Page, Queen of Pinups, Dies at 85",
+   "description": "The New York Times article (December 11, 2008)"
+  }
+ ],
+ "entity|Bill Withers": [
+  {
+   "id": "Q346565",
+   "label": "Bill Withers",
+   "description": "American musician (1938\u20132020)"
+  },
+  {
+   "id": "Q112860965",
+   "label": "Bill Withers",
+   "description": "Welsh snooker player"
+  },
+  {
+   "id": "Q55605454",
+   "label": "Bill Withers",
+   "description": "former Australian politician"
+  },
+  {
+   "id": "Q93430354",
+   "label": "Bill Withers",
+   "description": "Minister of the Church of Scotland"
+  },
+  {
+   "id": "Q60630659",
+   "label": "Bill Withers' albums in chronological order",
+   "description": "Wikimedia albums discography"
+  },
+  {
+   "id": "Q25384019",
+   "label": "Bill Withers discography",
+   "description": "Wikimedia artist discography"
+  },
+  {
+   "id": "Q16243893",
+   "label": "Bill Withers' Greatest Hits",
+   "description": "1981 compilation album by Bill Withers"
+  }
+ ],
+ "entity|Boles\u0142aw Prus": [
+  {
+   "id": "Q144439",
+   "label": "Boles\u0142aw Prus",
+   "description": "Polish novelist (1847\u20131912)"
+  },
+  {
+   "id": "Q113127418",
+   "label": "Boles\u0142aw Prus Prize",
+   "description": ""
+  },
+  {
+   "id": "Q9394058",
+   "label": "Boles\u0142aw Prus bench in Na\u0142\u0119cz\u00f3w",
+   "description": ""
+  },
+  {
+   "id": "Q104163971",
+   "label": "Boleslaw-Prus-Stra\u00dfe",
+   "description": "street in Rostock, Mecklenburg-Vorpommern, Germany"
+  },
+  {
+   "id": "Q11823149",
+   "label": "Boles\u0142aw Prus monument in Warsaw",
+   "description": "monument in Warsaw, Poland"
+  },
+  {
+   "id": "Q136138402",
+   "label": "Boles\u0142aw Prus and the Jews",
+   "description": "book 2021"
+  },
+  {
+   "id": "Q114393522",
+   "label": "Boles\u0142aw Prus\u2019s Pharaoh(s) \u2013 Two Literary Visions of the Human Condition and Our Fascination with Ancient Egypt",
+   "description": "scientific article published in 2022"
+  }
+ ],
+ "entity|Bo\u00f6tes III": [
+  {
+   "id": "Q45975",
+   "label": "Bo\u00f6tes III",
+   "description": "galaxy"
+  },
+  {
+   "id": "Q57448462",
+   "label": "Bo\u00f6tes III is a Disrupting Dwarf Galaxy Associated with the Styx Stellar Stream",
+   "description": "scientific article published in the Astrophysical Journal"
+  }
+ ],
+ "entity|Brokeback Mountain": [
+  {
+   "id": "Q160618",
+   "label": "Brokeback Mountain",
+   "description": "2005 film directed by Ang Lee"
+  },
+  {
+   "id": "Q15074267",
+   "label": "Brokeback Mountain",
+   "description": "opera by Charles Wuorinen"
+  },
+  {
+   "id": "Q2699263",
+   "label": "Brokeback Mountain",
+   "description": "short story by Annie Proulx"
+  },
+  {
+   "id": "Q2707446",
+   "label": "Brokeback Mountain \u2013 Original Motion Picture Soundtrack",
+   "description": "2005 soundtrack album by Gustavo Santaolalla"
+  },
+  {
+   "id": "Q118995343",
+   "label": "Brokeback Mountain",
+   "description": "2023 play by Ashley Robinson"
+  },
+  {
+   "id": "Q135006382",
+   "label": "Brokeback Mountain",
+   "description": "screenplay by Larry McMurtry and Diana Ossana for the 2005 film Brokeback Mountain"
+  },
+  {
+   "id": "Q123517773",
+   "label": "Brokeback Mountain",
+   "description": "2014 television film"
+  }
+ ],
+ "entity|Cesare Lombroso": [
+  {
+   "id": "Q202420",
+   "label": "Cesare Lombroso",
+   "description": "Italian psychiatrist, physician, and criminologist (1835-1909)"
+  },
+  {
+   "id": "Q3868193",
+   "label": "Cesare Lombroso Museum of Criminal Anthropology",
+   "description": "museum in Italy"
+  },
+  {
+   "id": "Q52478989",
+   "label": "CESARE LOMBROSO",
+   "description": "scientific article published in April 1964"
+  },
+  {
+   "id": "Q94224237",
+   "label": "CESARE LOMBROSO",
+   "description": ""
+  },
+  {
+   "id": "Q44669246",
+   "label": "Cesare Lombroso, cortical dysplasia, and epilepsy: keen findings and odd theories",
+   "description": "scientific article published in November 2003"
+  },
+  {
+   "id": "Q48447977",
+   "label": "Cesare Lombroso and epilepsy 100 years later: an unabridged report of his original transactions",
+   "description": "scientific article published on 14 February 2011"
+  },
+  {
+   "id": "Q45931747",
+   "label": "Cesare Lombroso: Methodological ambiguities and brilliant intuitions",
+   "description": "scientific article published on 7 December 2011"
+  }
+ ],
+ "entity|Cherio River": [
+  {
+   "id": "Q1058115",
+   "label": "Cherio River",
+   "description": "river in Italy"
+  }
+ ],
+ "entity|Chinese Communist Party": [
+  {
+   "id": "Q17427",
+   "label": "Chinese Communist Party",
+   "description": "founding and ruling party of the People's Republic of China"
+  },
+  {
+   "id": "Q97185636",
+   "label": "Chinese Communist Party Provincial Standing Committee",
+   "description": "top ranks of the provincial-level organizations of the Chinese Communist Party (CCP)"
+  },
+  {
+   "id": "Q30060320",
+   "label": "Chinese Communist Party Committee Secretary of Shaanxi",
+   "description": ""
+  },
+  {
+   "id": "Q23373938",
+   "label": "Chinese Communist Party Committee Secretary of Hunan",
+   "description": ""
+  },
+  {
+   "id": "Q10873174",
+   "label": "Shanghai Municipal Committee of the Chinese Communist Party",
+   "description": "political body comprising the top leaders of Shanghai"
+  },
+  {
+   "id": "Q2510674",
+   "label": "History of the Chinese Communist Party",
+   "description": "aspect of history"
+  },
+  {
+   "id": "Q25054202",
+   "label": "Chinese Communist Party Deputy Committee Secretary",
+   "description": "Chinese Community Party position"
+  }
+ ],
+ "entity|Chopper Read": [
+  {
+   "id": "Q2428420",
+   "label": "Chopper Read",
+   "description": "Australian criminal, author and rapper (1954-2013)"
+  }
+ ],
+ "entity|Chris Martin": [
+  {
+   "id": "Q712860",
+   "label": "Chris Martin",
+   "description": "English singer-songwriter (born 1977)"
+  },
+  {
+   "id": "Q519982",
+   "label": "Chris Martin",
+   "description": "association football player (born 1988)"
+  },
+  {
+   "id": "Q5107354",
+   "label": "Chris Martin",
+   "description": "English footballer (born 1990)"
+  },
+  {
+   "id": "Q122908847",
+   "label": "Chris Martin",
+   "description": "rugby player"
+  },
+  {
+   "id": "Q121745402",
+   "label": "Chris Martin",
+   "description": "New Zealand boxing trainer (1963/1964\u20132023)"
+  },
+  {
+   "id": "Q125851455",
+   "label": "Chris Martin",
+   "description": "Australian geotechnical engineer"
+  },
+  {
+   "id": "Q100879997",
+   "label": "Chris Martin",
+   "description": "college basketball player (2009\u20132012) Wagner"
+  }
+ ],
+ "entity|Chris Watson": [
+  {
+   "id": "Q23347",
+   "label": "Chris Watson",
+   "description": "Australian politician, third Prime Minister of Australia (1867-1941)"
+  },
+  {
+   "id": "Q5108433",
+   "label": "Chris Watson",
+   "description": "English musician and wildlife sound recordist"
+  },
+  {
+   "id": "Q122740046",
+   "label": "Chris Watson",
+   "description": "New Zealand composer"
+  },
+  {
+   "id": "Q123359883",
+   "label": "Chris Watson",
+   "description": "British sport shooter"
+  },
+  {
+   "id": "Q116504315",
+   "label": "Chris Watson",
+   "description": "rugby league footballer"
+  },
+  {
+   "id": "Q121012770",
+   "label": "Chris Watson",
+   "description": "media studies researcher at Massey University in New Zealand"
+  },
+  {
+   "id": "Q5108434",
+   "label": "Chris Watson",
+   "description": "Wikimedia disambiguation page"
+  }
+ ],
+ "entity|Christie Brinkley": [
+  {
+   "id": "Q253476",
+   "label": "Christie Brinkley",
+   "description": "American model and actress"
+  }
+ ],
+ "entity|Church of St Peter St Paul (church of England)": [
+  {
+   "id": "Q17528852",
+   "label": "Church of St Peter St Paul (church of England)",
+   "description": "Grade I listed church in Tring, Hertfordshire UK"
+  }
+ ],
+ "entity|Consorsbank VISA Card": [
+  {
+   "id": "Q57047474",
+   "label": "Consorsbank VISA Card",
+   "description": ""
+  },
+  {
+   "id": "Q56707462",
+   "label": "Consorsbank VISA Card Gold",
+   "description": ""
+  }
+ ],
+ "entity|Crown of the Kingdom of Poland": [
+  {
+   "id": "Q171348",
+   "label": "Crown of the Kingdom of Poland",
+   "description": "1385\u20131795 territorial possessions of the King of Poland"
+  }
+ ],
+ "entity|C\u00e9sar Award for Best Actor": [
+  {
+   "id": "Q900494",
+   "label": "C\u00e9sar Award for Best Actor",
+   "description": "award"
+  }
+ ],
+ "entity|Dame": [
+  {
+   "id": "Q37465372",
+   "label": "Dame",
+   "description": "family name"
+  },
+  {
+   "id": "Q12480772",
+   "label": "Dame",
+   "description": "village in Siau Tagulandang Biaro Islands Regency, North Sulawesi, Indonesia"
+  },
+  {
+   "id": "Q19725184",
+   "label": "Dame",
+   "description": "village in Serdang Bedagai Regency, North Sumatra, Indonesia"
+  },
+  {
+   "id": "Q28054",
+   "label": "Judi Dench",
+   "description": "English actress (born 1934)"
+  },
+  {
+   "id": "Q161819",
+   "label": "Julie Andrews",
+   "description": "British actress, singer and author (born 1935)"
+  },
+  {
+   "id": "Q901407",
+   "label": "Dame",
+   "description": "honorific prefix for the rank of an order of knighthood accorded to a woman"
+  },
+  {
+   "id": "Q6581072",
+   "label": "female",
+   "description": "to be used in \"sex or gender\" (P21) to indicate that the human subject is a female or \"semantic gender\" (P10339) to indicate that a word refers to a female person"
+  }
+ ],
+ "entity|David G. McCullough": [
+  {
+   "id": "Q374610",
+   "label": "David G. McCullough",
+   "description": "historian"
+  }
+ ],
+ "entity|Doordarshan": [
+  {
+   "id": "Q1763315",
+   "label": "Doordarshan",
+   "description": "India's public service broadcaster"
+  },
+  {
+   "id": "Q349806",
+   "label": "DD News",
+   "description": "Indian Government News Channel"
+  },
+  {
+   "id": "Q85757434",
+   "label": "Doordarshan",
+   "description": "2020 film directed by Gagan Puri"
+  },
+  {
+   "id": "Q114400487",
+   "label": "Doordarshan Kendra metro station",
+   "description": "ahmedabad Metro's Blue Line metro station"
+  },
+  {
+   "id": "Q22032275",
+   "label": "DD Assam",
+   "description": "Doordarshan TV channel in Assam, India"
+  },
+  {
+   "id": "Q26710935",
+   "label": "Doordarshan Eti Jantra",
+   "description": "2016 film"
+  },
+  {
+   "id": "Q5297224",
+   "label": "Doordarshan Kendra, Jalandhar",
+   "description": "Doordarshan Kendra Jalandhar was inaugurated on 13 April 1979, after it was shifted here from Amritsar, where it was first established on 23 September 1973"
+  }
+ ],
+ "entity|Dr. Hee": [
+  {
+   "id": "Q5304139",
+   "label": "Dr. Hee",
+   "description": "album by Tribal Tech"
+  }
+ ],
+ "entity|Duchess": [
+  {
+   "id": "Q4593319",
+   "label": "duchess",
+   "description": "noble title"
+  },
+  {
+   "id": "Q58481980",
+   "label": "duque",
+   "description": "Spanish nobility title Duke"
+  },
+  {
+   "id": "Q466514",
+   "label": "The Duchess",
+   "description": "2008 film directed by Saul Dibb"
+  },
+  {
+   "id": "Q2015556",
+   "label": "Louise \u00c9lisabeth de Cro\u00ff",
+   "description": "French writer and noble"
+  },
+  {
+   "id": "Q27237663",
+   "label": "Duchess",
+   "description": "cat from Disney's Aristocats"
+  },
+  {
+   "id": "Q3646349",
+   "label": "Duchess",
+   "description": "1980 single of Genesis"
+  },
+  {
+   "id": "Q2568445",
+   "label": "Duchess",
+   "description": "village in Alberta, Canada"
+  }
+ ],
+ "entity|Emirate of Sharjah": [
+  {
+   "id": "Q188810",
+   "label": "Emirate of Sharjah",
+   "description": "one of the seven emirates of the United Arab Emirates"
+  }
+ ],
+ "entity|Emmanuel Bourdieu": [
+  {
+   "id": "Q1338188",
+   "label": "Emmanuel Bourdieu",
+   "description": "French writer and film director"
+  }
+ ],
+ "entity|FC Lokomotiv Moscow": [
+  {
+   "id": "Q29115",
+   "label": "FC Lokomotiv Moscow",
+   "description": "association football club in Moscow, Russia"
+  },
+  {
+   "id": "Q4265827",
+   "label": "FC Lokomotiv Moscow",
+   "description": "beach soccer team in Moscow, Russia"
+  },
+  {
+   "id": "Q4480000",
+   "label": "FC Lokomotiv Moscow in European football",
+   "description": "Wikimedia list article"
+  },
+  {
+   "id": "Q123742266",
+   "label": "FC Lokomotiv Moscow v Zlin, 28 September 2017",
+   "description": ""
+  },
+  {
+   "id": "Q123742279",
+   "label": "FC Lokomotiv Moscow vs. FC Zenit St. Petersburg, 5 May 2018",
+   "description": ""
+  },
+  {
+   "id": "Q123742271",
+   "label": "FC Lokomotiv Moscow vs. FC Porto, 24 October 2018",
+   "description": ""
+  },
+  {
+   "id": "Q123742276",
+   "label": "FC Lokomotiv Moscow vs. FC Spartak Moscow, 27 October 2019",
+   "description": ""
+  }
+ ],
+ "entity|Florida": [
+  {
+   "id": "Q812",
+   "label": "Florida",
+   "description": "state of the United States of America"
+  },
+  {
+   "id": "Q842472",
+   "label": "Florida",
+   "description": "city in Florida Department, Uruguay"
+  },
+  {
+   "id": "Q2255913",
+   "label": "Florida",
+   "description": "city in the province of Buenos Aires in Argentina"
+  },
+  {
+   "id": "Q501758",
+   "label": "University of Florida",
+   "description": "public research university in Gainesville, Florida, United States"
+  },
+  {
+   "id": "Q1093490",
+   "label": "Florida",
+   "description": "Colombian municipality of the department of Valle del Cauca"
+  },
+  {
+   "id": "Q861548",
+   "label": "Florida State University",
+   "description": "public university in Tallahassee, Florida, United States"
+  },
+  {
+   "id": "Q20000193",
+   "label": "Florida",
+   "description": "female given name"
+  }
+ ],
+ "entity|Frogger": [
+  {
+   "id": "Q524267",
+   "label": "Frogger",
+   "description": "1981 video game"
+  },
+  {
+   "id": "Q30149605",
+   "label": "Frogger",
+   "description": "video game series"
+  },
+  {
+   "id": "Q5505250",
+   "label": "Frogger",
+   "description": "1997 video game"
+  },
+  {
+   "id": "Q18215885",
+   "label": "Frogger",
+   "description": "2003 action-adventure video game"
+  },
+  {
+   "id": "Q5505258",
+   "label": "Frogger Beyond",
+   "description": "2002 video game"
+  },
+  {
+   "id": "Q5505260",
+   "label": "Frogger Returns",
+   "description": "2010 video game"
+  },
+  {
+   "id": "Q720311",
+   "label": "Frogger's Adventures: The Rescue",
+   "description": "2003 video game"
+  }
+ ],
+ "entity|Fukushima": [
+  {
+   "id": "Q161176",
+   "label": "Fukushima",
+   "description": "city in Fukushima prefecture, Japan"
+  },
+  {
+   "id": "Q71707",
+   "label": "Fukushima Prefecture",
+   "description": "prefecture of Japan"
+  },
+  {
+   "id": "Q16870049",
+   "label": "Fukushima",
+   "description": "Japanese family name (\u798f\u5cf6, \u3075\u304f\u3057\u307e)"
+  },
+  {
+   "id": "Q1354260",
+   "label": "Fukushima",
+   "description": "town in Matsumae district, Hokkaido, Japan"
+  },
+  {
+   "id": "Q800799",
+   "label": "Fukushima Station",
+   "description": "railway station in Fukushima, Fukushima Prefecture, Japan"
+  },
+  {
+   "id": "Q152363",
+   "label": "3915 Fukushima",
+   "description": "asteroid"
+  },
+  {
+   "id": "Q985728",
+   "label": "Fukushima-ku",
+   "description": "ward of Japan"
+  }
+ ],
+ "entity|Gamburtsev Mountain Range": [
+  {
+   "id": "Q1422867",
+   "label": "Gamburtsev Mountain Range",
+   "description": "mountain range in East Antarctica"
+  }
+ ],
+ "entity|Genghis Khan": [
+  {
+   "id": "Q17190863",
+   "label": "Genghis Khan",
+   "description": "1987 video game"
+  },
+  {
+   "id": "Q69880501",
+   "label": "Genghis Khan",
+   "description": "instrumental track by Iron Maiden; 1980 studio recording"
+  },
+  {
+   "id": "Q720",
+   "label": "Genghis Khan",
+   "description": "founder and first khan of the Mongol Empire (1162\u20131227)"
+  },
+  {
+   "id": "Q2345478",
+   "label": "Genghis Khan II: Clan of the Gray Wolf",
+   "description": "1992 video game"
+  },
+  {
+   "id": "Q2513638",
+   "label": "Vandal Savage",
+   "description": "DC Comics supervillain"
+  },
+  {
+   "id": "Q836411",
+   "label": "Dschinghis Khan",
+   "description": "song written and composed by Bernd Meinunger and Ralph Siegel, originally performed by the pop group Dschinghis Khan at the 1979 Eurovision Song Contest"
+  },
+  {
+   "id": "Q708014",
+   "label": "Genghis Khan",
+   "description": "1965 film by Henry Levin"
+  }
+ ],
+ "entity|Golden Horde": [
+  {
+   "id": "Q79965",
+   "label": "Golden Horde",
+   "description": "medieval state in Eurasia"
+  },
+  {
+   "id": "Q7737056",
+   "label": "The Golden Horde",
+   "description": "1951 film by George Sherman"
+  },
+  {
+   "id": "Q97356720",
+   "label": "Golden Horde",
+   "description": "irish-bred Thoroughbred racehorse"
+  },
+  {
+   "id": "Q50811394",
+   "label": "Zolotoordynskoe Obozrenie",
+   "description": "academic journal"
+  },
+  {
+   "id": "Q12088245",
+   "label": "Great Troubles",
+   "description": "14th\u2013century Golden Horde war of succession"
+  },
+  {
+   "id": "Q123762485",
+   "label": "Golden hordes or mere barbarians? Discourses on tourism, touristification, and tourismophobia in Madrid\u2019s Lavapi\u00e9s neighborhood",
+   "description": "scientific article published on 12 December 2019"
+  },
+  {
+   "id": "Q141400804",
+   "label": "Golden Horde Monuments in Stavropol Region in Scientific Work of A.A. Spitsyn",
+   "description": "scholarly article published in Povol\u017eska\u00e2 Arheologi\u00e2, vol. 2, no. 44 (2023) (DOI: 10.24852/PA2023.2.44.221.235)"
+  }
+ ],
+ "entity|Guangzhou Metro": [
+  {
+   "id": "Q660751",
+   "label": "Guangzhou Metro",
+   "description": "rapid transit system in Guangzhou, China"
+  },
+  {
+   "id": "Q862941",
+   "label": "Line 3",
+   "description": "metro line of the Guangzhou Metro"
+  },
+  {
+   "id": "Q6553140",
+   "label": "Line 6",
+   "description": "metro line of Guangzhou Metro"
+  },
+  {
+   "id": "Q1047377",
+   "label": "Line 2",
+   "description": "metro line of Guangzhou Metro"
+  },
+  {
+   "id": "Q6553073",
+   "label": "Guangzhou Metro Line 14",
+   "description": "line of Guangzhou Metro"
+  },
+  {
+   "id": "Q863422",
+   "label": "Line 4",
+   "description": "line of Guangzhou Metro"
+  },
+  {
+   "id": "Q1047385",
+   "label": "Line 1",
+   "description": "line of the Guangzhou Metro"
+  }
+ ],
+ "entity|Gyeongju": [
+  {
+   "id": "Q18815313",
+   "label": "Gyeongju",
+   "description": "2014 film by Zhang Lu"
+  },
+  {
+   "id": "Q42097",
+   "label": "Gyeongju",
+   "description": "city in North Gyeongsang Province, South Korea"
+  },
+  {
+   "id": "Q6452704",
+   "label": "Gyeong-ju",
+   "description": "Korean unisex given name (\uacbd\uc8fc)"
+  },
+  {
+   "id": "Q65235305",
+   "label": "Gyeongju Chunyang Bridge and Woljeong Bridge",
+   "description": "Korean cultural heritage item (two bridges)"
+  },
+  {
+   "id": "Q58873",
+   "label": "Gyeongju Station",
+   "description": "former railway station in South Korea"
+  },
+  {
+   "id": "Q54294",
+   "label": "Gyeongju Station",
+   "description": "train station in South Korea"
+  },
+  {
+   "id": "Q624792",
+   "label": "Gyeongju Korea Hydro and Nuclear Power FC",
+   "description": "football club in Gyeongju, Korea"
+  }
+ ],
+ "entity|Harry Potter universe": [
+  {
+   "id": "Q5410773",
+   "label": "Harry Potter universe",
+   "description": "fictional magical universe created by J. K. Rowling"
+  },
+  {
+   "id": "Q6041439",
+   "label": "newspaper or magazine in Harry Potter universe",
+   "description": ""
+  }
+ ],
+ "entity|Hayao Miyazaki": [
+  {
+   "id": "Q55400",
+   "label": "Hayao Miyazaki",
+   "description": "Japanese animator, filmmaker, and mangaka (born 1941)"
+  },
+  {
+   "id": "Q11454632",
+   "label": "Hayao Miyazaki",
+   "description": "Japanese baseball player"
+  },
+  {
+   "id": "Q136483042",
+   "label": "Hayao Miyazaki: Exploring the Early Work of Japan\u2019s Greatest Animator",
+   "description": ""
+  },
+  {
+   "id": "Q6351444",
+   "label": "Hayao Miyazaki filmography",
+   "description": "filmography"
+  },
+  {
+   "id": "Q888819",
+   "label": "Hayao Miyazaki's Daydream Data Notes",
+   "description": "collection of manga and illustrated writings by Hayao Miyazaki"
+  },
+  {
+   "id": "Q130287351",
+   "label": "Hayao Miyazaki and the Heron",
+   "description": "2024 documentary film"
+  },
+  {
+   "id": "Q130265400",
+   "label": "Hayao Miyazaki bibliography",
+   "description": ""
+  }
+ ],
+ "entity|Henry Peach Robinson": [
+  {
+   "id": "Q574144",
+   "label": "Henry Peach Robinson",
+   "description": "British photographer (1830\u20131901)"
+  }
+ ],
+ "entity|Herbert von Karajan": [
+  {
+   "id": "Q154895",
+   "label": "Herbert von Karajan",
+   "description": "Austrian conductor (1908\u20131989)"
+  },
+  {
+   "id": "Q321848",
+   "label": "Herbert von Karajan Music Prize",
+   "description": "former German music award (2003\u20132015)"
+  },
+  {
+   "id": "Q78133919",
+   "label": "Herbert-von-Karajan-Platz",
+   "description": "street in Ulm (Donau), Germany"
+  },
+  {
+   "id": "Q108059175",
+   "label": "Karajan Prize",
+   "description": "Austrian classic music award for young conductors biannual granted by Salzburg Festival"
+  },
+  {
+   "id": "Q1910486",
+   "label": "Herbert-von-Karajan-Stra\u00dfe",
+   "description": "street in Berlin-Tiergarten, Germany"
+  },
+  {
+   "id": "Q110305241",
+   "label": "Herbert-von-Karajan-Platz",
+   "description": "square in Salzburg, Austria"
+  },
+  {
+   "id": "Q106195239",
+   "label": "Herbert-von-Karajan-Platz",
+   "description": "square in Vienna"
+  }
+ ],
+ "entity|Hittites": [
+  {
+   "id": "Q5406",
+   "label": "Hittites",
+   "description": "Anatolian ethnic group who built kingdoms at Kussara & Hattusa (c. 2000-700 BCE)"
+  },
+  {
+   "id": "Q2891174",
+   "label": "Biblical Hittites",
+   "description": "ethnic group mentioned in the Hebrew Bible"
+  },
+  {
+   "id": "Q247882",
+   "label": "history of the Hittites",
+   "description": "aspect of history"
+  },
+  {
+   "id": "Q59446817",
+   "label": "Hittites, Ottomans and Turks: A\u011fao\u011flu Ahmed Bey and the Kemalist Construction of Turkish Nationhood in Anatolia",
+   "description": ""
+  },
+  {
+   "id": "Q60078830",
+   "label": "Hittites in Syria",
+   "description": "scientific article published in Nature"
+  },
+  {
+   "id": "Q60121591",
+   "label": "Hittites in Northern Syria",
+   "description": "scientific article published in Nature"
+  },
+  {
+   "id": "Q141370855",
+   "label": "Hittites and \"barbarians\" in the Late Bronze Age: regional survey in northern Turkey (Archaeology International, vol. 3, no. 0)",
+   "description": "scholarly article published in Archaeology International, vol. 3, no. 0 (1999) (DOI: 10.5334/AI.V3I0.179)"
+  }
+ ],
+ "entity|Honda": [
+  {
+   "id": "Q9584",
+   "label": "Honda",
+   "description": "manufacturer of automobiles, motorcycles, and power equipment"
+  },
+  {
+   "id": "Q14497179",
+   "label": "Honda",
+   "description": "family name"
+  },
+  {
+   "id": "Q492312",
+   "label": "Hondarribia",
+   "description": "municipality of Spain"
+  },
+  {
+   "id": "Q3259531",
+   "label": "Masaji Honda",
+   "description": "Japanese botanist (1897-1984)"
+  },
+  {
+   "id": "Q19347129",
+   "label": "Honda",
+   "description": "Japanese family name (\u672c\u7530, \u307b\u3093\u3060)"
+  },
+  {
+   "id": "Q124966298",
+   "label": "Honda",
+   "description": "brand of cars and motocycles"
+  },
+  {
+   "id": "Q261637",
+   "label": "Hachiman",
+   "description": "Japanese Shinto\u2013Buddhist syncretic deity of archery and war; tutelary god of warriors; protector of Japan, the Japanese people and the Imperial House; the name means \"God of 8 Banners\", after the 8 heavenly banners signaling the birth of \u014cjin Tenn\u014d"
+  }
+ ],
+ "entity|Hu Yaobang": [
+  {
+   "id": "Q99850",
+   "label": "Hu Yaobang",
+   "description": "Chinese politician (1915-1989), former General Secretary of the Chinese Communist Party"
+  },
+  {
+   "id": "Q51885025",
+   "label": "death of Hu Yaobang",
+   "description": "1989 death of a Chinese leader"
+  },
+  {
+   "id": "Q16924601",
+   "label": "Hu Yaobang's Former Residence",
+   "description": "traditional folk houses in Hunan, China"
+  },
+  {
+   "id": "Q141301370",
+   "label": "Hu Yaobang's inspection tour of the Tibet Autonomous Region",
+   "description": ""
+  },
+  {
+   "id": "Q118577053",
+   "label": "Hu Yaobang and Art and Literary Circles in the Transition Time",
+   "description": ""
+  },
+  {
+   "id": "Q118576693",
+   "label": "Hu Yaobang and the Land Reform in Northern Sichuan",
+   "description": ""
+  },
+  {
+   "id": "Q120439098",
+   "label": "Hu Yaobang\u2019s Practices and Thoughts on Editing and Publishing",
+   "description": "scholarly article in Journal of Henan University (Social Science), no. 6, 2021"
+  }
+ ],
+ "entity|H\u00fcrrem Sultan": [
+  {
+   "id": "Q6077715",
+   "label": "H\u00fcrrem Sultan",
+   "description": "television series"
+  },
+  {
+   "id": "Q255809",
+   "label": "H\u00fcrrem Sultan",
+   "description": "Wife of Suleiman the Magnificent"
+  },
+  {
+   "id": "Q19363506",
+   "label": "Haseki Sultan Mosque",
+   "description": "mosque in \u0130stanbul, Turkey"
+  },
+  {
+   "id": "Q55698753",
+   "label": "Hurrem Sultan Tomb",
+   "description": "mausoleum complex in \u0130stanbul, Turkey"
+  },
+  {
+   "id": "Q130724660",
+   "label": "H\u00fcrrem Sultan'\u0131n Torunlar\u0131",
+   "description": "non-fiction book about 20th century descendants of Ottoman Sultana"
+  },
+  {
+   "id": "Q6047573",
+   "label": "H\u00fcrrem Sultan",
+   "description": "ballet"
+  },
+  {
+   "id": "Q122278402",
+   "label": "Roxelana monument",
+   "description": "monument in Ukraine"
+  }
+ ],
+ "entity|Idi Amin": [
+  {
+   "id": "Q48231",
+   "label": "Idi Amin",
+   "description": "President of Uganda (1971-1979)"
+  },
+  {
+   "id": "Q18175787",
+   "label": "Idi Amin Dada regime destitution",
+   "description": "change of power in Uganda as a result of the Ugandan-Tanzanian war"
+  },
+  {
+   "id": "Q17653708",
+   "label": "Idi Amin offered to act as peacemaker in NI",
+   "description": "Wikinews article"
+  },
+  {
+   "id": "Q109044655",
+   "label": "Aboubacar Sidiki Camara",
+   "description": "Guinean politician and general"
+  },
+  {
+   "id": "Q125211",
+   "label": "Lake Edward",
+   "description": "lake in Uganda and smallest of the African Great Lakes"
+  },
+  {
+   "id": "Q129227037",
+   "label": "Idi Amin in Black and White",
+   "description": "scholarly article"
+  },
+  {
+   "id": "Q4115358",
+   "label": "Rise and Fall of Idi Amin",
+   "description": "1981 Nigerian film by Sharad Patel"
+  }
+ ],
+ "entity|Indian subcontinent": [
+  {
+   "id": "Q60140",
+   "label": "Indian subcontinent",
+   "description": "physiographical region in South Asia"
+  },
+  {
+   "id": "Q103935435",
+   "label": "Indian subcontinent",
+   "description": "encyclopedia article"
+  },
+  {
+   "id": "Q98528267",
+   "label": "music of South Asia",
+   "description": "music and musical traditions of South Asia region"
+  },
+  {
+   "id": "Q137125353",
+   "label": "Indian Fortification architecture style",
+   "description": "This style encompasses the principles and techniques of defensive construction developed in the Indian subcontinent, characterized by strategic layouts, robust materials, and indigenous structural elements. (ID: INHF-632454196-18-11-25-II)"
+  },
+  {
+   "id": "Q42970950",
+   "label": "Indian-subcontinent NBIA: unusual phenotypes, novel PANK2 mutations, and undetermined genetic forms",
+   "description": "scientific article published on July 2010"
+  },
+  {
+   "id": "Q92460292",
+   "label": "Indian Subcontinent's First Proximal Forearm Level Double Upper Extremity Transplantation",
+   "description": "scientific article published on 01 September 2019"
+  },
+  {
+   "id": "Q92460296",
+   "label": "Indian Subcontinent's First Bilateral Supracondylar Level Upper Limb Transplantation",
+   "description": "scientific article published on 01 September 2019"
+  }
+ ],
+ "entity|Iroquois": [
+  {
+   "id": "Q68518",
+   "label": "Iroquois",
+   "description": "confederacy of northeast Native American people"
+  },
+  {
+   "id": "Q154106",
+   "label": "Bell UH-1 Iroquois",
+   "description": "1961 utility helicopter family by Bell"
+  },
+  {
+   "id": "Q250209",
+   "label": "mohawk",
+   "description": "type of haircut having the hair shaven on both sides of the head and a noticeably longer strip of hair in the center"
+  },
+  {
+   "id": "Q22448792",
+   "label": "Iroquois River",
+   "description": "watercourse in the Northwest Territories, Canada"
+  },
+  {
+   "id": "Q29808932",
+   "label": "Araucan Dmel_CG10571",
+   "description": "protein found in Drosophila melanogaster"
+  },
+  {
+   "id": "Q2501590",
+   "label": "Iroquois",
+   "description": "village in Illinois"
+  },
+  {
+   "id": "Q3334296",
+   "label": "HMCS Iroquois",
+   "description": "1970 Iroquois-class destroyer"
+  }
+ ],
+ "entity|Ivanovo": [
+  {
+   "id": "Q2630",
+   "label": "Ivanovo",
+   "description": "city in the center of European Russia"
+  },
+  {
+   "id": "Q2654",
+   "label": "Ivanovo Oblast",
+   "description": "federal subject of Russia"
+  },
+  {
+   "id": "Q956207",
+   "label": "Ivanava",
+   "description": "city in Belarus"
+  },
+  {
+   "id": "Q2721303",
+   "label": "Ivanovo",
+   "description": "municipality in Ruse oblast, Bulgaria"
+  },
+  {
+   "id": "Q2139271",
+   "label": "Ivanovo, Viljevo",
+   "description": "settlement in the Municipality of Viljevo, Osijek-Baranja County, Croatia"
+  },
+  {
+   "id": "Q2458290",
+   "label": "Ivanovo",
+   "description": "village in Harmanli municipality, Haskovo oblast, Bulgaria"
+  },
+  {
+   "id": "Q935789",
+   "label": "Ivanovo",
+   "description": "village in Ivanovo municipality, Ruse oblast, Bulgaria"
+  }
+ ],
+ "entity|James Matheson": [
+  {
+   "id": "Q4870843",
+   "label": "James Matheson",
+   "description": "British politician and merchant (1796-1878)"
+  },
+  {
+   "id": "Q48609316",
+   "label": "James Matheson",
+   "description": "Australian freestyle skier"
+  },
+  {
+   "id": "Q76005688",
+   "label": "James Brooks Young Matheson",
+   "description": "Peerage person ID=462286"
+  },
+  {
+   "id": "Q76005662",
+   "label": "James Matheson",
+   "description": "Peerage person ID=462271"
+  },
+  {
+   "id": "Q75985402",
+   "label": "James Matheson",
+   "description": "Peerage person ID=449215"
+  },
+  {
+   "id": "Q75292521",
+   "label": "James Matheson",
+   "description": "Peerage person ID=43179"
+  },
+  {
+   "id": "Q16213401",
+   "label": "James Matheson",
+   "description": "composer"
+  }
+ ],
+ "entity|Janet Gaynor": [
+  {
+   "id": "Q182462",
+   "label": "Janet Gaynor",
+   "description": "American actress (1906\u20131984)"
+  },
+  {
+   "id": "Q64144753",
+   "label": "Janet Gaynor and George O'Brien in Sunrise",
+   "description": "photograph in the National Gallery of Art (NGA 170389)"
+  }
+ ],
+ "entity|Janet Jackson": [
+  {
+   "id": "Q131324",
+   "label": "Janet Jackson",
+   "description": "American singer, songwriter, dancer and actress (born 1966)"
+  },
+  {
+   "id": "Q132527727",
+   "label": "Janet Jackson",
+   "description": "lacrosse official"
+  },
+  {
+   "id": "Q927720",
+   "label": "Janet Jackson",
+   "description": "1982 debut studio album by Janet Jackson"
+  },
+  {
+   "id": "Q110036501",
+   "label": "Janet Jackson",
+   "description": "episode of Saturday Night Live (S29 E17)"
+  },
+  {
+   "id": "Q80977767",
+   "label": "Janet Jackson",
+   "description": "Irish golfer"
+  },
+  {
+   "id": "Q75421526",
+   "label": "Janet Elizabeth Naomi Bannerman",
+   "description": "(born 1937)"
+  },
+  {
+   "id": "Q75597335",
+   "label": "Janet Jackson",
+   "description": "Peerage person ID=234029"
+  }
+ ],
+ "entity|Jayne Mansfield": [
+  {
+   "id": "Q229507",
+   "label": "Jayne Mansfield",
+   "description": "American actress (1933\u20131967)"
+  },
+  {
+   "id": "Q11835991",
+   "label": "Jayne Marie Mansfield",
+   "description": "American actor and playmate"
+  },
+  {
+   "id": "Q540345",
+   "label": "The Jayne Mansfield Story",
+   "description": "1980 television film directed by Dick Lowry"
+  },
+  {
+   "id": "Q16997649",
+   "label": "Jayne Mansfield Busts Up Las Vegas",
+   "description": "live album by Jayne Mansfield"
+  },
+  {
+   "id": "Q1377450",
+   "label": "Jayne Mansfield's Car",
+   "description": "2012 film by Billy Bob Thornton"
+  },
+  {
+   "id": "Q18208281",
+   "label": "Jayne Mansfield-Sophia Loren photo",
+   "description": "publicity stunt by Jayne Mansfield intended to deflect media attention from Sophia Loren during a dinner party"
+  },
+  {
+   "id": "Q6167896",
+   "label": "Jayne Mansfield's Pink Palace",
+   "description": "house in Los Angeles, California"
+  }
+ ],
+ "entity|Jean-Baptiste Fiard": [
+  {
+   "id": "Q29886576",
+   "label": "Jean-Baptiste Fiard",
+   "description": ""
+  }
+ ],
+ "entity|Johann Bernoulli": [
+  {
+   "id": "Q227897",
+   "label": "Johann Bernoulli",
+   "description": "Swiss mathematician (1667-1748)"
+  },
+  {
+   "id": "Q123994",
+   "label": "Johann II Bernoulli",
+   "description": "Swiss mathematician (1710-1790)"
+  },
+  {
+   "id": "Q123984",
+   "label": "Johann III Bernoulli",
+   "description": "Swiss mathematician and physicist (1744-1807)"
+  },
+  {
+   "id": "Q139207834",
+   "label": "Johann Bernoulli",
+   "description": ""
+  },
+  {
+   "id": "Q136643041",
+   "label": "Johann Bernoulli",
+   "description": ""
+  },
+  {
+   "id": "Q103869820",
+   "label": "Johann Bernoulli, II [bernojohan024327]",
+   "description": "article in Electronic Enlightenment"
+  },
+  {
+   "id": "Q103869818",
+   "label": "Johann Bernoulli [bernojohan000272]",
+   "description": "article in Electronic Enlightenment"
+  }
+ ],
+ "entity|John Adams": [
+  {
+   "id": "Q11806",
+   "label": "John Adams",
+   "description": "Founding Father, U.S. president from 1797 to 1801 (1735\u20131826)"
+  },
+  {
+   "id": "Q84114",
+   "label": "John Adams",
+   "description": "American composer (born 1947)"
+  },
+  {
+   "id": "Q453382",
+   "label": "John Adams",
+   "description": "British seaman and mutineer, last survivor of the Bounty mutineers (1767\u20131829)"
+  },
+  {
+   "id": "Q667841",
+   "label": "John Adams",
+   "description": "British physicist (1920\u20131984)"
+  },
+  {
+   "id": "Q77350282",
+   "label": "John Adams",
+   "description": "British video artist (born 1953)"
+  },
+  {
+   "id": "Q6218173",
+   "label": "John Adams",
+   "description": "Royal Navy officer, born 1918"
+  },
+  {
+   "id": "Q111724704",
+   "label": "John Adams",
+   "description": "Boston merchant"
+  }
+ ],
+ "entity|John Galsworthy": [
+  {
+   "id": "Q82248",
+   "label": "John Galsworthy",
+   "description": "English novelist and playwright (1867\u20131933)"
+  },
+  {
+   "id": "Q6234771",
+   "label": "John Galsworthy",
+   "description": "British diplomat and ambassador to Mexico (1919-1992)"
+  },
+  {
+   "id": "Q20266656",
+   "label": "John Galsworthy",
+   "description": "painting by Randall Davey"
+  },
+  {
+   "id": "Q79903100",
+   "label": "John Galsworthy",
+   "description": "print by William Strang (British, 1859-1921) (1946.383)"
+  },
+  {
+   "id": "Q119200212",
+   "label": "John Galsworthy (1867\u20131933)",
+   "description": "painting by Rudolf Helmut Sauter (1895\u20131977), University of Birmingham (john-galsworthy-18671933-34573)"
+  },
+  {
+   "id": "Q119200127",
+   "label": "John Galsworthy (1867\u20131933)",
+   "description": "painting by Rudolf Helmut Sauter (1895\u20131977), University of Birmingham"
+  },
+  {
+   "id": "Q119150277",
+   "label": "John Galsworthy (1867\u20131933), as a Young Man",
+   "description": "painting by Georg Sauter (1866\u20131937), University of Birmingham"
+  }
+ ],
+ "entity|John Howard": [
+  {
+   "id": "Q6240039",
+   "label": "John Howard",
+   "description": "director of the U.S. National Institute for Occupational Safety and Health"
+  },
+  {
+   "id": "Q51330",
+   "label": "John Howard",
+   "description": "Prime Minister of Australia from 1996 to 2007"
+  },
+  {
+   "id": "Q20887178",
+   "label": "John Langley Howard",
+   "description": "American painter (1902\u20131999)"
+  },
+  {
+   "id": "Q1700506",
+   "label": "John Howard",
+   "description": "British Army officer (1912\u20131999)"
+  },
+  {
+   "id": "Q109621862",
+   "label": "John Howard",
+   "description": ""
+  },
+  {
+   "id": "Q6240021",
+   "label": "John Howard",
+   "description": "British Conservative Party politician, MP for Southampton (1913-1982)"
+  },
+  {
+   "id": "Q111597743",
+   "label": "John Howard",
+   "description": ""
+  }
+ ],
+ "entity|Joseph Barbera": [
+  {
+   "id": "Q190373",
+   "label": "Joseph Barbera",
+   "description": "American animator and cartoonist (1911\u20132006)"
+  },
+  {
+   "id": "Q132203366",
+   "label": "William Hanna and Joseph Barbera",
+   "description": "American animator and cartoonist"
+  },
+  {
+   "id": "Q249945",
+   "label": "Joseph Barb\u00e9ran",
+   "description": "French association football referee (1925\u20131998)"
+  },
+  {
+   "id": "Q2377927",
+   "label": "Joseph Barbera filmography",
+   "description": "filmography"
+  },
+  {
+   "id": "Q123755554",
+   "label": "Joseph Barbera, Half of Cartoon Duo, Dies at 95",
+   "description": "The New York Times article (December 19, 2006)"
+  }
+ ],
+ "entity|Joseph Chamberlain": [
+  {
+   "id": "Q315999",
+   "label": "Joseph Chamberlain",
+   "description": "British politician (1836-1914)"
+  },
+  {
+   "id": "Q136259469",
+   "label": "Joseph Chamberlain",
+   "description": ""
+  },
+  {
+   "id": "Q75570985",
+   "label": "Joseph Chamberlain",
+   "description": "(1796-1874)"
+  },
+  {
+   "id": "Q76106518",
+   "label": "Joseph Chamberlain",
+   "description": "(1907-1979)"
+  },
+  {
+   "id": "Q96078132",
+   "label": "Joseph Chamberlain",
+   "description": "(est. 1770 - uncertain)"
+  },
+  {
+   "id": "Q75553082",
+   "label": "Joseph Chamberlain",
+   "description": "(born 1698)"
+  },
+  {
+   "id": "Q105965656",
+   "label": "Joseph Scudder Chamberlain",
+   "description": "American chemist and botanist (1870 - 1953)"
+  }
+ ],
+ "entity|Katherine Dunham": [
+  {
+   "id": "Q272637",
+   "label": "Katherine Dunham",
+   "description": "American dancer, choreographer, songwriter, actress and activist (1909/1912\u20132006)"
+  },
+  {
+   "id": "Q3194033",
+   "label": "Katherine Dunham Company",
+   "description": "first African-American modern dance company"
+  },
+  {
+   "id": "Q133855983",
+   "label": "Katherine Dunham Technique",
+   "description": "dance technique developed by Katherine Dunham"
+  },
+  {
+   "id": "Q133011451",
+   "label": "Katherine Dunham's Living Legacy",
+   "description": "online exhibition from Missouri Historical Society"
+  },
+  {
+   "id": "Q119293116",
+   "label": "Katherine Dunham Dance Company Rehearsing, Empire Theatre, Glasgow",
+   "description": "painting by Margaret Morris (1891\u20131980), The Fergusson Gallery (managed by Culture Perth and Kinross)"
+  },
+  {
+   "id": "Q140536977",
+   "label": "Katherine Dunham: Decolonizing Anthropology Through African American Dance Pedagogy",
+   "description": "scholarly article published in Transforming Anthropology, vol. 20, no. 2 (2012) (DOI: 10.1111/J.1548-7466.2012.01151.X)"
+  },
+  {
+   "id": "Q140609354",
+   "label": "Katherine Dunham: Recovering an Anthropological Legacy, Choreographing Ethnographic Futures. Elizabeth Chin, ed. Santa Fe, NM: SAR Press, 2014, 192 pp. $29.95, paper. ISBN 978-1938645129.",
+   "description": "scholarly article published in Journal of Anthropological Research, vol. 72, no. 2 (2016) (DOI: 10.1086/686086)"
+  }
+ ],
+ "entity|Kathie Lee Gifford": [
+  {
+   "id": "Q465695",
+   "label": "Kathie Lee Gifford",
+   "description": "French-born American television presenter, singer, songwriter, occasional actress and author"
+  },
+  {
+   "id": "Q110268168",
+   "label": "The Megyn Kelly Show Ep. 49",
+   "description": "episode of the Megyn Kelly Show"
+  }
+ ],
+ "entity|Kawamata": [
+  {
+   "id": "Q6379602",
+   "label": "Kawamata",
+   "description": "family name"
+  },
+  {
+   "id": "Q1347240",
+   "label": "Kawamata",
+   "description": "town in Date district, Fukushima prefecture, Japan"
+  },
+  {
+   "id": "Q26447200",
+   "label": "Kawamata",
+   "description": "Japanese family name (\u5ddd\u53c8)"
+  },
+  {
+   "id": "Q39241607",
+   "label": "Kawamata",
+   "description": "Japanese family name (\u5ddd\u4fe3)"
+  },
+  {
+   "id": "Q11477703",
+   "label": "Kawamata",
+   "description": "dissolved municipality in Kitasaitama district, Saitama prefecture, Japan"
+  },
+  {
+   "id": "Q90036041",
+   "label": "Kawamata",
+   "description": "undifferentiated Japanese kana surname (\u304b\u308f\u307e\u305f)"
+  },
+  {
+   "id": "Q24872211",
+   "label": "Kawamata",
+   "description": "dissolved municipality in Yatsushiro district, Kumamoto prefecture, Japan"
+  }
+ ],
+ "entity|Korean War": [
+  {
+   "id": "Q8663",
+   "label": "Korean War",
+   "description": "war between North and South Korea, 1950\u20131953"
+  },
+  {
+   "id": "Q2487880",
+   "label": "Korean War Veterans Parkway",
+   "description": "highway in New York"
+  },
+  {
+   "id": "Q7865737",
+   "label": "Korean War order of battle: United States Air Force",
+   "description": "overview about the USAF units and aircraft of the Korean War"
+  },
+  {
+   "id": "Q708847",
+   "label": "Korean War Veterans Memorial",
+   "description": "national memorial in Washington, D.C., United States"
+  },
+  {
+   "id": "Q59480206",
+   "label": "Korean War Collection (NAID 104214901)",
+   "description": "collection in the National Archives and Records Administration's holdings"
+  },
+  {
+   "id": "Q1749621",
+   "label": "Korean officer's helmet",
+   "description": "Korean helmet with a metal cap and leather neck protection"
+  },
+  {
+   "id": "Q11517853",
+   "label": "Korean War special procurement",
+   "description": "Economic boom in Japan during the Korean War"
+  }
+ ],
+ "entity|L-tyrosine": [
+  {
+   "id": "Q188017",
+   "label": "L-tyrosine",
+   "description": "amino acid"
+  },
+  {
+   "id": "Q21101328",
+   "label": "tyrosine-tRNA ligase activity",
+   "description": "Catalysis of the reaction: L-tyrosine + ATP + tRNA(Tyr) = L-tyrosyl-tRNA(Tyr) + AMP + diphosphate + 2 H(+)."
+  },
+  {
+   "id": "Q106345477",
+   "label": "L-tyrosine zwitterion",
+   "description": "chemical compound"
+  },
+  {
+   "id": "Q21172673",
+   "label": "L-tyrosine:2-oxoglutarate aminotransferase activity",
+   "description": "Catalysis of the reaction: L-tyrosine + 2-oxoglutarate = 4-hydroxyphenylpyruvate + L-glutamate."
+  },
+  {
+   "id": "Q14865355",
+   "label": "tyrosinase activity",
+   "description": "Catalysis of the reaction: L-tyrosine + L-DOPA + O2 = L-DOPA + DOPAquinone + H2O."
+  },
+  {
+   "id": "Q24788428",
+   "label": "tyrosine-tRNA ligase",
+   "description": "InterPro Family"
+  },
+  {
+   "id": "Q19805940",
+   "label": "tyrosine O-phosphate",
+   "description": "chemical compound"
+  }
+ ],
+ "entity|Las Vegas": [
+  {
+   "id": "Q23768",
+   "label": "Las Vegas",
+   "description": "seat of Clark County, and largest city in state of Nevada, United States"
+  },
+  {
+   "id": "Q105630079",
+   "label": "Las Vegas",
+   "description": "vocal track by Martin Stenmarck; 2005 studio recording"
+  },
+  {
+   "id": "Q2604935",
+   "label": "Las Vegas",
+   "description": "municipality in Santa B\u00e1rbara Department, Honduras"
+  },
+  {
+   "id": "Q17631803",
+   "label": "Las Vegas",
+   "description": "1986 video game"
+  },
+  {
+   "id": "Q676171",
+   "label": "Las Vegas",
+   "description": "city in and county seat of San Miguel County, New Mexico, United States"
+  },
+  {
+   "id": "Q752234",
+   "label": "Las Vegas",
+   "description": "American television series"
+  },
+  {
+   "id": "Q126184424",
+   "label": "Las Vegas",
+   "description": "1988 video game"
+  }
+ ],
+ "entity|Latin": [
+  {
+   "id": "Q397",
+   "label": "Latin",
+   "description": "Indo-European language of the Italic branch"
+  },
+  {
+   "id": "Q8229",
+   "label": "Latin script",
+   "description": "writing system used to write most Western, Northern and Central European languages"
+  },
+  {
+   "id": "Q37491654",
+   "label": "Latin",
+   "description": "family name"
+  },
+  {
+   "id": "Q19814",
+   "label": "Romance",
+   "description": "group of Indo-European languages, direct descendants of Vulgar Latin"
+  },
+  {
+   "id": "Q6496198",
+   "label": "Latin American Antiquity",
+   "description": "academic journal"
+  },
+  {
+   "id": "Q13410",
+   "label": "Latina",
+   "description": "Italian comune"
+  },
+  {
+   "id": "Q18345375",
+   "label": "Latin music",
+   "description": "musical styles originating from Ibero-America, Spain, Portugal, and the Latino United States, as well as music sung in Spanish or Portuguese"
+  }
+ ],
+ "entity|Lesotho": [
+  {
+   "id": "Q1013",
+   "label": "Lesotho",
+   "description": "sovereign state in southern Africa"
+  },
+  {
+   "id": "Q221093",
+   "label": "Lesotho men's national football team",
+   "description": "men's national association football team representing Lesotho"
+  },
+  {
+   "id": "Q131088",
+   "label": "Lesothosaurus",
+   "description": "Genus of reptiles (fossil)"
+  },
+  {
+   "id": "Q83609715",
+   "label": "Lesotho",
+   "description": "scrapped container ship"
+  },
+  {
+   "id": "Q6531326",
+   "label": "Lesotho Defence Force",
+   "description": "military of Lesotho"
+  },
+  {
+   "id": "Q31405907",
+   "label": "Lesotho",
+   "description": "hill in South Africa"
+  },
+  {
+   "id": "Q28554191",
+   "label": "Lesotho",
+   "description": "painting by Fred Wilson"
+  }
+ ],
+ "entity|Le\u00f3n de Los Aldama": [
+  {
+   "id": "Q189128",
+   "label": "Le\u00f3n de Los Aldama",
+   "description": "city in Guanajuato, Mexico"
+  },
+  {
+   "id": "Q126541683",
+   "label": "Le\u00f3n de los Aldama",
+   "description": "Mexib\u00fas station"
+  },
+  {
+   "id": "Q136086501",
+   "label": "Le\u00f3n de los Aldama Pride",
+   "description": "LGBT event in Le\u00f3n, Mexico"
+  }
+ ],
+ "entity|Lou Harrison": [
+  {
+   "id": "Q590911",
+   "label": "Lou Harrison",
+   "description": "American composer (1917-2003)"
+  },
+  {
+   "id": "Q136280564",
+   "label": "Lou Harrison",
+   "description": "book 2006"
+  },
+  {
+   "id": "Q117801205",
+   "label": "Lou Harrison's Organ Concerto With Percussion Orchestra: The Fusion of Asian Musical Rhetoric With the Western World's Oldest Musical Instrument",
+   "description": "D. Mus. Arts by Yun-Feng Chen, 2005"
+  },
+  {
+   "id": "Q118126992",
+   "label": "Lou Harrison: Complete Harpsichord Works",
+   "description": "scientific article published in 2005"
+  },
+  {
+   "id": "Q126343280",
+   "label": "Lou Harrison: American Musical Maverick. By Bill Alves and Brett Campbell. Bloomington, IN: Indiana University Press, 2017.",
+   "description": "scholarly article"
+  }
+ ],
+ "entity|Luhansk": [
+  {
+   "id": "Q134279",
+   "label": "Luhansk",
+   "description": "city and administrative centre of Luhansk Oblast, Ukraine"
+  },
+  {
+   "id": "Q171965",
+   "label": "Luhansk Oblast",
+   "description": "administrative division (oblast) in eastern Ukraine"
+  },
+  {
+   "id": "Q16746854",
+   "label": "Luhansk People's Republic",
+   "description": "disputed Russian republic in eastern Ukraine"
+  },
+  {
+   "id": "Q4267898",
+   "label": "Luhansk",
+   "description": "railway station"
+  },
+  {
+   "id": "Q4267916",
+   "label": "Luhansk city council",
+   "description": "Local government of Luhansk, Ukraine"
+  },
+  {
+   "id": "Q289728",
+   "label": "Luhanskteplovoz",
+   "description": "company"
+  },
+  {
+   "id": "Q104175567",
+   "label": "Luhansk urban hromada",
+   "description": "hromada in Luhansk, Ukraine"
+  }
+ ],
+ "entity|Luhansk People's Republic": [
+  {
+   "id": "Q16746854",
+   "label": "Luhansk People's Republic",
+   "description": "disputed Russian republic in eastern Ukraine"
+  },
+  {
+   "id": "Q114327408",
+   "label": "Luhansk People's Republic",
+   "description": "2014\u20132022 partially recognised state in Eastern Europe"
+  },
+  {
+   "id": "Q16325269",
+   "label": "LPR People's Militia",
+   "description": "military forces of the Luhansk People's Republic"
+  },
+  {
+   "id": "Q89396061",
+   "label": "COVID-19 pandemic in the Luhansk People's Republic",
+   "description": "ongoing COVID-19 viral pandemic in the Luhansk People's Republic"
+  },
+  {
+   "id": "Q25421130",
+   "label": "Luhansk People's Republic national football team",
+   "description": "Unofficial national football team representing the partially recognised Luhansk People's Republic"
+  },
+  {
+   "id": "Q112961257",
+   "label": "Square of Luhansk People's Republic",
+   "description": "street in Moscow"
+  },
+  {
+   "id": "Q110994125",
+   "label": "Luhansk People's Republic\u2013Russia relations",
+   "description": "bilateral diplomatic relations"
+  }
+ ],
+ "entity|Macanese pataca": [
+  {
+   "id": "Q241214",
+   "label": "Macanese pataca",
+   "description": "currency of Macau"
+  }
+ ],
+ "entity|Margarita Simonyan": [
+  {
+   "id": "Q4419809",
+   "label": "Margarita Simonyan",
+   "description": "Russian journalist"
+  },
+  {
+   "id": "Q100454983",
+   "label": "Margarita A Simonyan",
+   "description": "researcher"
+  }
+ ],
+ "entity|Marvel Cinematic Universe": [
+  {
+   "id": "Q642878",
+   "label": "Marvel Cinematic Universe",
+   "description": "media franchise and shared universe"
+  },
+  {
+   "id": "Q62604229",
+   "label": "Marvel Cinematic Universe Phase Four",
+   "description": "group of superhero films and television series"
+  },
+  {
+   "id": "Q63405798",
+   "label": "The Infinity Saga",
+   "description": "first part of the Marvel Cinematic Universe"
+  },
+  {
+   "id": "Q51963836",
+   "label": "Marvel Cinematic Universe Phase Three",
+   "description": "group of superhero films"
+  },
+  {
+   "id": "Q51963356",
+   "label": "Marvel Cinematic Universe Phase Two",
+   "description": "group of superhero films"
+  },
+  {
+   "id": "Q51963292",
+   "label": "Marvel Cinematic Universe Phase One",
+   "description": "2008\u20132012 group of superhero films"
+  },
+  {
+   "id": "Q104643359",
+   "label": "Marvel Cinematic Universe Phase Five",
+   "description": "group of superhero films and television series"
+  }
+ ],
+ "entity|Mary Ainsworth": [
+  {
+   "id": "Q242625",
+   "label": "Mary Ainsworth",
+   "description": "American-Canadian psychologist & scholar"
+  },
+  {
+   "id": "Q75434309",
+   "label": "Mary Ainsworth",
+   "description": "(1644-1714)"
+  },
+  {
+   "id": "Q125332120",
+   "label": "Mary Ainsworth Award for Excellence in Developmental Science",
+   "description": "American award in developmental psychology"
+  },
+  {
+   "id": "Q38168283",
+   "label": "Mary Ainsworth\u2019s legacy: a systematic review of observational instruments measuring parental sensitivity",
+   "description": "scientific article published on January 1, 2013"
+  },
+  {
+   "id": "Q77168069",
+   "label": "Mary Ainsworth, 1913\u20131999",
+   "description": "scientific article published on 01 September 1999"
+  },
+  {
+   "id": "Q128318765",
+   "label": "MARY AINSWORTH\u2019S ATTACHMENT THEORY AND ITS SIGNIFICANCE FOR UNDERSTANDING A CHILD\u2019S EARLY SOCIAL-EMOTIONAL DEVELOPMENT",
+   "description": "scholarly article"
+  }
+ ],
+ "entity|Microsoft Mobile": [
+  {
+   "id": "Q16538568",
+   "label": "Microsoft Mobile",
+   "description": "Finnish mobile phone manufacturer (2014\u20132017)"
+  },
+  {
+   "id": "Q303993",
+   "label": "Microsoft mobile services",
+   "description": "software"
+  }
+ ],
+ "entity|NAACP Image Award \u2013 Hall of Fame Award": [
+  {
+   "id": "Q6952076",
+   "label": "NAACP Image Award \u2013 Hall of Fame Award",
+   "description": "list of NAACP Image Award recipients"
+  }
+ ],
+ "entity|Nancy Pelosi": [
+  {
+   "id": "Q170581",
+   "label": "Nancy Pelosi",
+   "description": "American politician (born 1940)"
+  },
+  {
+   "id": "Q113375803",
+   "label": "2022 visit by Nancy Pelosi to Taiwan",
+   "description": "diplomatic visit by US House speaker Nancy Pelosi and five other Democratic House members"
+  },
+  {
+   "id": "Q113494376",
+   "label": "Nancy Pelosi's visit to Asia in 2022",
+   "description": "2022 diplomatic visit"
+  },
+  {
+   "id": "Q70418886",
+   "label": "Nancy Pelosi again elected Speaker as 116th U.S. Congress sworn in",
+   "description": "Wikinews article"
+  },
+  {
+   "id": "Q19066995",
+   "label": "Nancy Pelosi and Harry Reid's letter to Barack Obama",
+   "description": "2009 letter"
+  },
+  {
+   "id": "Q18017122",
+   "label": "Nancy Pelosi named new Speaker of the US House of Representatives",
+   "description": "Wikinews article"
+  },
+  {
+   "id": "Q136334325",
+   "label": "Nancy Pelosi and the Affordable Care Act",
+   "description": "chapter by Daniel J. Palazzolo published in \"Case Studies in Political Leadership\""
+  }
+ ],
+ "entity|Nikolay Zhukovsky": [
+  {
+   "id": "Q271956",
+   "label": "Nikolay Zhukovsky",
+   "description": "Russian scientist in mechanics and aerohydrodinamics"
+  },
+  {
+   "id": "Q4181525",
+   "label": "Nikolay Zhukovsky",
+   "description": "Wikimedia disambiguation page"
+  },
+  {
+   "id": "Q4181526",
+   "label": "Nikolay Zhukovsky",
+   "description": ""
+  },
+  {
+   "id": "Q3341647",
+   "label": "Nikolay Zhukovsky",
+   "description": "Russian revolutionary"
+  },
+  {
+   "id": "Q4181529",
+   "label": "Nikolay Zhukovsky",
+   "description": ""
+  },
+  {
+   "id": "Q4181527",
+   "label": "Nikolay Zhukovsky",
+   "description": ""
+  },
+  {
+   "id": "Q15066665",
+   "label": "Nikolay Zhukovsky",
+   "description": ""
+  }
+ ],
+ "entity|Nintendo": [
+  {
+   "id": "Q8093",
+   "label": "Nintendo",
+   "description": "Japanese multinational video game and consumer electronics company"
+  },
+  {
+   "id": "Q172742",
+   "label": "Nintendo Entertainment System",
+   "description": "third generation home video game console"
+  },
+  {
+   "id": "Q8079",
+   "label": "Wii",
+   "description": "seventh-generation home video game console by Nintendo"
+  },
+  {
+   "id": "Q170323",
+   "label": "Nintendo DS",
+   "description": "Nintendo handheld game console"
+  },
+  {
+   "id": "Q58379130",
+   "label": "Nintendo Game Store",
+   "description": "digital media store"
+  },
+  {
+   "id": "Q203597",
+   "label": "Nintendo 3DS",
+   "description": "portable 3D dual-screen handheld by Nintendo"
+  },
+  {
+   "id": "Q56942",
+   "label": "Wii U",
+   "description": "eighth-generation home video game console by Nintendo"
+  }
+ ],
+ "entity|Nobel Prize in Physiology or Medicine": [
+  {
+   "id": "Q80061",
+   "label": "Nobel Prize in Physiology or Medicine",
+   "description": "one of five Nobel Prizes established in 1895 by Alfred Nobel"
+  },
+  {
+   "id": "Q48913757",
+   "label": "Nobel Prize in Physiology or Medicine 2012",
+   "description": ""
+  },
+  {
+   "id": "Q48913738",
+   "label": "Nobel Prize in Physiology or Medicine 2015",
+   "description": ""
+  },
+  {
+   "id": "Q48913745",
+   "label": "Nobel Prize in Physiology or Medicine 2014",
+   "description": ""
+  },
+  {
+   "id": "Q48913751",
+   "label": "Nobel Prize in Physiology or Medicine 2013",
+   "description": ""
+  },
+  {
+   "id": "Q48913727",
+   "label": "Nobel Prize in Physiology or Medicine 2016",
+   "description": ""
+  },
+  {
+   "id": "Q48913666",
+   "label": "Nobel Prize in Physiology or Medicine 2017",
+   "description": ""
+  }
+ ],
+ "entity|Norman Alexander": [
+  {
+   "id": "Q11181006",
+   "label": "Norman Alexander",
+   "description": "physicist"
+  },
+  {
+   "id": "Q78836559",
+   "label": "Norman Alexander",
+   "description": "British artist, 1915-"
+  },
+  {
+   "id": "Q15995767",
+   "label": "Norman Alexander McLarty",
+   "description": "Canadian politician (1889-1945)"
+  },
+  {
+   "id": "Q108752844",
+   "label": "Norman Alexander Coutts",
+   "description": "b.20 January 1935 d.30 April 2014"
+  },
+  {
+   "id": "Q1999439",
+   "label": "Norman Alexander",
+   "description": "German writer"
+  },
+  {
+   "id": "Q7052612",
+   "label": "Norman Miscampbell",
+   "description": "British politician (1925-2007)"
+  },
+  {
+   "id": "Q1373960",
+   "label": "Red Dutton",
+   "description": "Canadian ice hockey player and executive, businessman (1897-1987)"
+  }
+ ],
+ "entity|Northern Cyprus": [
+  {
+   "id": "Q23681",
+   "label": "Northern Cyprus",
+   "description": "de facto state on the island of Cyprus"
+  },
+  {
+   "id": "Q28220514",
+   "label": "2018 Northern Cyprus parliamentary election",
+   "description": "Election in Northern Cyprus"
+  },
+  {
+   "id": "Q603750",
+   "label": "Northern Cyprus national football team",
+   "description": "men's national association football team representing\u00a0Northern Cyprus"
+  },
+  {
+   "id": "Q207518",
+   "label": "flag of Northern Cyprus",
+   "description": "national flag of the Turkish Republic of Northern Cyprus"
+  },
+  {
+   "id": "Q25369215",
+   "label": "Northern Cyprus parliamentary election",
+   "description": ""
+  },
+  {
+   "id": "Q87743173",
+   "label": "COVID-19 pandemic in Northern Cyprus",
+   "description": "viral pandemic in Northern Cyprus"
+  },
+  {
+   "id": "Q7058298",
+   "label": "2005 Northern Cyprus presidential election",
+   "description": ""
+  }
+ ],
+ "entity|Novak Djokovic": [
+  {
+   "id": "Q5812",
+   "label": "Novak Djokovic",
+   "description": "Serbian tennis player (born 1987)"
+  },
+  {
+   "id": "Q6470562",
+   "label": "Novak Djokovic career statistics",
+   "description": "Serbian tennis player (born 1987)"
+  },
+  {
+   "id": "Q121984957",
+   "label": "Novak Djokovi\u010d: p\u0159\u00edb\u011bh tenisov\u00e9ho kr\u00e1le",
+   "description": "book edition published in 2016"
+  },
+  {
+   "id": "Q121994016",
+   "label": "Novak Djokovi\u010d: sportovn\u00ed vyslanec Srbska",
+   "description": "book edition published in 2017"
+  },
+  {
+   "id": "Q124040443",
+   "label": "Novak Djokovic junior years",
+   "description": ""
+  },
+  {
+   "id": "Q128796731",
+   "label": "Novak Djokovic vs. Carlos Alcaraz, 2024 Summer Olympics men's singles tennis tournament, 2024-08-04",
+   "description": ""
+  },
+  {
+   "id": "Q110527270",
+   "label": "Novak Djokovic accused of lying on Australian entry form",
+   "description": ""
+  }
+ ],
+ "entity|Obsessed": [
+  {
+   "id": "Q25096417",
+   "label": "Obsessed",
+   "description": "album by Dan + Shay"
+  },
+  {
+   "id": "Q149358",
+   "label": "Obsessed",
+   "description": "2009 film by Steve Shill"
+  },
+  {
+   "id": "Q1089544",
+   "label": "Obsessed",
+   "description": "2009 single by Mariah Carey"
+  },
+  {
+   "id": "Q16256481",
+   "label": "Obsessed",
+   "description": "2014 film by Kim Dae-woo"
+  },
+  {
+   "id": "Q14701802",
+   "label": "Obsessed",
+   "description": "episode of MacGyver (S7 E3)"
+  },
+  {
+   "id": "Q101789657",
+   "label": "Obsessed",
+   "description": "2020 audio track by Astrid S"
+  },
+  {
+   "id": "Q1929947",
+   "label": "Obsessed by Cruelty",
+   "description": "1986 studio album by Sodom"
+  }
+ ],
+ "entity|Old Toronto": [
+  {
+   "id": "Q919169",
+   "label": "Old Toronto",
+   "description": "city district"
+  },
+  {
+   "id": "Q7085238",
+   "label": "Old Toronto Star Building",
+   "description": "Canadian office tower, completed in 1929, demolished in 1972"
+  }
+ ],
+ "entity|Olympic bronze medal": [
+  {
+   "id": "Q15889643",
+   "label": "Olympic bronze medal",
+   "description": "third-place medal awarded to Olympic Games participants"
+  }
+ ],
+ "entity|Oscar Robertson": [
+  {
+   "id": "Q17717",
+   "label": "Oscar Robertson",
+   "description": "American basketball player (born 1938)"
+  },
+  {
+   "id": "Q47510162",
+   "label": "Oscar Robertson",
+   "description": "painting by Russell Hoban"
+  },
+  {
+   "id": "Q140952184",
+   "label": "Sholto",
+   "description": "British drummer, composer and producer"
+  },
+  {
+   "id": "Q2404133",
+   "label": "Oscar Robertson Trophy",
+   "description": "Award for best college basketball player"
+  }
+ ],
+ "entity|Oscar Wilde": [
+  {
+   "id": "Q30875",
+   "label": "Oscar Wilde",
+   "description": "Irish poet, playwright, and aesthete (1854-1900)"
+  },
+  {
+   "id": "Q454609",
+   "label": "Oscar Underwood",
+   "description": "American politician (1862\u20131929)"
+  },
+  {
+   "id": "Q133606",
+   "label": "Oscar Wilde",
+   "description": "ship built in 2007"
+  },
+  {
+   "id": "Q1416874",
+   "label": "Oscar Wilde",
+   "description": "1960 film by Gregory Ratoff"
+  },
+  {
+   "id": "Q83533338",
+   "label": "Oscar Wilde",
+   "description": "1987 biography"
+  },
+  {
+   "id": "Q63486821",
+   "label": "Oscar Wilde",
+   "description": "operatic character in the opera Oscar"
+  },
+  {
+   "id": "Q7106320",
+   "label": "Oscar Wilde",
+   "description": "play by Leslie and Sewell Stokes"
+  }
+ ],
+ "entity|Ossie Davis": [
+  {
+   "id": "Q515632",
+   "label": "Ossie Davis",
+   "description": "American actor, director, poet, playwright, writer, and social activist (1917-2005)"
+  },
+  {
+   "id": "Q67660186",
+   "label": "OSSIE DAVIS (NAID 134017)",
+   "description": "item in the National Archives and Records Administration's holdings"
+  }
+ ],
+ "entity|Papyrus Oxyrhynchus 223": [
+  {
+   "id": "Q7133388",
+   "label": "Papyrus Oxyrhynchus 223",
+   "description": "Greek papyrus fragment"
+  }
+ ],
+ "entity|Parthian Empire": [
+  {
+   "id": "Q1986139",
+   "label": "Parthian Empire",
+   "description": "second ancient Iranian Empire (247 BC\u2013224 AD)"
+  },
+  {
+   "id": "Q140592603",
+   "label": "Parthian Empire",
+   "description": ""
+  }
+ ],
+ "entity|Paul van Kempen": [
+  {
+   "id": "Q529444",
+   "label": "Paul van Kempen",
+   "description": "Dutch conductor (1893\u20131955)"
+  },
+  {
+   "id": "Q19409036",
+   "label": "Paul van Kempenstraat",
+   "description": "street in Hengelo, the Netherlands"
+  }
+ ],
+ "entity|Philippe Noiret": [],
+ "entity|Philippe Quintais": [
+  {
+   "id": "Q3380589",
+   "label": "Philippe Quintais",
+   "description": "French p\u00e9tanque player"
+  }
+ ],
+ "entity|Ponte Sant'Angelo": [
+  {
+   "id": "Q870476",
+   "label": "Ponte Sant'Angelo",
+   "description": "bridge in Rome"
+  },
+  {
+   "id": "Q56825335",
+   "label": "Ponte Sant'Angelo",
+   "description": "bridge in Venice, Italy"
+  }
+ ],
+ "entity|Prime Minister of Australia": [
+  {
+   "id": "Q319145",
+   "label": "Prime Minister of Australia",
+   "description": "Head of Government of Australia"
+  }
+ ],
+ "entity|Pulitzer Prize for Biography": [
+  {
+   "id": "Q285117",
+   "label": "Pulitzer Prize for Biography",
+   "description": "American award for distinguished biographies"
+  }
+ ],
+ "entity|Quechua": [
+  {
+   "id": "Q5218",
+   "label": "Quechua",
+   "description": "language family spoken primarily in the Andes region of South America"
+  },
+  {
+   "id": "Q87021755",
+   "label": "Quechua",
+   "description": "genus of gastropod"
+  },
+  {
+   "id": "Q65155150",
+   "label": "Quechua",
+   "description": "genus of plant"
+  },
+  {
+   "id": "Q134936",
+   "label": "Quechua people",
+   "description": "ethnic group indigenous to South America"
+  },
+  {
+   "id": "Q1740805",
+   "label": "Northern Quichua",
+   "description": "Quechuan language of Ecuador and Colombia"
+  },
+  {
+   "id": "Q118829945",
+   "label": "Quechua",
+   "description": ""
+  },
+  {
+   "id": "Q2759606",
+   "label": "Quechua",
+   "description": "French outdoor sport brand"
+  }
+ ],
+ "entity|Richard Dawkins": [
+  {
+   "id": "Q44461",
+   "label": "Richard Dawkins",
+   "description": "English ethologist, evolutionary biologist and author (born 1941)"
+  },
+  {
+   "id": "Q75655936",
+   "label": "Richard Dawkins",
+   "description": "person (1768\u20131848)"
+  },
+  {
+   "id": "Q76287686",
+   "label": "Richard Dawkins",
+   "description": "(died 1705)"
+  },
+  {
+   "id": "Q76012208",
+   "label": "Richard Dawkins",
+   "description": "Peerage person ID=466448"
+  },
+  {
+   "id": "Q76012209",
+   "label": "Richard Dawkins",
+   "description": "Peerage person ID=466449"
+  },
+  {
+   "id": "Q76287691",
+   "label": "Richard Dawkins",
+   "description": "(born 1726)"
+  },
+  {
+   "id": "Q12981673",
+   "label": "Richard Dawkins Award",
+   "description": "award given to individuals that raised public consciousness of atheism"
+  }
+ ],
+ "entity|Robin Hood": [
+  {
+   "id": "Q50100143",
+   "label": "Robin Hood",
+   "description": "1983 video game"
+  },
+  {
+   "id": "Q66436623",
+   "label": "Robin Hood",
+   "description": "1988 ; Systems Editoriale s.r.l./Commodore (Software) Club ; Shoot'em Up - SEUCK"
+  },
+  {
+   "id": "Q122634",
+   "label": "Robin Hood",
+   "description": "heroic outlaw in English folklore, a highly skilled archer and swordsman"
+  },
+  {
+   "id": "Q19090",
+   "label": "Robin Hood",
+   "description": "1973 animated film directed by Wolfgang Reitherman"
+  },
+  {
+   "id": "Q132798385",
+   "label": "Robin Hood",
+   "description": "television series"
+  },
+  {
+   "id": "Q40028",
+   "label": "Robin Hood",
+   "description": "British television programme (2006\u20132009)"
+  },
+  {
+   "id": "Q113860629",
+   "label": "Robin Hood",
+   "description": "New Zealand diver and diving administrator"
+  }
+ ],
+ "entity|Russian Academy of Sciences": [
+  {
+   "id": "Q83172",
+   "label": "Russian Academy of Sciences",
+   "description": "academy of sciences"
+  },
+  {
+   "id": "Q15766928",
+   "label": "Russian Academy of Sciences. Biology Bulletin",
+   "description": "scientific journal"
+  },
+  {
+   "id": "Q6786833",
+   "label": "Mathematical Notes",
+   "description": "journal"
+  },
+  {
+   "id": "Q15755815",
+   "label": "Russian Academy of Sciences. Izvestiya. Atmospheric and Oceanic Physics",
+   "description": "journal"
+  },
+  {
+   "id": "Q248326",
+   "label": "Nauka",
+   "description": "Soviet and Russian publishing house"
+  },
+  {
+   "id": "Q15756652",
+   "label": "Russian Academy of Sciences. Oceanology",
+   "description": "journal"
+  },
+  {
+   "id": "Q15757367",
+   "label": "Russian Academy of Sciences. Izvestiya. Physics of the Solid Earth",
+   "description": "journal"
+  }
+ ],
+ "entity|Russian Soviet Federative Socialist Republic": [
+  {
+   "id": "Q2184",
+   "label": "Russian Soviet Federative Socialist Republic",
+   "description": "constituent republic of the Soviet Union (1922\u20131991)"
+  },
+  {
+   "id": "Q2305208",
+   "label": "Russian Socialist Federative Soviet Republic",
+   "description": "1918\u20131922 sovereign state in Eurasia"
+  },
+  {
+   "id": "Q47214",
+   "label": "flag of the Russian Soviet Federative Socialist Republic",
+   "description": "flag used by the Russian SFSR between 1954 and 1991"
+  },
+  {
+   "id": "Q20754884",
+   "label": "Russian Soviet Federative Socialist Republic Law",
+   "description": ""
+  },
+  {
+   "id": "Q24701084",
+   "label": "flag of the Russian Soviet Federative Socialist Republic",
+   "description": "flag used by the Russian SFSR in 1991"
+  },
+  {
+   "id": "Q24701080",
+   "label": "flag of the Russian Soviet Federative Socialist Republic",
+   "description": "flag used by the Russian SFSR between 1937 and 1954"
+  },
+  {
+   "id": "Q15905343",
+   "label": "Russian Soviet Federative Socialist Republic Law on elections of President of the RSFSR",
+   "description": ""
+  }
+ ],
+ "entity|Ryan Lochte": [
+  {
+   "id": "Q201517",
+   "label": "Ryan Lochte",
+   "description": "American swimmer"
+  },
+  {
+   "id": "Q17089760",
+   "label": "What Would Ryan Lochte Do?",
+   "description": "American reality television series"
+  }
+ ],
+ "entity|Saint Vincent": [
+  {
+   "id": "Q35436",
+   "label": "Saint-Vincent",
+   "description": "Italian municipality in the Aosta Valley"
+  },
+  {
+   "id": "Q736258",
+   "label": "Saint-Vincent",
+   "description": "commune in Pyr\u00e9n\u00e9es-Atlantiques, France"
+  },
+  {
+   "id": "Q1322789",
+   "label": "Saint-Vincent",
+   "description": "commune in Haute-Loire, France"
+  },
+  {
+   "id": "Q757",
+   "label": "Saint Vincent and the Grenadines",
+   "description": "island sovereign state in the Caribbean Sea"
+  },
+  {
+   "id": "Q273994",
+   "label": "Saint-Vincent",
+   "description": "commune in Puy-de-D\u00f4me, France"
+  },
+  {
+   "id": "Q1428774",
+   "label": "Saint-Vincent",
+   "description": "commune in Haute-Garonne, France"
+  },
+  {
+   "id": "Q1411797",
+   "label": "Saint-Vincent-sur-Graon",
+   "description": "commune in Vend\u00e9e, France"
+  }
+ ],
+ "entity|Sarah Silverman": [
+  {
+   "id": "Q229013",
+   "label": "Sarah Silverman",
+   "description": "American comedian, actress, and writer"
+  },
+  {
+   "id": "Q137057343",
+   "label": "Sarah Silverman",
+   "description": "Polish-Jewish immigrant"
+  },
+  {
+   "id": "Q110037437",
+   "label": "Sarah Silverman/Maroon 5",
+   "description": "episode of Saturday Night Live (S40 E2)"
+  },
+  {
+   "id": "Q104834461",
+   "label": "Sarah Silverman filmography",
+   "description": ""
+  },
+  {
+   "id": "Q1786313",
+   "label": "The Sarah Silverman Program",
+   "description": "television series"
+  },
+  {
+   "id": "Q7422770",
+   "label": "Sarah Silverman: Jesus Is Magic",
+   "description": "2005 film by Liam Lynch"
+  },
+  {
+   "id": "Q65100450",
+   "label": "Sarah Silverman A Speck of Dust",
+   "description": "2017 film directed by Liam Lynch"
+  }
+ ],
+ "entity|Saul Kripke": [
+  {
+   "id": "Q298521",
+   "label": "Saul Kripke",
+   "description": "American philosopher and logician (1940\u20132022)"
+  },
+  {
+   "id": "Q136275502",
+   "label": "Saul Kripke",
+   "description": "book 2004"
+  },
+  {
+   "id": "Q123487083",
+   "label": "Saul Kripke, Philosopher Who Found Truths in Semantics, Dies at 81",
+   "description": "The New York Times article (September 21, 2022)"
+  },
+  {
+   "id": "Q58502920",
+   "label": "Saul Kripke",
+   "description": "scholarly article"
+  }
+ ],
+ "entity|Scott Denning": [
+  {
+   "id": "Q18157846",
+   "label": "Scott Denning",
+   "description": "atmospheric scientist"
+  }
+ ],
+ "entity|Scythians": [
+  {
+   "id": "Q131802",
+   "label": "Scythians",
+   "description": "ancient Iranian nomadic people"
+  },
+  {
+   "id": "Q21996435",
+   "label": "Scythians",
+   "description": "encyclopedic article by Nikifor"
+  },
+  {
+   "id": "Q135906279",
+   "label": "Scythians in Donbass",
+   "description": ""
+  },
+  {
+   "id": "Q27055420",
+   "label": "Scythians in the Bible",
+   "description": ""
+  },
+  {
+   "id": "Q60962076",
+   "label": "Scythians",
+   "description": "article"
+  },
+  {
+   "id": "Q60206687",
+   "label": "Scythians and Greeks: a Survey of Ancient History and Archaeology on the North Coast of the Euxine from the Danube to the Caucasus. By E. H. Minns, M.A. Large 4to, 720 pp., 9 Maps, 9 Plates, 351 Illustrations in the Text. Cambridge: at the University",
+   "description": "scholarly article published in November 1915"
+  },
+  {
+   "id": "Q59740606",
+   "label": "Scythians and Greeks. Ellis H. Minns",
+   "description": ""
+  }
+ ],
+ "entity|Serbia": [
+  {
+   "id": "Q403",
+   "label": "Serbia",
+   "description": "country in Southeast Europe"
+  },
+  {
+   "id": "Q9299",
+   "label": "Serbian",
+   "description": "standardized variety of Serbo-Croatian language used by Serbs"
+  },
+  {
+   "id": "Q200386",
+   "label": "Serbian Wikipedia",
+   "description": "Serbian-language edition of Wikipedia"
+  },
+  {
+   "id": "Q37438143",
+   "label": "Serbia",
+   "description": "family name"
+  },
+  {
+   "id": "Q21281287",
+   "label": "Serbian Wikinews",
+   "description": "Serbian language edition of Wikinews"
+  },
+  {
+   "id": "Q9301",
+   "label": "Serbo-Croatian",
+   "description": "South Slavic language"
+  },
+  {
+   "id": "Q182740",
+   "label": "Serbia men's national football team",
+   "description": "men's national association football team representing Serbia"
+  }
+ ],
+ "entity|Skype": [
+  {
+   "id": "Q40984",
+   "label": "Skype",
+   "description": "former telecommunications software service"
+  },
+  {
+   "id": "Q246125",
+   "label": "Skype Technologies",
+   "description": "subsidiary of Microsoft, which is developing Skype"
+  },
+  {
+   "id": "Q20370988",
+   "label": "sailor Diana",
+   "description": "cat"
+  },
+  {
+   "id": "Q1416838",
+   "label": "Skype for Business",
+   "description": "instant messaging client"
+  },
+  {
+   "id": "Q125624792",
+   "label": "Skypet Saingthong",
+   "description": "badminton player"
+  },
+  {
+   "id": "Q135190666",
+   "label": "Skypet",
+   "description": "male given name"
+  },
+  {
+   "id": "Q3962656",
+   "label": "Skypecasting",
+   "description": ""
+  }
+ ],
+ "entity|South Chungcheong": [
+  {
+   "id": "Q41070",
+   "label": "South Chungcheong",
+   "description": "province of South Korea"
+  },
+  {
+   "id": "Q50558073",
+   "label": "South Chungcheong Province councilor",
+   "description": ""
+  },
+  {
+   "id": "Q16100275",
+   "label": "South Chungcheong Province municipal council",
+   "description": ""
+  }
+ ],
+ "entity|SpaceX": [
+  {
+   "id": "Q193701",
+   "label": "SpaceX",
+   "description": "American spaceflight and AI company"
+  },
+  {
+   "id": "Q7572748",
+   "label": "Spacex",
+   "description": "contemporary art gallery in Devon, England"
+  },
+  {
+   "id": "Q236448",
+   "label": "Dragon",
+   "description": "reusable cargo spacecraft by SpaceX"
+  },
+  {
+   "id": "Q19867977",
+   "label": "Starlink",
+   "description": "satellite constellation; space-based internet communication system"
+  },
+  {
+   "id": "Q62833385",
+   "label": "Starship",
+   "description": "super heavy-lift reusable launch vehicle"
+  },
+  {
+   "id": "Q47246047",
+   "label": "Crew Dragon Demo-2",
+   "description": "crewed demonstration flight operated by SpaceX on behalf of NASA"
+  },
+  {
+   "id": "Q56042850",
+   "label": "SpaceX Crew-1",
+   "description": "NASA Commercial Crew Program mission to the International Space Station"
+  }
+ ],
+ "entity|Stanislav Cherchesov": [
+  {
+   "id": "Q699557",
+   "label": "Stanislav Cherchesov",
+   "description": "Russian association football player and manager"
+  },
+  {
+   "id": "Q55633880",
+   "label": "Stanislav Cherchesov",
+   "description": "Russian association football player"
+  },
+  {
+   "id": "Q113509181",
+   "label": "Stanislav Cherchesov",
+   "description": "Wikimedia disambiguation page"
+  }
+ ],
+ "entity|Steven Pinker": [
+  {
+   "id": "Q212730",
+   "label": "Steven Pinker",
+   "description": "Canadian-American cognitive psychologist, linguist, and author, an advocate of evolutionary psychology and the computational theory of the mind"
+  },
+  {
+   "id": "Q22978326",
+   "label": "Steven Pinker: What our language habits reveal",
+   "description": "TEDGlobal 2005"
+  },
+  {
+   "id": "Q22992416",
+   "label": "Steven Pinker: Human nature and the blank slate",
+   "description": "TED2003"
+  },
+  {
+   "id": "Q22988215",
+   "label": "Steven Pinker and Rebecca Newberger Goldstein: The long reach of reason",
+   "description": "TED2012"
+  },
+  {
+   "id": "Q110189168",
+   "label": "Lex Fridman Podcast Steven Pinker: AI in the Age of Reason",
+   "description": "podcast episode of the Lex Fridman Podcast"
+  },
+  {
+   "id": "Q114423266",
+   "label": "Steven D Pinkerton",
+   "description": "researcher"
+  },
+  {
+   "id": "Q22979980",
+   "label": "Steven Pinker: The surprising decline in violence",
+   "description": "TED2007"
+  }
+ ],
+ "entity|Sun": [
+  {
+   "id": "Q14647",
+   "label": "Sun Microsystems",
+   "description": "defunct American computer hardware and software company"
+  },
+  {
+   "id": "Q132",
+   "label": "Sunday",
+   "description": "day of the week"
+  },
+  {
+   "id": "Q525",
+   "label": "Sun",
+   "description": "star at the centre of the Solar System"
+  },
+  {
+   "id": "Q28039407",
+   "label": "Sun",
+   "description": "family name"
+  },
+  {
+   "id": "Q3543591",
+   "label": "Sun",
+   "description": "Chinese family name (\u5b6b / \u5b59)"
+  },
+  {
+   "id": "Q98777267",
+   "label": "Sun",
+   "description": "male given name"
+  },
+  {
+   "id": "Q7462",
+   "label": "Song dynasty",
+   "description": "former imperial dynasty of China (960\u20131279)"
+  }
+ ],
+ "entity|Tarim Basin": [
+  {
+   "id": "Q216622",
+   "label": "Tarim Basin",
+   "description": "geographical area in Central Asia"
+  },
+  {
+   "id": "Q102173327",
+   "label": "Tarim Basin deciduous forests and steppe",
+   "description": "terrestrial ecoregion in western China"
+  },
+  {
+   "id": "Q124464463",
+   "label": "Tarim Basin Deciduous Forests and Steppe Ecoregion",
+   "description": "One Earth Ecoregion"
+  }
+ ],
+ "entity|Technical University of Munich": [
+  {
+   "id": "Q157808",
+   "label": "Technical University of Munich",
+   "description": "public research university in Germany"
+  },
+  {
+   "id": "Q115454406",
+   "label": "Technical University of Munich, Chair of Geoinformatics",
+   "description": "geoinforamtics chair of TUM"
+  },
+  {
+   "id": "Q42023455",
+   "label": "Technical University of Munich open access policy",
+   "description": ""
+  }
+ ],
+ "entity|The Meaning of Matthew": [
+  {
+   "id": "Q16205446",
+   "label": "The Meaning of Matthew",
+   "description": "2009 novel by Judy Shepard"
+  }
+ ],
+ "entity|The Shining": [
+  {
+   "id": "Q186341",
+   "label": "The Shining",
+   "description": "1980 film directed by Stanley Kubrick"
+  },
+  {
+   "id": "Q470937",
+   "label": "The Shining",
+   "description": "1977 novel by Stephen King"
+  },
+  {
+   "id": "Q1811161",
+   "label": "The Shining",
+   "description": "1997 American television miniseries"
+  },
+  {
+   "id": "Q25218646",
+   "label": "The Shining",
+   "description": "American opera based on the novel by Stephen King"
+  },
+  {
+   "id": "Q96251187",
+   "label": "The Shining",
+   "description": "horror media franchise"
+  },
+  {
+   "id": "Q5229426",
+   "label": "The Shining",
+   "description": "album by J Dilla"
+  },
+  {
+   "id": "Q16955658",
+   "label": "The Shining",
+   "description": "album by RBX"
+  }
+ ],
+ "entity|The Smurfs": [
+  {
+   "id": "Q12005929",
+   "label": "The Smurfs",
+   "description": "1994 video game"
+  },
+  {
+   "id": "Q67130213",
+   "label": "The Smurfs",
+   "description": "1999 video game"
+  },
+  {
+   "id": "Q3989355",
+   "label": "The Smurfs",
+   "description": "2011 video game"
+  },
+  {
+   "id": "Q11221",
+   "label": "The Smurfs",
+   "description": "Belgian comic and television franchise"
+  },
+  {
+   "id": "Q1216045",
+   "label": "The Smurfs",
+   "description": "1981 animated television series"
+  },
+  {
+   "id": "Q56811262",
+   "label": "The Smurfs",
+   "description": "cartoon musical group based on The Smurfs"
+  },
+  {
+   "id": "Q4537599",
+   "label": "The Smurfs",
+   "description": "comic series"
+  }
+ ],
+ "entity|The Spectacles": [
+  {
+   "id": "Q7765763",
+   "label": "The Spectacles",
+   "description": "short story by Edgar Allan Poe"
+  },
+  {
+   "id": "Q62026420",
+   "label": "The Spectacles",
+   "description": "combination of three rock formations in Arches National Park in Grand County, Utah, United States"
+  },
+  {
+   "id": "Q7765761",
+   "label": "The Spectacles",
+   "description": "suburb of Perth, Western Australia"
+  },
+  {
+   "id": "Q62026550",
+   "label": "North Window",
+   "description": "natural arch in Arches National Park in Grand County, Utah, United States"
+  },
+  {
+   "id": "Q62026549",
+   "label": "South Window",
+   "description": "natural arch in Arches National Park in Grand County, Utah, United States"
+  },
+  {
+   "id": "Q22701743",
+   "label": "The Spectacles",
+   "description": "island group in Ontario, Canada"
+  },
+  {
+   "id": "Q26338960",
+   "label": "The Spectacles",
+   "description": "building in Boughton, Daventry, Northamptonshire, England, UK"
+  }
+ ],
+ "entity|Toronto": [
+  {
+   "id": "Q172",
+   "label": "Toronto",
+   "description": "capital and largest city of the province of Ontario, Canada"
+  },
+  {
+   "id": "Q203384",
+   "label": "Toronto Maple Leafs",
+   "description": "National Hockey League franchise in Toronto, Ontario, Canada"
+  },
+  {
+   "id": "Q132880",
+   "label": "Toronto Raptors",
+   "description": "National Basketball Association team in Toronto, Ontario"
+  },
+  {
+   "id": "Q327238",
+   "label": "Toronto FC",
+   "description": "soccer club in Toronto, Ontario, Canada"
+  },
+  {
+   "id": "Q117037112",
+   "label": "Toronto",
+   "description": "oil tanker built in 2005"
+  },
+  {
+   "id": "Q141104589",
+   "label": "Toronto",
+   "description": "episode of Interview with the Vampire (S3 E3)"
+  },
+  {
+   "id": "Q736775",
+   "label": "Toronto",
+   "description": "city in Jefferson County, Ohio, United States"
+  }
+ ],
+ "entity|Trishira": [
+  {
+   "id": "Q7844041",
+   "label": "Trishira",
+   "description": "rakshasa in Hindu mythology"
+  },
+  {
+   "id": "Q2118331",
+   "label": "Trisiras",
+   "description": "three-headed son of Tvashta"
+  },
+  {
+   "id": "Q15851539",
+   "label": "Trishiras",
+   "description": "Wikimedia disambiguation page"
+  }
+ ],
+ "entity|Tr\u1ea7n Anh H\u00f9ng": [
+  {
+   "id": "Q557546",
+   "label": "Tr\u1ea7n Anh H\u00f9ng",
+   "description": "French-Vietnamese filmmaker (born 1962)"
+  }
+ ],
+ "entity|Uday Hussein": [
+  {
+   "id": "Q311916",
+   "label": "Uday Hussein",
+   "description": "Iraqi politician and son of Saddam Hussein (1964\u20132003)"
+  }
+ ],
+ "entity|University of Chicago": [
+  {
+   "id": "Q131252",
+   "label": "University of Chicago",
+   "description": "private university in Chicago, Illinois"
+  },
+  {
+   "id": "Q1036763",
+   "label": "University of Chicago Law School",
+   "description": "law school"
+  },
+  {
+   "id": "Q1814982",
+   "label": "University of Chicago Press",
+   "description": "publisher in the United States"
+  },
+  {
+   "id": "Q2963304",
+   "label": "Booth School of Business",
+   "description": "graduate business school located in Chicago, Illinois, at the University of Chicago"
+  },
+  {
+   "id": "Q7245998",
+   "label": "Pritzker School of Medicine",
+   "description": "medical school at the University of Chicago"
+  },
+  {
+   "id": "Q7895258",
+   "label": "UChicago Medicine",
+   "description": "American medical network (2006-)"
+  },
+  {
+   "id": "Q3551351",
+   "label": "University of Chicago Laboratory Schools",
+   "description": "private secondary school in Chicago, United States"
+  }
+ ],
+ "entity|Vilnius": [
+  {
+   "id": "Q216",
+   "label": "Vilnius",
+   "description": "capital and largest city of Lithuania"
+  },
+  {
+   "id": "Q389852",
+   "label": "Vilnius Gediminas Technical University",
+   "description": "public university in Vilnius, Lithuania"
+  },
+  {
+   "id": "Q188061",
+   "label": "Vilnius County",
+   "description": "county of Lithuania"
+  },
+  {
+   "id": "Q658192",
+   "label": "Vilnius University",
+   "description": "public research university in Vilnius, Lithuania"
+  },
+  {
+   "id": "Q118903",
+   "label": "Vilnius District Municipality",
+   "description": "district municipality of Lithuania"
+  },
+  {
+   "id": "Q150801",
+   "label": "3072 Vilnius",
+   "description": "asteroid"
+  },
+  {
+   "id": "Q453936",
+   "label": "Vilnius train station",
+   "description": "railway station in Lithuania"
+  }
+ ],
+ "entity|Vostok": [
+  {
+   "id": "Q624038",
+   "label": "Vostok",
+   "description": "type of spacecraft built by the Soviet Union"
+  },
+  {
+   "id": "Q15765185",
+   "label": "Vostok: Afro-aziatskie obshchestva - istoria i sovremennost'",
+   "description": "academic journal"
+  },
+  {
+   "id": "Q841262",
+   "label": "Vostok",
+   "description": "rocket family"
+  },
+  {
+   "id": "Q1959497",
+   "label": "Vostok",
+   "description": "Russian ship"
+  },
+  {
+   "id": "Q623873",
+   "label": "Vostok programme",
+   "description": "Soviet human spaceflight project"
+  },
+  {
+   "id": "Q182524",
+   "label": "Vostok 1",
+   "description": "spaceflight of the Vostok programme"
+  },
+  {
+   "id": "Q65113377",
+   "label": "Vostok Inc.",
+   "description": "2017 video game"
+  }
+ ],
+ "entity|W. S. Gilbert": [
+  {
+   "id": "Q348513",
+   "label": "W. S. Gilbert",
+   "description": "English dramatist, poet and illustrator (1836\u20131911)"
+  },
+  {
+   "id": "Q1146602",
+   "label": "Gilbert and Sullivan",
+   "description": "British duo, Victorian-era theatrical partnership"
+  },
+  {
+   "id": "Q27081628",
+   "label": "W. S. Gilbert Memorial",
+   "description": "memorial on the Victoria Embankment, London"
+  },
+  {
+   "id": "Q7945966",
+   "label": "W. S. Gilbert bibliography",
+   "description": ""
+  }
+ ],
+ "entity|WWE Raw": [
+  {
+   "id": "Q18754",
+   "label": "WWE Raw",
+   "description": "American professional wrestling television program produced by WWE"
+  },
+  {
+   "id": "Q2636640",
+   "label": "WWE Raw",
+   "description": "2002 video game"
+  },
+  {
+   "id": "Q535344",
+   "label": "WWE Raw 2",
+   "description": "2003 video game"
+  },
+  {
+   "id": "Q1050380",
+   "label": "WWE Women's Championship",
+   "description": "former championship created by the National Wrestling Alliance and promoted by the American professional wrestling promotion WWE"
+  },
+  {
+   "id": "Q85814067",
+   "label": "WWE Raw Homecoming",
+   "description": "professional wrestling event"
+  },
+  {
+   "id": "Q568252",
+   "label": "WWE Raw 1000",
+   "description": "professional wrestling television special"
+  },
+  {
+   "id": "Q123991195",
+   "label": "WWE Raw: Day 1",
+   "description": "professional wrestling television special"
+  }
+ ],
+ "entity|William Jennings Bryan": [
+  {
+   "id": "Q205282",
+   "label": "William Jennings Bryan",
+   "description": "American politician (1860\u20131925)"
+  },
+  {
+   "id": "Q1477716",
+   "label": "William Jennings Bryan Dorn",
+   "description": "(1916-2005) South Carolina 3rd District Congressman, 1947-1949 and 1951-1975"
+  },
+  {
+   "id": "Q4980029",
+   "label": "Bryan College",
+   "description": "Christian liberal arts college in Dayton, TN, US"
+  },
+  {
+   "id": "Q100758788",
+   "label": "William Jennings Bryan Jr.",
+   "description": "(1889-1978) American lawyer"
+  },
+  {
+   "id": "Q17515368",
+   "label": "William Jennings Bryan Dorn Veterans Affairs Medical Center",
+   "description": "hospital in South Carolina, United States"
+  },
+  {
+   "id": "Q8013553",
+   "label": "William Jennings Bryan presidential campaign, 1896",
+   "description": "unsuccessful Democratic contender for U.S. president"
+  },
+  {
+   "id": "Q7540583",
+   "label": "Slim Harriss",
+   "description": "American baseball player (1897-1963)"
+  }
+ ],
+ "entity|Yuri Gagarin": [
+  {
+   "id": "Q7327",
+   "label": "Yuri Gagarin",
+   "description": "Soviet pilot and cosmonaut, first human in space (1934\u20131968)"
+  },
+  {
+   "id": "Q133151790",
+   "label": "Yuri Gagarin",
+   "description": "vice mayor at Prabumulih city 2003-2008"
+  },
+  {
+   "id": "Q47510105",
+   "label": "Yuri Gagarin",
+   "description": "painting by Boris Chaliapin"
+  },
+  {
+   "id": "Q4534865",
+   "label": "Yuri Gagarin",
+   "description": "1969 film"
+  },
+  {
+   "id": "Q20266534",
+   "label": "Yuri Gagarin",
+   "description": "painting by Ellsworth Kelly"
+  },
+  {
+   "id": "Q4408464",
+   "label": "Saratov State Technical University",
+   "description": "university in Saratov, Russia"
+  },
+  {
+   "id": "Q730282",
+   "label": "Yuri Gagarin Cosmonaut Training Center",
+   "description": "cosmonaut training organization"
+  }
+ ],
+ "entity|academy": [
+  {
+   "id": "Q4671329",
+   "label": "academy school",
+   "description": "British school operated in the private sector and directly funded by central government"
+  },
+  {
+   "id": "Q955824",
+   "label": "learned society",
+   "description": "organization that exists to promote an academic discipline or profession"
+  },
+  {
+   "id": "Q162633",
+   "label": "academy",
+   "description": "institution of higher learning"
+  },
+  {
+   "id": "Q4671331",
+   "label": "Academy",
+   "description": "1986 video game"
+  },
+  {
+   "id": "Q4671333",
+   "label": "Academy",
+   "description": "2007 film"
+  },
+  {
+   "id": "Q189441",
+   "label": "Jagiellonian University",
+   "description": "Polish higher education institution"
+  },
+  {
+   "id": "Q70363582",
+   "label": "academies and institutes",
+   "description": "organizations representing specialized fields and accepted as authoritative"
+  }
+ ],
+ "entity|acetic acid exposure": [
+  {
+   "id": "Q21167527",
+   "label": "acetic acid exposure",
+   "description": "hazardous chemical exposure"
+  }
+ ],
+ "entity|architectural landmark": [
+  {
+   "id": "Q2319498",
+   "label": "architectural landmark",
+   "description": "building that is easily recognizable and/or well known"
+  },
+  {
+   "id": "Q138744353",
+   "label": "architectural landmark",
+   "description": ""
+  }
+ ],
+ "entity|bhut jolokia": [
+  {
+   "id": "Q426850",
+   "label": "bhut jolokia",
+   "description": "chili pepper cultivar cultivated in Northeast India"
+  },
+  {
+   "id": "Q6958285",
+   "label": "Naga Morich",
+   "description": "chili pepper cultivated in Northeast India and Bangladesh"
+  }
+ ],
+ "entity|blackberry": [
+  {
+   "id": "Q171819",
+   "label": "BlackBerry",
+   "description": "line of wireless handheld devices and services"
+  },
+  {
+   "id": "Q502121",
+   "label": "BlackBerry",
+   "description": "enterprise software and the Internet of things company"
+  },
+  {
+   "id": "Q602740",
+   "label": "Rubus",
+   "description": "genus of plants"
+  },
+  {
+   "id": "Q84790062",
+   "label": "BlackBerry",
+   "description": "mobile devices brand"
+  },
+  {
+   "id": "Q161040",
+   "label": "Morus nigra",
+   "description": "species of plant"
+  },
+  {
+   "id": "Q13180",
+   "label": "Rubus subg. Rubus",
+   "description": "subgenus of plants"
+  },
+  {
+   "id": "Q19842373",
+   "label": "blackberry",
+   "description": "fruit of Rubus species"
+  }
+ ],
+ "entity|brand": [
+  {
+   "id": "Q15975618",
+   "label": "August Brand",
+   "description": "German philologist and botanist (1863-1930)"
+  },
+  {
+   "id": "Q897716",
+   "label": "Brand",
+   "description": "family name"
+  },
+  {
+   "id": "Q431289",
+   "label": "brand",
+   "description": "identification for a good or service"
+  },
+  {
+   "id": "Q701019",
+   "label": "Brand",
+   "description": "municipality in Bludenz District, Vorarlberg, Austria"
+  },
+  {
+   "id": "Q151287",
+   "label": "Brand",
+   "description": "district of Aachen, Germany"
+  },
+  {
+   "id": "Q3931",
+   "label": "Brandenburg an der Havel",
+   "description": "city in Brandenburg, Germany"
+  },
+  {
+   "id": "Q29551902",
+   "label": "Brand",
+   "description": "male given name"
+  }
+ ],
+ "entity|circular saw model": [
+  {
+   "id": "Q23811261",
+   "label": "circular saw model",
+   "description": "specific variety of circular saw"
+  }
+ ],
+ "entity|classical music": [
+  {
+   "id": "Q9730",
+   "label": "classical music",
+   "description": "broad tradition of Western art music"
+  },
+  {
+   "id": "Q1583807",
+   "label": "art music",
+   "description": "serious music, as opposed to popular or folk music; meta-genre covering global classical music developments"
+  },
+  {
+   "id": "Q17723",
+   "label": "Classical period",
+   "description": "genre of Western music (c. 1730\u20131820)"
+  },
+  {
+   "id": "Q140245630",
+   "label": "Classical Music",
+   "description": ""
+  },
+  {
+   "id": "Q140265916",
+   "label": "Classical Music",
+   "description": ""
+  },
+  {
+   "id": "Q21680663",
+   "label": "classical composer",
+   "description": "person who composes classical music"
+  },
+  {
+   "id": "Q163775",
+   "label": "medieval music",
+   "description": "Western music written during the Middle Ages"
+  }
+ ],
+ "entity|comic book series": [
+  {
+   "id": "Q14406742",
+   "label": "comic book series",
+   "description": "group of published comic stories typically sharing the same title"
+  },
+  {
+   "id": "Q140087772",
+   "label": "comic based on a literary work",
+   "description": ""
+  },
+  {
+   "id": "Q140087783",
+   "label": "comic based on a audiovisual work",
+   "description": ""
+  }
+ ],
+ "entity|coup d'\u00e9tat": [
+  {
+   "id": "Q45382",
+   "label": "coup d'\u00e9tat",
+   "description": "act in which a segment of the military or government elites uses force to illegally and overtly overthrow an incumbent government in an attempt to seize state power"
+  },
+  {
+   "id": "Q125066474",
+   "label": "Coup d'Etat",
+   "description": "2012 Del Rey edition"
+  },
+  {
+   "id": "Q114552339",
+   "label": "Coup d'\u00c9tat",
+   "description": "episode of Falcon Crest (S3 E12)"
+  },
+  {
+   "id": "Q14931242",
+   "label": "Coup D'Etat",
+   "description": "2013 studio album by G-Dragon"
+  },
+  {
+   "id": "Q106715701",
+   "label": "Coup d'\u00e9tat",
+   "description": "episode of Historiepodden published on 15 May 2016 (E104)"
+  },
+  {
+   "id": "Q25906438",
+   "label": "attempted coup d'\u00e9tat",
+   "description": "unsuccessful attempt to depose a government by means considered as undemocratic or illegal"
+  },
+  {
+   "id": "Q29415905",
+   "label": "Coup D'etat",
+   "description": "episode of Stargate Atlantis (S2 E17)"
+  }
+ ],
+ "entity|dress": [
+  {
+   "id": "Q11460",
+   "label": "clothing",
+   "description": "covering worn on the body"
+  },
+  {
+   "id": "Q200539",
+   "label": "dress",
+   "description": "garment for adults, children, or infants consisting of a bodice and skirt made in one or more pieces"
+  },
+  {
+   "id": "Q9053464",
+   "label": "costume",
+   "description": "wardrobe and dress in general"
+  },
+  {
+   "id": "Q97827989",
+   "label": "Dress",
+   "description": "2017 song by Taylor Swift"
+  },
+  {
+   "id": "Q3931183",
+   "label": "drug reaction with eosinophilia and systemic symptoms",
+   "description": "drug eruption characterized by high fever, erythematous rash and inflammation of internal organs"
+  },
+  {
+   "id": "Q27722618",
+   "label": "Dress",
+   "description": "journal about costume"
+  },
+  {
+   "id": "Q83495663",
+   "label": "Dre\u00df",
+   "description": "family name"
+  }
+ ],
+ "entity|enterprise": [
+  {
+   "id": "Q6881511",
+   "label": "enterprise",
+   "description": "organizational unit producing goods or services, which benefits from a certain degree of autonomy in decision-making, especially for the allocation of its current resources"
+  },
+  {
+   "id": "Q1344696",
+   "label": "Enterprise",
+   "description": "census-designated place in Clark County, Nevada, United States"
+  },
+  {
+   "id": "Q285801",
+   "label": "Enterprise",
+   "description": "2025 Gerald R. Ford-class aircraft carrier"
+  },
+  {
+   "id": "Q55230383",
+   "label": "Enterprise",
+   "description": "novel by Michael Jan Friedman"
+  },
+  {
+   "id": "Q5632307",
+   "label": "HMS Enterprise",
+   "description": "1774 Enterprise-class sixth-rate frigate"
+  },
+  {
+   "id": "Q17085454",
+   "label": "Enterprise Rent-A-Car",
+   "description": "American car and truck rental company"
+  },
+  {
+   "id": "Q380519",
+   "label": "Star Trek: Enterprise",
+   "description": "American science fiction television series"
+  }
+ ],
+ "entity|experiment": [
+  {
+   "id": "Q76388782",
+   "label": "genetic experiment",
+   "description": "class of fictional artificial extraterrestrial lifeforms from Disney's Lilo & Stitch franchise"
+  },
+  {
+   "id": "Q101965",
+   "label": "experiment",
+   "description": "scientific procedure carried out to support, refute, or validate a hypothesis"
+  },
+  {
+   "id": "Q1524289",
+   "label": "Experimental Cell Research",
+   "description": "peer-reviewed scientific journal"
+  },
+  {
+   "id": "Q475042",
+   "label": "experimental psychology",
+   "description": "application of experimental method to psychological research"
+  },
+  {
+   "id": "Q13358841",
+   "label": "Experimental Brain Research",
+   "description": "scientific journal"
+  },
+  {
+   "id": "Q5421127",
+   "label": "Experimental Neurology",
+   "description": "journal"
+  },
+  {
+   "id": "Q15754753",
+   "label": "Experimental Eye Research",
+   "description": "journal"
+  }
+ ],
+ "entity|first doctoral advisor": [
+  {
+   "id": "Q26236695",
+   "label": "first doctoral advisor",
+   "description": "first member of a dissertation committee"
+  }
+ ],
+ "entity|food preparation technique": [
+  {
+   "id": "Q1039303",
+   "label": "food preparation technique",
+   "description": "any method of preparing a dish"
+  },
+  {
+   "id": "Q76877000",
+   "label": "FOOD PREPARATION TECHNIQUES THAT MINIMIZE BACTERIAL CONTAMINATION AND GROWTH",
+   "description": "scientific article published on 01 August 1964"
+  }
+ ],
+ "entity|fossil taxon": [
+  {
+   "id": "Q23038290",
+   "label": "fossil taxon",
+   "description": "taxon described on the basis of fossil material"
+  }
+ ],
+ "entity|graphite": [
+  {
+   "id": "Q5309",
+   "label": "graphite",
+   "description": "allotrope of carbon, mineral, substance"
+  },
+  {
+   "id": "Q135057648",
+   "label": "Graphite",
+   "description": "video game developed by Estraiti"
+  },
+  {
+   "id": "Q1027984",
+   "label": "Graphite",
+   "description": "programmable Unicode-compliant smart-font technology and rendering system developed by SIL International as free software"
+  },
+  {
+   "id": "Q5597229",
+   "label": "Graphite",
+   "description": "1999 studio album by Closterkeller"
+  },
+  {
+   "id": "Q42309810",
+   "label": "Graphite",
+   "description": "tool that monitors and graphs the performance of computer systems"
+  },
+  {
+   "id": "Q105695481",
+   "label": "Conference on Computer Graphics and Interactive Techniques in Australasia and Southeast Asia",
+   "description": "conference series"
+  },
+  {
+   "id": "Q16871959",
+   "label": "graphite pencil",
+   "description": "writing instrument with a graphite core"
+  }
+ ],
+ "entity|history of India": [
+  {
+   "id": "Q133136",
+   "label": "history of India",
+   "description": "history of the Indian subcontinent"
+  },
+  {
+   "id": "Q17056177",
+   "label": "Indica",
+   "description": "work by the classical Greek physician Ctesias purporting to describe India"
+  },
+  {
+   "id": "Q11287624",
+   "label": "history of Indiana",
+   "description": "aspect of history"
+  },
+  {
+   "id": "Q5868510",
+   "label": "history of rail transport in India",
+   "description": ""
+  },
+  {
+   "id": "Q5864939",
+   "label": "history of Indianapolis",
+   "description": "aspect of history"
+  },
+  {
+   "id": "Q13110421",
+   "label": "history of Indian cuisine",
+   "description": "aspect of history"
+  },
+  {
+   "id": "Q5864932",
+   "label": "history of Indian influence on Southeast Asia",
+   "description": "aspect of history"
+  }
+ ],
+ "entity|human": [
+  {
+   "id": "Q5",
+   "label": "human",
+   "description": "any single member of Homo sapiens, unique extant species of the genus Homo"
+  },
+  {
+   "id": "Q15978631",
+   "label": "Homo sapiens",
+   "description": "species of mammal"
+  },
+  {
+   "id": "Q6900",
+   "label": "Human herpesvirus 4",
+   "description": "virus of the herpes family"
+  },
+  {
+   "id": "Q2408214",
+   "label": "Human Entertainment",
+   "description": "Japanese video game developer and publisher"
+  },
+  {
+   "id": "Q486972",
+   "label": "human settlement",
+   "description": "place of any size, in which people permanently live"
+  },
+  {
+   "id": "Q1280388",
+   "label": "Human T-lymphotropic virus 1",
+   "description": "species of viruses"
+  },
+  {
+   "id": "Q655331",
+   "label": "Human herpesvirus 1",
+   "description": "species of virus"
+  }
+ ],
+ "entity|index number": [
+  {
+   "id": "Q1738991",
+   "label": "index number",
+   "description": "type of number"
+  },
+  {
+   "id": "Q2272475",
+   "label": "economic index",
+   "description": "statistical measure which measure the changes in economics and finance"
+  },
+  {
+   "id": "Q1274579",
+   "label": "Index number",
+   "description": "identifier of dangerous substances"
+  },
+  {
+   "id": "Q12021577",
+   "label": "Index number",
+   "description": "Identifier of the List of harmonised classification and labelling of hazardous substances (EU)"
+  },
+  {
+   "id": "Q126950350",
+   "label": "Index Number",
+   "description": "chapter of Malaysian Form 4 additional mathematics curriculum"
+  },
+  {
+   "id": "Q139933778",
+   "label": "Index Numbers of Wholesale Prices in the United States and Foreign Countries.",
+   "description": ""
+  },
+  {
+   "id": "Q140143204",
+   "label": "Index numbers and indifference surfaces",
+   "description": ""
+  }
+ ],
+ "entity|international association": [
+  {
+   "id": "Q1158",
+   "label": "World Athletics",
+   "description": "international sports governing body organizing track and field athletics"
+  },
+  {
+   "id": "Q17315159",
+   "label": "international association football match",
+   "description": "association football match between fully representative national teams"
+  },
+  {
+   "id": "Q29300714",
+   "label": "international association",
+   "description": "association at international level"
+  },
+  {
+   "id": "Q6048595",
+   "label": "International Association of Scientific, Technical, and Medical Publishers",
+   "description": "trade association for academic and professional publishers"
+  },
+  {
+   "id": "Q54960205",
+   "label": "World Athletics database",
+   "description": "online sports database from World Athletics"
+  },
+  {
+   "id": "Q6048395",
+   "label": "International Association of Applied Psychology",
+   "description": "scholarly society"
+  },
+  {
+   "id": "Q3557136",
+   "label": "International Association of University Libraries",
+   "description": "voluntary international non-governmental organization of a group of libraries, represented by their library directors or senior managers"
+  }
+ ],
+ "entity|internetworking": [],
+ "entity|jurisdiction": [
+  {
+   "id": "Q471855",
+   "label": "jurisdiction",
+   "description": "legal authority held by a legal entity to enact justice within its scope"
+  },
+  {
+   "id": "Q5982983",
+   "label": "jurisdiction",
+   "description": "geographic area within which a particular legal authority or legal system applies"
+  },
+  {
+   "id": "Q122385484",
+   "label": "Jurisdiction",
+   "description": "2021 video game"
+  },
+  {
+   "id": "Q139709472",
+   "label": "Jurisdiction",
+   "description": ""
+  },
+  {
+   "id": "Q29416181",
+   "label": "Jurisdiction",
+   "description": "episode of NCIS (S7 E18)"
+  },
+  {
+   "id": "Q5418842",
+   "label": "judicial deliberation",
+   "description": "process by which a court formed an opinion about a lawsuit"
+  },
+  {
+   "id": "Q13740106",
+   "label": "Jurisdiction",
+   "description": "episode of Law & Order (S3 E16)"
+  }
+ ],
+ "entity|khanate": [
+  {
+   "id": "Q331644",
+   "label": "khanate",
+   "description": "political entity ruled by a khan"
+  },
+  {
+   "id": "Q2740154",
+   "label": "Khanate",
+   "description": "American metal band"
+  },
+  {
+   "id": "Q6400178",
+   "label": "Khanate",
+   "description": "2001 music album"
+  },
+  {
+   "id": "Q160440",
+   "label": "Crimean Khanate",
+   "description": "former state at the Crimean Peninsula until April 1783"
+  },
+  {
+   "id": "Q746558",
+   "label": "Emirate of Bukhara",
+   "description": "1785\u20131920 state in Central Asia"
+  },
+  {
+   "id": "Q577668",
+   "label": "Khanate of Bukhara",
+   "description": "former state (16th\u201318th century) in Central Asia, centered on Bukhara"
+  },
+  {
+   "id": "Q696241",
+   "label": "Khanate of Kokand",
+   "description": "former state in Central Asia"
+  }
+ ],
+ "entity|landlocked country": [
+  {
+   "id": "Q123480",
+   "label": "landlocked country",
+   "description": "country fully enclosed by land areas, or whose only coastlines lie on closed seas or lakes"
+  }
+ ],
+ "entity|leather": [
+  {
+   "id": "Q286",
+   "label": "leather",
+   "description": "durable and flexible material created by the tanning of animal rawhide and skin"
+  },
+  {
+   "id": "Q16871979",
+   "label": "Leather",
+   "description": "family name"
+  },
+  {
+   "id": "Q474636",
+   "label": "Tipulidae",
+   "description": "family of flies"
+  },
+  {
+   "id": "Q2089152",
+   "label": "Kanpur Nagar District",
+   "description": "District of Uttar Pradesh, India"
+  },
+  {
+   "id": "Q66568",
+   "label": "Kanpur",
+   "description": "city in Uttar Pradesh, India"
+  },
+  {
+   "id": "Q1671179",
+   "label": "Leather Goddesses of Phobos",
+   "description": "1986 video game"
+  },
+  {
+   "id": "Q178400",
+   "label": "Acrostichum",
+   "description": "genus of plants"
+  }
+ ],
+ "entity|legend": [
+  {
+   "id": "Q1640824",
+   "label": "inscription",
+   "description": "words, texts, lettering, or symbols marked on a work, building, or object, including texts, legends, documentation notes, or commemoration"
+  },
+  {
+   "id": "Q2010409",
+   "label": "Legend",
+   "description": "1994 video game"
+  },
+  {
+   "id": "Q44342",
+   "label": "legend",
+   "description": "genre of folklore featuring human actions within history"
+  },
+  {
+   "id": "Q6517712",
+   "label": "Legend",
+   "description": "1992 video game"
+  },
+  {
+   "id": "Q3755504",
+   "label": "Legend",
+   "description": "1984 album by Clannad - Robin of Sherwood soundtrack"
+  },
+  {
+   "id": "Q6517714",
+   "label": "Legend",
+   "description": "1998 video game"
+  },
+  {
+   "id": "Q13002315",
+   "label": "legendary figure",
+   "description": "named person or animal that appears in legends that have some claim to be historical"
+  }
+ ],
+ "entity|literary work": [
+  {
+   "id": "Q7725634",
+   "label": "literary work",
+   "description": "written work read for enjoyment or edification"
+  },
+  {
+   "id": "Q114797888",
+   "label": "literary work",
+   "description": "legal concept defining a type of copyrightable work"
+  },
+  {
+   "id": "Q119126425",
+   "label": "Dura-Europos archival photograph of front of P. CtYBR inv. DP 111",
+   "description": "archival photograph of front of p. ctybr inv. dp 111 from dura-europos"
+  },
+  {
+   "id": "Q119126451",
+   "label": "Dura-Europos archival photograph of back of P. CtYBR inv. DP 87",
+   "description": "archival photograph of back of p. ctybr inv. dp 87 from dura-europos"
+  },
+  {
+   "id": "Q119126433",
+   "label": "Dura-Europos archival photograph of back of P. CtYBR inv. DP 89",
+   "description": "archival photograph of back of p. ctybr inv. dp 89 from dura-europos"
+  },
+  {
+   "id": "Q119126501",
+   "label": "Dura-Europos archival photograph of back of P. CtYBR inv. DP 64",
+   "description": "archival photograph of back of p. ctybr inv. dp 64 from dura-europos"
+  },
+  {
+   "id": "Q119126533",
+   "label": "Dura-Europos archival photograph of front of P. CtYBR inv. DP 44",
+   "description": "archival photograph of front of p. ctybr inv. dp 44 from dura-europos"
+  }
+ ],
+ "entity|malaria": [
+  {
+   "id": "Q12156",
+   "label": "malaria",
+   "description": "mosquito-borne infectious disease"
+  },
+  {
+   "id": "Q15749954",
+   "label": "Malaria Journal",
+   "description": "peer-reviewed scientific journal"
+  },
+  {
+   "id": "Q139746748",
+   "label": "Malaria",
+   "description": ""
+  },
+  {
+   "id": "Q6741353",
+   "label": "malaria vaccine",
+   "description": "vaccine that is used to prevent malaria"
+  },
+  {
+   "id": "Q56928847",
+   "label": "malaria transmission",
+   "description": "set of mechanisms for malaria infections to spread"
+  },
+  {
+   "id": "Q18554672",
+   "label": "Plasmodium falciparum malaria",
+   "description": "malaria described as a severe form of the disease caused by a parasite Plasmodium falciparum, which is marked by irrregular recurrence of paroxysms and prolonged or continuous fever"
+  },
+  {
+   "id": "Q7239883",
+   "label": "pregnancy-associated malaria",
+   "description": "Impact of malaria on human pregnancies"
+  }
+ ],
+ "entity|male": [
+  {
+   "id": "Q6581097",
+   "label": "male",
+   "description": "to be used in \"sex or gender\" (P21) to indicate that the human subject is a male or \"semantic gender\" (P10339) to indicate that a word refers to a male person"
+  },
+  {
+   "id": "Q44148",
+   "label": "male organism",
+   "description": "organism of the male sex"
+  },
+  {
+   "id": "Q16874665",
+   "label": "Male",
+   "description": "family name"
+  },
+  {
+   "id": "Q19824781",
+   "label": "Male",
+   "description": "2015 studio album by\u00a0Natalie Imbruglia"
+  },
+  {
+   "id": "Q6742900",
+   "label": "Male",
+   "description": "woreda (district) in Ethiopia"
+  },
+  {
+   "id": "Q12308941",
+   "label": "male given name",
+   "description": "given name usually meant for boys and men"
+  },
+  {
+   "id": "Q184674",
+   "label": "erectile dysfunction",
+   "description": "form of sexual dysfunction in males"
+  }
+ ],
+ "entity|maple wood": [
+  {
+   "id": "Q402516",
+   "label": "maple wood",
+   "description": "type of wood"
+  },
+  {
+   "id": "Q20862540",
+   "label": "Maple Woods",
+   "description": "painting by Katharine Patton"
+  },
+  {
+   "id": "Q41247352",
+   "label": "Maple Woods Natural Area",
+   "description": "nature reserve in Gladstone, Missouri, enclosing an MDC-designated natural area of the same name; owned by MDC but maintained by Gladstone"
+  },
+  {
+   "id": "Q59504802",
+   "label": "Maple Woods, Bare Trunks",
+   "description": "painting by Tom Thomson"
+  },
+  {
+   "id": "Q49521484",
+   "label": "Maple Woods",
+   "description": "park in Richmond County, New York, United States of America"
+  },
+  {
+   "id": "Q49521486",
+   "label": "Maple Woods Nature Preserve",
+   "description": "park in Clay County, Missouri, United States of America"
+  },
+  {
+   "id": "Q117666387",
+   "label": "Italian Hill Cemetery",
+   "description": "cemetery in Mackinac County, Michigan, United States"
+  }
+ ],
+ "entity|member of the 19th Parliament of the United Kingdom": [
+  {
+   "id": "Q41582559",
+   "label": "member of the 19th Parliament of the United Kingdom",
+   "description": ""
+  }
+ ],
+ "entity|member of the 27th Parliament of the United Kingdom": [
+  {
+   "id": "Q41582575",
+   "label": "member of the 27th Parliament of the United Kingdom",
+   "description": ""
+  }
+ ],
+ "entity|motorcycle model": [
+  {
+   "id": "Q23866334",
+   "label": "motorcycle model",
+   "description": "industrial motorcycle model associated with a brand"
+  },
+  {
+   "id": "Q71310524",
+   "label": "motorcycle model series",
+   "description": "group of related motorcycle models"
+  }
+ ],
+ "entity|musical term": [
+  {
+   "id": "Q20202269",
+   "label": "musical term",
+   "description": "technical term; word or phrase that is part of musical terminology"
+  },
+  {
+   "id": "Q56170161",
+   "label": "Musical Terms in a Chinese Dictionary of the First Century",
+   "description": "article"
+  }
+ ],
+ "entity|mythology": [
+  {
+   "id": "Q9134",
+   "label": "mythology",
+   "description": "collection of sacred stories or a set of beliefs belonging to a specific religious or cultural tradition"
+  },
+  {
+   "id": "Q109943801",
+   "label": "Mythology",
+   "description": "podcast published by Parcast Network"
+  },
+  {
+   "id": "Q3374376",
+   "label": "mythological painting",
+   "description": "genre in painting based on stories of Ovid, Aesop's fables, plays, or other popular myths"
+  },
+  {
+   "id": "Q53815",
+   "label": "canon",
+   "description": "body of related works that are sanctioned or accepted to establish a fictional universe"
+  },
+  {
+   "id": "Q3282737",
+   "label": "Mythology",
+   "description": "Bee Gees album"
+  },
+  {
+   "id": "Q3869182",
+   "label": "Mythology",
+   "description": "album by Derek Sherinian"
+  },
+  {
+   "id": "Q205740",
+   "label": "Egyptian mythology",
+   "description": "myths of the Ancient Egyptians"
+  }
+ ],
+ "entity|noble family": [
+  {
+   "id": "Q13417114",
+   "label": "noble family",
+   "description": "family part of the nobility of a region or country"
+  },
+  {
+   "id": "Q61881575",
+   "label": "Swedish noble family",
+   "description": "family that belongs to the nobility of Sweden"
+  },
+  {
+   "id": "Q24074280",
+   "label": "noble family name",
+   "description": "common name held by members of a noble house"
+  },
+  {
+   "id": "Q62796544",
+   "label": "Italian noble family",
+   "description": "family belonging to the Italian aristocracy"
+  },
+  {
+   "id": "Q24702031",
+   "label": "Noble Family",
+   "description": "Taiwanese steakhouse chain"
+  },
+  {
+   "id": "Q61136326",
+   "label": "Nadiradze",
+   "description": ""
+  },
+  {
+   "id": "Q133766",
+   "label": "O-Ie S\u014dd\u014d",
+   "description": "noble family disputes within the samurai and aristocratic classes of Japan"
+  }
+ ],
+ "entity|outer planet": [
+  {
+   "id": "Q30014",
+   "label": "outer planet",
+   "description": "planet in the Solar System beyond the orbits of the its Main-belt asteroids"
+  },
+  {
+   "id": "Q48475",
+   "label": "Voyager 2",
+   "description": "space probe launched by NASA to study the outer Solar System, second furthest spacecraft from Earth after Voyager 1"
+  },
+  {
+   "id": "Q48469",
+   "label": "Voyager 1",
+   "description": "space probe launched by NASA to study the outer Solar System, furthest spacecraft from Earth"
+  },
+  {
+   "id": "Q60630224",
+   "label": "Outer Planet Studios",
+   "description": ""
+  },
+  {
+   "id": "Q7111995",
+   "label": "Outer Planet Flagship Mission",
+   "description": ""
+  },
+  {
+   "id": "Q127288636",
+   "label": "Outer planet ionospheres: A review of recent research and a look toward the future",
+   "description": "scholarly article"
+  },
+  {
+   "id": "Q58652999",
+   "label": "Outer Planet Missions with Electric Propulsion Systems\u2014Part I",
+   "description": ""
+  }
+ ],
+ "entity|phosphorus": [
+  {
+   "id": "Q674",
+   "label": "phosphorus",
+   "description": "chemical element with symbol P and atomic number 15"
+  },
+  {
+   "id": "Q15885566",
+   "label": "Phosphorus",
+   "description": "genus of insects"
+  },
+  {
+   "id": "Q65082857",
+   "label": "HMS Phosphorus",
+   "description": "1800s brig converted to fireship"
+  },
+  {
+   "id": "Q1775444",
+   "label": "Phosphorus",
+   "description": "personification of the Morning Star in Greek and Roman mythology"
+  },
+  {
+   "id": "Q55435629",
+   "label": "serum inorganic phosphorus level",
+   "description": ""
+  },
+  {
+   "id": "Q14885100",
+   "label": "phosphorus-oxygen lyase activity",
+   "description": "Catalysis of the cleavage of a phosphorus-oxygen bond by other means than by hydrolysis or oxidation, or conversely adding a group to a double bond."
+  },
+  {
+   "id": "Q7187561",
+   "label": "Phosphorus",
+   "description": "race horse"
+  }
+ ],
+ "entity|piano": [
+  {
+   "id": "Q5994",
+   "label": "piano",
+   "description": "musical keyboard instrument"
+  },
+  {
+   "id": "Q271510",
+   "label": "Piano",
+   "description": "commune in Haute-Corse, France"
+  },
+  {
+   "id": "Q37505595",
+   "label": "Piano",
+   "description": "family name"
+  },
+  {
+   "id": "Q84519044",
+   "label": "Piano",
+   "description": "vocal track by Mina; 1960 studio recording"
+  },
+  {
+   "id": "Q7190127",
+   "label": "Piano",
+   "description": "largest provider of metered paywalls worldwide"
+  },
+  {
+   "id": "Q11995645",
+   "label": "Piano",
+   "description": "vocal track by Karpe Diem; 2006 studio recording"
+  },
+  {
+   "id": "Q117315",
+   "label": "The Piano",
+   "description": "1993 film directed by Jane Campion"
+  }
+ ],
+ "entity|proton": [
+  {
+   "id": "Q827306",
+   "label": "Proton",
+   "description": "Automobile manufacturer"
+  },
+  {
+   "id": "Q506710",
+   "label": "hydron",
+   "description": "cationic form of atomic hydrogen (symbol H\u207a), informally called \"proton\""
+  },
+  {
+   "id": "Q30537036",
+   "label": "Proton",
+   "description": "Swiss technology company focused on digital privacy"
+  },
+  {
+   "id": "Q60982120",
+   "label": "Proton",
+   "description": "compatibility layer for running Windows games on Linux"
+  },
+  {
+   "id": "Q106844360",
+   "label": "Proton",
+   "description": "Hungarian record label"
+  },
+  {
+   "id": "Q98890697",
+   "label": "Proton",
+   "description": "family name"
+  },
+  {
+   "id": "Q2294",
+   "label": "proton",
+   "description": "subatomic particle with positive charge"
+  }
+ ],
+ "entity|public company": [
+  {
+   "id": "Q891723",
+   "label": "public company",
+   "description": "company that offers its securities for sale to the general public"
+  },
+  {
+   "id": "Q63439515",
+   "label": "berhad",
+   "description": "legal form for company in Malaysia"
+  },
+  {
+   "id": "Q20746571",
+   "label": "public company limited by shares",
+   "description": "Australian legal form"
+  },
+  {
+   "id": "Q117273356",
+   "label": "public company",
+   "description": "South Africa legal form"
+  },
+  {
+   "id": "Q130234649",
+   "label": "public company",
+   "description": "legal form in Saint Kitts and Nevis"
+  },
+  {
+   "id": "Q130018333",
+   "label": "Public Company",
+   "description": "legal form in Brunei Darussalam"
+  },
+  {
+   "id": "Q130315870",
+   "label": "public company",
+   "description": "legal form in Saint Vincent and the Grenadines"
+  }
+ ],
+ "entity|pulsar": [
+  {
+   "id": "Q4360",
+   "label": "pulsar",
+   "description": "highly magnetized, rapidly rotating neutron star or white dwarf"
+  },
+  {
+   "id": "Q7259616",
+   "label": "Pulsar",
+   "description": "1981 video game"
+  },
+  {
+   "id": "Q135452961",
+   "label": "Pulsar",
+   "description": "2024 video game developed by Construct Games"
+  },
+  {
+   "id": "Q126186740",
+   "label": "Pulsar",
+   "description": "1997 video game"
+  },
+  {
+   "id": "Q134981306",
+   "label": "PULSAR",
+   "description": "2020 video game developed by Bruno Esteves"
+  },
+  {
+   "id": "Q3320731",
+   "label": "Monica Rambeau",
+   "description": "fictional character in Marvel Comics"
+  },
+  {
+   "id": "Q585644",
+   "label": "Pulsar",
+   "description": "band"
+  }
+ ],
+ "entity|road": [
+  {
+   "id": "Q79007",
+   "label": "street",
+   "description": "public thoroughfare in a built environment like a village or city"
+  },
+  {
+   "id": "Q34442",
+   "label": "road",
+   "description": "wide way leading from one place to another, especially one with a specially prepared surface which vehicles can use"
+  },
+  {
+   "id": "Q11998026",
+   "label": "Road",
+   "description": "Norwegian hard rock band"
+  },
+  {
+   "id": "Q3609",
+   "label": "road bicycle racing",
+   "description": "bicycle racing sport"
+  },
+  {
+   "id": "Q18209556",
+   "label": "The Road",
+   "description": "1907 memoir by Jack London"
+  },
+  {
+   "id": "Q133056",
+   "label": "mountain pass",
+   "description": "navigable route, typically through a saddle or its vicinity, to cross a mountain range or a ridge"
+  },
+  {
+   "id": "Q2309609",
+   "label": "wayside cross",
+   "description": "cross by a footpath, track or road"
+  }
+ ],
+ "entity|rugby league in France": [
+  {
+   "id": "Q3452882",
+   "label": "rugby league in France",
+   "description": "overview of rugby league in France"
+  }
+ ],
+ "entity|saw blade": [
+  {
+   "id": "Q4683254",
+   "label": "saw blade",
+   "description": "sharp part of a saw"
+  },
+  {
+   "id": "Q122661300",
+   "label": "Saw blade",
+   "description": "US patent 11141805"
+  },
+  {
+   "id": "Q122615579",
+   "label": "Saw blade",
+   "description": "US patent 11413694"
+  },
+  {
+   "id": "Q122615231",
+   "label": "Saw blade",
+   "description": "US patent 11433467"
+  },
+  {
+   "id": "Q122615582",
+   "label": "Saw blade",
+   "description": "US patent 11413693"
+  },
+  {
+   "id": "Q124003069",
+   "label": "Saw blade",
+   "description": "US patent 11324517"
+  },
+  {
+   "id": "Q119245805",
+   "label": "Saw-blade",
+   "description": "artifact in a museum"
+  }
+ ],
+ "entity|sculpture": [
+  {
+   "id": "Q860861",
+   "label": "sculpture",
+   "description": "three-dimensional work of art"
+  },
+  {
+   "id": "Q11634",
+   "label": "art of sculpture",
+   "description": "branch of the visual arts that operates in three dimensions"
+  },
+  {
+   "id": "Q17310537",
+   "label": "sculpture",
+   "description": "manufacture of sculptures in arts and crafts"
+  },
+  {
+   "id": "Q2293362",
+   "label": "group of sculptures",
+   "description": "various sculptures that belong together"
+  },
+  {
+   "id": "Q135473107",
+   "label": "Sculpture",
+   "description": "2022 short documentary film directed by Ramin Hosseinpour"
+  },
+  {
+   "id": "Q63806982",
+   "label": "Sculptures in the National Gallery of Art",
+   "description": "collection of sculptures in the National Gallery of Art"
+  },
+  {
+   "id": "Q18352932",
+   "label": "Sculpture",
+   "description": "sculpture by Philolaos at Lyon"
+  }
+ ],
+ "entity|short-chain fatty acid": [
+  {
+   "id": "Q2698455",
+   "label": "short-chain fatty acid",
+   "description": "fatty acid with less than six carbon atoms"
+  },
+  {
+   "id": "Q24719930",
+   "label": "Short chain fatty acid transporter AtoE",
+   "description": "InterPro Family"
+  },
+  {
+   "id": "Q21096334",
+   "label": "short-chain fatty acid metabolic process",
+   "description": "The chemical reactions and pathways involving fatty acids with a chain length of less than C6."
+  },
+  {
+   "id": "Q21119664",
+   "label": "short-chain fatty acid biosynthetic process",
+   "description": "The chemical reactions and pathways resulting in the formation of fatty acids with a chain length of less than C6."
+  },
+  {
+   "id": "Q14905192",
+   "label": "short-chain fatty acid catabolic process",
+   "description": "The chemical reactions and pathways resulting in the breakdown of fatty acids with a chain length of less than C6."
+  },
+  {
+   "id": "Q74566534",
+   "label": "short-chain fatty acid anion",
+   "description": "class of ions"
+  },
+  {
+   "id": "Q21135939",
+   "label": "short-chain fatty acid transmembrane transporter activity",
+   "description": "Enables the directed movement of short-chain fatty acids into a cell or organelle. Short-chain fatty acids are fatty acids with a chain length of less than C6."
+  }
+ ],
+ "entity|smartphone model": [
+  {
+   "id": "Q19723451",
+   "label": "smartphone model",
+   "description": "model of mobile phone with advanced networking and display capabilities"
+  },
+  {
+   "id": "Q71266741",
+   "label": "smartphone model series",
+   "description": "group of smartphone models"
+  }
+ ],
+ "entity|square metre": [
+  {
+   "id": "Q25343",
+   "label": "square metre",
+   "description": "SI unit of area"
+  },
+  {
+   "id": "Q3332099",
+   "label": "square metre per second",
+   "description": "SI unit of kinematic viscosity"
+  },
+  {
+   "id": "Q7582070",
+   "label": "square metres per pixel",
+   "description": ""
+  },
+  {
+   "id": "Q106740890",
+   "label": "square metre per square second",
+   "description": "unit of specific energy"
+  },
+  {
+   "id": "Q86200529",
+   "label": "square metre per kilogram",
+   "description": "unit of the mass attenuation coefficient"
+  },
+  {
+   "id": "Q71581529",
+   "label": "ampere square metre",
+   "description": "SI unit of magnetic moment"
+  },
+  {
+   "id": "Q106697069",
+   "label": "square metre per square second kelvin",
+   "description": "unit of specific heat capacity"
+  }
+ ],
+ "entity|stylistic device": [
+  {
+   "id": "Q182545",
+   "label": "stylistic device",
+   "description": "technique used to give an auxiliary meaning, idea, or feeling to a literal message, including assonance, consonance and alliteration"
+  },
+  {
+   "id": "Q1762471",
+   "label": "rhetorical device",
+   "description": "technique that an author or speaker uses with the goal of persuading"
+  },
+  {
+   "id": "Q128361762",
+   "label": "Stylistic devices in characterizing the Smolensk Princes Rostislaviches in the 12th Century Kiev Chronicle",
+   "description": "scholarly article"
+  },
+  {
+   "id": "Q129683624",
+   "label": "Stylistic Devices of Influence in English and German Political Discourse",
+   "description": "scholarly article published in 2018"
+  },
+  {
+   "id": "Q129754977",
+   "label": "STYLISTIC DEVICES OF CREATING EDUCATIONAL ADVERTISING TEXTS",
+   "description": "scholarly article published in 2023"
+  }
+ ],
+ "entity|world view": [
+  {
+   "id": "Q49447",
+   "label": "world view",
+   "description": "fundamental cognitive orientation of an individual or society encompassing the entirety of the individual or society's knowledge and point of view"
+  },
+  {
+   "id": "Q2030462",
+   "label": "worldview",
+   "description": "conception or model of the world, whether legendary, religious or scientific"
+  },
+  {
+   "id": "Q18395442",
+   "label": "World View",
+   "description": "private American near-space exploration and technology company"
+  },
+  {
+   "id": "Q109046651",
+   "label": "World View",
+   "description": "building in Mumbai, India"
+  },
+  {
+   "id": "Q122951666",
+   "label": "World View",
+   "description": "film production company"
+  },
+  {
+   "id": "Q16974436",
+   "label": "World View Multicultural",
+   "description": "Canadian television network"
+  },
+  {
+   "id": "Q133011746",
+   "label": "World Views of Uncommon Women",
+   "description": "online exhibition from Mount Holyoke College"
+  }
+ ],
+ "entity|\u03b3-aminobutyric acid": [
+  {
+   "id": "Q210021",
+   "label": "\u03b3-aminobutyric acid",
+   "description": "chemical compound"
+  },
+  {
+   "id": "Q27252208",
+   "label": "\u03b3-aminobutyric acid ethyl ester",
+   "description": "chemical compound"
+  },
+  {
+   "id": "Q27237169",
+   "label": "\u03b3-aminobutyric acid hydrochloride",
+   "description": "chemical compound"
+  },
+  {
+   "id": "Q34638462",
+   "label": "\u03b3-Aminobutyric acid production by culturable bacteria from the human intestine.",
+   "description": "scientific article"
+  },
+  {
+   "id": "Q37627783",
+   "label": "\u03b3-Aminobutyric acid (GABA) concentration inversely correlates with basal perfusion in human occipital lobe.",
+   "description": "scientific article published on 08 January 2014"
+  },
+  {
+   "id": "Q48348230",
+   "label": "\u03b3-Aminobutyric Acid (GABA) Accumulation in Tea (Camellia sinensis L.) through the GABA Shunt and Polyamine Degradation Pathways under Anoxia",
+   "description": "scientific article published on 29 March 2017"
+  },
+  {
+   "id": "Q48623205",
+   "label": "\u0393-aminobutyric acid(C) (GABAC) selective antagonists derived from the bioisosteric modification of 4-aminocyclopent-1-enecarboxylic acid: amides and hydroxamates.",
+   "description": "scientific article published on 27 June 2013"
+  }
+ ],
+ "property|Armenian Cinema ID": [
+  {
+   "id": "P5218",
+   "label": "Armenian Cinema ID",
+   "description": "identifier for a work or person, in the Armenian Cinema database of the Armenian Association of Film Critics and Cinema Journalists"
+  }
+ ],
+ "property|BRAHMS artist ID": [
+  {
+   "id": "P5226",
+   "label": "BRAHMS artist ID",
+   "description": "identifier for a composer in the B.R.A.H.M.S. database, by the IRCAM"
+  }
+ ],
+ "property|DBS ID": [
+  {
+   "id": "P4007",
+   "label": "DBS ID",
+   "description": "identifier in the German/Austrian Library Statistics (DBS/\u00d6BS)"
+  }
+ ],
+ "property|JMA Magnitude": [
+  {
+   "id": "P5900",
+   "label": "JMA Magnitude",
+   "description": "magnitude of an earthquake according to Japan Meteorological Agency"
+  }
+ ],
+ "property|Lemon 64 ID": [
+  {
+   "id": "P4816",
+   "label": "Lemon 64 ID",
+   "description": "identifier in the Lemon 64 database of Commodore 64 videogames"
+  }
+ ],
+ "property|ORCID iD": [
+  {
+   "id": "P496",
+   "label": "ORCID iD",
+   "description": "identifier for a person"
+  }
+ ],
+ "property|RKDlibrary ID": [
+  {
+   "id": "P4989",
+   "label": "RKDlibrary ID",
+   "description": "record for a publication held by the RKD-Netherlands Institute for Art History in the Hague"
+  }
+ ],
+ "property|Scoville grade": [
+  {
+   "id": "P2658",
+   "label": "Scoville grade",
+   "description": "scale measuring pungency of chili peppers (values from 0 to 16,000,000,000)"
+  }
+ ],
+ "property|Wikidata usage instructions": [
+  {
+   "id": "P2559",
+   "label": "Wikidata usage instructions",
+   "description": "text describing how to use a property or item. Eventually, this statement is to replace usage instructions currently found in description. Until the corresponding feature is implemented, do not remove it from description"
+  }
+ ],
+ "property|Wikimedia language code": [
+  {
+   "id": "P424",
+   "label": "Wikimedia language code",
+   "description": "identifier for a language or variant as used by Wikimedia projects"
+  }
+ ],
+ "property|academic degree": [
+  {
+   "id": "P512",
+   "label": "academic degree",
+   "description": "academic degree that the person holds"
+  }
+ ],
+ "property|academic major": [
+  {
+   "id": "P812",
+   "label": "academic major",
+   "description": "major someone studied at college/university"
+  }
+ ],
+ "property|albedo": [
+  {
+   "id": "P4501",
+   "label": "albedo",
+   "description": "ratio of reflected radiation to incident radiation"
+  }
+ ],
+ "property|applies to part": [
+  {
+   "id": "P518",
+   "label": "applies to part",
+   "description": "part, aspect, or form of the item to which the claim applies"
+  }
+ ],
+ "property|argument of periapsis": [
+  {
+   "id": "P2248",
+   "label": "argument of periapsis",
+   "description": "angle from the body's ascending node to its periapsis"
+  }
+ ],
+ "property|author": [
+  {
+   "id": "P50",
+   "label": "author",
+   "description": "main creator(s) of a written work (use on works, not humans); use P2093 (author name string) when Wikidata item is unknown or does not exist"
+  },
+  {
+   "id": "P676",
+   "label": "lyricist",
+   "description": "author of song lyrics"
+  },
+  {
+   "id": "P2093",
+   "label": "author name string",
+   "description": "stores unspecified author or editor name for publications; use if Wikidata item for author (P50) or editor (P98) does not exist or is not known. Do not use both."
+  },
+  {
+   "id": "P1932",
+   "label": "object named as",
+   "description": "use as qualifier to indicate how the object's value was given in the source"
+  },
+  {
+   "id": "P1810",
+   "label": "subject named as",
+   "description": "name by which a subject is recorded in a database, mentioned as a contributor of a work, or is referred to in a particular context"
+  },
+  {
+   "id": "P244",
+   "label": "Library of Congress Authorities ID",
+   "description": "Library of Congress name authority (persons, families, corporate bodies, events, places, works and expressions) and subject authority identifier [Format: 1-2 specific letters followed by 8-10 digits (see regex). For manifestations, use P1144]"
+  },
+  {
+   "id": "P405",
+   "label": "taxon author",
+   "description": "the author(s) that (optionally) may be cited with the scientific name"
+  }
+ ],
+ "property|award received": [
+  {
+   "id": "P166",
+   "label": "award received",
+   "description": "award or recognition received by a person, organization or creative work"
+  }
+ ],
+ "property|borrowing rate": [
+  {
+   "id": "P5898",
+   "label": "borrowing rate",
+   "description": "the p.a. borrowing/lending rate"
+  }
+ ],
+ "property|candidate": [
+  {
+   "id": "P726",
+   "label": "candidate",
+   "description": "person or party that is an option for an office in this election"
+  },
+  {
+   "id": "P3602",
+   "label": "candidacy in election",
+   "description": "election where the subject is a candidate"
+  },
+  {
+   "id": "P4243",
+   "label": "candidate number",
+   "description": "number of the candidate in an election"
+  },
+  {
+   "id": "P10777",
+   "label": "candidate position",
+   "description": "numeric qualifier for position of a candidate in a particular election"
+  },
+  {
+   "id": "P6149",
+   "label": "running mate",
+   "description": "second person on a presidential or other electoral ticket"
+  }
+ ],
+ "property|cash back": [
+  {
+   "id": "P4448",
+   "label": "cash back",
+   "description": "cash or points received for spending money as part of a loyalty program"
+  }
+ ],
+ "property|cast member": [
+  {
+   "id": "P161",
+   "label": "cast member",
+   "description": "actor in the subject production [use \"character role\" (P453) and/or \"name of the character role\" (P4633) as qualifiers] [use \"voice actor\" (P725) for voice-only role] - [use \"recorded participant\" (P11108) for non-fiction productions]"
+  }
+ ],
+ "property|category contains": [
+  {
+   "id": "P4224",
+   "label": "category contains",
+   "description": "category contains elements that are instances of this item"
+  }
+ ],
+ "property|cause of death": [
+  {
+   "id": "P509",
+   "label": "cause of death",
+   "description": "underlying or immediate cause of death. Underlying cause (e.g. car accident, stomach cancer) preferred. Use 'manner of death' (P1196) for broadest category, e.g. natural causes, accident, homicide, suicide"
+  }
+ ],
+ "property|chairperson": [
+  {
+   "id": "P488",
+   "label": "chairperson",
+   "description": "presiding member of an organization, group or body"
+  },
+  {
+   "id": "P2389",
+   "label": "organization directed by the office or position",
+   "description": "organization or project which is directed by this office"
+  },
+  {
+   "id": "P2388",
+   "label": "position held by head of the organization",
+   "description": "position of the head of this item"
+  }
+ ],
+ "property|characters": [
+  {
+   "id": "P674",
+   "label": "characters",
+   "description": "characters which appear in this item (like plays, operas, operettas, books, comics, films, TV series, video games)"
+  }
+ ],
+ "property|child": [
+  {
+   "id": "P40",
+   "label": "child",
+   "description": "subject has object as child. Do not use for stepchildren\u2014use \"relative\" (P1038), qualified with \"kinship to subject\" (P1039)"
+  },
+  {
+   "id": "P22",
+   "label": "father",
+   "description": "male parent of the subject. For stepfather, use \"stepparent\" (P3448)"
+  },
+  {
+   "id": "P25",
+   "label": "mother",
+   "description": "female parent of the subject. For stepmother, use \"stepparent\" (P3448)"
+  },
+  {
+   "id": "P1971",
+   "label": "number of children",
+   "description": "number of children of the person, animal, or character"
+  },
+  {
+   "id": "P355",
+   "label": "child organization or unit",
+   "description": "child organization/unit of an org./unit; usually a fully owned separate org.; for non-independent sub-units, see org. division (P199); opposite of parent org./unit (P749); use instance of (P31) to distinguish org. (Q43229) and org. unit (Q10387680)"
+  },
+  {
+   "id": "P6191",
+   "label": "language style",
+   "description": "to denote of the way a sense of a word is used, e.g., slang, vulgarism, babytalk, colloquialism, etc."
+  },
+  {
+   "id": "P398",
+   "label": "child astronomical body",
+   "description": "minor body that belongs to the item"
+  }
+ ],
+ "property|collection": [
+  {
+   "id": "P195",
+   "label": "collection",
+   "description": "art, museum, archival, or bibliographic collection of which the subject is part (item is in the collection of X)"
+  },
+  {
+   "id": "P179",
+   "label": "part of the series",
+   "description": "series which contains the subject"
+  },
+  {
+   "id": "P217",
+   "label": "inventory number",
+   "description": "identifier for a physical object or a set of physical objects in a collection"
+  },
+  {
+   "id": "P1640",
+   "label": "curator",
+   "description": "content specialist responsible for this collection or exhibition"
+  },
+  {
+   "id": "P1436",
+   "label": "collection or exhibition size",
+   "description": "number of items in a collection or exhibition"
+  },
+  {
+   "id": "P6954",
+   "label": "online access status",
+   "description": "property or qualifier for an ID property indicating whether linked content is directly readable online"
+  },
+  {
+   "id": "P6241",
+   "label": "collection creator",
+   "description": "entity (person, organization, etc.) that caused a record or collection to be produced or gathered"
+  }
+ ],
+ "property|compulsory education (minimum age)": [
+  {
+   "id": "P3270",
+   "label": "compulsory education (minimum age)",
+   "description": "minimum age for children when compulsory education starts. Qualifiers: \"subject of\" to link to more detail. If applicable, use qualifier P31 with value \"varies by state/province\" (Q27145860). Use \"start time\" or \"point in time\" for historic data."
+  }
+ ],
+ "property|constellation": [
+  {
+   "id": "P59",
+   "label": "constellation",
+   "description": "the area of the celestial sphere of which the subject is a part (from a scientific standpoint, not an astrological one)"
+  }
+ ],
+ "property|contains the administrative territorial entity": [
+  {
+   "id": "P150",
+   "label": "contains the administrative territorial entity",
+   "description": "(list of) direct subdivisions of an administrative territorial entity"
+  }
+ ],
+ "property|continent": [
+  {
+   "id": "P30",
+   "label": "continent",
+   "description": "continent of which the subject is a part"
+  }
+ ],
+ "property|convicted of": [
+  {
+   "id": "P1399",
+   "label": "convicted of",
+   "description": "crime a person or organization was convicted of"
+  }
+ ],
+ "property|coordinate location": [
+  {
+   "id": "P625",
+   "label": "coordinate location",
+   "description": "geocoordinates of the subject. For Earth, please note that only the WGS84 geodetic datum is currently supported"
+  }
+ ],
+ "property|coordinates of northernmost point": [
+  {
+   "id": "P1332",
+   "label": "coordinates of northernmost point",
+   "description": "northernmost point of a location. For an administrative entity this includes offshore islands"
+  }
+ ],
+ "property|copyright holder": [
+  {
+   "id": "P3931",
+   "label": "copyright holder",
+   "description": "person or organisation who holds the copyright of a work according to the Berne Convention"
+  }
+ ],
+ "property|country": [
+  {
+   "id": "P17",
+   "label": "country",
+   "description": "sovereign state that this subject item is in (not to be used for human beings)"
+  },
+  {
+   "id": "P27",
+   "label": "country of citizenship",
+   "description": "the object is a country that recognizes the subject as its citizen"
+  },
+  {
+   "id": "P495",
+   "label": "country of origin",
+   "description": "country of origin of this item (creative work, food, phrase, product, etc.)"
+  },
+  {
+   "id": "P3005",
+   "label": "valid in place",
+   "description": "place where a statement is valid"
+  },
+  {
+   "id": "P1001",
+   "label": "applies to jurisdiction",
+   "description": "the item (institution, law, public office, public register, etc) or statement belongs to or has power over or applies to the value (a territorial jurisdiction: a country, state, municipality, etc)"
+  },
+  {
+   "id": "P291",
+   "label": "place of publication",
+   "description": "geographical place of publication of the edition (use 1st edition when referring to works)"
+  },
+  {
+   "id": "P1532",
+   "label": "country for sport",
+   "description": "country a person or a team represents when playing a sport"
+  }
+ ],
+ "property|country of citizenship": [
+  {
+   "id": "P27",
+   "label": "country of citizenship",
+   "description": "the object is a country that recognizes the subject as its citizen"
+  }
+ ],
+ "property|creator": [
+  {
+   "id": "P50",
+   "label": "author",
+   "description": "main creator(s) of a written work (use on works, not humans); use P2093 (author name string) when Wikidata item is unknown or does not exist"
+  },
+  {
+   "id": "P170",
+   "label": "creator",
+   "description": "maker of this creative work or other object (where no more specific property exists)"
+  },
+  {
+   "id": "P112",
+   "label": "founder",
+   "description": "founder or co-founder of this organization, religion, place or entity"
+  },
+  {
+   "id": "P6241",
+   "label": "collection creator",
+   "description": "entity (person, organization, etc.) that caused a record or collection to be produced or gathered"
+  },
+  {
+   "id": "P1472",
+   "label": "Commons Creator page",
+   "description": "name of Commons Infobox template residing in \"Creator\" namespace on Wikimedia Commons"
+  },
+  {
+   "id": "P2093",
+   "label": "author name string",
+   "description": "stores unspecified author or editor name for publications; use if Wikidata item for author (P50) or editor (P98) does not exist or is not known. Do not use both."
+  },
+  {
+   "id": "P800",
+   "label": "notable work",
+   "description": "notable scientific, artistic or literary work, or other work of significance among subject's works"
+  }
+ ],
+ "property|dedicated to": [
+  {
+   "id": "P825",
+   "label": "dedicated to",
+   "description": "person or organization to whom the subject was dedicated"
+  }
+ ],
+ "property|depicted by": [],
+ "property|developer": [
+  {
+   "id": "P61",
+   "label": "discoverer or inventor",
+   "description": "subject who discovered, first described, invented, or developed this discovery or invention or scientific hypothesis or theory"
+  },
+  {
+   "id": "P178",
+   "label": "developer",
+   "description": "organization or person that developed the item"
+  },
+  {
+   "id": "P88",
+   "label": "commissioned by",
+   "description": "person or organization that commissioned this work"
+  },
+  {
+   "id": "P6237",
+   "label": "real estate developer",
+   "description": "person or organization responsible for building this item"
+  }
+ ],
+ "property|diplomatic relation": [
+  {
+   "id": "P530",
+   "label": "diplomatic relation",
+   "description": "diplomatic relations of the country"
+  }
+ ],
+ "property|discharge": [
+  {
+   "id": "P2225",
+   "label": "discharge",
+   "description": "volume rate of water flow which is transported through a given cross-sectional area"
+  },
+  {
+   "id": "P14182",
+   "label": "river regime",
+   "description": "predominant pattern of annual changes to a stream's discharge at a particular period"
+  }
+ ],
+ "property|discoverer or inventor": [
+  {
+   "id": "P61",
+   "label": "discoverer or inventor",
+   "description": "subject who discovered, first described, invented, or developed this discovery or invention or scientific hypothesis or theory"
+  }
+ ],
+ "property|doctoral advisor": [
+  {
+   "id": "P184",
+   "label": "doctoral advisor",
+   "description": "person who supervised the doctorate or PhD thesis of the subject"
+  }
+ ],
+ "property|doctoral student": [
+  {
+   "id": "P185",
+   "label": "doctoral student",
+   "description": "doctoral student(s) of a professor"
+  }
+ ],
+ "property|drainage basin": [
+  {
+   "id": "P4614",
+   "label": "drainage basin",
+   "description": "area where precipitation collects and drains off into a common outlet, such as into a river, bay, or other body of water"
+  },
+  {
+   "id": "P2053",
+   "label": "watershed area",
+   "description": "size of a stream's watershed (drainage basin)"
+  }
+ ],
+ "property|dynamic viscosity": [
+  {
+   "id": "P3070",
+   "label": "dynamic viscosity",
+   "description": "viscosity of a substance, with phase of matter (P515) and temperature (P2076) as qualifiers"
+  }
+ ],
+ "property|educated at": [
+  {
+   "id": "P69",
+   "label": "educated at",
+   "description": "educational institution attended by subject"
+  }
+ ],
+ "property|elected in": [
+  {
+   "id": "P2715",
+   "label": "elected in",
+   "description": "election in which a person gained a position (as qualifier), or a position or legislative term is/was elected (as main value)"
+  }
+ ],
+ "property|employer": [
+  {
+   "id": "P108",
+   "label": "employer",
+   "description": "person or organization for which the subject works or worked"
+  },
+  {
+   "id": "P1297",
+   "label": "IRS Employer Identification Number",
+   "description": "number given to businesses and charities by the United States Internal Revenue Service"
+  }
+ ],
+ "property|encoded by": [
+  {
+   "id": "P702",
+   "label": "encoded by",
+   "description": "the gene that encodes some gene product"
+  }
+ ],
+ "property|end cause": [
+  {
+   "id": "P1534",
+   "label": "end cause",
+   "description": "qualifier used together with the end date qualifier (P582) to specify the reason for the end"
+  }
+ ],
+ "property|end time": [
+  {
+   "id": "P582",
+   "label": "end time",
+   "description": "moment when an entity ceases to exist and a statement stops being entirely valid or no longer be true"
+  },
+  {
+   "id": "P2032",
+   "label": "end of work period",
+   "description": "end of period during which a person or group flourished (fl. = \"floruit\") in their professional activity"
+  },
+  {
+   "id": "P8554",
+   "label": "earliest end date",
+   "description": "(qualifier) earliest date on which the statement could have begun to no longer be true"
+  },
+  {
+   "id": "P12506",
+   "label": "latest end date",
+   "description": "latest date beyond which the statement could no longer be true"
+  }
+ ],
+ "property|energy storage capacity": [
+  {
+   "id": "P4140",
+   "label": "energy storage capacity",
+   "description": "storage capacity of a battery or energy storage system"
+  }
+ ],
+ "property|ethnic group": [
+  {
+   "id": "P172",
+   "label": "ethnic group",
+   "description": "subject's ethnicity (consensus is that a VERY high standard of proof is needed for this field to be used. In general this means 1) the subject claims it themselves, or 2) it is widely agreed on by scholars, or 3) is fictional and portrayed as such)"
+  }
+ ],
+ "property|exclave of": [
+  {
+   "id": "P500",
+   "label": "exclave of",
+   "description": "territory is legally or politically attached to a main territory with which it is not physically contiguous because of surrounding alien territory. It may also be an enclave."
+  }
+ ],
+ "property|executive producer": [
+  {
+   "id": "P1431",
+   "label": "executive producer",
+   "description": "executive producer of a movie, TV show, or other piece of media or entertainment"
+  }
+ ],
+ "property|family": [
+  {
+   "id": "P53",
+   "label": "family",
+   "description": "family, including dynasty and nobility houses. Not family name (use P734 for family name)."
+  },
+  {
+   "id": "P1038",
+   "label": "relative",
+   "description": "family member (qualify with \"kinship to subject\", P1039; for direct family member please use specific property)"
+  },
+  {
+   "id": "P734",
+   "label": "family name",
+   "description": "part of full name of person"
+  },
+  {
+   "id": "P1533",
+   "label": "family name identical to this given name",
+   "description": "last name that is the same as a given first name. Use on items for given names"
+  },
+  {
+   "id": "P2889",
+   "label": "FamilySearch person ID",
+   "description": "ID of a person on FamilySearch"
+  },
+  {
+   "id": "P8017",
+   "label": "generational suffix",
+   "description": "suffix used in name"
+  },
+  {
+   "id": "P5278",
+   "label": "surname for other gender",
+   "description": "gender inflection of surname, patronymic or matronymic"
+  }
+ ],
+ "property|father": [
+  {
+   "id": "P22",
+   "label": "father",
+   "description": "male parent of the subject. For stepfather, use \"stepparent\" (P3448)"
+  },
+  {
+   "id": "P40",
+   "label": "child",
+   "description": "subject has object as child. Do not use for stepchildren\u2014use \"relative\" (P1038), qualified with \"kinship to subject\" (P1039)"
+  },
+  {
+   "id": "P1038",
+   "label": "relative",
+   "description": "family member (qualify with \"kinship to subject\", P1039; for direct family member please use specific property)"
+  }
+ ],
+ "property|female population": [
+  {
+   "id": "P1539",
+   "label": "female population",
+   "description": "number of female people inhabiting the place; number of female people of subject"
+  }
+ ],
+ "property|field of this occupation": [
+  {
+   "id": "P425",
+   "label": "field of this occupation",
+   "description": "field corresponding to this occupation or profession (use only for occupations/professions - for people use Property:P101, for companies use P452)"
+  }
+ ],
+ "property|field of work": [
+  {
+   "id": "P101",
+   "label": "field of work",
+   "description": "specialization of a person or organization; see P106 for the occupation/ P452 for industry"
+  }
+ ],
+ "property|flag image": [
+  {
+   "id": "P41",
+   "label": "flag image",
+   "description": "image of the item's flag"
+  }
+ ],
+ "property|followed by": [
+  {
+   "id": "P156",
+   "label": "followed by",
+   "description": "immediately following item in a series of which the subject is a part, preferably use as qualifier of P179 [if the subject has been replaced, e.g. political offices, use \"replaced by\" (P1366)]"
+  }
+ ],
+ "property|follows": [
+  {
+   "id": "P155",
+   "label": "follows",
+   "description": "immediately prior item in a series of which the subject is a part, preferably use as qualifier of P179 [if the subject has replaced the preceding item, e.g. political offices, use \"replaces\" (P1365)]"
+  },
+  {
+   "id": "P144",
+   "label": "based on",
+   "description": "the work(s) or inputs used as the basis for subject item; for fictional analog use P1074"
+  },
+  {
+   "id": "P140",
+   "label": "religion or worldview",
+   "description": "religion of a person, organization or religious building, or associated with this subject"
+  },
+  {
+   "id": "P1576",
+   "label": "lifestyle",
+   "description": "typical way of life of an individual, group, or culture"
+  },
+  {
+   "id": "P11951",
+   "label": "appears after phonological feature",
+   "description": "this lexeme form appears only when it comes after another lexeme form with this phonological feature"
+  },
+  {
+   "id": "P12657",
+   "label": "follows spelling pattern",
+   "description": "spelling rule, pattern or paradigm followed by this form"
+  },
+  {
+   "id": "P11953",
+   "label": "appears after lexeme form",
+   "description": "this lexeme form appears only when it comes after this other specific lexeme form"
+  }
+ ],
+ "property|for work": [
+  {
+   "id": "P1686",
+   "label": "for work",
+   "description": "qualifier of award received (P166) to specify the work that an award was given to the creator for"
+  }
+ ],
+ "property|found in taxon": [
+  {
+   "id": "P703",
+   "label": "found in taxon",
+   "description": "the taxon in which the item can be found"
+  }
+ ],
+ "property|frequency": [
+  {
+   "id": "P5102",
+   "label": "nature of statement",
+   "description": "(qualifier only) the underlying circumstances of this statement"
+  },
+  {
+   "id": "P2144",
+   "label": "frequency",
+   "description": "frequency in Hz at which the subject works, for example the frequency a radio station can be received"
+  },
+  {
+   "id": "P2257",
+   "label": "event interval",
+   "description": "standard nominal interval between scheduled or regularly recurring events. Include unit of time, e.g. \"year\" (Q577). 1/(event frequency). Time period of periodically occurring event"
+  },
+  {
+   "id": "P2896",
+   "label": "publication interval",
+   "description": "standard publication interval for daily or periodical publications"
+  }
+ ],
+ "property|from narrative universe": [
+  {
+   "id": "P1080",
+   "label": "from narrative universe",
+   "description": "subject's fictional entity is in the object narrative. See also P1441 (present in work) and P1445 (fictional universe described in)"
+  }
+ ],
+ "property|genre": [
+  {
+   "id": "P136",
+   "label": "genre",
+   "description": "creative work's genre or an artist's field of work (P101). Use main subject (P921) to relate creative works to their topic"
+  },
+  {
+   "id": "P415",
+   "label": "radio format",
+   "description": "describes the overall content broadcast on a radio station"
+  },
+  {
+   "id": "P21",
+   "label": "sex or gender",
+   "description": "sex or gender identity of human or animal. For human: male, female, non-binary, intersex, transgender female, transgender male, agender, etc. For animal: male organism, female organism. Groups of same gender use subclass of (P279)"
+  },
+  {
+   "id": "P5185",
+   "label": "grammatical gender",
+   "description": "grammatical gender of the word"
+  },
+  {
+   "id": "P4953",
+   "label": "Library of Congress Genre/Form Terms ID",
+   "description": "ID in the Library of Congress controlled vocabulary for genres and forms"
+  },
+  {
+   "id": "P8052",
+   "label": "MusicBrainz genre ID",
+   "description": "identifier for a genre on the MusicBrainz open music encyclopedia"
+  },
+  {
+   "id": "P7419",
+   "label": "gender educated",
+   "description": "genders educated at this educational institution"
+  }
+ ],
+ "property|given name": [
+  {
+   "id": "P735",
+   "label": "given name",
+   "description": "first name or another given name of this person; values used with the property should not link disambiguations nor family names"
+  },
+  {
+   "id": "P9687",
+   "label": "author given names",
+   "description": "qualifier for string representation of given or secondary sorting portion of a name as represented in a bibliographic reference file (for example BibTeX)"
+  },
+  {
+   "id": "P1560",
+   "label": "given name version for other gender",
+   "description": "equivalent name (with respect to the meaning of the name) in the same language: female version of a male first name, male version of a female first name. Add primarily the closest matching one"
+  }
+ ],
+ "property|has effect": [
+  {
+   "id": "P1542",
+   "label": "has effect",
+   "description": "effect of this item"
+  }
+ ],
+ "property|has part(s)": [
+  {
+   "id": "P527",
+   "label": "has part(s)",
+   "description": "part of this subject; inverse property of \"part of\" (P361). See also \"has parts of the class\" (P2670)."
+  },
+  {
+   "id": "P2670",
+   "label": "has part(s) of the class",
+   "description": "the subject has one or more parts of the object class"
+  }
+ ],
+ "property|head of government": [
+  {
+   "id": "P6",
+   "label": "head of government",
+   "description": "head of the executive power of this town, city, municipality, state, country, or other governmental body"
+  },
+  {
+   "id": "P1313",
+   "label": "office held by the head of government",
+   "description": "political office that is fulfilled by the head of the government of this item"
+  }
+ ],
+ "property|headquarters location": [
+  {
+   "id": "P159",
+   "label": "headquarters location",
+   "description": "city or town where an organization's headquarters is or has been situated. Use P276 qualifier for specific building"
+  }
+ ],
+ "property|heritage designation": [
+  {
+   "id": "P1435",
+   "label": "heritage designation",
+   "description": "heritage designation of a cultural or natural site"
+  }
+ ],
+ "property|honorific prefix": [
+  {
+   "id": "P511",
+   "label": "honorific prefix",
+   "description": "word or expression used before a name, in addressing or referring to a person"
+  }
+ ],
+ "property|immediately dangerous to life or health": [
+  {
+   "id": "P2129",
+   "label": "immediately dangerous to life or health",
+   "description": "Immediately Dangerous to Life and Health value"
+  }
+ ],
+ "property|incarnation of": [
+  {
+   "id": "P3701",
+   "label": "incarnation of",
+   "description": "incarnation of another religious or supernatural being"
+  }
+ ],
+ "property|influenced by": [
+  {
+   "id": "P737",
+   "label": "influenced by",
+   "description": "the subject (person, idea, etc.) was influenced or inspired by this object entity, e.g. \"Heidegger was influenced by Aristotle\""
+  }
+ ],
+ "property|instance of": [
+  {
+   "id": "P31",
+   "label": "instance of",
+   "description": "type to which this subject corresponds/belongs. Different from P279 (subclass of); for example: K2 is an instance of mountain; volcano is a subclass of mountain"
+  },
+  {
+   "id": "P10241",
+   "label": "individual of taxon",
+   "description": "the taxon of an individual named organism (animal, plant)"
+  },
+  {
+   "id": "P1647",
+   "label": "subproperty of",
+   "description": "all resources related by this property are also related by that property"
+  }
+ ],
+ "property|instrument": [
+  {
+   "id": "P1303",
+   "label": "instrument",
+   "description": "musical instrument that a person plays or teaches or used in a music occupation"
+  },
+  {
+   "id": "P2283",
+   "label": "uses",
+   "description": "item or concept used by the subject or in the operation (see also instrument [P1303] and armament [P520])"
+  },
+  {
+   "id": "P870",
+   "label": "instrumentation",
+   "description": "combination of musical instruments employed in a composition or accompanying a (folk) dance"
+  },
+  {
+   "id": "P1330",
+   "label": "MusicBrainz instrument ID",
+   "description": "identifier for an instrument on the music encyclopedia MusicBrainz"
+  },
+  {
+   "id": "P878",
+   "label": "avionics",
+   "description": "notable sensors, electronics, and other avionics installed in the subject aircraft"
+  },
+  {
+   "id": "P11862",
+   "label": "orchestration",
+   "description": "an enumeration of the instruments used in a musical composition or arrangement described using any system of score notation"
+  },
+  {
+   "id": "P14464",
+   "label": "Instrumentalistinnen-Lexikon ID",
+   "description": "identifier for a female musician, in the European Women Instrumentalists of the 18th and 19th Centuries database"
+  }
+ ],
+ "property|is the study of": [
+  {
+   "id": "P2578",
+   "label": "is the study of",
+   "description": "the object that an academic field studies; distinct from field of work (P101), which is used for human, organization, etc."
+  }
+ ],
+ "property|language regulatory body": [
+  {
+   "id": "P1018",
+   "label": "language regulatory body",
+   "description": "regulatory body of a language"
+  }
+ ],
+ "property|legislative body": [
+  {
+   "id": "P194",
+   "label": "legislative body",
+   "description": "legislative body governing this entity; political institution with elected representatives, such as a parliament/legislature or council"
+  }
+ ],
+ "property|local dialing code": [
+  {
+   "id": "P473",
+   "label": "local dialing code",
+   "description": "identifier dedicated to subject city by the area communication network"
+  }
+ ],
+ "property|located in or next to body of water": [
+  {
+   "id": "P206",
+   "label": "located in or next to body of water",
+   "description": "body of water on or next to which a place is located"
+  }
+ ],
+ "property|located in the administrative territorial entity": [
+  {
+   "id": "P131",
+   "label": "located in the administrative territorial entity",
+   "description": "the item is located on the territory of the following administrative entity. Use P276 for specifying locations that are non-administrative places and for items about events. Use P1382 if the item falls only partially into the administrative entity"
+  }
+ ],
+ "property|location": [
+  {
+   "id": "P625",
+   "label": "coordinate location",
+   "description": "geocoordinates of the subject. For Earth, please note that only the WGS84 geodetic datum is currently supported"
+  },
+  {
+   "id": "P276",
+   "label": "location",
+   "description": "location of the object, structure or event; use P131 to indicate the containing administrative entity, P8138 for statistical entities, or P706 for geographic entities; use P7153 for locations associated with the object"
+  },
+  {
+   "id": "P937",
+   "label": "work location",
+   "description": "location where persons or organisations were actively participating in employment, business or other work"
+  },
+  {
+   "id": "P3005",
+   "label": "valid in place",
+   "description": "place where a statement is valid"
+  },
+  {
+   "id": "P304",
+   "label": "page(s)",
+   "description": "page number of source referenced for statement. Note \"column(s)\" (P3903) and \"folio(s)\" (P7416) for other numbering systems"
+  },
+  {
+   "id": "P131",
+   "label": "located in the administrative territorial entity",
+   "description": "the item is located on the territory of the following administrative entity. Use P276 for specifying locations that are non-administrative places and for items about events. Use P1382 if the item falls only partially into the administrative entity"
+  },
+  {
+   "id": "P1932",
+   "label": "object named as",
+   "description": "use as qualifier to indicate how the object's value was given in the source"
+  }
+ ],
+ "property|made from material": [
+  {
+   "id": "P186",
+   "label": "made from material",
+   "description": "material the subject or the object is made of or derived from (do not confuse with P10672 which is used for processes)"
+  }
+ ],
+ "property|manufacturer": [
+  {
+   "id": "P176",
+   "label": "manufacturer",
+   "description": "(main or final) manufacturer or producer of this product"
+  },
+  {
+   "id": "P1056",
+   "label": "product or material produced",
+   "description": "material or product, including services, produced or provided by an organization, industry, facility, or process"
+  },
+  {
+   "id": "P2598",
+   "label": "serial number",
+   "description": "an identifier for a specific object among the same product. Not a product code or model number"
+  }
+ ],
+ "property|measured physical quantity": [
+  {
+   "id": "P111",
+   "label": "measured physical quantity",
+   "description": "value of a physical property expressed as number multiplied by a unit"
+  }
+ ],
+ "property|member of": [
+  {
+   "id": "P102",
+   "label": "member of political party",
+   "description": "the political party of which a person is or has been a member or otherwise affiliated"
+  },
+  {
+   "id": "P463",
+   "label": "member of",
+   "description": "organization, club or musical group to which the subject belongs. Do not use for membership in ethnic or social groups, nor for holding a political position, such as a member of parliament (use P39 for that)"
+  },
+  {
+   "id": "P54",
+   "label": "member of sports team",
+   "description": "sports teams or clubs that the subject represents or represented"
+  },
+  {
+   "id": "P53",
+   "label": "family",
+   "description": "family, including dynasty and nobility houses. Not family name (use P734 for family name)."
+  },
+  {
+   "id": "P10241",
+   "label": "individual of taxon",
+   "description": "the taxon of an individual named organism (animal, plant)"
+  },
+  {
+   "id": "P5054",
+   "label": "member of cabinet",
+   "description": "qualifier for \"position held\" (P39) to indicate the cabinet to which a minister belongs"
+  },
+  {
+   "id": "P3054",
+   "label": "Ontario MPP ID",
+   "description": "official identifier for a current or former Member of Provincial Parliament (MPP) at OLA.org, the official website of the Legislative Assembly of Ontario"
+  }
+ ],
+ "property|member of sports team": [
+  {
+   "id": "P54",
+   "label": "member of sports team",
+   "description": "sports teams or clubs that the subject represents or represented"
+  }
+ ],
+ "property|mother": [
+  {
+   "id": "P25",
+   "label": "mother",
+   "description": "female parent of the subject. For stepmother, use \"stepparent\" (P3448)"
+  },
+  {
+   "id": "P40",
+   "label": "child",
+   "description": "subject has object as child. Do not use for stepchildren\u2014use \"relative\" (P1038), qualified with \"kinship to subject\" (P1039)"
+  },
+  {
+   "id": "P103",
+   "label": "native language",
+   "description": "language or languages a person (or group) has learned from early childhood"
+  },
+  {
+   "id": "P1038",
+   "label": "relative",
+   "description": "family member (qualify with \"kinship to subject\", P1039; for direct family member please use specific property)"
+  },
+  {
+   "id": "P612",
+   "label": "mother house",
+   "description": "principal house or community for a religious institute"
+  }
+ ],
+ "property|natural product of taxon": [
+  {
+   "id": "P1582",
+   "label": "natural product of taxon",
+   "description": "links a natural product with its source (animal, plant, fungal, algal, etc.)"
+  }
+ ],
+ "property|nominated for": [
+  {
+   "id": "P1411",
+   "label": "nominated for",
+   "description": "award nomination received by a person, organisation or creative work (inspired from \"award received\" (Property:P166))"
+  },
+  {
+   "id": "P1686",
+   "label": "for work",
+   "description": "qualifier of award received (P166) to specify the work that an award was given to the creator for"
+  }
+ ],
+ "property|number of cases": [
+  {
+   "id": "P1603",
+   "label": "number of cases",
+   "description": "cumulative number of confirmed, probable and suspected occurrences"
+  }
+ ],
+ "property|number of players in region": [
+  {
+   "id": "P4909",
+   "label": "number of players in region",
+   "description": "number of registered players in a sport or people practicing a sport in a region"
+  }
+ ],
+ "property|number of spans": [],
+ "property|object of statement has role": [
+  {
+   "id": "P3831",
+   "label": "object of statement has role",
+   "description": "(qualifier) role held by the predicate value (object) of a statement in the context of that statement; for the role of the item the statement appears on (subject), use P2868"
+  }
+ ],
+ "property|occupation": [
+  {
+   "id": "P106",
+   "label": "occupation",
+   "description": "occupation of a person. See also \"field of work\" (Property:P101), \"position held\" (Property:P39). Not for groups of people. There, use \"field of work\" (Property:P101), \"industry\" (Property:P452), \"members have occupation\" (Property:P3989)."
+  },
+  {
+   "id": "P3095",
+   "label": "practiced by",
+   "description": "type of agents that study this subject or work in this field"
+  },
+  {
+   "id": "P3989",
+   "label": "members have occupation",
+   "description": "some or all members of this group share the occupation"
+  },
+  {
+   "id": "P8629",
+   "label": "Occupational Outlook Handbook ID",
+   "description": "identifier for occupations in the Occupational Outlook Handbook"
+  },
+  {
+   "id": "P8734",
+   "label": "O*NET OnLine code",
+   "description": "code for an occupation in O*NET OnLine"
+  }
+ ],
+ "property|office held by the head of government": [
+  {
+   "id": "P1313",
+   "label": "office held by the head of government",
+   "description": "political office that is fulfilled by the head of the government of this item"
+  }
+ ],
+ "property|official residence": [
+  {
+   "id": "P263",
+   "label": "official residence",
+   "description": "the residence at which heads of government and other senior figures officially reside"
+  }
+ ],
+ "property|oxidation state": [
+  {
+   "id": "P1121",
+   "label": "oxidation state",
+   "description": "this atom has or can have the oxidation number"
+  }
+ ],
+ "property|parent astronomical body": [
+  {
+   "id": "P397",
+   "label": "parent astronomical body",
+   "description": "major astronomical body the item belongs to"
+  }
+ ],
+ "property|partially coincident with": [
+  {
+   "id": "P1382",
+   "label": "partially coincident with",
+   "description": "object that partially overlaps with the subject in its instances, parts, or members"
+  },
+  {
+   "id": "P3179",
+   "label": "territory overlaps",
+   "description": "part or all of the area associated with (this) entity overlaps part or all of the area associated with that entity"
+  }
+ ],
+ "property|participant in": [
+  {
+   "id": "P1344",
+   "label": "participant in",
+   "description": "event in which a person, organization or creative work was/is a participant; inverse of P710 or P1923"
+  },
+  {
+   "id": "P607",
+   "label": "participated in conflict",
+   "description": "battles, wars or other military engagements in which the person or item participated"
+  },
+  {
+   "id": "P5030",
+   "label": "talk show guest",
+   "description": "person invited in a talk show"
+  },
+  {
+   "id": "P11108",
+   "label": "recorded participant",
+   "description": "agent taking an active role as a participant in a nonfiction moving image or other recorded work"
+  }
+ ],
+ "property|participated in conflict": [
+  {
+   "id": "P607",
+   "label": "participated in conflict",
+   "description": "battles, wars or other military engagements in which the person or item participated"
+  }
+ ],
+ "property|partnership with": [
+  {
+   "id": "P1327",
+   "label": "partner in business or sport",
+   "description": "professional collaborator"
+  },
+  {
+   "id": "P2652",
+   "label": "partnership with",
+   "description": "partnership (commercial or/and non-commercial) between this organization and another organization or institution"
+  }
+ ],
+ "property|patronage": [
+  {
+   "id": "P3872",
+   "label": "patronage",
+   "description": "number of passengers, patrons or visitors in specified time period"
+  }
+ ],
+ "property|performer": [
+  {
+   "id": "P175",
+   "label": "performer",
+   "description": "actor, musician, band or other performer associated with this role or musical work"
+  },
+  {
+   "id": "P453",
+   "label": "character role",
+   "description": "specific role played or filled by subject -- use only as qualifier of \"cast member\" (P161), \"voice actor\" (P725)"
+  },
+  {
+   "id": "P4633",
+   "label": "name of the character role",
+   "description": "name by which a character role is recorded in a database or mentioned in the context of a work, use as qualifier for cast; notably a specific performance of a theatrical production of a play"
+  },
+  {
+   "id": "P5053",
+   "label": "fastest lap",
+   "description": "person who does the fastest lap during a motorsport race"
+  },
+  {
+   "id": "P14427",
+   "label": "performer age-compliance documentation URL",
+   "description": "URL for a website's statement of compliance with legal record-keeping requirements related to visual depictions of actual sexually explicit conduct"
+  }
+ ],
+ "property|permanent duplicated item": [
+  {
+   "id": "P2959",
+   "label": "permanent duplicated item",
+   "description": "this item duplicates another item and the two can't be merged, as one Wikimedia project includes two pages, e.g. in different scripts or languages (only applies to some wikis, e.g.: cdowiki, gomwiki, nanwiki). Use P31=Q17362920 for other wikis."
+  }
+ ],
+ "property|place of birth": [
+  {
+   "id": "P19",
+   "label": "place of birth",
+   "description": "most specific known birth location of a person, animal or fictional character"
+  }
+ ],
+ "property|place of death": [
+  {
+   "id": "P20",
+   "label": "place of death",
+   "description": "most specific known (e.g. city instead of country, or hospital instead of city) death location of a person, animal or fictional character"
+  }
+ ],
+ "property|place of publication": [
+  {
+   "id": "P291",
+   "label": "place of publication",
+   "description": "geographical place of publication of the edition (use 1st edition when referring to works)"
+  }
+ ],
+ "property|point in time": [
+  {
+   "id": "P585",
+   "label": "point in time",
+   "description": "date something took place, existed or a statement was true; for providing time use the \"refine date\" property (P4241)"
+  }
+ ],
+ "property|population": [
+  {
+   "id": "P1082",
+   "label": "population",
+   "description": "number of people inhabiting the place; number of people of subject"
+  },
+  {
+   "id": "P4179",
+   "label": "tabular population",
+   "description": "same as population (P1082); used when there is data for many different points in time"
+  },
+  {
+   "id": "P1539",
+   "label": "female population",
+   "description": "number of female people inhabiting the place; number of female people of subject"
+  },
+  {
+   "id": "P1540",
+   "label": "male population",
+   "description": "number of male people inhabiting the place; number of male people of subject"
+  },
+  {
+   "id": "P6499",
+   "label": "literate population",
+   "description": "number of literate people within a territorial entity (typically determined during a census)"
+  },
+  {
+   "id": "P6498",
+   "label": "illiterate population",
+   "description": "number of illiterate people within a territorial entity (typically determined during a census)"
+  },
+  {
+   "id": "P12712",
+   "label": "population by native language",
+   "description": "native language population of a place"
+  }
+ ],
+ "property|position held": [
+  {
+   "id": "P39",
+   "label": "position held",
+   "description": "subject currently or formerly holds the object position or public office"
+  },
+  {
+   "id": "P1313",
+   "label": "office held by the head of government",
+   "description": "political office that is fulfilled by the head of the government of this item"
+  },
+  {
+   "id": "P2388",
+   "label": "position held by head of the organization",
+   "description": "position of the head of this item"
+  },
+  {
+   "id": "P1308",
+   "label": "position holder",
+   "description": "persons who hold and/or held the position"
+  },
+  {
+   "id": "P1906",
+   "label": "office held by head of state",
+   "description": "political office that is fulfilled by the head of state of this item"
+  }
+ ],
+ "property|position holder": [
+  {
+   "id": "P1308",
+   "label": "position holder",
+   "description": "persons who hold and/or held the position"
+  }
+ ],
+ "property|present in work": [
+  {
+   "id": "P1441",
+   "label": "present in work",
+   "description": "this (fictional or fictionalized) entity, place, or person appears in that work as part of the narration (use P2860 for works citing other works, P361/P1433 for works being part of other works, P1343 for entities described in non-fictional accounts)"
+  }
+ ],
+ "property|price": [
+  {
+   "id": "P2284",
+   "label": "price",
+   "description": "published price listed or paid for a product (use with unit of currency)"
+  },
+  {
+   "id": "P9622",
+   "label": "Price One Penny work ID",
+   "description": "identifier for a work in the Price One Penny database"
+  },
+  {
+   "id": "P4030",
+   "label": "PLU code",
+   "description": "identification numbers affixed to fruits and vegetables for sale, used in checkout and inventory"
+  },
+  {
+   "id": "P9619",
+   "label": "Price One Penny author ID",
+   "description": "identifier for an author in the Price One Penny database"
+  },
+  {
+   "id": "P9623",
+   "label": "Price One Penny library ID",
+   "description": "identifier for a library in the Price One Penny database"
+  },
+  {
+   "id": "P8340",
+   "label": "estimated value",
+   "description": "estimated value of a house, company, patent, etc"
+  },
+  {
+   "id": "P9624",
+   "label": "Price One Penny publisher ID",
+   "description": "identifier for individuals listed as publishers in the Price One Penny database"
+  }
+ ],
+ "property|publication date": [
+  {
+   "id": "P577",
+   "label": "publication date",
+   "description": "date or point in time when a work or product was first published or released"
+  }
+ ],
+ "property|published in": [
+  {
+   "id": "P1433",
+   "label": "published in",
+   "description": "larger work that a given work was published in, like a journal, a website, a collection, a book or a music album"
+  },
+  {
+   "id": "P6872",
+   "label": "has written for",
+   "description": "publication an author has contributed to"
+  },
+  {
+   "id": "P291",
+   "label": "place of publication",
+   "description": "geographical place of publication of the edition (use 1st edition when referring to works)"
+  }
+ ],
+ "property|quantity symbol (string)": [
+  {
+   "id": "P416",
+   "label": "quantity symbol (string)",
+   "description": "symbol for a mathematical or physical quantity"
+  }
+ ],
+ "property|record label": [
+  {
+   "id": "P264",
+   "label": "record label",
+   "description": "brand and trademark associated with the marketing of subject music recordings and music videos"
+  }
+ ],
+ "property|replaced by": [
+  {
+   "id": "P1366",
+   "label": "replaced by",
+   "description": "other person or item which continues the item by replacing it in its role. Use P156 (\"followed by\") if the item is not replaced nor identical, but adds to the series (e.g. books in a series)"
+  },
+  {
+   "id": "P167",
+   "label": "structure replaced by",
+   "description": "the item which replaced this building or structure, at the same geographic location"
+  }
+ ],
+ "property|replaces": [
+  {
+   "id": "P1365",
+   "label": "replaces",
+   "description": "person, state or item replaced. Use \"structure replaces\" (P1398) for structures. Use \"follows\" (P155) if the previous item was not replaced or predecessor and successor are identical"
+  },
+  {
+   "id": "P1398",
+   "label": "structure replaces",
+   "description": "the item this building or structure replaced, at the same geographic location"
+  }
+ ],
+ "property|said to be the same as": [
+  {
+   "id": "P460",
+   "label": "said to be the same as",
+   "description": "this item is said to be the same as that item, though this may be uncertain or disputed"
+  },
+  {
+   "id": "P11577",
+   "label": "said to be the same as lexeme",
+   "description": "some source considers this lexeme to be the same lexeme or a spelling variant of another lexeme"
+  }
+ ],
+ "property|series ordinal": [
+  {
+   "id": "P1545",
+   "label": "series ordinal",
+   "description": "position of an item in its parent series (most frequently a 1-based index), generally to be used as a qualifier (different from \"rank\" defined as a class, and from \"ranking\" defined as a property for evaluating a quality)"
+  }
+ ],
+ "property|sex or gender": [
+  {
+   "id": "P21",
+   "label": "sex or gender",
+   "description": "sex or gender identity of human or animal. For human: male, female, non-binary, intersex, transgender female, transgender male, agender, etc. For animal: male organism, female organism. Groups of same gender use subclass of (P279)"
+  }
+ ],
+ "property|sibling": [
+  {
+   "id": "P3373",
+   "label": "sibling",
+   "description": "the subject and the object have at least one common parent (brother, sister, etc. including half-siblings); use \"relative\" (P1038) for siblings-in-law (brother-in-law, sister-in-law, etc.) and step-siblings (step-brothers, step-sisters, etc.)"
+  },
+  {
+   "id": "P1639",
+   "label": "pendant of",
+   "description": "other work in a pair of opposing artworks, such as wedding portraits, commissioned together, but not always"
+  }
+ ],
+ "property|significant event": [
+  {
+   "id": "P793",
+   "label": "significant event",
+   "description": "significant or notable events associated with the subject"
+  },
+  {
+   "id": "P2408",
+   "label": "set in period",
+   "description": "historical, contemporary, or future period, year, century or day the work or genre is set in or event featured in the story of the work"
+  }
+ ],
+ "property|source of energy": [
+  {
+   "id": "P618",
+   "label": "source of energy",
+   "description": "describes the source of energy an animated object (machine or animal) uses"
+  }
+ ],
+ "property|spouse": [
+  {
+   "id": "P26",
+   "label": "spouse",
+   "description": "the subject has the object as their spouse (husband, wife, partner, etc.). Use \"unmarried partner\" (P451) for non-married companions"
+  }
+ ],
+ "property|start of work period": [
+  {
+   "id": "P2031",
+   "label": "start of work period",
+   "description": "start of period during which a person or group flourished (fl. = \"floruit\") in their professional activity"
+  }
+ ],
+ "property|start time": [
+  {
+   "id": "P580",
+   "label": "start time",
+   "description": "time an entity begins to exist or a statement starts being valid"
+  },
+  {
+   "id": "P2031",
+   "label": "start of work period",
+   "description": "start of period during which a person or group flourished (fl. = \"floruit\") in their professional activity"
+  },
+  {
+   "id": "P1319",
+   "label": "earliest date",
+   "description": "earliest date at which an event could have happened. Use as qualifier for other date properties"
+  },
+  {
+   "id": "P8555",
+   "label": "latest start date",
+   "description": "(qualifier) latest date on which the statement could have started to be true"
+  }
+ ],
+ "property|statement supported by": [
+  {
+   "id": "P3680",
+   "label": "statement supported by",
+   "description": "entity that supports a given statement"
+  }
+ ],
+ "property|student": [
+  {
+   "id": "P802",
+   "label": "student",
+   "description": "notable student(s) of the subject individual"
+  },
+  {
+   "id": "P1066",
+   "label": "student of",
+   "description": "person who has taught this person"
+  },
+  {
+   "id": "P69",
+   "label": "educated at",
+   "description": "educational institution attended by subject"
+  },
+  {
+   "id": "P2196",
+   "label": "count of students",
+   "description": "number of pupils or students of any type in an educational organization. Qualify with \"point in time\" (P585) or \"time period\" (P2348)."
+  },
+  {
+   "id": "P8953",
+   "label": "Students of Prague Universities ID",
+   "description": "numeric identifier for student of Prague Universities 1882\u20131945"
+  },
+  {
+   "id": "P3325",
+   "label": "student register of the University of Helsinki ID (1853\u20131899)",
+   "description": "ID in the online student register of the University of Helsinki 1853\u20131899. Format: numbers above ca. 20000, see P3299 for lower numbers"
+  },
+  {
+   "id": "P10351",
+   "label": "Turin University student ID",
+   "description": "identifier for a student of the University of Turin in the database of its historical archive"
+  }
+ ],
+ "property|studied by": [
+  {
+   "id": "P2579",
+   "label": "studied by",
+   "description": "subject is studied by this science or domain"
+  },
+  {
+   "id": "P3095",
+   "label": "practiced by",
+   "description": "type of agents that study this subject or work in this field"
+  }
+ ],
+ "property|takes place in fictional universe": [
+  {
+   "id": "P1434",
+   "label": "takes place in fictional universe",
+   "description": "the subject is a work describing a fictional universe, i.e. whose plot occurs in this universe"
+  }
+ ],
+ "property|terminus location": [
+  {
+   "id": "P609",
+   "label": "terminus location",
+   "description": "location of the terminus of a linear feature"
+  }
+ ],
+ "property|total debt": [
+  {
+   "id": "P2133",
+   "label": "total debt",
+   "description": "amount of debt for a company, organization or public entity"
+  }
+ ],
+ "property|twinned administrative body": [
+  {
+   "id": "P190",
+   "label": "twinned administrative body",
+   "description": "twin towns, sister cities, twinned municipalities and other localities that have a partnership or cooperative agreement, either legally or informally acknowledged by their governments"
+  }
+ ],
+ "property|type of electrification": [
+  {
+   "id": "P930",
+   "label": "type of electrification",
+   "description": "electrification system scheme and/or voltage"
+  }
+ ],
+ "property|voice actor": [
+  {
+   "id": "P725",
+   "label": "voice actor",
+   "description": "performer of a spoken role in a creative work such as animation, video game, radio drama, or dubbing over [use \"character role\" (P453) as qualifier] [use \"cast member\" (P161) for live acting]"
+  }
+ ],
+ "property|wavelength": [
+  {
+   "id": "P1227",
+   "label": "astronomical filter",
+   "description": "passband used to isolate particular sections of the electromagnetic spectrum"
+  },
+  {
+   "id": "P2808",
+   "label": "wavelength",
+   "description": "spatial period of a wave"
+  }
+ ],
+ "property|winner": [
+  {
+   "id": "P1346",
+   "label": "winner",
+   "description": "winner of a competition or similar event, not to be used from the awardees record (instead use \"award received\" (P166), possibly qualified with \"for work\" (P1686)) nor for wars or battles"
+  },
+  {
+   "id": "P166",
+   "label": "award received",
+   "description": "award or recognition received by a person, organization or creative work"
+  },
+  {
+   "id": "P991",
+   "label": "successful candidate",
+   "description": "person(s) or political organization(s) elected after the election"
+  },
+  {
+   "id": "P2522",
+   "label": "competition won",
+   "description": "competition or sports event won by the subject"
+  }
+ ],
+ "property|yield strength": [
+  {
+   "id": "P5529",
+   "label": "yield strength",
+   "description": "material proprety measuring the stress above which materials begin to permanently deform"
+  }
+ ]
+}

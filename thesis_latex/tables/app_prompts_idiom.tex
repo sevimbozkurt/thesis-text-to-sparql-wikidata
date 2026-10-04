@@ -1,0 +1,45 @@
+\begin{lstlisting}[caption={Idiom-guidance prompt. The idiom arm is \textsc{base} followed by \textsc{idiom guide}; the baseline arm is \textsc{base} alone.},label={lst:prompt-idiom},basicstyle=\ttfamily\scriptsize,breaklines=true,captionpos=b]
+You are a SPARQL expert for Wikidata. Generate a SPARQL query that
+answers the question, but instead of using opaque Wikidata IDs, use human-readable
+labels in this exact bracket format:
+  - For entities:   wd:[entity:LABEL]      e.g. wd:[entity:Christopher Nolan]
+  - For properties: wdt:[property:LABEL]   e.g. wdt:[property:director]
+Use this format for ALL entities and properties. Keep variable names and SPARQL
+structure normal. Output ONLY the SPARQL query, no explanation.
+
+Before writing the query, consider which of Wikidata's modelling idioms the
+question requires. Use them where appropriate:
+
+1. Class membership is usually hierarchical. A question about a category
+   normally means the category and all of its subclasses, so prefer
+   ?item wdt:[property:instance of]/wdt:[property:subclass of]* wd:[entity:CLASS]
+   over a direct instance-of triple. Use the direct form only when the question
+   clearly means the class itself.
+
+2. Values that carry extra information live on statements, not on direct
+   claims. When the question asks about a qualifier — a date, a rank, a role, a
+   plot, a part something applies to — go through the statement node:
+     ?item p:[property:P] ?st .
+     ?st ps:[property:P] ?value ; pq:[property:QUALIFIER] ?qvalue .
+   Direct wdt: triples cannot see qualifiers.
+
+3. Quantities with units, precision or bounds require the statement value node:
+     ?item p:[property:P]/psv:[property:P] ?vn .
+     ?vn wikibase:quantityAmount ?amount ; wikibase:quantityUnit ?unit .
+   Use this whenever units must be compared or converted.
+
+4. Questions about words, forms, senses or languages concern lexemes, not
+   items: use wikibase:lemma, dct:language, ontolex:sense and the lexeme
+   namespace rather than item properties.
+
+5. Counting, ranking or "how many / most / per X" questions need explicit
+   aggregation: COUNT/SUM with GROUP BY, and ORDER BY ... DESC for ranking.
+
+6. Alternatives in the question ("mathematicians or physicists", several
+   platforms) are expressed with VALUES or UNION, not by choosing one.
+
+7. Do not add LIMIT unless the question asks for a specific number of results.
+
+Apply only the idioms the question actually calls for; do not add machinery
+that is not needed.
+\end{lstlisting}

@@ -1,0 +1,26 @@
+\begin{table}[htbp]
+  \centering
+  \caption{Question sets behind the reported results.}
+  \label{tab:subsets}
+  \small
+  \resizebox{\ifdim\width>\textwidth\textwidth\else\width\fi}{!}{%
+  \begin{tabular}{@{}lrl@{}}
+    \toprule
+    Question set & Questions & Used for \\
+    \midrule
+    Working split, all test questions & 567 & construct use in reference and generated queries \\
+    Questions with aligned linking ground truth & 547 & linker comparison (1,086 entity, 2,766 property mentions) \\
+    Strict fair set & 400 & all accuracy figures; full-set results in \cref{tab:app-master} \\
+    Common entity-defined subset & 316 & \cref{tab:main}, \cref{fig:main} and the 66.5-point gap \\
+    End-to-end run, entity-level defined & 363 & stage-wise outcomes (\cref{fig:funnel}) \\
+    Scored in every prompt arm & 329 & accuracy levels in \cref{fig:arms} \\
+    Scored in both arms of a comparison & 336--356 & paired tests in \cref{tab:significance} \\
+    Paired Opus 4.8 and Opus 5 rows & 354 & newer-model comparison \\
+    Re-executed, all eight runs defined & 327 & selection strategies (\cref{tab:cascade}) \\
+    Official split, all test questions & 495 & stage rates in \cref{tab:app-official} \\
+    Official split, strict fair set & 370 & comparison with the authors' systems \\
+    LC-QuAD 2.0 sample & 150 & linking on a second benchmark \\
+    \bottomrule
+  \end{tabular}}
+  \tabnote{Unless a result names another set, it refers to the strict fair set of the working split.}
+\end{table}

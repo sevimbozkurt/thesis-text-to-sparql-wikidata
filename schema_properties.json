@@ -1,0 +1,12180 @@
+{
+ "P625": {
+  "label": "coordinate location",
+  "quantity": false,
+  "qualifiers": [
+   "P2241",
+   "P459",
+   "P518",
+   "P609",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P276": {
+  "label": "location",
+  "quantity": false,
+  "qualifiers": [
+   "P131",
+   "P518",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P1647": {
+  "label": "subproperty of",
+  "quantity": false,
+  "qualifiers": [
+   "P1013",
+   "P1480",
+   "P2241",
+   "P580",
+   "P7452"
+  ],
+  "class_range": false
+ },
+ "P3365": {
+  "label": "Treccani ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1476",
+   "P1810",
+   "P2093",
+   "P4070",
+   "P577"
+  ],
+  "class_range": false
+ },
+ "P551": {
+  "label": "residence",
+  "quantity": false,
+  "qualifiers": [
+   "P580",
+   "P582",
+   "P585",
+   "P6375",
+   "P669"
+  ],
+  "class_range": true
+ },
+ "P106": {
+  "label": "occupation",
+  "quantity": false,
+  "qualifiers": [
+   "P1013",
+   "P108",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P11146": {
+  "label": "collection items at",
+  "quantity": false,
+  "qualifiers": [
+   "P170",
+   "P1932",
+   "P217",
+   "P518",
+   "P973"
+  ],
+  "class_range": true
+ },
+ "P463": {
+  "label": "member of",
+  "quantity": false,
+  "qualifiers": [
+   "P2868",
+   "P528",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P69": {
+  "label": "educated at",
+  "quantity": false,
+  "qualifiers": [
+   "P512",
+   "P580",
+   "P582",
+   "P585",
+   "P812"
+  ],
+  "class_range": true
+ },
+ "P4081": {
+  "label": "BHL creator ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P2241",
+   "P3740",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P166": {
+  "label": "award received",
+  "quantity": false,
+  "qualifiers": [
+   "P1686",
+   "P27",
+   "P585",
+   "P6208",
+   "P805"
+  ],
+  "class_range": true
+ },
+ "P225": {
+  "label": "taxon name",
+  "quantity": false,
+  "qualifiers": [
+   "P1135",
+   "P3831",
+   "P405",
+   "P574",
+   "P697"
+  ],
+  "class_range": false
+ },
+ "P6264": {
+  "label": "Harvard Index of Botanists ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4970",
+   "P7452",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P1006": {
+  "label": "Nationale Thesaurus voor Auteursnamen ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4970",
+   "P742",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P1343": {
+  "label": "described by source",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2699",
+   "P304",
+   "P805",
+   "P958"
+  ],
+  "class_range": true
+ },
+ "P138": {
+  "label": "named after",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P407",
+   "P5168",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P5587": {
+  "label": "Libris-URI",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P437",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P27": {
+  "label": "country of citizenship",
+  "quantity": false,
+  "qualifiers": [
+   "P1534",
+   "P2241",
+   "P580",
+   "P582",
+   "P828"
+  ],
+  "class_range": true
+ },
+ "P3321": {
+  "label": "male form of label",
+  "quantity": false,
+  "qualifiers": [
+   "P2241",
+   "P518",
+   "P580",
+   "P6254",
+   "P7018"
+  ],
+  "class_range": false
+ },
+ "P4033": {
+  "label": "Mastodon address",
+  "quantity": false,
+  "qualifiers": [
+   "P2241",
+   "P3831",
+   "P407",
+   "P580",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P1424": {
+  "label": "topic has template",
+  "quantity": false,
+  "qualifiers": [
+   "P1706",
+   "P2241",
+   "P366",
+   "P3831",
+   "P518"
+  ],
+  "class_range": true
+ },
+ "P1963": {
+  "label": "properties for this type",
+  "quantity": false,
+  "qualifiers": [
+   "P11889",
+   "P1552",
+   "P2559",
+   "P8395",
+   "P8396"
+  ],
+  "class_range": false
+ },
+ "P691": {
+  "label": "NL CR AUT ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P2868",
+   "P4970",
+   "P742"
+  ],
+  "class_range": false
+ },
+ "P6104": {
+  "label": "maintained by WikiProject",
+  "quantity": false,
+  "qualifiers": [
+   "P361",
+   "P518",
+   "P585",
+   "P813",
+   "P973"
+  ],
+  "class_range": true
+ },
+ "P2521": {
+  "label": "female form of label",
+  "quantity": false,
+  "qualifiers": [
+   "P2241",
+   "P366",
+   "P518",
+   "P6254",
+   "P7018"
+  ],
+  "class_range": false
+ },
+ "P227": {
+  "label": "GND ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P2868",
+   "P4970",
+   "P580"
+  ],
+  "class_range": false
+ },
+ "P6186": {
+  "label": "category for eponymous categories",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": true
+ },
+ "P1036": {
+  "label": "Dewey Decimal Classification",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P2916",
+   "P747",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P1687": {
+  "label": "main Wikidata property",
+  "quantity": false,
+  "qualifiers": [
+   "P1013",
+   "P1706",
+   "P2241",
+   "P518",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P12800": {
+  "label": "Vikidia article ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P424",
+   "P9675"
+  ],
+  "class_range": false
+ },
+ "P9223": {
+  "label": "Provenio UUID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P7452"
+  ],
+  "class_range": false
+ },
+ "P6251": {
+  "label": "catchphrase",
+  "quantity": false,
+  "qualifiers": [
+   "P10663",
+   "P2125",
+   "P580",
+   "P582",
+   "P805"
+  ],
+  "class_range": false
+ },
+ "P937": {
+  "label": "work location",
+  "quantity": false,
+  "qualifiers": [
+   "P580",
+   "P582",
+   "P585",
+   "P6375",
+   "P7532"
+  ],
+  "class_range": true
+ },
+ "P31": {
+  "label": "instance of",
+  "quantity": false,
+  "qualifiers": [
+   "P155",
+   "P156",
+   "P1932",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P4602": {
+  "label": "date of burial or cremation",
+  "quantity": false,
+  "qualifiers": [
+   "P1480",
+   "P276",
+   "P3629",
+   "P4241",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P22": {
+  "label": "father",
+  "quantity": false,
+  "qualifiers": [
+   "P1039",
+   "P1480",
+   "P2241",
+   "P25",
+   "P5102"
+  ],
+  "class_range": true
+ },
+ "P1066": {
+  "label": "student of",
+  "quantity": false,
+  "qualifiers": [
+   "P3831",
+   "P580",
+   "P582",
+   "P69",
+   "P812"
+  ],
+  "class_range": true
+ },
+ "P4159": {
+  "label": "WeRelate person ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P19",
+   "P2241",
+   "P4070",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P735": {
+  "label": "given name",
+  "quantity": false,
+  "qualifiers": [
+   "P1449",
+   "P1545",
+   "P3831",
+   "P407",
+   "P7452"
+  ],
+  "class_range": true
+ },
+ "P2949": {
+  "label": "WikiTree person ID",
+  "quantity": false,
+  "qualifiers": [
+   "P123",
+   "P1476",
+   "P1810",
+   "P2241",
+   "P4070"
+  ],
+  "class_range": false
+ },
+ "P1303": {
+  "label": "instrument",
+  "quantity": false,
+  "qualifiers": [
+   "P1303",
+   "P176",
+   "P412",
+   "P518",
+   "P580"
+  ],
+  "class_range": true
+ },
+ "P3368": {
+  "label": "Prabook ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P4070",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P40": {
+  "label": "child",
+  "quantity": false,
+  "qualifiers": [
+   "P1039",
+   "P1480",
+   "P1545",
+   "P22",
+   "P25"
+  ],
+  "class_range": true
+ },
+ "P802": {
+  "label": "student",
+  "quantity": false,
+  "qualifiers": [
+   "P1013",
+   "P3831",
+   "P580",
+   "P582",
+   "P69"
+  ],
+  "class_range": true
+ },
+ "P5504": {
+  "label": "RISM ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P2241",
+   "P2699",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P3373": {
+  "label": "sibling",
+  "quantity": false,
+  "qualifiers": [
+   "P1039",
+   "P1480",
+   "P1545",
+   "P3831",
+   "P5102"
+  ],
+  "class_range": true
+ },
+ "P108": {
+  "label": "employer",
+  "quantity": false,
+  "qualifiers": [
+   "P2868",
+   "P39",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P973": {
+  "label": "described at URL",
+  "quantity": false,
+  "qualifiers": [
+   "P123",
+   "P1476",
+   "P3274",
+   "P407",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P53": {
+  "label": "family",
+  "quantity": false,
+  "qualifiers": [
+   "P1480",
+   "P580",
+   "P582",
+   "P7452",
+   "P828"
+  ],
+  "class_range": true
+ },
+ "P5008": {
+  "label": "on focus list of Wikimedia project",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P276",
+   "P518",
+   "P585",
+   "P921"
+  ],
+  "class_range": true
+ },
+ "P412": {
+  "label": "voice type",
+  "quantity": false,
+  "qualifiers": [
+   "P1264",
+   "P2241",
+   "P580",
+   "P582",
+   "P941"
+  ],
+  "class_range": true
+ },
+ "P800": {
+  "label": "notable work",
+  "quantity": false,
+  "qualifiers": [
+   "P2868",
+   "P453",
+   "P577",
+   "P580",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P1455": {
+  "label": "list of works",
+  "quantity": false,
+  "qualifiers": [
+   "P1476",
+   "P2699",
+   "P528",
+   "P577",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P25": {
+  "label": "mother",
+  "quantity": false,
+  "qualifiers": [
+   "P1039",
+   "P1480",
+   "P22",
+   "P2241",
+   "P5102"
+  ],
+  "class_range": true
+ },
+ "P18": {
+  "label": "image",
+  "quantity": false,
+  "qualifiers": [
+   "P180",
+   "P2096",
+   "P21",
+   "P518",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P178": {
+  "label": "developer",
+  "quantity": false,
+  "qualifiers": [
+   "P2868",
+   "P400",
+   "P518",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P176": {
+  "label": "manufacturer",
+  "quantity": false,
+  "qualifiers": [
+   "P1092",
+   "P2598",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P1068": {
+  "label": "instruction set",
+  "quantity": false,
+  "qualifiers": [
+   "P348",
+   "P518"
+  ],
+  "class_range": true
+ },
+ "P287": {
+  "label": "designed by",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P1932",
+   "P3831",
+   "P518",
+   "P580"
+  ],
+  "class_range": true
+ },
+ "P6949": {
+  "label": "announcement date",
+  "quantity": false,
+  "qualifiers": [
+   "P1480",
+   "P2699",
+   "P291",
+   "P518",
+   "P9731"
+  ],
+  "class_range": false
+ },
+ "P400": {
+  "label": "platform",
+  "quantity": false,
+  "qualifiers": [
+   "P10663",
+   "P1433",
+   "P291",
+   "P518",
+   "P577"
+  ],
+  "class_range": true
+ },
+ "P279": {
+  "label": "subclass of",
+  "quantity": false,
+  "qualifiers": [
+   "P1001",
+   "P1013",
+   "P155",
+   "P2241",
+   "P580"
+  ],
+  "class_range": true
+ },
+ "P361": {
+  "label": "part of",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P155",
+   "P156",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P527": {
+  "label": "has part(s)",
+  "quantity": false,
+  "qualifiers": [
+   "P1114",
+   "P1545",
+   "P3831",
+   "P577",
+   "P580"
+  ],
+  "class_range": true
+ },
+ "P19": {
+  "label": "place of birth",
+  "quantity": false,
+  "qualifiers": [
+   "P131",
+   "P17",
+   "P2241",
+   "P459",
+   "P7452"
+  ],
+  "class_range": true
+ },
+ "P8952": {
+  "label": "inappropriate property for this type",
+  "quantity": false,
+  "qualifiers": [
+   "P2559"
+  ],
+  "class_range": false
+ },
+ "P910": {
+  "label": "topic's main category",
+  "quantity": false,
+  "qualifiers": [
+   "P1706",
+   "P2241",
+   "P373",
+   "P518",
+   "P8327"
+  ],
+  "class_range": true
+ },
+ "P7749": {
+  "label": "Nomenclature for Museum Cataloging",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P2241",
+   "P4390",
+   "P4900"
+  ],
+  "class_range": false
+ },
+ "P8408": {
+  "label": "KBpedia ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P4390",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P2671": {
+  "label": "Google Knowledge Graph ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P3831",
+   "P407",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P1889": {
+  "label": "different from",
+  "quantity": false,
+  "qualifiers": [
+   "P1013",
+   "P2868",
+   "P3831",
+   "P5168",
+   "P8338"
+  ],
+  "class_range": true
+ },
+ "P1051": {
+  "label": "PSH ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P5869": {
+  "label": "model item",
+  "quantity": false,
+  "qualifiers": [
+   "P11527",
+   "P144",
+   "P1441",
+   "P39",
+   "P611"
+  ],
+  "class_range": true
+ },
+ "P428": {
+  "label": "botanist author abbreviation",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4970",
+   "P580",
+   "P7452"
+  ],
+  "class_range": false
+ },
+ "P4527": {
+  "label": "UK Parliament thesaurus ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P4970",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P3827": {
+  "label": "JSTOR topic ID (archived)",
+  "quantity": false,
+  "qualifiers": [
+   "P1065",
+   "P1810",
+   "P2241",
+   "P805",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P646": {
+  "label": "Freebase ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P577",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P131": {
+  "label": "located in the administrative territorial entity",
+  "quantity": false,
+  "qualifiers": [
+   "P3831",
+   "P580",
+   "P582",
+   "P7452",
+   "P805"
+  ],
+  "class_range": true
+ },
+ "P373": {
+  "label": "Commons category",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P2635",
+   "P407",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P487": {
+  "label": "Unicode character",
+  "quantity": false,
+  "qualifiers": [
+   "P3831",
+   "P4213",
+   "P4575",
+   "P518",
+   "P805"
+  ],
+  "class_range": false
+ },
+ "P1619": {
+  "label": "date of official opening",
+  "quantity": false,
+  "qualifiers": [
+   "P1480",
+   "P2868",
+   "P4241",
+   "P518",
+   "P542"
+  ],
+  "class_range": false
+ },
+ "P1417": {
+  "label": "Encyclop\u00e6dia Britannica Online ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2093",
+   "P2241",
+   "P4970",
+   "P50"
+  ],
+  "class_range": false
+ },
+ "P460": {
+  "label": "said to be the same as",
+  "quantity": false,
+  "qualifiers": [
+   "P1011",
+   "P1013",
+   "P1352",
+   "P2868",
+   "P3831"
+  ],
+  "class_range": true
+ },
+ "P8814": {
+  "label": "WordNet 3.1 Synset ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4390",
+   "P8327",
+   "P9570"
+  ],
+  "class_range": false
+ },
+ "P195": {
+  "label": "collection",
+  "quantity": false,
+  "qualifiers": [
+   "P217",
+   "P3831",
+   "P580",
+   "P582",
+   "P828"
+  ],
+  "class_range": true
+ },
+ "P4896": {
+  "label": "3D model",
+  "quantity": false,
+  "qualifiers": [
+   "P180",
+   "P2048",
+   "P2096",
+   "P21",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P465": {
+  "label": "sRGB color hex triplet",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P462",
+   "P518",
+   "P580",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P13591": {
+  "label": "\u200eYale LUX ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4070",
+   "P518",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P3417": {
+  "label": "Quora topic ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P2699",
+   "P407",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P244": {
+  "label": "Library of Congress authority ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P3831",
+   "P4970",
+   "P9570"
+  ],
+  "class_range": false
+ },
+ "P1617": {
+  "label": "BBC Things ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1065",
+   "P1810",
+   "P2241",
+   "P407",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P7502": {
+  "label": "Golden ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P580",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P1282": {
+  "label": "OpenStreetMap tag",
+  "quantity": false,
+  "qualifiers": [
+   "P1114",
+   "P2241",
+   "P3176",
+   "P5102",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P2067": {
+  "label": "mass",
+  "quantity": true,
+  "qualifiers": [
+   "P1013",
+   "P21",
+   "P2571",
+   "P3831",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P2093": {
+  "label": "author name string",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P580": {
+  "label": "start time",
+  "quantity": false,
+  "qualifiers": [
+   "P1013",
+   "P1319",
+   "P421",
+   "P4241",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P17": {
+  "label": "country",
+  "quantity": false,
+  "qualifiers": [
+   "P518",
+   "P580",
+   "P582",
+   "P585",
+   "P7452"
+  ],
+  "class_range": true
+ },
+ "P856": {
+  "label": "official website",
+  "quantity": false,
+  "qualifiers": [
+   "P1065",
+   "P2241",
+   "P407",
+   "P582",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P1056": {
+  "label": "product or material produced",
+  "quantity": false,
+  "qualifiers": [
+   "P289",
+   "P400",
+   "P580",
+   "P582",
+   "P617"
+  ],
+  "class_range": true
+ },
+ "P6803": {
+  "label": "taxon found at location",
+  "quantity": false,
+  "qualifiers": [
+   "P1114",
+   "P141",
+   "P3831",
+   "P585",
+   "P805"
+  ],
+  "class_range": true
+ },
+ "P6262": {
+  "label": "Fandom article ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1433",
+   "P1476",
+   "P1810",
+   "P407",
+   "P9675"
+  ],
+  "class_range": false
+ },
+ "P246": {
+  "label": "element symbol",
+  "quantity": false,
+  "qualifiers": [
+   "P2241",
+   "P3831",
+   "P580",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P1482": {
+  "label": "Stack Exchange tag",
+  "quantity": false,
+  "qualifiers": [
+   "P2241",
+   "P348",
+   "P407",
+   "P4876",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P9937": {
+  "label": "Postimees topic ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P6385": {
+  "label": "Krugosvet article (archived)",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P407",
+   "P50",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P1086": {
+  "label": "atomic number",
+  "quantity": true,
+  "qualifiers": [
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P10376": {
+  "label": "ScienceDirect topic ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1683",
+   "P1810",
+   "P2241",
+   "P813",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P2474": {
+  "label": "CDLI ID",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P2860": {
+  "label": "cites work",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": true
+ },
+ "P2410": {
+  "label": "WikiPathways ID",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P2241": {
+  "label": "reason for deprecated rank"
+ },
+ "P459": {
+  "label": "determination method or standard"
+ },
+ "P518": {
+  "label": "applies to part"
+ },
+ "P609": {
+  "label": "terminus location"
+ },
+ "P813": {
+  "label": "retrieved"
+ },
+ "P1013": {
+  "label": "criterion used"
+ },
+ "P1480": {
+  "label": "sourcing circumstances"
+ },
+ "P7452": {
+  "label": "reason for preferred rank"
+ },
+ "P582": {
+  "label": "end time"
+ },
+ "P585": {
+  "label": "point in time"
+ },
+ "P1810": {
+  "label": "subject named as"
+ },
+ "P2096": {
+  "label": "media legend"
+ },
+ "P1545": {
+  "label": "series ordinal"
+ },
+ "P407": {
+  "label": "language of work or name"
+ },
+ "P5168": {
+  "label": "applies to name of subject"
+ },
+ "P1135": {
+  "label": "nomenclatural status"
+ },
+ "P3831": {
+  "label": "object of statement has role"
+ },
+ "P405": {
+  "label": "taxon author"
+ },
+ "P574": {
+  "label": "year of publication of scientific name for taxon"
+ },
+ "P697": {
+  "label": "ex taxon author"
+ },
+ "P11527": {
+  "label": "applies to use with property"
+ },
+ "P12861": {
+  "label": "EntitySchema for this class"
+ },
+ "P1709": {
+  "label": "equivalent class"
+ },
+ "P1534": {
+  "label": "end cause"
+ },
+ "P828": {
+  "label": "has cause"
+ },
+ "P10663": {
+  "label": "applies to work"
+ },
+ "P2125": {
+  "label": "revised Hepburn romanization"
+ },
+ "P805": {
+  "label": "statement is subject of"
+ },
+ "P10242": {
+  "label": "Lur Encyclopedic Dictionary ID"
+ },
+ "P1038": {
+  "label": "relative"
+ },
+ "P1039": {
+  "label": "kinship to subject"
+ },
+ "P1050": {
+  "label": "medical condition"
+ },
+ "P10527": {
+  "label": "documentation files at"
+ },
+ "P10565": {
+  "label": "Encyclopedia of China (Third Edition) ID"
+ },
+ "P10780": {
+  "label": "Radio France person ID"
+ },
+ "P1326": {
+  "label": "latest date"
+ },
+ "P26": {
+  "label": "spouse"
+ },
+ "P570": {
+  "label": "date of death"
+ },
+ "P5102": {
+  "label": "nature of statement"
+ },
+ "P155": {
+  "label": "follows"
+ },
+ "P156": {
+  "label": "followed by"
+ },
+ "P180": {
+  "label": "depicts"
+ },
+ "P21": {
+  "label": "sex or gender"
+ },
+ "P2699": {
+  "label": "URL"
+ },
+ "P291": {
+  "label": "place of publication"
+ },
+ "P9731": {
+  "label": "announced at"
+ },
+ "P11567": {
+  "label": "Dictionary of Archives Terminology ID"
+ },
+ "P2559": {
+  "label": "Wikidata usage instructions"
+ },
+ "P1001": {
+  "label": "applies to jurisdiction"
+ },
+ "P4970": {
+  "label": "alternative name"
+ },
+ "P11196": {
+  "label": "Baidu Tieba name"
+ },
+ "P2924": {
+  "label": "Great Russian Encyclopedia Online ID (old version)"
+ },
+ "P3740": {
+  "label": "number of works"
+ },
+ "P1932": {
+  "label": "object named as"
+ },
+ "P2868": {
+  "label": "subject has role"
+ },
+ "P4241": {
+  "label": "refine date"
+ },
+ "P542": {
+  "label": "officially opened by"
+ },
+ "P2048": {
+  "label": "height"
+ },
+ "P217": {
+  "label": "inventory number"
+ },
+ "P2571": {
+  "label": "uncertainty corresponds to"
+ },
+ "P1114": {
+  "label": "quantity"
+ },
+ "P141": {
+  "label": "IUCN conservation status"
+ },
+ "P10690": {
+  "label": "GEMET ID"
+ },
+ "P11260": {
+  "label": "list item"
+ },
+ "P443": {
+  "label": "pronunciation audio",
+  "quantity": false,
+  "qualifiers": [
+   "P407",
+   "P5168",
+   "P5237",
+   "P898",
+   "P9533"
+  ],
+  "class_range": false
+ },
+ "P1552": {
+  "label": "has characteristic",
+  "quantity": false,
+  "qualifiers": [
+   "P1012",
+   "P1013",
+   "P1476",
+   "P1480",
+   "P460"
+  ],
+  "class_range": true
+ },
+ "P1299": {
+  "label": "depicted by",
+  "quantity": false,
+  "qualifiers": [
+   "P170",
+   "P18",
+   "P276",
+   "P304",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P710": {
+  "label": "participant",
+  "quantity": false,
+  "qualifiers": [
+   "P1351",
+   "P1352",
+   "P1534",
+   "P1618",
+   "P54"
+  ],
+  "class_range": true
+ },
+ "P1225": {
+  "label": "U.S. National Archives Identifier",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4900",
+   "P527",
+   "P580"
+  ],
+  "class_range": false
+ },
+ "P1256": {
+  "label": "Iconclass notation",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P21",
+   "P2241",
+   "P4390",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P2079": {
+  "label": "fabrication method",
+  "quantity": false,
+  "qualifiers": [
+   "P1195",
+   "P2283",
+   "P462",
+   "P518",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P5986": {
+  "label": "Getty Iconography Authority ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P5247": {
+  "label": "Giant Bomb ID (former scheme)",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P2868",
+   "P400",
+   "P407"
+  ],
+  "class_range": false
+ },
+ "P921": {
+  "label": "main subject",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P1932",
+   "P2241",
+   "P366",
+   "P3831"
+  ],
+  "class_range": true
+ },
+ "P140": {
+  "label": "religion or worldview",
+  "quantity": false,
+  "qualifiers": [
+   "P1326",
+   "P1416",
+   "P2441",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P5437": {
+  "label": "EuroVoc ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1476",
+   "P1810",
+   "P2241",
+   "P4390",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P898": {
+  "label": "IPA transcription"
+ },
+ "P1014": {
+  "label": "Art & Architecture Thesaurus ID"
+ },
+ "P366": {
+  "label": "has use"
+ },
+ "P5398": {
+  "label": "TDKIV term ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P2561",
+   "P4970",
+   "P9570"
+  ],
+  "class_range": false
+ },
+ "P3222": {
+  "label": "NE.se ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P1810",
+   "P2241",
+   "P407",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P3553": {
+  "label": "Zhihu topic ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P3744",
+   "P407",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P3984": {
+  "label": "subreddit",
+  "quantity": false,
+  "qualifiers": [
+   "P1552",
+   "P1810",
+   "P407",
+   "P580",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P4586": {
+  "label": "type foundry",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P518",
+   "P580"
+  ],
+  "class_range": true
+ },
+ "P4102": {
+  "label": "Atlas of Hillforts ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P613"
+  ],
+  "class_range": false
+ },
+ "P613": {
+  "label": "OS grid reference"
+ },
+ "P2263": {
+  "label": "ISOCAT ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1065",
+   "P2241",
+   "P2960",
+   "P485",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P2250": {
+  "label": "life expectancy",
+  "quantity": true,
+  "qualifiers": [
+   "P1480",
+   "P3005",
+   "P518",
+   "P585",
+   "P7452"
+  ],
+  "class_range": false
+ },
+ "P2888": {
+  "label": "exact match",
+  "quantity": false,
+  "qualifiers": [
+   "P1065",
+   "P10663",
+   "P2241",
+   "P3274",
+   "P407"
+  ],
+  "class_range": false
+ },
+ "P11473": {
+  "label": "Concepticon concept set ID"
+ },
+ "P3005": {
+  "label": "valid in place"
+ },
+ "P1456": {
+  "label": "list of monuments",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P1706",
+   "P2241",
+   "P276",
+   "P518"
+  ],
+  "class_range": true
+ },
+ "P213": {
+  "label": "ISNI",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4070",
+   "P4970",
+   "P742"
+  ],
+  "class_range": false
+ },
+ "P508": {
+  "label": "BNCF Thesaurus ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4390",
+   "P4970",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P4672": {
+  "label": "Early Modern Letters Online location ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P1376": {
+  "label": "capital of",
+  "quantity": false,
+  "qualifiers": [
+   "P131",
+   "P2868",
+   "P580",
+   "P582",
+   "P7452"
+  ],
+  "class_range": true
+ },
+ "P1549": {
+  "label": "demonym",
+  "quantity": false,
+  "qualifiers": [
+   "P11054",
+   "P407",
+   "P518",
+   "P5185",
+   "P580"
+  ],
+  "class_range": false
+ },
+ "P5160": {
+  "label": "Thesaurus for Graphic Materials ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4390",
+   "P4970",
+   "P9570"
+  ],
+  "class_range": false
+ },
+ "P8519": {
+  "label": "RKD thesaurus ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P2868",
+   "P4390",
+   "P4900"
+  ],
+  "class_range": false
+ },
+ "P206": {
+  "label": "located in or next to body of water",
+  "quantity": false,
+  "qualifiers": [
+   "P3831",
+   "P518",
+   "P560",
+   "P582",
+   "P654"
+  ],
+  "class_range": true
+ },
+ "P190": {
+  "label": "twinned administrative body",
+  "quantity": false,
+  "qualifiers": [
+   "P17",
+   "P580",
+   "P582",
+   "P585",
+   "P7452"
+  ],
+  "class_range": true
+ },
+ "P47": {
+  "label": "shares border with",
+  "quantity": false,
+  "qualifiers": [
+   "P518",
+   "P580",
+   "P582",
+   "P625",
+   "P654"
+  ],
+  "class_range": true
+ },
+ "P1365": {
+  "label": "replaces",
+  "quantity": false,
+  "qualifiers": [
+   "P5102",
+   "P518",
+   "P580",
+   "P585",
+   "P828"
+  ],
+  "class_range": true
+ },
+ "P1813": {
+  "label": "short name",
+  "quantity": false,
+  "qualifiers": [
+   "P1013",
+   "P31",
+   "P3831",
+   "P580",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P1433": {
+  "label": "published in"
+ },
+ "P1082": {
+  "label": "population"
+ },
+ "P11245": {
+  "label": "YouTube handle"
+ },
+ "P123": {
+  "label": "publisher"
+ },
+ "P1538": {
+  "label": "number of households"
+ },
+ "P3761": {
+  "label": "IPv4 routing prefix",
+  "quantity": false,
+  "qualifiers": [
+   "P126",
+   "P127",
+   "P1552",
+   "P2378",
+   "P580"
+  ],
+  "class_range": false
+ },
+ "P2966": {
+  "label": "National Library of Wales Authority ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P355": {
+  "label": "child organization or unit",
+  "quantity": false,
+  "qualifiers": [
+   "P1107",
+   "P17",
+   "P3831",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P4096": {
+  "label": "RePEc institute ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810"
+  ],
+  "class_range": false
+ },
+ "P1830": {
+  "label": "owner of",
+  "quantity": false,
+  "qualifiers": [
+   "P1107",
+   "P3831",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P10283": {
+  "label": "OpenAlex ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4070",
+   "P813",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P1352": {
+  "label": "ranking",
+  "quantity": true,
+  "qualifiers": [
+   "P1358",
+   "P447",
+   "P459",
+   "P585",
+   "P641"
+  ],
+  "class_range": false
+ },
+ "P12361": {
+  "label": "Bluesky handle"
+ },
+ "P12409": {
+  "label": "Bluesky DID"
+ },
+ "P12470": {
+  "label": "normal graduation time"
+ },
+ "P1329": {
+  "label": "phone number"
+ },
+ "P512": {
+  "label": "academic degree"
+ },
+ "P812": {
+  "label": "academic major"
+ },
+ "P571": {
+  "label": "inception",
+  "quantity": false,
+  "qualifiers": [
+   "P1319",
+   "P1326",
+   "P1480",
+   "P580",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P360": {
+  "label": "is a list of",
+  "quantity": false,
+  "qualifiers": [
+   "P131",
+   "P17",
+   "P175",
+   "P179",
+   "P39"
+  ],
+  "class_range": true
+ },
+ "P767": {
+  "label": "contributor to the creative work or subject",
+  "quantity": false,
+  "qualifiers": [
+   "P10663",
+   "P1303",
+   "P1545",
+   "P1932",
+   "P3831"
+  ],
+  "class_range": true
+ },
+ "P304": {
+  "label": "page(s)"
+ },
+ "P958": {
+  "label": "section"
+ },
+ "P1065": {
+  "label": "archive URL"
+ },
+ "P2424": {
+  "label": "Berlin cultural heritage ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1480",
+   "P1810",
+   "P217",
+   "P2241",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P1843": {
+  "label": "taxon common name",
+  "quantity": false,
+  "qualifiers": [
+   "P138",
+   "P2241",
+   "P2440",
+   "P443",
+   "P7018"
+  ],
+  "class_range": false
+ },
+ "P3387": {
+  "label": "minimum frequency of audible sound",
+  "quantity": true,
+  "qualifiers": [
+   "P5102",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P3465": {
+  "label": "maximum frequency of audible sound",
+  "quantity": true,
+  "qualifiers": [
+   "P5102",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P352": {
+  "label": "UniProt protein ID",
+  "quantity": false,
+  "qualifiers": [
+   "P2888",
+   "P352",
+   "P4390"
+  ],
+  "class_range": false
+ },
+ "P703": {
+  "label": "found in taxon",
+  "quantity": false,
+  "qualifiers": [
+   "P1932",
+   "P2241",
+   "P462",
+   "P698",
+   "P703"
+  ],
+  "class_range": true
+ },
+ "P4333": {
+  "label": "GenBank assembly accession number",
+  "quantity": false,
+  "qualifiers": [
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P1672": {
+  "label": "this taxon is source of",
+  "quantity": false,
+  "qualifiers": [
+   "P1706",
+   "P186",
+   "P2079",
+   "P3680",
+   "P518"
+  ],
+  "class_range": true
+ },
+ "P618": {
+  "label": "source of energy",
+  "quantity": false,
+  "qualifiers": [
+   "P1114",
+   "P4140",
+   "P580",
+   "P582",
+   "P805"
+  ],
+  "class_range": true
+ },
+ "P7725": {
+  "label": "litter size",
+  "quantity": true,
+  "qualifiers": [
+   "P1480",
+   "P2312",
+   "P2313",
+   "P5102",
+   "P805"
+  ],
+  "class_range": false
+ },
+ "P10135": {
+  "label": "recording date"
+ },
+ "P1107": {
+  "label": "proportion"
+ },
+ "P2052": {
+  "label": "speed"
+ },
+ "P4390": {
+  "label": "mapping relation type"
+ },
+ "P462": {
+  "label": "color"
+ },
+ "P698": {
+  "label": "PubMed publication ID"
+ },
+ "P3103": {
+  "label": "has tense",
+  "quantity": false,
+  "qualifiers": [
+   "P1559",
+   "P1683",
+   "P5102",
+   "P518",
+   "P805"
+  ],
+  "class_range": true
+ },
+ "P6106": {
+  "label": "uses capitalization for",
+  "quantity": false,
+  "qualifiers": [
+   "P1011",
+   "P3005",
+   "P805"
+  ],
+  "class_range": true
+ },
+ "P2587": {
+  "label": "has phoneme",
+  "quantity": false,
+  "qualifiers": [
+   "P1114",
+   "P1299",
+   "P1683",
+   "P460",
+   "P913"
+  ],
+  "class_range": true
+ },
+ "P4132": {
+  "label": "linguistic typology",
+  "quantity": false,
+  "qualifiers": [
+   "P1011",
+   "P518",
+   "P805"
+  ],
+  "class_range": true
+ },
+ "P5110": {
+  "label": "has grammatical person",
+  "quantity": false,
+  "qualifiers": [
+   "P1683",
+   "P6254"
+  ],
+  "class_range": true
+ },
+ "P10913": {
+  "label": "UK Archival Thesaurus ID"
+ },
+ "P1098": {
+  "label": "number of speakers, writers, or signers"
+ },
+ "P1296": {
+  "label": "Gran Enciclop\u00e8dia Catalana ID (former scheme)"
+ },
+ "P1368": {
+  "label": "National Library of Latvia ID"
+ },
+ "P5844": {
+  "label": "Treccani Vocabulary ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1476",
+   "P1810",
+   "P1932",
+   "P478",
+   "P577"
+  ],
+  "class_range": false
+ },
+ "P7666": {
+  "label": "Visuotin\u0117 lietuvi\u0173 enciklopedija ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1706",
+   "P1810",
+   "P2093",
+   "P4970",
+   "P50"
+  ],
+  "class_range": false
+ },
+ "P6706": {
+  "label": "De Agostini ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1476",
+   "P1545",
+   "P1810",
+   "P2241",
+   "P407"
+  ],
+  "class_range": false
+ },
+ "P6366": {
+  "label": "Microsoft Academic ID (discontinued)",
+  "quantity": false,
+  "qualifiers": [
+   "P1416",
+   "P1810",
+   "P1932",
+   "P2241",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P3938": {
+  "label": "named by"
+ },
+ "P577": {
+  "label": "publication date"
+ },
+ "P13176": {
+  "label": "taxon known by this common name",
+  "quantity": false,
+  "qualifiers": [
+   "P1011",
+   "P1013",
+   "P3831",
+   "P5168",
+   "P7452"
+  ],
+  "class_range": true
+ },
+ "P7775": {
+  "label": "RationalWiki ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P4970",
+   "P958"
+  ],
+  "class_range": false
+ },
+ "P13484": {
+  "label": "Know Your Meme slug"
+ },
+ "P4801": {
+  "label": "LC and MARC vocabularies ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P4970",
+   "P518",
+   "P9570"
+  ],
+  "class_range": false
+ },
+ "P1018": {
+  "label": "language regulatory body",
+  "quantity": false,
+  "qualifiers": [
+   "P1012",
+   "P518",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P5206": {
+  "label": "has conjugation class",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": true
+ },
+ "P2341": {
+  "label": "indigenous to",
+  "quantity": false,
+  "qualifiers": [
+   "P131",
+   "P1810",
+   "P1932",
+   "P276",
+   "P518"
+  ],
+  "class_range": true
+ },
+ "P1535": {
+  "label": "used by",
+  "quantity": false,
+  "qualifiers": [
+   "P10663",
+   "P5102",
+   "P580",
+   "P582",
+   "P7125"
+  ],
+  "class_range": true
+ },
+ "P5913": {
+  "label": "has paradigm class",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": true
+ },
+ "P5109": {
+  "label": "has grammatical gender",
+  "quantity": false,
+  "qualifiers": [
+   "P805"
+  ],
+  "class_range": true
+ },
+ "P1705": {
+  "label": "native label"
+ },
+ "P2347": {
+  "label": "YSO ID"
+ },
+ "P2579": {
+  "label": "studied by",
+  "quantity": false,
+  "qualifiers": [
+   "P2241",
+   "P3831",
+   "P518",
+   "P580",
+   "P921"
+  ],
+  "class_range": true
+ },
+ "P8309": {
+  "label": "Yle topic ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P2241",
+   "P407",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P6839": {
+  "label": "TV Tropes ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P4070",
+   "P958"
+  ],
+  "class_range": false
+ },
+ "P9346": {
+  "label": "France 24 topic ID (French)",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P8647": {
+  "label": "Library of Congress Children's Subject Headings ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4070",
+   "P4970",
+   "P9570"
+  ],
+  "class_range": false
+ },
+ "P11316": {
+  "label": "BRUZZ topic ID"
+ },
+ "P9675": {
+  "label": "MediaWiki page ID"
+ },
+ "P1319": {
+  "label": "earliest date"
+ },
+ "P672": {
+  "label": "MeSH tree code",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4900",
+   "P813",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P2354": {
+  "label": "has list",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P3831",
+   "P518",
+   "P527",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P2043": {
+  "label": "length",
+  "quantity": true,
+  "qualifiers": [
+   "P1480",
+   "P518",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P10": {
+  "label": "video"
+ },
+ "P6694": {
+  "label": "MeSH concept ID",
+  "quantity": false,
+  "qualifiers": [
+   "P13044",
+   "P1810",
+   "P2241",
+   "P4390",
+   "P4900"
+  ],
+  "class_range": false
+ },
+ "P2308": {
+  "label": "class",
+  "quantity": false,
+  "qualifiers": [
+   "P162",
+   "P17",
+   "P361",
+   "P364",
+   "P57"
+  ],
+  "class_range": true
+ },
+ "P2302": {
+  "label": "property constraint",
+  "quantity": false,
+  "qualifiers": [
+   "P2305",
+   "P2306",
+   "P2308",
+   "P2316",
+   "P5314"
+  ],
+  "class_range": true
+ },
+ "P11012": {
+  "label": "EU Knowledge Graph item ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P1659": {
+  "label": "related property",
+  "quantity": false,
+  "qualifiers": [
+   "P2559",
+   "P2699",
+   "P3831",
+   "P518",
+   "P805"
+  ],
+  "class_range": false
+ },
+ "P11093": {
+  "label": "TUBITAK Sosyal Bilimler Ansiklopedisi ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P407"
+  ],
+  "class_range": false
+ },
+ "P8956": {
+  "label": "compatible with",
+  "quantity": false,
+  "qualifiers": [
+   "P1552",
+   "P1932",
+   "P348",
+   "P3831",
+   "P5102"
+  ],
+  "class_range": true
+ },
+ "P2309": {
+  "label": "relation",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P2305": {
+  "label": "item of property constraint"
+ },
+ "P2306": {
+  "label": "property"
+ },
+ "P2316": {
+  "label": "constraint status"
+ },
+ "P5314": {
+  "label": "property scope"
+ },
+ "P162": {
+  "label": "producer"
+ },
+ "P364": {
+  "label": "original language of film or TV show"
+ },
+ "P57": {
+  "label": "director"
+ },
+ "P186": {
+  "label": "made from material",
+  "quantity": false,
+  "qualifiers": [
+   "P1114",
+   "P186",
+   "P462",
+   "P5102",
+   "P518"
+  ],
+  "class_range": true
+ },
+ "P2389": {
+  "label": "organization directed by the office or position",
+  "quantity": false,
+  "qualifiers": [
+   "P1001",
+   "P1310",
+   "P1706",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P511": {
+  "label": "honorific prefix",
+  "quantity": false,
+  "qualifiers": [
+   "P1027",
+   "P580",
+   "P582",
+   "P585",
+   "P828"
+  ],
+  "class_range": true
+ },
+ "P2002": {
+  "label": "X (Twitter) username",
+  "quantity": false,
+  "qualifiers": [
+   "P1552",
+   "P3744",
+   "P580",
+   "P585",
+   "P6552"
+  ],
+  "class_range": false
+ },
+ "P2283": {
+  "label": "uses",
+  "quantity": false,
+  "qualifiers": [
+   "P1114",
+   "P3831",
+   "P5102",
+   "P518",
+   "P580"
+  ],
+  "class_range": true
+ },
+ "P12596": {
+  "label": "museum-digital tag ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P2699",
+   "P4900",
+   "P921"
+  ],
+  "class_range": false
+ },
+ "P39": {
+  "label": "position held",
+  "quantity": false,
+  "qualifiers": [
+   "P1365",
+   "P2937",
+   "P580",
+   "P582",
+   "P768"
+  ],
+  "class_range": true
+ },
+ "P3438": {
+  "label": "vehicle normally used",
+  "quantity": false,
+  "qualifiers": [
+   "P1114",
+   "P18",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P11889": {
+  "label": "autosuggest value"
+ },
+ "P1308": {
+  "label": "position holder"
+ },
+ "P2937": {
+  "label": "parliamentary term"
+ },
+ "P768": {
+  "label": "electoral district"
+ },
+ "P421": {
+  "label": "located in time zone"
+ },
+ "P608": {
+  "label": "exhibition history",
+  "quantity": false,
+  "qualifiers": [
+   "P276",
+   "P528",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P2910": {
+  "label": "icon",
+  "quantity": false,
+  "qualifiers": [
+   "P3831",
+   "P407",
+   "P580",
+   "P582",
+   "P6216"
+  ],
+  "class_range": false
+ },
+ "P664": {
+  "label": "organizer",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2868",
+   "P3831",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P9495": {
+  "label": "National Historical Museums of Sweden ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P407",
+   "P518",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P170": {
+  "label": "creator",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1877",
+   "P2868",
+   "P3831",
+   "P518"
+  ],
+  "class_range": true
+ },
+ "P8370": {
+  "label": "UNBIS Thesaurus ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P4390",
+   "P4900",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P11302": {
+  "label": "Google Product Taxonomy ID"
+ },
+ "P1382": {
+  "label": "partially coincident with"
+ },
+ "P528": {
+  "label": "catalog code"
+ },
+ "P1877": {
+  "label": "after a work by"
+ },
+ "P840": {
+  "label": "narrative location",
+  "quantity": false,
+  "qualifiers": [
+   "P131",
+   "P17",
+   "P2868",
+   "P376",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P10674": {
+  "label": "FISH Archaeological Objects Thesaurus ID"
+ },
+ "P11947": {
+  "label": "Lemmy community ID"
+ },
+ "P12143": {
+  "label": "Gaming Wiki Network article ID"
+ },
+ "P376": {
+  "label": "located on astronomical body"
+ },
+ "P86": {
+  "label": "composer",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P1932",
+   "P248",
+   "P3831",
+   "P4626"
+  ],
+  "class_range": true
+ },
+ "P6200": {
+  "label": "BBC News topic ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P518",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P7844": {
+  "label": "Joconde object type ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P407",
+   "P4900"
+  ],
+  "class_range": false
+ },
+ "P870": {
+  "label": "instrumentation",
+  "quantity": false,
+  "qualifiers": [
+   "P1114",
+   "P1365",
+   "P1932",
+   "P3831",
+   "P5102"
+  ],
+  "class_range": true
+ },
+ "P6058": {
+  "label": "Larousse ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P407",
+   "P4070",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P3763": {
+  "label": "MIMO instrument ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P7452",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P349": {
+  "label": "NDL Authority ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1814",
+   "P2241",
+   "P4970",
+   "P5168"
+  ],
+  "class_range": false
+ },
+ "P248": {
+  "label": "stated in"
+ },
+ "P4626": {
+  "label": "identity of object in context"
+ },
+ "P2388": {
+  "label": "position held by head of the organization",
+  "quantity": false,
+  "qualifiers": [
+   "P1308",
+   "P1545",
+   "P3831",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P3219": {
+  "label": "Encyclop\u00e6dia Universalis ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2093",
+   "P2241",
+   "P407",
+   "P50"
+  ],
+  "class_range": false
+ },
+ "P4342": {
+  "label": "Great Norwegian Encyclopedia ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P275",
+   "P407",
+   "P4390"
+  ],
+  "class_range": false
+ },
+ "P5198": {
+  "label": "ASC Leiden Thesaurus ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P2241",
+   "P407",
+   "P9570"
+  ],
+  "class_range": false
+ },
+ "P8168": {
+  "label": "FactGrid item ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1480",
+   "P1810",
+   "P2241",
+   "P4070",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P10091": {
+  "label": "death rate",
+  "quantity": true,
+  "qualifiers": [
+   "P459",
+   "P518",
+   "P585",
+   "P7452"
+  ],
+  "class_range": false
+ },
+ "P530": {
+  "label": "diplomatic relation",
+  "quantity": false,
+  "qualifiers": [
+   "P531",
+   "P580",
+   "P582",
+   "P805",
+   "P8555"
+  ],
+  "class_range": true
+ },
+ "P5604": {
+  "label": "archINFORM keyword ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2868",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P150": {
+  "label": "contains the administrative territorial entity",
+  "quantity": false,
+  "qualifiers": [
+   "P150",
+   "P2241",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P8477": {
+  "label": "BTI Status Index",
+  "quantity": true,
+  "qualifiers": [
+   "P2699",
+   "P585",
+   "P7452"
+  ],
+  "class_range": false
+ },
+ "P2452": {
+  "label": "GeoNames feature code",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4070",
+   "P518",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P2936": {
+  "label": "language used",
+  "quantity": false,
+  "qualifiers": [
+   "P1098",
+   "P1552",
+   "P3831",
+   "P459",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P8476": {
+  "label": "BTI Governance Index",
+  "quantity": true,
+  "qualifiers": [
+   "P2699",
+   "P585",
+   "P7452"
+  ],
+  "class_range": false
+ },
+ "P6573": {
+  "label": "Klexikon article ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P4070",
+   "P9675"
+  ],
+  "class_range": false
+ },
+ "P268": {
+  "label": "Biblioth\u00e8que nationale de France ID"
+ },
+ "P10234": {
+  "label": "Der Spiegel topic ID"
+ },
+ "P10326": {
+  "label": "ICPSR Geographic Names Thesaurus ID"
+ },
+ "P1081": {
+  "label": "Human Development Index"
+ },
+ "P10832": {
+  "label": "WorldCat Entities ID"
+ },
+ "P1125": {
+  "label": "Gini coefficient"
+ },
+ "P4272": {
+  "label": "DPLA subject term",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P4223": {
+  "label": "Treccani's Enciclopedia Italiana ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2093",
+   "P478",
+   "P50",
+   "P577"
+  ],
+  "class_range": false
+ },
+ "P13388": {
+  "label": "Iowa State University Library Vocabularies ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1480",
+   "P1810",
+   "P1932"
+  ],
+  "class_range": false
+ },
+ "P7033": {
+  "label": "Australian Educational Vocabulary ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P2241",
+   "P4900",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P8687": {
+  "label": "social media followers",
+  "quantity": true,
+  "qualifiers": [
+   "P11245",
+   "P2397",
+   "P4033",
+   "P585",
+   "P6552"
+  ],
+  "class_range": false
+ },
+ "P832": {
+  "label": "public holiday",
+  "quantity": false,
+  "qualifiers": [
+   "P1448",
+   "P547",
+   "P580",
+   "P7452",
+   "P837"
+  ],
+  "class_range": true
+ },
+ "P2184": {
+  "label": "history of topic",
+  "quantity": false,
+  "qualifiers": [
+   "P1480",
+   "P2241",
+   "P3005",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P7870": {
+  "label": "Analysis & Policy Observatory term ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P4970",
+   "P9570"
+  ],
+  "class_range": false
+ },
+ "P3896": {
+  "label": "geoshape",
+  "quantity": false,
+  "qualifiers": [
+   "P1480",
+   "P518",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P2163": {
+  "label": "FAST ID"
+ },
+ "P11547": {
+  "label": "Happy Planet Index score"
+ },
+ "P3029": {
+  "label": "UK National Archives ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P2241",
+   "P2868",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P2670": {
+  "label": "has part(s) of the class",
+  "quantity": false,
+  "qualifiers": [
+   "P1114",
+   "P3831",
+   "P518",
+   "P580",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P749": {
+  "label": "parent organization or unit",
+  "quantity": false,
+  "qualifiers": [
+   "P1107",
+   "P3831",
+   "P580",
+   "P582",
+   "P7452"
+  ],
+  "class_range": true
+ },
+ "P4212": {
+  "label": "PACTOLS thesaurus ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P4390",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P356": {
+  "label": "DOI"
+ },
+ "P4953": {
+  "label": "Library of Congress Genre/Form Terms ID"
+ },
+ "P136": {
+  "label": "genre",
+  "quantity": false,
+  "qualifiers": [
+   "P136",
+   "P1932",
+   "P2241",
+   "P7452",
+   "P859"
+  ],
+  "class_range": true
+ },
+ "P11564": {
+  "label": "AllMovie genre ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1013",
+   "P1810",
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P8313": {
+  "label": "Lex ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P4390",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P11943": {
+  "label": "GSAFD ID"
+ },
+ "P859": {
+  "label": "sponsor"
+ },
+ "P2789": {
+  "label": "connects with",
+  "quantity": false,
+  "qualifiers": [
+   "P11693",
+   "P131",
+   "P276",
+   "P2825",
+   "P625"
+  ],
+  "class_range": true
+ },
+ "P3847": {
+  "label": "Open Library subject ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P3740",
+   "P407",
+   "P585",
+   "P7452"
+  ],
+  "class_range": false
+ },
+ "P729": {
+  "label": "service entry",
+  "quantity": false,
+  "qualifiers": [
+   "P1319",
+   "P137",
+   "P1545",
+   "P518",
+   "P559"
+  ],
+  "class_range": false
+ },
+ "P6440": {
+  "label": "maintenance method",
+  "quantity": false,
+  "qualifiers": [
+   "P2561",
+   "P580",
+   "P582",
+   "P585",
+   "P8324"
+  ],
+  "class_range": true
+ },
+ "P1248": {
+  "label": "KulturNav-ID"
+ },
+ "P1476": {
+  "label": "title"
+ },
+ "P137": {
+  "label": "operator"
+ },
+ "P559": {
+  "label": "terminus"
+ },
+ "P6293": {
+  "label": "YSA ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P2241",
+   "P407",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P219": {
+  "label": "ISO 639-2 code"
+ },
+ "P2919": {
+  "label": "label in sign language"
+ },
+ "P1922": {
+  "label": "first line",
+  "quantity": false,
+  "qualifiers": [
+   "P2441",
+   "P407",
+   "P518",
+   "P6216",
+   "P6568"
+  ],
+  "class_range": false
+ },
+ "P2441": {
+  "label": "literal translation"
+ },
+ "P6216": {
+  "label": "copyright status"
+ },
+ "P6568": {
+  "label": "inscription mentions"
+ },
+ "P2046": {
+  "label": "area",
+  "quantity": true,
+  "qualifiers": [
+   "P1480",
+   "P459",
+   "P518",
+   "P580",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P425": {
+  "label": "field of this occupation",
+  "quantity": false,
+  "qualifiers": [
+   "P12913",
+   "P2241",
+   "P3680",
+   "P5102",
+   "P571"
+  ],
+  "class_range": true
+ },
+ "P641": {
+  "label": "sport",
+  "quantity": false,
+  "qualifiers": [
+   "P2094",
+   "P2416",
+   "P580",
+   "P582",
+   "P805"
+  ],
+  "class_range": true
+ },
+ "P9318": {
+  "label": "\u00c1vvir topic ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1552",
+   "P1810",
+   "P1876",
+   "P2241",
+   "P407"
+  ],
+  "class_range": false
+ },
+ "P494": {
+  "label": "ICD-10 ID",
+  "quantity": false,
+  "qualifiers": [
+   "P123",
+   "P1810",
+   "P2241",
+   "P4070",
+   "P9570"
+  ],
+  "class_range": false
+ },
+ "P8189": {
+  "label": "National Library of Israel J9U ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4070",
+   "P4970",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P8283": {
+  "label": "ISCO-08 occupation class",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P935": {
+  "label": "Commons gallery",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2699",
+   "P405",
+   "P407",
+   "P574"
+  ],
+  "class_range": false
+ },
+ "P509": {
+  "label": "cause of death",
+  "quantity": false,
+  "qualifiers": [
+   "P1478",
+   "P1480",
+   "P1932",
+   "P805",
+   "P828"
+  ],
+  "class_range": true
+ },
+ "P1478": {
+  "label": "has immediate cause"
+ },
+ "P1412": {
+  "label": "languages spoken, written or signed",
+  "quantity": false,
+  "qualifiers": [
+   "P103",
+   "P2241",
+   "P3831",
+   "P5237",
+   "P580"
+  ],
+  "class_range": true
+ },
+ "P161": {
+  "label": "cast member",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P1932",
+   "P3831",
+   "P453",
+   "P4633"
+  ],
+  "class_range": true
+ },
+ "P214": {
+  "label": "VIAF cluster ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4070",
+   "P813",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P1344": {
+  "label": "participant in",
+  "quantity": false,
+  "qualifiers": [
+   "P1350",
+   "P1352",
+   "P1358",
+   "P1810",
+   "P54"
+  ],
+  "class_range": true
+ },
+ "P6291": {
+  "label": "advertises",
+  "quantity": false,
+  "qualifiers": [
+   "P155",
+   "P156",
+   "P580",
+   "P582",
+   "P793"
+  ],
+  "class_range": true
+ },
+ "P11345": {
+  "label": "Cinematografo.it name or company ID (new)"
+ },
+ "P119": {
+  "label": "place of burial"
+ },
+ "P1280": {
+  "label": "CONOR.SI ID"
+ },
+ "P12836": {
+  "label": "Douban personage ID"
+ },
+ "P1327": {
+  "label": "partner in business or sport"
+ },
+ "P1416": {
+  "label": "affiliation"
+ },
+ "P453": {
+  "label": "character role"
+ },
+ "P4633": {
+  "label": "name of the character role"
+ },
+ "P1441": {
+  "label": "present in work",
+  "quantity": false,
+  "qualifiers": [
+   "P175",
+   "P2868",
+   "P4895",
+   "P577",
+   "P958"
+  ],
+  "class_range": true
+ },
+ "P101": {
+  "label": "field of work",
+  "quantity": false,
+  "qualifiers": [
+   "P1326",
+   "P2441",
+   "P276",
+   "P518",
+   "P580"
+  ],
+  "class_range": true
+ },
+ "P6379": {
+  "label": "has works in the collection",
+  "quantity": false,
+  "qualifiers": [
+   "P217",
+   "P276",
+   "P518",
+   "P5592",
+   "P6241"
+  ],
+  "class_range": true
+ },
+ "P8833": {
+  "label": "Union Catalog of Armenian Libraries authority ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P50": {
+  "label": "author",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P1932",
+   "P6424",
+   "P9687",
+   "P9688"
+  ],
+  "class_range": true
+ },
+ "P737": {
+  "label": "influenced by",
+  "quantity": false,
+  "qualifiers": [
+   "P3680",
+   "P3831",
+   "P518",
+   "P580",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P1048": {
+  "label": "NCL ID"
+ },
+ "P10882": {
+  "label": "Met Constituent ID"
+ },
+ "P1213": {
+  "label": "NLC authorities"
+ },
+ "P175": {
+  "label": "performer"
+ },
+ "P4895": {
+  "label": "time index"
+ },
+ "P6424": {
+  "label": "affiliation string"
+ },
+ "P9687": {
+  "label": "author given names"
+ },
+ "P9688": {
+  "label": "author last names"
+ },
+ "P3916": {
+  "label": "UNESCO Thesaurus ID"
+ },
+ "P8093": {
+  "label": "donations",
+  "quantity": true,
+  "qualifiers": [
+   "P1013",
+   "P1028",
+   "P1817",
+   "P585",
+   "P7452"
+  ],
+  "class_range": false
+ },
+ "P41": {
+  "label": "flag image",
+  "quantity": false,
+  "qualifiers": [
+   "P2096",
+   "P366",
+   "P571",
+   "P580",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P2139": {
+  "label": "total revenue",
+  "quantity": true,
+  "qualifiers": [
+   "P1013",
+   "P459",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P159": {
+  "label": "headquarters location"
+ },
+ "P6266": {
+  "label": "Garzanti Linguistica ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810"
+  ],
+  "class_range": false
+ },
+ "P6771": {
+  "label": "Arabic Ontology concept ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P4900"
+  ],
+  "class_range": false
+ },
+ "P11772": {
+  "label": "Atlante Geopolitico ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1476",
+   "P1810",
+   "P2093",
+   "P577"
+  ],
+  "class_range": false
+ },
+ "P8763": {
+  "label": "birth rate",
+  "quantity": true,
+  "qualifiers": [
+   "P459",
+   "P585",
+   "P7452"
+  ],
+  "class_range": false
+ },
+ "P7644": {
+  "label": "Encyclopedia of Cleveland History ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P11593": {
+  "label": "Inequality-adjusted Human Development Index"
+ },
+ "P674": {
+  "label": "characters",
+  "quantity": false,
+  "qualifiers": [
+   "P175",
+   "P2868",
+   "P3831",
+   "P5800",
+   "P793"
+  ],
+  "class_range": true
+ },
+ "P915": {
+  "label": "filming location",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P1680",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P179": {
+  "label": "part of the series",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P155",
+   "P156",
+   "P2241",
+   "P478"
+  ],
+  "class_range": true
+ },
+ "P750": {
+  "label": "distributed by",
+  "quantity": false,
+  "qualifiers": [
+   "P17",
+   "P2699",
+   "P400",
+   "P437",
+   "P580"
+  ],
+  "class_range": true
+ },
+ "P1431": {
+  "label": "executive producer",
+  "quantity": false,
+  "qualifiers": [
+   "P108",
+   "P1545",
+   "P1932",
+   "P3831",
+   "P580"
+  ],
+  "class_range": true
+ },
+ "P8419": {
+  "label": "Archive of Our Own tag",
+  "quantity": false,
+  "qualifiers": [
+   "P1552",
+   "P1706",
+   "P3831",
+   "P4070",
+   "P4390"
+  ],
+  "class_range": false
+ },
+ "P13707": {
+  "label": "\u200edvdcompare.net film ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P437"
+  ],
+  "class_range": false
+ },
+ "P444": {
+  "label": "review score",
+  "quantity": false,
+  "qualifiers": [
+   "P400",
+   "P447",
+   "P459",
+   "P585",
+   "P7887"
+  ],
+  "class_range": false
+ },
+ "P1411": {
+  "label": "nominated for",
+  "quantity": false,
+  "qualifiers": [
+   "P1686",
+   "P1706",
+   "P2453",
+   "P585",
+   "P805"
+  ],
+  "class_range": true
+ },
+ "P948": {
+  "label": "page banner",
+  "quantity": false,
+  "qualifiers": [
+   "P180",
+   "P2096",
+   "P2241",
+   "P275",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P11346": {
+  "label": "Cinematografo.it film ID (new)"
+ },
+ "P11859": {
+  "label": "Library of Congress BIBFRAME Hub ID"
+ },
+ "P1346": {
+  "label": "winner"
+ },
+ "P4073": {
+  "label": "Fandom wiki ID"
+ },
+ "P478": {
+  "label": "volume"
+ },
+ "P1174": {
+  "label": "visitors per year",
+  "quantity": true,
+  "qualifiers": [
+   "P1013",
+   "P1480",
+   "P459",
+   "P518",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P5816": {
+  "label": "state of conservation",
+  "quantity": false,
+  "qualifiers": [
+   "P1932",
+   "P518",
+   "P580",
+   "P585",
+   "P828"
+  ],
+  "class_range": true
+ },
+ "P5383": {
+  "label": "archINFORM project ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P2868",
+   "P4970",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P6141": {
+  "label": "\u00c0 nos grands hommes ID",
+  "quantity": false,
+  "qualifiers": [
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P84": {
+  "label": "architect",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P518",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P793": {
+  "label": "significant event",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P276",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P5775": {
+  "label": "image of interior",
+  "quantity": false,
+  "qualifiers": [
+   "P180",
+   "P2096",
+   "P3831",
+   "P518",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P1435": {
+  "label": "heritage designation"
+ },
+ "P4107": {
+  "label": "Framalibre ID",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P277": {
+  "label": "programmed in",
+  "quantity": false,
+  "qualifiers": [
+   "P1107",
+   "P348",
+   "P518",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P1972": {
+  "label": "Open Hub ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1476",
+   "P1810",
+   "P2241",
+   "P400",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P154": {
+  "label": "logo image",
+  "quantity": false,
+  "qualifiers": [
+   "P2096",
+   "P407",
+   "P580",
+   "P582",
+   "P8798"
+  ],
+  "class_range": false
+ },
+ "P306": {
+  "label": "operating system",
+  "quantity": false,
+  "qualifiers": [
+   "P1932",
+   "P348",
+   "P518",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P1401": {
+  "label": "issue tracker URL",
+  "quantity": false,
+  "qualifiers": [
+   "P10627",
+   "P407",
+   "P408",
+   "P580",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P1324": {
+  "label": "source code repository URL",
+  "quantity": false,
+  "qualifiers": [
+   "P10627",
+   "P1552",
+   "P2700",
+   "P582",
+   "P8423"
+  ],
+  "class_range": false
+ },
+ "P2537": {
+  "label": "Free Software Directory entry",
+  "quantity": false,
+  "qualifiers": [
+   "P2241",
+   "P2561",
+   "P2699",
+   "P366"
+  ],
+  "class_range": false
+ },
+ "P10017": {
+  "label": "Treccani's Dizionario delle Scienze Fisiche ID"
+ },
+ "P2700": {
+  "label": "protocol"
+ },
+ "P348": {
+  "label": "software version identifier"
+ },
+ "P4945": {
+  "label": "download URL"
+ },
+ "P548": {
+  "label": "version type"
+ },
+ "P2561": {
+  "label": "name"
+ },
+ "P8798": {
+  "label": "for color scheme"
+ },
+ "P950": {
+  "label": "National Library of Spain SpMaBN ID (BNE v1.0)",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P4970",
+   "P9570"
+  ],
+  "class_range": false
+ },
+ "P457": {
+  "label": "foundational text",
+  "quantity": false,
+  "qualifiers": [
+   "P3831",
+   "P580",
+   "P585",
+   "P953",
+   "P958"
+  ],
+  "class_range": true
+ },
+ "P2581": {
+  "label": "BabelNet ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P4070",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P242": {
+  "label": "locator map image"
+ },
+ "P275": {
+  "label": "copyright license"
+ },
+ "P648": {
+  "label": "Open Library ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P3740",
+   "P478",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P5200": {
+  "label": "eBird hotspot ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P4070",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P271": {
+  "label": "NACSIS-CAT author ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4970",
+   "P5168",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P5436": {
+  "label": "number of viewers/listeners",
+  "quantity": true,
+  "qualifiers": [
+   "P11245",
+   "P2397",
+   "P3005",
+   "P459",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P6194": {
+  "label": "Austrian Biographical Encyclopedia ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2093",
+   "P356",
+   "P478",
+   "P577"
+  ],
+  "class_range": false
+ },
+ "P11496": {
+  "label": "CiNii Research ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4070",
+   "P437",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P466": {
+  "label": "occupant",
+  "quantity": false,
+  "qualifiers": [
+   "P155",
+   "P518",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P6295": {
+  "label": "ARTIC artist ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P3831",
+   "P569"
+  ],
+  "class_range": false
+ },
+ "P6002": {
+  "label": "WikiArt ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1476",
+   "P2241",
+   "P407",
+   "P5017",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P1037": {
+  "label": "director / manager",
+  "quantity": false,
+  "qualifiers": [
+   "P2868",
+   "P3831",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P4702": {
+  "label": "Google Arts & Culture partner ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P580"
+  ],
+  "class_range": false
+ },
+ "P650": {
+  "label": "RKDartists ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P4070",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P1367": {
+  "label": "Art UK artist ID"
+ },
+ "P2397": {
+  "label": "YouTube channel ID"
+ },
+ "P11686": {
+  "label": "University of Barcelona authority ID"
+ },
+ "P78": {
+  "label": "top-level Internet domain",
+  "quantity": false,
+  "qualifiers": [
+   "P2241",
+   "P3831",
+   "P518",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P3161": {
+  "label": "has grammatical mood",
+  "quantity": false,
+  "qualifiers": [
+   "P1559",
+   "P1683",
+   "P805"
+  ],
+  "class_range": true
+ },
+ "P576": {
+  "label": "dissolved, abolished or demolished date",
+  "quantity": false,
+  "qualifiers": [
+   "P1326",
+   "P1480",
+   "P1534",
+   "P518",
+   "P828"
+  ],
+  "class_range": false
+ },
+ "P20": {
+  "label": "place of death",
+  "quantity": false,
+  "qualifiers": [
+   "P131",
+   "P1480",
+   "P17",
+   "P4856",
+   "P7452"
+  ],
+  "class_range": true
+ },
+ "P102": {
+  "label": "member of political party",
+  "quantity": false,
+  "qualifiers": [
+   "P1534",
+   "P2241",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P3987": {
+  "label": "SHARE Catalogue author ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1706",
+   "P1810",
+   "P2241",
+   "P4970",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P488": {
+  "label": "chairperson",
+  "quantity": false,
+  "qualifiers": [
+   "P1365",
+   "P1545",
+   "P39",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P4856": {
+  "label": "conscription number"
+ },
+ "P8253": {
+  "label": "OSM Name Suggestion Index ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1001",
+   "P1810",
+   "P2241",
+   "P2541",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P3859": {
+  "label": "Environment Ontology ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810"
+  ],
+  "class_range": false
+ },
+ "P7471": {
+  "label": "iNaturalist place ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P2868",
+   "P518",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P5785": {
+  "label": "EU Participant Identification Code",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407"
+  ],
+  "class_range": false
+ },
+ "P6680": {
+  "label": "MeSH term ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P4390",
+   "P4900"
+  ],
+  "class_range": false
+ },
+ "P4307": {
+  "label": "FOIH heritage types ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810"
+  ],
+  "class_range": false
+ },
+ "P4264": {
+  "label": "LinkedIn company or organization ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1001",
+   "P1810",
+   "P3744",
+   "P407",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P2959": {
+  "label": "permanent duplicated item",
+  "quantity": false,
+  "qualifiers": [
+   "P1480",
+   "P2241",
+   "P407",
+   "P433",
+   "P5102"
+  ],
+  "class_range": true
+ },
+ "P11266": {
+  "label": "contact page URL"
+ },
+ "P569": {
+  "label": "date of birth",
+  "quantity": false,
+  "qualifiers": [
+   "P1319",
+   "P1326",
+   "P1480",
+   "P31",
+   "P7452"
+  ],
+  "class_range": false
+ },
+ "P5375": {
+  "label": "BIU Sant\u00e9 person ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P5102"
+  ],
+  "class_range": false
+ },
+ "P402": {
+  "label": "OpenStreetMap relation ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1343",
+   "P1810",
+   "P518",
+   "P580",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P3876": {
+  "label": "category for alumni of educational institution",
+  "quantity": false,
+  "qualifiers": [
+   "P101",
+   "P106",
+   "P17",
+   "P2241",
+   "P27"
+  ],
+  "class_range": true
+ },
+ "P11327": {
+  "label": "membership number"
+ },
+ "P13249": {
+  "label": "Museum Data Service museum ID"
+ },
+ "P1686": {
+  "label": "for work"
+ },
+ "P6208": {
+  "label": "award rationale"
+ },
+ "P8540": {
+  "label": "American Folklore Society Ethnographic Thesaurus ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P4070",
+   "P4390",
+   "P4970",
+   "P9570"
+  ],
+  "class_range": false
+ },
+ "P1448": {
+  "label": "official name",
+  "quantity": false,
+  "qualifiers": [
+   "P1013",
+   "P1814",
+   "P580",
+   "P582",
+   "P7018"
+  ],
+  "class_range": false
+ },
+ "P1149": {
+  "label": "Library of Congress Classification"
+ },
+ "P2440": {
+  "label": "transliteration or transcription"
+ },
+ "P8327": {
+  "label": "intended subject of deprecated statement"
+ },
+ "P6404": {
+  "label": "Treccani's Dizionario di Storia ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1476",
+   "P1810",
+   "P2093",
+   "P407",
+   "P577"
+  ],
+  "class_range": false
+ },
+ "P281": {
+  "label": "postal code",
+  "quantity": false,
+  "qualifiers": [
+   "P4595",
+   "P518",
+   "P580",
+   "P582",
+   "P625"
+  ],
+  "class_range": false
+ },
+ "P10311": {
+  "label": "official jobs URL"
+ },
+ "P1249": {
+  "label": "time of earliest written record"
+ },
+ "P5982": {
+  "label": "annual number of weddings",
+  "quantity": true,
+  "qualifiers": [
+   "P1011",
+   "P1480",
+   "P459",
+   "P518",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P1103": {
+  "label": "number of platform tracks",
+  "quantity": true,
+  "qualifiers": [
+   "P137",
+   "P518",
+   "P580",
+   "P582",
+   "P81"
+  ],
+  "class_range": false
+ },
+ "P1011": {
+  "label": "excluding"
+ },
+ "P1120": {
+  "label": "number of deaths"
+ },
+ "P81": {
+  "label": "connecting line"
+ },
+ "P2572": {
+  "label": "hashtag",
+  "quantity": false,
+  "qualifiers": [
+   "P1114",
+   "P2441",
+   "P3831",
+   "P407",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P1992": {
+  "label": "Plazi ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P2241",
+   "P459",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P183": {
+  "label": "endemic to",
+  "quantity": false,
+  "qualifiers": [
+   "P131",
+   "P17",
+   "P276",
+   "P585",
+   "P7452"
+  ],
+  "class_range": true
+ },
+ "P171": {
+  "label": "parent taxon",
+  "quantity": false,
+  "qualifiers": [
+   "P1343",
+   "P1810",
+   "P2241",
+   "P678",
+   "P7452"
+  ],
+  "class_range": true
+ },
+ "P10890": {
+  "label": "PM20 ware ID"
+ },
+ "P13332": {
+  "label": "Miraheze wiki ID"
+ },
+ "P678": {
+  "label": "incertae sedis"
+ },
+ "P1750": {
+  "label": "name day",
+  "quantity": false,
+  "qualifiers": [
+   "P140",
+   "P17",
+   "P407",
+   "P417",
+   "P580"
+  ],
+  "class_range": true
+ },
+ "P5323": {
+  "label": "attested in",
+  "quantity": false,
+  "qualifiers": [
+   "P1114",
+   "P1545",
+   "P1683",
+   "P7416",
+   "P973"
+  ],
+  "class_range": true
+ },
+ "P10050": {
+  "label": "Nederlandse Voornamenbank ID",
+  "quantity": false,
+  "qualifiers": [
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P1683": {
+  "label": "quotation"
+ },
+ "P1449": {
+  "label": "nickname"
+ },
+ "P3095": {
+  "label": "practiced by",
+  "quantity": false,
+  "qualifiers": [
+   "P21",
+   "P2241",
+   "P2868",
+   "P3831",
+   "P5102"
+  ],
+  "class_range": true
+ },
+ "P4839": {
+  "label": "Wolfram Language entity code",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P2868",
+   "P3831",
+   "P407"
+  ],
+  "class_range": false
+ },
+ "P5019": {
+  "label": "Brockhaus Enzyklop\u00e4die online ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P4390",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P902": {
+  "label": "HDS ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2093",
+   "P2241",
+   "P50",
+   "P577"
+  ],
+  "class_range": false
+ },
+ "P13804": {
+  "label": "\u200eSancho el Sabio Foundation ID",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P7305": {
+  "label": "Online PWN Encyclopedia ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P2241",
+   "P407",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P3730": {
+  "label": "next higher rank",
+  "quantity": false,
+  "qualifiers": [
+   "P1013",
+   "P1545",
+   "P1706",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P3911": {
+  "label": "STW Thesaurus for Economics ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4390",
+   "P4970",
+   "P9570"
+  ],
+  "class_range": false
+ },
+ "P8703": {
+  "label": "entry in abbreviations table",
+  "quantity": false,
+  "qualifiers": [
+   "P1535",
+   "P1810",
+   "P407",
+   "P4649",
+   "P972"
+  ],
+  "class_range": false
+ },
+ "P3067": {
+  "label": "GS1 country code",
+  "quantity": false,
+  "qualifiers": [
+   "P582",
+   "P805"
+  ],
+  "class_range": false
+ },
+ "P2132": {
+  "label": "nominal GDP per capita"
+ },
+ "P2210": {
+  "label": "relative to"
+ },
+ "P654": {
+  "label": "direction relative to location"
+ },
+ "P2348": {
+  "label": "time period",
+  "quantity": false,
+  "qualifiers": [
+   "P1480",
+   "P4241",
+   "P518",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P6241": {
+  "label": "collection creator",
+  "quantity": false,
+  "qualifiers": [
+   "P1319",
+   "P1326",
+   "P1545",
+   "P1932",
+   "P580"
+  ],
+  "class_range": true
+ },
+ "P3457": {
+  "label": "case fatality rate",
+  "quantity": true,
+  "qualifiers": [
+   "P17",
+   "P21",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P8045": {
+  "label": "organized response related to outbreak",
+  "quantity": false,
+  "qualifiers": [
+   "P1001",
+   "P121",
+   "P276",
+   "P580",
+   "P6949"
+  ],
+  "class_range": true
+ },
+ "P1603": {
+  "label": "number of cases",
+  "quantity": true,
+  "qualifiers": [
+   "P17",
+   "P3005",
+   "P3416",
+   "P459",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P7867": {
+  "label": "category for maps or plans",
+  "quantity": false,
+  "qualifiers": [
+   "P407"
+  ],
+  "class_range": true
+ },
+ "P10767": {
+  "label": "X moment ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1001",
+   "P3831",
+   "P407",
+   "P518",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P8204": {
+  "label": "tabular case data",
+  "quantity": false,
+  "qualifiers": [
+   "P1433",
+   "P527",
+   "P7452"
+  ],
+  "class_range": false
+ },
+ "P10804": {
+  "label": "X list ID"
+ },
+ "P3416": {
+  "label": "end period"
+ },
+ "P1587": {
+  "label": "Slovene Cultural Heritage Register ID",
+  "quantity": false,
+  "qualifiers": [
+   "P123",
+   "P1810",
+   "P1932",
+   "P518",
+   "P580"
+  ],
+  "class_range": false
+ },
+ "P11250": {
+  "label": "Miraheze article ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2699",
+   "P407",
+   "P958",
+   "P9675"
+  ],
+  "class_range": false
+ },
+ "P109": {
+  "label": "signature",
+  "quantity": false,
+  "qualifiers": [
+   "P1932",
+   "P2096",
+   "P407",
+   "P577",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P6213": {
+  "label": "UK Parliament ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810"
+  ],
+  "class_range": false
+ },
+ "P11924": {
+  "label": "IMDb keyword",
+  "quantity": false,
+  "qualifiers": [
+   "P1552",
+   "P1810",
+   "P2241",
+   "P4070"
+  ],
+  "class_range": false
+ },
+ "P4946": {
+  "label": "Library of Congress Demographic Group Terms ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P4070",
+   "P4970",
+   "P9570"
+  ],
+  "class_range": false
+ },
+ "P9497": {
+  "label": "Australian Thesaurus of Education Descriptors ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P4970",
+   "P9570"
+  ],
+  "class_range": false
+ },
+ "P461": {
+  "label": "opposite of"
+ },
+ "P10490": {
+  "label": "LDT @ Library Subject Terms Authority ID"
+ },
+ "P1706": {
+  "label": "together with"
+ },
+ "P103": {
+  "label": "native language"
+ },
+ "P5237": {
+  "label": "pronunciation variety"
+ },
+ "P998": {
+  "label": "Curlie ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P2076": {
+  "label": "temperature",
+  "quantity": true,
+  "qualifiers": [
+   "P1013",
+   "P1480",
+   "P5102",
+   "P518",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P2120": {
+  "label": "radius",
+  "quantity": true,
+  "qualifiers": [
+   "P1480",
+   "P2241",
+   "P416",
+   "P518",
+   "P7452"
+  ],
+  "class_range": false
+ },
+ "P398": {
+  "label": "child astronomical body",
+  "quantity": false,
+  "qualifiers": [
+   "P1114",
+   "P1545",
+   "P2241",
+   "P5102",
+   "P580"
+  ],
+  "class_range": true
+ },
+ "P1096": {
+  "label": "orbital eccentricity"
+ },
+ "P1110": {
+  "label": "attendance"
+ },
+ "P218": {
+  "label": "ISO 639-1 code",
+  "quantity": false,
+  "qualifiers": [
+   "P2241",
+   "P580",
+   "P582",
+   "P8327",
+   "P973"
+  ],
+  "class_range": false
+ },
+ "P8072": {
+  "label": "CAB ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4390",
+   "P4900",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P112": {
+  "label": "founded by",
+  "quantity": false,
+  "qualifiers": [
+   "P1932",
+   "P3831",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P1410": {
+  "label": "number of seats in assembly",
+  "quantity": true,
+  "qualifiers": [
+   "P194",
+   "P2937",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P1142": {
+  "label": "political ideology",
+  "quantity": false,
+  "qualifiers": [
+   "P1480",
+   "P3680",
+   "P5102",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P61": {
+  "label": "discoverer or inventor",
+  "quantity": false,
+  "qualifiers": [
+   "P1319",
+   "P1326",
+   "P2868",
+   "P575",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P10225": {
+  "label": "official shop URL"
+ },
+ "P575": {
+  "label": "time of discovery or invention"
+ },
+ "P13786": {
+  "label": "OpenStreetMap key",
+  "quantity": false,
+  "qualifiers": [
+   "P1264",
+   "P2241",
+   "P282",
+   "P3176",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P13397": {
+  "label": "GitLab topic ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P348"
+  ],
+  "class_range": false
+ },
+ "P6009": {
+  "label": "Techopedia ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407"
+  ],
+  "class_range": false
+ },
+ "P12844": {
+  "label": "Federal Reserve Subject Taxonomy ID"
+ },
+ "P3982": {
+  "label": "TA98 Latin term",
+  "quantity": false,
+  "qualifiers": [
+   "P1323"
+  ],
+  "class_range": false
+ },
+ "P638": {
+  "label": "PDB structure ID",
+  "quantity": false,
+  "qualifiers": [
+   "P18",
+   "P459",
+   "P698",
+   "P703"
+  ],
+  "class_range": false
+ },
+ "P2974": {
+  "label": "habitat",
+  "quantity": false,
+  "qualifiers": [
+   "P1552",
+   "P18",
+   "P361",
+   "P5102",
+   "P518"
+  ],
+  "class_range": true
+ },
+ "P6689": {
+  "label": "MassBank accession ID",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P4964": {
+  "label": "SPLASH",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P6185": {
+  "label": "tautomer of",
+  "quantity": false,
+  "qualifiers": [
+   "P1114"
+  ],
+  "class_range": true
+ },
+ "P592": {
+  "label": "ChEMBL ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P10192": {
+  "label": "Homosaurus ID (V3)"
+ },
+ "P1402": {
+  "label": "Foundational Model of Anatomy ID"
+ },
+ "P1117": {
+  "label": "pKa"
+ },
+ "P2054": {
+  "label": "density"
+ },
+ "P2077": {
+  "label": "under pressure"
+ },
+ "P289": {
+  "label": "vessel class"
+ },
+ "P617": {
+  "label": "yard number"
+ },
+ "P350": {
+  "label": "RKDimages ID",
+  "quantity": false,
+  "qualifiers": [
+   "P2241",
+   "P407",
+   "P4070",
+   "P518",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P1630": {
+  "label": "formatter URL",
+  "quantity": false,
+  "qualifiers": [
+   "P1476",
+   "P17",
+   "P2241",
+   "P2701",
+   "P407"
+  ],
+  "class_range": false
+ },
+ "P4070": {
+  "label": "identifier shared with"
+ },
+ "P2701": {
+  "label": "file format"
+ },
+ "P5284": {
+  "label": "Douban movie celebrity ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P3744",
+   "P4970",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P2435": {
+  "label": "PORT person ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1480",
+   "P1810",
+   "P2241",
+   "P407",
+   "P4070"
+  ],
+  "class_range": false
+ },
+ "P5319": {
+  "label": "C\u00e9sar Award person ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P5534": {
+  "label": "Open Media Database person ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P5393": {
+  "label": "cipM poet ID",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P4666": {
+  "label": "CineMagia person ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1552",
+   "P1810",
+   "P2241",
+   "P407",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P4985": {
+  "label": "TMDB person ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P4970",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P135": {
+  "label": "movement",
+  "quantity": false,
+  "qualifiers": [
+   "P1932",
+   "P459",
+   "P518",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P4980": {
+  "label": "Th\u00e9saurus de la d\u00e9signation des \u0153uvres architecturales et des espaces am\u00e9nag\u00e9s ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810"
+  ],
+  "class_range": false
+ },
+ "P2892": {
+  "label": "UMLS CUI",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P2241",
+   "P4390",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P10622": {
+  "label": "per capita income"
+ },
+ "P10329": {
+  "label": "ICPSR Subject Thesaurus ID"
+ },
+ "P13906": {
+  "label": "NLAI ID"
+ },
+ "P1648": {
+  "label": "Dictionary of Welsh Biography ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4070",
+   "P7452",
+   "P958"
+  ],
+  "class_range": false
+ },
+ "P4297": {
+  "label": "MIL-STD-2525 Symbol Identification Code",
+  "quantity": false,
+  "qualifiers": [
+   "P366",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P4613": {
+  "label": "Encyclopedia of Modern Ukraine ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1476",
+   "P1810",
+   "P2093",
+   "P2241",
+   "P407"
+  ],
+  "class_range": false
+ },
+ "P619": {
+  "label": "UTC date of spacecraft launch",
+  "quantity": false,
+  "qualifiers": [
+   "P1480",
+   "P2241",
+   "P421",
+   "P4241",
+   "P5102"
+  ],
+  "class_range": false
+ },
+ "P4746": {
+  "label": "Elhuyar ZTH ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P4390"
+  ],
+  "class_range": false
+ },
+ "P9112": {
+  "label": "IFLA value vocabularies ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2699",
+   "P4390",
+   "P4970",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P1459": {
+  "label": "Cadw Building ID",
+  "quantity": false,
+  "qualifiers": [
+   "P131",
+   "P1435",
+   "P1810",
+   "P518",
+   "P613"
+  ],
+  "class_range": false
+ },
+ "P709": {
+  "label": "Historic Environment Scotland ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1448",
+   "P1545",
+   "P1810",
+   "P580",
+   "P613"
+  ],
+  "class_range": false
+ },
+ "P1216": {
+  "label": "National Heritage List for England number",
+  "quantity": false,
+  "qualifiers": [
+   "P1435",
+   "P1810",
+   "P2241",
+   "P582",
+   "P613"
+  ],
+  "class_range": false
+ },
+ "P2517": {
+  "label": "category for recipients of this award",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P1706",
+   "P2241",
+   "P4224",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P1407": {
+  "label": "MusicBrainz series ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1552",
+   "P1810",
+   "P2241",
+   "P2670",
+   "P407"
+  ],
+  "class_range": false
+ },
+ "P452": {
+  "label": "industry",
+  "quantity": false,
+  "qualifiers": [
+   "P1013",
+   "P12913",
+   "P1932",
+   "P459",
+   "P580"
+  ],
+  "class_range": true
+ },
+ "P1092": {
+  "label": "total produced"
+ },
+ "P2598": {
+  "label": "serial number"
+ },
+ "P2852": {
+  "label": "emergency phone number",
+  "quantity": false,
+  "qualifiers": [
+   "P1535",
+   "P366",
+   "P518",
+   "P580",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P4330": {
+  "label": "contains",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P518",
+   "P577",
+   "P580",
+   "P7589"
+  ],
+  "class_range": true
+ },
+ "P10624": {
+  "label": "official observer status in organization"
+ },
+ "P1005": {
+  "label": "Portuguese National Library author ID"
+ },
+ "P1560": {
+  "label": "given name version for other gender",
+  "quantity": false,
+  "qualifiers": [
+   "P2241",
+   "P3005",
+   "P407",
+   "P518",
+   "P7452"
+  ],
+  "class_range": true
+ },
+ "P3880": {
+  "label": "Caverphone",
+  "quantity": false,
+  "qualifiers": [
+   "P1013",
+   "P1810",
+   "P2241",
+   "P407",
+   "P9767"
+  ],
+  "class_range": false
+ },
+ "P4284": {
+  "label": "Nominis given name ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1705",
+   "P1810",
+   "P7452",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P282": {
+  "label": "writing system",
+  "quantity": false,
+  "qualifiers": [
+   "P366",
+   "P518",
+   "P580",
+   "P7452",
+   "P805"
+  ],
+  "class_range": true
+ },
+ "P748": {
+  "label": "appointed by",
+  "quantity": false,
+  "qualifiers": [
+   "P4353",
+   "P580",
+   "P582",
+   "P585",
+   "P790"
+  ],
+  "class_range": true
+ },
+ "P94": {
+  "label": "coat of arms image",
+  "quantity": false,
+  "qualifiers": [
+   "P1001",
+   "P2096",
+   "P571",
+   "P580",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P12913": {
+  "label": "class of object(s) of occurrence"
+ },
+ "P13044": {
+  "label": "characteristic of"
+ },
+ "P1366": {
+  "label": "replaced by"
+ },
+ "P724": {
+  "label": "Internet Archive ID",
+  "quantity": false,
+  "qualifiers": [
+   "P11484",
+   "P1932",
+   "P195",
+   "P2047",
+   "P478"
+  ],
+  "class_range": false
+ },
+ "P1680": {
+  "label": "subtitle",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P407",
+   "P580",
+   "P582",
+   "P915"
+  ],
+  "class_range": false
+ },
+ "P1104": {
+  "label": "number of pages",
+  "quantity": true,
+  "qualifiers": [
+   "P1013",
+   "P1545",
+   "P407",
+   "P478",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P1957": {
+  "label": "Wikisource index page URL",
+  "quantity": false,
+  "qualifiers": [
+   "P123",
+   "P1545",
+   "P393",
+   "P407",
+   "P478"
+  ],
+  "class_range": false
+ },
+ "P2989": {
+  "label": "has grammatical case",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P1559",
+   "P1683",
+   "P1706",
+   "P460"
+  ],
+  "class_range": true
+ },
+ "P1466": {
+  "label": "WALS lect code",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P9368": {
+  "label": "CNA topic ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P5337": {
+  "label": "Google News topics ID",
+  "quantity": false,
+  "qualifiers": [
+   "P17",
+   "P1810",
+   "P2241",
+   "P2699",
+   "P407"
+  ],
+  "class_range": false
+ },
+ "P37": {
+  "label": "official language",
+  "quantity": false,
+  "qualifiers": [
+   "P3831",
+   "P5102",
+   "P518",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P8989": {
+  "label": "category for the view of the item",
+  "quantity": false,
+  "qualifiers": [
+   "P2241",
+   "P8327"
+  ],
+  "class_range": true
+ },
+ "P6552": {
+  "label": "X (Twitter) numeric user ID"
+ },
+ "P486": {
+  "label": "MeSH descriptor ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4390",
+   "P4970",
+   "P9570"
+  ],
+  "class_range": false
+ },
+ "P5063": {
+  "label": "Interlingual Index ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P2738": {
+  "label": "disjoint union of"
+ },
+ "P13171": {
+  "label": "bequest income",
+  "quantity": true,
+  "qualifiers": [
+   "P585",
+   "P7452"
+  ],
+  "class_range": false
+ },
+ "P1128": {
+  "label": "employees",
+  "quantity": true,
+  "qualifiers": [
+   "P1011",
+   "P1539",
+   "P1540",
+   "P518",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P6125": {
+  "label": "number of volunteers",
+  "quantity": true,
+  "qualifiers": [
+   "P1480",
+   "P3629",
+   "P459",
+   "P4945",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P127": {
+  "label": "owned by",
+  "quantity": false,
+  "qualifiers": [
+   "P1107",
+   "P1319",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P3642": {
+  "label": "ARCHON code",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P518",
+   "P6954",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P12546": {
+  "label": "Instagram numeric ID"
+ },
+ "P5136": {
+  "label": "less than",
+  "quantity": false,
+  "qualifiers": [
+   "P1013",
+   "P1552",
+   "P2210",
+   "P2534",
+   "P805"
+  ],
+  "class_range": true
+ },
+ "P1537": {
+  "label": "contributing factor of",
+  "quantity": false,
+  "qualifiers": [
+   "P13044",
+   "P1479",
+   "P5102",
+   "P518",
+   "P828"
+  ],
+  "class_range": true
+ },
+ "P3349": {
+  "label": "designed to carry",
+  "quantity": false,
+  "qualifiers": [
+   "P1114",
+   "P1310",
+   "P2234",
+   "P459",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P1083": {
+  "label": "maximum capacity"
+ },
+ "P8514": {
+  "label": "TOPCMB ID",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P4399": {
+  "label": "Ita\u00fa Cultural ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407"
+  ],
+  "class_range": false
+ },
+ "P2049": {
+  "label": "width",
+  "quantity": true,
+  "qualifiers": [
+   "P1012",
+   "P1480",
+   "P276",
+   "P518",
+   "P580"
+  ],
+  "class_range": false
+ },
+ "P1012": {
+  "label": "including"
+ },
+ "P5252": {
+  "label": "winter view",
+  "quantity": false,
+  "qualifiers": [
+   "P180",
+   "P2096",
+   "P276",
+   "P518",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P854": {
+  "label": "reference URL",
+  "quantity": false,
+  "qualifiers": [
+   "P1476",
+   "P1810",
+   "P2561",
+   "P407",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P797": {
+  "label": "authority",
+  "quantity": false,
+  "qualifiers": [
+   "P3831",
+   "P518",
+   "P527",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P1754": {
+  "label": "category related to list",
+  "quantity": false,
+  "qualifiers": [
+   "P131",
+   "P1545",
+   "P1705",
+   "P1706",
+   "P2241"
+  ],
+  "class_range": true
+ },
+ "P92": {
+  "label": "main regulatory text",
+  "quantity": false,
+  "qualifiers": [
+   "P1476",
+   "P580",
+   "P582",
+   "P953",
+   "P958"
+  ],
+  "class_range": true
+ },
+ "P12749": {
+  "label": "SNARC ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P407",
+   "P518",
+   "P9675"
+  ],
+  "class_range": false
+ },
+ "P5238": {
+  "label": "combines lexemes",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P5548",
+   "P5980",
+   "P9763",
+   "P9764"
+  ],
+  "class_range": false
+ },
+ "P5548": {
+  "label": "object form"
+ },
+ "P5980": {
+  "label": "object sense"
+ },
+ "P9763": {
+  "label": "syntactic dependency head relationship"
+ },
+ "P9764": {
+  "label": "syntactic dependency head position"
+ },
+ "P1269": {
+  "label": "facet of",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P2241",
+   "P518",
+   "P7452",
+   "P8483"
+  ],
+  "class_range": true
+ },
+ "P30": {
+  "label": "continent",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P518",
+   "P580",
+   "P582",
+   "P7452"
+  ],
+  "class_range": true
+ },
+ "P5250": {
+  "label": "IAB code",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P4390"
+  ],
+  "class_range": false
+ },
+ "P1542": {
+  "label": "has effect",
+  "quantity": false,
+  "qualifiers": [
+   "P12912",
+   "P12913",
+   "P5102",
+   "P518",
+   "P828"
+  ],
+  "class_range": true
+ },
+ "P10730": {
+  "label": "Data Commons ID"
+ },
+ "P1332": {
+  "label": "coordinates of northernmost point"
+ },
+ "P1333": {
+  "label": "coordinates of southernmost point"
+ },
+ "P2176": {
+  "label": "drug or therapy used for treatment",
+  "quantity": false,
+  "qualifiers": [
+   "P2176",
+   "P580",
+   "P636",
+   "P780",
+   "P790"
+  ],
+  "class_range": true
+ },
+ "P2004": {
+  "label": "NALT ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4390",
+   "P4970",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P4229": {
+  "label": "ICD-10-CM",
+  "quantity": false,
+  "qualifiers": [
+   "P1050",
+   "P1810",
+   "P366",
+   "P4390",
+   "P460"
+  ],
+  "class_range": false
+ },
+ "P11738": {
+  "label": "handled, mitigated, or managed by",
+  "quantity": false,
+  "qualifiers": [
+   "P1012",
+   "P12913",
+   "P1810",
+   "P5102",
+   "P518"
+  ],
+  "class_range": true
+ },
+ "P10022": {
+  "label": "Treccani's Dizionario di Medicina ID"
+ },
+ "P3500": {
+  "label": "Ringgold ID",
+  "quantity": false,
+  "qualifiers": [
+   "P17",
+   "P1810",
+   "P2241",
+   "P276",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P3749": {
+  "label": "Google Maps Customer ID",
+  "quantity": false,
+  "qualifiers": [
+   "P131",
+   "P1476",
+   "P1810",
+   "P2241",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P5242": {
+  "label": "ARWU university ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407"
+  ],
+  "class_range": false
+ },
+ "P269": {
+  "label": "IdRef ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P3831",
+   "P4970",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P1451": {
+  "label": "motto text",
+  "quantity": false,
+  "qualifiers": [
+   "P2441",
+   "P3831",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P5586": {
+  "label": "Times Higher Education World University ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P3153": {
+  "label": "Open Funder Registry funder ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1476",
+   "P1810",
+   "P1932",
+   "P2241",
+   "P7452"
+  ],
+  "class_range": false
+ },
+ "P2196": {
+  "label": "count of students"
+ },
+ "P3744": {
+  "label": "number of subscribers"
+ },
+ "P630": {
+  "label": "Paris city digital code",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P580",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P7212": {
+  "label": "LyricsTranslate ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1552",
+   "P1810",
+   "P2241",
+   "P407",
+   "P548"
+  ],
+  "class_range": false
+ },
+ "P2044": {
+  "label": "elevation above sea level",
+  "quantity": true,
+  "qualifiers": [
+   "P1480",
+   "P3831",
+   "P459",
+   "P518",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P2659": {
+  "label": "topographic isolation",
+  "quantity": true,
+  "qualifiers": [
+   "P2048",
+   "P2210",
+   "P2241",
+   "P3137",
+   "P7787"
+  ],
+  "class_range": false
+ },
+ "P2660": {
+  "label": "topographic prominence",
+  "quantity": true,
+  "qualifiers": [
+   "P2210",
+   "P2559",
+   "P3831",
+   "P518",
+   "P7452"
+  ],
+  "class_range": false
+ },
+ "P3137": {
+  "label": "parent peak"
+ },
+ "P7787": {
+  "label": "heading"
+ },
+ "P451": {
+  "label": "unmarried partner",
+  "quantity": false,
+  "qualifiers": [
+   "P1534",
+   "P1971",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P10706": {
+  "label": "DACS ID (2022)"
+ },
+ "P6870": {
+  "label": "Latvian National Encyclopedia Online ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P407"
+  ],
+  "class_range": false
+ },
+ "P13986": {
+  "label": "has grammatical number",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": true
+ },
+ "P12288": {
+  "label": "Cathopedia article ID"
+ },
+ "P1027": {
+  "label": "conferred by",
+  "quantity": false,
+  "qualifiers": [
+   "P17",
+   "P518",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P1662": {
+  "label": "DOI prefix",
+  "quantity": false,
+  "qualifiers": [
+   "P137",
+   "P1476",
+   "P1810",
+   "P2241",
+   "P2378"
+  ],
+  "class_range": false
+ },
+ "P2378": {
+  "label": "issued by"
+ },
+ "P13161": {
+  "label": "Radio Algeria topic ID (French)",
+  "quantity": false,
+  "qualifiers": [
+   "P1810"
+  ],
+  "class_range": false
+ },
+ "P144": {
+  "label": "based on",
+  "quantity": false,
+  "qualifiers": [
+   "P2868",
+   "P50",
+   "P518",
+   "P577",
+   "P958"
+  ],
+  "class_range": true
+ },
+ "P13317": {
+  "label": "The New Yorker topic ID",
+  "quantity": false,
+  "qualifiers": [
+   "P2241",
+   "P4070",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P495": {
+  "label": "country of origin",
+  "quantity": false,
+  "qualifiers": [
+   "P131",
+   "P276",
+   "P518",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P7157": {
+  "label": "The Top Tens ID",
+  "quantity": false,
+  "qualifiers": [
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P6900": {
+  "label": "NicoNicoPedia ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1476",
+   "P1810",
+   "P2241",
+   "P2699",
+   "P407"
+  ],
+  "class_range": false
+ },
+ "P10151": {
+  "label": "iTunes genre ID (archived)"
+ },
+ "P8834": {
+  "label": "MetaSat ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810"
+  ],
+  "class_range": false
+ },
+ "P6539": {
+  "label": "Cat\u00e1logo del Patrimonio Cultural de Castilla-La Mancha ID",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P989": {
+  "label": "spoken text audio",
+  "quantity": false,
+  "qualifiers": [
+   "P10135",
+   "P407",
+   "P5237",
+   "P585",
+   "P7569"
+  ],
+  "class_range": false
+ },
+ "P10227": {
+  "label": "National Library of Ireland ID"
+ },
+ "P11796": {
+  "label": "time of periapsis"
+ },
+ "P1310": {
+  "label": "statement disputed by"
+ },
+ "P7314": {
+  "label": "TDV Encyclopedia of Islam ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P39",
+   "P407",
+   "P4070"
+  ],
+  "class_range": false
+ },
+ "P9827": {
+  "label": "GSSO ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P4390",
+   "P4900",
+   "P4970",
+   "P9570"
+  ],
+  "class_range": false
+ },
+ "P8972": {
+  "label": "small logo or icon",
+  "quantity": false,
+  "qualifiers": [
+   "P180",
+   "P580",
+   "P582",
+   "P7452",
+   "P8798"
+  ],
+  "class_range": false
+ },
+ "P3342": {
+  "label": "significant person",
+  "quantity": false,
+  "qualifiers": [
+   "P1480",
+   "P2868",
+   "P3831",
+   "P580",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P7860": {
+  "label": "word in DPEJ of RAE ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P4254": {
+  "label": "Banglapedia ID (Bengali)",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P407",
+   "P7452"
+  ],
+  "class_range": false
+ },
+ "P1684": {
+  "label": "inscription",
+  "quantity": false,
+  "qualifiers": [
+   "P1932",
+   "P2441",
+   "P3831",
+   "P518",
+   "P805"
+  ],
+  "class_range": false
+ },
+ "P4900": {
+  "label": "broader concept"
+ },
+ "P13713": {
+  "label": "awarded for type of work",
+  "quantity": false,
+  "qualifiers": [
+   "P136",
+   "P180",
+   "P5102",
+   "P7937",
+   "P921"
+  ],
+  "class_range": true
+ },
+ "P7960": {
+  "label": "Joconde discovery ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810"
+  ],
+  "class_range": false
+ },
+ "P3274": {
+  "label": "content deliverer"
+ },
+ "P6275": {
+  "label": "copyright representative",
+  "quantity": false,
+  "qualifiers": [
+   "P1268",
+   "P1875",
+   "P275",
+   "P518",
+   "P580"
+  ],
+  "class_range": true
+ },
+ "P8750": {
+  "label": "Unione Romana Biblioteche Scientifiche ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P12458": {
+  "label": "Parsifal cluster ID"
+ },
+ "P4428": {
+  "label": "implementation of",
+  "quantity": false,
+  "qualifiers": [
+   "P1012",
+   "P1535",
+   "P2868",
+   "P518",
+   "P580"
+  ],
+  "class_range": true
+ },
+ "P6611": {
+  "label": "Semantic Scholar topic ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P504": {
+  "label": "shipping port",
+  "quantity": false,
+  "qualifiers": [
+   "P1416",
+   "P1932",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P5692": {
+  "label": "dummy value",
+  "quantity": false,
+  "qualifiers": [
+   "P1412",
+   "P1932",
+   "P3831",
+   "P518",
+   "P805"
+  ],
+  "class_range": false
+ },
+ "P6720": {
+  "label": "interwiki prefix at Wikimedia",
+  "quantity": false,
+  "qualifiers": [
+   "P1630",
+   "P2241",
+   "P580",
+   "P582",
+   "P7452"
+  ],
+  "class_range": false
+ },
+ "P10027": {
+  "label": "official forum URL"
+ },
+ "P10120": {
+  "label": "Australian Trade Mark Number"
+ },
+ "P10209": {
+  "label": "number of triples"
+ },
+ "P10768": {
+  "label": "Similarweb ranking"
+ },
+ "P11903": {
+  "label": "login URL"
+ },
+ "P11904": {
+  "label": "registration page URL"
+ },
+ "P11914": {
+  "label": "Wikibase World ID"
+ },
+ "P535": {
+  "label": "Find a Grave memorial ID",
+  "quantity": false,
+  "qualifiers": [
+   "P119",
+   "P1552",
+   "P1810",
+   "P2241",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P5395": {
+  "label": "Canadian Encyclopedia article ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2093",
+   "P407",
+   "P5017",
+   "P577"
+  ],
+  "class_range": false
+ },
+ "P4808": {
+  "label": "Royal Academy new identifier",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P4927": {
+  "label": "Invaluable.com person ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P410": {
+  "label": "military, police or special rank",
+  "quantity": false,
+  "qualifiers": [
+   "P4353",
+   "P580",
+   "P582",
+   "P585",
+   "P7779"
+  ],
+  "class_range": true
+ },
+ "P13715": {
+  "label": "\u200ewatercraft prefix"
+ },
+ "P1875": {
+  "label": "represented by",
+  "quantity": false,
+  "qualifiers": [
+   "P1476",
+   "P3831",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P122": {
+  "label": "basic form of government",
+  "quantity": false,
+  "qualifiers": [
+   "P5102",
+   "P580",
+   "P582",
+   "P585",
+   "P805"
+  ],
+  "class_range": true
+ },
+ "P3842": {
+  "label": "located in the present-day administrative territorial entity",
+  "quantity": false,
+  "qualifiers": [
+   "P1011",
+   "P1480",
+   "P518",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P5429": {
+  "label": "IPTC NewsCode",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P4070",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P3429": {
+  "label": "Electronic Enlightenment ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810"
+  ],
+  "class_range": false
+ },
+ "P1938": {
+  "label": "Project Gutenberg author ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P6735": {
+  "label": "Watercolour World artist ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P3740"
+  ],
+  "class_range": false
+ },
+ "P485": {
+  "label": "archives at",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P217",
+   "P7103",
+   "P7104",
+   "P973"
+  ],
+  "class_range": true
+ },
+ "P8914": {
+  "label": "ZOBODAT person ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4070",
+   "P813",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P396": {
+  "label": "SBN author ID"
+ },
+ "P4971": {
+  "label": "UK Provider Reference Number",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P580",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P5584": {
+  "label": "QS World University ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1352",
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P409": {
+  "label": "Libraries Australia ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4970",
+   "P742",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P184": {
+  "label": "doctoral advisor",
+  "quantity": false,
+  "qualifiers": [
+   "P3831",
+   "P4101",
+   "P585",
+   "P69",
+   "P812"
+  ],
+  "class_range": true
+ },
+ "P4101": {
+  "label": "thesis submitted to"
+ },
+ "P1547": {
+  "label": "depends on software",
+  "quantity": false,
+  "qualifiers": [
+   "P1552",
+   "P348",
+   "P5102",
+   "P518",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P2505": {
+  "label": "carries thoroughfare",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P1932",
+   "P580",
+   "P582",
+   "P6710"
+  ],
+  "class_range": true
+ },
+ "P2439": {
+  "label": "P2439",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P9475": {
+  "label": "Encyclopedia of Korean Culture ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P7452",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P669": {
+  "label": "located on street",
+  "quantity": false,
+  "qualifiers": [
+   "P281",
+   "P560",
+   "P580",
+   "P582",
+   "P670"
+  ],
+  "class_range": true
+ },
+ "P3032": {
+  "label": "adjacent building",
+  "quantity": false,
+  "qualifiers": [
+   "P518",
+   "P560",
+   "P580",
+   "P582",
+   "P654"
+  ],
+  "class_range": true
+ },
+ "P172": {
+  "label": "ethnic group",
+  "quantity": false,
+  "qualifiers": [
+   "P1107",
+   "P1416",
+   "P172",
+   "P1932",
+   "P2241"
+  ],
+  "class_range": true
+ },
+ "P2425": {
+  "label": "service ribbon image",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P1706",
+   "P518",
+   "P580",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P3729": {
+  "label": "next lower rank",
+  "quantity": false,
+  "qualifiers": [
+   "P1013",
+   "P1545",
+   "P1706",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P12375": {
+  "label": "TracesOfWar award ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P4070",
+   "P9570"
+  ],
+  "class_range": false
+ },
+ "P6375": {
+  "label": "street address",
+  "quantity": false,
+  "qualifiers": [
+   "P281",
+   "P580",
+   "P582",
+   "P669",
+   "P670"
+  ],
+  "class_range": false
+ },
+ "P6155": {
+  "label": "Sotheby's Museum Network ID",
+  "quantity": false,
+  "qualifiers": [
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P912": {
+  "label": "has facility",
+  "quantity": false,
+  "qualifiers": [
+   "P1083",
+   "P1114",
+   "P11840",
+   "P1552",
+   "P2561"
+  ],
+  "class_range": true
+ },
+ "P10873": {
+  "label": "Mapping Museums ID"
+ },
+ "P12485": {
+  "label": "British Listed Buildings ID"
+ },
+ "P1436": {
+  "label": "collection or exhibition size"
+ },
+ "P7497": {
+  "label": "Wolfram Language entity type",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P1259": {
+  "label": "coordinates of the point of view",
+  "quantity": false,
+  "qualifiers": [
+   "P2044",
+   "P518",
+   "P654",
+   "P7787",
+   "P8208"
+  ],
+  "class_range": false
+ },
+ "P8208": {
+  "label": "tilt"
+ },
+ "P3202": {
+  "label": "UAI code",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2699",
+   "P518",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P6773": {
+  "label": "HAL structure ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P2868",
+   "P580",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P121": {
+  "label": "item operated",
+  "quantity": false,
+  "qualifiers": [
+   "P1114",
+   "P366",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P3608": {
+  "label": "EU VAT number",
+  "quantity": false,
+  "qualifiers": [
+   "P17",
+   "P1810",
+   "P2241",
+   "P580",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P1004": {
+  "label": "MusicBrainz place ID"
+ },
+ "P1454": {
+  "label": "legal form"
+ },
+ "P3221": {
+  "label": "New York Times topic ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810"
+  ],
+  "class_range": false
+ },
+ "P2715": {
+  "label": "elected in",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P276",
+   "P580",
+   "P585",
+   "P768"
+  ],
+  "class_range": true
+ },
+ "P6334": {
+  "label": "Agence photo RMN package ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1932"
+  ],
+  "class_range": false
+ },
+ "P7153": {
+  "label": "significant place",
+  "quantity": false,
+  "qualifiers": [
+   "P2868",
+   "P3831",
+   "P518",
+   "P585",
+   "P6375"
+  ],
+  "class_range": true
+ },
+ "P8768": {
+  "label": "online catalog URL",
+  "quantity": false,
+  "qualifiers": [
+   "P2283",
+   "P31",
+   "P407",
+   "P518",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P8714": {
+  "label": "GADM ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P4070",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P2522": {
+  "label": "competition won",
+  "quantity": false,
+  "qualifiers": [
+   "P1706",
+   "P2781",
+   "P3629",
+   "P585",
+   "P805"
+  ],
+  "class_range": true
+ },
+ "P6364": {
+  "label": "official color",
+  "quantity": false,
+  "qualifiers": [
+   "P1706",
+   "P3831",
+   "P465",
+   "P580",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P6131": {
+  "label": "Scorebar / Soccerway team ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P407",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P5882": {
+  "label": "Muziekweb performer ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4070",
+   "P4970",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P54": {
+  "label": "member of sports team",
+  "quantity": false,
+  "qualifiers": [
+   "P1350",
+   "P1351",
+   "P1642",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P3279": {
+  "label": "statistical leader",
+  "quantity": false,
+  "qualifiers": [
+   "P1013",
+   "P1114",
+   "P1351",
+   "P1532",
+   "P54"
+  ],
+  "class_range": true
+ },
+ "P118": {
+  "label": "league or competition"
+ },
+ "P1350": {
+  "label": "number of matches played/races/starts"
+ },
+ "P1351": {
+  "label": "number of points/goals/set scored"
+ },
+ "P1642": {
+  "label": "acquisition transaction"
+ },
+ "P11408": {
+  "label": "Pixiv Encyclopedia ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P5168",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P7807": {
+  "label": "ICD-11 ID (Foundation)",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P366",
+   "P407",
+   "P9570"
+  ],
+  "class_range": false
+ },
+ "P3941": {
+  "label": "Israel Antiquities Authority ID",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P1540": {
+  "label": "male population",
+  "quantity": true,
+  "qualifiers": [
+   "P459",
+   "P4876",
+   "P518",
+   "P585",
+   "P805"
+  ],
+  "class_range": false
+ },
+ "P8010": {
+  "label": "number of recoveries",
+  "quantity": true,
+  "qualifiers": [
+   "P1264",
+   "P1480",
+   "P3005",
+   "P459",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P780": {
+  "label": "symptoms and signs",
+  "quantity": false,
+  "qualifiers": [
+   "P13044",
+   "P636",
+   "P689",
+   "P828",
+   "P927"
+  ],
+  "class_range": true
+ },
+ "P924": {
+  "label": "possible treatment",
+  "quantity": false,
+  "qualifiers": [
+   "P1012",
+   "P12913",
+   "P2176",
+   "P636",
+   "P780"
+  ],
+  "class_range": true
+ },
+ "P5642": {
+  "label": "risk factor",
+  "quantity": false,
+  "qualifiers": [
+   "P1013",
+   "P1050",
+   "P1542"
+  ],
+  "class_range": true
+ },
+ "P1060": {
+  "label": "disease transmission process"
+ },
+ "P2097": {
+  "label": "term length of position",
+  "quantity": true,
+  "qualifiers": [
+   "P1114",
+   "P580",
+   "P582",
+   "P805",
+   "P837"
+  ],
+  "class_range": false
+ },
+ "P158": {
+  "label": "seal image",
+  "quantity": false,
+  "qualifiers": [
+   "P1684",
+   "P180",
+   "P2096",
+   "P580",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P8338": {
+  "label": "applies to name of object"
+ },
+ "P2650": {
+  "label": "interested in",
+  "quantity": false,
+  "qualifiers": [
+   "P101",
+   "P2868",
+   "P3831",
+   "P580",
+   "P921"
+  ],
+  "class_range": true
+ },
+ "P264": {
+  "label": "record label",
+  "quantity": false,
+  "qualifiers": [
+   "P291",
+   "P3005",
+   "P528",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P110": {
+  "label": "illustrator",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P1810",
+   "P1932",
+   "P3831",
+   "P518"
+  ],
+  "class_range": true
+ },
+ "P4343": {
+  "label": "WBPLN author ID",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P5340": {
+  "label": "American Film Institute person ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4970",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P1220": {
+  "label": "Internet Broadway Database person ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1382",
+   "P1810",
+   "P2241",
+   "P2699",
+   "P4070"
+  ],
+  "class_range": false
+ },
+ "P403": {
+  "label": "mouth of the watercourse",
+  "quantity": false,
+  "qualifiers": [
+   "P131",
+   "P2044",
+   "P276",
+   "P3871",
+   "P625"
+  ],
+  "class_range": true
+ },
+ "P3871": {
+  "label": "tributary orientation"
+ },
+ "P2403": {
+  "label": "total assets",
+  "quantity": true,
+  "qualifiers": [
+   "P1013",
+   "P123",
+   "P4241",
+   "P459",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P9074": {
+  "label": "K\u014dtuia ID",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P6683": {
+  "label": "Alexander Turnbull Library ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P2241",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P245": {
+  "label": "Union List of Artist Names ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P3831",
+   "P4970",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P3025": {
+  "label": "open days"
+ },
+ "P157": {
+  "label": "killed by",
+  "quantity": false,
+  "qualifiers": [
+   "P1932",
+   "P276",
+   "P3831",
+   "P7528",
+   "P805"
+  ],
+  "class_range": true
+ },
+ "P7528": {
+  "label": "statement or content of identifier is regarded as spoiler for"
+ },
+ "P547": {
+  "label": "commemorates",
+  "quantity": false,
+  "qualifiers": [
+   "P1120",
+   "P12912",
+   "P1932",
+   "P580",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P941": {
+  "label": "inspired by",
+  "quantity": false,
+  "qualifiers": [
+   "P1480",
+   "P1683",
+   "P50",
+   "P518",
+   "P958"
+  ],
+  "class_range": true
+ },
+ "P3969": {
+  "label": "signed form",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": true
+ },
+ "P3680": {
+  "label": "statement supported by"
+ },
+ "P6982": {
+  "label": "Australian Faunal Directory publication ID",
+  "quantity": false,
+  "qualifiers": [
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P4936": {
+  "label": "SFMOMA artist ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P3430": {
+  "label": "SNAC ARK ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4070",
+   "P4970",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P5271": {
+  "label": "Saint Louis Art Museum person ID",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P2042": {
+  "label": "Artsy artist ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P813",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P9493": {
+  "label": "artist files at",
+  "quantity": false,
+  "qualifiers": [
+   "P195",
+   "P276",
+   "P580",
+   "P582",
+   "P973"
+  ],
+  "class_range": true
+ },
+ "P3879": {
+  "label": "Cologne phonetics",
+  "quantity": false,
+  "qualifiers": [
+   "P1013",
+   "P1810",
+   "P2241",
+   "P2868",
+   "P407"
+  ],
+  "class_range": false
+ },
+ "P1814": {
+  "label": "name in kana"
+ },
+ "P7018": {
+  "label": "lexeme sense"
+ },
+ "P6781": {
+  "label": "ProofWiki ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P407",
+   "P9570",
+   "P9675"
+  ],
+  "class_range": false
+ },
+ "P7084": {
+  "label": "related category",
+  "quantity": false,
+  "qualifiers": [
+   "P1706",
+   "P2241",
+   "P27",
+   "P4224",
+   "P518"
+  ],
+  "class_range": true
+ },
+ "P952": {
+  "label": "ISCO-88 occupation class",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4390"
+  ],
+  "class_range": false
+ },
+ "P4652": {
+  "label": "ESCO Occupation ID"
+ },
+ "P11214": {
+  "label": "UNIMARC: Medium of Performance ID"
+ },
+ "P9035": {
+  "label": "Muck Rack media outlet ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1552",
+   "P1810",
+   "P2241",
+   "P4070",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P6782": {
+  "label": "ROR ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4970",
+   "P580",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P2519": {
+  "label": "Scope.dk person ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P742": {
+  "label": "pseudonym",
+  "quantity": false,
+  "qualifiers": [
+   "P1814",
+   "P2125",
+   "P282",
+   "P3831",
+   "P407"
+  ],
+  "class_range": false
+ },
+ "P7109": {
+  "label": "Acharts.co artist ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407"
+  ],
+  "class_range": false
+ },
+ "P4657": {
+  "label": "The Numbers person ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1552",
+   "P1810",
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P10621": {
+  "label": "1905.com star ID"
+ },
+ "P11705": {
+  "label": "Facebook numeric ID"
+ },
+ "P3569": {
+  "label": "Cultureel Woordenboek ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1635",
+   "P1810",
+   "P2241",
+   "P407",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P1749": {
+  "label": "Parlement.com ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407"
+  ],
+  "class_range": false
+ },
+ "P12086": {
+  "label": "WikiKids ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P4070",
+   "P9675"
+  ],
+  "class_range": false
+ },
+ "P1313": {
+  "label": "office held by head of government",
+  "quantity": false,
+  "qualifiers": [
+   "P1001",
+   "P2098",
+   "P2241",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P5286": {
+  "label": "Portable Game Notation",
+  "quantity": false,
+  "qualifiers": [
+   "P1545"
+  ],
+  "class_range": false
+ },
+ "P5555": {
+  "label": "schematic",
+  "quantity": false,
+  "qualifiers": [
+   "P180",
+   "P2096",
+   "P407",
+   "P585",
+   "P5961"
+  ],
+  "class_range": false
+ },
+ "P1080": {
+  "label": "from narrative universe",
+  "quantity": false,
+  "qualifiers": [
+   "P10663",
+   "P5102",
+   "P518",
+   "P577",
+   "P805"
+  ],
+  "class_range": true
+ },
+ "P5382": {
+  "label": "Behind The Voice Actors franchise ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P407"
+  ],
+  "class_range": false
+ },
+ "P7562": {
+  "label": "UVL group ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P407",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P1074": {
+  "label": "fictional or mythical analog of",
+  "quantity": false,
+  "qualifiers": [
+   "P1013",
+   "P10663",
+   "P1706",
+   "P3680",
+   "P5102"
+  ],
+  "class_range": true
+ },
+ "P8672": {
+  "label": "X topic ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P407",
+   "P518",
+   "P585",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P1064": {
+  "label": "track gauge",
+  "quantity": false,
+  "qualifiers": [
+   "P17",
+   "P518",
+   "P559",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P5817": {
+  "label": "state of use",
+  "quantity": false,
+  "qualifiers": [
+   "P518",
+   "P580",
+   "P582",
+   "P585",
+   "P7452"
+  ],
+  "class_range": true
+ },
+ "P4293": {
+  "label": "PM20 folder ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P3740",
+   "P4390",
+   "P5592",
+   "P580"
+  ],
+  "class_range": false
+ },
+ "P5592": {
+  "label": "number of works accessible online"
+ },
+ "P345": {
+  "label": "IMDb ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P2241",
+   "P407",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P2612": {
+  "label": "TED topic ID"
+ },
+ "P7085": {
+  "label": "TikTok username",
+  "quantity": false,
+  "qualifiers": [
+   "P1552",
+   "P1810",
+   "P3744",
+   "P407",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P7361": {
+  "label": "UEFA team ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P407",
+   "P4070"
+  ],
+  "class_range": false
+ },
+ "P7280": {
+  "label": "PlaymakerStats.com team ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P7223": {
+  "label": "Transfermarkt team ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P407"
+  ],
+  "class_range": false
+ },
+ "P115": {
+  "label": "home venue"
+ },
+ "P6766": {
+  "label": "Who's on First ID",
+  "quantity": false,
+  "qualifiers": [
+   "P131",
+   "P1810",
+   "P2241",
+   "P2868",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P395": {
+  "label": "licence plate code",
+  "quantity": false,
+  "qualifiers": [
+   "P1535",
+   "P5102",
+   "P518",
+   "P580",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P11123": {
+  "label": "F\u00f6rvaltningshistorisk Ordbok ID",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P10431": {
+  "label": "Portable Antiquities Scheme object type ID",
+  "quantity": false,
+  "qualifiers": [
+   "P4390",
+   "P4900",
+   "P7452"
+  ],
+  "class_range": false
+ },
+ "P473": {
+  "label": "local dialing code",
+  "quantity": false,
+  "qualifiers": [
+   "P1011",
+   "P518",
+   "P580",
+   "P582",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P439": {
+  "label": "German municipality key",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P580",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P6849": {
+  "label": "DR topic ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810"
+  ],
+  "class_range": false
+ },
+ "P1264": {
+  "label": "valid in period"
+ },
+ "P1539": {
+  "label": "female population"
+ },
+ "P1900": {
+  "label": "EAGLE id"
+ },
+ "P2555": {
+  "label": "fee",
+  "quantity": true,
+  "qualifiers": [
+   "P2899",
+   "P4135",
+   "P518",
+   "P585",
+   "P6001"
+  ],
+  "class_range": false
+ },
+ "P5023": {
+  "label": "activity policy in this place",
+  "quantity": false,
+  "qualifiers": [
+   "P2555",
+   "P2922",
+   "P3005",
+   "P518",
+   "P580"
+  ],
+  "class_range": true
+ },
+ "P2851": {
+  "label": "payment types accepted",
+  "quantity": false,
+  "qualifiers": [
+   "P1001",
+   "P1535",
+   "P38",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P1017": {
+  "label": "Vatican Library ID (former scheme)",
+  "quantity": false,
+  "qualifiers": [
+   "P1448",
+   "P1810",
+   "P2241",
+   "P742",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P2652": {
+  "label": "partnership with",
+  "quantity": false,
+  "qualifiers": [
+   "P1366",
+   "P518",
+   "P580",
+   "P582",
+   "P805"
+  ],
+  "class_range": true
+ },
+ "P9152": {
+  "label": "CollectieGelderland creator ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P195",
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P9969": {
+  "label": "catalogue raisonn\u00e9",
+  "quantity": false,
+  "qualifiers": [
+   "P144",
+   "P407",
+   "P4969",
+   "P50",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P11268": {
+  "label": "press information URL"
+ },
+ "P11326": {
+  "label": "impressum URL"
+ },
+ "P1846": {
+  "label": "distribution map",
+  "quantity": false,
+  "qualifiers": [
+   "P180",
+   "P2096",
+   "P407",
+   "P518",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P1629": {
+  "label": "Wikidata item of this property"
+ },
+ "P185": {
+  "label": "doctoral student",
+  "quantity": false,
+  "qualifiers": [
+   "P4101",
+   "P582",
+   "P585",
+   "P69",
+   "P812"
+  ],
+  "class_range": true
+ },
+ "P4174": {
+  "label": "Wikimedia username",
+  "quantity": false,
+  "qualifiers": [
+   "P1416",
+   "P1552",
+   "P518",
+   "P580",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P1053": {
+  "label": "ResearcherID"
+ },
+ "P7328": {
+  "label": "amount cataloged",
+  "quantity": true,
+  "qualifiers": [
+   "P11279",
+   "P1480",
+   "P186",
+   "P585",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P3134": {
+  "label": "TripAdvisor ID",
+  "quantity": false,
+  "qualifiers": [
+   "P17",
+   "P1810",
+   "P2241",
+   "P518",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P5050": {
+  "label": "UMAC ID",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P968": {
+  "label": "email address",
+  "quantity": false,
+  "qualifiers": [
+   "P366",
+   "P3831",
+   "P407",
+   "P518",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P497": {
+  "label": "CBDB ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P2241",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P1427": {
+  "label": "start point"
+ },
+ "P8483": {
+  "label": "PM20 geo code"
+ },
+ "P953": {
+  "label": "work available at URL",
+  "quantity": false,
+  "qualifiers": [
+   "P2701",
+   "P275",
+   "P3274",
+   "P407",
+   "P6954"
+  ],
+  "class_range": false
+ },
+ "P1026": {
+  "label": "academic thesis",
+  "quantity": false,
+  "qualifiers": [
+   "P184",
+   "P2699",
+   "P3831",
+   "P4101",
+   "P577"
+  ],
+  "class_range": true
+ },
+ "P3712": {
+  "label": "has goal",
+  "quantity": false,
+  "qualifiers": [
+   "P1013",
+   "P12913",
+   "P13044",
+   "P18",
+   "P518"
+  ],
+  "class_range": true
+ },
+ "P8539": {
+  "label": "ERIC Thesaurus ID"
+ },
+ "P6954": {
+  "label": "online access status"
+ },
+ "P181": {
+  "label": "taxon range map image",
+  "quantity": false,
+  "qualifiers": [
+   "P1001",
+   "P2096",
+   "P3005",
+   "P407",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P105": {
+  "label": "taxon rank",
+  "quantity": false,
+  "qualifiers": [
+   "P2241",
+   "P3831",
+   "P405",
+   "P574",
+   "P580"
+  ],
+  "class_range": true
+ },
+ "P5354": {
+  "label": "Amphibian Species of the World ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P10585": {
+  "label": "Catalogue of Life ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1366",
+   "P1810",
+   "P2241",
+   "P6507",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P3358": {
+  "label": "positive prognostic predictor for",
+  "quantity": false,
+  "qualifiers": [
+   "P1310",
+   "P4271",
+   "P459"
+  ],
+  "class_range": true
+ },
+ "P3354": {
+  "label": "positive therapeutic predictor for",
+  "quantity": false,
+  "qualifiers": [
+   "P1310",
+   "P2175",
+   "P4271",
+   "P459"
+  ],
+  "class_range": true
+ },
+ "P3357": {
+  "label": "negative diagnostic predictor for",
+  "quantity": false,
+  "qualifiers": [
+   "P1310",
+   "P4271",
+   "P459"
+  ],
+  "class_range": true
+ },
+ "P3355": {
+  "label": "negative therapeutic predictor for",
+  "quantity": false,
+  "qualifiers": [
+   "P1310",
+   "P2175",
+   "P4271",
+   "P459"
+  ],
+  "class_range": true
+ },
+ "P3356": {
+  "label": "positive diagnostic predictor for",
+  "quantity": false,
+  "qualifiers": [
+   "P1310",
+   "P4271",
+   "P459"
+  ],
+  "class_range": true
+ },
+ "P3359": {
+  "label": "negative prognostic predictor for",
+  "quantity": false,
+  "qualifiers": [
+   "P1310",
+   "P4271",
+   "P459"
+  ],
+  "class_range": true
+ },
+ "P3329": {
+  "label": "CIViC variant ID",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P2175": {
+  "label": "medical condition treated"
+ },
+ "P4271": {
+  "label": "rating"
+ },
+ "P6412": {
+  "label": "Gran Enciclop\u00e8dia de la M\u00fasica ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P6821": {
+  "label": "Alvin ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1476",
+   "P1480",
+   "P1810",
+   "P2241",
+   "P407"
+  ],
+  "class_range": false
+ },
+ "P11293": {
+  "label": "Amazon.com browse node",
+  "quantity": false,
+  "qualifiers": [
+   "P1476",
+   "P1810",
+   "P2241",
+   "P3831",
+   "P9570"
+  ],
+  "class_range": false
+ },
+ "P11733": {
+  "label": "Treccani's Universo del corpo ID"
+ },
+ "P4983": {
+  "label": "TMDB TV series ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P580",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P480": {
+  "label": "FilmAffinity film ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P2241",
+   "P407",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P2061": {
+  "label": "aspect ratio (W:H)",
+  "quantity": false,
+  "qualifiers": [
+   "P1932",
+   "P518",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P5099": {
+  "label": "Il mondo dei doppiatori ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1476",
+   "P1810",
+   "P2241",
+   "P407",
+   "P4070"
+  ],
+  "class_range": false
+ },
+ "P4835": {
+  "label": "TheTVDB series ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P2699",
+   "P407",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P5032": {
+  "label": "Filmweb.pl film ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P4070",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P8896": {
+  "label": "Concise Literary Encyclopedia ID",
+  "quantity": false,
+  "qualifiers": [
+   "P4070"
+  ],
+  "class_range": false
+ },
+ "P2512": {
+  "label": "has spin-off",
+  "quantity": false,
+  "qualifiers": [
+   "P3831",
+   "P577",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P1113": {
+  "label": "number of episodes"
+ },
+ "P2179": {
+  "label": "ACM Classification Code (2012)",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P8977": {
+  "label": "CITWF person ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P5297": {
+  "label": "Companies House officer ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P2241",
+   "P27",
+   "P569"
+  ],
+  "class_range": false
+ },
+ "P4515": {
+  "label": "Prisma ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1476",
+   "P1810",
+   "P2093",
+   "P2241",
+   "P577"
+  ],
+  "class_range": false
+ },
+ "P11386": {
+  "label": "Listal ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1476",
+   "P1810",
+   "P1932",
+   "P2241",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P13438": {
+  "label": "Homosaurus ID (V4)",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P4070",
+   "P4390",
+   "P4970",
+   "P9570"
+  ],
+  "class_range": false
+ },
+ "P3180": {
+  "label": "Visual Novel Database ID"
+ },
+ "P5140": {
+  "label": "coordinates of geographic center",
+  "quantity": false,
+  "qualifiers": [
+   "P1013",
+   "P2795",
+   "P459",
+   "P580",
+   "P805"
+  ],
+  "class_range": false
+ },
+ "P706": {
+  "label": "located in/on physical feature",
+  "quantity": false,
+  "qualifiers": [
+   "P2241",
+   "P361",
+   "P3871",
+   "P518",
+   "P580"
+  ],
+  "class_range": true
+ },
+ "P1334": {
+  "label": "coordinates of easternmost point",
+  "quantity": false,
+  "qualifiers": [
+   "P518",
+   "P582",
+   "P613",
+   "P706",
+   "P805"
+  ],
+  "class_range": false
+ },
+ "P9284": {
+  "label": "GB1900 ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2699",
+   "P518",
+   "P585",
+   "P625"
+  ],
+  "class_range": false
+ },
+ "P7350": {
+  "label": "Gazetteer for Scotland place ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2868",
+   "P4070",
+   "P4970",
+   "P613"
+  ],
+  "class_range": false
+ },
+ "P1335": {
+  "label": "coordinates of westernmost point",
+  "quantity": false,
+  "qualifiers": [
+   "P276",
+   "P518",
+   "P582",
+   "P706",
+   "P805"
+  ],
+  "class_range": false
+ },
+ "P7959": {
+  "label": "historic county",
+  "quantity": false,
+  "qualifiers": [
+   "P276",
+   "P518",
+   "P580",
+   "P582",
+   "P972"
+  ],
+  "class_range": true
+ },
+ "P3120": {
+  "label": "TOID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P2868",
+   "P4070",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P2795": {
+  "label": "directions"
+ },
+ "P2442": {
+  "label": "conversion to standard unit",
+  "quantity": true,
+  "qualifiers": [
+   "P2534",
+   "P2559",
+   "P3005",
+   "P580",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P11137": {
+  "label": "Reddit topic ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P111": {
+  "label": "measured physical quantity",
+  "quantity": false,
+  "qualifiers": [
+   "P13044"
+  ],
+  "class_range": true
+ },
+ "P5061": {
+  "label": "unit symbol",
+  "quantity": false,
+  "qualifiers": [
+   "P11054",
+   "P282",
+   "P580",
+   "P582",
+   "P805"
+  ],
+  "class_range": false
+ },
+ "P2370": {
+  "label": "conversion to SI unit",
+  "quantity": true,
+  "qualifiers": [
+   "P1480",
+   "P2534",
+   "P2916",
+   "P3005",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P12571": {
+  "label": "derived from base unit"
+ },
+ "P12956": {
+  "label": "exponent of base unit"
+ },
+ "P10397": {
+  "label": "SBN place ID"
+ },
+ "P2534": {
+  "label": "defining formula"
+ },
+ "P2916": {
+  "label": "syntax clarification"
+ },
+ "P6344": {
+  "label": "rural population",
+  "quantity": true,
+  "qualifiers": [
+   "P1538",
+   "P1539",
+   "P1540",
+   "P585",
+   "P6499"
+  ],
+  "class_range": false
+ },
+ "P6343": {
+  "label": "urban population",
+  "quantity": true,
+  "qualifiers": [
+   "P1538",
+   "P1539",
+   "P1540",
+   "P585",
+   "P6499"
+  ],
+  "class_range": false
+ },
+ "P5652": {
+  "label": "Carthalia ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P1853": {
+  "label": "blood type",
+  "quantity": false,
+  "qualifiers": [
+   "P123",
+   "P1480",
+   "P1536",
+   "P2241",
+   "P577"
+  ],
+  "class_range": false
+ },
+ "P1536": {
+  "label": "immediate cause of"
+ },
+ "P1320": {
+  "label": "OpenCorporates ID"
+ },
+ "P411": {
+  "label": "canonization status",
+  "quantity": false,
+  "qualifiers": [
+   "P1027",
+   "P140",
+   "P276",
+   "P361",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P4841": {
+  "label": "total fertility rate",
+  "quantity": true,
+  "qualifiers": [
+   "P459",
+   "P585",
+   "P7452"
+  ],
+  "class_range": false
+ },
+ "P417": {
+  "label": "patron saint",
+  "quantity": false,
+  "qualifiers": [
+   "P131",
+   "P2561",
+   "P580",
+   "P582",
+   "P841"
+  ],
+  "class_range": true
+ },
+ "P4286": {
+  "label": "Nominis saint ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1476",
+   "P1810",
+   "P411",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P6844": {
+  "label": "abART person ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1480",
+   "P1810",
+   "P2241",
+   "P3831",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P841": {
+  "label": "feast day",
+  "quantity": false,
+  "qualifiers": [
+   "P140",
+   "P361",
+   "P3680",
+   "P580",
+   "P9002"
+  ],
+  "class_range": true
+ },
+ "P6482": {
+  "label": "Image Archive, Herder Institute",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P8603": {
+  "label": "Istrapedia ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P7284": {
+  "label": "The Independent topic ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P7452"
+  ],
+  "class_range": false
+ },
+ "P11851": {
+  "label": "record of"
+ },
+ "P13204": {
+  "label": "Wellcome Collection concept ID"
+ },
+ "P9037": {
+  "label": "BHCL UUID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P2241",
+   "P3831",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P5357": {
+  "label": "Encyclopedia of Science Fiction ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P291",
+   "P407",
+   "P5017"
+  ],
+  "class_range": false
+ },
+ "P12695": {
+  "label": "Gentoo Wiki article ID"
+ },
+ "P12873": {
+  "label": "ArchWiki article"
+ },
+ "P12999": {
+  "label": "Storia della civilt\u00e0 europea ID"
+ },
+ "P13687": {
+  "label": "\u200eFanlore article ID"
+ },
+ "P189": {
+  "label": "location of discovery",
+  "quantity": false,
+  "qualifiers": [
+   "P1480",
+   "P4511",
+   "P575",
+   "P5997",
+   "P625"
+  ],
+  "class_range": true
+ },
+ "P539": {
+  "label": "Museofile ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P1640": {
+  "label": "curator",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P1810",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P4645": {
+  "label": "RCR number",
+  "quantity": false,
+  "qualifiers": [
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P4511": {
+  "label": "vertical depth"
+ },
+ "P5997": {
+  "label": "object stated in reference as"
+ },
+ "P3241": {
+  "label": "Catholic Encyclopedia ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2093",
+   "P478",
+   "P50",
+   "P577"
+  ],
+  "class_range": false
+ },
+ "P97": {
+  "label": "noble title",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P155",
+   "P156",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P12912": {
+  "label": "object of occurrence"
+ },
+ "P5513": {
+  "label": "Enciclop\u00e8dia de l'Esport Catal\u00e0 ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P2094": {
+  "label": "competition class"
+ },
+ "P2416": {
+  "label": "sports discipline competed in"
+ },
+ "P1817": {
+  "label": "addressee",
+  "quantity": false,
+  "qualifiers": [
+   "P1932",
+   "P3831",
+   "P39",
+   "P5102",
+   "P518"
+  ],
+  "class_range": true
+ },
+ "P7937": {
+  "label": "form of creative work",
+  "quantity": false,
+  "qualifiers": [
+   "P1012",
+   "P1932",
+   "P2241",
+   "P518",
+   "P7452"
+  ],
+  "class_range": true
+ },
+ "P1871": {
+  "label": "CERL Thesaurus ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P3831",
+   "P4070",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P1071": {
+  "label": "location of creation",
+  "quantity": false,
+  "qualifiers": [
+   "P1480",
+   "P1932",
+   "P518",
+   "P580",
+   "P625"
+  ],
+  "class_range": true
+ },
+ "P8516": {
+  "label": "Library of Congress Medium of Performance Thesaurus ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P4390",
+   "P4900",
+   "P4970",
+   "P9570"
+  ],
+  "class_range": false
+ },
+ "P6698": {
+  "label": "Japan Search name ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P6645": {
+  "label": "Stedelijk Museum Amsterdam ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810"
+  ],
+  "class_range": false
+ },
+ "P12040": {
+  "label": "J. Paul Getty Museum agent ID"
+ },
+ "P734": {
+  "label": "family name",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P3831",
+   "P407",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P2047": {
+  "label": "duration",
+  "quantity": true,
+  "qualifiers": [
+   "P1013",
+   "P1480",
+   "P518",
+   "P580",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P3301": {
+  "label": "broadcast by",
+  "quantity": false,
+  "qualifiers": [
+   "P17",
+   "P2699",
+   "P3005",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P5114": {
+  "label": "Italian School ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P518",
+   "P7452"
+  ],
+  "class_range": false
+ },
+ "P1802": {
+  "label": "Early Modern Letters Online person ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P2003": {
+  "label": "Instagram username",
+  "quantity": false,
+  "qualifiers": [
+   "P12546",
+   "P1552",
+   "P3744",
+   "P407",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P2037": {
+  "label": "GitHub username",
+  "quantity": false,
+  "qualifiers": [
+   "P1552",
+   "P1810",
+   "P2241",
+   "P580",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P8124": {
+  "label": "CPAN author ID",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P163": {
+  "label": "flag",
+  "quantity": false,
+  "qualifiers": [
+   "P2241",
+   "P407",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P9214": {
+  "label": "FAQ URL",
+  "quantity": false,
+  "qualifiers": [
+   "P1065",
+   "P1476",
+   "P407",
+   "P5017",
+   "P577"
+  ],
+  "class_range": false
+ },
+ "P1019": {
+  "label": "web feed URL"
+ },
+ "P5391": {
+  "label": "Norwegian Polar Institute place name ID",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P5104": {
+  "label": "New Zealand Gazetteer place ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P2241",
+   "P4070",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P629": {
+  "label": "edition or translation of",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P393",
+   "P407",
+   "P4945",
+   "P577"
+  ],
+  "class_range": true
+ },
+ "P5905": {
+  "label": "Comic Vine ID",
+  "quantity": false,
+  "qualifiers": [
+   "P123",
+   "P1810",
+   "P1932",
+   "P2241",
+   "P407"
+  ],
+  "class_range": false
+ },
+ "P393": {
+  "label": "edition number"
+ },
+ "P3716": {
+  "label": "social classification",
+  "quantity": false,
+  "qualifiers": [
+   "P1534",
+   "P2241",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P3179": {
+  "label": "territory overlaps",
+  "quantity": false,
+  "qualifiers": [
+   "P1107",
+   "P2868",
+   "P3831",
+   "P582",
+   "P654"
+  ],
+  "class_range": true
+ },
+ "P4969": {
+  "label": "derivative work",
+  "quantity": false,
+  "qualifiers": [
+   "P1552",
+   "P3831",
+   "P407",
+   "P5202",
+   "P577"
+  ],
+  "class_range": true
+ },
+ "P9361": {
+  "label": "external georeferencing URL",
+  "quantity": false,
+  "qualifiers": [
+   "P3831",
+   "P921"
+  ],
+  "class_range": false
+ },
+ "P5199": {
+  "label": "British Library system number",
+  "quantity": false,
+  "qualifiers": [
+   "P1476",
+   "P1810",
+   "P1932",
+   "P2868",
+   "P437"
+  ],
+  "class_range": false
+ },
+ "P1387": {
+  "label": "political alignment",
+  "quantity": false,
+  "qualifiers": [
+   "P1480",
+   "P2241",
+   "P3680",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P6": {
+  "label": "head of government",
+  "quantity": false,
+  "qualifiers": [
+   "P102",
+   "P39",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P4549": {
+  "label": "ARLIMA ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810"
+  ],
+  "class_range": false
+ },
+ "P604": {
+  "label": "MedlinePlus ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P9570"
+  ],
+  "class_range": false
+ },
+ "P6335": {
+  "label": "MDWS place ID",
+  "quantity": false,
+  "qualifiers": [
+   "P580",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P1748": {
+  "label": "NCI Thesaurus ID"
+ },
+ "P9570": {
+  "label": "scope note"
+ },
+ "P1444": {
+  "label": "destination point",
+  "quantity": false,
+  "qualifiers": [
+   "P17",
+   "P580",
+   "P585",
+   "P625",
+   "P669"
+  ],
+  "class_range": true
+ },
+ "P1876": {
+  "label": "vessel",
+  "quantity": false,
+  "qualifiers": [
+   "P137",
+   "P1545",
+   "P2598",
+   "P3831",
+   "P426"
+  ],
+  "class_range": true
+ },
+ "P347": {
+  "label": "Joconde work ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1065",
+   "P1810",
+   "P1932",
+   "P217",
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P8472": {
+  "label": "Encyclopedie berbere keyword ID",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P4478": {
+  "label": "Survey of Scottish Witchcraft - Accused witch ID",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P212": {
+  "label": "P212",
+  "quantity": false,
+  "qualifiers": [
+   "P407",
+   "P437",
+   "P478",
+   "P518",
+   "P577"
+  ],
+  "class_range": false
+ },
+ "P5749": {
+  "label": "Amazon Standard Identification Number",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P361",
+   "P400",
+   "P407",
+   "P437"
+  ],
+  "class_range": false
+ },
+ "P957": {
+  "label": "ISBN-10",
+  "quantity": false,
+  "qualifiers": [
+   "P123",
+   "P407",
+   "P437",
+   "P478",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P1532": {
+  "label": "country for sport",
+  "quantity": false,
+  "qualifiers": [
+   "P2241",
+   "P3831",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P3878": {
+  "label": "Soundex",
+  "quantity": false,
+  "qualifiers": [
+   "P1013",
+   "P1705",
+   "P2241",
+   "P407",
+   "P5102"
+  ],
+  "class_range": false
+ },
+ "P2578": {
+  "label": "is the study of",
+  "quantity": false,
+  "qualifiers": [
+   "P1269",
+   "P12913",
+   "P13044",
+   "P2241",
+   "P361"
+  ],
+  "class_range": true
+ },
+ "P10287": {
+  "label": "DFG Science Classification"
+ },
+ "P7982": {
+  "label": "Hrvatska enciklopedija ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407"
+  ],
+  "class_range": false
+ },
+ "P8885": {
+  "label": "Namuwiki ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1942",
+   "P2001",
+   "P407",
+   "P856"
+  ],
+  "class_range": false
+ },
+ "P1777": {
+  "label": "manner of",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": true
+ },
+ "P8034": {
+  "label": "Vatican Library VcBA ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P4970",
+   "P7452"
+  ],
+  "class_range": false
+ },
+ "P8374": {
+  "label": "Criminological Thesaurus ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810"
+  ],
+  "class_range": false
+ },
+ "P1445": {
+  "label": "fictional universe described in",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P3831",
+   "P577",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P965": {
+  "label": "burial plot reference",
+  "quantity": false,
+  "qualifiers": [
+   "P2241",
+   "P407",
+   "P4330",
+   "P580",
+   "P7452"
+  ],
+  "class_range": false
+ },
+ "P1442": {
+  "label": "image of grave",
+  "quantity": false,
+  "qualifiers": [
+   "P119",
+   "P1684",
+   "P2096",
+   "P276",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P5831": {
+  "label": "usage example",
+  "quantity": false,
+  "qualifiers": [
+   "P2441",
+   "P5323",
+   "P5830",
+   "P6072",
+   "P6191"
+  ],
+  "class_range": false
+ },
+ "P5830": {
+  "label": "subject lexeme form",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P6072": {
+  "label": "subject sense",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P6191": {
+  "label": "language style"
+ },
+ "P7561": {
+  "label": "category for the interior of the item",
+  "quantity": false,
+  "qualifiers": [
+   "P2241",
+   "P625",
+   "P8327"
+  ],
+  "class_range": true
+ },
+ "P6394": {
+  "label": "ELNET ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P3831",
+   "P407",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P3487": {
+  "label": "maximal incubation period in humans",
+  "quantity": true,
+  "qualifiers": [
+   "P1480"
+  ],
+  "class_range": false
+ },
+ "P13426": {
+  "label": "GCMD keyword ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P4900",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P3488": {
+  "label": "minimal incubation period in humans",
+  "quantity": true,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P1692": {
+  "label": "ICD-9-CM",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P366",
+   "P4390",
+   "P478"
+  ],
+  "class_range": false
+ },
+ "P7304": {
+  "label": "Highland Historic Environment Record ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P518",
+   "P613"
+  ],
+  "class_range": false
+ },
+ "P4755": {
+  "label": "UK railway station code",
+  "quantity": false,
+  "qualifiers": [
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P5696": {
+  "label": "Indian Railways station code",
+  "quantity": false,
+  "qualifiers": [
+   "P518",
+   "P580",
+   "P582",
+   "P625",
+   "P7452"
+  ],
+  "class_range": false
+ },
+ "P197": {
+  "label": "adjacent station",
+  "quantity": false,
+  "qualifiers": [
+   "P1192",
+   "P5051",
+   "P560",
+   "P580",
+   "P81"
+  ],
+  "class_range": true
+ },
+ "P5051": {
+  "label": "towards"
+ },
+ "P10271": {
+  "label": "Engineer's Line Reference"
+ },
+ "P10987": {
+  "label": "RailScot location ID"
+ },
+ "P12928": {
+  "label": "TIPLOC code"
+ },
+ "P1192": {
+  "label": "connecting service"
+ },
+ "P560": {
+  "label": "direction"
+ },
+ "P8061": {
+  "label": "AGROVOC ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4390",
+   "P4900",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P9049": {
+  "label": "ICCD agent ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P7452"
+  ],
+  "class_range": false
+ },
+ "P7532": {
+  "label": "room number"
+ },
+ "P943": {
+  "label": "programmer",
+  "quantity": false,
+  "qualifiers": [
+   "P13187",
+   "P1810",
+   "P1932",
+   "P3831",
+   "P400"
+  ],
+  "class_range": false
+ },
+ "P9100": {
+  "label": "GitHub topic",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P2699",
+   "P3740",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P13187": {
+  "label": "role named in credits as"
+ },
+ "P263": {
+  "label": "official residence",
+  "quantity": false,
+  "qualifiers": [
+   "P2241",
+   "P580",
+   "P582",
+   "P669",
+   "P670"
+  ],
+  "class_range": true
+ },
+ "P1196": {
+  "label": "manner of death",
+  "quantity": false,
+  "qualifiers": [
+   "P157",
+   "P1932",
+   "P276",
+   "P607",
+   "P805"
+  ],
+  "class_range": true
+ },
+ "P1546": {
+  "label": "motto",
+  "quantity": false,
+  "qualifiers": [
+   "P1451",
+   "P3831",
+   "P407",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P1393": {
+  "label": "proxy"
+ },
+ "P8554": {
+  "label": "earliest end date"
+ },
+ "P8555": {
+  "label": "latest start date"
+ },
+ "P607": {
+  "label": "participated in conflict"
+ },
+ "P36": {
+  "label": "capital",
+  "quantity": false,
+  "qualifiers": [
+   "P281",
+   "P580",
+   "P582",
+   "P625",
+   "P6375"
+  ],
+  "class_range": true
+ },
+ "P8272": {
+  "label": "BaGLAMa GID",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P2013": {
+  "label": "Facebook username",
+  "quantity": false,
+  "qualifiers": [
+   "P11705",
+   "P1552",
+   "P1810",
+   "P407",
+   "P580"
+  ],
+  "class_range": false
+ },
+ "P13572": {
+  "label": "\u200eComputerLanguage.com definition",
+  "quantity": false,
+  "qualifiers": [
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P10037": {
+  "label": "Enciclopedia della Scienza e della Tecnica ID"
+ },
+ "P1115": {
+  "label": "ATVK ID"
+ },
+ "P1840": {
+  "label": "investigated by",
+  "quantity": false,
+  "qualifiers": [
+   "P1595",
+   "P518",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P7163": {
+  "label": "typically sells",
+  "quantity": false,
+  "qualifiers": [
+   "P1012",
+   "P136",
+   "P1716",
+   "P18",
+   "P495"
+  ],
+  "class_range": true
+ },
+ "P7388": {
+  "label": "Great Encyclopedia of Navarre ID",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P5305": {
+  "label": "SPARQL endpoint URL",
+  "quantity": false,
+  "qualifiers": [
+   "P2241",
+   "P407",
+   "P518",
+   "P580",
+   "P856"
+  ],
+  "class_range": false
+ },
+ "P11118": {
+  "label": "Larousse Online French Dictionary ID",
+  "quantity": false,
+  "qualifiers": [
+   "P5185",
+   "P5830",
+   "P6072",
+   "P9531"
+  ],
+  "class_range": false
+ },
+ "P7766": {
+  "label": "Bob ID",
+  "quantity": false,
+  "qualifiers": [
+   "P6072"
+  ],
+  "class_range": false
+ },
+ "P7732": {
+  "label": "Dictionnaire de l'Acad\u00e9mie fran\u00e7aise ID (9th edition)",
+  "quantity": false,
+  "qualifiers": [
+   "P6072",
+   "P9531"
+  ],
+  "class_range": false
+ },
+ "P7722": {
+  "label": "TLFi ID",
+  "quantity": false,
+  "qualifiers": [
+   "P5830",
+   "P6072"
+  ],
+  "class_range": false
+ },
+ "P7724": {
+  "label": "Littr\u00e9 ID",
+  "quantity": false,
+  "qualifiers": [
+   "P2241",
+   "P6072",
+   "P9531"
+  ],
+  "class_range": false
+ },
+ "P10338": {
+  "label": "Dico en ligne Le Robert ID",
+  "quantity": false,
+  "qualifiers": [
+   "P6072",
+   "P9531",
+   "P958"
+  ],
+  "class_range": false
+ },
+ "P9531": {
+  "label": "identifier shared with lexeme"
+ },
+ "P5185": {
+  "label": "grammatical gender"
+ },
+ "P1462": {
+  "label": "standards body",
+  "quantity": false,
+  "qualifiers": [
+   "P17",
+   "P217",
+   "P407",
+   "P518",
+   "P580"
+  ],
+  "class_range": true
+ },
+ "P790": {
+  "label": "approved by",
+  "quantity": false,
+  "qualifiers": [
+   "P1891",
+   "P459",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P5009": {
+  "label": "complies with",
+  "quantity": false,
+  "qualifiers": [
+   "P1001",
+   "P5168",
+   "P580",
+   "P585",
+   "P7315"
+  ],
+  "class_range": true
+ },
+ "P919": {
+  "label": "SOC Code (2010)",
+  "quantity": false,
+  "qualifiers": [
+   "P123",
+   "P1810",
+   "P248",
+   "P304",
+   "P4070"
+  ],
+  "class_range": false
+ },
+ "P5034": {
+  "label": "National Library of Korea ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4070",
+   "P4970",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P12431": {
+  "label": "X place ID"
+ },
+ "P9287": {
+  "label": "Cyprus Bibliography ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P12639": {
+  "label": "The Concise Oxford Dictionary of World Religions ID"
+ },
+ "P4614": {
+  "label": "drainage basin",
+  "quantity": false,
+  "qualifiers": [
+   "P361",
+   "P518",
+   "P580",
+   "P582",
+   "P7452"
+  ],
+  "class_range": true
+ },
+ "P194": {
+  "label": "legislative body",
+  "quantity": false,
+  "qualifiers": [
+   "P3831",
+   "P5102",
+   "P527",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P2303": {
+  "label": "exception to constraint"
+ },
+ "P686": {
+  "label": "Gene Ontology ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P3937": {
+  "label": "Reactome ID",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P688": {
+  "label": "encodes",
+  "quantity": false,
+  "qualifiers": [
+   "P1057",
+   "P2241",
+   "P352",
+   "P813"
+  ],
+  "class_range": true
+ },
+ "P972": {
+  "label": "catalog"
+ },
+ "P1057": {
+  "label": "chromosome"
+ },
+ "P5748": {
+  "label": "Basisklassifikation",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P4390"
+  ],
+  "class_range": false
+ },
+ "P1566": {
+  "label": "GeoNames ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P2868",
+   "P4970",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P5558": {
+  "label": "Le Monde ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810"
+  ],
+  "class_range": false
+ },
+ "P3479": {
+  "label": "Omni topic ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P10476": {
+  "label": "identifies",
+  "quantity": false,
+  "qualifiers": [
+   "P1114",
+   "P17",
+   "P1932",
+   "P276",
+   "P5949"
+  ],
+  "class_range": true
+ },
+ "P7235": {
+  "label": "in defining formula",
+  "quantity": false,
+  "qualifiers": [
+   "P13044",
+   "P1552",
+   "P31",
+   "P518",
+   "P9758"
+  ],
+  "class_range": false
+ },
+ "P1181": {
+  "label": "numeric value",
+  "quantity": true,
+  "qualifiers": [
+   "P1013",
+   "P123",
+   "P1932",
+   "P2241",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P9621": {
+  "label": "Treccani's Enciclopedia della Matematica ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1476",
+   "P1810",
+   "P2093",
+   "P2241",
+   "P577"
+  ],
+  "class_range": false
+ },
+ "P12208": {
+  "label": "counterexample"
+ },
+ "P5390": {
+  "label": "Classiques des sciences sociales ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P3831"
+  ],
+  "class_range": false
+ },
+ "P4629": {
+  "label": "Online Books Page author ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P3740",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P4768": {
+  "label": "cinematografo.it name or company ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P407",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P4332": {
+  "label": "Deutsche Synchronkartei actor ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P5033": {
+  "label": "Filmweb.pl person ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P407",
+   "P4970",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P4619": {
+  "label": "National Library of Brazil ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P2699",
+   "P4970",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P434": {
+  "label": "MusicBrainz artist ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P5168",
+   "P742"
+  ],
+  "class_range": false
+ },
+ "P4823": {
+  "label": "American National Biography ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P2699",
+   "P805",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P1899": {
+  "label": "LibriVox author ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P3740",
+   "P5592",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P5086": {
+  "label": "FIPS 5-2 alpha code (US states)",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P85": {
+  "label": "anthem",
+  "quantity": false,
+  "qualifiers": [
+   "P2441",
+   "P3831",
+   "P51",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P51": {
+  "label": "audio"
+ },
+ "P562": {
+  "label": "central bank/issuer",
+  "quantity": false,
+  "qualifiers": [
+   "P1001",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P2284": {
+  "label": "price",
+  "quantity": true,
+  "qualifiers": [
+   "P1001",
+   "P3005",
+   "P400",
+   "P518",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P10757": {
+  "label": "Personality Database profile ID"
+ },
+ "P7607": {
+  "label": "WikiTree category or space",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P3831",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P4352": {
+  "label": "BillionGraves cemetery ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1476",
+   "P1810",
+   "P2241",
+   "P407",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P7678": {
+  "label": "Wikimapia ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1476",
+   "P1810",
+   "P2241",
+   "P4970",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P2098": {
+  "label": "substitute/deputy/replacement of office/officeholder",
+  "quantity": false,
+  "qualifiers": [
+   "P1308",
+   "P1365",
+   "P1366",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P4353": {
+  "label": "nominated by",
+  "quantity": false,
+  "qualifiers": [
+   "P580",
+   "P582",
+   "P585",
+   "P790",
+   "P837"
+  ],
+  "class_range": true
+ },
+ "P837": {
+  "label": "day in year for periodic occurrence"
+ },
+ "P913": {
+  "label": "notation",
+  "quantity": false,
+  "qualifiers": [
+   "P1552",
+   "P156",
+   "P282",
+   "P5102",
+   "P518"
+  ],
+  "class_range": true
+ },
+ "P5137": {
+  "label": "item for this sense",
+  "quantity": false,
+  "qualifiers": [
+   "P1038",
+   "P1552",
+   "P21",
+   "P518",
+   "P5830"
+  ],
+  "class_range": true
+ },
+ "P2812": {
+  "label": "MathWorld ID"
+ },
+ "P210": {
+  "label": "party chief representative",
+  "quantity": false,
+  "qualifiers": [
+   "P1365",
+   "P3831",
+   "P39",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P3461": {
+  "label": "designated as terrorist by",
+  "quantity": false,
+  "qualifiers": [
+   "P1012",
+   "P1065",
+   "P518",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P1415": {
+  "label": "Oxford Dictionary of National Biography ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2093",
+   "P2241",
+   "P2699",
+   "P50"
+  ],
+  "class_range": false
+ },
+ "P1816": {
+  "label": "National Portrait Gallery (London) person ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1480",
+   "P1810",
+   "P1932",
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P2635": {
+  "label": "number of parts of this work"
+ },
+ "P930": {
+  "label": "type of electrification",
+  "quantity": false,
+  "qualifiers": [
+   "P2283",
+   "P518",
+   "P559",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P454": {
+  "label": "Structurae structure ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P518",
+   "P577"
+  ],
+  "class_range": false
+ },
+ "P3872": {
+  "label": "patronage",
+  "quantity": true,
+  "qualifiers": [
+   "P121",
+   "P2348",
+   "P518",
+   "P585",
+   "P81"
+  ],
+  "class_range": false
+ },
+ "P1373": {
+  "label": "daily patronage"
+ },
+ "P1557": {
+  "label": "manifestation of",
+  "quantity": false,
+  "qualifiers": [
+   "P1013",
+   "P2210",
+   "P5980",
+   "P7421",
+   "P792"
+  ],
+  "class_range": true
+ },
+ "P4015": {
+  "label": "Vimeo ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P3740",
+   "P3744",
+   "P407",
+   "P580"
+  ],
+  "class_range": false
+ },
+ "P3280": {
+  "label": "BAnQ authority ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1065",
+   "P1810",
+   "P2241",
+   "P2960",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P3035": {
+  "label": "ISBN publisher prefix",
+  "quantity": false,
+  "qualifiers": [
+   "P17",
+   "P1810",
+   "P1932",
+   "P2241",
+   "P407"
+  ],
+  "class_range": false
+ },
+ "P3065": {
+  "label": "RERO ID (legacy)",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P2241",
+   "P4070",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P4235": {
+  "label": "PatientsLikeMe treatment ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P5017",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P740": {
+  "label": "location of formation",
+  "quantity": false,
+  "qualifiers": [
+   "P131",
+   "P17",
+   "P585",
+   "P625",
+   "P6375"
+  ],
+  "class_range": true
+ },
+ "P4013": {
+  "label": "Giphy username",
+  "quantity": false,
+  "qualifiers": [
+   "P1552",
+   "P1810",
+   "P3740",
+   "P5436",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P3921": {
+  "label": "Wikidata SPARQL query equivalent",
+  "quantity": false,
+  "qualifiers": [
+   "P1013",
+   "P2210",
+   "P2241",
+   "P518",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P7548": {
+  "label": "UK Lakes Portal ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P4070",
+   "P4970",
+   "P518",
+   "P613"
+  ],
+  "class_range": false
+ },
+ "P424": {
+  "label": "Wikimedia language code",
+  "quantity": false,
+  "qualifiers": [
+   "P1535",
+   "P2241",
+   "P3831",
+   "P580",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P12966": {
+  "label": "Mapcarta ID"
+ },
+ "P3218": {
+  "label": "Au\u00f1amendi ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P2241",
+   "P4070",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P9002": {
+  "label": "liturgical rank"
+ },
+ "P2975": {
+  "label": "has host",
+  "quantity": false,
+  "qualifiers": [
+   "P1552",
+   "P1932",
+   "P2868",
+   "P3005",
+   "P3831"
+  ],
+  "class_range": true
+ },
+ "P1605": {
+  "label": "has natural reservoir"
+ },
+ "P5072": {
+  "label": "presented in",
+  "quantity": false,
+  "qualifiers": [
+   "P1012",
+   "P1545",
+   "P393",
+   "P577",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P11798": {
+  "label": "Diritto on line ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P1810",
+   "P2093",
+   "P50",
+   "P577"
+  ],
+  "class_range": false
+ },
+ "P5054": {
+  "label": "member of cabinet",
+  "quantity": false,
+  "qualifiers": [
+   "P580",
+   "P582",
+   "P797"
+  ],
+  "class_range": true
+ },
+ "P5490": {
+  "label": "artist-info location ID",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P7295": {
+  "label": "Gregorian calendar start date",
+  "quantity": false,
+  "qualifiers": [
+   "P1365",
+   "P518",
+   "P805",
+   "P828"
+  ],
+  "class_range": false
+ },
+ "P2834": {
+  "label": "individual tax rate",
+  "quantity": true,
+  "qualifiers": [
+   "P2835",
+   "P2836",
+   "P580",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P1198": {
+  "label": "unemployment rate"
+ },
+ "P8785": {
+  "label": "AniDB tag ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1552",
+   "P1810",
+   "P2899",
+   "P4070",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P10920": {
+  "label": "AEDA subject keyword ID"
+ },
+ "P12107": {
+  "label": "ELSST Thesaurus ID (Version 4 - 2023)"
+ },
+ "P826": {
+  "label": "tonality",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P2241",
+   "P5102",
+   "P518",
+   "P7452"
+  ],
+  "class_range": true
+ },
+ "P7700": {
+  "label": "Slovak National Library (VIAF) ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P3831",
+   "P4970",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P380": {
+  "label": "M\u00e9rim\u00e9e ID",
+  "quantity": false,
+  "qualifiers": [
+   "P131",
+   "P1810",
+   "P2241",
+   "P518",
+   "P580"
+  ],
+  "class_range": false
+ },
+ "P6621": {
+  "label": "Le Figaro tag ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1706",
+   "P1810",
+   "P4070"
+  ],
+  "class_range": false
+ },
+ "P6713": {
+  "label": "Australian War Memorial ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P3831"
+  ],
+  "class_range": false
+ },
+ "P795": {
+  "label": "located on linear feature",
+  "quantity": false,
+  "qualifiers": [
+   "P10271",
+   "P1545",
+   "P2148",
+   "P2210",
+   "P6710"
+  ],
+  "class_range": true
+ },
+ "P4173": {
+  "label": "Instagram location ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P2241",
+   "P2561",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P4224": {
+  "label": "category contains",
+  "quantity": false,
+  "qualifiers": [
+   "P106",
+   "P131",
+   "P175",
+   "P19",
+   "P21"
+  ],
+  "class_range": true
+ },
+ "P1423": {
+  "label": "template has topic",
+  "quantity": false,
+  "qualifiers": [
+   "P131",
+   "P17",
+   "P2241",
+   "P276",
+   "P518"
+  ],
+  "class_range": true
+ },
+ "P301": {
+  "label": "category's main topic",
+  "quantity": false,
+  "qualifiers": [
+   "P1659",
+   "P17",
+   "P21",
+   "P2241",
+   "P8327"
+  ],
+  "class_range": true
+ },
+ "P971": {
+  "label": "category combines topics",
+  "quantity": false,
+  "qualifiers": [
+   "P1013",
+   "P1552",
+   "P1659",
+   "P2241",
+   "P3831"
+  ],
+  "class_range": true
+ },
+ "P6564": {
+  "label": "Brilliant Wiki ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810"
+  ],
+  "class_range": false
+ },
+ "P3264": {
+  "label": "radix"
+ },
+ "P5236": {
+  "label": "prime factor"
+ },
+ "P2586": {
+  "label": "INSEE department code",
+  "quantity": false,
+  "qualifiers": [
+   "P580",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P3602": {
+  "label": "candidacy in election",
+  "quantity": false,
+  "qualifiers": [
+   "P102",
+   "P10777",
+   "P1111",
+   "P1268",
+   "P768"
+  ],
+  "class_range": true
+ },
+ "P11249": {
+  "label": "KBR person ID"
+ },
+ "P6512": {
+  "label": "UN/CEFACT Common Code",
+  "quantity": false,
+  "qualifiers": [
+   "P1810"
+  ],
+  "class_range": false
+ },
+ "P4934": {
+  "label": "calculated from",
+  "quantity": false,
+  "qualifiers": [
+   "P1013",
+   "P13044",
+   "P2283",
+   "P3831",
+   "P7235"
+  ],
+  "class_range": true
+ },
+ "P7007": {
+  "label": "Wolfram Language unit code",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P5064": {
+  "label": "World of Physics ID",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P741": {
+  "label": "playing hand",
+  "quantity": false,
+  "qualifiers": [
+   "P3680",
+   "P641"
+  ],
+  "class_range": true
+ },
+ "P286": {
+  "label": "head coach",
+  "quantity": false,
+  "qualifiers": [
+   "P1365",
+   "P3831",
+   "P580",
+   "P582",
+   "P6087"
+  ],
+  "class_range": true
+ },
+ "P1358": {
+  "label": "points for"
+ },
+ "P2853": {
+  "label": "electrical plug type",
+  "quantity": false,
+  "qualifiers": [
+   "P1114",
+   "P2561"
+  ],
+  "class_range": true
+ },
+ "P2131": {
+  "label": "nominal GDP",
+  "quantity": true,
+  "qualifiers": [
+   "P1480",
+   "P2241",
+   "P459",
+   "P585",
+   "P7452"
+  ],
+  "class_range": false
+ },
+ "P2121": {
+  "label": "prize money",
+  "quantity": true,
+  "qualifiers": [
+   "P518",
+   "P580",
+   "P582",
+   "P585",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P3320": {
+  "label": "board member",
+  "quantity": false,
+  "qualifiers": [
+   "P2868",
+   "P3831",
+   "P39",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P297": {
+  "label": "ISO 3166-1 alpha-2 code",
+  "quantity": false,
+  "qualifiers": [
+   "P1535",
+   "P3831",
+   "P580",
+   "P582",
+   "P805"
+  ],
+  "class_range": false
+ },
+ "P2585": {
+  "label": "INSEE region code"
+ },
+ "P4466": {
+  "label": "Unified Astronomy Thesaurus ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4390",
+   "P4970",
+   "P9570"
+  ],
+  "class_range": false
+ },
+ "P9222": {
+  "label": "bashenc.online ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1065",
+   "P1810",
+   "P2093",
+   "P2241",
+   "P407"
+  ],
+  "class_range": false
+ },
+ "P642": {
+  "label": "of (DEPRECATED)",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P13411": {
+  "label": "TDKIV Wikibase ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P4338": {
+  "label": "LOINC ID",
+  "quantity": false,
+  "qualifiers": [
+   "P366",
+   "P459",
+   "P518",
+   "P921",
+   "P927"
+  ],
+  "class_range": false
+ },
+ "P2358": {
+  "label": "praenomen",
+  "quantity": false,
+  "qualifiers": [
+   "P1480",
+   "P1545",
+   "P2241",
+   "P5102",
+   "P828"
+  ],
+  "class_range": false
+ },
+ "P8734": {
+  "label": "O*NET OnLine code",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P4070"
+  ],
+  "class_range": false
+ },
+ "P6271": {
+  "label": "demonym of",
+  "quantity": false,
+  "qualifiers": [
+   "P805"
+  ],
+  "class_range": true
+ },
+ "P8406": {
+  "label": "Grove Art Online ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P4390",
+   "P50",
+   "P518",
+   "P9570"
+  ],
+  "class_range": false
+ },
+ "P3846": {
+  "label": "DBC author ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P5773": {
+  "label": "Television Academy Foundation interviewee ID",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P58": {
+  "label": "screenwriter",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P1810",
+   "P1932",
+   "P2241",
+   "P3831"
+  ],
+  "class_range": true
+ },
+ "P4100": {
+  "label": "parliamentary group",
+  "quantity": false,
+  "qualifiers": [
+   "P1001",
+   "P194",
+   "P2937",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P2295": {
+  "label": "net profit",
+  "quantity": true,
+  "qualifiers": [
+   "P1013",
+   "P459",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P249": {
+  "label": "ticker symbol",
+  "quantity": false,
+  "qualifiers": [
+   "P414",
+   "P580"
+  ],
+  "class_range": false
+ },
+ "P2137": {
+  "label": "total equity",
+  "quantity": true,
+  "qualifiers": [
+   "P1013",
+   "P1480",
+   "P4241",
+   "P459",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P414": {
+  "label": "stock exchange",
+  "quantity": false,
+  "qualifiers": [
+   "P2241",
+   "P249",
+   "P580",
+   "P582",
+   "P946"
+  ],
+  "class_range": true
+ },
+ "P2226": {
+  "label": "market capitalization",
+  "quantity": true,
+  "qualifiers": [
+   "P1480",
+   "P38",
+   "P414",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P946": {
+  "label": "ISIN"
+ },
+ "P38": {
+  "label": "currency"
+ },
+ "P1339": {
+  "label": "number of injured",
+  "quantity": true,
+  "qualifiers": [
+   "P1480",
+   "P3680",
+   "P5102",
+   "P518",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P655": {
+  "label": "translator",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P1810",
+   "P1932",
+   "P3831",
+   "P407"
+  ],
+  "class_range": true
+ },
+ "P1773": {
+  "label": "P1773",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P98": {
+  "label": "editor",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P1932",
+   "P3831",
+   "P580",
+   "P582"
+  ],
+  "class_range": true
+ },
+ "P3762": {
+  "label": "openMLOL author ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1480",
+   "P1810",
+   "P2241",
+   "P3740",
+   "P407"
+  ],
+  "class_range": false
+ },
+ "P1191": {
+  "label": "date of first performance",
+  "quantity": false,
+  "qualifiers": [
+   "P161",
+   "P175",
+   "P276",
+   "P3300",
+   "P449"
+  ],
+  "class_range": false
+ },
+ "P9982": {
+  "label": "IGI Global Dictionary ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810"
+  ],
+  "class_range": false
+ },
+ "P6477": {
+  "label": "does not have characteristic",
+  "quantity": false,
+  "qualifiers": [
+   "P2210",
+   "P5102",
+   "P518",
+   "P580",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P9272": {
+  "label": "DeCS ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P9570"
+  ],
+  "class_range": false
+ },
+ "P9374": {
+  "label": "ODLIS ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P9570"
+  ],
+  "class_range": false
+ },
+ "P6015": {
+  "label": "Handbook of Texas ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P2241",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P5875": {
+  "label": "ResearchGate publication ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1476",
+   "P1810",
+   "P2241",
+   "P407",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P8978": {
+  "label": "DBLP publication ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1552",
+   "P3831"
+  ],
+  "class_range": false
+ },
+ "P433": {
+  "label": "issue",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P304",
+   "P3831",
+   "P478",
+   "P577"
+  ],
+  "class_range": false
+ },
+ "P4510": {
+  "label": "describes a project that uses",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P2241",
+   "P348",
+   "P3831"
+  ],
+  "class_range": true
+ },
+ "P1317": {
+  "label": "floruit",
+  "quantity": false,
+  "qualifiers": [
+   "P1326",
+   "P1480",
+   "P4241",
+   "P580",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P8395": {
+  "label": "use with property value"
+ },
+ "P6081": {
+  "label": "RIA Novosti reference",
+  "quantity": false,
+  "qualifiers": [
+   "P1476",
+   "P1810",
+   "P1932",
+   "P2241",
+   "P407"
+  ],
+  "class_range": false
+ },
+ "P3823": {
+  "label": "Ethnologue language status",
+  "quantity": false,
+  "qualifiers": [
+   "P3005",
+   "P393",
+   "P580",
+   "P8327"
+  ],
+  "class_range": true
+ },
+ "P305": {
+  "label": "IETF language tag",
+  "quantity": false,
+  "qualifiers": [
+   "P2241",
+   "P2378",
+   "P580",
+   "P582",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P220": {
+  "label": "ISO 639-3 code",
+  "quantity": false,
+  "qualifiers": [
+   "P2241",
+   "P2378",
+   "P580",
+   "P582",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P5996": {
+  "label": "category for films in this language",
+  "quantity": false,
+  "qualifiers": [
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P1752": {
+  "label": "scale"
+ },
+ "P3311": {
+  "label": "image of design plans",
+  "quantity": false,
+  "qualifiers": [
+   "P2096",
+   "P518",
+   "P5423",
+   "P580",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P5423": {
+  "label": "floor number"
+ },
+ "P6498": {
+  "label": "illiterate population",
+  "quantity": true,
+  "qualifiers": [
+   "P1539",
+   "P1540",
+   "P459",
+   "P518",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P5578": {
+  "label": "Indian census area code (2011)",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P459",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P7699": {
+  "label": "National Library of Lithuania ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4070",
+   "P4970",
+   "P518"
+  ],
+  "class_range": false
+ },
+ "P5739": {
+  "label": "Pontificia Universit\u00e0 della Santa Croce ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P3740",
+   "P4970",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P9984": {
+  "label": "CANTIC ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P3831",
+   "P4970",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P6284": {
+  "label": "NCpedia ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P5421": {
+  "label": "Trading Card Database name ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P4070",
+   "P4970"
+  ],
+  "class_range": false
+ },
+ "P9756": {
+  "label": "Schoenberg Database of Manuscripts name ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P7763": {
+  "label": "copyright status as a creator",
+  "quantity": false,
+  "qualifiers": [
+   "P1001",
+   "P459",
+   "P580",
+   "P585",
+   "P9905"
+  ],
+  "class_range": true
+ },
+ "P3793": {
+  "label": "IPv6 routing prefix",
+  "quantity": false,
+  "qualifiers": [
+   "P127",
+   "P2241",
+   "P2378",
+   "P366",
+   "P580"
+  ],
+  "class_range": false
+ },
+ "P9626": {
+  "label": "Biographical Encyclopedia of Astronomers ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2093",
+   "P2241",
+   "P304",
+   "P50"
+  ],
+  "class_range": false
+ },
+ "P1774": {
+  "label": "workshop of",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P2386": {
+  "label": "diameter",
+  "quantity": true,
+  "qualifiers": [
+   "P1013",
+   "P1480",
+   "P518",
+   "P585",
+   "P7469"
+  ],
+  "class_range": false
+ },
+ "P1581": {
+  "label": "official blog URL"
+ },
+ "P6084": {
+  "label": "location of sense usage",
+  "quantity": false,
+  "qualifiers": [
+   "P2241",
+   "P5102",
+   "P5830"
+  ],
+  "class_range": true
+ },
+ "P6864": {
+  "label": "eBiodiversity ID",
+  "quantity": false,
+  "qualifiers": [
+   "P2241",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P685": {
+  "label": "NCBI taxonomy ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P2241",
+   "P4970",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P9157": {
+  "label": "Open Tree of Life ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1366",
+   "P1810",
+   "P2241",
+   "P813",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P627": {
+  "label": "IUCN taxon ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P2241",
+   "P4970",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P3151": {
+  "label": "iNaturalist taxon ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1366",
+   "P1810",
+   "P2241",
+   "P3831",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P6507": {
+  "label": "taxon author citation",
+  "quantity": false,
+  "qualifiers": [
+   "P2241",
+   "P3831",
+   "P577",
+   "P7452",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P961": {
+  "label": "IPNI plant ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P6507",
+   "P7715",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P6159": {
+  "label": "Atlas of Florida Plants ID",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P5037": {
+  "label": "Plants of the World Online ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P6507",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P6756": {
+  "label": "Flora of Australia ID (new)",
+  "quantity": false,
+  "qualifiers": [
+   "P405",
+   "P577"
+  ],
+  "class_range": false
+ },
+ "P9714": {
+  "label": "taxon range",
+  "quantity": false,
+  "qualifiers": [
+   "P131",
+   "P276",
+   "P356",
+   "P577",
+   "P813"
+  ],
+  "class_range": true
+ },
+ "P6105": {
+  "label": "Observation.org taxon ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P6507"
+  ],
+  "class_range": false
+ },
+ "P830": {
+  "label": "Encyclopedia of Life ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P2241",
+   "P3831",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P846": {
+  "label": "GBIF taxon ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P3831",
+   "P6507",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P960": {
+  "label": "Tropicos ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P7452",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P7715": {
+  "label": "World Flora Online ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P2241",
+   "P6507",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P9503": {
+  "label": "MyBIS species ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P6507"
+  ],
+  "class_range": false
+ },
+ "P5055": {
+  "label": "IRMNG ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P1932",
+   "P2241",
+   "P6507",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P1325": {
+  "label": "external data available at URL"
+ },
+ "P673": {
+  "label": "eMedicine ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P2561"
+  ],
+  "class_range": false
+ },
+ "P1995": {
+  "label": "health specialty",
+  "quantity": false,
+  "qualifiers": [
+   "P1995",
+   "P512",
+   "P780",
+   "P828",
+   "P923"
+  ],
+  "class_range": true
+ },
+ "P2293": {
+  "label": "genetic association",
+  "quantity": false,
+  "qualifiers": [
+   "P1542",
+   "P459"
+  ],
+  "class_range": true
+ },
+ "P3433": {
+  "label": "biological variant of",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": true
+ },
+ "P5082": {
+  "label": "Store medisinske leksikon ID"
+ },
+ "P7993": {
+  "label": "Treccani's Dizionario di Filosofia ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4070",
+   "P4970",
+   "P577"
+  ],
+  "class_range": false
+ },
+ "P1003": {
+  "label": "National Library of Romania ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810"
+  ],
+  "class_range": false
+ },
+ "P7031": {
+  "label": "Penguin India author ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1065",
+   "P1810"
+  ],
+  "class_range": false
+ },
+ "P2855": {
+  "label": "VAT rate",
+  "quantity": true,
+  "qualifiers": [
+   "P1552",
+   "P518",
+   "P580",
+   "P582",
+   "P805"
+  ],
+  "class_range": false
+ },
+ "P794": {
+  "label": "P794",
+  "quantity": false,
+  "qualifiers": [],
+  "class_range": false
+ },
+ "P1671": {
+  "label": "route number",
+  "quantity": false,
+  "qualifiers": [
+   "P1013",
+   "P2378",
+   "P518",
+   "P580",
+   "P972"
+  ],
+  "class_range": false
+ },
+ "P3999": {
+  "label": "date of official closure",
+  "quantity": false,
+  "qualifiers": [
+   "P1480",
+   "P1534",
+   "P2241",
+   "P518",
+   "P828"
+  ],
+  "class_range": false
+ },
+ "P16": {
+  "label": "transport network",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P276",
+   "P580",
+   "P582",
+   "P81"
+  ],
+  "class_range": true
+ },
+ "P4878": {
+  "label": "symbolizes"
+ },
+ "P963": {
+  "label": "streaming media URL",
+  "quantity": false,
+  "qualifiers": [
+   "P1163",
+   "P137",
+   "P2241",
+   "P31",
+   "P407"
+  ],
+  "class_range": false
+ },
+ "P1651": {
+  "label": "YouTube video ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2047",
+   "P5436",
+   "P577",
+   "P585"
+  ],
+  "class_range": false
+ },
+ "P11484": {
+  "label": "does not use"
+ },
+ "P1163": {
+  "label": "media type"
+ },
+ "P2244": {
+  "label": "periapsis",
+  "quantity": true,
+  "qualifiers": [
+   "P2210",
+   "P580",
+   "P582",
+   "P585",
+   "P6259"
+  ],
+  "class_range": false
+ },
+ "P397": {
+  "label": "parent astronomical body",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P155",
+   "P156",
+   "P2241",
+   "P580"
+  ],
+  "class_range": true
+ },
+ "P6259": {
+  "label": "epoch"
+ },
+ "P726": {
+  "label": "candidate",
+  "quantity": false,
+  "qualifiers": [
+   "P102",
+   "P1111",
+   "P1114",
+   "P1352",
+   "P1539"
+  ],
+  "class_range": true
+ },
+ "P541": {
+  "label": "office contested",
+  "quantity": false,
+  "qualifiers": [
+   "P1083",
+   "P1114",
+   "P1342",
+   "P2937",
+   "P768"
+  ],
+  "class_range": true
+ },
+ "P991": {
+  "label": "successful candidate",
+  "quantity": false,
+  "qualifiers": [
+   "P102",
+   "P1111",
+   "P1352",
+   "P1410",
+   "P1539"
+  ],
+  "class_range": true
+ },
+ "P1342": {
+  "label": "number of seats",
+  "quantity": true,
+  "qualifiers": [
+   "P1013",
+   "P3831",
+   "P518",
+   "P580",
+   "P582"
+  ],
+  "class_range": false
+ },
+ "P2575": {
+  "label": "measures",
+  "quantity": false,
+  "qualifiers": [
+   "P13044",
+   "P2048",
+   "P2049",
+   "P2241",
+   "P518"
+  ],
+  "class_range": true
+ },
+ "P7469": {
+  "label": "orientation"
+ },
+ "P1559": {
+  "label": "name in native language",
+  "quantity": false,
+  "qualifiers": [
+   "P1721",
+   "P1814",
+   "P2125",
+   "P4187",
+   "P443"
+  ],
+  "class_range": false
+ },
+ "P2600": {
+  "label": "Geni.com profile ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P407",
+   "P580",
+   "P813"
+  ],
+  "class_range": false
+ },
+ "P4638": {
+  "label": "The Peerage person ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P4070",
+   "P813",
+   "P8327"
+  ],
+  "class_range": false
+ },
+ "P8069": {
+  "label": "ToposText person ID",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241"
+  ],
+  "class_range": false
+ },
+ "P13188": {
+  "label": "meeting of",
+  "quantity": false,
+  "qualifiers": [
+   "P1545",
+   "P155"
+  ],
+  "class_range": true
+ },
+ "P11120": {
+  "label": "Rai Teche person ID"
+ },
+ "P6872": {
+  "label": "has written for",
+  "quantity": false,
+  "qualifiers": [
+   "P10723",
+   "P2699",
+   "P580",
+   "P582",
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P2643": {
+  "label": "Carnegie Classification of Institutions of Higher Education",
+  "quantity": false,
+  "qualifiers": [
+   "P585"
+  ],
+  "class_range": true
+ },
+ "P1870": {
+  "label": "ARK Name Assigning Authority Number",
+  "quantity": false,
+  "qualifiers": [
+   "P1810",
+   "P2241",
+   "P580"
+  ],
+  "class_range": false
+ },
+ "P6589": {
+  "label": "endowment",
+  "quantity": true,
+  "qualifiers": [
+   "P2257",
+   "P38",
+   "P580",
+   "P585",
+   "P7452"
+  ],
+  "class_range": false
+ },
+ "P1015": {
+  "label": "P1015"
+ },
+ "P10263": {
+  "label": "admission yield rate"
+ },
+ "P1207": {
+  "label": "NUKAT ID"
+ },
+ "P298": {
+  "label": "ISO 3166-1 alpha-3 code",
+  "quantity": false,
+  "qualifiers": [
+   "P1535",
+   "P3831",
+   "P580",
+   "P582",
+   "P8327"
+  ],
+  "class_range": false
+ }
+}

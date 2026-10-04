@@ -1,0 +1,8 @@
+table,label,source_data,rows
+linker_comparison.tex,tab:linkers,linker_comparison.csv,15
+consensus_selection.tex,tab:cascade,results_tables/consensus_selection.csv,27
+memorisation_frontier.tex,tab:memorisation,results_tables/memorisation_frontier.csv,7
+significance.tex,tab:significance,results_tables/significance_jaccard_entity.csv,6
+error_taxonomy.tex,tab:errors,results_tables/error_taxonomy_clean.csv,8
+wdql_prevalence.tex,tab:wdql,results_tables/wdql_construct_prevalence.csv,22
+main_results.tex,tab:main,results_tables/common_subset_metrics.csv,10

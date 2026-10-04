@@ -1,0 +1,61 @@
+subset,construct,benchmark_pct,wdql_pct,n_benchmark,n_wdql
+ALL queries,subclass closure (P279*),23.6,12.8,2838,226376
+ALL queries,statement node (p:),23.1,6.7,2838,226376
+ALL queries,qualifier (pq:),15.1,3.8,2838,226376
+ALL queries,value node (psv:/psn:),6.1,0.8,2838,226376
+ALL queries,aggregation (GROUP BY),31.9,11.5,2838,226376
+ALL queries,alternation (VALUES/UNION),17.3,12.8,2838,226376
+ALL queries,property path (/ | * +),38.8,16.8,2838,226376
+ALL queries,OPTIONAL,39.9,29.8,2838,226376
+ALL queries,FILTER,36.2,59.6,2838,226376
+ALL queries,LIMIT,10.8,26.0,2838,226376
+ALL queries,label service,82.5,0.0,2838,226376
+ALL queries,ANY reification/hierarchy idiom,41.2,18.8,2838,226376
+queries with 1 predicate token(s),subclass closure (P279*),0.0,2.9,145,43101
+queries with 1 predicate token(s),statement node (p:),1.4,0.3,145,43101
+queries with 1 predicate token(s),qualifier (pq:),1.4,0.1,145,43101
+queries with 1 predicate token(s),value node (psv:/psn:),0.0,0.0,145,43101
+queries with 1 predicate token(s),aggregation (GROUP BY),26.9,7.0,145,43101
+queries with 1 predicate token(s),alternation (VALUES/UNION),9.0,13.2,145,43101
+queries with 1 predicate token(s),property path (/ | * +),5.5,3.8,145,43101
+queries with 1 predicate token(s),OPTIONAL,5.5,0.9,145,43101
+queries with 1 predicate token(s),FILTER,16.6,15.1,145,43101
+queries with 1 predicate token(s),LIMIT,12.4,12.1,145,43101
+queries with 1 predicate token(s),label service,71.7,0.0,145,43101
+queries with 1 predicate token(s),ANY reification/hierarchy idiom,2.8,3.3,145,43101
+queries with 2 predicate token(s),subclass closure (P279*),4.7,11.0,322,55045
+queries with 2 predicate token(s),statement node (p:),4.0,2.3,322,55045
+queries with 2 predicate token(s),qualifier (pq:),0.9,0.2,322,55045
+queries with 2 predicate token(s),value node (psv:/psn:),0.0,0.0,322,55045
+queries with 2 predicate token(s),aggregation (GROUP BY),32.9,8.3,322,55045
+queries with 2 predicate token(s),alternation (VALUES/UNION),6.5,5.7,322,55045
+queries with 2 predicate token(s),property path (/ | * +),7.5,12.8,322,55045
+queries with 2 predicate token(s),OPTIONAL,15.8,22.8,322,55045
+queries with 2 predicate token(s),FILTER,21.1,47.9,322,55045
+queries with 2 predicate token(s),LIMIT,10.6,25.3,322,55045
+queries with 2 predicate token(s),label service,80.4,0.0,322,55045
+queries with 2 predicate token(s),ANY reification/hierarchy idiom,9.3,13.4,322,55045
+queries with 3-4 predicate token(s),subclass closure (P279*),20.4,11.1,846,76502
+queries with 3-4 predicate token(s),statement node (p:),8.3,5.2,846,76502
+queries with 3-4 predicate token(s),qualifier (pq:),5.4,2.2,846,76502
+queries with 3-4 predicate token(s),value node (psv:/psn:),0.2,0.1,846,76502
+queries with 3-4 predicate token(s),aggregation (GROUP BY),29.3,13.4,846,76502
+queries with 3-4 predicate token(s),alternation (VALUES/UNION),9.3,11.7,846,76502
+queries with 3-4 predicate token(s),property path (/ | * +),29.7,14.9,846,76502
+queries with 3-4 predicate token(s),OPTIONAL,30.0,34.8,846,76502
+queries with 3-4 predicate token(s),FILTER,26.1,76.9,846,76502
+queries with 3-4 predicate token(s),LIMIT,11.6,29.0,846,76502
+queries with 3-4 predicate token(s),label service,82.3,0.0,846,76502
+queries with 3-4 predicate token(s),ANY reification/hierarchy idiom,28.3,16.3,846,76502
+queries with 5+ predicate token(s),subclass closure (P279*),31.6,25.6,1525,51728
+queries with 5+ predicate token(s),statement node (p:),37.4,18.9,1525,51728
+queries with 5+ predicate token(s),qualifier (pq:),24.7,13.1,1525,51728
+queries with 5+ predicate token(s),value node (psv:/psn:),11.3,3.3,1525,51728
+queries with 5+ predicate token(s),aggregation (GROUP BY),33.6,15.7,1525,51728
+queries with 5+ predicate token(s),alternation (VALUES/UNION),24.8,21.8,1525,51728
+queries with 5+ predicate token(s),property path (/ | * +),53.6,34.9,1525,51728
+queries with 5+ predicate token(s),OPTIONAL,53.6,53.9,1525,51728
+queries with 5+ predicate token(s),FILTER,46.9,83.6,1525,51728
+queries with 5+ predicate token(s),LIMIT,10.3,33.7,1525,51728
+queries with 5+ predicate token(s),label service,84.0,0.0,1525,51728
+queries with 5+ predicate token(s),ANY reification/hierarchy idiom,58.8,41.2,1525,51728

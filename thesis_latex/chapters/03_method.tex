@@ -11,22 +11,26 @@ Evaluation}
 Text-to-SPARQL systems are usually evaluated end to end, with one score per system that shows how useful it is but says little about why it fails: one system may identify every entity correctly but build the wrong structure, another may get the structure right but use a wrong identifier, and both end up with the same score for different reasons.
 The underlying process can nonetheless be split into component decisions (entity detection, entity linking, relation selection and query construction)~\citep{mohammed2018strong}, and this is what makes stage-wise measurement possible.
 
-This thesis uses stage-wise diagnostic evaluation, a four-step protocol (\cref{fig:method}).
+Stage-wise diagnostic evaluation is a four-step protocol (\cref{fig:method}).
 
 \textbf{First, intermediate ground truth is derived from artefacts the benchmark already provides.}
-Instruct-to-SPARQL contains each query twice, once with identifiers and once with those identifiers replaced by labels; since the two versions are aligned position by position, they yield mention-level linking ground truth without additional annotation, and the same approach works for any benchmark that provides aligned gold and label-form queries.
+Instruct-to-SPARQL contains each query twice, once with identifiers and once with those identifiers replaced by labels; since the two versions are aligned position by position, they yield mention-level linking ground truth without additional annotation.
+The same approach works for any benchmark that provides aligned gold and label-form queries.
 
 \textbf{Second, the stage of interest is isolated by keeping all other stages fixed.}
-Each condition changes only one component and reuses the same generated queries, candidate pools, execution environment and scoring; where possible, the varied stage also receives its gold value, which creates an upper-bound condition (not itself a performance claim) whose difference from the full pipeline estimates the error attributable to that stage.
+Each condition changes only one component and reuses the same generated queries, candidate pools, execution environment and scoring.
+Where possible, the varied stage also receives its gold value.
+This creates an upper-bound condition (not itself a performance claim) whose difference from the full pipeline estimates the error attributable to that stage.
 
 \textbf{Third, the remaining error is attributed and checked against independent evidence.}
-Simple subtraction is not enough, because the unexplained remainder may have several causes, so the subtraction-based attribution is compared with a manually annotated failure sample, corpus-wide construct counts and agreement between independent systems; the attribution is reported with the confidence interval that the weakest evidence supports, and disagreements between sources are reported as well.
+Simple subtraction is not enough, because the unexplained remainder may have several causes.
+The subtraction-based attribution is compared with a manually annotated failure sample, corpus-wide construct counts and agreement between independent systems.
+It is reported with the confidence interval that the weakest evidence supports, and disagreements between sources are reported as well.
 
 \textbf{Fourth, the proposed cause is tested through intervention.}
 If a system lacks particular knowledge, supplying it should improve performance, and the size of the improvement shows how much error the missing knowledge explains.
-Interventions that do not help are still informative, because they narrow down the explanations for the observed errors; the next chapter reports all of them alongside the one that works.
-
-The protocol is defined independently of the specific pipeline used here.
+Interventions that do not help are still informative, because they narrow down the explanations for the observed errors.
+The next chapter reports all of them alongside the one that works.
 
 \begin{figure}[htbp]
   \centering
@@ -96,7 +100,7 @@ Translating a question into a query involves three decisions.
 \emph{Structural composition} arranges them with Wikidata's constructs, such as statement nodes, qualifiers, class closure and aggregation.
 \emph{Disambiguation} decides which identifier a given label denotes, among the retrieved candidates.
 In this pipeline the generator makes the first two decisions when it writes the labelled query, and the linking stage makes the third.
-In this thesis, \emph{linking} refers to the third decision, the mapping from a label to its identifier.
+Here, \emph{linking} refers to the third decision, the mapping from a label to its identifier.
 
 \paragraph{Two Conditions}
 
@@ -104,7 +108,7 @@ The pipeline is evaluated under two conditions, and the difference between them 
 
 In the \textbf{gold-label condition}, generation is skipped and the labels come from the benchmark's annotated query.
 Concept selection and query structure are therefore correct by construction, and only disambiguation is evaluated.
-Comparing this with the full pipeline estimates the error caused by generating the query, that is, by concept selection and structural composition together.
+Comparing this with the full pipeline estimates the error caused by query generation, that is, by concept selection and structural composition together.
 
 In the \textbf{end-to-end condition}, the model generates the labelled query and the same linking stages follow.
 This condition represents the deployed system and provides the main pipeline results.
@@ -140,7 +144,8 @@ Two evaluation splits serve different purposes.
 The \textbf{working split} was created from the released data with complexity stratification, a fixed seed and a 75/5/20 train-validation-test division, keeping one natural-language instruction per query.
 Its test set contains 567 queries (38 simple, 222 medium, 307 complex) and is used for the diagnostic analysis: the stage table, error taxonomy, construct analysis, prompt interventions and cascade.
 The \textbf{official split} is the benchmark authors' own test split, used for the comparison with their published systems.
-Each experiment uses the split that fits its purpose and no result is reported twice, with one exception: the linker comparison is replicated on both splits to test whether it depends on the split chosen; differences in row counts are explained where they occur.
+Each experiment uses the split that fits its purpose and no result is reported twice, with one exception: the linker comparison is replicated on both splits to test whether it depends on the split chosen.
+Differences in row counts are explained where they occur.
 
 \begin{figure}[htbp]
   \centering
@@ -156,9 +161,14 @@ the stability of its ordering to be examined.}
 
 The dataset's identifier field is not stable between the raw file used to build the working split and the current release.
 Some identifiers point to different questions in the two versions, so rows are matched on normalised instruction text instead.
-The release offers two configurations with different splits; the official-split experiments use the default configuration, whose 495 test rows match the benchmark paper (the with-limit configuration has 493).
-Against the default configuration, 365 of the 567 working test rows (64.4\,\%) correspond to official training rows, 95 (16.8\,\%) to official test rows and 24 (4.2\,\%) to validation rows, 6 (1.1\,\%) have instructions that occur in more than one official split, and 77 (13.6\,\%) have no counterpart; the revision used here is pinned in the repository.
-This overlap does not contaminate the results of this thesis, since none of the models is fine-tuned on the benchmark; it matters only for the comparison with the authors' fine-tuned systems, which is why that comparison uses the official split.
+The release offers two configurations with different splits.
+The official-split experiments use the default configuration, whose 495 test rows match the benchmark paper (the with-limit configuration has 493).
+Against the default configuration, most working test rows correspond to official training rows: 365 of 567 (64.4\,\%).
+Another 95 (16.8\,\%) correspond to official test rows and 24 (4.2\,\%) to validation rows.
+Six (1.1\,\%) have instructions that occur in more than one official split, and 77 (13.6\,\%) have no counterpart.
+The dataset revision used here is pinned in the repository.
+This overlap does not contaminate the results reported here, since none of the models is fine-tuned on the benchmark.
+It matters only for the comparison with the authors' fine-tuned systems, which is why that comparison uses the official split.
 
 \section{Linking Methods and Ground
 Truth}
@@ -179,7 +189,8 @@ Decoding is deterministic.
 If only one candidate is retrieved, it is selected without a model call.
 If no identifier can be extracted from the response, the top search result is used as a fallback.
 
-This approach follows RetReason in \textcite{alekseev2025querybased}; this thesis compares it with the other paradigms under identical conditions and across backbones of different sizes and origins.
+This approach follows RetReason in \textcite{alekseev2025querybased}.
+Here it is compared with the other paradigms under identical conditions and across backbones of different sizes and origins.
 Three backbones are used: Claude Opus 4.8, Qwen2.5-14B-Instruct, and Qwen2.5-7B-Instruct.
 The two open-weight models run on the AI \& Explainability group's GPU server.
 The prompt, candidate pools, reference and evaluator stay fixed, so the backbone is the only variable that changes.
@@ -195,7 +206,7 @@ The candidates are passed to it directly, because its default entity store looks
 
 Using the same candidates as the reasoning-based linker isolates the disambiguation mechanism.
 It does not, however, test GLiNKER the way its authors intended, since the framework is designed to retrieve from large entity databases with its own multi-stage retrieval.
-Its score therefore measures one mechanism inside this pipeline, not the framework as a whole.
+Its score measures one mechanism inside this pipeline, not the framework as a whole.
 The discussion returns to this limitation.
 
 \paragraph{Fine-Tuned End-to-End
@@ -248,7 +259,7 @@ Two of the linking implementations choose from a shared candidate pool.
 They cannot recover an identifier that is missing from that pool, so candidate coverage has to be checked before their scores can be interpreted.
 
 With the rate-limited retrieval described above, the reference identifier is present for 1,080 of 1,086 entity mentions (99.4\,\%) and 2,730 of 2,766 property mentions (98.7\,\%).
-Candidate retrieval is therefore not a binding constraint in the comparison.
+Candidate retrieval is not a binding constraint in the comparison.
 
 \begin{figure}[htbp]
   \centering
@@ -268,7 +279,8 @@ linker.}
 
 \label{sec:setup-endpoint}
 
-All queries are executed against a QLever instance provided by the AI \& Explainability group, indexing a Wikidata snapshot dated 14 March 2026; it was chosen because the rate limits and timeouts of the public Wikidata Query Service lowered execution success for reasons unrelated to query quality.
+All queries are executed against a QLever instance provided by the AI \& Explainability group, indexing a Wikidata snapshot dated 14 March 2026.
+It was chosen because the rate limits and timeouts of the public Wikidata Query Service lowered execution success for reasons unrelated to query quality.
 Three adaptations apply equally to reference and generated queries: the standard prefix block is added (QLever does not define it implicitly), \texttt{SERVICE wikibase:label} clauses are removed (they are Blazegraph-specific and affect only display labels, not the identifiers used for scoring), and responses are streamed with a 50 MB limit, above which they count as failures.
 Execution failures are classified by cause (HTTP status, timeout, connection error, oversized result), as the stage analysis requires.
 
@@ -276,7 +288,8 @@ Execution failures are classified by cause (HTTP status, timeout, connection err
 
 Of the 567 working test rows, 111 reference queries do not execute on QLever.
 Of these, 26 also fail on the public endpoint (knowledge-graph evolution), and the remaining 85 fail for engine-specific reasons: Blazegraph's proprietary named-subquery extension, unavailable services (\texttt{wikibase:around}, \texttt{mwapi}, \texttt{gas}), timeouts, and queries that reuse a variable as an \texttt{AS} target (which QLever rejects as non-standard SPARQL while Blazegraph accepts it).
-Approximately 15\,\% of reference queries are therefore Blazegraph-only; since generated queries face the same constraints, this does not bias the comparison between systems, but the evaluated subset is not a uniform sample of the full benchmark (see the limitations).
+Approximately 15\,\% of reference queries are therefore Blazegraph-only.
+Since generated queries face the same constraints, this does not bias the comparison between systems, but the evaluated subset is not a uniform sample of the full benchmark (see the limitations).
 
 \subsection{Evaluation Metrics}
 
@@ -288,14 +301,18 @@ Artefact}
 Accuracy is measured as the Jaccard similarity between the generated and reference result sets, after entity URIs are normalised to identifiers.
 Two evaluation sets are used: the lenient set (456 of 567 working rows, wherever the reference executes) and the strict set, which additionally requires the reference to return at least one result (400 rows: 35 simple, 194 medium, 171 complex; these are \emph{scorable} counts, not the split's composition given above).
 All headline results use the strict set.
-It removes the first of the four metric problems examined in the discussion: the Jaccard similarity of two empty sets is 1.0, so among the 56 rows where the reference executes but returns nothing, a wrong generated query that also returned nothing scored perfectly, which inflated scores by two to seven points and changed model rankings in preliminary experiments.
+It removes the first of the four metric problems examined in the discussion.
+The Jaccard similarity of two empty sets is 1.0, so among the 56 rows where the reference executes but returns nothing, a wrong generated query that also returned nothing scored perfectly.
+In preliminary experiments this inflated scores by two to seven points and changed model rankings.
 
 \paragraph{Entity-Level Similarity as a Robustness
 Check}
 
 The pooled metric combines values across all result columns, so label mismatches lower it even when the underlying entities agree (about 16\,\% of end-to-end rows).
-Entity-level Jaccard, which uses only identifiers, is therefore reported as well; it is up to six points higher and leaves the system ordering unchanged, which suggests that the pooled metric understates but does not distort the comparisons.
-It is undefined when neither query returns entity values, so comparisons use the 316 strict rows where it is defined for every system (27 simple, 166 medium, 123 complex); full-set results are in the appendix.
+Entity-level Jaccard, which uses only identifiers, is also reported.
+It is up to six points higher and leaves the system ordering unchanged, which suggests that the pooled metric understates but does not distort the comparisons.
+It is undefined when neither query returns entity values, so comparisons use the 316 strict rows where it is defined for every system (27 simple, 166 medium, 123 complex).
+Full-set results are in the appendix.
 
 \paragraph{Linking Metrics}
 
@@ -312,8 +329,10 @@ Because it is computed over query text rather than answers, knowledge-graph evol
 \paragraph{Statistical Testing}
 
 Paired comparisons are reported with confidence intervals.
-Prompt interventions and the cascade use paired bootstrap percentile intervals, a two-sided permutation test and the Wilcoxon signed-rank test; the linker comparison uses mention-level bootstrap resampling, applying the same resample to every linker in each iteration.
-Complexity breakdowns and the comparison with the benchmark authors' systems are point estimates; differences below about one percentage point between neighbouring configurations are treated as ties, and the 27-row simple category in the common entity-level subset should be read with caution.
+Prompt interventions and the cascade use paired bootstrap percentile intervals, a two-sided permutation test and the Wilcoxon signed-rank test.
+The linker comparison uses mention-level bootstrap resampling, applying the same resample to every linker in each iteration.
+Complexity breakdowns and the comparison with the benchmark authors' systems are point estimates.
+Differences below about one percentage point between neighbouring configurations are treated as ties, and the 27-row simple category in the common entity-level subset should be read with caution.
 
 \section{Interventions and Failure
 Recovery}
@@ -342,7 +361,7 @@ Each rule addresses a failure mode found in the error analysis, and the complete
 \paragraph{Schema evidence, verbose and
 targeted.}
 
-Generic guidance explains that a construct exists; schema evidence gives information about the entities and properties relevant to a specific question.
+Generic guidance explains that a construct exists, whereas schema evidence gives information about the entities and properties relevant to a specific question.
 Following~\parencite{zhang2026saga}, the reference identifiers are probed against the endpoint to find their properties, qualifiers, class relationships and quantity values.
 The information is presented in two forms:
 
@@ -389,22 +408,21 @@ Cascade}
 The cascade relies on an observable failure signal instead of predicting the cause directly.
 Every reference query in the evaluation set returns at least one result, so a generated query that executes but returns nothing must be wrong.
 
-The cascade generates queries with different prompts, executes them in fixed order, and accepts the first non-empty, error-free result set as shown in (\cref{fig:cascade-mechanism}).
+The cascade generates queries with different prompts, executes them in fixed order, and accepts the first non-empty, error-free result set, as shown in \cref{fig:cascade-mechanism}.
 
 On this evaluation set, the method is monotonic.
 It only replaces empty or failed results, which already score zero against a non-empty reference.
 It needs no gold answers and no training.
-A question whose first query fails is passed to the next prompt in the order, so it costs one further generation per fallback step; with the eight runs reported here, at most seven.
+A question whose first query fails is passed to the next prompt in the order, so it costs one further generation per fallback step.
+With the eight runs reported here, that is at most seven.
 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.88\textwidth]{figures/fig_cascade_mechanism.pdf}
   \caption{The execution-guided cascade.}
   \label{fig:cascade-mechanism}
-  \tabnote{The trigger is similar to the execution feedback used by
-agentic systems, but the cascade responds with a different prompt rather
-than an open-ended self-correction loop. This limits the cost and
-ensures monotonicity.}
+  \tabnote{Queries generated with different prompts are executed in a
+fixed order, and the first non-empty, error-free result set is accepted.}
 \end{figure}
 
 The cascade is compared with two alternatives using the same candidates. The first selects a result-set centroid: among candidates that return results, it picks the one whose result set is, on average, most similar to the others. The second adds a fallback to the best-performing prompt when no candidates agree above a threshold. These comparisons show whether the signal comes from agreement between candidate answers or simply from having a valid preferred result.
@@ -424,18 +442,21 @@ Reproducibility}
 Four frozen frontier models are evaluated for generation: GPT-5.4, Claude Opus 4.8, Gemini 3.1 Flash Lite, and DeepSeek V4 Flash, accessed through the OpenRouter API with deterministic decoding, a 1,024-token limit, and up to three retries on empty responses.
 The prompt-intervention arms, the official-split comparison and the Claude Opus 5 replication were run directly through Anthropic's API.
 In the pipeline, Claude Opus 4.8 generates the labelled queries, except in the newer-model replication, which uses Claude Opus 5.
-Claude Opus 4.8 also disambiguates in the working-split end-to-end run; the official-split run, the prompt-intervention arms and the Opus 5 replication disambiguate with Qwen2.5-14B-Instruct, and the backbone comparison varies the disambiguation model.
+Claude Opus 4.8 also disambiguates in the working-split end-to-end run.
+The official-split run, the prompt-intervention arms and the Opus 5 replication disambiguate with Qwen2.5-14B-Instruct, and the backbone comparison varies the disambiguation model.
 Qwen2.5-14B-Instruct and Qwen2.5-7B-Instruct are served through vLLM on the AI \& Explainability group's GPU server.
 
 The seven prompt-intervention arms use Claude Opus 4.8 for generation and the same open-weight disambiguation model throughout, so the prompt is the only experimental variable.
 This configuration was chosen because the experiment required seven complete pipeline runs, and it is supported by the backbone comparison, which shows similar disambiguation performance across backbones (97.7 entity F1 frontier vs.\ 94.9 and 95.8 open).
-Absolute scores in these arms are therefore slightly lower than the frontier-disambiguated end-to-end results; comparisons within the arms remain valid, but absolute scores across sections should be read with this in mind.
+Absolute scores in these arms are therefore slightly lower than the frontier-disambiguated end-to-end results.
+Comparisons within the arms remain valid, but absolute scores across sections should be read with this in mind.
 The generator's identity was checked between arms through its lexical fingerprint (camelCase identifiers, snake\_case labels, bare property identifiers): all seven arms pass, while an open-backbone control run fails, which confirms that the check can detect a changed generator.
 
 The official-split comparison differs in two respects: it uses Anthropic's batch interface, and it sets no temperature, since the API no longer supports this parameter for the model.
-The two experiment sets should therefore not be compared at sub-percentage-point precision.
+The two experiment sets should not be compared at sub-percentage-point precision.
 
 \paragraph{Caching, Re-Scoring, and Reproducibility}
 
-Model outputs (generated queries, disambiguation decisions, substituted queries) are saved when they are generated; all later scoring, including the move from the public endpoint to QLever and every re-measurement after a correction, reuses these cached outputs instead of regenerating them, so differences between conditions cannot come from regeneration variance.
+Model outputs (generated queries, disambiguation decisions, substituted queries) are saved when they are generated.
+All later scoring, including the move from the public endpoint to QLever and every re-measurement after a correction, reuses these cached outputs instead of regenerating them, so differences between conditions cannot come from regeneration variance.
 All reported numbers, tables and figures are recomputed from these stored outputs, as described in the appendix.

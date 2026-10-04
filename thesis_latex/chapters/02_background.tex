@@ -19,10 +19,10 @@ Volunteers and bots edit its more than 100 million items together.
 Its content consists of three main kinds of object: \emph{items} (opaque Q-identifiers for entities, classes and abstract concepts, e.g.\ Barack Obama is Q76), \emph{properties} (opaque P-identifiers for relations and attributes, e.g.\ P31 is instance of), and \emph{statements}, which connect an item to a property.
 A statement can also carry qualifiers, references and a rank.
 
-Two features of Wikidata matter most for this thesis.
+Two features of Wikidata matter most here.
 First, identifiers are opaque and cannot be recovered from the question text.
 Nothing in ``Christopher Nolan'' points to Q25191, so entity and property linking has to be a separate pipeline stage.
-This thesis therefore treats linking as a stage of its own and compares four linkers under identical conditions, so that linking errors can be separated from errors made elsewhere.
+Linking is therefore treated here as a stage of its own, and four linkers are compared under identical conditions so that linking errors can be separated from errors made elsewhere.
 Second, Wikidata changes all the time (items are created, merged, deprecated or re-parented), so a benchmark's gold answers can drift away from the live graph regardless of how good a system is.
 This is the reason for the fair set, which keeps only rows whose gold query still executes against the fixed snapshot used for evaluation.
 
@@ -69,7 +69,7 @@ SELECT ?position ?start ?end WHERE {
 
 Class membership raises the same issue.
 Without the transitive operator \texttt{*}, \texttt{P31}/\texttt{P279} retrieves only directly stated classes.
-A question about all members of a broader class can therefore return incomplete or empty results unless subclass relationships are followed transitively.
+A question about all members of a broader class can return incomplete or empty results unless subclass relationships are followed transitively.
 Wikidata also holds separate lexicographical data (lexemes, forms, senses).
 Only a few benchmark queries use it, but they are included in the construct analysis.
 
@@ -79,17 +79,16 @@ Only a few benchmark queries use it, but they are included in the construct anal
   \caption{The Wikidata statement model.}
   \label{fig:wikidata-model}
   \tabnote{The truthy edge wdt: bypasses the statement node.
-Qualifiers (pq:) and normalised value nodes (psv:) can only be reached
-through p:/ps:. The failure analysis in the results chapter uses this
-vocabulary throughout.}
+Qualifiers (pq:) and normalised value nodes (psv:) are reached
+through p:/ps:.}
 \end{figure}
 
 \Cref{fig:wikidata-model} summarises these relationships.
-One of them matters most for this thesis: the simpler query form is always syntactically available.
+One of them matters most here: the simpler query form is always syntactically available.
 A model can use wdt: even when a statement node, qualifier or normalised value node is actually needed.
 The resulting query is valid and may even return plausible results, yet it answers the wrong question.
 
-Syntax checking alone cannot find every structural error, but only a comparison with the result of a gold query can.
+Syntax checking cannot detect such an error; a comparison with the result of the gold query can.
 Better entity linking cannot fix such an error either, because the identifiers are already correct.
 For this reason, the thesis analyses structural and linking errors separately.
 
@@ -98,19 +97,19 @@ For this reason, the thesis analyses structural and linking errors separately.
 \label{sec:sparql}
 
 SPARQL is the W3C query language for RDF, and the benchmark uses only part of it.
-At its core, SPARQL matches graph patterns built from triple patterns and returns the variables selected in the SELECT clause.
+SPARQL matches graph patterns built from triple patterns and returns the variables selected in the SELECT clause.
 The benchmark also uses FILTER for value constraints, OPTIONAL for left-join behaviour when a value may be missing, UNION for alternative patterns, aggregation with GROUP BY and HAVING, ordering and LIMIT, property paths such as the * and / operators described above, and subqueries.
 Property paths matter for meaning, but they are also expensive to run.
 Where they are placed and the order in which joins are evaluated can strongly affect execution time on a graph as large as Wikidata~\citep{aimonier2023joinordering}.
 
-Two further features belong to the Wikidata deployment rather than to SPARQL itself.
+Two further features are specific to the Wikidata deployment.
 The label service (SERVICE wikibase:label) adds human-readable labels to the identifiers in query results, and most published Wikidata queries use it.
 The mwapi service lets a query call the MediaWiki API during execution, for example for full-text search.
 
 \paragraph{Blazegraph and QLever}
 
 The benchmark's gold queries were written for the public Wikidata Query Service, which runs on Blazegraph.
-The experiments in this thesis use a dedicated QLever instance instead~\citep{bast2017qlever}.
+The experiments use a dedicated QLever instance instead~\citep{bast2017qlever}.
 The reasons are practical: a local endpoint avoids the rate limits and timeouts of the public service and makes it easier to run thousands of queries under controlled conditions.
 It also keeps the graph from changing during the experiments.
 
@@ -122,7 +121,8 @@ The method chapter describes this issue in detail and discusses engine choice as
 
 Real-world query use offers another point of comparison.
 \citet{malyshev2018getting} analysed Wikidata Query Service logs and found that real users rely heavily on the label service and basic graph patterns, while more complex constructs are rarer.
-This thesis takes the same approach and compares benchmark constructs with real usage, using the larger and more recent query-log corpus released by \citet{walter2026wdql}; WDBench~\citep{angles2022wdbench} is a complementary benchmark built directly from public Wikidata query logs.
+The same comparison is made here, using the larger and more recent query-log corpus released by \citet{walter2026wdql}.
+WDBench~\citep{angles2022wdbench} is a complementary benchmark built directly from public Wikidata query logs.
 
 \section{Text-to-SPARQL and KGQA}
 
@@ -132,24 +132,25 @@ Answering}
 \label{sec:kgqa}
 
 Knowledge graph question answering (KGQA) means answering natural-language questions with the help of a knowledge graph.
-Current research falls broadly into two approaches; recent surveys of large language models and knowledge graphs draw a similar line~\citep{ma2025llmkg}, and a systematic review of the wider KGQA architecture space arrives at the same split~\citep{perevalov2024survey}.
+Current research falls broadly into two approaches.
+Recent surveys of large language models and knowledge graphs draw a similar line~\citep{ma2025llmkg}, as does a systematic review of the wider KGQA architecture space~\citep{perevalov2024survey}.
 
 \paragraph{Retrieval-based
 answering} treats the graph as a source to retrieve information from.
 Relevant triples or subgraphs are retrieved, turned into text and given to a language model, which writes the answer directly.
-This is fairly robust to differences in graph schema and needs no knowledge of query syntax.
+This approach copes fairly well with differences in graph schema and needs no knowledge of query syntax.
 The answer, however, is generated rather than computed.
 It cannot be audited directly or re-run when the graph changes, and it does not scale naturally to large numbers of entities.
 A question that needs aggregation over thousands of entities, for instance, cannot usually be answered from a handful of retrieved triples.
 
 \paragraph{Semantic parsing} translates the natural-language question into an executable SPARQL
 query.
-The graph then produces the answer, not the language model.
-This thesis follows this approach, because the query is an artefact that can be inspected and verified, works over any number of entities, and stays useful as the graph is updated.
+The answer then comes from executing the query on the graph.
+This work uses semantic parsing, because the query is an artefact that can be inspected and verified, works over any number of entities, and stays useful as the graph is updated.
 The price is brittleness: one wrong identifier or one missing * can yield a query that is valid but wrong.
-This thesis measures and attributes exactly this kind of failure.
+The experiments here measure and attribute this kind of failure.
 
-Within semantic parsing, three system paradigms recur; the next section gives examples of each:
+Within semantic parsing, three system paradigms recur:
 
 \begin{description}
 \item[Fine-tuned sequence-to-sequence models]
@@ -177,33 +178,37 @@ The following paragraphs cover fine-tuned models, prompting, in-context learning
 \paragraph{Fine-tuned sequence-to-sequence
 models}
 
-\citet{banerjee2022modern} establish Wikidata semantic-parsing baselines with pre-trained sequence-to-sequence models; they supply entity and relation links instead of predicting them, so the evaluation isolates query generation, and general-purpose models turn out to compete with task-specific architectures once linking is fixed.
+\citet{banerjee2022modern} establish Wikidata semantic-parsing baselines with pre-trained sequence-to-sequence models.
+They supply entity and relation links instead of predicting them, so the evaluation isolates query generation, and general-purpose models turn out to compete with task-specific architectures once linking is fixed.
 \citet{xu2023wikisp} fine-tune LLaMA and introduce WikiWebQuestions, attributing 35.1\,\% of failures to entity linking (``the biggest source of errors'') and 17.1\,\% to the wrong property.
-This thesis re-tests that attribution under two conditions that differ from theirs: their percentages are computed over failed examples only, and their system is fine-tuned on relatively simple questions.
-When the generator is a frozen frontier model and disambiguation is close to perfect, the remaining error looks different, with structure rather than linking dominant.
+That attribution is re-tested here under two conditions that differ from theirs: their percentages are computed over failed examples only, and their system is fine-tuned on relatively simple questions.
+When the generator is a frozen frontier model and disambiguation is close to perfect, the remaining error looks different: structure dominates, and linking contributes little.
 
 \paragraph{Prompting and in-context
 learning}
 
 \citet{dabramo2025investigating} study in-context learning for text-to-SPARQL on benchmarks that supply gold entities and relations (so their evaluation, like \citet{banerjee2022modern}'s, isolates generation), and identify a systematic \emph{triple-flip} error: the model reverses the subject and object of a generated triple, producing a query that is valid, incorrect and often empty.
 Their fix keeps several beam-search hypotheses instead of only the most probable one.
-This independently supports the distinction between linking and structure drawn in this thesis, and it connects to the empty results observed here: a structurally wrong query over correct identifiers often returns nothing, so an empty result can be a diagnostic signal.
-Few-shot demonstrations can also teach more than surface format: \citet{shah2024implicit} show that examples which make implicit multi-hop reasoning steps visible improve generated SPARQL and Cypher queries, a more targeted use of demonstrations than the few-shot condition tested.
+This independently supports the distinction between linking and structure drawn here.
+It also connects to the empty results observed in this work: a structurally wrong query over correct identifiers often returns nothing, so an empty result can be a diagnostic signal.
+Few-shot demonstrations can also teach more than surface format: \citet{shah2024implicit} show that examples which make implicit multi-hop reasoning steps visible improve generated SPARQL and Cypher queries, a more targeted use of demonstrations than the few-shot condition tested here.
 
 \paragraph{Agentic systems}
 
 Agentic approaches let a model explore the graph and revise a query over several steps~\citep{liu2024spinach}.
 The TEXT2SPARQL'25 challenge produced several such systems: mKGQAgent~\citep{perevalov2025mkgqagent} won overall with a multilingual pipeline modelled on human reasoning; \citet{brei2025aruqula} combine ReAct-style reasoning with graph-exploration tools; and \citet{walter2025grasp} extend the approach from one knowledge graph to many.
-\citet{soru2026researcher}'s self-improving agent reaches 0.22 accuracy on the 2025 DBpedia validation set and concludes that ``the bottleneck is consistently in basic-graph-pattern predicate selection, not in SPARQL syntax or modifiers''; on a different graph and system, this supports the failure taxonomy of this work.
-What these systems share is execution-guided revision; the cascade in this thesis is a deliberately minimal form of it, added because the measurements showed remaining headroom.
+\citet{soru2026researcher}'s self-improving agent reaches 0.22 accuracy on the 2025 DBpedia validation set and concludes that ``the bottleneck is consistently in basic-graph-pattern predicate selection, not in SPARQL syntax or modifiers''.
+On a different graph and system, this supports the failure taxonomy of this work.
+These systems share execution-guided revision, and the cascade used here is a deliberately minimal form of it.
 
 \paragraph{Schema-aware grounding}
 
 \citet{zhang2026saga}'s SAGA keeps a persistent bidirectional type state and filters candidate properties by entity type, property domain/range and expected answer type, reporting the highest F1 across nine Wikidata/Freebase settings and fewer empty results.
 In other words, SAGA removes unsuitable candidates before generation.
-The schema-evidence prompt tested in this thesis only adds schema information to the prompt as text, which the generator is free to ignore, and in the experiments here it did not improve accuracy.
+The schema-evidence prompt tested in this work only adds schema information to the prompt as text, which the generator is free to ignore, and in the experiments here it did not improve accuracy.
 The discussion chapter explains why this difference, filtering the candidate space rather than merely informing it, matters.
-\citet{yang2026ggc}'s Generator--Gate--Corrector applies correction only to the questions that need it and cuts inference overhead by 45\,\%; the selective-application experiment in this thesis tests the same gating idea for a different intervention and finds that it does not beat applying the intervention everywhere.
+\citet{yang2026ggc}'s Generator--Gate--Corrector applies correction only to the questions that need it and cuts inference overhead by 45\,\%.
+The selective-application experiment in this work tests the same gating idea for a different intervention and finds that it does not beat applying the intervention everywhere.
 \citet{srivastava2026mars} use adaptive multi-hop retrieval that learns when to stop traversing the graph and start generating, with competitive results on three multilingual KGQA benchmarks.
 Recent production-oriented systems organise text-to-SPARQL in the same way, as a pipeline of metadata indexing, prompt construction, generation and execution, which shows how much grounding and endpoint interaction matter beyond one-shot query decoding~\citep{smeros2025sparqlllm}.
 
@@ -229,13 +234,14 @@ Many of these never appear as named entities in the question.
 A linker that starts from mention detection in the text cannot find a concept the question does not state.
 This is a mismatch between the task these systems were built for and the task they face here, not necessarily a flaw in their implementation.
 It helps explain the large differences in the linker comparison between text-driven end-to-end linkers and approaches that reason over candidates retrieved for the vocabulary a query needs.
-These results should therefore not be read as a general judgement on end-to-end linking systems.
+These results should not be read as a general judgement on end-to-end linking systems.
 
 \subsection{Entity Linking Paradigms}
 
 \label{sec:related-linking}
 
-The following three paradigms correspond to the linking approaches evaluated in this thesis; the section closes with how linkers should be evaluated so that they can be compared fairly.
+The following three paradigms correspond to the linking approaches evaluated here.
+The section closes with how linkers should be evaluated so that they can be compared fairly.
 
 \paragraph{Fine-tuned end-to-end
 linking}
@@ -269,14 +275,14 @@ They report that linkers based on language models clearly outperform other appro
 In their comparison, traditional systems reach higher precision but much lower recall.
 They also draw a conclusion that bears directly on the design used here: high recall, even at some cost in precision, can give better end-to-end performance, because the downstream model tolerates noisy candidate sets.
 
-This thesis finds the same pattern on a different benchmark and with differently constructed ground truth.
+The same pattern appears here, on a different benchmark and with differently constructed ground truth.
 It also explains the candidate-pool design used here: retrieval deliberately admits candidates generously, and the disambiguation stage is responsible for choosing the right one with the full question as context.
 
 \paragraph{Evaluation protocol}
 
 \citet{bast2023fairel} point out that published end-to-end entity-linking results are often hard to compare, because systems differ in what they count as a mention, how they score partial overlaps and which knowledge-base version they use.
 They propose an evaluation framework that controls these choices.
-The linking comparison in this thesis follows the same discipline: all four linkers are evaluated on identical rows, against identical ground truth, with identical scoring.
+The linking comparison here follows the same discipline: all four linkers are evaluated on identical rows, against identical ground truth, with identical scoring.
 The ground truth comes from the benchmark's own annotated queries, not from an external linker's index.
 
 \section{Benchmarks, Evaluation, and Research
@@ -300,20 +306,22 @@ And, as the authors state, it comes with no entity-linking strategy, leaving gro
 Published text-to-SPARQL results are hard to compare directly: studies use different graph snapshots, metrics that share a name but not a definition, and gold queries that may no longer execute.
 This is part of a wider benchmark-design problem in KGQA: datasets differ in how they construct questions, annotate logical forms and define complexity, so reported improvements may not carry over to other benchmarks or graph snapshots~\citep{steinmetz2021kgqabenchmarks}.
 \citet{taghzouti2026t2smetrics} document this fragmentation and propose a unified evaluation library, which itself shows that consistency is still an open issue.
-This thesis therefore re-executes the benchmark authors' generated queries against the same snapshot, fair-set definition and metric as every other system, instead of comparing published scores directly.
+For this reason, the benchmark authors' generated queries are re-executed here against the same snapshot, fair-set definition and metric as every other system, and published scores are not compared directly.
 
 \paragraph{Contamination and
 memorisation}
 
-A model that saw a benchmark's gold queries during pre-training may partly be measured on memorisation rather than on semantic parsing.
-\citet{gashkov2025memorization} show that this can affect reported performance on QALD and LC-QuAD; instead of assuming that the frozen frontier models are or are not contaminated, this thesis measures the effect directly.
-Identifiers, literals and variable names are removed from every generated query, and the remaining structure is compared with the benchmark's reference queries; a model that had memorised the benchmark would often reproduce them almost exactly.
+A model that saw a benchmark's gold queries during pre-training may partly reproduce them from memory.
+\citet{gashkov2025memorization} show that this can affect reported performance on QALD and LC-QuAD.
+Instead of assuming that the frozen frontier models are or are not contaminated, this work measures the effect directly.
+Identifiers, literals and variable names are removed from every generated query, and the remaining structure is compared with the benchmark's reference queries.
+A model that had memorised the benchmark would often reproduce them almost exactly.
 
 \paragraph{External validity}
 
 A benchmark's mix of constructs does not necessarily reflect what users actually ask.
-\citet{malyshev2018getting} established the practice of comparing benchmark constructs with Wikidata Query Service logs; \citet{walter2026wdql} released a much larger derived resource of 335,000 question--query pairs for the same purpose.
-It is used here to check whether the Wikidata idioms studied in this thesis are a property of the benchmark or of real-world use.
+\citet{malyshev2018getting} established the practice of comparing benchmark constructs with Wikidata Query Service logs, and \citet{walter2026wdql} released a much larger derived resource of 335,000 question--query pairs for the same purpose.
+It is used here to check whether the Wikidata idioms under study are a property of the benchmark or of real-world use.
 
 \subsection{Positioning of This Work}
 
@@ -326,8 +334,7 @@ The cascade used here is a minimal, single-round form of execution feedback, add
 
 \paragraph{What differs here}
 
-Four aspects define the contribution.
-The linking comparison evaluates four paradigms on the same rows, ground truth and candidate pools, with the gold standard taken from the benchmark's own annotated queries rather than from an external linker's index.
+The linking comparison evaluates four paradigms on the same rows, ground truth and candidate pools, with the gold standard taken from the benchmark's own annotated queries.
 Error is attributed to individual stages, with backbone dependence measured separately for each, instead of being reduced to one end-to-end score.
 Interventions are controlled by changing only the generation prompt, and four directions are tested: generic guidance, schema evidence, selective guidance and a closed vocabulary.
 External validity is checked against real query-log usage in both directions.

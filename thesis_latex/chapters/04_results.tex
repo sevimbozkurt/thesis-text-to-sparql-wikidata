@@ -11,8 +11,10 @@ Unless stated otherwise, all results come from the working split (567 test quest
 Accuracy is the Jaccard similarity between the result set of the generated query and that of the reference query, computed on the strict fair set, which excludes any reference query that returns no results.
 Two variants are reported.
 \emph{Pooled} Jaccard compares all values that a query returns, across all result columns, so a different display label counts as a difference.
-\emph{Entity-level} Jaccard compares only the Wikidata identifiers in the results, so it is not affected by label differences; because it is undefined when a query returns no identifiers, comparisons between systems use the 316 of 400 strict rows on which it is defined for every system.
-Several analyses need their own subset of questions, for example the rows that every compared run scored; \cref{tab:subsets} lists each set, its size and where it is used.
+\emph{Entity-level} Jaccard compares only the Wikidata identifiers in the results, so it is not affected by label differences.
+Because it is undefined when a query returns no identifiers, comparisons between systems use the 316 of 400 strict rows on which it is defined for every system.
+Several analyses need their own subset of questions, for example the rows that every compared run scored.
+\Cref{tab:subsets} lists each set, its size and where it is used.
 
 \input{tables/eval_subsets}
 
@@ -46,16 +48,16 @@ On the strict fair set, every reference query returns at least one row, so a gen
 This error can be detected without looking at the reference query.
 \Cref{fig:empty} shows the share of empty results for each system.
 
-The zero-shot models return nothing for 31.2\,\% to 56.8\,\% of the questions; the end-to-end pipeline brings this down to 17.8\,\%.
+The zero-shot models return nothing for 31.2\,\% to 56.8\,\% of the questions, and the end-to-end pipeline brings this down to 17.8\,\%.
 On queries that do return something, all systems score fairly similarly, between 24.4 and 39.7.
-The differences come from how often they return nothing, not answer quality. The pipeline's main benefit is fewer empty results, which fits with its linking stage replacing generated labels with identifiers that actually exist in Wikidata. The recovery mechanism described later in this chapter builds on this signal.
+The differences come mainly from how often they return nothing. The pipeline's main benefit is fewer empty results, which fits with its linking stage replacing generated labels with identifiers that actually exist in Wikidata. The recovery mechanism described later in this chapter builds on this signal.
 
 A third analysis looks at how much difficulty the models share.
 Counting a question as solved when its entity-level Jaccard is at least 0.5, 307 of the 400 strict-set questions (76.8\,\%) are solved by none of the four zero-shot models, and only 15 by all four (\cref{fig:crossmodel}).
 The hard questions have something in common: their reference queries contain around four times as many statement nodes as those of the easy questions.
 Qualifiers and aggregation occur at rates of 0.22 and 0.32 per query, respectively, but not once in the questions that all four models solve.
 
-Overall, the models often write valid queries that return wrong results or none, and their errors overlap heavily.
+These three analyses show that the models often write valid queries that return wrong results or none, and that their errors overlap heavily.
 The next subsection shows which pipeline stage is responsible.
 
 \begin{figure}[htbp]
@@ -74,7 +76,7 @@ Structure}
 
 \label{sec:res-attribution}
 
-For questions, the pipeline records whether it generated a query, whether all labels
+For each question, the pipeline records whether it generated a query, whether all labels
 were linked and whether the query executed.
 \Cref{fig:funnel} shows these outcomes for the end-to-end
 condition.
@@ -84,29 +86,36 @@ condition.
   \includegraphics[width=0.88\textwidth]{figures/fig_stage_funnel.pdf}
   \caption{Stage-wise outcomes of the end-to-end pipeline, by query complexity.}
   \label{fig:funnel}
-  \tabnote{Generation does not fail. Approximately 7\,\% of rows
-lose a label during linking, and a further 5\,\% fail during execution.
-The main reduction occurs at the final stage.}
+  \tabnote{Share of questions that pass each stage: labelled-query
+generation, full linking, execution, and the final entity-level score.}
 \end{figure}
 
 Generation succeeds for 100\,\% of questions at every complexity level.
 About 7\,\% of rows then lose a label during linking, and another 5\,\% fail to execute.
-Final entity-level accuracy, over the 363 strict-set questions on which it is defined for this run, is 27.5\,\% and falls with complexity, from 32.7\,\% for simple questions to 21.9\,\% for complex ones; on the common subset of 316 questions used to compare systems, the same run scores 30.9\,\% (\cref{tab:main}).
+Final entity-level accuracy, over the 363 strict-set questions on which it is defined for this run, is 27.5\,\% and falls with complexity, from 32.7\,\% for simple questions to 21.9\,\% for complex ones.
+On the common subset of 316 questions used to compare systems, the same run scores 30.9\,\% (\cref{tab:main}).
 
 Most of the performance is lost at the final stage, but that alone does not isolate the cause.
-Comparing the two conditions does: on the common subset, given the benchmark's concepts and query structure, the pipeline reaches 97.4\,\%; when it has to generate the query itself, it drops to 30.9\,\%, a difference of 66.5 points.
-The gap therefore measures concept selection and structural composition together, the two decisions the generator makes, while disambiguation is measured directly in the linking comparison below.
+Comparing the two conditions does.
+On the common subset, given the benchmark's concepts and query structure, the pipeline reaches 97.4\,\%.
+When it has to generate the query itself, it drops to 30.9\,\%, a difference of 66.5 points.
+The gap therefore measures query generation, while disambiguation is measured directly in the linking comparison below.
 The gap does not depend on the subset: on the full strict set of 400 questions, where a question without a scored query counts as zero, the two conditions reach 94.9 and 22.4 pooled Jaccard (\cref{tab:app-master}).
 
-The gold-label condition is nearly tautological, because only the identifiers remain to be filled in, so it is not a performance result in itself; its value lies in the comparison between the two conditions.
+The gold-label condition is nearly tautological, because only the identifiers remain to be filled in, so it is not a performance result in itself.
+Its value lies in the comparison between the two conditions.
 The gap might suggest that structure explains all 66.5 points, but ``structure'' would then absorb every remaining source of error.
-\Cref{fig:gap} breaks the gap down using the annotated failure sample: structural failures, that is the structure category together with the single triple flip (15 of 30 cases), make up 50.0\,\% of failing rows (95\,\% Wilson interval 33.2--66.8\,\%); applied to the 66.5-point gap, this share corresponds to 33.2 points, and projection mismatches and residual identifier errors each account for about one fifth.
+\Cref{fig:gap} breaks the gap down using the annotated failure sample.
+Structural failures, that is the structure category together with the single triple flip (15 of 30 cases), make up 50.0\,\% of failing rows (95\,\% Wilson interval 33.2--66.8\,\%).
+Applied to the 66.5-point gap, this share corresponds to 33.2 points.
+Projection mismatches and residual identifier errors each account for about one fifth.
 Structure is therefore the largest single component, especially for complex questions, while the rest of the gap comes from these other errors.
 These figures are proportions of failing rows, not shares of the accuracy deficit, and they come from a 30-case sample (re-annotation agreement $\kappa$=0.62; agreement with an independent second annotator $\kappa$=0.595).
 
 A second comparison changes only the candidate pools.
 Building the pools with the rate-limited retrieval described in the method chapter raised gold-label accuracy by about 26 points, but end-to-end accuracy by only 2.6.
-Better disambiguation thus helps a great deal when it is the only remaining task, and very little when the model also has to choose the concepts and build the structure, which fits query generation, not disambiguation, being the main bottleneck.
+Better disambiguation thus helps a great deal when it is the only remaining task, and very little when the model also has to choose the concepts and build the structure.
+This fits query generation being the main bottleneck.
 The conclusion also does not rest on the annotated sample alone: the failure analysis examines construct use across all 567 reference queries and every generated run.
 
 \begin{figure}[htbp]
@@ -115,11 +124,8 @@ The conclusion also does not rest on the annotated sample alone: the failure ana
   \caption{What the 66.5-point gap is made of.}
   \label{fig:gap}
   \tabnote{Proportional attribution based on the 30-case taxonomy,
-with Wilson intervals. The values represent counts of failing rows
-rather than shares of the accuracy deficit. The intervals are wide and
-should be reported together with the point estimates. Evidence from the
-corpus-wide analysis is presented later in this chapter, not
-only in this sample.}
+with Wilson intervals. The values are shares of failing rows, not of
+the accuracy deficit.}
 \end{figure}
 
 \section{Linking Performance and Backbone
@@ -155,11 +161,13 @@ evaluated on the working split.}
 
 With a frontier backbone, reasoning over retrieved candidates reaches 97.7 entity F1 and 98.5 property F1, and it resolves every identifier correctly in 89.9\,\% of queries.
 The specialised linkers score lower: 72.8 (GLiNKER, choosing among the same candidates), 28.4 (ELQ) and 26.6 (ReFinED).
-\Cref{fig:linker-ci} reports bootstrap confidence intervals for these scores, resampling the 1,086 entity mentions with replacement and applying the same resample to every linker in each draw: the paired difference between the frontier reasoning linker and GLiNKER is 24.9 points $[22.3, 27.7]$, about five times the width of its own interval.
+\Cref{fig:linker-ci} reports bootstrap confidence intervals for these scores, resampling the 1,086 entity mentions with replacement and applying the same resample to every linker in each draw.
+The paired difference between the frontier reasoning linker and GLiNKER is 24.9 points $[22.3, 27.7]$, about five times the width of its own interval.
 A reference point without any model shows where this accuracy comes from: taking the first Wikidata search result for each label reaches 93.5 on the working split and 90.2 on the official split.
 Reasoning over the candidates adds 4.1 points $[2.7, 5.6]$ to it with the frontier backbone, 2.2 with Qwen2.5-7B and 1.4 with Qwen2.5-14B, the last within noise.
-Most of the linking accuracy therefore comes from labels that Wikidata's search can find, and the reasoning step resolves the remaining ambiguous cases, while GLiNKER's choice falls below the search order itself.
-The intervals of the three reasoning backbones overlap, so they are not ranked against each other; this similarity is the main finding of the backbone comparison below.
+So most of the linking accuracy comes from labels that Wikidata's search can find, and the reasoning step resolves the remaining ambiguous cases, while GLiNKER's choice falls below the search order itself.
+The intervals of the three reasoning backbones overlap, so they are not ranked against each other.
+This similarity is the main finding of the backbone comparison below.
 
 \paragraph{The Shape of the Deficit}
 
@@ -167,25 +175,26 @@ The specialised linkers' errors follow a clear pattern.
 \Cref{fig:linker-pr} shows that ELQ and ReFinED, although developed independently, years apart and with different architectures, share a similar precision–recall profile (precision 67--80\,\%, recall 16--22\,\%): when they predict, they are usually right, but they do not predict often enough.
 \Cref{fig:linker-cx} breaks F1 down by complexity: the two fine-tuned linkers are the only systems whose F1 falls as complexity rises (ReFinED 53.7$\to$35.6$\to$20.3; ELQ 34.1$\to$37.2$\to$23.3), while the linkers that choose among candidates hold steady or improve (frontier 92.9$\to$98.1$\to$97.7; GLiNKER 61.8$\to$70.7$\to$74.1).
 This fits the mention-detection mismatch discussed earlier.
-The set-based metric, which removes the mention-alignment penalty, lifts ELQ to 33.8 and ReFinED to 33.4 and so explains part, but not most, of the deficit; ELQ's entity library, derived from Wikipedia in 2019, contains 72.4\,\% of the reference entities in the official split and 68.6\,\% in the working split, so missing entities explain only a small part of a recall of 18--22\,\%, and mention detection most of it.
+The set-based metric, which removes the mention-alignment penalty, lifts ELQ to 33.8 and ReFinED to 33.4 and so explains part, but not most, of the deficit.
+ELQ's entity library, derived from Wikipedia in 2019, contains 72.4\,\% of the reference entities in the official split and 68.6\,\% in the working split.
+So missing entities explain only a small part of a recall of 18--22\,\%, and mention detection most of it.
 
-Two qualifications apply: GLiNKER was evaluated outside the setting it was designed for, and ELQ and ReFinED solve a different sub-task because they detect their own mentions.
+GLiNKER was evaluated outside the setting it was designed for, and ELQ and ReFinED solve a different sub-task because they detect their own mentions.
 Neither issue, alone or combined, explains the ordering.
 Given the same seven candidates as the reasoning linker, GLiNKER reaches 72.8 with candidate descriptions and 41.8 with labels alone, so the descriptions carry most of its gain.
 The ordering holds on both splits: on the official split, GLiNKER reaches 71.0 against 92.9 for the reasoning linker with Qwen2.5-14B.
 
-\paragraph{Does This Hold on Another
-Benchmark?}
+\paragraph{Replication on LC-QuAD 2.0}
 
 Both splits come from the same dataset, so they cannot show whether the result carries over to other benchmarks.
 Repeating the experiment on LC-QuAD 2.0 (gold-label condition; backbone, candidate depth, prompt and scoring held constant; 150 questions, 203 entity and 250 property mentions) gives 90.6\,\% entity accuracy $[85.8, 93.9]$ and 96.4\,\% property accuracy $[93.3, 98.1]$, with 96.7\,\% of queries fully linked.
-The pattern found on Instruct-to-SPARQL thus reappears on a benchmark with different authors, templates and aims.
+The pattern found on Instruct-to-SPARQL reappears on a benchmark with different authors, templates and aims.
 
-A few qualifications apply.
 Entity accuracy is 4.3 points below the 94.9\,\% the same backbone reaches on Instruct-to-SPARQL, which lies outside the reported interval and cannot be explained by sampling noise alone (LC-QuAD 2.0 may contain more long-tail entities).
 Unlike the labels in Instruct-to-SPARQL's annotated variant, its mention labels are the current Wikidata labels of the gold identifiers and are therefore findable by construction.
-The reported value is thus an upper bound for this benchmark; what matters is the comparison across benchmarks, not the absolute level.
-This experiment replicates the linking measurement; the structural gap is measured on Instruct-to-SPARQL.
+The reported value is an upper bound for this benchmark, and the comparison across benchmarks matters more than the absolute level.
+This experiment replicates the linking measurement only.
+The structural gap is measured on Instruct-to-SPARQL.
 Separately, six of the 357 gold identifiers in the sample (1.7\,\%) no longer resolve against Wikidata, because they have been deleted or merged since the benchmark was published in 2019.
 
 \subsection{Backbone Dependence by
@@ -201,12 +210,12 @@ The reasoning-based linker was evaluated again with two open-weight backbones, w
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.88\textwidth]{figures/fig_backbone.pdf}
-  \caption{Backbone dependence differs by stage.}
+  \caption{Disambiguation and label-generation results by backbone.}
   \label{fig:backbone}
-  \tabnote{Disambiguation over retrieved candidates is largely
-independent of the backbone. However, the same open model loses more
-than forty points during label generation because it has weaker
-knowledge of Wikidata's property vocabulary.}
+  \tabnote{Frontier model against the open 14B model: entity F1 at the
+disambiguation stage (working split), and the fully linked rate and pooled
+Jaccard of the official-split pipeline when the respective model generates
+the labelled query.}
 \end{figure}
 
 At the disambiguation stage, the backbone makes little difference.
@@ -214,12 +223,11 @@ The frontier model reaches 97.7 entity F1, the 14-billion-parameter open model 9
 
 During label generation, the backbone matters more.
 On the official split, using the open model for both stages drops the linked rate from 92.1\,\% to 49.7\,\%, and pooled accuracy from 23.4 to 4.8.
-The pipeline does not just get slightly worse, but also it collapses.
 
 \Cref{fig:labelfail} shows why.
 Asked to produce Wikidata entity and property labels on its own, the open model writes 270 of 1,645 distinct labels (16.4\,\%) that Wikidata's search index cannot find.
 The frontier model writes 23 of 687 such labels (3.3\,\%) on the same questions.
-The open model's failure rate is therefore 4.9 times higher.
+The open model's failure rate is 4.9 times higher.
 
 About half of the open model's unfindable labels are near-misses of existing property names, such as ``crew member(s)'' and ``is named after''.
 Another 29\,\% are camelCase RDF-style identifiers, such as locatedInTheAdministrativeTerritory.
@@ -230,13 +238,13 @@ The open model also generates 2.4 times as many distinct labels for the same que
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.88\textwidth]{figures/fig_label_failures.pdf}
-  \caption{What the open-weight model gets wrong when it names things.}
+  \caption{Unfindable labels by failure type and backbone.}
   \label{fig:labelfail}
   \tabnote{The figure includes labels that the Wikidata search index
 cannot find. The official split is used, and labels are deduplicated
 separately for both backbones. camelCase, snake\_case and bare
 identifiers occur only for the open model and account for 34\,\% of its
-unfindable labels. The main problem is lexical rather than conceptual.}
+unfindable labels.}
 \end{figure}
 
 One possible explanation is that the open model mainly has a formatting problem that a deterministic fix could solve.
@@ -245,16 +253,15 @@ All 270 labels were normalised and searched again.
 
 The procedure repaired 43 labels (15.9\,\%), lowering the failure rate from 16.4\,\% to 13.8\,\%.
 Splitting camelCase recovered 36\,\% of the labels in that category, but such mechanical cases were only a minority of the failures.
-The largest category could not be repaired, because terms such as ``significant achievement'' are alternative names for existing Wikidata properties, not spelling or formatting errors.
+The largest category could not be repaired, because terms such as ``significant achievement'' are alternative names for existing Wikidata properties.
 
-The difference between the backbones at the generation stage is therefore mainly a matter of knowing Wikidata's vocabulary.
+The difference between the backbones at the generation stage is mainly a matter of knowing Wikidata's vocabulary.
 Neither surface formatting nor reasoning ability explains it.
 The next chapter discusses the practical implications.
 
-\paragraph{Does the Deficit Close with a Newer
-Model?}
+\paragraph{Replication with Claude Opus 5}
 
-All results so far use one frontier generator, so the diagnosis might reflect that particular model rather than the task.
+All results so far use one frontier generator, so the diagnosis might reflect that particular model.
 The baseline condition was therefore repeated with Claude Opus 5.
 Nothing else changed: the system prompt, the absence of extended thinking, the disambiguation backbone and the scoring procedure stayed the same.
 
@@ -265,14 +272,12 @@ Compliance with subclass closure rose from 19.5\,\% to 43.6\,\%, and compliance 
 Statement-node use increased from 18.5\,\% to 22.3\,\%, and qualifier use from 22.4\,\% to 28.2\,\%.
 Value-node use did not improve at all: of the 35 reference queries that need a value node, both models use one in only two (5.7\,\%), and Opus 5 uses value nodes three times in total.
 
-The newer model is thus much better at constructs that are mainly a matter of SPARQL syntax, and improves far less on constructs that require understanding how Wikidata represents information.
+The newer model is much better at constructs that are mainly a matter of SPARQL syntax, and improves far less on constructs that require understanding how Wikidata represents information.
 This mirrors the distinction drawn in the failure analysis below, between general-purpose SPARQL constructs, which models already use fairly often, and Wikidata-specific reification and hierarchy idioms, which remain difficult.
-Model progress helps the former more than the latter.
 
-Three further differences are worth reporting.
 Opus 5 fully links 92.6\,\% of the 567 questions, against 95.2\,\% for Opus 4.8.
 It produces six empty generations, where the earlier model produces none, and leaves 34 of 778 labels unresolved, against 25 of 852.
-The candidate pool was pre-seeded and no rate limiting occurred, so these differences reflect the backbone and not the retrieval conditions.
+The candidate pool was pre-seeded and no rate limiting occurred, so these differences come from the backbone itself.
 The newer model writes somewhat more labels that Wikidata's search index cannot find, which means its accuracy gain comes despite a slightly lower linking rate.
 
 \section{Structural Failure
@@ -280,8 +285,8 @@ Analysis}
 
 \label{sec:error-analysis}
 
-Three independent sources of evidence characterise the main failure pattern.
-They are presented in order of increasing sample size: the smallest is the easiest to interpret, the largest gives the strongest evidence at corpus level.
+The main failure pattern is characterised with evidence of increasing sample size: an annotated failure sample, construct counts across the corpus, and features of the reference queries.
+The smallest is the easiest to interpret, and the largest gives the strongest evidence at corpus level.
 
 \paragraph{Error Taxonomy}
 
@@ -296,11 +301,9 @@ Identifier-related errors still occur, though; three of the fifteen complex fail
 
 The author categorised the cases in a single annotation pass, so the proportions describe recurring failure modes and should not be read as population-level frequencies.
 
-\paragraph{How Reliable Is the
-Categorisation?}
+\paragraph{Annotation Reliability}
 
-The reliability of the categorisation was tested rather than simply listed as a limitation.
-Ten of the thirty cases were selected with an independent seed, anonymised and shuffled, and then re-annotated by the same person without access to the first classification.
+To check the reliability of the categorisation, ten of the thirty cases were selected with an independent seed, anonymised and shuffled, and then re-annotated by the same person without access to the first classification.
 Raw agreement was 7 of 10, and Cohen's $\kappa$ was 0.62, which is conventionally regarded as substantial agreement.
 
 Two of the three disagreements concerned the boundary between structural and wrong-property errors, which is exactly the distinction the attribution analysis depends on.
@@ -310,17 +313,17 @@ Structure stayed the largest single category, but by a smaller margin.
 The second annotation also distinguished between an incorrect constraint, a missing constraint and missing aggregation.
 The current taxonomy groups these cases under ``structure'', so the category is fairly broad.
 
-\paragraph{A second, independent
-annotator}
+\paragraph{A Second, Independent
+Annotator}
 
 Consistency within one annotator does not show that others read the categories the same way.
-A second annotator, an undergraduate computer science student not involved in the project, therefore classified all thirty cases independently, using only the written guide reproduced in the appendix.
+A second annotator, an undergraduate computer science student not involved in the project, classified all thirty cases independently, using only the written category guide, which is provided in the accompanying repository.
 
 Raw agreement was 21 of 30, and Cohen's $\kappa$ was 0.595, slightly below the intra-annotator value.
 The two annotators gave similar estimates for the category: the structure category accounted for 46.7\,\% of cases according to the author and 43.3\,\% according to the second annotator.
 Only two of the nine disagreements concerned the boundary between structure and wrong-property errors.
 
-The stage attribution is therefore not just one person's interpretation.
+The attribution therefore holds across two annotators.
 Four of the nine disagreements, however, involved the quality of the reference query.
 The second annotator pointed out specific issues: a missing country constraint, a missing class restriction, a grouped count where the question asked for items, and a flag that was computed but never used as a filter.
 These judgements raise the estimated reference-noise rate in the sample from 3.3\,\% to 16.7\,\%.
@@ -334,8 +337,9 @@ A flag rate is not a noise rate, so a stratified sample of 40 flagged and 40 unf
 Half of the flagged queries were judged faulty, against 6.7\,\% of the unflagged ones, which gives an initial estimate of 13.3\,\%.
 
 A second independent judge, a doctoral student in computer science who was blind to the author's decisions and to the sampling strata, reviewed the same 56 rows.
-Agreement was 73.2\,\% ($\kappa$=0.426); the second judge's estimate was 32.0\,\%, against 13.3\,\% for the author.
-The disagreement was systematic, not random, as 12 of 15 cases went the same way and came from detection, but not from different standards of correctness. The author's first pass relied on the executed output, while the second judge also read the query text and caught issues such as a commented-out deduplication filter or an unchecked \texttt{OPTIONAL} block.
+Agreement was 73.2\,\% ($\kappa$=0.426).
+The second judge's estimate was 32.0\,\%, against 13.3\,\% for the author.
+The disagreement was systematic: 12 of the 15 cases went the same way, and they came from detection rather than from different standards of correctness. The author's first pass relied on the executed output, while the second judge also read the query text and caught issues such as a commented-out deduplication filter or an unchecked \texttt{OPTIONAL} block.
 
 The two judges then reconciled the fifteen disagreements together against the query text and resolved ten in the second judge's favour.
 The reconciled estimate is \textbf{24.6\,\% of the strict fair set, with an interval of $[12.9, 42.0]$}.
@@ -343,13 +347,13 @@ This counts the five cases that remained unresolved (genuine ambiguity about the
 Reconciliation also showed that the screen's weakness is recall, not precision: its accuracy on the flagged group was unchanged (13/26 both before and after), while the fault rate in the unflagged group rose from 6.7\,\% to 20.0\,\%.
 
 Roughly one quarter of the reference queries may therefore be unsound.
-This has two consequences: some failures attributed to query structure may actually come from the benchmark, and a system may be penalised for correctly answering a question that the benchmark encodes incorrectly.
+Some failures attributed to query structure may then come from the benchmark, and a system may be penalised for correctly answering a question that the benchmark encodes incorrectly.
 The reported accuracy figures are not corrected for reference noise, for the comparability reasons discussed in the limitations.
 
 \paragraph{Mechanism}
 
 The structural failures follow a clear pattern: the model writes syntactically valid SPARQL but uses the direct-claim shortcut \texttt{wdt:} where the reference needs a more complex construct, such as transitive subclass closure, statement qualifiers, normalised value nodes, explicit aggregation, alternation, the lexeme model, or sitelink/badge access.
-This is not a general inability to write SPARQL but an underuse of Wikidata's reification and hierarchy idioms.
+General-purpose SPARQL is handled well; the deficit is confined to Wikidata's reification and hierarchy idioms.
 Averaging a height property directly instead of through its normalised value node, for example, silently mixes units and yields an arithmetically wrong result that the syntax alone does not reveal.
 Near misses caused by projection mismatches, where the query returns a relation's object instead of its subject, were checked separately on ten additional zero-scoring rows.
 All ten were indeed incorrect, so the reported accuracy needs no adjustment.
@@ -367,9 +371,7 @@ Because the sample is small, the same mechanism was tested at corpus scale acros
   \label{fig:constructs}
   \tabnote{Each row shows the minimum and maximum count across the
 eleven generated runs, while the rule indicates the count in the
-reference queries. All systems underuse reification and hierarchy
-constructs, whereas general-purpose constructs appear at rates closer to
-the reference.}
+reference queries.}
 \end{figure}
 
 Every system underuses Wikidata-specific constructs: of the 130 reference queries that use statement nodes, generated systems use them in 22--87; of 85 with qualifiers, in 16--52; and of 35 with normalised value nodes, in 0--4 (the strongest baseline never uses them).
@@ -378,7 +380,7 @@ General-purpose constructs (\texttt{FILTER}, \texttt{GROUP BY}, \texttt{OPTIONAL
 Usage counts alone cannot tell a system that never uses a construct from one that uses it in the wrong places, so~\Cref{fig:agreement} reports construct-agreement F1 instead.
 Agreement is low and does not follow usage frequency: zero-shot GPT-5.4 uses subclass closure 212 times against 149 in the reference, yet agrees on only 54.8\,\% of questions, applying it where it is not needed and leaving it out where it is.
 Only general-purpose constructs reach the 55--60 range.
-The problem is therefore calibration, not only coverage.
+So the models misplace these constructs as well as underusing them.
 
 \begin{figure}[htbp]
   \centering
@@ -387,9 +389,8 @@ The problem is therefore calibration, not only coverage.
   \label{fig:agreement}
   \tabnote{The figure reports per-question F1 for using a construct
 exactly where it appears in the reference query. Usage counts alone
-cannot distinguish missing use from excessive use. Agreement measures
-both. Low values indicate poor calibration, not necessarily complete
-ignorance of the construct.}
+cannot distinguish missing use from excessive use, and agreement
+measures both.}
 \end{figure}
 
 Finally, features of the reference query correlate with achieved accuracy in the expected direction (\cref{fig:predictors}): aggregation goes with 12.6 points lower accuracy, value nodes with 10.1, alternation with 9.6, transitive closure with 8.6 and statement nodes with 8.2, while \texttt{OPTIONAL} is the only feature linked to higher accuracy ($+10.9$).
@@ -410,22 +411,25 @@ Recovery}
 
 Seven generation conditions were compared, differing only in their system prompts.
 \Cref{fig:arms} shows accuracy by intervention and the paired difference against the baseline, and~\cref{tab:significance} reports the statistical tests.
-With a Holm correction for the six comparisons, every permutation result stays below 0.05; the Wilcoxon signed-rank test, which uses the ranks rather than the sizes of the paired changes, is above 0.05 for idiom guidance (0.058) and the construct profile (0.069).
+With a Holm correction for the six comparisons, every permutation result stays below 0.05.
+The Wilcoxon signed-rank test, which uses the ranks rather than the sizes of the paired changes, is above 0.05 for idiom guidance (0.058) and the construct profile (0.069).
 
 Idiom guidance gives a modest improvement.
-Averaged over the questions each arm scored, entity-level accuracy rises from 26.8 to 30.2; over the 354 questions scored in both arms, the paired difference is $+3.88$ points $[1.18, 6.66]$, with a permutation result of $p = 0.005$.
+Averaged over the questions each arm scored, entity-level accuracy rises from 26.8 to 30.2.
+Over the 354 questions scored in both arms, the paired difference is $+3.88$ points $[1.18, 6.66]$, with a permutation result of $p = 0.005$.
 The gain grows with query complexity, in line with the error analysis, where structural failures dominate at high complexity.
 
 The average gain hides variation between questions, however.
 Seventy questions improve, while 68 get worse.
-The intervention thus shifts the level and distribution of performance rather than improving individual questions systematically.
+The intervention shifts the overall level and distribution of performance, but it does not improve individual questions systematically.
 
 Schema evidence has the opposite effect.
 Averaged over the questions each arm scored, the verbose version lowers accuracy to 13.0 and the targeted version to 14.5.
 The paired differences are $-14.65$ and $-12.66$, both with $p < 0.001$.
 This runs against the improvements reported in research on schema-aware grounding, including~\parencite{zhang2026saga}.
 The loss is about four times as large as the gain from idiom guidance.
-It does not follow that retrieval augmentation is harmful in general: systems that combine retrieved context with an explicit validation or correction layer, rather than unconstrained prompt text, report gains from the same broad strategy~\parencite{pan2025firesparql}; the finding here concerns schema evidence presented as evidence, not as a constraint.
+It does not follow that retrieval augmentation is harmful in general: systems that combine retrieved context with an explicit validation or correction layer, rather than unconstrained prompt text, report gains from the same broad strategy~\parencite{pan2025firesparql}.
+The finding here concerns schema evidence presented as evidence, not as a constraint.
 
 \begin{figure}[htbp]
   \centering
@@ -438,9 +442,7 @@ procedure remain constant. The left panel shows mean accuracy on the 329
 rows scored in every arm. These levels are comparable across arms but
 are slightly higher than the pairwise values in the text because the
 latter use each comparison's own common rows. The right panel shows the
-paired difference against the baseline with a 95\,\% bootstrap interval.
-Guidance produces a small improvement, while evidence produces a large
-decline. Supplying graph knowledge as a restriction performs best.}
+paired difference against the baseline with a 95\,\% bootstrap interval.}
 \end{figure}
 
 \paragraph{What the Interventions
@@ -452,19 +454,18 @@ The prompt changes behaviour a lot, sometimes pushing simple syntactic construct
 Value-node use barely moves, and aggregation does not change at all despite an explicit instruction to use it.
 
 The construct counts suggest that over-application is the main way the grounding interventions fail: against reference counts of 149 subclass closures, 130 statement nodes and 85 qualifiers, the targeted schema arm produces 342, 256 and 142.
-Shorter, conditional evidence therefore increases over-application instead of reducing it.
+Shorter, conditional evidence increases over-application instead of reducing it.
 The grounded arms also share only 38\,\% of their label vocabulary with the baseline, compared with 73\,\% for the idiom arm.
-Schema evidence thus causes extensive rewriting rather than targeted correction, even though the schema cards were built from reference-linked mentions, a favourable setting in which the intervention fails.
+Schema evidence leads the model to rewrite its queries extensively, even though the schema cards were built from reference-linked mentions, a favourable setting in which the intervention fails.
 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.88\textwidth]{figures/fig_idiom_behaviour.pdf}
   \caption{What the idiom prompt changes in the generated queries.}
   \label{fig:idiom}
-  \tabnote{Construct counts move towards, and in some cases beyond,
-the reference rate for subclass closure. Value-node usage and
-aggregation change very little despite explicit instructions.
-Over-application is visible, but its effect on accuracy is limited.}
+  \tabnote{Number of the 567 generated queries that use each
+construct under the baseline prompt and with the idiom rules. The
+vertical mark gives the count in the reference queries.}
 \end{figure}
 
 \paragraph{Applying Guidance
@@ -473,7 +474,7 @@ Selectively}
 If over-application is the problem, guidance could be given only when a query needs the relevant construct.
 That requires two conditions, and the results fully support neither.
 First, the need must be predictable from the question: a classifier that uses only the question text predicts construct use with an AUC of 0.62--0.82.
-For subclass closure, its strongest features are topical terms (``libraries'', ``hospitals'', ``scientists'') rather than linguistic patterns, because whether closure is needed depends on how Wikidata models the domain, not just on how the question is worded.
+For subclass closure, its strongest features are topical terms (``libraries'', ``hospitals'', ``scientists''), because whether closure is needed depends on how Wikidata models the domain as well as on how the question is worded.
 Second, guidance must do harm where it is not needed, and the results do not show this: idiom guidance helps most when the reference needs subclass closure ($+9.72$) or value nodes ($+7.97$), but it still raises accuracy by 2.0--4.3 points when no idiom is required.
 On the 354 questions scored in both arms, an oracle gate that gives guidance only when a reification or hierarchy construct is present reaches 30.1, below the 31.2 of giving it unconditionally.
 Selective application therefore does not beat always-on guidance, even with perfect knowledge of need, because over-application costs little.
@@ -496,16 +497,15 @@ Knowing which construct is required is not the main bottleneck.
 The constrained-vocabulary arm supplies a different kind of information.
 It gives a closed list of the entities and properties that the reference query uses and forbids the model to use any identifier outside that list.
 Accuracy rises by $+18.99$ points $[15.03, 23.11]$, with $p < 0.001$.
-Here 141 questions improve and 41 get worse, which makes it the only intervention whose effect is consistently positive rather than mainly a redistribution.
+Here 141 questions improve and 41 get worse, which makes it the only intervention whose effect is consistently positive.
 
-Two qualifications are needed.
-First, this is not a standalone performance claim: like the gold-label condition, the intervention receives part of the answer in advance, so its absolute performance is partly definitional.
-Second, the result is meaningful as a comparison, because the enumerative schema cards were built from the same reference-linked mentions.
+This is not a standalone performance claim: like the gold-label condition, the intervention receives part of the answer in advance, so its absolute performance is partly definitional.
+The result is meaningful as a comparison, because the enumerative schema cards were built from the same reference-linked mentions.
 
 The two arms receive information about the same entities and differ only in how it is presented.
 Given as available evidence, it lowers accuracy by 14.65 points.
 Given as a closed vocabulary that the model must use, it raises accuracy by 18.99 points.
-The resulting difference of 34 points, with non-overlapping intervals, motivates the design principle discussed in the next chapter. Prompt-level intervention is therefore not exhausted; what the experiments rule out is that more advice alone is enough.
+The resulting difference of 34 points, with non-overlapping intervals, motivates the design principle discussed in the next chapter. Prompt-level intervention can still help, but more advice alone does not.
 
 \paragraph{Which Knowledge Matters: A
 Two-by-Two}
@@ -518,18 +518,23 @@ Concept selection thus accounts for the larger part of the error that these two 
 Neither oracle composes the query: with both supplied, entity-level accuracy reaches 50.4 on the 353 paired questions, whereas the gold-label condition, which supplies the composed query, reaches 97.4.
 The model can recognise and use a named construct but still struggles to compose the correct query around the right concepts.
 
-\paragraph{Would a Mechanical Filter Do
-Better?}
+\paragraph{Type-Constraint Filtering}
 
-The constrained-vocabulary arm restricts the generator through instructions, which it may ignore; \citet{zhang2026saga} instead remove type-incompatible candidates mechanically before generation.
+The constrained-vocabulary arm restricts the generator through instructions, which it may ignore.
+\citet{zhang2026saga} instead remove type-incompatible candidates mechanically before generation.
 Filtering cannot be undone, so a removed candidate cannot be recovered by later reasoning.
-The main question is therefore not how much accuracy filtering might add, but whether it keeps the correct property.
-Across every property mention with at least two candidates including the reference property (1,132 mentions, 4.39 candidates on average), a candidate is removed when it declares a Wikidata type constraint (P2302, constraint type Q21503250) and none of its permitted classes covers a subject type present in the question (taken from the row's reference entities via P31/P279 closure).
-Of 1,062 candidate properties, 704 declare a type constraint, but only 80 mark it as mandatory, while 616 have a type constraint without any status, so that a violation is reported, not prohibited (a property can carry several such constraints).
-Applying every declared constraint affects 79.8\,\% of mentions and shrinks the average pool from 4.39 to 3.02, but the reference property survives only 92.5\,\% of these operations; restricting the filter to mandatory constraints raises survival to 99.1\,\% but removes only about half a candidate per mention and resolves just three of the 1,132.
+The first thing to check is whether filtering keeps the correct property.
+The test covers every property mention with at least two candidates including the reference property (1,132 mentions, 4.39 candidates on average).
+A candidate is removed when it declares a Wikidata type constraint (P2302, constraint type Q21503250) and none of its permitted classes covers a subject type present in the question.
+Subject types are taken from the row's reference entities via P31/P279 closure.
+Of 1,062 candidate properties, 704 declare a type constraint.
+Only 80 mark it as mandatory, while 616 have a type constraint without any status, so a violation is reported but not prohibited (a property can carry several such constraints).
+Applying every declared constraint affects 79.8\,\% of mentions and shrinks the average pool from 4.39 to 3.02, but the reference property survives only 92.5\,\% of these operations.
+Restricting the filter to mandatory constraints raises survival to 99.1\,\% but removes only about half a candidate per mention and resolves just three of the 1,132.
 
 The two filters trade off differently: the stronger one removes the correct answer in roughly one of thirteen affected mentions, while the safer one removes almost nothing.
-Three factors make even the safer estimate generous: the type universe combines all entity types in a row, subject types come from reference entities rather than from a signal available at deployment, and forty-one mentions have no reference entity and would require abstention.
+Even the safer estimate is generous.
+The type universe combines all entity types in a row, subject types come from reference entities and not from a signal available at deployment, and forty-one mentions have no reference entity and would require abstention.
 
 The principle of constraining rather than enumerating still holds, but implementing it mechanically is not straightforward.
 Constraining the generator works when the constraint is correct.
@@ -585,11 +590,10 @@ When several candidates agree, the preferred run is usually already among them.
 When they disagree, the centroid often picks a plausible majority rather than the correct minority.
 Where most candidates are wrong, checking whether the preferred query is valid is more useful than voting among all of them.
 
-Two notes apply to this comparison.
-First, the results in this section come from a separate execution pass.
+The results in this section come from a separate execution pass.
 Its single-run scores are 0.8 to 1.4 points lower than the corresponding scores elsewhere in the chapter, because of endpoint state and the cap on returned values.
 The comparisons within this section are internally consistent, but these figures should not be combined with the other tables.
-Second, the cascade order uses knowledge of how good the runs are relative to each other.
+The cascade order also uses knowledge of how good the runs are relative to each other.
 The split-half analysis shows that the gain holds out of sample, but a deployed system would have to choose the order on a validation split.
 
 \section{Benchmark Comparison and
@@ -601,7 +605,7 @@ Systems}
 \label{sec:res-authors}
 
 The benchmark authors publish generated queries for every test question under fourteen configurations.
-Re-executing these stored outputs on the dump used in this thesis, with the same fair set and evaluation metric, allows a comparison free of additional inference variation, as shown in~\Cref{fig:frozen}.
+Re-executing these stored outputs on the dump used here, with the same fair set and evaluation metric, allows a comparison free of additional inference variation, as shown in~\Cref{fig:frozen}.
 
 \begin{figure}[htbp]
   \centering
@@ -613,24 +617,24 @@ Re-executing these stored outputs on the dump used in this thesis, with the same
 
 \emph{Figure note}.
 All systems are evaluated on the same dump using the same strict fair set and metric.
-The authors' results come from re-executing their published generated queries,  and not from running inference again.
+The authors' results come from re-executing their published generated queries.
 
 Every system is scored on all 370 strict-set questions of the official split, and a question for which a system produced no query counts as zero.
-The fine-tuned models reach pooled fair Jaccard scores of 61.2 and 58.3, and the pipeline developed in this thesis reaches 23.4.
+The fine-tuned models reach pooled fair Jaccard scores of 61.2 and 58.3, and the pipeline developed here reaches 23.4.
 The authors' GPT-4 and GPT-3.5 baselines reach 11.5 and 4.4, respectively.
-Without any in-domain training, the pipeline therefore more than doubles the authors' frozen baselines and reaches more than one third of the fine-tuned systems' score; since its disambiguation is near-perfect, the remaining difference once more points to query generation.
+Without any in-domain training, the pipeline more than doubles the authors' frozen baselines and reaches more than one third of the fine-tuned systems' score.
+Since its disambiguation is near-perfect, the remaining difference once more points to query generation.
 This is a comparison between systems: the pipeline also uses a newer generator than the authors' GPT-4 baseline.
 The pipeline's own contribution is measured on the working split, where it adds 6.0 pooled points over the same generator used zero-shot (19.1 to 25.1, \cref{tab:main}).
 
-Two observations help explain what this gap measures.
-First, 56\,\% of the best fine-tuned model's outputs are character-identical to the reference query.
+Of the best fine-tuned model's outputs, 56\,\% are character-identical to the reference query.
 By contrast, exact and identifier-masked overlap between training and test queries is only 0.6\,\%, and the authors' training code loads the official training split.
 This does not establish data leakage.
 It rather suggests that fine-tuning teaches the model to reproduce the highly templated query style of the benchmark.
 The benchmark was crawled from tutorial pages, and fine-tuning on 1,854 in-distribution queries exposes the model directly to this style.
 A structural memorisation test indicates that the advantage extends beyond direct recall: accuracy is 55.1\,\% for rows whose structure closely matches a training query and 52.5\,\% for rows without such a match.
 
-Second, base models without fine-tuning score at or near zero.
+Base models without fine-tuning score at or near zero.
 Llama 3 70B, for example, reaches only 0.2\,\% accuracy, with an execution rate of 14.2\,\%.
 On this benchmark, the fine-tuned 7B model is roughly three hundred times more accurate than the base 70B model.
 Model scale alone, it seems, does not replace what fine-tuning contributes.
@@ -640,15 +644,12 @@ One possible explanation is that fine-tuning improves conformity to the expected
 
 \label{sec:res-validity}
 
-Two checks address the main concerns that could affect how the results are read.
-
-\paragraph{Are the Frozen Models Reproducing the
-Benchmark?}
+\paragraph{Memorisation Check}
 
 \input{tables/memorisation_frontier}
 
 The Instruct-to-SPARQL dataset has been public since May 2025, while the models evaluated here were released in 2026 and their training data are undisclosed.
-Memorisation is therefore a real concern.
+Memorisation is a real concern.
 Recent work on LLM-generated SPARQL likewise shows that memorisation and externally injected graph knowledge can substantially affect apparent benchmark performance, which makes a direct check necessary~\citep{gashkov2025memorization}.
 The check uses the same skeleton comparison as the earlier analysis: identifiers, literals, variable names, numbers and prefixes are removed, leaving only the query structure.
 
@@ -660,14 +661,14 @@ This contrasts with the 56\,\% of character-identical outputs reported for the b
 The figure also includes a measure that could be mistaken for evidence of copying.
 Between 47.5\,\% and 74.2\,\% of generated skeletons have at least 0.90 similarity to some other query in the dataset.
 This does not necessarily indicate memorisation.
-Generated skeletons are often simple, and simple structures naturally resemble many other queries; the rate is also higher than the 36.5\,\% similarity rate among the reference queries themselves.
+Generated skeletons are often simple, and simple structures naturally resemble many other queries.
+The rate is also higher than the 36.5\,\% similarity rate among the reference queries themselves.
 
 Structural simplicity likewise explains the apparent accuracy advantage on questions that are structurally close to known queries.
 Within complexity groups, the difference shrinks or disappears: zero-shot Claude, for example, scores 23 versus 22 on medium questions and 19 versus 16 on complex ones.
 The test detects structural reproduction, not memorisation of a complete mapping from question to answer.
 
-\paragraph{Is the Benchmark Representative of Real Wikidata
-Querying?}
+\paragraph{Representativeness of the Benchmark}
 
 \input{tables/wdql_prevalence}
 
@@ -702,12 +703,11 @@ Benchmark queries are larger on average, which confounds the comparison.
 \cref{fig:wdql-size} controls for query size.}
 \end{figure}
 
-Two conclusions follow.
-First, the relevant idioms are not just artefacts of the benchmark: roughly two in five non-trivial queries use at least one of them, so a system that cannot generate them will fail on a substantial share of real Wikidata queries.
-Second, the benchmark does over-represent these constructs.
+The relevant idioms are not just artefacts of the benchmark: roughly two in five non-trivial queries use at least one of them, so a system that cannot generate them will fail on a substantial share of real Wikidata queries.
+The benchmark does, however, over-represent these constructs.
 At matched query sizes, they are about 1.2 to 2 times more frequent in the benchmark, and value nodes around 3.4 times.
-The accuracy reported in this thesis may therefore underestimate performance on questions distributed more like real query logs.
+The accuracy reported here may therefore underestimate performance on questions distributed more like real query logs.
 
-Two caveats apply.
-The query-log questions are generated by a model, not written by users.
+The comparison has limits of its own.
+The query-log questions were generated by a model.
 The logs also date from 2017--2018 and include bot traffic, which may explain the relatively high frequency of FILTER and LIMIT clauses.

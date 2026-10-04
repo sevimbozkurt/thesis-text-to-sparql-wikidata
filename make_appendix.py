@@ -168,7 +168,7 @@ try:
             esc(r.get("complexity", "")),
             esc(trunc(r.get("question", ""), 150)),
             r"\texttt{" + esc(r.get("error_category", "")) + "}",
-            esc(trunc(r.get("notes", ""), 150)).replace("/", r"/\allowbreak{}"),
+            esc(trunc(r.get("notes", "").replace(" — ", "; "), 150)).replace("/", r"/\allowbreak{}"),
         ]) + r" \\")
     lines.append(r"\end{longtable}")
     lines.append(r"\fussy\normalsize")

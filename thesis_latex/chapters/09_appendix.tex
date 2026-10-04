@@ -5,11 +5,11 @@
 \label{app:prompts}
 
 The prompt-intervention experiment changes only the generation prompt, so the prompts themselves are the experiment.
-All four are reproduced below exactly as used, extracted mechanically from the source files rather than transcribed.
+All four are reproduced below exactly as used, extracted mechanically from the source files.
 
 The baseline arm uses~\cref{lst:prompt-gen} alone.
 The idiom arm uses the base system prompt followed by the idiom guide (\cref{lst:prompt-idiom}).
-The two grounding arms append a per-question schema card built by the functions in~\cref{lst:prompt-schema}; \cref{lst:schema-cards} shows one card of each form.
+The two grounding arms append a per-question schema card built by the functions in~\cref{lst:prompt-schema}, and \cref{lst:schema-cards} shows one card of each form.
 Disambiguation (\cref{lst:prompt-disamb}) is identical in every arm.
 
 \input{tables/app_prompts_generation}
@@ -33,16 +33,15 @@ Further tables that are too large to typeset are provided in the accompanying re
 \label{app:annotations}
 
 All thirty annotated cases from the reported end-to-end run are listed below, so that the categorisation underlying the failure analysis can be checked independently.
-The sample is complexity-stratified with seed 42; the questions and notes are truncated for width, and the full records, including both queries, are in the accompanying repository.
+The sample is complexity-stratified with seed 42.
+The questions and notes are truncated for width, and the full records, including both queries, are in the accompanying repository.
 
 \input{tables/app_annotations}
 
-A second annotator, an undergraduate computer science student, not connected to this work or the benchmark, independently annotated the same thirty cases using only the written category guide.
-The study was designed and conducted by the author.
-
-\Cref{tab:app-interannotator} gives both sets of labels case by case.
+\Cref{tab:app-interannotator} gives the author's labels and those of the second annotator described in the failure analysis, case by case.
 Raw agreement is 21 of 30 and Cohen's $\kappa$ is 0.595.
-The two readings put the structural share at 46.7\,\% and 43.3\,\%, and differ mainly on whether four cases are failures of the generated query or of the reference; that difference is discussed in the failure analysis and among the limitations.
+The two readings put the structural share at 46.7\,\% and 43.3\,\%, and differ mainly on whether four cases are failures of the generated query or of the reference.
+That difference is discussed in the failure analysis and among the limitations.
 
 \input{tables/app_interannotator}
 
@@ -50,7 +49,7 @@ The two readings put the structural share at 46.7\,\% and 43.3\,\%, and differ m
 \label{app:errata}
 
 Several intermediate results changed during the project when figures were recomputed from the stored inputs after a change elsewhere in the pipeline.
-The corrections that affected the method or a reported conclusion are listed below; the discussion chapter considers what they imply for evaluation practice.
+The corrections that affected the method or a reported conclusion are listed below, and the discussion chapter considers what they imply for evaluation practice.
 
 \begin{itemize}
 \item \textbf{Scoring of empty results.}
@@ -58,9 +57,11 @@ The Jaccard score between two empty result sets is 1.0, so a generated query tha
 The strict fair set, which requires a non-empty reference result, removes this effect and is used for all headline results.
 \item \textbf{Silent rate limiting during candidate retrieval.}
 Throttled requests to the Wikidata search API returned empty candidate lists instead of errors.
-This produced an apparent candidate ceiling of 80.4\,\%, first read as a retrieval bottleneck; with rate-limited retrieval the ceiling rises above 99\,\%, and the linker comparison was rebuilt on the repaired pools.
+This produced an apparent candidate ceiling of 80.4\,\%, first read as a retrieval bottleneck.
+With rate-limited retrieval the ceiling rises above 99\,\%, and the linker comparison was rebuilt on the repaired pools.
 \item \textbf{Infrastructure errors counted as model failures.}
-API errors and timeouts had been recorded as empty generations, which made generation appear to fail on a third of complex questions; every affected row succeeded when regenerated.
+API errors and timeouts had been recorded as empty generations, which made generation appear to fail on a third of complex questions.
+Every affected row succeeded when regenerated.
 \item \textbf{Error sample from a superseded run.}
 The first error-analysis sample was drawn from a run that was later replaced.
 The sample was redrawn from the reported run and annotated again, and a claim based on the earlier sample, that complex failures contain no linking errors, was withdrawn.
@@ -70,12 +71,13 @@ The sample was redrawn from the reported run and annotated again, and a claim ba
 \label{app:repro}
 
 \paragraph{Regenerating the results.} Every number, table and figure in this thesis can be regenerated from the stored data with a single script in the accompanying repository.
-The offline run recomputes all analyses and rebuilds the tables and figures in about three minutes; an optional second mode also re-executes the stored queries against QLever, which takes about 80 minutes.
+The offline run recomputes all analyses and rebuilds the tables and figures in about three minutes.
+An optional second mode also re-executes the stored queries against QLever, which takes about 80 minutes.
 
 \paragraph{Environment.} All queries execute against a single Wikidata dump dated
 14 March 2026, served by the AI \& Explainability group's QLever instance~\parencite{bast2017qlever}.
 The dataset revision is pinned in the repository.
-Queries relying on Blazegraph-specific features are excluded and the exclusions are reported as a taxonomy in the method chapter rather than folded into the denominator.
+Queries relying on Blazegraph-specific features are excluded and the exclusions are reported as a taxonomy in the method chapter.
 
 \paragraph{What is \emph{not} re-run.} Generation, disambiguation and the
 fine-tuned linker runs required paid API calls (OpenRouter and Anthropic) and the group's GPU server.
@@ -88,14 +90,14 @@ The repository also documents the order in which the original experiments were r
 \label{app:figures}
 
 Each figure below plots data that a table in the results chapter already reports exactly.
-They are kept here for readers who prefer the visual form; no result depends on them that is not stated in the body.
+They are kept here for readers who prefer the visual form, and no result depends on them that is not stated in the body.
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.8\textwidth]{figures/fig_empty_rate.pdf}
   \caption{How often each system returns nothing, against its accuracy.}
   \label{fig:empty}
-  \tabnote{Every gold query on the strict set returns at least one row, so an empty result is always wrong. Conditional on returning something, every system scores in a narrow band; what separates them is how often they return nothing at all.}
+  \tabnote{Every gold query on the strict set returns at least one row, so an empty result is always wrong.}
 \end{figure}
 
 \begin{figure}[H]
@@ -111,7 +113,7 @@ They are kept here for readers who prefer the visual form; no result depends on 
   \includegraphics[width=0.8\textwidth]{figures/fig_linker_ci.pdf}
   \caption{Linking F1 with bootstrap confidence intervals.}
   \label{fig:linker-ci}
-  \tabnote{Mentions resampled with replacement, $B = 2{,}000$, over the 1,086 entity mentions every linker scored. The gap between the reasoning linker and GLiNKER on the same candidates is about five times the width of its own interval; the three reasoning backbones overlap one another and should not be ranked.}
+  \tabnote{Mentions resampled with replacement, $B = 2{,}000$, over the 1,086 entity mentions every linker scored.}
 \end{figure}
 
 \begin{figure}[H]
@@ -119,7 +121,7 @@ They are kept here for readers who prefer the visual form; no result depends on 
   \includegraphics[width=0.8\textwidth]{figures/fig_linker_pr.pdf}
   \caption{The precision--recall signature of each linking paradigm.}
   \label{fig:linker-pr}
-  \tabnote{Working split. The two fine-tuned end-to-end linkers, built independently two years apart, share the same signature: high precision with very low recall, because text-driven mention detection cannot find entities that never surface in the question.}
+  \tabnote{Working split. Mention-level precision against recall for each linker.}
 \end{figure}
 
 \begin{figure}[H]
@@ -127,7 +129,7 @@ They are kept here for readers who prefer the visual form; no result depends on 
   \includegraphics[width=0.8\textwidth]{figures/fig_linker_complexity.pdf}
   \caption{Linking F1 by query complexity.}
   \label{fig:linker-cx}
-  \tabnote{The fine-tuned end-to-end linkers are the only systems whose F1 falls as queries get harder; every reasoning linker is flat or rising. Complex queries reference more classes and concepts that are absent from the question text.}
+  \tabnote{Working split. Entity-linking F1 for simple, medium and complex queries.}
 \end{figure}
 
 \begin{figure}[H]
@@ -135,7 +137,7 @@ They are kept here for readers who prefer the visual form; no result depends on 
   \includegraphics[width=0.8\textwidth]{figures/fig_error_taxonomy.pdf}
   \caption{Error taxonomy of a stratified sample of 30 failing questions.}
   \label{fig:errors}
-  \tabnote{Seed 42, drawn from the reported clean-pool run. Each case was categorised by the author; an independent second annotator agreed on 21 of 30 cases. Proportions are indicative rather than population estimates.}
+  \tabnote{Seed 42, drawn from the reported clean-pool run. Each case was categorised by the author, and an independent second annotator agreed on 21 of 30 cases. Proportions are indicative rather than population estimates.}
 \end{figure}
 
 \begin{figure}[H]
@@ -151,7 +153,7 @@ They are kept here for readers who prefer the visual form; no result depends on 
   \includegraphics[width=0.8\textwidth]{figures/fig_memorisation.pdf}
   \caption{Structural similarity of generated queries to the benchmark.}
   \label{fig:memorisation}
-  \tabnote{Skeletons compare query shape only. No frozen run reproduces gold structures; the high similarity-to-any-query column reflects genericness, and exceeds the rate at which gold queries resemble each other.}
+  \tabnote{Skeletons compare query shape only.}
 \end{figure}
 
 \begin{figure}[H]
@@ -159,7 +161,7 @@ They are kept here for readers who prefer the visual form; no result depends on 
   \includegraphics[width=0.8\textwidth]{figures/fig_wdql_bysize.pdf}
   \caption{Construct prevalence at matched query size.}
   \label{fig:wdql-size}
-  \tabnote{Restricted to queries with at least five predicate tokens. The idioms are common in real usage and roughly 1.2--2 times more common again in the benchmark.}
+  \tabnote{Restricted to queries with at least five predicate tokens.}
 \end{figure}
 
 \begin{figure}[H]

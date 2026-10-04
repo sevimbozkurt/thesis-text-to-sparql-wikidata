@@ -24,10 +24,10 @@ Generating a query does not make the query correct, however.
 A system can still produce a query that runs but answers a different question.
 The difference is that such a failure can be traced to a specific step.
 A query with the right identifiers but the wrong structure, for example, often returns no results, so running it already shows that something went wrong.
-Execution thus becomes a signal for detecting, and sometimes recovering from, failures.
+Execution then becomes a signal for detecting, and sometimes recovering from, failures.
 
 The practical question is whether this works with models that are not fine-tuned for the task.
-Fine-tuning a model for one knowledge graph can be effective, as the benchmark used in this thesis shows.
+Fine-tuning a model for one knowledge graph can be effective, as the benchmark used here shows.
 But it needs in-domain training data, it has to be repeated for every knowledge graph, and it is usually not possible for the frontier models that are strongest at code generation.
 If frozen models can be combined into an effective pipeline instead, the approach could carry over to any knowledge graph with a suitable label index.
 This thesis asks whether frozen models can do this task and, where they fail, why.
@@ -58,7 +58,7 @@ Instruct-to-SPARQL~\citep{benamor2025instruct} provides each executable gold que
 Since the two versions are aligned, they yield ground truth for the intermediate linking stage directly, with no extra annotation and no external linker index.
 One stage can then be held fixed while another is measured.
 The benchmark authors do not propose a linking strategy of their own and leave the problem open.
-This thesis takes up that open question.
+This work takes up that open question.
 Its main contribution is an evaluation, not a new model or linking algorithm: it combines established components into a pipeline and measures, stage by stage, where and why that pipeline fails.
 
 \section{Research Questions}
@@ -67,9 +67,9 @@ Its main contribution is an evaluation, not a new model or linking algorithm: it
 \item[RQ1]
 How well do frozen frontier models translate natural-language questions into executable SPARQL over Wikidata, without fine-tuning?
 \item[RQ2]
-How much of the remaining error is caused by entity and predicate linking, and how much by generating the query, that is, choosing its concepts and composing its structure?
+How much of the remaining error is caused by entity and predicate linking, and how much by query generation?
 \item[RQ3]
-Under the same circumstances, how do the three linking ("paradigms---fine-tuned end-to-end linking, zero-shot bi-encoder retrieval, and large-language-model reasoning over retrieved candidates---compare") and how does each step depend on backbone scale?
+Under the same circumstances, how do the three linking paradigms (fine-tuned end-to-end linking, zero-shot bi-encoder retrieval, and large-language-model reasoning over retrieved candidates) compare, and how does each stage depend on backbone scale?
 \item[RQ4]
 Which forms of inference-time guidance improve frozen-model query generation, and does their effect depend on whether they narrow or expand the generator's decision space?
 \item[RQ5]
@@ -85,10 +85,10 @@ Contributions}
 
 \label{sec:contributions}
 
-The method used in this thesis, stage-wise diagnostic evaluation, has four steps.
+The method, stage-wise diagnostic evaluation, has four steps.
 First, derive ground truth for an intermediate pipeline stage from the benchmark's own artefacts.
 Second, hold all other stages fixed to isolate the stage under test.
-Third, attribute the resulting errors to that stage.
+Third, compare the conditions to attribute the resulting errors to that stage.
 Fourth, test whether the identified cause responds to intervention.
 The method chapter defines each step in detail.
 
@@ -104,7 +104,7 @@ It includes mention-level linking ground truth derived from the benchmark's alig
 Four linking approaches are compared on the same rows and ground truth, with the same candidate pools where a linker uses them, on two data splits, and the attribution is supported by a failure taxonomy, an analysis of Wikidata-specific constructs across the full corpus, and agreement across independent models.
 The same experiments show that backbone dependence differs between linking and generation.
 \item
-\textbf{Controlled interventions and the execution-guided cascade}: four prompt-based interventions are tested: generic idiom guidance, schema evidence, selective application of guidance and a closed vocabulary.
+\textbf{Controlled interventions and the execution-guided cascade}: four prompt-based interventions are tested (generic idiom guidance, schema evidence, selective application of guidance and a closed vocabulary).
 They rule out several approaches and lead to a design principle, \emph{ground by constraint, not by enumeration}.
 The thesis then introduces an execution-guided cascade that recovers some of the remaining errors from inference-time signals alone, without additional training, a reference query or new generation.
 Together, these experiments yield a configured pipeline in which every backbone is chosen on measured performance.

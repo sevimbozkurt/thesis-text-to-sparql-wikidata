@@ -13,7 +13,7 @@ The results show that disambiguation, resolving a label to its identifier, is no
 A frozen frontier model reasoning over retrieved candidates resolves 97.7 entity F1 and 98.5 property F1, exceeding a bi-encoder linker given the same candidates by 24.9 points, and, with an open 14B backbone, replicates on a second Wikidata benchmark at 90.6\,\% entity accuracy.
 Disambiguation is largely backbone-independent.
 
-In contrast, generating the query, choosing the concepts it needs and composing its structure, is the main source of error.
+In contrast, query generation is the main source of error.
 Given the benchmark's concepts and query structure, the pipeline reaches 97.4 entity-level Jaccard, compared with 30.9 when generating the query itself, a 66.5-point gap supported by analysis across the full reference set and by four models from four organisations failing on the same questions.
 
 The resulting pipeline, whose stages are selected based on experimental evidence, reaches 23.4 pooled fair Jaccard on the benchmark's official split, more than double the benchmark authors' frozen GPT-4 baseline re-scored under the same conditions.

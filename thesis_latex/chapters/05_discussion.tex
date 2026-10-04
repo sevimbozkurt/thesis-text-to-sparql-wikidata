@@ -12,18 +12,19 @@ Do}
 \label{sec:disc-rq1}
 
 Frozen frontier models write SPARQL that parses and executes but is rarely correct.
-On non-empty outputs their scores lie close together; what separates the systems is mainly how often they return nothing, and the pipeline roughly halves that rate.
-The question is not whether these models can write valid SPARQL, but whether they follow Wikidata's modelling conventions: statement nodes, subclass closure and normalised value nodes.
+On non-empty outputs their scores lie close together.
+What separates the systems is mainly how often they return nothing, and the pipeline roughly halves that rate.
+Their weakness lies in Wikidata's modelling conventions (statement nodes, subclass closure, normalised value nodes), which they rarely apply where needed.
 
 The failures are shared across models.
 Three quarters of the questions are solved by none of the four models, which come from four different organisations.
 The questions that all four fail share a clear feature in their reference queries: they contain several times more statement nodes than easier questions, and qualifier access and aggregation, which appear in them, never occur in the questions that all four models solve.
-The difficulty, in other words, lies in the task itself.
+This suggests that the difficulty is a property of the questions themselves.
 
 Fine-tuning brings conformity to a query style, the very capability the frozen models lack: a 7B model trained on in-domain queries scores orders of magnitude higher than a much larger base model.
 This does not prove a general difference in capability, since more than half of its outputs are character-identical to the reference, although that alone does not establish leakage.
 A fine-tuned system reproduces a distribution of queries, whereas this pipeline derives a query from the question. The two agree only when the reference translates the question correctly, but the audit shows noise in roughly one quarter of the strict fair set.
-Whether this contributes materially to the observed gap remains open, since only sixteen adjudicated rows overlap the official split, and it is therefore listed as future work.
+Whether this contributes materially to the observed gap remains open, since only sixteen adjudicated rows overlap the official split, and it is listed as future work.
 
 The comparison that matters most for this thesis is among systems without in-domain training, and there the pipeline more than doubles the best published frozen result.
 The stage-wise analysis also shows where the remaining difference to fine-tuned systems comes from.
@@ -33,9 +34,11 @@ Bottleneck}
 
 \label{sec:disc-rq2}
 
-Given the benchmark's concepts and query structure, the pipeline reaches 97.4 entity-level Jaccard; when it has to generate the query itself, the score falls to 30.9.
-In this pipeline, the main constraint is generating the query, that is, choosing the concepts it needs and composing its structure, not resolving labels to identifiers.
-Disambiguation over retrieved candidates stops being the limiting stage once the model writes suitable labels and the correct entity is in the candidate pool, which holds for the frontier model here; for the small open model, label generation itself becomes the weak point (see RQ3).
+Given the benchmark's concepts and query structure, the pipeline reaches 97.4 entity-level Jaccard.
+When it has to generate the query itself, the score falls to 30.9.
+In this pipeline, query generation is the main constraint.
+Disambiguation over retrieved candidates stops being the limiting stage once the model writes suitable labels and the correct entity is in the candidate pool, which holds for the frontier model here.
+For the small open model, label generation itself becomes the weak point (see RQ3).
 
 Rebuilding the candidate pools with rate-limited retrieval adds further support: the gold-label condition improved roughly ten times more than the end-to-end condition, which is hard to explain if disambiguation were the main constraint.
 
@@ -61,22 +64,21 @@ At disambiguation, scale has little effect: 97.7 (frontier), 94.9 (14B) and 95.8
 Reasoning over seven retrieved candidates does not need a frontier-scale model.
 At generation, however, the choice of backbone matters much more: when the open model handles both stages, pipeline performance drops sharply.
 
-The mechanism is lexical, not a gap in reasoning.
 Asked to name Wikidata entities and properties without further help, the open model produces unfindable labels for 16.4\,\% of distinct labels (270 of 1,645), against 3.3\,\% for the frontier model, a 4.9-fold difference.
 This points to a hybrid deployment, with a capable model for labels and a cheaper one for disambiguation.
 String normalisation, which should fix superficial casing issues such as camelCase or snake\_case, lowers the failure rate only to 13.8\,\%.
 The main problem is near-miss wording (``crew member(s)'', for example, names a different property and is not a misspelling), and normalisation hardly touches it.
 The replication with Claude Opus 5 repeats generation with a later frontier model and finds the same pattern: subclass closure and property paths improve, statement nodes and qualifiers improve little, and value nodes do not improve.
-The generation deficit therefore does not disappear as models get better.
+The generation deficit does not disappear as models get better.
 Schema evidence, selective gating, majority voting and string repair fail in the same way: none of them supplies knowledge of how the graph itself names and models information.
-The disambiguation results show that the smaller model already reasons well enough for that stage, so the generation gap is about vocabulary, not reasoning.
+The disambiguation results show that the smaller model already reasons well enough for that stage, so the most likely explanation for the generation gap is missing vocabulary knowledge.
 
 \paragraph{RQ4: Guidance versus
 Evidence}
 
 \label{sec:disc-rq4}
 
-Three results answer RQ4: generic idiom guidance brings a small benefit; evidence about graph contents does about four times as much harm; and selective guidance does not beat always-on guidance, even with oracle knowledge of when it is needed.
+Generic idiom guidance brings a small benefit, evidence about graph contents does about four times as much harm, and selective guidance does not beat always-on guidance, even with oracle knowledge of when it is needed.
 
 \paragraph{Overuse of Schema Evidence}
 
@@ -87,7 +89,8 @@ The intervention failed even though the schema cards were built from reference-l
 
 \paragraph{Predicting Construct Need from the Question}
 
-A classifier that predicts from the question text alone whether a reference query uses a given construct reaches only moderate performance (AUC 0.62--0.82); its strongest features for subclass closure are topical terms (``libraries'', ``hospitals'', ``scientists''), which say nothing about how Wikidata models the domain.
+A classifier that predicts from the question text alone whether a reference query uses a given construct reaches only moderate performance (AUC 0.62--0.82).
+Its strongest features for subclass closure are topical terms (``libraries'', ``hospitals'', ``scientists''), which say nothing about how Wikidata models the domain.
 
 \paragraph{Cost of Unnecessary Idiom Use}
 
@@ -97,19 +100,23 @@ Construct predictions are miscalibrated, but the cost in accuracy is small, so s
 
 \paragraph{Constraining versus Enumerating the Schema}
 
-The contrast with \citet{zhang2026saga} is especially instructive.
+The contrast with \citet{zhang2026saga} helps explain the schema-evidence result.
 SAGA filters candidates by type, domain and range, removing options that would otherwise be chosen wrongly.
 The schema-evidence arm does the opposite and adds options, which the model seems to take as encouragement.
-The same graph information thus has opposite effects, depending on whether it filters or merely informs.
-This also explains why linking (seven candidates, a forced choice) does better than grounding (everything an entity carries, with no restriction): what counts is not how much graph knowledge reaches the model, but whether it narrows or widens the decision space.
-The same distinction sets this result apart from \citet{yang2026ggc}, whose gate reduces the cost of an expensive and often harmful operation; the gate tested here would have to improve accuracy for an operation that is cheap and almost never harmful, so there is no comparable gain for gating to find.
+The same graph information has opposite effects, depending on whether it filters or merely informs.
+This also explains why linking (seven candidates, a forced choice) does better than grounding (everything an entity carries, with no restriction).
+The direction of the knowledge mattered more than its amount: narrowing the decision space helped, and widening it hurt.
+The same distinction sets this result apart from \citet{yang2026ggc}, whose gate reduces the cost of an expensive and often harmful operation.
+The gate tested here would have to improve accuracy for an operation that is cheap and almost never harmful, so there is no comparable gain for gating to find.
 
 \paragraph{Testing the Principle}
 
 The prompt experiment keeps the same reference-linked information and changes only how it is presented.
-Offered as available evidence, it lowers performance by 14.65 points; imposed as a mandatory closed list, it raises performance by 18.99 points.
+Offered as available evidence, it lowers performance by 14.65 points.
+Imposed as a mandatory closed list, it raises performance by 18.99 points.
 The intervals do not overlap, which leaves a difference of about 34 points from framing alone.
-The absolute level is partly definitional, because the permitted list is drawn from the reference query's own vocabulary, so the evidence lies in the contrast between the two framings; the model broke the prompt-level constraint for only 0.7\,\% of label uses.
+The absolute level is partly definitional, because the permitted list is drawn from the reference query's own vocabulary, so the evidence lies in the contrast between the two framings.
+The model broke the prompt-level constraint for only 0.7\,\% of label uses.
 
 The mechanical half of the principle was tested separately.
 Applying every type constraint declared in Wikidata removes the reference property for 7.5\,\% of the affected mentions, while using only mandatory constraints is safe but has almost no effect.
@@ -120,8 +127,9 @@ A mechanical filter, however, is only as reliable as Wikidata's own assertions, 
 
 The constrained arm gains more than the construct-profile arm, because it settles concept selection, the larger of the two generation decisions it can address.
 The factorial arm shows that the two contributions add up, and naming a construct is still not the same as providing the composed query.
-The profile hint tells the model which idiom a question needs; it does not show how to build a complete query around it.
-General advice brought no further gains in these experiments; restricting the identifiers available to the generator was the more effective intervention.
+The profile hint tells the model which idiom a question needs, but it does not show how to build a complete query around it.
+General advice brought no further gains in these experiments.
+Restricting the identifiers available to the generator was the more effective intervention.
 
 \paragraph{RQ5: Detectable Failure and the Value of
 Execution}
@@ -130,19 +138,22 @@ Execution}
 
 Some failures can be detected without the gold query.
 A cascade that accepts the first non-empty, error-free result raises the score by +4.83 points [2.93, 7.08], improving 49 questions and worsening none, without any additional training.
-Of the 92 fallback rows, 64 are triggered by empty results; the gain amounts to about two fifths of the 12-point oracle headroom, so execution feedback catches some failures but cannot correct a query that runs successfully and returns the wrong answer.
+Of the 92 fallback rows, 64 are triggered by empty results.
+The gain amounts to about two fifths of the 12-point oracle headroom, so execution feedback catches some failures but cannot correct a query that runs successfully and returns the wrong answer.
 
 The cascade also beats result-set majority voting (37.0 vs.\ 33.8 for the centroid, against a 32.2 baseline): agreement between outputs is a weaker signal than execution, because wrong queries can agree with each other.
-Unlike agentic self-correction, which generates, executes and revises queries in a loop, the cascade chooses among alternatives that exist in a fixed order.
+Unlike agentic self-correction, which generates, executes and revises queries in a loop, the cascade checks existing alternatives in a fixed order.
 This makes it cheaper and easier to reproduce.
-It recovers a failure whenever one of the alternatives is correct; generating the correct structure in the first place remains the main direction for future work.
+It recovers a failure whenever one of the alternatives is correct.
+Generating the correct structure in the first place remains the main direction for future work.
 
 \section{Methodological
 Implications}
 
 \label{sec:disc-artefacts}
 
-Four measurement artefacts arose during the study, each producing a plausible but incorrect intermediate result; all four were detected and corrected before the final analysis and are documented in the appendix.
+Four measurement artefacts arose during the study, each producing a plausible but incorrect intermediate result.
+All four were detected and corrected before the final analysis and are documented in the appendix.
 Their causes differed, but they had one feature in common: the result was plausible and fitted the emerging interpretation.
 
 \begin{table}[htbp]
@@ -162,8 +173,8 @@ A stale error sample & Complex failures judged to contain no linking errors & Th
 \end{tabular}
 \end{table}
 
-The lesson is that a plausible result needs more than a check of the final score: these artefacts were caught through regeneration, auditing and comparison with intermediate outputs, not from headline numbers.
-Two practical recommendations follow: treat empty or unusually short responses from the Wikidata search API as suspicious and re-check them with repeated requests, and regenerate KGQA experiments end to end from stored inputs after any change to the pipeline.
+The lesson is that a plausible result needs more than a check of the final score: these artefacts were caught through regeneration, auditing and comparison with intermediate outputs.
+In practice, empty or unusually short responses from the Wikidata search API should be treated as suspicious and re-checked with repeated requests, and KGQA experiments should be regenerated end to end from stored inputs after any change to the pipeline.
 
 \begin{figure}[htbp]
   \centering
@@ -174,7 +185,7 @@ Two practical recommendations follow: treat empty or unusually short responses f
 \end{figure}
 
 \emph{Figure note}.
-The initial 80.4\,\% ceiling reflected silent API throttling, not the quality of candidate generation.
+The initial 80.4\,\% ceiling was caused by silent API throttling.
 The issue came to light through rank analysis and through the implausibly large improvement after the pools were repaired.
 
 \section{Limitations and Scope}
@@ -185,10 +196,12 @@ The issue came to light through rank analysis and through the implausibly large 
 \def\labelenumi{\arabic{enumi}.}
 \item
 \textbf{Evaluation asymmetry.}
-The reasoning linkers and GLiNKER receive mention strings and curated candidate lists, whereas ELQ and ReFinED have to detect mentions themselves; the set-based metric closes part of this gap (+5.4 and +6.8 points), and GLiNKER is evaluated on the reasoning linker's candidate lists rather than with its own retrieval.
+The reasoning linkers and GLiNKER receive mention strings and curated candidate lists, whereas ELQ and ReFinED have to detect mentions themselves.
+The set-based metric closes part of this gap (+5.4 and +6.8 points), and GLiNKER is evaluated on the reasoning linker's candidate lists rather than with its own retrieval.
 \item
 \textbf{Benchmark validity.}
-Reference noise affects an estimated 24.6\,\% of the strict fair set (interval [12.9, 42.0]); scores are not corrected for it, so that they remain comparable with the existing literature.
+Reference noise affects an estimated 24.6\,\% of the strict fair set (interval [12.9, 42.0]).
+Scores are not corrected for it, so that they remain comparable with the existing literature.
 \item
 \textbf{Scope.}
 The study evaluates four models from four organisations and two frontier generations in an English setting, on one Wikidata dump served by QLever, which excludes around 15\,\% of gold queries that depend on Blazegraph-specific behaviour.
@@ -199,9 +212,11 @@ The design principle of constraining rather than enumerating the schema is estab
 The constrained-vocabulary and construct-profile arms draw their information from the reference query, and the permitted list can also hint at structure, for example when it contains a qualifier property.
 \item
 \textbf{Cascade assumptions.}
-The cascade never lowers accuracy on the strict fair set because every reference returns a result; where an empty answer can be correct, an empty result is not always a failure.
-Its prompt order was chosen from the relative quality of the runs; the split-half evaluation shows that the gain holds when the order is chosen on other questions.
+The cascade never lowers accuracy on the strict fair set because every reference returns a result.
+Where an empty answer can be correct, an empty result is not always a failure.
+Its prompt order was chosen from the relative quality of the runs, and the split-half evaluation shows that the gain holds when the order is chosen on other questions.
 \item
 \textbf{Sample size of the error analysis.}
-The error taxonomy covers 30 failures and identifies recurring types rather than population frequencies; the corpus-wide construct analysis across all 567 rows supports the same conclusion.
+The error taxonomy covers 30 failures and identifies recurring types rather than population frequencies.
+The corpus-wide construct analysis across all 567 rows supports the same conclusion.
 \end{enumerate}

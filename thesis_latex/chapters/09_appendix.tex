@@ -92,7 +92,7 @@ They are kept here for readers who prefer the visual form; no result depends on 
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.88\textwidth]{figures/fig_empty_rate.pdf}
+  \includegraphics[width=0.8\textwidth]{figures/fig_empty_rate.pdf}
   \caption{How often each system returns nothing, against its accuracy.}
   \label{fig:empty}
   \tabnote{Every gold query on the strict set returns at least one row, so an empty result is always wrong. Conditional on returning something, every system scores in a narrow band; what separates them is how often they return nothing at all.}
@@ -100,7 +100,7 @@ They are kept here for readers who prefer the visual form; no result depends on 
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.88\textwidth]{figures/fig_cross_model_agreement.pdf}
+  \includegraphics[width=0.8\textwidth]{figures/fig_cross_model_agreement.pdf}
   \caption{Cross-model agreement and what distinguishes the hard questions.}
   \label{fig:crossmodel}
   \tabnote{Left: how many of the four zero-shot models solve each question. Right: mean occurrences of each construct per gold query, comparing questions no model solved with those all four solved. Qualifier access and aggregation appear at exactly zero in every question all four solved.}
@@ -108,7 +108,7 @@ They are kept here for readers who prefer the visual form; no result depends on 
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.88\textwidth]{figures/fig_linker_ci.pdf}
+  \includegraphics[width=0.8\textwidth]{figures/fig_linker_ci.pdf}
   \caption{Linking F1 with bootstrap confidence intervals.}
   \label{fig:linker-ci}
   \tabnote{Mentions resampled with replacement, $B = 2{,}000$, over the 1,086 entity mentions every linker scored. The gap between the reasoning linker and GLiNKER on the same candidates is about five times the width of its own interval; the three reasoning backbones overlap one another and should not be ranked.}
@@ -116,7 +116,7 @@ They are kept here for readers who prefer the visual form; no result depends on 
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.88\textwidth]{figures/fig_linker_pr.pdf}
+  \includegraphics[width=0.8\textwidth]{figures/fig_linker_pr.pdf}
   \caption{The precision--recall signature of each linking paradigm.}
   \label{fig:linker-pr}
   \tabnote{Working split. The two fine-tuned end-to-end linkers, built independently two years apart, share the same signature: high precision with very low recall, because text-driven mention detection cannot find entities that never surface in the question.}
@@ -124,7 +124,7 @@ They are kept here for readers who prefer the visual form; no result depends on 
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.88\textwidth]{figures/fig_linker_complexity.pdf}
+  \includegraphics[width=0.8\textwidth]{figures/fig_linker_complexity.pdf}
   \caption{Linking F1 by query complexity.}
   \label{fig:linker-cx}
   \tabnote{The fine-tuned end-to-end linkers are the only systems whose F1 falls as queries get harder; every reasoning linker is flat or rising. Complex queries reference more classes and concepts that are absent from the question text.}
@@ -132,7 +132,7 @@ They are kept here for readers who prefer the visual form; no result depends on 
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.88\textwidth]{figures/fig_error_taxonomy.pdf}
+  \includegraphics[width=0.8\textwidth]{figures/fig_error_taxonomy.pdf}
   \caption{Error taxonomy of a stratified sample of 30 failing questions.}
   \label{fig:errors}
   \tabnote{Seed 42, drawn from the reported clean-pool run. Each case was categorised by the author; an independent second annotator agreed on 21 of 30 cases. Proportions are indicative rather than population estimates.}
@@ -140,15 +140,15 @@ They are kept here for readers who prefer the visual form; no result depends on 
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.88\textwidth]{figures/fig_cascade_fallback.pdf}
+  \includegraphics[width=0.8\textwidth]{figures/fig_cascade_fallback.pdf}
   \caption{Where the cascade's fallback fires, and what it recovers.}
   \label{fig:fallback}
-  \tabnote{The fallback triggers on 28\% of questions, most often because the preferred query returned nothing. On exactly those rows the first prompt scores zero by construction.}
+  \tabnote{The fallback triggers on 28\,\% of questions, most often because the preferred query returned nothing. On exactly those rows the first prompt scores zero by construction.}
 \end{figure}
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.88\textwidth]{figures/fig_memorisation.pdf}
+  \includegraphics[width=0.8\textwidth]{figures/fig_memorisation.pdf}
   \caption{Structural similarity of generated queries to the benchmark.}
   \label{fig:memorisation}
   \tabnote{Skeletons compare query shape only. No frozen run reproduces gold structures; the high similarity-to-any-query column reflects genericness, and exceeds the rate at which gold queries resemble each other.}
@@ -156,7 +156,7 @@ They are kept here for readers who prefer the visual form; no result depends on 
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.88\textwidth]{figures/fig_wdql_bysize.pdf}
+  \includegraphics[width=0.8\textwidth]{figures/fig_wdql_bysize.pdf}
   \caption{Construct prevalence at matched query size.}
   \label{fig:wdql-size}
   \tabnote{Restricted to queries with at least five predicate tokens. The idioms are common in real usage and roughly 1.2--2 times more common again in the benchmark.}
@@ -164,7 +164,7 @@ They are kept here for readers who prefer the visual form; no result depends on 
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.88\textwidth]{figures/fig_structural_predictors.pdf}
+  \includegraphics[width=0.8\textwidth]{figures/fig_structural_predictors.pdf}
   \caption{Gold-query features against achieved accuracy.}
   \label{fig:predictors}
   \tabnote{Group-mean differences, not predictive relationships: correlations are weak throughout ($|\rho| \leq 0.15$) and several features are rare. \textsc{optional} is the only feature associated with higher accuracy.}

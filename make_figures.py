@@ -1,5 +1,6 @@
 """make_figures.py — Generate every thesis figure from the frozen data.
 """
+import textwrap
 import csv, json, os, collections
 from datetime import date
 
@@ -274,10 +275,13 @@ save(fig, "fig_method_groundtruth_tmp.pdf") if False else save(fig, "fig_groundt
 
 # ============================ D4 the method =================================
 fig, ax = canvas("s")
-moves = [("1", "Derive", "ground truth for\nan intermediate\nstage from the\nbenchmark's own\nartefacts"),
-         ("2", "Isolate", "hold every stage\nfixed but one; add\nan upper bound\nwhere that stage\nis given gold"),
-         ("3", "Attribute", "compare the\nconditions, then\ncorroborate from\na source outside\nthe sample"),
-         ("4", "Intervene", "test whether the\ncause responds; a\nfailed intervention\nis a result about\nthe cause")]
+moves = [("1", "Derive", "Obtain ground truth for an intermediate stage from the benchmark data."),
+         ("2", "Isolate", "Keep all other stages fixed and vary only the stage being tested. "
+                          "Use an upper bound when gold output is available."),
+         ("3", "Compare", "Compare the conditions and check the findings against evidence "
+                          "outside the sample."),
+         ("4", "Intervene", "Change the suspected cause and test whether the outcome changes. "
+                            "A failed intervention is evidence against that explanation.")]
 bw, gap = 21.5, 4.0
 x0 = (100 - (4 * bw + 3 * gap)) / 2
 for i, (num, head, body) in enumerate(moves):
@@ -285,7 +289,8 @@ for i, (num, head, body) in enumerate(moves):
     box(ax, x, 12, bw, 60, "", fc="white")
     ax.text(x + bw / 2, 63, num, ha="center", fontsize=12, color=SEQ[3], fontweight="bold")
     ax.text(x + bw / 2, 55, head, ha="center", fontsize=8.0, color=INK, fontweight="bold")
-    ax.text(x + bw / 2, 33, body, ha="center", va="center", fontsize=6.2, color=INK2, linespacing=1.6)
+    ax.text(x + bw / 2, 31, textwrap.fill(body, 21), ha="center", va="center", fontsize=6.0,
+            color=INK2, linespacing=1.45)
     if i:
         arrow(ax, (x - gap, 42), (x, 42))
 ax.text(50, 84, "Stage-wise diagnostic evaluation", ha="center", fontsize=9.0, color=INK, fontweight="bold")
@@ -306,15 +311,13 @@ for v, c in zip(y, cats):
 style(a1, xgrid=True); a1.set_yticks(y); a1.set_yticklabels(cats, fontsize=7.6)
 a1.set_xlim(0, 400); a1.set_xlabel("test rows"); legend_above(a1, ncol=1, fontsize=7)
 a2.axis("off"); a2.set_xlim(0, 100); a2.set_ylim(0, 100)
-box(a2, 0, 54, 100, 40, "working split — the diagnostic instrument\n\n"
-                        "stratified by complexity, fixed seed. Carries the\n"
-                        "stage analysis, error taxonomy, construct analysis,\n"
-                        "prompt arms and the cascade.", fc="#eaf1fb", ec=S1, fs=6.7)
-box(a2, 0, 6, 100, 40, "official split — the comparability instrument\n\n"
-                       "the benchmark authors' own split. Carries the\n"
-                       "comparison with their published systems and one\n"
-                       "replication of the linker result, to show the ordering\n"
-                       "does not depend on the choice of split.", fc="#fdf1ea", ec=S2, fs=6.7)
+box(a2, 0, 54, 100, 40, "Working split: for detailed analysis\n\n" + textwrap.fill(
+    "Stratified by complexity with a fixed seed. Used for the stage-wise analysis, "
+    "error taxonomy, prompt experiments, and cascade.", 52), fc="#eaf1fb", ec=S1, fs=6.7)
+box(a2, 0, 6, 100, 40, "Official split: for comparison\n\n" + textwrap.fill(
+    "The benchmark authors’ original split. Used to compare with their published systems "
+    "and to replicate the linking results, checking that the findings are not split-dependent.", 52),
+    fc="#fdf1ea", ec=S2, fs=6.7)
 fig.tight_layout(w_pad=1.0); save(fig, "fig_splits.pdf")
 
 # ============================ D6 cascade mechanism ==========================
@@ -330,8 +333,8 @@ arrow(ax, (66, 52), (80, 39), color=S2); ax.text(66.5, 47.0, "empty / error", fo
 arrow(ax, (89.5, 28), (33, 20), color=S2, ls=(0, (3, 2)), astyle="-")
 arrow(ax, (33, 20), (33, 46), color=S2, ls=(0, (3, 2)))
 ax.text(50, 90, "Execution-guided cascade", ha="center", fontsize=8.8, color=INK, fontweight="bold")
-ax.text(50, 8, "It replaces only a result that is empty or errored, which already scores zero against a\n"
-                "non-empty gold — so on the strict fair set the operation cannot lower accuracy.",
+ax.text(50, 8, "Only empty or erroneous results are replaced, so the cascade cannot reduce\n"
+                "accuracy on the strict fair set.",
         ha="center", va="top", fontsize=6.9, color=INK2, linespacing=1.6)
 ax.set_ylim(-4, 96)
 save(fig, "fig_cascade_mechanism.pdf")
@@ -555,7 +558,7 @@ for yi, r in zip(y, gd):
     ax.scatter([p], [yi], s=26, color=c, zorder=4, linewidths=0)
     ax.text(hi + 1.0, yi, f"{p:.1f}", va="center", fontsize=7.2, color=INK2)
 style(ax, xgrid=True); ax.set_yticks(y); ax.set_yticklabels([r["group"] for r in gd], fontsize=7.6)
-ax.set_xlabel("points of the 66.5-point gold-label-to-end-to-end gap (95% CI)")
+ax.set_xlabel("points of the 66.5-point gold-label-to-end-to-end gap (95\u202f% CI)")
 ax.set_xlim(0, 52); save(fig, "fig_gap_decomposition.pdf")
 
 # ============================ F12 structural predictors =====================
@@ -671,7 +674,7 @@ style(a2, xgrid=True); a2.set_yticks(ys)
 a2.set_yticklabels(list(key), fontsize=7.0)
 a2.set_xlabel("change vs baseline (pp)")
 a2.set_xlim(_lo - (_hi - _lo) * 0.20, _hi + (_hi - _lo) * 0.16)
-a2.set_title("Effect against baseline, 95% CI", pad=6)
+a2.set_title("Effect against baseline, 95\u202f% CI", pad=6)
 fig.tight_layout(w_pad=2.0); save(fig, "fig_prompt_arms.pdf")
 
 # ============================ F15 cascade ===================================
@@ -784,7 +787,7 @@ fig, ax = new("xs")
 round_barh(ax, ax.barh([1], [80.4], 0.45, color=S2, zorder=3))
 round_barh(ax, ax.barh([0], [99.4], 0.45, color=S1, zorder=3))
 for yi, v in [(1, 80.4), (0, 99.4)]:
-    ax.text(v + 1, yi, f"{v:.1f}%", va="center", fontsize=7.4, color=INK2)
+    ax.text(v + 1, yi, f"{v:.1f}\u202f%", va="center", fontsize=7.4, color=INK2)
 style(ax, xgrid=True); ax.set_yticks([1, 0])
 ax.set_yticklabels(["original pools\n(throttled retrieval)", "clean union pools\n(rate-limited, repaired)"],
                    fontsize=7.2)
@@ -806,7 +809,7 @@ y = list(range(len(cats)))[::-1]; h = 0.36
 for i, (b, c) in enumerate([("Qwen2.5-14B (open)", S2), ("frontier model", S1)]):
     ys = [v + (0.5 - i) * h for v in y]
     xs = [val[b][k] for k in cats]
-    round_barh(ax, ax.barh(ys, xs, h * 0.9, color=c, label=f"{b} ({rate[b]:.1f}% of labels)", zorder=3))
+    round_barh(ax, ax.barh(ys, xs, h * 0.9, color=c, label=f"{b} ({rate[b]:.1f}\u202f% of labels)", zorder=3))
     for yy, xx in zip(ys, xs):
         ax.text(xx + 2, yy, str(xx), va="center", fontsize=7, color=INK2)
 style(ax, xgrid=True); ax.set_yticks(list(y)); ax.set_yticklabels(cats, fontsize=7.6)
@@ -845,7 +848,7 @@ for yi, r in zip(y, lc):
     ax.text(hi + 1.5, yi, f"{e:.1f}", va="center", fontsize=7.2, color=INK2)
 style(ax, xgrid=True); ax.set_yticks(y)
 ax.set_yticklabels([r["comparison"] for r in lc], fontsize=7.6)
-ax.set_xlabel("entity linking F1 (%) with 95% bootstrap CI, 1,086 mentions")
+ax.set_xlabel("entity linking F1 (%) with 95\u202f% bootstrap CI, 1,086 mentions")
 ax.set_xlim(0, 108); save(fig, "fig_linker_ci.pdf")
 
 with open("results_tables/figure_manifest.csv", "w", newline="") as fh:

@@ -104,15 +104,12 @@ The pipeline is evaluated under two conditions, and the difference between them 
 
 In the \textbf{gold-label condition}, generation is skipped and the labels come from the benchmark's annotated query.
 Concept selection and query structure are therefore correct by construction, and only disambiguation is evaluated.
-Comparing this condition with the full pipeline estimates the error caused by generating the query, that is, by concept selection and structural composition together.
+Comparing this with the full pipeline estimates the error caused by generating the query, that is, by concept selection and structural composition together.
 
 In the \textbf{end-to-end condition}, the model generates the labelled query and the same linking stages follow.
 This condition represents the deployed system and provides the main pipeline results.
 
-One design asymmetry needs mentioning.
-Property labels are resolved with the reasoning-based method in every condition, including those in which other linkers resolve the entities, because none of the compared systems links Wikidata properties.
-As a side benefit, entity-linking and property-linking errors can be measured separately, in line with \textcite{scharpf2026survey}, who identify joint entity and predicate linking as an underdeveloped area.
-The split is a diagnostic design choice, not a claim that the two tasks are best solved independently: joint entity--relation linking is an established alternative that exploits the compatibility between candidate entities and relations~\citep{dubey2018earl}.
+One asymmetry needs mentioning. Property labels are resolved with the reasoning-based method in every condition, including those where other linkers resolve the entities, because none of the compared systems links Wikidata properties. As a benefit, entity-linking and property-linking errors can be measured separately, in line with \textcite{scharpf2026survey}, who identify joint entity and predicate linking as an underdeveloped area. The split is a diagnostic design choice, not a claim that the two tasks are best solved independently: joint entity–relation linking is an established alternative that exploits compatibility between candidate entities and relations~\citep{dubey2018earl}.
 
 \begin{figure}[htbp]
   \centering
@@ -160,7 +157,7 @@ the stability of its ordering to be examined.}
 The dataset's identifier field is not stable between the raw file used to build the working split and the current release.
 Some identifiers point to different questions in the two versions, so rows are matched on normalised instruction text instead.
 The release offers two configurations with different splits; the official-split experiments use the default configuration, whose 495 test rows match the benchmark paper (the with-limit configuration has 493).
-Against the default configuration, 365 of the 567 working test rows (64.4\%) correspond to official training rows, 95 (16.8\%) to official test rows and 24 (4.2\%) to validation rows, 6 (1.1\%) have instructions that occur in more than one official split, and 77 (13.6\%) have no counterpart; the revision used here is pinned in the repository.
+Against the default configuration, 365 of the 567 working test rows (64.4\,\%) correspond to official training rows, 95 (16.8\,\%) to official test rows and 24 (4.2\,\%) to validation rows, 6 (1.1\,\%) have instructions that occur in more than one official split, and 77 (13.6\,\%) have no counterpart; the revision used here is pinned in the repository.
 This overlap does not contaminate the results of this thesis, since none of the models is fine-tuned on the benchmark; it matters only for the comparison with the authors' fine-tuned systems, which is why that comparison uses the official split.
 
 \section{Linking Methods and Ground
@@ -206,7 +203,7 @@ Linking}
 
 Two systems represent the fine-tuned paradigm.
 
-ReFinED~\parencite{ayoola2022refined} performs mention detection, fine-grained typing and disambiguation in one forward pass.
+ReFinED~\parencite{ayoola2022refined} performs mention detection, typing and disambiguation in one pass.
 It is run with the questions\_model checkpoint against the complete Wikidata entity set.
 \textcite{xu2023wikisp} and \textcite{alekseev2025querybased} also used ReFinED, which makes the results comparable with related work.
 
@@ -238,7 +235,7 @@ The $i$-th label in the annotated query therefore corresponds to the $i$-th iden
 The label type is checked against the identifier type: an entity label must align with a Q identifier and a property label with a P identifier, so alignment errors cannot slip through unnoticed.
 \Cref{fig:groundtruth} gives an example.
 
-On the working split, alignment succeeds for 547 of 567 rows (96.5\%), producing 1,086 entity mentions and 2,766 property mentions.
+On the working split, alignment succeeds for 547 of 567 rows (96.5\,\%), producing 1,086 entity mentions and 2,766 property mentions.
 On the official split, it succeeds for 472 rows, producing 1,055 entity mentions and 2,271 property mentions.
 Rows in which the numbers of labels and identifiers differ are excluded from the linking evaluation for every linker, so the excluded rows do not affect the comparison.
 
@@ -250,7 +247,7 @@ Many reference identifiers stand for classes or units that the question never me
 Two of the linking implementations choose from a shared candidate pool.
 They cannot recover an identifier that is missing from that pool, so candidate coverage has to be checked before their scores can be interpreted.
 
-With the rate-limited retrieval described above, the reference identifier is present for 1,080 of 1,086 entity mentions (99.4\%) and 2,730 of 2,766 property mentions (98.7\%).
+With the rate-limited retrieval described above, the reference identifier is present for 1,080 of 1,086 entity mentions (99.4\,\%) and 2,730 of 2,766 property mentions (98.7\,\%).
 Candidate retrieval is therefore not a binding constraint in the comparison.
 
 \begin{figure}[htbp]
@@ -327,7 +324,7 @@ Recovery}
 
 The error analysis in the results chapter identifies query structure as the main source of failure, in particular the underuse of constructs for qualified, quantified and hierarchical facts.
 If this explanation is right, giving the model information about these constructs should improve generation.
-Four prompt conditions test this.
+Seven prompt conditions test this: the four described below and three oracle conditions.
 
 All conditions use the same model, candidate pools, disambiguation backbone, execution environment and scoring; only the generation prompt changes.
 
@@ -360,6 +357,14 @@ A targeted card with conditional guidance for properties relevant to the questio
 The cards are built from reference-linked mentions, not from the mentions the pipeline resolves.
 This favours grounding, but the setting is not deployable because it relies on gold information, so it is treated as an upper-bound condition in the sense of the diagnostic protocol.
 
+\paragraph{Oracle conditions.}
+
+Three further conditions supply information taken from the reference query, to measure what the model does when the missing knowledge is given directly.
+The construct-profile condition lists the Wikidata-specific constructs the reference query uses, without revealing the query itself.
+The constrained-vocabulary condition gives a closed list of the entities and properties the reference query uses and forbids identifiers outside that list.
+A combined condition supplies both.
+Like the gold-label condition, these are diagnostic upper bounds, not deployable configurations.
+
 \subsection{Selective Application and the Execution-Guided
 Cascade}
 
@@ -375,9 +380,8 @@ A selective gate could predict whether a question needs a particular construct a
 Such a gate must meet two conditions: the need for a construct must be predictable from the question, and the guidance must do harm when the construct is not needed.
 
 To test predictability, a logistic-regression classifier is trained on unigram and bigram term-frequency features from the training split, with labels indicating whether the reference query uses the construct.
-To test whether selective application could help, the effect of idiom guidance is measured separately for questions that do and do not need each construct.
-An oracle gate then applies guidance only when the reference query requires a reification or hierarchy construct.
-Because the oracle has access to the reference query, it represents the best possible gate, not a deployable system.
+To test if using a selective application could help, the effect of idiom guidance is measured separately for questions that do and do not need each construct.
+An oracle gate applies guidance only when the reference requires a reification or hierarchy construct. Since it uses the reference query, it is an ideal but non-deployable gate.
 
 \paragraph{The Execution-Guided
 Cascade}
@@ -385,8 +389,7 @@ Cascade}
 The cascade relies on an observable failure signal instead of predicting the cause directly.
 Every reference query in the evaluation set returns at least one result, so a generated query that executes but returns nothing must be wrong.
 
-The cascade generates several queries for the same question with different prompts.
-It executes them in a fixed order and accepts the first result set that is non-empty and free of execution errors (\cref{fig:cascade-mechanism}).
+The cascade generates queries with different prompts, executes them in fixed order, and accepts the first non-empty, error-free result set as shown in (\cref{fig:cascade-mechanism}).
 
 On this evaluation set, the method is monotonic.
 It only replaces empty or failed results, which already score zero against a non-empty reference.
@@ -404,10 +407,7 @@ than an open-ended self-correction loop. This limits the cost and
 ensures monotonicity.}
 \end{figure}
 
-The cascade is compared with two alternatives that use the same candidates.
-The first selects a result-set centroid: among the candidates that return results, it picks the one whose result set is, on average, most similar to the others.
-The second adds a fallback to the best-performing single prompt when no candidates agree above a threshold.
-These comparisons show whether the useful signal comes from agreement between candidate answers or simply from having a valid preferred result.
+The cascade is compared with two alternatives using the same candidates. The first selects a result-set centroid: among candidates that return results, it picks the one whose result set is, on average, most similar to the others. The second adds a fallback to the best-performing prompt when no candidates agree above a threshold. These comparisons show whether the signal comes from agreement between candidate answers or simply from having a valid preferred result.
 
 Execution feedback is established in mKGQAgent~\parencite{perevalov2025mkgqagent}, SPINACH~\parencite{liu2024spinach}, and GRASP~\parencite{walter2025grasp}.
 These systems generally send execution failures back to the same prompt for revision.

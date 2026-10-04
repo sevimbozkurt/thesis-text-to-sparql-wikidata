@@ -6,7 +6,7 @@ This chapter interprets the results research question by research question, then
 
 \section{Main Findings}
 
-\paragraph{RQ1 --- What Frozen Frontier Models Can and Cannot
+\paragraph{RQ1: What Frozen Frontier Models Can and Cannot
 Do}
 
 \label{sec:disc-rq1}
@@ -17,18 +17,18 @@ The question is not whether these models can write valid SPARQL, but whether the
 
 The failures are shared across models.
 Three quarters of the questions are solved by none of the four models, which come from four different organisations.
-The questions that all four fail share a clear feature in their reference queries: they contain several times more statement nodes than easier questions, and only they use qualifier access and aggregation.
+The questions that all four fail share a clear feature in their reference queries: they contain several times more statement nodes than easier questions, and qualifier access and aggregation, which appear in them, never occur in the questions that all four models solve.
 The difficulty, in other words, lies in the task itself.
 
 Fine-tuning brings conformity to a query style, the very capability the frozen models lack: a 7B model trained on in-domain queries scores orders of magnitude higher than a much larger base model.
 This does not prove a general difference in capability, since more than half of its outputs are character-identical to the reference, although that alone does not establish leakage.
-A fine-tuned system reproduces a distribution of queries, whereas this pipeline derives a query from the question; the two agree only when the reference translates the question correctly, and the reference-noise audit shows that this is not always so (reference noise affects roughly one quarter of the strict fair set).
+A fine-tuned system reproduces a distribution of queries, whereas this pipeline derives a query from the question. The two agree only when the reference translates the question correctly, but the audit shows noise in roughly one quarter of the strict fair set.
 Whether this contributes materially to the observed gap remains open, since only sixteen adjudicated rows overlap the official split, and it is therefore listed as future work.
 
 The comparison that matters most for this thesis is among systems without in-domain training, and there the pipeline more than doubles the best published frozen result.
 The stage-wise analysis also shows where the remaining difference to fine-tuned systems comes from.
 
-\paragraph{RQ2 --- Why Disambiguation Is Not the
+\paragraph{RQ2: Why Disambiguation Is Not the
 Bottleneck}
 
 \label{sec:disc-rq2}
@@ -46,12 +46,12 @@ Even with both supplied, the model reaches 50.4 against 97.4 for the gold-label 
 \paragraph{Performance of the End-to-End Linkers}
 
 The fine-tuned linkers' deficit of about 70 points traces to the mention-detection mismatch discussed in the related work, and the set-based metric closes only a small part of it.
-Given the same candidates, the bi-encoder trails the reasoning linker by 24.9 points and the plain search order by 20.8, so reasoning over candidates is the strongest of the compared mechanisms, while most of its accuracy comes from labels that Wikidata's search can find.
+Given the same candidates, the bi-encoder trails the reasoning linker by 24.9 points and the plain search order by about 21, so reasoning over candidates is the strongest of the compared mechanisms, while most of its accuracy comes from labels that Wikidata's search can find.
 Research that focuses mainly on entity linking for this task, including the 35.1\,\% failure share reported by \citet{xu2023wikisp}, may therefore be improving a stage that this architecture has largely solved.
-This is consistent with the findings for a fine-tuned system on simpler questions.
+\citet{xu2023wikisp} measured a fine-tuned system on simpler questions, where linking makes up a larger share of the errors; the two results describe different architectures and do not contradict each other.
 For a pipeline of this kind, better disambiguation offers little headroom, while query generation leaves much more room.
 
-\paragraph{RQ3 --- What Backbone Scale Buys, and
+\paragraph{RQ3: What Backbone Scale Buys, and
 Where}
 
 \label{sec:disc-rq3}
@@ -66,12 +66,12 @@ Asked to name Wikidata entities and properties without further help, the open mo
 This points to a hybrid deployment, with a capable model for labels and a cheaper one for disambiguation.
 String normalisation, which should fix superficial casing issues such as camelCase or snake\_case, lowers the failure rate only to 13.8\,\%.
 The main problem is near-miss wording (``crew member(s)'', for example, names a different property and is not a misspelling), and normalisation hardly touches it.
-The backbone comparison repeats generation with a later frontier model and finds the same pattern: subclass closure and property paths improve, statement nodes and qualifiers improve little, and value nodes do not improve.
+The replication with Claude Opus 5 repeats generation with a later frontier model and finds the same pattern: subclass closure and property paths improve, statement nodes and qualifiers improve little, and value nodes do not improve.
 The generation deficit therefore does not disappear as models get better.
 Schema evidence, selective gating, majority voting and string repair fail in the same way: none of them supplies knowledge of how the graph itself names and models information.
 The disambiguation results show that the smaller model already reasons well enough for that stage, so the generation gap is about vocabulary, not reasoning.
 
-\paragraph{RQ4 --- Guidance versus
+\paragraph{RQ4: Guidance versus
 Evidence}
 
 \label{sec:disc-rq4}
@@ -87,7 +87,7 @@ The intervention failed even though the schema cards were built from reference-l
 
 \paragraph{Predicting Construct Need from the Question}
 
-A classifier that predicts from the question text alone whether a reference query uses a given construct reaches only moderate performance (AUC 0.62--0.82); its strongest features for subclass closure are topical terms (``libraries,'' ``hospitals,'' ``scientists''), which say nothing about how Wikidata models the domain.
+A classifier that predicts from the question text alone whether a reference query uses a given construct reaches only moderate performance (AUC 0.62--0.82); its strongest features for subclass closure are topical terms (``libraries'', ``hospitals'', ``scientists''), which say nothing about how Wikidata models the domain.
 
 \paragraph{Cost of Unnecessary Idiom Use}
 
@@ -123,7 +123,7 @@ The factorial arm shows that the two contributions add up, and naming a construc
 The profile hint tells the model which idiom a question needs; it does not show how to build a complete query around it.
 General advice brought no further gains in these experiments; restricting the identifiers available to the generator was the more effective intervention.
 
-\paragraph{RQ5 --- Detectable Failure and the Value of
+\paragraph{RQ5: Detectable Failure and the Value of
 Execution}
 
 \label{sec:disc-rq5}
@@ -133,7 +133,7 @@ A cascade that accepts the first non-empty, error-free result raises the score b
 Of the 92 fallback rows, 64 are triggered by empty results; the gain amounts to about two fifths of the 12-point oracle headroom, so execution feedback catches some failures but cannot correct a query that runs successfully and returns the wrong answer.
 
 The cascade also beats result-set majority voting (37.0 vs.\ 33.8 for the centroid, against a 32.2 baseline): agreement between outputs is a weaker signal than execution, because wrong queries can agree with each other.
-Unlike agentic self-correction, which generates, executes and revises queries in a loop, the cascade chooses among alternatives that already exist, in a fixed order.
+Unlike agentic self-correction, which generates, executes and revises queries in a loop, the cascade chooses among alternatives that exist in a fixed order.
 This makes it cheaper and easier to reproduce.
 It recovers a failure whenever one of the alternatives is correct; generating the correct structure in the first place remains the main direction for future work.
 
@@ -162,7 +162,7 @@ A stale error sample & Complex failures judged to contain no linking errors & Th
 \end{tabular}
 \end{table}
 
-The general lesson is that a plausible result needs more than a check of the final score: these artefacts were caught through regeneration, auditing and comparison with intermediate outputs, not from headline numbers.
+The lesson is that a plausible result needs more than a check of the final score: these artefacts were caught through regeneration, auditing and comparison with intermediate outputs, not from headline numbers.
 Two practical recommendations follow: treat empty or unusually short responses from the Wikidata search API as suspicious and re-check them with repeated requests, and regenerate KGQA experiments end to end from stored inputs after any change to the pipeline.
 
 \begin{figure}[htbp]
@@ -191,7 +191,7 @@ The reasoning linkers and GLiNKER receive mention strings and curated candidate 
 Reference noise affects an estimated 24.6\,\% of the strict fair set (interval [12.9, 42.0]); scores are not corrected for it, so that they remain comparable with the existing literature.
 \item
 \textbf{Scope.}
-The study evaluates four models from four organisations and two frontier generations in an English-centric setting, on one Wikidata dump served by QLever, which excludes approximately 15\,\% of gold queries that depend on Blazegraph-specific behaviour.
+The study evaluates four models from four organisations and two frontier generations in an English setting, on one Wikidata dump served by QLever, which excludes around 15\,\% of gold queries that depend on Blazegraph-specific behaviour.
 The linking results are replicated on LC-QuAD 2.0, while the structural gap is measured on Instruct-to-SPARQL.
 The design principle of constraining rather than enumerating the schema is established on one benchmark, one generation backbone and one schema-card design.
 \item

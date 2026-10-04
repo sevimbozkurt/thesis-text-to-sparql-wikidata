@@ -44,14 +44,13 @@ A short query pattern returns only the main value of a fact, for example who hel
 Extra details need longer and more specific patterns: when the office was held, the unit of a quantity, or every member of a broad category.
 The next chapter introduces these patterns with examples.
 
-The short pattern is always valid SPARQL, and that is the problem.
-A model that does not know a longer pattern is needed can use the short one and still get a query that runs, sometimes with plausible results.
+Because the short pattern is always valid SPARQL, a model that does not know a longer pattern is needed can use the short one and still get a query that runs, sometimes with plausible results.
 A syntax check cannot catch this kind of error.
 Only comparing the query's result with the expected answer can.
 Because end-to-end evaluation folds grounding and structure into one score, it hides which of the two causes most errors.
 That matters, since the two problems need different solutions.
 Earlier error analyses have put most of the weight on entity linking.
-\citet{xu2023wikisp}, for example, attribute 35.1\,\% of their system's failures to entity linking and call it ``the biggest source of errors.''
+\citet{xu2023wikisp}, for example, attribute 35.1\,\% of their system's failures to entity linking and call it ``the biggest source of errors''.
 Much later work has accordingly focused on better grounding.
 
 Separating the two stages requires a benchmark that offers more than questions and final answers.
@@ -70,7 +69,7 @@ How well do frozen frontier models translate natural-language questions into exe
 \item[RQ2]
 How much of the remaining error is caused by entity and predicate linking, and how much by generating the query, that is, choosing its concepts and composing its structure?
 \item[RQ3]
-Under the same circumstances, how do the three linking paradigms---fine-tuned end-to-end linking, zero-shot bi-encoder retrieval, and large-language-model reasoning over retrieved candidates---compare, and how does each step depend on backbone scale?
+Under the same circumstances, how do the three linking ("paradigms---fine-tuned end-to-end linking, zero-shot bi-encoder retrieval, and large-language-model reasoning over retrieved candidates---compare") and how does each step depend on backbone scale?
 \item[RQ4]
 Which forms of inference-time guidance improve frozen-model query generation, and does their effect depend on whether they narrow or expand the generator's decision space?
 \item[RQ5]
@@ -98,14 +97,14 @@ The contributions of this thesis are:
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-\textbf{Stage-wise diagnostic evaluation}, defined as a protocol and applied end to end (derive, isolate, attribute, intervene).
+\textbf{Stage-wise diagnostic evaluation}, defined as a protocol and applied end to end (derive, isolate, compare, intervene).
 It includes mention-level linking ground truth derived from the benchmark's aligned queries, without new annotation or an external linker index.
 \item
 \textbf{Evidence-based attribution of the binding constraint to query generation (concept selection and structural composition) rather than disambiguation}.
 Four linking approaches are compared on the same rows and ground truth, with the same candidate pools where a linker uses them, on two data splits, and the attribution is supported by a failure taxonomy, an analysis of Wikidata-specific constructs across the full corpus, and agreement across independent models.
 The same experiments show that backbone dependence differs between linking and generation.
 \item
-\textbf{Controlled interventions and the execution-guided cascade}: four plausible prompt-based interventions are tested.
+\textbf{Controlled interventions and the execution-guided cascade}: four prompt-based interventions are tested: generic idiom guidance, schema evidence, selective application of guidance and a closed vocabulary.
 They rule out several approaches and lead to a design principle, \emph{ground by constraint, not by enumeration}.
 The thesis then introduces an execution-guided cascade that recovers some of the remaining errors from inference-time signals alone, without additional training, a reference query or new generation.
 Together, these experiments yield a configured pipeline in which every backbone is chosen on measured performance.
@@ -113,5 +112,5 @@ Together, these experiments yield a configured pipeline in which every backbone 
 
 The thesis also makes a methodological contribution.
 It identifies four measurement artefacts that can distort KGQA evaluation, such as a metric that rewards queries for returning nothing and silent API throttling that looks like a retrieval problem, and it shows how each can be detected.
-In three of the four cases the artefact produced a more striking conclusion than the true result, which is exactly why such artefacts are easy to miss.
+In three of the four cases the artefact produced a more striking conclusion than the true result, which made it easy to accept.
 They motivate the validation practices used throughout this work.

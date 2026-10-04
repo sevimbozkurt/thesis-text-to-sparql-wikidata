@@ -42,7 +42,7 @@ UNI = {"→": r"$\rightarrow$", "←": r"$\leftarrow$", "≈": r"$\approx$",
        "≤": r"$\leq$", "≥": r"$\geq$", "×": r"$\times$", "−": "--",
        "—": "---", "–": "--", "…": r"\ldots{}", "κ": r"$\kappa$",
        "ρ": r"$\rho$", "∅": r"$\emptyset$", "“": "``", "”": "''",
-       "‘": "`", "’": "'", " ": "~"}
+       "‘": "`", "’": "'", " ": "~", "\u202f": r"\,"}
 
 
 def md(s):
@@ -194,10 +194,7 @@ try:
             r"\texttt{" + esc(r["second_annotator"]) + "}",
             r"\checkmark" if r["agree"] == "1" else ""]) + r" \\")
     lines += [r"\bottomrule", r"\end{tabular}}",
-              r"\tabnote{Raw agreement " + f"{agree} of {len(rows_ia)}" +
-              r"; Cohen's $\kappa = 0.595$. The second annotator worked only from "
-              r"the written category guide and had no prior involvement in this work. "
-              r"The study was designed and administered by the author.}",
+              r"\tabnote{Labels assigned by the author and by the second annotator, case by case.}",
               r"\end{table}"]
     w("app_interannotator.tex", "\n".join(lines))
 except Exception as e:
@@ -257,7 +254,7 @@ TABLES = [
 COLUMNS = {
     "app_linker_ci.tex": {"comparison": "Linker or paired difference",
                           "estimate": "F1 / difference",
-                          "ci_low": "95% CI low", "ci_high": "95% CI high"},
+                          "ci_low": "95\u202f% CI low", "ci_high": "95\u202f% CI high"},
 }
 for src, name, cap, lab, note in TABLES:
     try:

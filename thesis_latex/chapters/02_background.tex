@@ -30,15 +30,12 @@ This is the reason for the fair set, which keeps only rows whose gold query stil
 
 \label{sec:wikidata-model}
 
-Wikidata's data model is richer than a simple Resource Description Framework (RDF) triple.
-A statement is more than a subject–property–value relation, because it can carry additional information.
-To publish Wikidata as Linked Data, \citet{erxleben2014introducing} defined an RDF export that represents each statement twice: as a direct edge for convenient access, and as a reified structure that keeps the additional information.
+Wikidata’s data model is richer than a simple Resource Description Framework (RDF) triple. A statement is more than a subject–property–value relation, as it can carry additional information. To publish Wikidata as Linked Data, \citet{erxleben2014introducing} defined an RDF export that represents each statement twice: as a direct edge for convenient access and as a reified structure that holds additional information.
 \citet{hernandez2015reifying} compare standard RDF reification, n-ary relations, singleton properties and named graphs against Wikidata's requirements and query performance.
 The Wikidata export follows the n-ary, statement-node design.
 
-For query authors, this results in several Wikidata-specific SPARQL patterns.
-\Cref{tab:sparql-constructs} summarises them.
-Every one of them occurs in the benchmark and comes back in the failure analysis later in the thesis.
+For query authors, this results in Wikidata-specific SPARQL patterns as summarised in
+\Cref{tab:sparql-constructs}. Each of them occurs in the benchmark and appears in the failure analysis later in the thesis.
 
 \begin{table}[htbp]
 \centering
@@ -92,7 +89,7 @@ One of them matters most for this thesis: the simpler query form is always synta
 A model can use wdt: even when a statement node, qualifier or normalised value node is actually needed.
 The resulting query is valid and may even return plausible results, yet it answers the wrong question.
 
-Syntax checking alone therefore cannot find every structural error; only a comparison with the result of a gold query can.
+Syntax checking alone cannot find every structural error, but only a comparison with the result of a gold query can.
 Better entity linking cannot fix such an error either, because the identifiers are already correct.
 For this reason, the thesis analyses structural and linking errors separately.
 
@@ -120,7 +117,7 @@ It also keeps the graph from changing during the experiments.
 The two engines are not fully interchangeable.
 Blazegraph supports named subqueries (WITH \ldots{} AS), the geospatial service wikibase:around, the mwapi service and the ``gas'' graph-traversal services; QLever does not.
 QLever also applies stricter rules to AS targets and so rejects some queries that Blazegraph accepts.
-As a result, around 15\% of the benchmark's gold queries run only on Blazegraph and are excluded from the evaluation.
+As a result, around 15\,\% of the benchmark's gold queries run only on Blazegraph and are excluded from the evaluation.
 The method chapter describes this issue in detail and discusses engine choice as a threat to comparability.
 
 Real-world query use offers another point of comparison.
@@ -175,7 +172,7 @@ Models}
 
 \label{sec:related-t2s}
 
-The following paragraphs review fine-tuned models, prompting and in-context learning, and agents, and then turn to recent work on schema-aware grounding, which can be combined with any of them.
+The following paragraphs cover fine-tuned models, prompting, in-context learning, and agents, followed by recent schema-aware grounding methods that can complement these approaches.
 
 \paragraph{Fine-tuned sequence-to-sequence
 models}
@@ -191,7 +188,7 @@ learning}
 \citet{dabramo2025investigating} study in-context learning for text-to-SPARQL on benchmarks that supply gold entities and relations (so their evaluation, like \citet{banerjee2022modern}'s, isolates generation), and identify a systematic \emph{triple-flip} error: the model reverses the subject and object of a generated triple, producing a query that is valid, incorrect and often empty.
 Their fix keeps several beam-search hypotheses instead of only the most probable one.
 This independently supports the distinction between linking and structure drawn in this thesis, and it connects to the empty results observed here: a structurally wrong query over correct identifiers often returns nothing, so an empty result can be a diagnostic signal.
-Few-shot demonstrations can also teach more than surface format: \citet{shah2024implicit} show that examples which make implicit multi-hop reasoning steps visible improve generated SPARQL and Cypher queries, a more targeted use of demonstrations than the few-shot condition tested here.
+Few-shot demonstrations can also teach more than surface format: \citet{shah2024implicit} show that examples which make implicit multi-hop reasoning steps visible improve generated SPARQL and Cypher queries, a more targeted use of demonstrations than the few-shot condition tested.
 
 \paragraph{Agentic systems}
 
@@ -332,7 +329,7 @@ The cascade used here is a minimal, single-round form of execution feedback, add
 Four aspects define the contribution.
 The linking comparison evaluates four paradigms on the same rows, ground truth and candidate pools, with the gold standard taken from the benchmark's own annotated queries rather than from an external linker's index.
 Error is attributed to individual stages, with backbone dependence measured separately for each, instead of being reduced to one end-to-end score.
-Interventions are controlled by changing only the generation prompt, and four plausible directions are tested rather than assumed.
+Interventions are controlled by changing only the generation prompt, and four directions are tested: generic guidance, schema evidence, selective guidance and a closed vocabulary.
 External validity is checked against real query-log usage in both directions.
 
 \paragraph{Framing}

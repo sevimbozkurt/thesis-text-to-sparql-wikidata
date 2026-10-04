@@ -103,7 +103,7 @@ table("results_tables/memorisation_frontier.csv", "memorisation_frontier.tex",
       "Skeletons compare query shape only: identifiers, literals, variable names, numbers and "
       "prefixes are removed. \\emph{Identical} is the memorisation test; "
       "\\emph{Other} measures resemblance to any other dataset query and reflects genericness "
-      "rather than recall. For reference, 56\\% of the benchmark authors' fine-tuned model's outputs "
+      "rather than recall. For reference, 56\\,\\% of the benchmark authors' fine-tuned model's outputs "
       "are character-identical to the reference query. \\emph{Identical}, $\\geq$0.95 and $\\geq$0.90 give the "
       "share of outputs (\\%) whose skeleton is identical or that similar to its own reference; "
       "\\emph{Other} is the best similarity to any other dataset query (mean, and share $\\geq$0.90 in \\%); "

@@ -1,4 +1,4 @@
-# Second-adjudicator guide — are the benchmark's own queries any good?
+# Second-adjudicator guide: are the benchmark's own queries any good?
 
 Thank you for doing this. It should take **60–90 minutes**, and you can stop
 part-way: the rows are ordered so that a partial return is still usable.
@@ -7,7 +7,7 @@ part-way: the rows are ordered so that a partial return is still usable.
 
 This thesis evaluates a system that translates questions into SPARQL queries
 over Wikidata. Every such system is scored against a benchmark's **reference
-queries** — the queries its authors wrote as the correct answer.
+queries**, the queries its authors wrote as the correct answer.
 
 An earlier check suggested some of those reference queries **do not actually
 answer the question they are attached to**. If that is true and common, then
@@ -16,7 +16,7 @@ marked against a partly wrong answer key.
 
 Your job is one judgement per row:
 
-> **Does this reference query fairly answer its question — yes or no?**
+> **Does this reference query fairly answer its question, answer yes or no?**
 
 You are judging **the benchmark**, not the thesis and not any system's output.
 
@@ -63,7 +63,7 @@ for. Examples of genuine faults found earlier:
 - **The query looks inelegant, or you would have written it differently.** Not a
   fault. Only ask whether it answers the question.
 - **It returns a lot of rows, or rows you did not expect.** Not by itself a
-  fault — Wikidata is large and messy.
+  fault, but because Wikidata is large and messy.
 - **A yellow box says "Did not execute on this endpoint".** This means the query
   uses syntax our query engine does not support, or refers to items removed from
   Wikidata since 2019. **Failing to run is not the same as failing to answer the
@@ -71,11 +71,11 @@ for. Examples of genuine faults found earlier:
 - **A column is blank.** Wikidata often has no label in English for an item.
 
 When you genuinely cannot tell, pick the closer answer and say so in the note.
-Leaving a row unanswered is also fine — it is simply excluded.
+Leaving a row unanswered is also fine as it is simply excluded.
 
 ## What happens to your work
 
 Two numbers, both reported in the thesis with your role described: agreement
 between the two of us (Cohen's kappa), and the rate of faulty reference queries
 estimated from your verdicts alone. You will be credited as an independent
-adjudicator; your name is included only if you want it.
+adjudicator. Your name is included only if you want it.

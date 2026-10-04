@@ -3,7 +3,7 @@ OFFICIAL-split ground truth (gold_links_official.json, string row ids).
 
 Usage:
   python3 eval_linker_official.py preds_reasoning_official.jsonl
-  python3 eval_linker_official.py preds_glinker_official.jsonl
+  python3 eval_linker_official.py preds_glinker_restricted_desc_official.jsonl
   python3 eval_linker_official.py preds_refined_official.jsonl
 """
 

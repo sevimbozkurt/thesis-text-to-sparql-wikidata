@@ -32,7 +32,7 @@ say("## Input files (sha256, first 12 hex chars)")
 say()
 for p in ["test.json", "train.json", "val.json",
           "gold_status_qlever.csv", "gold_results.json", "gold_links.json",
-          "candidates.json", "candidates_expanded.json", "properties_clean.json",
+          "candidates_expanded.json", "properties_clean.json",
           "official_test.json", "official_gold_results.json",
           "gold_links_official.json", "candidates_official.json",
           "schema_cards_working.json", "schema_cards_targeted_working.json",

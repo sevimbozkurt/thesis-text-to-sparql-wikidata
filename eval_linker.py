@@ -1,8 +1,8 @@
 """eval_linker.py — Score ANY linker's predictions against gold_links.json.
 
 Usage:
-    python3 eval_linker.py preds_reasoning.jsonl
-    python3 eval_linker.py preds_glinker.jsonl
+    python3 eval_linker.py preds_reasoning_clean.jsonl
+    python3 eval_linker.py preds_glinker_restricted_desc.jsonl
 """
 
 import json, sys, collections
@@ -70,4 +70,4 @@ def main(pred_file):
         print(line)
 
 if __name__ == "__main__":
-    main(sys.argv[1] if len(sys.argv) > 1 else "preds_reasoning.jsonl")
+    main(sys.argv[1] if len(sys.argv) > 1 else "preds_reasoning_clean.jsonl")

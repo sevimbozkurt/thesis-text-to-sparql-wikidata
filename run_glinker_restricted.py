@@ -3,14 +3,14 @@ candidates.
 
 Usage:
     python3 run_glinker_restricted.py --template desc  [--split official] [--limit N]
-    python3 eval_linker.py preds_glinker_restricted_desc.jsonl
-    python3 eval_linker_official.py preds_glinker_restricted_desc_official.jsonl
+    python3 eval_linker.py outputs/preds_glinker_restricted_desc.jsonl
+    python3 eval_linker_official.py outputs/preds_glinker_restricted_desc_official.jsonl
 """
 
 import argparse, json, warnings
 
 MODEL = "knowledgator/gliner-linker-large-v1.0"
-POOL  = "candidates_expanded.json"
+POOL  = "data/candidates_expanded.json"
 K     = 7
 TEMPLATES = {"desc": "{label}: {description}", "label": "{label}"}
 
@@ -31,21 +31,21 @@ def main():
     ap.add_argument("--limit", type=int, default=None)
     a = ap.parse_args()
     official = a.split == "official"
-    out_path = (f"preds_glinker_restricted_{a.template}"
+    out_path = (f"outputs/preds_glinker_restricted_{a.template}"
                 + ("_official" if official else "") + ".jsonl")
 
     warnings.filterwarnings("ignore")
     from glinker import ProcessorFactory
     if official:
-        pool = json.load(open("candidates_official.json"))
-        gold = json.load(open("gold_links_official.json"))
-        question = {str(r["id"]): r["instruction"] for r in json.load(open("official_test.json"))}
+        pool = json.load(open("data/candidates_official.json"))
+        gold = json.load(open("data/gold_links_official.json"))
+        question = {str(r["id"]): r["instruction"] for r in json.load(open("data/official_test.json"))}
         def cands_for(label):
             return pool.get(f"entity|{label}", [])[:K]
     else:
         pool = json.load(open(POOL))
-        gold = {int(k): v for k, v in json.load(open("gold_links.json")).items()}
-        question = dict(enumerate(r["instruction"] for r in json.load(open("test.json"))))
+        gold = {int(k): v for k, v in json.load(open("data/gold_links.json")).items()}
+        question = dict(enumerate(r["instruction"] for r in json.load(open("data/test.json"))))
         def cands_for(label):
             return [c for c in pool.get(f"entity|{label}", []) if c.get("src") == "wbsearch"][:K]
     executor = ProcessorFactory.create_simple(

@@ -87,18 +87,18 @@ def main():
 
     tag = re.sub(r'[^A-Za-z0-9]+', '-', a.model).strip('-').lower()
     gen_file  = f"gen_{tag}_{a.split}.json"
-    pool_file = f"pool_{tag}_{a.split}.json"
-    out_file  = f"linked_queries_{tag}_{a.split}.json"
+    pool_file = f"data/pool_{tag}_{a.split}.json"
+    out_file  = f"outputs/linked_queries_{tag}_{a.split}.json"
 
     if a.split == "official":
-        rows = load("official_test.json")
+        rows = load("data/official_test.json")
         qs = {str(r["id"]): r["instruction"] for r in rows}
-        base_pool = load("candidates_official.json", {})
+        base_pool = load("data/candidates_official.json", {})
     else:
-        test = load("test.json")
+        test = load("data/test.json")
         qs = {str(i): r["instruction"] for i, r in enumerate(test)}
         base_pool = {}
-        for f in ["candidates_expanded.json", "properties_clean.json",
+        for f in ["data/candidates_expanded.json", "data/properties_clean.json",
                   "e2e_candidates_clean.json"]:
             base_pool.update(load(f, {}))
     print(f"{a.split} split: {len(qs)} questions")

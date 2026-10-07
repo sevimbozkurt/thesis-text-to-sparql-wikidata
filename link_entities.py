@@ -221,11 +221,11 @@ def main():
     parser.add_argument("--limit", type=int)
     args = parser.parse_args()
 
-    with open("test.json") as f:
+    with open("data/test.json") as f:
         test = json.load(f)
     rows_all = test[:args.limit] if args.limit else test
 
-    outfile = "results_linking.csv"
+    outfile = "outputs/results_linking.csv"
     done = set()
     if os.path.exists(outfile):
         with open(outfile) as f:

@@ -11,12 +11,12 @@
 # writing. Keep your own backup of these separately as git is NOT
 # backing them up.
 # ---------------------------------------------------------------
-gold_results.json
-consensus_results.json
-final_fq17-generated_prompt_query_annotated.json
+data/gold_results.json
+outputs/consensus_results.json
+data/final_fq17-generated_prompt_query_annotated.json
 regen/official_gold_results.json
-all_results.csv
-preds_values.jsonl.gz
+data/all_results.csv
+outputs/preds_values.jsonl.gz
 external/
 literature/papers/
 admin/*.pdf

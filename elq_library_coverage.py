@@ -5,8 +5,8 @@ catalogue at all.
 import json, sys, time
 import requests
 
-gold_off = json.load(open("gold_links_official.json"))
-gold_w = json.load(open("gold_links.json"))
+gold_off = json.load(open("data/gold_links_official.json"))
+gold_w = json.load(open("data/gold_links.json"))
 E_off = {g for ps in gold_off.values() for k, l, g in ps if k == "entity"}
 E_w = {g for ps in gold_w.values() for k, l, g in ps if k == "entity"}
 
@@ -60,5 +60,5 @@ out += ["",
         f"official split, cross-check by current English Wikipedia title: {ct} = {ct / len(E_off) * 100:.1f}%",
         f"official split, without an English Wikipedia page: {nosl} = {nosl / len(E_off) * 100:.1f}%",
         f"sitelink lookups that failed after retries: {failed}"]
-open("RESULT_elq_coverage.txt", "w").write("\n".join(out) + "\n")
+open("results_tables/RESULT_elq_coverage.txt", "w").write("\n".join(out) + "\n")
 print("\n".join(out))

@@ -1,5 +1,5 @@
 """extract_reasoning_preds.py — Recover the reasoning linker's predictions from
-the cached results_linking.csv (no API calls).
+the cached outputs/results_linking.csv (no API calls).
 """
 
 import json, re, csv
@@ -7,9 +7,9 @@ import json, re, csv
 BRACKET = re.compile(r'\[(entity|property):([^\]]+)\]')
 TOKEN   = re.compile(r'\[(?:entity|property):[^\]]+\]|\b[QP]\d+\b')
 
-gold_map = {int(k): v for k, v in json.load(open("gold_links.json")).items()}
-test     = json.load(open("test.json"))
-linking  = {int(r["index"]): r for r in csv.DictReader(open("results_linking.csv"))}
+gold_map = {int(k): v for k, v in json.load(open("data/gold_links.json")).items()}
+test     = json.load(open("data/test.json"))
+linking  = {int(r["index"]): r for r in csv.DictReader(open("outputs/results_linking.csv"))}
 
 written, skipped = 0, 0
 with open("preds_reasoning.jsonl", "w") as out:
@@ -34,4 +34,4 @@ with open("preds_reasoning.jsonl", "w") as out:
             written += 1
 
 print(f"Wrote {written} mention predictions to preds_reasoning.jsonl "
-      f"({skipped} rows missing from results_linking.csv)")
+      f"({skipped} rows missing from outputs/results_linking.csv)")

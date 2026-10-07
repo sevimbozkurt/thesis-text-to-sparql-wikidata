@@ -22,8 +22,8 @@ def wilson(k, n, z=1.96):
     return (max(0.0, c-h), min(1.0, c+h))
 
 out = []
-for path, label in [("annotation_clean.csv", "reported (clean-pool) run"),
-                    ("my_annotation.csv", "pre-repair run (supporting)")]:
+for path, label in [("annotations/annotation_clean.csv", "reported (clean-pool) run"),
+                    ("annotations/my_annotation.csv", "pre-repair run (supporting)")]:
     rows = load(path)
     n = len(rows)
     g = collections.Counter(GROUP.get(r["error_category"].strip(), "other") for r in rows)

@@ -7,9 +7,9 @@ Usage:  python3 refetch_candidates.py
 import json, time, os, sys
 import requests
 
-CAND = "batch_candidates.json"
+CAND = "data/batch_candidates.json"
 API = "https://www.wikidata.org/w/api.php"
-HEADERS = {"User-Agent": "ThesisKGQA/2.0 (master thesis research; sevim)"}
+HEADERS = {"User-Agent": "ThesisKGQA/2.0 (master thesis research)"}
 N = 7
 DELAY = 1.2           # base delay between requests
 MAX_PASSES = 3

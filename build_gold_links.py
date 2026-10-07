@@ -19,7 +19,7 @@ def align(annotated, gold):
     return pairs
 
 if __name__ == "__main__":
-    test = json.load(open("test.json"))
+    test = json.load(open("data/test.json"))
     gold_map, mismatched = {}, []
     for i, ex in enumerate(test):
         pairs = align(ex["annotated"], ex["query"])
@@ -28,7 +28,7 @@ if __name__ == "__main__":
         else:
             gold_map[i] = pairs
 
-    with open("gold_links.json", "w") as f:
+    with open("data/gold_links.json", "w") as f:
         json.dump({str(k): v for k, v in gold_map.items()}, f, indent=1)
 
     n_ent  = sum(1 for ps in gold_map.values() for p in ps if p[0] == "entity")

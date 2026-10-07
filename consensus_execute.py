@@ -9,17 +9,17 @@ import csv, json, os, sys, time
 from endpoint import run_sparql
 
 CAP = 20000
-OUT = "consensus_results.json"
-RUNS = {"zs-gpt":     ("qlever_v2/results_gpt-5.4.csv", "generated_query", "index"),
-        "zs-claude":  ("qlever_v2/results_claude.csv", "generated_query", "index"),
-        "zs-gemini":  ("qlever_v2/results_gemini.csv", "generated_query", "index"),
-        "zs-deepseek": ("qlever_v2/results_deepseek.csv", "generated_query", "index"),
-        "fs-claude":  ("qlever_v2/results_fewshot_claude.csv", "generated_query", "index"),
-        "e2e-clean":  ("qlever_v2/results_e2e_clean.csv", "linked_query", "index"),
-        "arm-base":   ("linked_base-qwen.json", "linked_query", None),
-        "arm-idiom":  ("linked_idiom-qwen.json", "linked_query", None)}
+OUT = "outputs/consensus_results.json"
+RUNS = {"zs-gpt":     ("outputs/qlever_v2/results_gpt-5.4.csv", "generated_query", "index"),
+        "zs-claude":  ("outputs/qlever_v2/results_claude.csv", "generated_query", "index"),
+        "zs-gemini":  ("outputs/qlever_v2/results_gemini.csv", "generated_query", "index"),
+        "zs-deepseek": ("outputs/qlever_v2/results_deepseek.csv", "generated_query", "index"),
+        "fs-claude":  ("outputs/qlever_v2/results_fewshot_claude.csv", "generated_query", "index"),
+        "e2e-clean":  ("outputs/qlever_v2/results_e2e_clean.csv", "linked_query", "index"),
+        "arm-base":   ("outputs/linked_base-qwen.json", "linked_query", None),
+        "arm-idiom":  ("outputs/linked_idiom-qwen.json", "linked_query", None)}
 
-strict = {r["index"] for r in csv.DictReader(open("gold_status_qlever.csv"))
+strict = {r["index"] for r in csv.DictReader(open("data/gold_status_qlever.csv"))
           if r["gold_executed"] == "True" and r["gold_result_count"] != "0"}
 
 def load_queries(path, qcol, icol):

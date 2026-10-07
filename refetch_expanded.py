@@ -1,15 +1,15 @@
-"""refetch_candidates.py — Repair empty candidate lists in
-batch_candidates.json.
+"""refetch_expanded.py — Repair empty candidate lists in
+data/candidates_expanded.json.
 
-Usage:  python3 refetch_candidates.py
+Usage:  python3 refetch_expanded.py
 """
 
 import json, time, os, sys
 import requests
 
-CAND = "candidates_expanded.json"
+CAND = "data/candidates_expanded.json"
 API = "https://www.wikidata.org/w/api.php"
-HEADERS = {"User-Agent": "ThesisKGQA/2.0 (master thesis research; sevim)"}
+HEADERS = {"User-Agent": "ThesisKGQA/2.0 (master thesis research)"}
 N = 7
 DELAY = 2.5           # base delay between requests
 MAX_PASSES = 5

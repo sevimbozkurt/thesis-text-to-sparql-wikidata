@@ -61,7 +61,7 @@ def table(src, out, caption, label, note, cols=None, rows_filter=None, align=Non
 
 print("writing tables:")
 
-table("linker_comparison.csv", "linker_comparison.tex",
+table("results_tables/linker_comparison.csv", "linker_comparison.tex",
       "Entity and property linking across four paradigms, both splits.",
       "tab:linkers",
       "Identical rows, identical ground truth and identical candidate pools within each split. "

@@ -15,9 +15,9 @@ PAT = {"closure P279*":  r'P279\s*\*|subclass of\]\s*\*',
        "alternation":    r'(?i)\bvalues\b|\bunion\b'}
 IDIOM_ANY = r'P279\s*\*|\bp:P\d+|\bpq:P\d+|\bpsv:P\d+'
 
-tr = json.load(open("train.json")); te = json.load(open("test.json"))
+tr = json.load(open("data/train.json")); te = json.load(open("data/test.json"))
 gold = {str(i): r["query"] for i, r in enumerate(te)}
-strict = {r["index"] for r in csv.DictReader(open("gold_status_qlever.csv"))
+strict = {r["index"] for r in csv.DictReader(open("data/gold_status_qlever.csv"))
           if r["gold_executed"] == "True" and r["gold_result_count"] != "0"}
 
 def val(r, col="jaccard_entity"):
@@ -41,7 +41,7 @@ for name, p in PAT.items():
 
 # ── P2 ────────────────────────────────────────────────────────────────
 def rows(f): return {r["row_id"]: r for r in csv.DictReader(open(f))}
-base, idi = rows("linked_base-qwen.csv"), rows("linked_idiom-qwen.csv")
+base, idi = rows("outputs/linked_base-qwen.csv"), rows("outputs/linked_idiom-qwen.csv")
 common = [k for k in base if k in idi and k in strict and val(base[k]) is not None and val(idi[k]) is not None]
 d = {k: (val(idi[k]) - val(base[k])) * 100 for k in common}
 print(f"\nP2 — idiom prompt vs baseline, paired entity Jaccard, n={len(common)}")
@@ -59,9 +59,9 @@ print(f"oracle gate (idiom only where gold needs reification/hierarchy idiom, n_
 
 # ── P3 ────────────────────────────────────────────────────────────────
 print("\nP3 — oracle-selection ceiling over existing runs (entity Jaccard, strict, all runs defined)")
-RUNS = {"zs-claude": "qlever_v2/results_claude.csv", "zs-gpt": "qlever_v2/results_gpt-5.4.csv",
-        "zs-gemini": "qlever_v2/results_gemini.csv", "zs-deepseek": "qlever_v2/results_deepseek.csv",
-        "fs-claude": "qlever_v2/results_fewshot_claude.csv", "e2e-clean": "qlever_v2/results_e2e_clean.csv"}
+RUNS = {"zs-claude": "outputs/qlever_v2/results_claude.csv", "zs-gpt": "outputs/qlever_v2/results_gpt-5.4.csv",
+        "zs-gemini": "outputs/qlever_v2/results_gemini.csv", "zs-deepseek": "outputs/qlever_v2/results_deepseek.csv",
+        "fs-claude": "outputs/qlever_v2/results_fewshot_claude.csv", "e2e-clean": "outputs/qlever_v2/results_e2e_clean.csv"}
 R = {}
 for k, f in RUNS.items():
     try: R[k] = {r["index"]: r for r in csv.DictReader(open(f))}

@@ -7,9 +7,9 @@ Usage:  python3 official_linkers.py <subcommand>
 import json, os, re, sys, collections
 
 MODEL = "claude-opus-4-8"
-GOLD  = "gold_links_official.json"
-POOL  = "candidates_official.json"
-ROWS  = "official_test.json"
+GOLD  = "data/gold_links_official.json"
+POOL  = "data/candidates_official.json"
+ROWS  = "data/official_test.json"
 STATE = "official_linker_state.json"
 MAPF  = "official_linker_map.json"
 K     = 7
@@ -201,7 +201,7 @@ def refined():
 
     r = Refined.from_pretrained(model_name="questions_model", entity_set="wikidata",
                                 use_precomputed_descriptions=False)
-    out, written = "preds_refined_official.jsonl", 0
+    out, written = "outputs/preds_refined_official.jsonl", 0
     sc = sp = sg = 0
     with open(out, "w") as fh:
         for rid, pairs in gold.items():

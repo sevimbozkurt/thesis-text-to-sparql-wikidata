@@ -99,7 +99,7 @@ def parse_labels(q):
 def submit_gen():
     from anthropic.types.message_create_params import MessageCreateParamsNonStreaming
     from anthropic.types.messages.batch_create_params import Request
-    test = json.load(open("test.json"))
+    test = json.load(open("data/test.json"))
     done = load(GEN, {})
     todo = [(i, r) for i, r in enumerate(test) if str(i) not in done]
     print(f"{len(test)} rows | already generated {len(done)} | to submit {len(todo)}")
@@ -156,7 +156,7 @@ def candidates():
     gen = load(GEN, {})
     pool = load(POOL, {})
     existing = {}
-    for f in ["e2e_candidates_clean.json", "candidates_expanded.json", "properties_clean.json"]:
+    for f in ["e2e_candidates_clean.json", "data/candidates_expanded.json", "data/properties_clean.json"]:
         existing.update(load(f, {}))
     labels = set()
     for q in gen.values():
@@ -215,7 +215,7 @@ def prompt(question, label, cands, is_prop):
 def submit_disamb():
     from anthropic.types.message_create_params import MessageCreateParamsNonStreaming
     from anthropic.types.messages.batch_create_params import Request
-    test = json.load(open("test.json"))
+    test = json.load(open("data/test.json"))
     gen, pool = load(GEN, {}), load(POOL, {})
     reqs, mapping, local = [], {}, {}
     n = 0
@@ -267,8 +267,8 @@ def score():
     st, mp = load(STATE, {}), load(MAPF, {})
     mapping, local = mp["map"], mp["local"]
     gen, pool = load(GEN, {}), load(POOL, {})
-    test = json.load(open("test.json"))
-    gold = {int(k): set(v) for k, v in json.load(open("gold_results.json")).items()}
+    test = json.load(open("data/test.json"))
+    gold = {int(k): set(v) for k, v in json.load(open("data/gold_results.json")).items()}
 
     chosen = dict(local)
     for line in open(st["disamb_file"]):
@@ -286,7 +286,7 @@ def score():
         chosen[f"{idx}|{kind}|{label}"] = pick
 
     strict, cx = set(), {}
-    for r in csv.DictReader(open("gold_status_qlever.csv")):
+    for r in csv.DictReader(open("data/gold_status_qlever.csv")):
         i = int(r["index"]); cx[i] = r["complexity"]
         if r["gold_executed"] == "True" and r["gold_result_count"] != "0":
             strict.add(i)
@@ -365,7 +365,7 @@ def score():
         return c
     new_c = counts(gen.values())
     old = {r["index"]: r["labeled_query"] for r in
-           csv.DictReader(open("qlever/results_e2e_regen.csv"))}
+           csv.DictReader(open("outputs/qlever/results_e2e_regen.csv"))}
     old_c = counts(old.values())
     print("\nidiom usage in generated queries (baseline -> idiom prompt):")
     for k in sorted(set(new_c) | set(old_c)):

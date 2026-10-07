@@ -25,7 +25,7 @@ say() { printf '\n\033[1m== %s\033[0m\n' "$*"; }
 
 say "Stage 0 — prerequisites"
 python3 - <<'PY'
-import sys, importlib
+import sys, importlib.util
 need = ["csv", "json", "sklearn", "numpy", "matplotlib"]
 miss = [m for m in need if not importlib.util.find_spec(m)]
 print(f"  python {sys.version.split()[0]}")
@@ -55,7 +55,7 @@ if [ -d external/wdql/wdql-one-per-cluster ]; then
   echo "   -> results_tables/wdql_construct_prevalence.csv"
 fi
 
-if [ -f consensus_results.json ]; then
+if [ -f outputs/consensus_results.json ]; then
   echo "-- X5 selection strategies"
   python3 consensus_select.py > results_tables/consensus_selection_full.txt
   echo "   -> results_tables/consensus_selection.csv"
@@ -66,7 +66,7 @@ if [ -f consensus_results.json ]; then
   python3 consensus_robustness.py > results_tables/consensus_robustness.txt
   echo "   -> results_tables/consensus_robustness.txt"
 else
-  echo "-- X5 skipped: consensus_results.json missing (run with --with-endpoint)"
+  echo "-- X5 skipped: outputs/consensus_results.json missing (run with --with-endpoint)"
 fi
 
 echo "-- X7 label-failure taxonomy"
@@ -79,7 +79,7 @@ echo "   -> results_tables/arm_provenance_check.txt"
 
 echo "-- linker comparison table from the prediction files"
 python3 build_linker_comparison.py > /dev/null
-echo "   -> linker_comparison.csv"
+echo "   -> results_tables/linker_comparison.csv"
 
 echo "-- X9 linker confidence intervals (bootstrap, ~1 min)"
 python3 linker_confidence.py > results_tables/linker_confidence.txt
@@ -102,8 +102,8 @@ python3 full_set_results.py > /dev/null
 echo "   -> results_tables/master_results_v2.csv"
 
 echo "-- cross-model agreement (hard and easy questions)"
-python3 complexity_and_agreement.py > RESULT_cross_model_agreement.txt
-echo "   -> RESULT_cross_model_agreement.txt"
+python3 complexity_and_agreement.py > results_tables/RESULT_cross_model_agreement.txt
+echo "   -> results_tables/RESULT_cross_model_agreement.txt"
 
 echo "-- X1/X2 extension probes (printed, not written)"
 python3 analysis_extension_probes.py > results_tables/extension_probes.txt

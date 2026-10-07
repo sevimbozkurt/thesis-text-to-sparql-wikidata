@@ -4,14 +4,14 @@ import json, csv, random, collections
 random.seed(42)
 B = 2000
 
-gold = {int(k): v for k, v in json.load(open("gold_links.json")).items()}
-RUNS = [("Reasoning (Opus 4.8)", "preds_reasoning_clean.jsonl"),
-        ("Reasoning (Qwen 14B)", "preds_qwen_full.jsonl"),
-        ("Reasoning (Qwen 7B)", "preds_qwen7b_entity.jsonl"),
-        ("GLiNKER (bi-encoder)", "preds_glinker_restricted_desc.jsonl"),
-        ("ELQ (fine-tuned)", "preds_elq.jsonl"),
-        ("ReFinED (fine-tuned)", "preds_refined.jsonl"),
-        ("First search result", "preds_first_search_result.jsonl")]
+gold = {int(k): v for k, v in json.load(open("data/gold_links.json")).items()}
+RUNS = [("Reasoning (Opus 4.8)", "outputs/preds_reasoning_clean.jsonl"),
+        ("Reasoning (Qwen 14B)", "outputs/preds_qwen_full.jsonl"),
+        ("Reasoning (Qwen 7B)", "outputs/preds_qwen7b_entity.jsonl"),
+        ("GLiNKER (bi-encoder)", "outputs/preds_glinker_restricted_desc.jsonl"),
+        ("ELQ (fine-tuned)", "outputs/preds_elq.jsonl"),
+        ("ReFinED (fine-tuned)", "outputs/preds_refined.jsonl"),
+        ("First search result", "outputs/preds_first_search_result.jsonl")]
 
 preds = {}
 for name, f in RUNS:

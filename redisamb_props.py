@@ -5,10 +5,10 @@ against repaired candidate pools. Companion to redisamb_clean.py (entities).
 import json, os, re, sys, collections
 
 MODEL = "claude-opus-4-8"
-POOL  = "properties_clean.json"
+POOL  = "data/properties_clean.json"
 STATE = "redisamb_props_state.json"
 MAPF  = "redisamb_props_map.json"
-OUTF  = "preds_props_clean.jsonl"
+OUTF  = "outputs/preds_props_clean.jsonl"
 K     = 7
 
 def load(p, d):
@@ -33,8 +33,8 @@ def client():
 def build():
     """Union the two property fetches, cap at K, repaired-fetch order first."""
     old = json.load(open("candidates.json"))
-    new = json.load(open("properties_expanded.json"))
-    gold = {int(k): v for k, v in json.load(open("gold_links.json")).items()}
+    new = json.load(open("data/properties_expanded.json"))
+    gold = {int(k): v for k, v in json.load(open("data/gold_links.json")).items()}
     labels = {l for ps in gold.values() for k, l, g in ps if k == "property"}
 
     pool = {}
@@ -57,8 +57,8 @@ def build():
 
 
 def mentions_with_pools():
-    gold = {int(k): v for k, v in json.load(open("gold_links.json")).items()}
-    test = json.load(open("test.json"))
+    gold = {int(k): v for k, v in json.load(open("data/gold_links.json")).items()}
+    test = json.load(open("data/test.json"))
     pool = json.load(open(POOL))
     out = []
     for i, pairs in gold.items():
@@ -135,7 +135,7 @@ def fetch():
 def score():
     st = load(STATE, {}); mp = load(MAPF, {})
     mapping, local = mp["map"], mp["local"]
-    gold = {int(k): v for k, v in json.load(open("gold_links.json")).items()}
+    gold = {int(k): v for k, v in json.load(open("data/gold_links.json")).items()}
     pool = json.load(open(POOL))
 
     chosen, ok = dict(local), 0
@@ -163,8 +163,8 @@ def score():
                                     "pred_id": chosen.get(f"{i}|{label}", "")}) + "\n")
     print(f"wrote {OUTF}")
     print("combine and evaluate:")
-    print("  cat preds_reasoning_clean.jsonl preds_props_clean.jsonl > preds_reasoning_full.jsonl")
-    print("  python3 eval_linker.py preds_reasoning_full.jsonl")
+    print("  cat outputs/preds_reasoning_clean.jsonl outputs/preds_props_clean.jsonl > outputs/preds_reasoning_full.jsonl")
+    print("  python3 eval_linker.py outputs/preds_reasoning_full.jsonl")
 
 
 if __name__ == "__main__":

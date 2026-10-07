@@ -21,7 +21,7 @@ def search(label, is_property):
     except Exception:
         return []
 
-gold_map = {int(k): v for k, v in json.load(open("gold_links.json")).items()}
+gold_map = {int(k): v for k, v in json.load(open("data/gold_links.json")).items()}
 labels = {}   # (kind, label_lower) -> label
 for pairs in gold_map.values():
     for kind, label, _ in pairs:

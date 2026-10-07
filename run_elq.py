@@ -1,7 +1,7 @@
 """run_elq.py — Run ELQ over the thesis evaluation questions ON THE SERVER, and
 emit predictions in the thesis's standard linker format.
 
-USAGE (inside tmux, conda env elq, from /data/sevim/BLINK):
+USAGE (conda env with ELQ installed, run from the root of a BLINK checkout):
   export CUDA_VISIBLE_DEVICES=1
   python run_elq.py --split working
   python run_elq.py --split official
@@ -12,7 +12,7 @@ eval_linker_official.py.
 import argparse, collections, json, os, re, sys, time
 
 MODELS = "models/"
-WIKI2QID = "wiki2qid.json"
+WIKI2QID = "data/wiki2qid.json"
 BATCH = 32          # questions per ELQ batch
 QID_BATCH = 50      # titles per Wikidata API call
 
@@ -25,16 +25,16 @@ def save(p, o):
 # ── gold + questions per split ─────────────────────────────────
 def load_split(split):
     if split == "working":
-        gold_raw = json.load(open("gold_links.json"))
-        test = json.load(open("test.json"))
+        gold_raw = json.load(open("data/gold_links.json"))
+        test = json.load(open("data/test.json"))
         gold = {str(k): v for k, v in gold_raw.items()}
         qs = {str(i): r["instruction"] for i, r in enumerate(test)}
-        out = "preds_elq.jsonl"
+        out = "outputs/preds_elq.jsonl"
     else:
-        gold = json.load(open("gold_links_official.json"))
-        rows = json.load(open("official_test.json"))
+        gold = json.load(open("data/gold_links_official.json"))
+        rows = json.load(open("data/official_test.json"))
         qs = {str(r["id"]): r["instruction"] for r in rows}
-        out = "preds_elq_official.jsonl"
+        out = "outputs/preds_elq_official.jsonl"
     return gold, qs, out
 
 # ── wikipedia-id -> title (from ELQ's own catalogue) ───────────

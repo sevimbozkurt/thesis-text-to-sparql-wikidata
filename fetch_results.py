@@ -10,10 +10,10 @@ import json, os, sys, time, re
 import requests
 
 STATE      = "batch_state.json"
-GEN_OUT    = "batch_generated.json"
-CAND_OUT   = "batch_candidates.json"
-DISAMB_MAP = "batch_disamb_map.json"
-DISAMB_OUT = "batch_disambiguated.json"
+GEN_OUT    = "outputs/batch_generated.json"
+CAND_OUT   = "data/batch_candidates.json"
+DISAMB_MAP = "outputs/batch_disamb_map.json"
+DISAMB_OUT = "outputs/batch_disambiguated.json"
 LINKLOG    = "official_linking_log.jsonl"
 
 API = "https://api.anthropic.com/v1/messages/batches"

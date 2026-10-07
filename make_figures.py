@@ -158,30 +158,30 @@ FIGMETA = {
                                  "labels the Wikidata search index cannot find, by category and backbone"),
  "fig_linker_ci.pdf":           ("results_tables/linker_confidence.csv", "6.4",
                                  "linking F1 with bootstrap confidence intervals (B = 2,000)"),
- "fig_splits.pdf":              ("test.json; official_test.json", "5.1", "the two-split design"),
+ "fig_splits.pdf":              ("data/test.json; data/official_test.json", "5.1", "the two-split design"),
  "fig_groundtruth.pdf":         ("--", "5.4", "deriving linking ground truth from the benchmark"),
  # data figures
  "fig_main_comparison.pdf":     ("results_tables/common_subset_metrics.csv", "6.2", "frozen models with and without the pipeline"),
- "fig_stage_funnel.pdf":        ("results_e2e_clean.csv", "6.3", "stage-wise outcomes by complexity"),
+ "fig_stage_funnel.pdf":        ("outputs/results_e2e_clean.csv", "6.3", "stage-wise outcomes by complexity"),
  "fig_gap_decomposition.pdf":   ("results_tables/gap_decomposition.csv", "6.3", "failure types in the annotated sample of 30 failing rows"),
- "fig_linker_comparison.pdf":   ("linker_comparison.csv", "6.4", "entity linking F1, four paradigms, both splits"),
- "fig_linker_pr.pdf":           ("linker_comparison.csv", "6.4", "precision-recall signature per paradigm"),
- "fig_linker_complexity.pdf":   ("linker_comparison.csv", "6.4", "linking F1 by query complexity"),
- "fig_backbone.pdf":            ("linker_comparison.csv; official_comparison.csv", "6.5", "backbone dependence differs by stage"),
- "fig_error_taxonomy.pdf":      ("annotation_clean.csv", "6.6", "error taxonomy, overall and by complexity"),
- "fig_constructs.pdf":          ("construct_analysis.csv", "6.6", "construct usage, gold against all runs"),
- "fig_construct_agreement.pdf": ("construct_analysis.csv", "6.6", "agreement with gold on construct use"),
- "fig_structural_predictors.pdf": ("complexity_features.csv", "6.6", "gold-query features against achieved accuracy"),
- "fig_cross_model_agreement.pdf": ("agreement_analysis.csv", "6.6", "cross-model agreement and hard-set features"),
+ "fig_linker_comparison.pdf":   ("results_tables/linker_comparison.csv", "6.4", "entity linking F1, four paradigms, both splits"),
+ "fig_linker_pr.pdf":           ("results_tables/linker_comparison.csv", "6.4", "precision-recall signature per paradigm"),
+ "fig_linker_complexity.pdf":   ("results_tables/linker_comparison.csv", "6.4", "linking F1 by query complexity"),
+ "fig_backbone.pdf":            ("results_tables/linker_comparison.csv; official_comparison.csv", "6.5", "backbone dependence differs by stage"),
+ "fig_error_taxonomy.pdf":      ("annotations/annotation_clean.csv", "6.6", "error taxonomy, overall and by complexity"),
+ "fig_constructs.pdf":          ("results_tables/construct_analysis.csv", "6.6", "construct usage, gold against all runs"),
+ "fig_construct_agreement.pdf": ("results_tables/construct_analysis.csv", "6.6", "agreement with gold on construct use"),
+ "fig_structural_predictors.pdf": ("results_tables/complexity_features.csv", "6.6", "gold-query features against achieved accuracy"),
+ "fig_cross_model_agreement.pdf": ("results_tables/agreement_analysis.csv", "6.6", "cross-model agreement and hard-set features"),
  "fig_prompt_arms.pdf":         ("results_tables/significance_jaccard_entity.csv", "6.7", "prompt arms: accuracy and effect with CIs"),
- "fig_idiom_behaviour.pdf":     ("construct_analysis.csv", "6.7", "what the idiom prompt changes in generated queries"),
+ "fig_idiom_behaviour.pdf":     ("results_tables/construct_analysis.csv", "6.7", "what the idiom prompt changes in generated queries"),
  "fig_cascade.pdf":             ("results_tables/consensus_selection.csv", "6.8", "selection strategies over diverse generations"),
  "fig_cascade_fallback.pdf":    ("results_tables/consensus_robustness.txt", "6.8", "where the fallback fires and what it recovers"),
  "fig_frozen_vs_finetuned.pdf": ("official_comparison.py; results_tables/official_comparison.csv", "6.9", "frozen and fine-tuned systems, official split"),
  "fig_memorisation.pdf":        ("results_tables/memorisation_frontier.csv", "6.10", "structural similarity of generated queries"),
  "fig_wdql.pdf":                ("results_tables/wdql_construct_prevalence.csv", "6.10", "construct prevalence vs real query logs"),
  "fig_wdql_bysize.pdf":         ("results_tables/wdql_construct_prevalence.csv", "6.10", "construct prevalence at matched query size"),
- "fig_candidate_ceiling.pdf":   ("candidates.json; candidates_expanded.json; gold_links.json", "7.6", "candidate ceiling before and after pool repair"),
+ "fig_candidate_ceiling.pdf":   ("candidates.json; data/candidates_expanded.json; data/gold_links.json", "7.6", "candidate ceiling before and after pool repair"),
  "fig_label_failures.pdf":      ("results_tables/label_failure_taxonomy.csv", "6.5", "what the open model gets wrong when naming things"),
  "fig_empty_rate.pdf":          ("results_tables/empty_result_rate.csv", "6.2", "empty-result rate against accuracy"),
  "fig_linker_ci.pdf":           ("results_tables/linker_confidence.csv", "6.4", "linker F1 with bootstrap confidence intervals"),
@@ -310,7 +310,7 @@ ax.set_ylim(8, 94)
 save(fig, "fig_method.pdf")
 
 # ============================ D5 the two splits =============================
-tr = json.load(open("test.json")); off = json.load(open("official_test.json"))
+tr = json.load(open("data/test.json")); off = json.load(open("data/official_test.json"))
 cw = collections.Counter(r["complexity"] for r in tr)
 co = collections.Counter(r["complexity"] for r in off)
 fig, (a1, a2) = plt.subplots(1, 2, figsize=(W, H["m"]), gridspec_kw={"width_ratios": [1.0, 1.25]})
@@ -384,7 +384,7 @@ ax.set_ylabel("% of rows"); ax.set_ylim(0, 112); ax.yaxis.set_major_locator(Mult
 legend_above(ax); save(fig, "fig_stage_funnel.pdf")
 
 # ============================ linker data ===================================
-lk = rows("linker_comparison.csv")
+lk = rows("results_tables/linker_comparison.csv")
 LORDER = ["Reasoning over candidates|Claude Opus 4.8", "Reasoning over candidates|Qwen2.5-14B-Instruct",
           "Reasoning over candidates|Qwen2.5-7B-Instruct", "GLiNKER gliner-linker-large-v1.0|-",
           "ELQ elq_wiki_large|-", "ReFinED questions_model|-", "First search result|-"]
@@ -468,7 +468,7 @@ ax.set_ylabel("score"); ax.set_ylim(0, 118); legend_above(ax, ncol=2)
 save(fig, "fig_backbone.pdf")
 
 # ============================ construct data ================================
-txt = open("construct_analysis.csv").read()
+txt = open("results_tables/construct_analysis.csv").read()
 use_rows = list(csv.DictReader(txt.split("AGREEMENT WITH GOLD")[0].strip().splitlines()[1:]))
 agr_rows = list(csv.DictReader(txt.split("AGREEMENT WITH GOLD")[1].strip().splitlines()[1:]))
 CONS = [r["construct"] for r in use_rows]
@@ -529,7 +529,7 @@ ax.set_xlabel("number of queries using the construct (of 567)")
 legend_above(ax, ncol=3); save(fig, "fig_idiom_behaviour.pdf")
 
 # ============================ F10 error taxonomy ============================
-ann = [r for r in rows("annotation_clean.csv") if r.get("error_category", "").strip()]
+ann = [r for r in rows("annotations/annotation_clean.csv") if r.get("error_category", "").strip()]
 cats2 = collections.Counter(r["error_category"].strip() for r in ann)
 order = [c for c, _ in cats2.most_common()]
 bycx = {c: collections.Counter(r["error_category"].strip() for r in ann if r["complexity"] == c)
@@ -574,7 +574,7 @@ ax.set_xlabel("share of the 30 annotated failing rows (%), with 95\u202f% Wilson
 ax.set_xlim(0, 80); save(fig, "fig_gap_decomposition.pdf")
 
 # ============================ F12 structural predictors =====================
-cf = sorted(rows("complexity_features.csv"), key=lambda r: float(r["gap (pp)"]))
+cf = sorted(rows("results_tables/complexity_features.csv"), key=lambda r: float(r["gap (pp)"]))
 fig, ax = new("m")
 y = list(range(len(cf)))[::-1]
 g = [float(r["gap (pp)"]) for r in cf]
@@ -588,7 +588,7 @@ ax.set_xlabel("accuracy when the gold query has the feature, minus when it does 
 ax.set_xlim(-18, 16); save(fig, "fig_structural_predictors.pdf")
 
 # ============================ F13 cross-model agreement =====================
-blocks = open("agreement_analysis.csv").read().strip().split("\n\n")
+blocks = open("results_tables/agreement_analysis.csv").read().strip().split("\n\n")
 solved = list(csv.DictReader(blocks[0].splitlines()))
 feats = list(csv.DictReader(blocks[1].splitlines()))
 fig, (a1, a2) = plt.subplots(1, 2, figsize=(W, H["m"]), gridspec_kw={"width_ratios": [1, 1.25]})
@@ -622,7 +622,7 @@ fig.tight_layout(w_pad=1.6); save(fig, "fig_cross_model_agreement.pdf")
 # the old four while the text and the significance table showed six. Everything
 # below is now derived from the data, so the figure cannot go stale again.
 import statistics as _stats
-_strict = {r["index"] for r in rows("gold_status_qlever.csv")
+_strict = {r["index"] for r in rows("data/gold_status_qlever.csv")
            if r["gold_executed"] == "True" and r["gold_result_count"] != "0"}
 
 def _arm(fn):
@@ -634,12 +634,12 @@ def _arm(fn):
         out[r["row_id"]] = float(v)
     return out
 
-ARMS = [("baseline", "linked_base-qwen.csv"), ("idiom", "linked_idiom-qwen.csv"),
-        ("verbose", "linked_grounded.csv"),
-        ("targeted", "linked_grounded-targeted.csv"),
-        ("profile", "linked_profile.csv"),
-        ("vocabulary", "linked_constrained.csv"),
-        ("both", "linked_both.csv")]
+ARMS = [("baseline", "outputs/linked_base-qwen.csv"), ("idiom", "outputs/linked_idiom-qwen.csv"),
+        ("verbose", "outputs/linked_grounded.csv"),
+        ("targeted", "outputs/linked_grounded-targeted.csv"),
+        ("profile", "outputs/linked_profile.csv"),
+        ("vocabulary", "outputs/linked_constrained.csv"),
+        ("both", "outputs/linked_both.csv")]
 _d = {n: _arm(f) for n, f in ARMS}
 _common = sorted(set.intersection(*[set(v) for v in _d.values()]))
 arms = [(n, 100 * _stats.mean(_d[n][k] for k in _common)) for n, _ in ARMS]

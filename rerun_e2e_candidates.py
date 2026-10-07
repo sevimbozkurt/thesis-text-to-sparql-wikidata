@@ -11,7 +11,7 @@ HEADERS = {"User-Agent": "ThesisKGQA/2.0 (master thesis research)"}
 DELAY = 1.2
 K = 7
 OUT = "e2e_candidates_clean.json"
-SRC = "qlever/results_e2e_regen.csv"
+SRC = "outputs/qlever/results_e2e_regen.csv"
 
 def search(label, is_prop, limit=K):
     params = {"action": "wbsearchentities", "search": label, "language": "en",

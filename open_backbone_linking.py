@@ -18,16 +18,16 @@ def load(p, d=None):
 
 def build_jobs(split, kind):
     if split == "working":
-        gold = {str(k): v for k, v in load("gold_links.json").items()}
-        test = load("test.json")
+        gold = {str(k): v for k, v in load("data/gold_links.json").items()}
+        test = load("data/test.json")
         qs = {str(i): r["instruction"] for i, r in enumerate(test)}
-        ent_pool = load("candidates_expanded.json")
-        prop_pool = load("properties_clean.json") if os.path.exists("properties_clean.json") else {}
+        ent_pool = load("data/candidates_expanded.json")
+        prop_pool = load("data/properties_clean.json") if os.path.exists("data/properties_clean.json") else {}
     else:
-        gold = load("gold_links_official.json")
-        rows = load("official_test.json")
+        gold = load("data/gold_links_official.json")
+        rows = load("data/official_test.json")
         qs = {str(r["id"]): r["instruction"] for r in rows}
-        ent_pool = prop_pool = load("candidates_official.json")
+        ent_pool = prop_pool = load("data/candidates_official.json")
 
     jobs = []
     for rid, pairs in gold.items():
@@ -112,7 +112,7 @@ def main():
           f"for {fallback}")
 
     tag = re.sub(r'[^A-Za-z0-9]+', '-', a.model).strip('-').lower()
-    out = f"preds_{tag}_{a.split}_{a.kind}.jsonl"
+    out = f"outputs/preds_{tag}_{a.split}_{a.kind}.jsonl"
     with open(out, "w") as f:
         for j in jobs:
             f.write(json.dumps({"index": j["rid"], "kind": j["kind"],

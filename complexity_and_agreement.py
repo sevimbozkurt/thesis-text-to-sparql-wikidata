@@ -5,8 +5,8 @@ Usage:  python3 complexity_and_agreement.py
 
 import csv, json, re, os, math, collections
 
-STRICT_FILE = "gold_status_qlever.csv"
-E2E = "results_e2e_clean.csv"          # falls back to the regenerated file
+STRICT_FILE = "data/gold_status_qlever.csv"
+E2E = "outputs/results_e2e_clean.csv"          # falls back to the regenerated file
 JCOL = "jaccard_entity"
 
 FEATURES = {
@@ -51,14 +51,14 @@ def spearman(xs, ys):
     return num/den if den else None
 
 def main():
-    test = json.load(open("test.json"))
+    test = json.load(open("data/test.json"))
     strict, cx = set(), {}
     for r in csv.DictReader(open(STRICT_FILE)):
         i = int(r["index"]); cx[i] = r["complexity"]
         if r["gold_executed"] == "True" and r["gold_result_count"] != "0":
             strict.add(i)
 
-    path = E2E if os.path.exists(E2E) else "qlever/results_e2e_regen.csv"
+    path = E2E if os.path.exists(E2E) else "outputs/qlever/results_e2e_regen.csv"
     col = JCOL if path == E2E else "jaccard_new"
     acc = {}
     for r in csv.DictReader(open(path)):
@@ -94,7 +94,7 @@ def main():
               f"{mp-ma:+6.1f} {('%.2f' % rho) if rho is not None else '—':>7}")
         rows.append([name, len(pres), round(mp,1), round(ma,1), round(mp-ma,1),
                      round(rho,3) if rho is not None else ""])
-    with open("complexity_features.csv", "w", newline="") as f:
+    with open("results_tables/complexity_features.csv", "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(["feature", "n questions with feature", "mean acc present (%)",
                     "mean acc absent (%)", "gap (pp)", "spearman rho"])
@@ -102,14 +102,14 @@ def main():
 
     # ── PART 2 ────────────────────────────────────────────────
     runs = {}
-    for name, p in [("GPT-5.4", "qlever_v2/results_gpt-5.4.csv"),
-                    ("Claude", "qlever_v2/results_claude.csv"),
-                    ("Gemini", "qlever_v2/results_gemini.csv"),
-                    ("DeepSeek", "qlever_v2/results_deepseek.csv")]:
+    for name, p in [("GPT-5.4", "outputs/qlever_v2/results_gpt-5.4.csv"),
+                    ("Claude", "outputs/qlever_v2/results_claude.csv"),
+                    ("Gemini", "outputs/qlever_v2/results_gemini.csv"),
+                    ("DeepSeek", "outputs/qlever_v2/results_deepseek.csv")]:
         if os.path.exists(p):
             runs[name] = {int(r["index"]): r for r in csv.DictReader(open(p))}
     if len(runs) < 2:
-        print("\n(skipping Part 2 — baseline files not found in qlever_v2/)")
+        print("\n(skipping Part 2 — baseline files not found in outputs/qlever_v2/)")
         return
 
     common = set.intersection(*[set(r) for r in runs.values()]) & strict
@@ -153,7 +153,7 @@ def main():
         h, e = m(hard), m(easy)
         print(f"{name:28s} {h:8.2f} {e:8.2f}")
         arows.append([name, round(h,2), round(e,2)])
-    with open("agreement_analysis.csv", "w", newline="") as f:
+    with open("results_tables/agreement_analysis.csv", "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(["questions solved by k models", "count"])
         for k in range(len(runs)+1):
@@ -161,7 +161,7 @@ def main():
         w.writerow([])
         w.writerow(["feature", "mean in hard set", "mean in easy set"])
         w.writerows(arows)
-    print("\nwritten complexity_features.csv, agreement_analysis.csv")
+    print("\nwritten results_tables/complexity_features.csv, results_tables/agreement_analysis.csv")
 
 if __name__ == "__main__":
     main()

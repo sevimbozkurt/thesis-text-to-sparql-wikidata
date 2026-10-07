@@ -139,7 +139,7 @@ def generate_sparql(model_id, prompt):
 
 
 def run_model(name, model_id, test, examples, limit=None):
-    outfile  = f"results_fewshot_{name}.csv"
+    outfile  = f"outputs/results_fewshot_{name}.csv"
     rows_all = test[:limit] if limit else test
 
     done = set()
@@ -225,9 +225,9 @@ def main():
     parser.add_argument("--limit", type=int)
     args = parser.parse_args()
 
-    with open("test.json") as f:
+    with open("data/test.json") as f:
         test = json.load(f)
-    with open("train.json") as f:
+    with open("data/train.json") as f:
         train = json.load(f)
 
     examples = build_few_shot_examples(train, N_SHOTS, SHOT_SEED)

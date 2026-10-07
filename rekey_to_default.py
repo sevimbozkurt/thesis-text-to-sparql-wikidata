@@ -9,7 +9,7 @@ def n(s):
     return re.sub(r'\s+', ' ', (s or '')).strip().lower()
 
 old_rows = json.load(open("official_test_with_limit.json.bak"))
-new_rows = json.load(open("official_test.json"))
+new_rows = json.load(open("data/official_test.json"))
 
 old_id2instr = {str(r["id"]): n(r["instruction"]) for r in old_rows}
 instr2new_id = {n(r["instruction"]): str(r["id"]) for r in new_rows}
@@ -18,8 +18,8 @@ print(f"old config rows: {len(old_rows)} | new config rows: {len(new_rows)}")
 overlap = sum(1 for i in old_id2instr.values() if i in instr2new_id)
 print(f"questions present in both configs: {overlap}")
 
-for fname in ["batch_generated.json", "batch_candidates.json",
-              "batch_disambiguated.json"]:
+for fname in ["outputs/batch_generated.json", "data/batch_candidates.json",
+              "outputs/batch_disambiguated.json"]:
     if not os.path.exists(fname):
         print(f"  skip {fname} (not found)")
         continue
@@ -38,7 +38,7 @@ for fname in ["batch_generated.json", "batch_candidates.json",
           f"(question not in new config)")
 
 # how many new rows still need generation?
-gen = json.load(open("batch_generated.json"))
+gen = json.load(open("outputs/batch_generated.json"))
 missing = [r for r in new_rows if str(r["id"]) not in gen or not gen[str(r["id"])]]
 print(f"\nrows still needing generation: {len(missing)} of {len(new_rows)}")
 if missing:
@@ -46,5 +46,5 @@ if missing:
     print("      (it will only submit the missing rows)")
 else:
     print("nothing to regenerate — go straight to:")
-    print("  rm -f official_gold_results.json results_official_e2e.csv")
+    print("  rm -f data/official_gold_results.json outputs/results_official_e2e.csv")
     print("  python3 run_official_batch.py finalize")

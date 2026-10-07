@@ -7,8 +7,8 @@ Usage:
 """
 import csv, random, sys, os, collections
 
-SRC   = "annotation_clean.csv"
-SHEET = "inter_annotator_worksheet.csv"
+SRC   = "annotations/annotation_clean.csv"
+SHEET = "annotations/inter_annotator_worksheet.csv"
 GUIDE = "inter_annotator_GUIDE.md"
 SEED  = 1743          # independent of seed 42 (sample) and seed 7 (intra-check)
 

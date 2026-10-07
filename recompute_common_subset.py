@@ -5,7 +5,7 @@ Usage:  python3 recompute_common_subset.py
 
 import csv, os
 
-DIR = "qlever_v2"
+DIR = "outputs/qlever_v2"
 RUNS = [
     ("Zero-shot GPT-5.4",     "results_gpt-5.4.csv"),
     ("Zero-shot Claude",      "results_claude.csv"),
@@ -20,7 +20,7 @@ RUNS = [
 ]
 
 strict, complexity = set(), {}
-with open("gold_status_qlever.csv") as f:
+with open("data/gold_status_qlever.csv") as f:
     for r in csv.DictReader(f):
         i = int(r["index"]); complexity[i] = r["complexity"]
         if r["gold_executed"] == "True" and r["gold_result_count"] != "0":

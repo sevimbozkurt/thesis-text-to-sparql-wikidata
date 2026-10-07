@@ -1,17 +1,12 @@
 #!/bin/bash
-# Runs on the GPU server (aixsrv1). Disambiguates the two new arms with
-# Qwen2.5-14B, the disambiguation backbone of all prompt arms.
-#
-# Uses the EXISTING 'vllm' conda env (vLLM 0.26.0) and the EXISTING model cache
-# in /home/sevim/.cache, where Qwen2.5-14B-Instruct is already downloaded (28G).
-# HF_HOME in .bashrc points at /data/sevim/cache, which has only 1.5B and 7B —
-# overriding it here avoids a pointless 28G re-download.
+# Disambiguates the construct-profile and constrained-vocabulary arms on a GPU
+# with Qwen2.5-14B, the disambiguation backbone of all prompt arms (vLLM).
+# Set CONDA_SH, CONDA_ENV and HF_HOME if your installation differs from the defaults.
 set -euo pipefail
-cd /data/sevim/gpu_bundle
-
-source /data/sevim/miniconda3/etc/profile.d/conda.sh
-conda activate vllm
-export HF_HOME=/home/sevim/.cache/huggingface
+cd "$(dirname "$0")"
+source "${CONDA_SH:-$HOME/miniconda3/etc/profile.d/conda.sh}"
+conda activate "${CONDA_ENV:-vllm}"
+export HF_HOME="${HF_HOME:-$HOME/.cache/huggingface}"
 export CUDA_VISIBLE_DEVICES=${GPU:-0}
 
 echo "=== environment ==="
@@ -32,4 +27,4 @@ python disamb_any.py --gen constrained_generated.json --split working \
 
 echo
 echo "=== DONE ==="
-ls -la linked_profile.json linked_constrained.json
+ls -la outputs/linked_profile.json outputs/linked_constrained.json

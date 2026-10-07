@@ -2,16 +2,16 @@
 overall score there), evaluate the cascade on the other half, both ways 2.
 how often does the cascade actually fall back, and why (empty / error) 3.
 per-complexity gain of cascade over best single run 4. paired bootstrap 95%
-CI and permutation p for cascade - best single Reads consensus_results.json;
+CI and permutation p for cascade - best single Reads outputs/consensus_results.json;
 offline.
 """
 import csv, json, re, random, collections
 random.seed(42)
 QID = re.compile(r'^Q\d+$')
-R = json.load(open("consensus_results.json"))
-GOLD = {k: {v for v in vals if QID.match(v)} for k, vals in json.load(open("gold_results.json")).items()}
-cx = {r["index"]: r["complexity"] for r in csv.DictReader(open("gold_status_qlever.csv"))}
-strict = {r["index"] for r in csv.DictReader(open("gold_status_qlever.csv"))
+R = json.load(open("outputs/consensus_results.json"))
+GOLD = {k: {v for v in vals if QID.match(v)} for k, vals in json.load(open("data/gold_results.json")).items()}
+cx = {r["index"]: r["complexity"] for r in csv.DictReader(open("data/gold_status_qlever.csv"))}
+strict = {r["index"] for r in csv.DictReader(open("data/gold_status_qlever.csv"))
           if r["gold_executed"] == "True" and r["gold_result_count"] != "0"}
 RUNS = ["arm-idiom", "e2e-clean", "arm-base", "fs-claude", "zs-claude", "zs-gpt", "zs-deepseek", "zs-gemini"]
 

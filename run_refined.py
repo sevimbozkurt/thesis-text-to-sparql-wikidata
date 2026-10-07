@@ -25,8 +25,8 @@ def match_score(label, mention):
     return 0.6 * inter / max(len(lt), len(mt)) if inter else 0.0
 
 def main():
-    gold_map = {int(k): v for k, v in json.load(open("gold_links.json")).items()}
-    test = json.load(open("test.json"))
+    gold_map = {int(k): v for k, v in json.load(open("data/gold_links.json")).items()}
+    test = json.load(open("data/test.json"))
 
     print(f"Loading ReFinED ({MODEL}, entity_set={ENTITY_SET}) — "
           f"first run downloads several GB...")
@@ -36,7 +36,7 @@ def main():
     set_correct, set_predicted, set_gold = 0, 0, 0
     written = 0
 
-    with open("preds_refined.jsonl", "w") as out:
+    with open("outputs/preds_refined.jsonl", "w") as out:
         for i, pairs in sorted(gold_map.items()):
             ent_pairs = [(k, l, g) for k, l, g in pairs if k == "entity"]
             if not ent_pairs:
@@ -82,10 +82,10 @@ def main():
     P = set_correct / set_predicted * 100 if set_predicted else 0
     R = set_correct / set_gold * 100 if set_gold else 0
     F = 2 * P * R / (P + R) if P + R else 0
-    print(f"\nWrote {written} predictions -> preds_refined.jsonl")
+    print(f"\nWrote {written} predictions -> outputs/preds_refined.jsonl")
     print(f"SET-BASED (secondary): P {P:.1f}%  R {R:.1f}%  F1 {F:.1f}%   "
           f"({set_correct}/{set_predicted}/{set_gold})")
-    print("Mention-matched (comparable):  python3 eval_linker.py preds_refined.jsonl")
+    print("Mention-matched (comparable):  python3 eval_linker.py outputs/preds_refined.jsonl")
 
 if __name__ == "__main__":
     main()

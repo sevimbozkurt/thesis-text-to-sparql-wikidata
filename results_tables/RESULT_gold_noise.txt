@@ -24,7 +24,7 @@ BOUNDED REFERENCE-NOISE RATE
 ======================================================================
 INTER-ANNOTATOR AGREEMENT ON THE ADJUDICATION
 ======================================================================
-  using /Users/sevimbozkurt/Downloads/gold_audit_annotator2_answers.csv
+  using gold_audit_annotator2_answers.csv
   rows judged twice        : 56
   raw agreement            : 41/56 = 73.2%
   Cohen's kappa            : 0.426

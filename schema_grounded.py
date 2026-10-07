@@ -189,16 +189,16 @@ def main():
     a = ap.parse_args()
 
     if a.split == "working":
-        gold = {str(k): v for k, v in load("gold_links.json").items()}
+        gold = {str(k): v for k, v in load("data/gold_links.json").items()}
     else:
-        gold = load("gold_links_official.json")
+        gold = load("data/gold_links_official.json")
 
-    out_file = f"schema_cards_{a.split}.json"
+    out_file = f"data/schema_cards_{a.split}.json"
     cards = load(out_file, {})
-    out_file_t = f"schema_cards_targeted_{a.split}.json"
+    out_file_t = f"data/schema_cards_targeted_{a.split}.json"
     cards_targeted = load(out_file_t, {})
-    ent_cache = load(f"schema_entities_{a.split}.json", {})
-    prop_cache = load("schema_properties.json", {})
+    ent_cache = load(f"data/schema_entities_{a.split}.json", {})
+    prop_cache = load("data/schema_properties.json", {})
 
     rows = [r for r in gold if r not in cards or r not in cards_targeted]
     if a.limit:
@@ -232,14 +232,14 @@ def main():
         if (n + 1) % 10 == 0:
             save(out_file, cards)
             save(out_file_t, cards_targeted)
-            save(f"schema_entities_{a.split}.json", ent_cache)
-            save("schema_properties.json", prop_cache)
+            save(f"data/schema_entities_{a.split}.json", ent_cache)
+            save("data/schema_properties.json", prop_cache)
             print(f"  {n+1}/{len(rows)}")
 
     save(out_file, cards)
     save(out_file_t, cards_targeted)
-    save(f"schema_entities_{a.split}.json", ent_cache)
-    save("schema_properties.json", prop_cache)
+    save(f"data/schema_entities_{a.split}.json", ent_cache)
+    save("data/schema_properties.json", prop_cache)
 
     nonempty = sum(1 for v in cards.values() if v.strip())
     avg = sum(len(v.split()) for v in cards.values()) / max(len(cards), 1)

@@ -8,10 +8,10 @@ Usage:
 import json, csv, os
 from endpoint import run_sparql, ENDPOINT
 
-STATUS_FILE  = "gold_status_qlever.csv"
-RESULTS_FILE = "gold_results.json"
+STATUS_FILE  = "data/gold_status_qlever.csv"
+RESULTS_FILE = "data/gold_results.json"
 
-with open("test.json") as f:
+with open("data/test.json") as f:
     test = json.load(f)
 
 # Resume support

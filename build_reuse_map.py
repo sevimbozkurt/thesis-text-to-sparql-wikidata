@@ -9,8 +9,8 @@ from datasets import load_dataset
 def n(s):
     return re.sub(r'\s+', ' ', (s or '')).strip().lower()
 
-ours = json.load(open("test.json"))
-official = json.load(open("official_test.json"))
+ours = json.load(open("data/test.json"))
+official = json.load(open("data/official_test.json"))
 ds = load_dataset("PaDaS-Lab/Instruct-to-SPARQL", "with_limit")
 
 # instruction -> official split name (every instruction variant of every row)
@@ -42,7 +42,7 @@ with open("overlap_report.csv", "w", newline="") as f:
 # ── reuse map: official row -> our cached labelled query ───────
 cached = {}
 try:
-    for r in csv.DictReader(open("qlever/results_e2e.csv")):
+    for r in csv.DictReader(open("outputs/qlever/results_e2e.csv")):
         i = int(r["index"])
         if r.get("labeled_query"):
             cached[n(ours[i]["instruction"])] = r["labeled_query"]

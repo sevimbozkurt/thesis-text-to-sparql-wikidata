@@ -7,7 +7,7 @@ Usage:  python3 check_memorisation.py
 import csv, json, re, collections, difflib
 
 csv.field_size_limit(10_000_000)
-SRC = "all_results.csv"
+SRC = "data/all_results.csv"
 MODELS = ["mistral-7b-sparql", "llama3-8b-sparql"]
 
 def norm_text(s):
@@ -72,12 +72,12 @@ def main():
         for t in set(sk.split()):
             index[t].append(i)
 
-    official = json.load(open("official_test.json"))
+    official = json.load(open("data/official_test.json"))
     by_instr = {norm_text(r["instruction"]): str(r["id"]) for r in official}
     gold_q = {str(r["id"]): r["query"] for r in official}
 
     scored = collections.defaultdict(dict)
-    for r in csv.DictReader(open("results_authors_baselines.csv")):
+    for r in csv.DictReader(open("outputs/results_authors_baselines.csv")):
         scored[r["model"]][r["row_id"]] = r
 
     # ── baseline: how redundant is the benchmark itself? ──────

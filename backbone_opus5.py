@@ -18,7 +18,7 @@ PI.OUT   = "results_e2e_opus5.csv"
 def submit_gen():
     from anthropic.types.message_create_params import MessageCreateParamsNonStreaming
     from anthropic.types.messages.batch_create_params import Request
-    test = json.load(open("test.json"))
+    test = json.load(open("data/test.json"))
     done = PI.load(PI.GEN, {})
     todo = [(i, r) for i, r in enumerate(test) if str(i) not in done]
     print(f"model: {MODEL}  (baseline arm used {PI.MODEL})")
@@ -56,7 +56,7 @@ def fetch_gen():
 
 
 def dry_run():
-    test = json.load(open("test.json"))
+    test = json.load(open("data/test.json"))
     n = len(test)
     inp = sum(len(PI.BASE_SYSTEM + f"Question: {r['instruction']}") / 4 for r in test)
     cost = inp / 1e6 * 5.00 * 0.5 + n * 220 / 1e6 * 25.00 * 0.5

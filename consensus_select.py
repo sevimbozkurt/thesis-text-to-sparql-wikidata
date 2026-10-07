@@ -9,9 +9,9 @@ POOLS = {"same generator, 3 prompts (arm-base, arm-idiom, e2e-clean)": ["arm-bas
          "4 zero-shot models": ["zs-claude", "zs-gpt", "zs-gemini", "zs-deepseek"],
          "all 8 runs": PRIOR}
 
-R = json.load(open("consensus_results.json"))
-GOLD = {k: set(v) for k, v in json.load(open("gold_results.json")).items()}
-strict = {r["index"] for r in csv.DictReader(open("gold_status_qlever.csv"))
+R = json.load(open("outputs/consensus_results.json"))
+GOLD = {k: set(v) for k, v in json.load(open("data/gold_results.json")).items()}
+strict = {r["index"] for r in csv.DictReader(open("data/gold_status_qlever.csv"))
           if r["gold_executed"] == "True" and r["gold_result_count"] != "0"}
 
 def ents(vals): return {v for v in vals if QID.match(v)}
@@ -99,7 +99,7 @@ for b in ["max agreement >= 0.9", ">= 0.5", "< 0.5"]:
 
 # sanity: recomputed single-run scores vs the cached CSV scores
 print("\n=== sanity: re-executed vs cached entity Jaccard (all strict rows defined in both) ===")
-CACHED = {"zs-claude": "qlever_v2/results_claude.csv", "e2e-clean": "qlever_v2/results_e2e_clean.csv", "arm-idiom": "linked_idiom-qwen.csv"}
+CACHED = {"zs-claude": "outputs/qlever_v2/results_claude.csv", "e2e-clean": "outputs/qlever_v2/results_e2e_clean.csv", "arm-idiom": "outputs/linked_idiom-qwen.csv"}
 for run, f in CACHED.items():
     idc = "row_id" if run == "arm-idiom" else "index"
     cached = {r[idc]: r["jaccard_entity"] for r in csv.DictReader(open(f))}

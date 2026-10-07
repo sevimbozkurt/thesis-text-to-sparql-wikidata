@@ -2,10 +2,10 @@ import json
 import random
 
 # Load both files
-with open('final_fq17-generated_prompt_query_annotated.json') as f:
+with open('data/final_fq17-generated_prompt_query_annotated.json') as f:
     data = json.load(f)
 
-with open('sparql_complexities.json') as f:
+with open('data/sparql_complexities.json') as f:
     cx_list = json.load(f)
 
 # Build complexity lookup

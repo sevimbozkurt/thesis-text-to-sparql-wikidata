@@ -8,8 +8,8 @@ Usage:
 """
 import json, re, csv, sys, random, os, collections
 
-SPLIT = "test.json"
-AUDIT = "gold_audit_worksheet.csv"
+SPLIT = "data/test.json"
+AUDIT = "annotations/gold_audit_worksheet.csv"
 
 AGG = re.compile(r"\b(COUNT|SUM|AVG|MIN|MAX|SAMPLE|GROUP_CONCAT)\s*\(", re.I)
 LIST_Q = re.compile(r"^\s*(list|which|who|what|name|show|find|give)\b", re.I)
@@ -194,7 +194,7 @@ def estimate(include_all=False):
     # annotator's 16.7%. Restricting to rows that execute and return results --
     # which is also exactly the strict fair set Chapter 6 scores on -- is the
     # population the judgement actually fits.
-    scorable = {rid for rid, vals in json.load(open("gold_results.json")).items() if vals}
+    scorable = {rid for rid, vals in json.load(open("data/gold_results.json")).items() if vals}
     dropped = [] if include_all else [r for r in a if r["row"] not in scorable]
     if dropped:
         nbad = sum(1 for r in dropped

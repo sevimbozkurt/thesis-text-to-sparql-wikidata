@@ -1,4 +1,4 @@
-"""repair_expanded.py — Repair throttled pools in candidates_expanded.json
+"""repair_expanded.py — Repair throttled pools in data/candidates_expanded.json
 (flat format: {"entity|<label>": [candidates]}).
 
 Usage:  python3 repair_expanded.py
@@ -10,7 +10,7 @@ import requests
 API = "https://www.wikidata.org/w/api.php"
 HEADERS = {"User-Agent": "ThesisKGQA/2.0 (master thesis research)"}
 DELAY = 2.5
-OUT = "candidates_expanded.json"
+OUT = "data/candidates_expanded.json"
 
 def wbsearch(label):
     params = {"action": "wbsearchentities", "search": label, "language": "en",
@@ -45,7 +45,7 @@ def fulltext(label):
             print(f"  {type(e).__name__} (ft): {label!r}")
     return None
 
-gold = {int(k): v for k, v in json.load(open("gold_links.json")).items()}
+gold = {int(k): v for k, v in json.load(open("data/gold_links.json")).items()}
 lab_gold = collections.defaultdict(set)
 for ps in gold.values():
     for k, l, g in ps:

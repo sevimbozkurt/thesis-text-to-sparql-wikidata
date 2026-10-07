@@ -7,7 +7,7 @@ import json, csv, os
 from construct_analysis import PATTERNS, uses
 from prompt_construct_profile import PROFILE_CONSTRUCTS, gold_of
 
-test = json.load(open("test.json"))
+test = json.load(open("data/test.json"))
 ARMS = [("baseline", "baseline_generated.json"),
         ("idiom",    "idiom_generated.json"),
         ("profile",  "profile_generated.json")]

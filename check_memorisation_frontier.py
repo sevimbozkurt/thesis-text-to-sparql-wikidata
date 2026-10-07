@@ -5,8 +5,8 @@ import csv, json, re, collections, difflib
 from check_memorisation import skeleton, best_similarity
 
 csv.field_size_limit(10_000_000)
-te = json.load(open("test.json"))
-full = json.load(open("train.json")) + json.load(open("val.json")) + te
+te = json.load(open("data/test.json"))
+full = json.load(open("data/train.json")) + json.load(open("data/val.json")) + te
 gold_sk = [skeleton(r["query"]) for r in te]
 all_sk = [skeleton(r["query"]) for r in full]
 test_offset = len(full) - len(te)          # test rows are last in `full`
@@ -15,16 +15,16 @@ for i, sk in enumerate(all_sk):
     for t in set(sk.split()):
         index[t].append(i)
 
-strict = {r["index"] for r in csv.DictReader(open("gold_status_qlever.csv"))
+strict = {r["index"] for r in csv.DictReader(open("data/gold_status_qlever.csv"))
           if r["gold_executed"] == "True" and r["gold_result_count"] != "0"}
 
-RUNS = [("Zero-shot GPT-5.4", "qlever_v2/results_gpt-5.4.csv", "generated_query", "index"),
-        ("Zero-shot Claude", "qlever_v2/results_claude.csv", "generated_query", "index"),
-        ("Zero-shot Gemini", "qlever_v2/results_gemini.csv", "generated_query", "index"),
-        ("Zero-shot DeepSeek", "qlever_v2/results_deepseek.csv", "generated_query", "index"),
-        ("Few-shot Claude", "qlever_v2/results_fewshot_claude.csv", "generated_query", "index"),
-        ("Pipeline e2e (Claude gen, clean)", "qlever_v2/results_e2e_clean.csv", "linked_query", "index"),
-        ("Idiom arm (Claude gen, Qwen link)", "linked_idiom-qwen.json", None, None)]
+RUNS = [("Zero-shot GPT-5.4", "outputs/qlever_v2/results_gpt-5.4.csv", "generated_query", "index"),
+        ("Zero-shot Claude", "outputs/qlever_v2/results_claude.csv", "generated_query", "index"),
+        ("Zero-shot Gemini", "outputs/qlever_v2/results_gemini.csv", "generated_query", "index"),
+        ("Zero-shot DeepSeek", "outputs/qlever_v2/results_deepseek.csv", "generated_query", "index"),
+        ("Few-shot Claude", "outputs/qlever_v2/results_fewshot_claude.csv", "generated_query", "index"),
+        ("Pipeline e2e (Claude gen, clean)", "outputs/qlever_v2/results_e2e_clean.csv", "linked_query", "index"),
+        ("Idiom arm (Claude gen, Qwen link)", "outputs/linked_idiom-qwen.json", None, None)]
 
 def best_other(sk, own_i):
     """Best similarity to any dataset query except the row's own gold.
@@ -49,7 +49,7 @@ for name, path, qcol, icol in RUNS:
     if path.endswith(".json"):
         d = json.load(open(path))
         rows = {k: {"q": v.get("linked_query") or v.get("labeled_query", ""), "j": None} for k, v in d.items()}
-        arm = {r["row_id"]: r for r in csv.DictReader(open("linked_idiom-qwen.csv"))}
+        arm = {r["row_id"]: r for r in csv.DictReader(open("outputs/linked_idiom-qwen.csv"))}
         for k in rows:
             j = arm.get(k, {}).get("jaccard_entity")
             rows[k]["j"] = None if j in (None, "", "na") else float(j)

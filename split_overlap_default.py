@@ -21,7 +21,7 @@ for split in ["train", "validation", "test"]:
         for y in (x if isinstance(x, list) else [x]):
             where[norm(y)].add(split)
 
-ours = [norm(r["instruction"]) for r in json.load(open("test.json"))]
+ours = [norm(r["instruction"]) for r in json.load(open("data/test.json"))]
 def bucket(x):
     s = where.get(x)
     if not s:

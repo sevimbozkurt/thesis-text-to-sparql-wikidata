@@ -15,10 +15,10 @@ CONFIG   = "default"
 REVISION = None          # set to a commit hash to pin, e.g. "abc123..."
 MODEL    = "anthropic/claude-opus-4.8"
 
-OFFICIAL   = "official_test.json"
-OUTFILE    = "results_official_e2e.csv"
+OFFICIAL   = "data/official_test.json"
+OUTFILE    = "outputs/results_official_e2e.csv"
 LINKLOG    = "official_linking_log.jsonl"
-GOLDCACHE  = "official_gold_results.json"
+GOLDCACHE  = "data/official_gold_results.json"
 
 API_DELAY, SEARCH_DELAY, N_CANDIDATES, MAX_TOKENS = 1.0, 0.4, 7, 1024
 WIKIDATA_API = "https://www.wikidata.org/w/api.php"
@@ -60,12 +60,12 @@ def prepare():
 
 # ── reuse: map dataset id -> cached e2e result from the working split ──
 def cached_by_id():
-    if not (os.path.exists("test.json") and os.path.exists("qlever/results_e2e.csv")):
+    if not (os.path.exists("data/test.json") and os.path.exists("outputs/qlever/results_e2e.csv")):
         return {}
-    work = json.load(open("test.json"))
+    work = json.load(open("data/test.json"))
     idx2id = {i: str(r["id"]) for i, r in enumerate(work)}
     out = {}
-    for r in csv.DictReader(open("qlever/results_e2e.csv")):
+    for r in csv.DictReader(open("outputs/qlever/results_e2e.csv")):
         did = idx2id.get(int(r["index"]))
         if did:
             out[did] = r

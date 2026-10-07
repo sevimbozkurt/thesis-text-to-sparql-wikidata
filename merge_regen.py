@@ -2,7 +2,7 @@
 """
 import csv, json
 
-base = list(csv.DictReader(open("qlever/results_e2e.csv")))
+base = list(csv.DictReader(open("outputs/qlever/results_e2e.csv")))
 new  = {r["id"]: r for r in csv.DictReader(open("regen/results_official_e2e.csv"))}
 
 fixed = 0
@@ -19,12 +19,12 @@ for r in base:
     r["jaccard_new"]   = n["jaccard"]
     fixed += 1
 
-with open("qlever/results_e2e_regen.csv", "w", newline="") as f:
+with open("outputs/qlever/results_e2e_regen.csv", "w", newline="") as f:
     w = csv.DictWriter(f, fieldnames=base[0].keys()); w.writeheader(); w.writerows(base)
-print(f"merged {fixed} regenerated rows -> qlever/results_e2e_regen.csv")
+print(f"merged {fixed} regenerated rows -> outputs/qlever/results_e2e_regen.csv")
 
 strict, cx = set(), {}
-for r in csv.DictReader(open("gold_status_qlever.csv")):
+for r in csv.DictReader(open("data/gold_status_qlever.csv")):
     i = r["index"]; cx[i] = r["complexity"]
     if r["gold_executed"] == "True" and r["gold_result_count"] != "0":
         strict.add(i)

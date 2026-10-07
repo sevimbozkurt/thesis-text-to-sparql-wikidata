@@ -1,17 +1,17 @@
 """eval_linker_official.py — Score linker predictions against the
-OFFICIAL-split ground truth (gold_links_official.json, string row ids).
+OFFICIAL-split ground truth (data/gold_links_official.json, string row ids).
 
 Usage:
   python3 eval_linker_official.py preds_reasoning_official.jsonl
-  python3 eval_linker_official.py preds_glinker_restricted_desc_official.jsonl
-  python3 eval_linker_official.py preds_refined_official.jsonl
+  python3 eval_linker_official.py outputs/preds_glinker_restricted_desc_official.jsonl
+  python3 eval_linker_official.py outputs/preds_refined_official.jsonl
 """
 
 import json, sys, collections
 
 def main(pred_file):
-    gold = json.load(open("gold_links_official.json"))
-    rows = {str(r["id"]): r for r in json.load(open("official_test.json"))}
+    gold = json.load(open("data/gold_links_official.json"))
+    rows = {str(r["id"]): r for r in json.load(open("data/official_test.json"))}
 
     preds = collections.defaultdict(dict)
     with open(pred_file) as f:

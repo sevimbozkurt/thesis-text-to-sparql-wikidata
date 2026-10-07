@@ -1,8 +1,8 @@
 """eval_linker.py — Score ANY linker's predictions against gold_links.json.
 
 Usage:
-    python3 eval_linker.py preds_reasoning_clean.jsonl
-    python3 eval_linker.py preds_glinker_restricted_desc.jsonl
+    python3 eval_linker.py outputs/preds_reasoning_clean.jsonl
+    python3 eval_linker.py outputs/preds_glinker_restricted_desc.jsonl
 """
 
 import json, sys, collections
@@ -14,8 +14,8 @@ def prf(correct, predicted, gold):
     return P, R, F
 
 def main(pred_file):
-    gold_map = {int(k): v for k, v in json.load(open("gold_links.json")).items()}
-    test = json.load(open("test.json"))
+    gold_map = {int(k): v for k, v in json.load(open("data/gold_links.json")).items()}
+    test = json.load(open("data/test.json"))
     complexity = {i: ex["complexity"] for i, ex in enumerate(test)}
 
     preds = collections.defaultdict(dict)   # index -> {(kind,label): pred_id}
@@ -70,4 +70,4 @@ def main(pred_file):
         print(line)
 
 if __name__ == "__main__":
-    main(sys.argv[1] if len(sys.argv) > 1 else "preds_reasoning_clean.jsonl")
+    main(sys.argv[1] if len(sys.argv) > 1 else "outputs/preds_reasoning_clean.jsonl")

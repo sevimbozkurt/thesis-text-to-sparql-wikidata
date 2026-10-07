@@ -10,8 +10,8 @@ Usage:
 import csv, json, re, os, sys, argparse, collections
 from endpoint import run_sparql, jaccard
 
-SRC = "all_results.csv"
-OUT = "results_authors_baselines.csv"
+SRC = "data/all_results.csv"
+OUT = "outputs/results_authors_baselines.csv"
 QID = re.compile(r'^Q\d+$')
 csv.field_size_limit(10_000_000)
 
@@ -44,11 +44,11 @@ def main():
             print(f"{m:22s} annotated={an:5s} {n:5d} rows")
         return
 
-    official = json.load(open("official_test.json"))
+    official = json.load(open("data/official_test.json"))
     by_instr = {norm(r["instruction"]): str(r["id"]) for r in official}
     cx = {str(r["id"]): r["complexity"] for r in official}
 
-    gold = json.load(open("official_gold_results.json"))
+    gold = json.load(open("data/official_gold_results.json"))
     strict = {rid for rid, g in gold.items() if g["ok"] and g["values"]}
     print(f"official split {len(official)} rows | strict fair set {len(strict)}")
 
@@ -94,7 +94,7 @@ def main():
     with open(OUT, "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=fields); w.writeheader(); w.writerows(out_rows)
     if unmatched:
-        print(f"note: {unmatched} rows had no instruction match in official_test.json")
+        print(f"note: {unmatched} rows had no instruction match in data/official_test.json")
 
     # ── report ────────────────────────────────────────────────
     print(f"\nAUTHORS' MODELS, RESCORED ON OUR DUMP (14.03.2026), "

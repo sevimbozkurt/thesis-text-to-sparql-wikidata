@@ -123,8 +123,8 @@ try:
     # the appendix shows one example card of each kind
     body = ""
     ex = []
-    for f, kind in [("schema_cards_working.json", "verbose"),
-                    ("schema_cards_targeted_working.json", "targeted")]:
+    for f, kind in [("data/schema_cards_working.json", "verbose"),
+                    ("data/schema_cards_targeted_working.json", "targeted")]:
         p = os.path.join(ROOT, f)
         if os.path.exists(p):
             d = json.load(open(p, encoding="utf-8"))
@@ -147,7 +147,7 @@ def read(path):
 
 
 try:
-    rows = read("annotation_clean.csv")
+    rows = read("annotations/annotation_clean.csv")
     lines = [r"\footnotesize\sloppy",  # a few technical property paths (p:P2048/psn:...)
              # have no spaces to break at; \sloppy lets LaTeX stretch
              # inter-word spacing rather than overflow the column

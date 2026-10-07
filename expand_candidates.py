@@ -11,7 +11,7 @@ HEADERS = {"User-Agent": "ThesisKGQA/2.0 (master thesis research)"}
 DELAY = 1.0
 TOP_K = 20
 FT_K  = 10
-OUT   = "candidates_expanded.json"
+OUT   = "data/candidates_expanded.json"
 
 def wbsearch(label, limit=TOP_K):
     params = {"action": "wbsearchentities", "search": label, "language": "en",
@@ -50,8 +50,8 @@ def fulltext(label, limit=FT_K):
     return []
 
 def main():
-    gold = {int(k): v for k, v in json.load(open("gold_links.json")).items()}
-    test = json.load(open("test.json"))
+    gold = {int(k): v for k, v in json.load(open("data/gold_links.json")).items()}
+    test = json.load(open("data/test.json"))
     cx = {i: test[i]["complexity"] for i in gold}
 
     # unique entity labels + the gold ids they must cover
@@ -111,8 +111,8 @@ def main():
                  f"(baseline was <=7)")
     report = "\n".join(lines)
     print("\n" + report)
-    open("ceiling_report.txt", "w").write(report + "\n")
-    print("\nwritten ceiling_report.txt — paste the report before running stage 2")
+    open("results_tables/ceiling_report.txt", "w").write(report + "\n")
+    print("\nwritten results_tables/ceiling_report.txt — paste the report before running stage 2")
 
 if __name__ == "__main__":
     main()

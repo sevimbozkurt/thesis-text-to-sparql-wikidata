@@ -29,23 +29,23 @@ def uses(query, name, labelled):
 
 def load_runs():
     """Return {run_name: {index: (query, is_labelled)}}"""
-    test = json.load(open("test.json"))
+    test = json.load(open("data/test.json"))
     runs = collections.OrderedDict()
     runs["GOLD"] = {i: (r["query"], False) for i, r in enumerate(test)}
 
-    for name, path in [("zero-shot GPT-5.4", "results_gpt-5.4.csv"),
-                       ("zero-shot Claude", "results_claude.csv"),
-                       ("zero-shot Gemini", "results_gemini.csv"),
-                       ("zero-shot DeepSeek", "results_deepseek.csv"),
-                       ("few-shot GPT-5.4", "results_fewshot_gpt-5.4.csv"),
-                       ("few-shot Claude", "results_fewshot_claude.csv"),
-                       ("few-shot Gemini", "results_fewshot_gemini.csv"),
-                       ("few-shot DeepSeek", "results_fewshot_deepseek.csv")]:
+    for name, path in [("zero-shot GPT-5.4", "outputs/results_gpt-5.4.csv"),
+                       ("zero-shot Claude", "outputs/results_claude.csv"),
+                       ("zero-shot Gemini", "outputs/results_gemini.csv"),
+                       ("zero-shot DeepSeek", "outputs/results_deepseek.csv"),
+                       ("few-shot GPT-5.4", "outputs/results_fewshot_gpt-5.4.csv"),
+                       ("few-shot Claude", "outputs/results_fewshot_claude.csv"),
+                       ("few-shot Gemini", "outputs/results_fewshot_gemini.csv"),
+                       ("few-shot DeepSeek", "outputs/results_fewshot_deepseek.csv")]:
         if os.path.exists(path):
             runs[name] = {int(r["index"]): (r["generated_query"], False)
                           for r in csv.DictReader(open(path))}
 
-    p = "qlever/results_e2e_regen.csv"
+    p = "outputs/qlever/results_e2e_regen.csv"
     if os.path.exists(p):
         runs["pipeline (labelled)"] = {int(r["index"]): (r["labeled_query"], True)
                                        for r in csv.DictReader(open(p))}
@@ -105,7 +105,7 @@ def main():
         print(line)
         agree.append(row)
 
-    with open("construct_analysis.csv", "w", newline="") as f:
+    with open("results_tables/construct_analysis.csv", "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(["USAGE COUNTS"])
         w.writerow(["construct"] + list(runs))
@@ -114,7 +114,7 @@ def main():
         w.writerow(["AGREEMENT WITH GOLD (F1 of construct use)"])
         w.writerow(["construct"] + [r for r in runs if r != "GOLD"])
         w.writerows(agree)
-    print("\nwritten construct_analysis.csv")
+    print("\nwritten results_tables/construct_analysis.csv")
     print("\nReading: low usage vs GOLD = under-use of the idiom; usage above")
     print("GOLD with low agreement F1 = the construct is applied, but not where")
     print("the question requires it (mis-calibration rather than ignorance).")

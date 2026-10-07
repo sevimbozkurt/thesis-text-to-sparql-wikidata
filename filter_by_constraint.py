@@ -10,8 +10,8 @@ import requests
 import endpoint as EP
 
 CACHE = "constraint_cache.json"
-POOL  = "pool_constrained_seed.json"
-GOLD  = "gold_links.json"
+POOL  = "data/pool_constrained_seed.json"
+GOLD  = "data/gold_links.json"
 
 MAX_CLOSURE_DEPTH = 6      # P279* hops from an instance's class
 

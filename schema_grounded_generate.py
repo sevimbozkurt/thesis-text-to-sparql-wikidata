@@ -4,7 +4,7 @@ generation with the retrieved schema evidence (server, vLLM, free).
 USAGE (server, vllm env, one GPU)
   export CUDA_VISIBLE_DEVICES=1
   python schema_grounded_generate.py --split working \
-         --cards schema_cards_working.json --tag grounded
+         --cards data/schema_cards_working.json --tag grounded
 Output: grounded_generated_<tag>.json  — then link it with disamb_any.py and
 score with score_open_pipeline.py, exactly as the other arms.
 """
@@ -57,10 +57,10 @@ def main():
 
     cards = load(a.cards)
     if a.split == "working":
-        test = load("test.json")
+        test = load("data/test.json")
         qs = {str(i): r["instruction"] for i, r in enumerate(test)}
     else:
-        rows = load("official_test.json")
+        rows = load("data/official_test.json")
         qs = {str(r["id"]): r["instruction"] for r in rows}
 
     targets = [rid for rid in qs if rid in cards]

@@ -4,7 +4,7 @@ queries, run on the server with an open-weight backbone. Free.
 USAGE (server)
   export CUDA_VISIBLE_DEVICES=1
   python disamb_any.py --gen idiom_generated.json --split working  --tag idiom
-  python disamb_any.py --gen batch_generated.json --split official --tag officialclean
+  python disamb_any.py --gen outputs/batch_generated.json --split official --tag officialclean
   # control arm for the idiom experiment (same backbone, baseline generations):
   python disamb_any.py --gen baseline_generated.json --split working --tag baseline
 """
@@ -93,18 +93,18 @@ def main():
     if a.questions:
         qs = {str(k): v for k, v in load(a.questions).items()}
     elif a.split == "official":
-        rows = load("official_test.json")
+        rows = load("data/official_test.json")
         qs = {str(r["id"]): r["instruction"] for r in rows}
     else:
-        test = load("test.json")
+        test = load("data/test.json")
         qs = {str(i): r["instruction"] for i, r in enumerate(test)}
 
-    pool_file = f"pool_{a.tag}.json"
+    pool_file = f"data/pool_{a.tag}.json"
     pool = load(pool_file, {})
     if not pool:
-        for f in ["candidates_expanded.json", "properties_clean.json",
-                  "e2e_candidates_clean.json", "candidates_official.json",
-                  "pool_qwen-qwen2-5-14b-instruct_official.json"]:
+        for f in ["data/candidates_expanded.json", "data/properties_clean.json",
+                  "e2e_candidates_clean.json", "data/candidates_official.json",
+                  "data/pool_qwen-qwen2-5-14b-instruct_official.json"]:
             pool.update(load(f, {}))
         save(pool_file, pool)
     print(f"candidate pool seeded with {len(pool)} labels")
@@ -187,7 +187,7 @@ def main():
         linked[rid] = {"labeled_query": q, "linked_query": s,
                        "fully_linked": bool(s) and "[entity:" not in s
                                        and "[property:" not in s}
-    out = f"linked_{a.tag}.json"
+    out = f"outputs/linked_{a.tag}.json"
     save(out, linked)
     fl = sum(1 for v in linked.values() if v["fully_linked"])
     print(f"\nwrote {out}: {len(linked)} rows, {fl} fully linked "

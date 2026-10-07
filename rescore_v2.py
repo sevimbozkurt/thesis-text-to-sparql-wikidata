@@ -2,29 +2,29 @@
 
 Usage:
     python3 rescore_v2.py                      # all runs
-    python3 rescore_v2.py --run results_e2e.csv
+    python3 rescore_v2.py --run outputs/results_e2e.csv
 """
 
 import json, csv, os, gzip, argparse, re
 from endpoint import run_sparql, ENDPOINT
 
-OUTDIR   = "qlever_v2"
-VALCACHE = "preds_values.jsonl.gz"
+OUTDIR   = "outputs/qlever_v2"
+VALCACHE = "outputs/preds_values.jsonl.gz"
 MAXVALS  = 3000
 
 os.makedirs(OUTDIR, exist_ok=True)
 
 QID = re.compile(r'^Q\d+$')
 
-QUERY_COLUMN = {"results_linking.csv": "linked_query",
-                "results_e2e.csv": "linked_query",
-                "results_e2e_regen.csv": "linked_query"}
+QUERY_COLUMN = {"outputs/results_linking.csv": "linked_query",
+                "outputs/results_e2e.csv": "linked_query",
+                "outputs/results_e2e_regen.csv": "linked_query"}
 
-ALL_RUNS = ([f"results_{m}.csv" for m in ["gpt-5.4","claude","gemini","deepseek"]] +
-            [f"results_fewshot_{m}.csv" for m in ["gpt-5.4","claude","gemini","deepseek"]] +
-            ["results_linking.csv", "results_e2e.csv"])
+ALL_RUNS = ([f"outputs/results_{m}.csv" for m in ["gpt-5.4","claude","gemini","deepseek"]] +
+            [f"outputs/results_fewshot_{m}.csv" for m in ["gpt-5.4","claude","gemini","deepseek"]] +
+            ["outputs/results_linking.csv", "outputs/results_e2e.csv"])
 
-GOLD = {int(k): set(v) for k, v in json.load(open("gold_results.json")).items()}
+GOLD = {int(k): set(v) for k, v in json.load(open("data/gold_results.json")).items()}
 
 def split_vals(vals):
     ents = {v for v in vals if QID.match(v)}
@@ -41,7 +41,7 @@ def rescore(path, valcache):
         print(f"  SKIP {path}"); return
     qcol = QUERY_COLUMN.get(path, "generated_query")
     rows = list(csv.DictReader(open(path)))
-    outfile = os.path.join(OUTDIR, path)
+    outfile = os.path.join(OUTDIR, os.path.basename(path))
 
     done, out_rows = set(), []
     if os.path.exists(outfile):

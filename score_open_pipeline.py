@@ -2,7 +2,7 @@
 open_pipeline_e2e.py, using the thesis's endpoint, fair sets and metrics.
 
 Usage:
-  python3 score_open_pipeline.py linked_queries_qwen-qwen2-5-14b-instruct_official.json --split official
+  python3 score_open_pipeline.py outputs/linked_queries_qwen-qwen2-5-14b-instruct_official.json --split official
   python3 score_open_pipeline.py linked_queries_qwen-qwen2-5-14b-instruct_working.json  --split working
 """
 
@@ -31,14 +31,14 @@ def main():
     atexit.register(lambda: os.path.exists(lock) and os.remove(lock))
 
     if a.split == "official":
-        gold_raw = json.load(open("official_gold_results.json"))
+        gold_raw = json.load(open("data/official_gold_results.json"))
         gold = {k: set(v["values"]) for k, v in gold_raw.items()}
         strict = {k for k, v in gold_raw.items() if v["ok"] and v["values"]}
-        cx = {str(r["id"]): r["complexity"] for r in json.load(open("official_test.json"))}
+        cx = {str(r["id"]): r["complexity"] for r in json.load(open("data/official_test.json"))}
     else:
-        gold = {str(k): set(v) for k, v in json.load(open("gold_results.json")).items()}
+        gold = {str(k): set(v) for k, v in json.load(open("data/gold_results.json")).items()}
         strict, cx = set(), {}
-        for r in csv.DictReader(open("gold_status_qlever.csv")):
+        for r in csv.DictReader(open("data/gold_status_qlever.csv")):
             i = r["index"]; cx[i] = r["complexity"]
             if r["gold_executed"] == "True" and r["gold_result_count"] != "0":
                 strict.add(i)

@@ -39,7 +39,7 @@ def ntriples(q):
 
 def size_band(n): return "1" if n == 1 else "2" if n == 2 else "3-4" if n <= 4 else "5+"
 
-bench = json.load(open("train.json")) + json.load(open("val.json")) + json.load(open("test.json"))
+bench = json.load(open("data/train.json")) + json.load(open("data/val.json")) + json.load(open("data/test.json"))
 bench_q = [expand(r["query"]) for r in bench]
 wdql_q = []
 for f in glob.glob("external/wdql/wdql-one-per-cluster/*.jsonl"):

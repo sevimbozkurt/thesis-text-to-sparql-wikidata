@@ -19,8 +19,8 @@ def J(a, b):
 base = from_gen("baseline_generated.json")
 ARMS = [
     ("idiom guidance",            from_gen("idiom_generated.json"),      "+3.9",  "informative"),
-    ("schema evidence, verbose",  from_linked("linked_grounded.json"),   "-14.7", "enumerative"),
-    ("schema evidence, targeted", from_linked("linked_grounded-targeted.json"), "-12.7", "enumerative"),
+    ("schema evidence, verbose",  from_linked("outputs/linked_grounded.json"),   "-14.7", "enumerative"),
+    ("schema evidence, targeted", from_linked("outputs/linked_grounded-targeted.json"), "-12.7", "enumerative"),
     ("construct profile (X10)",   from_gen("profile_generated.json"),    "?",     "informative, targeted"),
     ("constrained vocab (X14)",   from_gen("constrained_generated.json"),"?",     "RESTRICTIVE"),
 ]
@@ -40,7 +40,7 @@ for name, s, acc, framing in ARMS:
 
 con = from_gen("constrained_generated.json")
 idi = from_gen("idiom_generated.json")
-gv  = from_linked("linked_grounded.json")
+gv  = from_linked("outputs/linked_grounded.json")
 print("-" * 78)
 print(f"\nPREDICTION was: constrained lands near the idiom arm's 0.727, not 0.383.")
 print(f"OBSERVED:       constrained = {J(base, con):.3f}")
@@ -50,7 +50,7 @@ verdict = ("CONSISTENT with the principle" if J(base, con) > 0.60 else
 print(f"VERDICT:        {verdict}")
 
 # how much of the drift is the arm obeying its own restriction?
-test = json.load(open("test.json"))
+test = json.load(open("data/test.json"))
 ANN = re.compile(r'\[(?:entity|property):([^\]]*)\]')
 obey = viol = 0
 for i, r in enumerate(test):

@@ -3,9 +3,9 @@
 import csv, json, re
 
 QID = re.compile(r'^Q\d+$')
-R = json.load(open("consensus_results.json"))
-GOLD = {k: set(v) for k, v in json.load(open("gold_results.json")).items()}
-strict = {r["index"] for r in csv.DictReader(open("gold_status_qlever.csv"))
+R = json.load(open("outputs/consensus_results.json"))
+GOLD = {k: set(v) for k, v in json.load(open("data/gold_results.json")).items()}
+strict = {r["index"] for r in csv.DictReader(open("data/gold_status_qlever.csv"))
           if r["gold_executed"] == "True" and r["gold_result_count"] != "0"}
 LABEL = {"zs-gpt": "Zero-shot GPT-5.4", "zs-claude": "Zero-shot Claude",
          "zs-gemini": "Zero-shot Gemini", "zs-deepseek": "Zero-shot DeepSeek",

@@ -7,9 +7,9 @@ Usage:  python3 official_comparison.py
 
 import csv, json, collections, os
 
-gold = json.load(open("official_gold_results.json"))
+gold = json.load(open("data/official_gold_results.json"))
 strict = {k for k, v in gold.items() if v["ok"] and v["values"]}
-gen = {r["id"]: r for r in csv.DictReader(open("results_official_e2e.csv"))}
+gen = {r["id"]: r for r in csv.DictReader(open("outputs/results_official_e2e.csv"))}
 cx = {k: r["complexity"] for k, r in gen.items()}
 assert len(gen) == 495 and len(strict) == 370
 COMPS = ["simple", "medium", "complex", None]
@@ -21,7 +21,7 @@ def pct(n, d):
     return round(n / d * 100, 1)
 
 # ── this pipeline, stage table ─────────────────────────────────
-clean = {r["row_id"]: r for r in csv.DictReader(open("linked_official-clean.csv"))}
+clean = {r["row_id"]: r for r in csv.DictReader(open("outputs/linked_official-clean.csv"))}
 stage = []
 for label, test in [("Generated labelled query (%)", lambda i: gen[i]["generated_ok"] == "True"),
                     ("Fully linked (%)", lambda i: clean.get(i, {}).get("fully_linked") == "True"),
@@ -47,13 +47,13 @@ for row in stage:
 systems = [("this pipeline (frozen)", pipe,
             {i for i, r in clean.items() if r["executed"] == "True"})]
 open_rows = {r["row_id"]: r for r in csv.DictReader(
-    open("results_qwen-qwen2-5-14b-instruct_official.csv"))}
+    open("outputs/results_qwen-qwen2-5-14b-instruct_official.csv"))}
 systems.append(("open 14B for both stages",
                 {i: float(r["jaccard_pooled"]) for i, r in open_rows.items()},
                 {i for i, r in open_rows.items() if r["executed"] == "True"}))
 
 auth = collections.defaultdict(lambda: collections.defaultdict(list))
-for r in csv.DictReader(open("results_authors_baselines.csv")):
+for r in csv.DictReader(open("outputs/results_authors_baselines.csv")):
     if r["annotated"] == "False":
         auth[r["model"]][r["row_id"]].append(r)
 for m in ["mistral-7b-sparql", "llama3-8b-sparql", "gpt4", "gpt3.5",

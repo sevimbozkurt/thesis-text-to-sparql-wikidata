@@ -18,10 +18,10 @@ API   = "https://www.wikidata.org/w/api.php"
 HEAD  = {"User-Agent": "ThesisKGQA/2.0 (master thesis research)"}
 DELAY = 1.2
 
-SAMPLE = "lcquad_sample.json"
-LABELS = "lcquad_labels.json"
-POOL   = "lcquad_pool.json"
-GENF   = "lcquad_generated.json"
+SAMPLE = "data/lcquad_sample.json"
+LABELS = "data/lcquad_labels.json"
+POOL   = "data/lcquad_pool.json"
+GENF   = "outputs/lcquad_generated.json"
 
 QID = re.compile(r"\bwd:(Q\d+)\b")
 PID = re.compile(r"\b(?:wdt|p|ps|pq|psv|pqv|ps):(P\d+)\b")
@@ -133,12 +133,12 @@ def package():
             out[str(i)] = "SELECT ?x WHERE { " + " ".join(parts) + " }"
             qs[str(i)] = r["question"]
     json.dump(out, open(GENF, "w"), indent=1)
-    json.dump(qs, open("lcquad_questions.json", "w"), indent=1)
-    print(f"written: {GENF} ({len(out)} rows) and lcquad_questions.json")
+    json.dump(qs, open("data/lcquad_questions.json", "w"), indent=1)
+    print(f"written: {GENF} ({len(out)} rows) and data/lcquad_questions.json")
 
 
 def score():
-    linked = json.load(open("linked_lcquad.json"))
+    linked = json.load(open("outputs/linked_lcquad.json"))
     sel = json.load(open(SAMPLE)); lab = json.load(open(LABELS))
     inv = {v: k for k, v in lab.items()}
     te = tp = ce = cp = 0

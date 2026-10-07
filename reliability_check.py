@@ -2,14 +2,14 @@
 
 Usage:
   python3 reliability_check.py prepare
-  # ... annotate reliability_worksheet.csv by hand, save it ...
+  # ... annotate annotations/reliability_worksheet.csv by hand, save it ...
   python3 reliability_check.py compare
 """
 
 import csv, random, sys, os, collections
 
-SRC     = "annotation_clean.csv"
-SHEET   = "reliability_worksheet.csv"
+SRC     = "annotations/annotation_clean.csv"
+SHEET   = "annotations/reliability_worksheet.csv"
 N       = 10
 SEED    = 7            # deliberately not 42: an independent draw
 

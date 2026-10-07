@@ -30,16 +30,16 @@ say()
 # ── provenance ────────────────────────────────────────────────
 say("## Input files (sha256, first 12 hex chars)")
 say()
-for p in ["test.json", "train.json", "val.json",
-          "gold_status_qlever.csv", "gold_results.json", "gold_links.json",
-          "candidates_expanded.json", "properties_clean.json",
-          "official_test.json", "official_gold_results.json",
-          "gold_links_official.json", "candidates_official.json",
-          "schema_cards_working.json", "schema_cards_targeted_working.json",
-          "all_results.csv", "annotation_clean.csv", "my_annotation.csv",
-          "construct_analysis.csv", "complexity_features.csv",
-          "agreement_analysis.csv",
-          "consensus_results.json", "results_tables/consensus_selection.csv",
+for p in ["data/test.json", "data/train.json", "data/val.json",
+          "data/gold_status_qlever.csv", "data/gold_results.json", "data/gold_links.json",
+          "data/candidates_expanded.json", "data/properties_clean.json",
+          "data/official_test.json", "data/official_gold_results.json",
+          "data/gold_links_official.json", "data/candidates_official.json",
+          "data/schema_cards_working.json", "data/schema_cards_targeted_working.json",
+          "data/all_results.csv", "annotations/annotation_clean.csv", "annotations/my_annotation.csv",
+          "results_tables/construct_analysis.csv", "results_tables/complexity_features.csv",
+          "results_tables/agreement_analysis.csv",
+          "outputs/consensus_results.json", "results_tables/consensus_selection.csv",
           "results_tables/memorisation_frontier.csv",
           "results_tables/wdql_construct_prevalence.csv"]:
     say(f"- `{p}` — {sha(p)}")
@@ -48,9 +48,9 @@ say()
 # ── fair sets ─────────────────────────────────────────────────
 say("## 1. Fair sets (working split, QLever)")
 say()
-if exists("gold_status_qlever.csv"):
+if exists("data/gold_status_qlever.csv"):
     strict, lenient, cx = set(), set(), {}
-    for r in csv.DictReader(open("gold_status_qlever.csv")):
+    for r in csv.DictReader(open("data/gold_status_qlever.csv")):
         i = int(r["index"]); cx[i] = r["complexity"]
         if r["gold_executed"] == "True":
             lenient.add(i)
@@ -64,7 +64,7 @@ if exists("gold_status_qlever.csv"):
 else:
     strict, lenient, cx = set(), set(), {}
     strict_s = set()
-    say("- MISSING gold_status_qlever.csv")
+    say("- MISSING data/gold_status_qlever.csv")
 say()
 
 # ── metric tables ─────────────────────────────────────────────
@@ -79,11 +79,11 @@ RUNS = [("Zero-shot GPT-5.4", "results_gpt-5.4.csv"),
         ("Linking (gold labels, clean)", "results_linking_clean.csv"),
         ("End-to-end (clean pools)", "results_e2e_clean.csv")]
 
-say("## 2. Fair Jaccard, pooled and entity-level (qlever_v2/)")
+say("## 2. Fair Jaccard, pooled and entity-level (outputs/qlever_v2/)")
 say()
 data, defined = {}, []
 for name, f in RUNS:
-    p = os.path.join("qlever_v2", f)
+    p = os.path.join("outputs/qlever_v2", f)
     if not exists(p):
         say(f"- MISSING {p}")
         continue
@@ -120,7 +120,7 @@ say()
 # ── stage table ───────────────────────────────────────────────
 say("## 3. Stage table (end-to-end, clean pools)")
 say()
-p = "results_e2e_clean.csv" if exists("results_e2e_clean.csv") else "qlever/results_e2e_regen.csv"
+p = "outputs/results_e2e_clean.csv" if exists("outputs/results_e2e_clean.csv") else "outputs/qlever/results_e2e_regen.csv"
 if exists(p):
     rows = list(csv.DictReader(open(p)))
     say("| Stage | simple | medium | complex | overall |")
@@ -151,14 +151,14 @@ say()
 # ── entity linking ────────────────────────────────────────────
 say("## 4. Entity linking (same rows, same ground truth)")
 say()
-if exists("gold_links.json"):
-    gold = {int(k): v for k, v in json.load(open("gold_links.json")).items()}
+if exists("data/gold_links.json"):
+    gold = {int(k): v for k, v in json.load(open("data/gold_links.json")).items()}
     n_ent = sum(1 for ps in gold.values() for p in ps if p[0] == "entity")
     n_prop = sum(1 for ps in gold.values() for p in ps if p[0] == "property")
     say(f"- ground truth: {len(gold)} rows, {n_ent} entity mentions, "
         f"{n_prop} property mentions")
 
-    for cfile, cname in [("candidates_expanded.json", "clean union pools")]:
+    for cfile, cname in [("data/candidates_expanded.json", "clean union pools")]:
         if not exists(cfile):
             continue
         cand = json.load(open(cfile))
@@ -172,8 +172,8 @@ if exists("gold_links.json"):
                     hit += 1
         say(f"- entity candidate ceiling, {cname}: {hit}/{tot} = {hit/tot*100:.1f}%")
 
-    if exists("properties_clean.json"):
-        pc = json.load(open("properties_clean.json"))
+    if exists("data/properties_clean.json"):
+        pc = json.load(open("data/properties_clean.json"))
         tot = hit = 0
         for ps in gold.values():
             for kind, label, gid in ps:
@@ -186,18 +186,18 @@ if exists("gold_links.json"):
             f"{hit}/{tot} = {hit/tot*100:.1f}%")
 
     say()
-    cx_test = ({i: ex["complexity"] for i, ex in enumerate(json.load(open("test.json")))}
-               if exists("test.json") else {})
+    cx_test = ({i: ex["complexity"] for i, ex in enumerate(json.load(open("data/test.json")))}
+               if exists("data/test.json") else {})
     say("| Linker | mentions | P | R | F1 | F1 simple | F1 medium | F1 complex |")
     say("|---|---|---|---|---|---|---|---|")
-    for pred_file, label in [("preds_reasoning_full.jsonl", "Reasoning (Opus 4.8, clean)"),
-                             ("preds_qwen_full.jsonl", "Reasoning (Qwen2.5-14B)"),
-                             ("preds_qwen7b_entity.jsonl", "Reasoning (Qwen2.5-7B, entity only)"),
-                             ("preds_glinker_restricted_desc.jsonl", "GLiNKER large v1.0 (same candidates, descriptions)"),
-                             ("preds_glinker_restricted_label.jsonl", "GLiNKER large v1.0 (same candidates, labels only)"),
-                             ("preds_first_search_result.jsonl", "First search result (no model)"),
-                             ("preds_elq.jsonl", "ELQ (elq_wiki_large)"),
-                             ("preds_refined.jsonl", "ReFinED questions_model")]:
+    for pred_file, label in [("outputs/preds_reasoning_full.jsonl", "Reasoning (Opus 4.8, clean)"),
+                             ("outputs/preds_qwen_full.jsonl", "Reasoning (Qwen2.5-14B)"),
+                             ("outputs/preds_qwen7b_entity.jsonl", "Reasoning (Qwen2.5-7B, entity only)"),
+                             ("outputs/preds_glinker_restricted_desc.jsonl", "GLiNKER large v1.0 (same candidates, descriptions)"),
+                             ("outputs/preds_glinker_restricted_label.jsonl", "GLiNKER large v1.0 (same candidates, labels only)"),
+                             ("outputs/preds_first_search_result.jsonl", "First search result (no model)"),
+                             ("outputs/preds_elq.jsonl", "ELQ (elq_wiki_large)"),
+                             ("outputs/preds_refined.jsonl", "ReFinED questions_model")]:
         if not exists(pred_file):
             say(f"| {label} | MISSING | | | |")
             continue
@@ -236,7 +236,7 @@ if exists("gold_links.json"):
             say(f"| {label} | {kind} | {P:.1f}% | {R:.1f}% | {F:.1f}% | "
                 + " | ".join(f"{v:.1f}%" if v is not None else "—" for v in per) + " |")
 else:
-    say("- MISSING gold_links.json")
+    say("- MISSING data/gold_links.json")
 say()
 
 # ── official split ────────────────────────────────────────────
@@ -262,21 +262,21 @@ say()
 # ── 6. official-split linking ──────────────────────────────────
 say("## 6. Entity linking on the official test split")
 say()
-if exists("gold_links_official.json"):
-    goldo = json.load(open("gold_links_official.json"))
-    rowso = {str(r["id"]): r for r in json.load(open("official_test.json"))} \
-            if exists("official_test.json") else {}
+if exists("data/gold_links_official.json"):
+    goldo = json.load(open("data/gold_links_official.json"))
+    rowso = {str(r["id"]): r for r in json.load(open("data/official_test.json"))} \
+            if exists("data/official_test.json") else {}
     n_e = sum(1 for ps in goldo.values() for p in ps if p[0] == "entity")
     n_p = sum(1 for ps in goldo.values() for p in ps if p[0] == "property")
     say(f"- ground truth: {len(goldo)} rows aligned, {n_e} entity, {n_p} property mentions")
     say()
     say("| Linker | kind | P | R | F1 | F1 simple | F1 medium | F1 complex |")
     say("|---|---|---|---|---|---|---|---|")
-    for pf, lab in [("preds_qwen_official.jsonl", "Reasoning (Qwen2.5-14B)"),
-                    ("preds_glinker_restricted_desc_official.jsonl", "GLiNKER large v1.0 (same candidates, descriptions)"),
-                    ("preds_first_search_result_official.jsonl", "First search result (no model)"),
-                    ("preds_elq_official.jsonl", "ELQ (elq_wiki_large)"),
-                    ("preds_refined_official.jsonl", "ReFinED questions_model")]:
+    for pf, lab in [("outputs/preds_qwen_official.jsonl", "Reasoning (Qwen2.5-14B)"),
+                    ("outputs/preds_glinker_restricted_desc_official.jsonl", "GLiNKER large v1.0 (same candidates, descriptions)"),
+                    ("outputs/preds_first_search_result_official.jsonl", "First search result (no model)"),
+                    ("outputs/preds_elq_official.jsonl", "ELQ (elq_wiki_large)"),
+                    ("outputs/preds_refined_official.jsonl", "ReFinED questions_model")]:
         if not exists(pf):
             say(f"| {lab} | MISSING | | | |")
             continue
@@ -316,16 +316,16 @@ if exists("gold_links_official.json"):
             say(f"| {lab} | {kind} | {P:.1f}% | {R:.1f}% | {F:.1f}% | "
                 + " | ".join(f"{v:.1f}%" if v is not None else "—" for v in per) + " |")
 else:
-    say("- MISSING gold_links_official.json")
+    say("- MISSING data/gold_links_official.json")
 say()
 
 # ── 7. prompt intervention arms ────────────────────────────────
 say("## 7. Prompt intervention arms (open-weight disambiguation)")
 say()
-ARMS = [("baseline", "linked_base-qwen.csv"),
-        ("idiom rules", "linked_idiom-qwen.csv"),
-        ("schema evidence, verbose", "linked_grounded.csv"),
-        ("schema evidence, targeted", "linked_grounded-targeted.csv")]
+ARMS = [("baseline", "outputs/linked_base-qwen.csv"),
+        ("idiom rules", "outputs/linked_idiom-qwen.csv"),
+        ("schema evidence, verbose", "outputs/linked_grounded.csv"),
+        ("schema evidence, targeted", "outputs/linked_grounded-targeted.csv")]
 # arm result files are written by score_open_pipeline.py and key rows on
 # "row_id"; the strict set is keyed on the same string ids.
 found = False
@@ -353,9 +353,9 @@ say()
 # ── 8. authors' baselines ──────────────────────────────────────
 say("## 8. Benchmark authors' systems, rescored on this dump")
 say()
-if exists("results_authors_baselines.csv"):
-    ab = list(csv.DictReader(open("results_authors_baselines.csv")))
-    go = json.load(open("official_gold_results.json")) if exists("official_gold_results.json") else {}
+if exists("outputs/results_authors_baselines.csv"):
+    ab = list(csv.DictReader(open("outputs/results_authors_baselines.csv")))
+    go = json.load(open("data/official_gold_results.json")) if exists("data/official_gold_results.json") else {}
     st = {rid for rid, v in go.items() if v.get("ok") and v.get("values")}
     say("| model | n | exec % | pooled | entity |")
     say("|---|---|---|---|---|")
@@ -371,15 +371,15 @@ if exists("results_authors_baselines.csv"):
         say(f"| {mdl} | {len(sub)} | {ex:.1f}% | {fm(mm('jaccard_pooled'))} "
             f"| {fm(mm('jaccard_entity'))} |")
 else:
-    say("- MISSING results_authors_baselines.csv")
+    say("- MISSING outputs/results_authors_baselines.csv")
 say()
 
 # ── 9. construct usage and agreement ───────────────────────────
 say("## 9. Wikidata construct usage and agreement with gold")
 say()
-if exists("construct_analysis.csv"):
+if exists("results_tables/construct_analysis.csv"):
     blocks, cur = [], []
-    for row in csv.reader(open("construct_analysis.csv")):
+    for row in csv.reader(open("results_tables/construct_analysis.csv")):
         if not row or not any(row):
             if cur: blocks.append(cur); cur = []
             continue
@@ -397,14 +397,14 @@ if exists("construct_analysis.csv"):
             say("| " + " | ".join(str(x) for x in r) + " |")
         say()
 else:
-    say("- MISSING construct_analysis.csv")
+    say("- MISSING results_tables/construct_analysis.csv")
 say()
 
 # ── 10. structural predictors of failure ───────────────────────
 say("## 10. Structural features of the gold query vs achieved accuracy")
 say()
-if exists("complexity_features.csv"):
-    rs = list(csv.DictReader(open("complexity_features.csv")))
+if exists("results_tables/complexity_features.csv"):
+    rs = list(csv.DictReader(open("results_tables/complexity_features.csv")))
     if rs:
         hdr = list(rs[0].keys())
         say("| " + " | ".join(hdr) + " |")
@@ -412,18 +412,18 @@ if exists("complexity_features.csv"):
         for r in rs:
             say("| " + " | ".join(str(r[h]) for h in hdr) + " |")
 else:
-    say("- MISSING complexity_features.csv")
+    say("- MISSING results_tables/complexity_features.csv")
 say()
 
 # ── 11. cross-model agreement ──────────────────────────────────
 say("## 11. Cross-model agreement")
 say()
-if exists("agreement_analysis.csv"):
-    for row in csv.reader(open("agreement_analysis.csv")):
+if exists("results_tables/agreement_analysis.csv"):
+    for row in csv.reader(open("results_tables/agreement_analysis.csv")):
         if row and any(row):
             say("- " + " | ".join(str(x) for x in row))
 else:
-    say("- MISSING agreement_analysis.csv")
+    say("- MISSING results_tables/agreement_analysis.csv")
 say()
 
 # ── 12. significance of the prompt interventions ───────────────
@@ -450,8 +450,8 @@ say()
 # ── 13. error taxonomy ─────────────────────────────────────────
 say("## 13. Error taxonomy")
 say()
-for f, lab in [("annotation_clean.csv", "clean-pool run (reported)"),
-               ("my_annotation.csv", "pre-repair run (supporting)")]:
+for f, lab in [("annotations/annotation_clean.csv", "clean-pool run (reported)"),
+               ("annotations/my_annotation.csv", "pre-repair run (supporting)")]:
     if not exists(f):
         say(f"- MISSING {f}")
         continue

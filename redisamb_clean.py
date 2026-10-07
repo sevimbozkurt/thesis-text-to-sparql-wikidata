@@ -1,15 +1,15 @@
 """redisamb_clean.py — Re-run reasoning disambiguation for ALL entity mentions
-against the VERIFIED-CLEAN candidate pools (candidates_expanded.json), via
+against the VERIFIED-CLEAN candidate pools (data/candidates_expanded.json), via
 the Anthropic Batch API.
 """
 
 import json, os, re, sys, collections
 
 MODEL  = "claude-opus-4-8"
-POOL   = "candidates_expanded.json"
+POOL   = "data/candidates_expanded.json"
 STATE  = "redisamb_state.json"
 MAPF   = "redisamb_map.json"
-OUTF   = "preds_reasoning_clean.jsonl"
+OUTF   = "outputs/preds_reasoning_clean.jsonl"
 K      = 7
 
 def load(p, d):
@@ -31,8 +31,8 @@ def client():
     return anthropic.Anthropic(api_key=key)
 
 def mentions():
-    gold = {int(k): v for k, v in json.load(open("gold_links.json")).items()}
-    test = json.load(open("test.json"))
+    gold = {int(k): v for k, v in json.load(open("data/gold_links.json")).items()}
+    test = json.load(open("data/test.json"))
     pool = json.load(open(POOL))
     out = []
     for i, pairs in gold.items():
@@ -111,7 +111,7 @@ def score():
     st = load(STATE, {})
     mp = load(MAPF, {})
     mapping, local = mp["map"], mp["local"]
-    gold = {int(k): v for k, v in json.load(open("gold_links.json")).items()}
+    gold = {int(k): v for k, v in json.load(open("data/gold_links.json")).items()}
     pool = json.load(open(POOL))
 
     chosen = dict(local)
@@ -139,7 +139,7 @@ def score():
                 f.write(json.dumps({"index": i, "kind": "entity", "label": label,
                                     "pred_id": chosen.get(f"{i}|{label}", "")}) + "\n")
     print(f"wrote {OUTF}")
-    print("score with:  python3 eval_linker.py preds_reasoning_clean.jsonl")
+    print("score with:  python3 eval_linker.py outputs/preds_reasoning_clean.jsonl")
 
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else ""

@@ -4,11 +4,11 @@
 import csv, json, os, re, sys, collections
 
 MODEL = "claude-opus-4-8"
-SRC   = "qlever/results_e2e_regen.csv"
+SRC   = "outputs/qlever/results_e2e_regen.csv"
 POOL  = "e2e_candidates_clean.json"
 STATE = "e2e_disamb_state.json"
 MAPF  = "e2e_disamb_map.json"
-OUT   = "results_e2e_clean.csv"
+OUT   = "outputs/results_e2e_clean.csv"
 QID   = re.compile(r'^Q\d+$')
 
 def load(p, d):
@@ -118,7 +118,7 @@ def score():
     mapping, local = mp["map"], mp["local"]
     pool = json.load(open(POOL))
     rows = list(csv.DictReader(open(SRC)))
-    gold = {int(k): set(v) for k, v in json.load(open("gold_results.json")).items()}
+    gold = {int(k): set(v) for k, v in json.load(open("data/gold_results.json")).items()}
 
     chosen, ok = dict(local), 0
     for line in open(st["results_file"]):
@@ -139,7 +139,7 @@ def score():
     print(f"parsed {ok} disambiguations")
 
     strict, cx = set(), {}
-    for r in csv.DictReader(open("gold_status_qlever.csv")):
+    for r in csv.DictReader(open("data/gold_status_qlever.csv")):
         i = int(r["index"]); cx[i] = r["complexity"]
         if r["gold_executed"] == "True" and r["gold_result_count"] != "0":
             strict.add(i)

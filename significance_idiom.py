@@ -9,20 +9,20 @@ Usage:
 import argparse, csv, os, random, statistics
 
 ARMS = [
-    ("baseline",                    "linked_base-qwen.csv"),
-    ("idiom rules",                 "linked_idiom-qwen.csv"),
-    ("schema evidence, verbose",    "linked_grounded.csv"),
-    ("schema evidence, targeted",   "linked_grounded-targeted.csv"),
+    ("baseline",                    "outputs/linked_base-qwen.csv"),
+    ("idiom rules",                 "outputs/linked_idiom-qwen.csv"),
+    ("schema evidence, verbose",    "outputs/linked_grounded.csv"),
+    ("schema evidence, targeted",   "outputs/linked_grounded-targeted.csv"),
     # Added 9 Sep 2026. Same pipeline, same disambiguation backbone
     # (Qwen2.5-14B), same scoring — only the generation prompt differs, exactly
     # as for the four arms above. load_scores() returns None for a missing file,
     # so these are skipped silently until they have been scored.
-    ("construct profile (X10)",     "linked_profile.csv"),
-    ("constrained vocab (X14)",     "linked_constrained.csv"),
+    ("construct profile (X10)",     "outputs/linked_profile.csv"),
+    ("constrained vocab (X14)",     "outputs/linked_constrained.csv"),
     # X15: the fourth cell of the 2x2 — gold vocabulary AND gold constructs.
     # The quantity of interest is X15 - X14, i.e. what structural knowledge adds
     # once the identifiers are already correct.
-    ("both oracles (X15)",          "linked_both.csv"),
+    ("both oracles (X15)",          "outputs/linked_both.csv"),
 ]
 
 def load_scores(path, metric, strict):
@@ -96,7 +96,7 @@ def main():
     a = ap.parse_args()
 
     strict = set()
-    with open("gold_status_qlever.csv") as f:
+    with open("data/gold_status_qlever.csv") as f:
         for r in csv.DictReader(f):
             if r["gold_executed"] == "True" and r["gold_result_count"] != "0":
                 strict.add(r["index"])

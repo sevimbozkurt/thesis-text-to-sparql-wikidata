@@ -1,4 +1,4 @@
-"""build_audit_page.py — turn `gold_audit_worksheet.csv` into something a
+"""build_audit_page.py — turn `annotations/gold_audit_worksheet.csv` into something a
 person can actually get through.
 
 Usage:
@@ -11,23 +11,23 @@ import requests
 
 import endpoint as EP
 
-WORKSHEET = "gold_audit_worksheet.csv"
-CACHE     = "gold_audit_results.json"
+WORKSHEET = "annotations/gold_audit_worksheet.csv"
+CACHE     = "annotations/gold_audit_results.json"
 PAGE      = "gold_audit.html"
-LABELS    = "gold_audit_labels.json"
+LABELS    = "annotations/gold_audit_labels.json"
 QID       = __import__("re").compile(r"Q\d+")
 PREVIEW_ROWS = 6
 
 
 def rows():
-    """Worksheet rows, with the query text restored from `test.json`.
+    """Worksheet rows, with the query text restored from `data/test.json`.
 
     The worksheet was written through csv and its queries arrived flattened onto
     one line. That is not merely ugly: these queries carry `#` comments, and on
     one line a comment swallows the rest of the query, so 24 of the 80 failed to
     execute with a bare syntax error. The CSV is the record of WHICH rows to
-    adjudicate; `test.json` is the authority for what the query says."""
-    test = json.load(open("test.json"))
+    adjudicate; `data/test.json` is the authority for what the query says."""
+    test = json.load(open("data/test.json"))
     out = []
     for r in csv.DictReader(open(WORKSHEET)):
         i = int(r["row"])
@@ -151,7 +151,7 @@ def ingest():
     timestamp is printed, and every verdict that actually CHANGED is listed, so
     "nothing moved" is visible rather than inferred."""
     import glob, time as _t
-    cands = (glob.glob("gold_audit_answers*.csv")
+    cands = (glob.glob("annotations/gold_audit_answers*.csv")
              + glob.glob(os.path.expanduser("~/Downloads/gold_audit_answers*.csv")))
     if not cands:
         sys.exit("no gold_audit_answers*.csv found — click 'Download answers' "
@@ -335,7 +335,7 @@ document.getElementById("dl").addEventListener("click", () => {
       [d.row, (ans[d.row]||{}).verdict||"", q((ans[d.row]||{}).note||"")].join(",")).join("\n");
   const a = document.createElement("a");
   a.href = URL.createObjectURL(new Blob([csv], {type:"text/csv"}));
-  a.download = "gold_audit_answers.csv"; a.click();
+  a.download = "annotations/gold_audit_answers.csv"; a.click();
 });
 render();
 </script></body></html>
@@ -355,7 +355,7 @@ REJUDGE_SEED = 20260914
 
 
 def _scorable():
-    return {rid for rid, vals in json.load(open("gold_results.json")).items() if vals}
+    return {rid for rid, vals in json.load(open("data/gold_results.json")).items() if vals}
 
 
 def _blind_page(pick, key, outfile, heading):
@@ -378,7 +378,7 @@ def _blind_page(pick, key, outfile, heading):
     out = (TEMPLATE.replace("/*DATA*/", json.dumps(data))
            .replace("/*LABELS*/", json.dumps({k: v for k, v in lab.items() if v}))
            .replace("gold_audit_v1", key)
-           .replace("gold_audit_answers.csv", outfile.replace(".html", "_answers.csv"))
+           .replace("annotations/gold_audit_answers.csv", outfile.replace(".html", "_answers.csv"))
            .replace("Does the reference query answer its question?", heading))
     open(outfile, "w", encoding="utf-8").write(out)
     return len(data)
@@ -545,7 +545,7 @@ def _agreement(pattern, title, independent):
 # agreement (kappa) AND the post-reconciliation rate. Reporting only the second
 # would hide how hard the judgement was, which on this benchmark is the finding.
 RECONCILE_PAGE = "gold_audit_reconcile.html"
-PRERECON = "gold_audit_prereconcile.csv"
+PRERECON = "annotations/gold_audit_prereconcile.csv"
 ANNOT2 = "gold_audit_annotator2_answers*.csv"
 
 # Faults that a result preview cannot show. Detected mechanically and shown as
@@ -629,7 +629,7 @@ def reconcile():
 
 def settle():
     import glob
-    cands = (glob.glob("gold_audit_reconciled*.csv")
+    cands = (glob.glob("annotations/gold_audit_reconciled*.csv")
              + glob.glob(os.path.expanduser("~/Downloads/gold_audit_reconciled*.csv")))
     if not cands:
         sys.exit("no gold_audit_reconciled*.csv found -- download from the "

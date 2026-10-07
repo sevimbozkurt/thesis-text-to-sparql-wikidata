@@ -9,7 +9,7 @@ import requests
 API = "https://www.wikidata.org/w/api.php"
 HEAD = {"User-Agent": "ThesisKGQA/2.0 (master thesis research)"}
 DELAY = 1.0          # fast bursts make the API return empty lists silently
-POOL = "pool_qwen-qwen2-5-14b-instruct_official.json"
+POOL = "data/pool_qwen-qwen2-5-14b-instruct_official.json"
 
 def search(label, is_property, k=7):
     time.sleep(DELAY)

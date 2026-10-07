@@ -10,7 +10,7 @@ API = "https://www.wikidata.org/w/api.php"
 HEADERS = {"User-Agent": "ThesisKGQA/2.0 (master thesis research)"}
 DELAY = 1.2
 TOP_K = 20
-OUT = "properties_expanded.json"
+OUT = "data/properties_expanded.json"
 
 def wbsearch_prop(label, limit=TOP_K):
     params = {"action": "wbsearchentities", "search": label, "language": "en",
@@ -29,8 +29,8 @@ def wbsearch_prop(label, limit=TOP_K):
     return None          # None = failed; keep whatever we had
 
 def main():
-    gold = {int(k): v for k, v in json.load(open("gold_links.json")).items()}
-    test = json.load(open("test.json"))
+    gold = {int(k): v for k, v in json.load(open("data/gold_links.json")).items()}
+    test = json.load(open("data/test.json"))
     cx = {i: test[i]["complexity"] for i in gold}
 
     mentions, lab_gold = [], collections.defaultdict(set)
@@ -108,7 +108,7 @@ def main():
 
     report = "\n".join(lines)
     print("\n" + report)
-    open("property_ceiling_report.txt", "w").write(report + "\n")
+    open("results_tables/property_ceiling_report.txt", "w").write(report + "\n")
 
 if __name__ == "__main__":
     main()

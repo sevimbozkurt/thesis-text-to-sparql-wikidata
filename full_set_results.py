@@ -1,5 +1,5 @@
 """full_set_results.py — Full strict-set results for every working-split run,
-from the current scoring (qlever_v2/), with per-run denominators.
+from the current scoring (outputs/qlever_v2/), with per-run denominators.
 
 Usage:  python3 full_set_results.py
 """
@@ -18,7 +18,7 @@ RUNS = [("Zero-shot GPT-5.4", "results_gpt-5.4.csv"),
         ("End-to-end pipeline", "results_e2e_clean.csv")]
 
 strict, cx = set(), {}
-for r in csv.DictReader(open("gold_status_qlever.csv")):
+for r in csv.DictReader(open("data/gold_status_qlever.csv")):
     i = int(r["index"])
     cx[i] = r["complexity"]
     if r["gold_executed"] == "True" and r["gold_result_count"] != "0":
@@ -29,7 +29,7 @@ def defined(v):
 
 table = []
 for name, f in RUNS:
-    rows = {int(r["index"]): r for r in csv.DictReader(open(os.path.join("qlever_v2", f)))}
+    rows = {int(r["index"]): r for r in csv.DictReader(open(os.path.join("outputs/qlever_v2", f)))}
     def pooled(comp=None):
         ids = [i for i in strict if comp is None or cx[i] == comp]
         v = [float(rows[i]["jaccard_pooled"]) if i in rows and defined(rows[i]["jaccard_pooled"])

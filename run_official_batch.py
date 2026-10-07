@@ -18,13 +18,13 @@ from endpoint import run_sparql, jaccard, ENDPOINT
 
 MODEL      = "claude-opus-4-8"     # exact API model string
 STATE      = "batch_state.json"
-OFFICIAL   = "official_test.json"
-GEN_OUT    = "batch_generated.json"        # {row_id: labelled query}
-CAND_OUT   = "batch_candidates.json"       # {row_id: {kind: {label: [cands]}}}
-DISAMB_MAP = "batch_disamb_map.json"       # {custom_id: [row_id, kind, label]}
-DISAMB_OUT = "batch_disambiguated.json"    # {row_id: {kind: {label: chosen_id}}}
-RESULTS    = "results_official_e2e.csv"
-GOLDCACHE  = "official_gold_results.json"
+OFFICIAL   = "data/official_test.json"
+GEN_OUT    = "outputs/batch_generated.json"        # {row_id: labelled query}
+CAND_OUT   = "data/batch_candidates.json"       # {row_id: {kind: {label: [cands]}}}
+DISAMB_MAP = "outputs/batch_disamb_map.json"       # {custom_id: [row_id, kind, label]}
+DISAMB_OUT = "outputs/batch_disambiguated.json"    # {row_id: {kind: {label: chosen_id}}}
+RESULTS    = "outputs/results_official_e2e.csv"
+GOLDCACHE  = "data/official_gold_results.json"
 LINKLOG    = "official_linking_log.jsonl"
 
 N_CANDIDATES, SEARCH_DELAY = 7, 1.0

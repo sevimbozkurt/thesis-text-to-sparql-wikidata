@@ -12,9 +12,9 @@ HEADERS = {"User-Agent": "ThesisKGQA/2.0 (master thesis research)"}
 DELAY = 1.2
 K = 7
 
-OFFICIAL = "official_test.json"
-GOLD_OUT = "gold_links_official.json"
-CAND_OUT = "candidates_official.json"
+OFFICIAL = "data/official_test.json"
+GOLD_OUT = "data/gold_links_official.json"
+CAND_OUT = "data/candidates_official.json"
 
 BRACKET = re.compile(r'\[(entity|property):([^\]]+)\]')
 GOLDID  = re.compile(r'\b([QP]\d+)\b')
@@ -77,7 +77,7 @@ def main():
 
     # reuse anything already fetched for the working split (same label text)
     reused = 0
-    for f in ["candidates_expanded.json", "properties_clean.json",
+    for f in ["data/candidates_expanded.json", "data/properties_clean.json",
               "e2e_candidates_clean.json", "candidates.json"]:
         if not os.path.exists(f):
             continue

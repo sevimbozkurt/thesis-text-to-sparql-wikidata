@@ -8,7 +8,7 @@ import csv, json, re, os, collections
 from endpoint import run_sparql, jaccard, ENDPOINT
 
 QID = re.compile(r'^Q\d+$')
-OUT = "results_linking_clean.csv"
+OUT = "outputs/results_linking_clean.csv"
 
 def split_vals(vals):
     ents = {v for v in vals if QID.match(v)}
@@ -21,17 +21,17 @@ def jac_or_none(a, b):
         return 0.0
     return len(a & b) / len(a | b)
 
-gold_links = {int(k): v for k, v in json.load(open("gold_links.json")).items()}
-test = json.load(open("test.json"))
-gold_res = {int(k): set(v) for k, v in json.load(open("gold_results.json")).items()}
+gold_links = {int(k): v for k, v in json.load(open("data/gold_links.json")).items()}
+test = json.load(open("data/test.json"))
+gold_res = {int(k): set(v) for k, v in json.load(open("data/gold_results.json")).items()}
 
 preds = collections.defaultdict(dict)
-for line in open("preds_reasoning_full.jsonl"):
+for line in open("outputs/preds_reasoning_full.jsonl"):
     r = json.loads(line)
     preds[r["index"]][(r["kind"], r["label"])] = r["pred_id"]
 
 strict, complexity = set(), {}
-with open("gold_status_qlever.csv") as f:
+with open("data/gold_status_qlever.csv") as f:
     for r in csv.DictReader(f):
         i = int(r["index"]); complexity[i] = r["complexity"]
         if r["gold_executed"] == "True" and r["gold_result_count"] != "0":

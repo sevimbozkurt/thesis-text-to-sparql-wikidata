@@ -128,7 +128,7 @@ def generate_sparql(model_id, instruction):
 
 
 def run_model(name, model_id, test, limit=None):
-    outfile  = f"results_{name}.csv"
+    outfile  = f"outputs/results_{name}.csv"
     rows_all = test[:limit] if limit else test
 
     done = set()
@@ -212,7 +212,7 @@ def main():
     parser.add_argument("--limit", type=int)
     args = parser.parse_args()
 
-    with open("test.json") as f:
+    with open("data/test.json") as f:
         test = json.load(f)
 
     to_run = {args.model: MODELS[args.model]} if args.model else MODELS

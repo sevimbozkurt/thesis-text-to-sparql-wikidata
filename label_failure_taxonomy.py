@@ -16,8 +16,8 @@ def flat_pool(path):
                     out[f"{kind}|{lab}"] = cands
     return out
 
-POOLS = [("Qwen2.5-14B (open)", "pool_qwen-qwen2-5-14b-instruct_official.json"),
-         ("frontier model",     "batch_candidates.json")]
+POOLS = [("Qwen2.5-14B (open)", "data/pool_qwen-qwen2-5-14b-instruct_official.json"),
+         ("frontier model",     "data/batch_candidates.json")]
 
 def classify(label):
     if re.fullmatch(r"[PQ]\d+", label):                       return "bare identifier"

@@ -31,7 +31,7 @@ def system_for(row):
 def submit_gen():
     from anthropic.types.message_create_params import MessageCreateParamsNonStreaming
     from anthropic.types.messages.batch_create_params import Request
-    test = json.load(open("test.json"))
+    test = json.load(open("data/test.json"))
     done = PI.load(PI.GEN, {})
     todo = [(i, r) for i, r in enumerate(test) if str(i) not in done]
     print(f"{len(test)} rows | already generated {len(done)} | to submit {len(todo)}")
@@ -67,7 +67,7 @@ def fetch_gen():
 
 
 def dry_run():
-    test = json.load(open("test.json"))
+    test = json.load(open("data/test.json"))
     n_in = sum(len(system_for(r) + f"Question: {r['instruction']}") / 4 for r in test)
     n = len(test); out_tok = n * 220
     cost = n_in / 1e6 * 5.00 * 0.5 + out_tok / 1e6 * 25.00 * 0.5

@@ -320,5 +320,5 @@ The cascade used here is a minimal, single-round form of execution feedback, add
 
 The linking comparison evaluates four paradigms on the same rows, ground truth and candidate pools, with the gold standard taken from the benchmark's own annotated queries.
 Error is attributed to individual stages, with backbone dependence measured separately for each, instead of being reduced to one end-to-end score.
-Interventions are controlled by changing only the generation prompt, and four directions are tested: generic guidance, schema evidence, selective guidance and a closed vocabulary.
+Interventions are controlled by changing only the generation prompt: generic guidance and schema evidence are tested against the baseline, together with oracle conditions and an analysis of selective guidance.
 External validity is checked against real query-log usage in both directions.

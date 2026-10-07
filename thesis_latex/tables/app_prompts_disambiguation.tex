@@ -1,4 +1,4 @@
-\begin{lstlisting}[caption={Disambiguation prompt. The candidate list is injected at \texttt{\{cand\_text\}}.},label={lst:prompt-disamb},basicstyle=\ttfamily\scriptsize,breaklines=true,captionpos=b]
+\begin{lstlisting}[caption={Disambiguation prompt, as built by the pipeline. The candidate list is injected at \texttt{\{cand\_text\}}. The reported runs send this prompt through Anthropic's batch interface or, for the open models, through vLLM. If the answer contains no identifier, or a request fails, the first search result is used instead; in the reported frontier-model runs all 4,063 requests returned an answer line, so this fallback was never used.},label={lst:prompt-disamb},basicstyle=\ttfamily\scriptsize,breaklines=true,captionpos=b]
 def disambiguate(question, label, candidates, is_property=False):
     if not candidates:
         return ""
@@ -20,18 +20,4 @@ Think step by step about which candidate best fits the {kind} "{label}" in the
 context of the question. Output ONLY the chosen ID (e.g. {example_id}) on the last
 line, prefixed with "ANSWER: ".
 """
-    time.sleep(API_DELAY)
-    try:
-        resp = client.chat.completions.create(
-            model=MODEL,
-            messages=[{"role": "user", "content": prompt}],
-            max_tokens=400, temperature=0,
-        )
-        text = resp.choices[0].message.content or ""
-        m = re.search(r'ANSWER:\s*([QP]\d+)', text)
-        if m: return m.group(1)
-        m2 = re.search(r'\b([QP]\d+)\b', text)
-        return m2.group(1) if m2 else candidates[0]["id"]
-    except Exception:
-        return candidates[0]["id"]
 \end{lstlisting}

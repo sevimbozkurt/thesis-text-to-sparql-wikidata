@@ -172,7 +172,7 @@ Both splits come from the same dataset, so they cannot show whether the result c
 Repeating the experiment on LC-QuAD 2.0 (gold-label condition; backbone, candidate depth, prompt and scoring held constant; 150 questions, 203 entity and 250 property mentions) gives 90.6\,\% entity accuracy $[85.8, 93.9]$ and 96.4\,\% property accuracy $[93.3, 98.1]$, with 96.7\,\% of queries fully linked.
 The pattern found on Instruct-to-SPARQL reappears on a benchmark with different authors, templates and aims.
 
-Entity accuracy is 4.3 points below the 94.9\,\% the same backbone reaches on Instruct-to-SPARQL, which lies outside the reported interval and cannot be explained by sampling noise alone (LC-QuAD 2.0 may contain more long-tail entities).
+Measured the same way, as correct identifiers over all reference mentions, the same backbone reaches 94.8\,\% on Instruct-to-SPARQL (1,030 of 1,086), above the upper end of the LC-QuAD 2.0 interval, so entity accuracy differs between the two benchmarks (LC-QuAD 2.0 may contain more long-tail entities).
 Unlike the labels in Instruct-to-SPARQL's annotated variant, its mention labels are the current Wikidata labels of the gold identifiers and are therefore findable by construction.
 The reported value is an upper bound for this benchmark, and the comparison across benchmarks matters more than the absolute level.
 This experiment replicates the linking measurement only.
@@ -248,7 +248,7 @@ Statement-node use increased from 18.5\,\% to 22.3\,\%, and qualifier use from 2
 Value-node use did not improve at all: of the 35 reference queries that need a value node, both models use one in only two (5.7\,\%), and Opus 5 uses value nodes three times in total.
 
 The newer model is much better at constructs that are mainly a matter of SPARQL syntax, and improves far less on constructs that require understanding how Wikidata represents information.
-This mirrors the distinction drawn in the failure analysis below, between general-purpose SPARQL constructs, which models already use fairly often, and Wikidata-specific reification and hierarchy idioms, which remain difficult.
+This mirrors the failure analysis below, in which Wikidata-specific reification and hierarchy idioms remain the most difficult constructs.
 
 Opus 5 fully links 92.6\,\% of the 567 questions, against 95.2\,\% for Opus 4.8.
 It produces six empty generations, where the earlier model produces none, and leaves 34 of 778 labels unresolved, against 25 of 852.
@@ -274,7 +274,7 @@ The gap attribution above groups the one triple flip with structure, because the
 Structural errors are the largest category at every complexity level and are common among complex questions. Ten of the fifteen complex failures are structural.
 Identifier-related errors still occur, though; three of the fifteen complex failures (20\,\%) come down to identifier selection.
 
-The author categorised the cases in a single annotation pass, so the proportions describe recurring failure modes and should not be read as population-level frequencies.
+The author categorised the cases, and the proportions describe recurring failure modes and should not be read as population-level frequencies.
 
 \paragraph{Annotation Reliability and Reference Noise}
 
@@ -285,12 +285,13 @@ Four of the second annotator's nine disagreements concerned the reference query 
 The estimate is \textbf{24.6\,\% of the strict fair set, with an interval of $[12.9, 42.0]$}.
 Some failures attributed to query structure may therefore come from the benchmark, and a system may be penalised for correctly answering a question that the benchmark encodes incorrectly.
 The reported accuracy figures are not corrected for reference noise, for the comparability reasons discussed in the limitations.
+Nine of the 80 sampled reference queries also occur in the official test split.
 \Cref{app:reliability} gives the full procedure.
 
 \paragraph{Mechanism}
 
 The structural failures follow a clear pattern: the model writes syntactically valid SPARQL but uses the direct-claim shortcut \texttt{wdt:} where the reference needs a more complex construct, such as transitive subclass closure, statement qualifiers, normalised value nodes, explicit aggregation, alternation, the lexeme model, or sitelink/badge access.
-General-purpose SPARQL is handled well; the deficit is confined to Wikidata's reification and hierarchy idioms.
+The models write valid SPARQL, and what they underuse most are Wikidata's reification and hierarchy idioms, value nodes above all, although aggregation and \texttt{OPTIONAL} are also underused.
 Averaging a height property directly instead of through its normalised value node, for example, silently mixes units and yields an arithmetically wrong result that the syntax alone does not reveal.
 Near misses caused by projection mismatches, where the query returns a relation's object instead of its subject, were checked separately on ten additional zero-scoring rows.
 All ten were indeed incorrect, so the reported accuracy needs no adjustment.
@@ -312,11 +313,13 @@ reference queries.}
 \end{figure}
 
 Every system underuses Wikidata-specific constructs: of the 130 reference queries that use statement nodes, generated systems use them in 22--87; of 85 with qualifiers, in 16--52; and of 35 with normalised value nodes, in 0--4 (the strongest baseline never uses them).
-General-purpose constructs (\texttt{FILTER}, \texttt{GROUP BY}, \texttt{OPTIONAL}) appear at rates close to the reference, so the deficit is specific to reification and hierarchy idioms, and it shows up across all four model families and both prompting regimes.
+Only \texttt{FILTER} is generated at close to the reference rate (117--164 queries against 196).
+Aggregation (73--103 against 177) and \texttt{OPTIONAL} (24--118 against 230) are also underused, so the deficit is not confined to Wikidata-specific idioms, although it is most extreme for value nodes.
+It appears across all four model families and both prompting regimes.
 
 Usage counts alone cannot tell a system that never uses a construct from one that uses it in the wrong places, so~\Cref{fig:agreement} reports construct-agreement F1 instead.
 Agreement is low and does not follow usage frequency: zero-shot GPT-5.4 uses subclass closure 212 times against 149 in the reference, yet agrees on only 54.8\,\% of questions, applying it where it is not needed and leaving it out where it is.
-Only general-purpose constructs reach the 55--60 range.
+Only \texttt{FILTER} and aggregation reach roughly 55--60 in most runs.
 So the models misplace these constructs as well as underusing them.
 
 \begin{figure}[htbp]
@@ -363,7 +366,8 @@ The intervention shifts the overall level and distribution of performance, but i
 Schema evidence has the opposite effect.
 Averaged over the questions each arm scored, the verbose version lowers accuracy to 13.0 and the targeted version to 14.5.
 The paired differences are $-14.65$ and $-12.66$, both with $p < 0.001$.
-This runs against the improvements reported in research on schema-aware grounding, including~\parencite{zhang2026saga}.
+Schema-aware grounding methods that filter candidates report improvements~\parencite{zhang2026saga}.
+The cards here instead add evidence to the prompt, and the discussion returns to this difference.
 The loss is about four times as large as the gain from idiom guidance.
 It does not follow that retrieval augmentation is harmful in general: systems that combine retrieved context with an explicit validation or correction layer, rather than unconstrained prompt text, report gains from the same broad strategy~\parencite{pan2025firesparql}.
 The finding here concerns schema evidence presented as evidence, not as a constraint.
@@ -390,9 +394,9 @@ Construct agreement improves most for the two constructs the prompt stresses mos
 The prompt changes behaviour a lot, sometimes pushing simple syntactic constructs past the reference rate, but it does much less for constructs that require knowing how Wikidata represents information.
 Value-node use barely moves, and aggregation does not change at all despite an explicit instruction to use it.
 
-The construct counts suggest that over-application is the main way the grounding interventions fail: against reference counts of 149 subclass closures, 130 statement nodes and 85 qualifiers, the targeted schema arm produces 342, 256 and 142.
+The construct counts suggest that over-application is the main way the schema-evidence interventions fail: against reference counts of 149 subclass closures, 130 statement nodes and 85 qualifiers, the targeted schema arm produces 342, 256 and 142.
 Shorter, conditional evidence increases over-application instead of reducing it.
-The grounded arms also share only 38\,\% of their label vocabulary with the baseline, compared with 73\,\% for the idiom arm.
+The schema-evidence arms also share only 38\,\% of their label vocabulary with the baseline, compared with 73\,\% for the idiom arm.
 Schema evidence leads the model to rewrite its queries extensively, even though the schema cards were built from reference-linked mentions, a favourable setting in which the intervention fails.
 
 \begin{figure}[htbp]
@@ -434,7 +438,8 @@ Knowing which construct is required is not the main bottleneck.
 The constrained-vocabulary arm supplies a different kind of information.
 It gives a closed list of the entities and properties that the reference query uses and forbids the model to use any identifier outside that list.
 Accuracy rises by $+18.99$ points $[15.03, 23.11]$, with $p < 0.001$.
-Here 141 questions improve and 41 get worse, which makes it the only intervention whose effect is consistently positive.
+Here 141 questions improve and 41 get worse, which makes it the only single-factor intervention whose effect is consistently positive.
+The model kept to the list for almost every label: only 15 of 2,263 label uses (0.7\,\%) fall outside it.
 
 This is not a standalone performance claim: like the gold-label condition, the intervention receives part of the answer in advance, so its absolute performance is partly definitional.
 The result is meaningful as a comparison, because the enumerative schema cards were built from the same reference-linked mentions.
@@ -450,6 +455,7 @@ Two-by-Two}
 The two single-factor interventions supply different information and produce very different gains.
 They correspond to the two generation decisions defined in the method chapter: the permitted vocabulary settles concept selection, and the construct profile names the idioms that structural composition needs.
 A fourth arm, supplying both, completes a factorial design (percentile intervals from 10,000 bootstrap resamples) and shows that the effects are additive: construct information adds $+3.76$ points $[0.96, 6.58]$ even with the concepts fixed, and concept information adds $+19.72$ points $[15.30, 24.03]$ even when the required constructs are specified.
+These two effects are measured directly between the oracle arms on their own paired rows (362 and 358 questions), so they are not differences of the values in \cref{tab:significance}.
 The jointly predicted result (21.99) matches the observed 23.01, and the one-point interaction lies within the intervals.
 Concept selection thus accounts for the larger part of the error that these two oracles remove, and naming the idioms adds a smaller, independent part.
 Neither oracle composes the query: with both supplied, entity-level accuracy reaches 50.4 on the 353 paired questions, whereas the gold-label condition, which supplies the composed query, reaches 97.4.
@@ -544,7 +550,7 @@ Every system is scored on all 370 strict-set questions of the official split, an
 The fine-tuned models reach pooled fair Jaccard scores of 61.2 and 58.3, and the pipeline developed here reaches 23.4.
 The authors' GPT-4 and GPT-3.5 baselines reach 11.5 and 4.4, respectively.
 Without any in-domain training, the pipeline more than doubles the authors' frozen baselines and reaches more than one third of the fine-tuned systems' score.
-Since its disambiguation is near-perfect, the remaining difference once more points to query generation.
+Since its disambiguation is high (92.9 entity F1 with the open 14B model on this split), the remaining difference once more points to query generation.
 This is a comparison between systems: the pipeline also uses a newer generator than the authors' GPT-4 baseline.
 The pipeline's own contribution is measured on the working split, where it adds 6.0 pooled points over the same generator used zero-shot (19.1 to 25.1, \cref{tab:main}).
 
@@ -569,7 +575,7 @@ One possible explanation is that fine-tuning improves conformity to the expected
 
 \input{tables/memorisation_frontier}
 
-The Instruct-to-SPARQL dataset has been public since May 2025, while the models evaluated here were released in 2026 and their training data are undisclosed.
+The Instruct-to-SPARQL dataset has been public since May 2025, while the frontier models evaluated here were released in 2026 and their training data are undisclosed.
 Memorisation is a real concern.
 Recent work on LLM-generated SPARQL likewise shows that memorisation and externally injected graph knowledge can substantially affect apparent benchmark performance, which makes a direct check necessary~\citep{gashkov2025memorization}.
 The check uses the same skeleton comparison as the earlier analysis: identifiers, literals, variable names, numbers and prefixes are removed, leaving only the query structure.

@@ -94,10 +94,14 @@ except Exception as e:
 try:
     dis = source_of(os.path.join(ROOT, "pipeline_e2e.py"), "disambiguate")
     # keep the prompt itself plus the signature, drop the API plumbing
-    cut = dis.split("response =")[0].rstrip()
+    cut = dis.split("time.sleep(API_DELAY)")[0].rstrip()
     w("app_prompts_disambiguation.tex",
-      listing("Disambiguation prompt. "
-              "The candidate list is injected at \\texttt{\\{cand\\_text\\}}.",
+      listing("Disambiguation prompt, as built by the pipeline. "
+              "The candidate list is injected at \\texttt{\\{cand\\_text\\}}. "
+              "The reported runs send this prompt through Anthropic's batch interface or, for the "
+              "open models, through vLLM. If the answer contains no identifier, or a request fails, "
+              "the first search result is used instead; in the reported frontier-model runs all "
+              "4,063 requests returned an answer line, so this fallback was never used.",
               "lst:prompt-disamb", cut))
 except Exception as e:
     print("  ! disambiguation prompt:", e)

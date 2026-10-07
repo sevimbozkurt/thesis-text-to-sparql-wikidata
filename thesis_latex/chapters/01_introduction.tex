@@ -121,15 +121,15 @@ It includes mention-level linking ground truth derived from the benchmark's alig
 Four linking approaches are compared on the same rows and ground truth, with the same candidate pools where a linker uses them, on two data splits, and the attribution is supported by a failure taxonomy, an analysis of Wikidata-specific constructs across the full corpus, and agreement across independent models.
 The same experiments show that backbone dependence differs between linking and generation.
 \item
-\textbf{Controlled interventions and the execution-guided cascade}: four prompt-based interventions are tested (generic idiom guidance, schema evidence, selective application of guidance and a closed vocabulary).
+\textbf{Controlled interventions and the execution-guided cascade}: generic idiom guidance and schema evidence are tested against the baseline prompt, together with three oracle conditions (a construct profile, a closed vocabulary and both) and an analysis of selective application.
 They rule out several approaches and lead to a design principle, \emph{ground by constraint, not by enumeration}.
-The thesis then introduces an execution-guided cascade that recovers some of the remaining errors from inference-time signals alone, without additional training, a reference query or new generation.
+The thesis then introduces an execution-guided cascade that recovers some of the remaining errors from inference-time signals alone, without additional training or a reference query.
 Together, these experiments yield a configured pipeline in which every backbone is chosen on measured performance.
 \end{enumerate}
 
 The thesis also makes a methodological contribution.
 It identifies four measurement artefacts that can distort KGQA evaluation, such as a metric that rewards queries for returning nothing and silent API throttling that looks like a retrieval problem, and it shows how each can be detected.
-In three of the four cases the artefact produced a more striking conclusion than the true result, which made it easy to accept.
+In each case the artefact produced a plausible result that fitted the emerging interpretation, which made it easy to accept.
 They motivate the validation practices used throughout this work.
 
 The code, data, stored model outputs and \LaTeX{} sources needed to reproduce every result are available at \url{https://github.com/sevimbozkurt/thesis-text-to-sparql-wikidata}.

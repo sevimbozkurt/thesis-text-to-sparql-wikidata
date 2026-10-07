@@ -205,7 +205,7 @@ A language model receives the label, the question and the retrieved candidate li
 It is asked to reason about which candidate best matches the label in the context of the question and to output the chosen identifier in a fixed format.
 Decoding is deterministic.
 If only one candidate is retrieved, it is selected without a model call.
-If no identifier can be extracted from the response, the top search result is used as a fallback.
+If no identifier can be extracted from the response, or a request fails, the top search result is used as a fallback; in the frontier-model runs this never happened.
 
 This approach follows RetReason in \textcite{alekseev2025querybased}.
 Here it is compared with the other paradigms under identical conditions and across backbones of different sizes and origins.
@@ -317,7 +317,7 @@ Artefact}
 Accuracy is measured as the Jaccard similarity between the generated and reference result sets, after entity URIs are normalised to identifiers.
 Two evaluation sets are used: the lenient set (456 of 567 working rows, wherever the reference executes) and the strict set, which additionally requires the reference to return at least one result (400 rows: 35 simple, 194 medium, 171 complex; these are \emph{scorable} counts, not the split's composition given above).
 All headline results use the strict set.
-It removes the first of the four metric problems examined in the discussion.
+It removes the first of the four measurement artefacts examined in the discussion.
 The Jaccard similarity of two empty sets is 1.0, so among the 56 rows where the reference executes but returns nothing, a wrong generated query that also returned nothing scored perfectly.
 In preliminary experiments this inflated scores by two to seven points and changed model rankings.
 
@@ -378,7 +378,7 @@ Each rule addresses a failure mode found in the error analysis, and the complete
 targeted.}
 
 Generic guidance explains that a construct exists, whereas schema evidence gives information about the entities and properties relevant to a specific question.
-Following~\parencite{zhang2026saga}, the reference identifiers are probed against the endpoint to find their properties, qualifiers, class relationships and quantity values.
+Inspired by the schema-aware grounding of~\parencite{zhang2026saga}, the reference identifiers are probed against the endpoint to find their properties, qualifiers, class relationships and quantity values.
 The information is presented in two forms:
 
 \begin{itemize}
@@ -390,7 +390,7 @@ A targeted card with conditional guidance for properties relevant to the questio
 \end{itemize}
 
 The cards are built from reference-linked mentions, not from the mentions the pipeline resolves.
-This favours grounding, but the setting is not deployable because it relies on gold information, so it is treated as an upper-bound condition in the sense of the diagnostic protocol.
+This favours the schema evidence, but the setting is not deployable because it relies on gold information, so it is treated as an upper-bound condition in the sense of the diagnostic protocol.
 
 \paragraph{Oracle conditions.}
 
@@ -424,7 +424,7 @@ Cascade}
 The cascade relies on an observable failure signal instead of predicting the cause directly.
 Every reference query in the evaluation set returns at least one result, so a generated query that executes but returns nothing must be wrong.
 
-The cascade generates queries with different prompts, executes them in fixed order, and accepts the first non-empty, error-free result set, as shown in \cref{fig:cascade-mechanism}.
+The cascade generates queries with different prompts or models, executes them in fixed order, and accepts the first non-empty, error-free result set, as shown in \cref{fig:cascade-mechanism}.
 
 On this evaluation set, the method is monotonic.
 It only replaces empty or failed results, which already score zero against a non-empty reference.
@@ -437,7 +437,7 @@ With the eight runs reported here, that is at most seven.
   \includegraphics[width=0.88\textwidth]{figures/fig_cascade_mechanism.pdf}
   \caption{The execution-guided cascade.}
   \label{fig:cascade-mechanism}
-  \tabnote{Queries generated with different prompts are executed in a
+  \tabnote{Queries generated with different prompts or models are executed in a
 fixed order, and the first non-empty, error-free result set is accepted. This figure was generated with AI.}
 \end{figure}
 

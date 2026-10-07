@@ -21,12 +21,12 @@ Three quarters of the questions are solved by none of the four models, which com
 The questions that all four fail share a clear feature in their reference queries: they contain several times more statement nodes than easier questions, and qualifier access and aggregation, which appear in them, never occur in the questions that all four models solve.
 This suggests that the difficulty is a property of the questions themselves.
 
-Fine-tuning brings conformity to a query style, the very capability the frozen models lack: a 7B model trained on in-domain queries scores orders of magnitude higher than a much larger base model.
+One likely explanation is that fine-tuning brings conformity to a query style, the very capability the frozen models lack: a 7B model trained on in-domain queries scores orders of magnitude higher than a much larger base model.
 This does not prove a general difference in capability, since more than half of its outputs are character-identical to the reference, although that alone does not establish leakage.
 A fine-tuned system reproduces a distribution of queries, whereas this pipeline derives a query from the question. The two agree only when the reference translates the question correctly, but the audit shows noise in roughly one quarter of the strict fair set.
-Whether this contributes materially to the observed gap remains open, since only sixteen adjudicated rows overlap the official split, and it is listed as future work.
+Whether this contributes materially to the observed gap remains open, since only nine of the sampled reference queries overlap the official test split, and it is listed as future work.
 
-The comparison that matters most for this thesis is among systems without in-domain training, and there the pipeline more than doubles the best published frozen result.
+The comparison that matters most for this thesis is among systems without in-domain training, and there the pipeline more than doubles the best published frozen result, partly because it uses a newer generator (\cref{sec:res-authors}).
 The stage-wise analysis also shows where the remaining difference to fine-tuned systems comes from.
 
 \paragraph{RQ2: Why Disambiguation Is Not the
@@ -70,7 +70,7 @@ String normalisation, which should fix superficial casing issues such as camelCa
 The main problem is near-miss wording (``crew member(s)'', for example, names a different property and is not a misspelling), and normalisation hardly touches it.
 The replication with Claude Opus 5 repeats generation with a later frontier model and finds the same pattern: subclass closure and property paths improve, statement nodes and qualifiers improve little, and value nodes do not improve.
 The generation deficit does not disappear as models get better.
-Schema evidence, selective gating, majority voting and string repair fail in the same way: none of them supplies knowledge of how the graph itself names and models information.
+Schema evidence, selective gating, majority voting and string repair fail in the same way: none of them restricts the generator's choices.
 The disambiguation results show that the smaller model already reasons well enough for that stage, so the most likely explanation for the generation gap is missing vocabulary knowledge.
 
 \paragraph{RQ4: Guidance versus
@@ -84,7 +84,7 @@ Generic idiom guidance brings a small benefit (\cref{sec:res-prompts}, \cref{tab
 
 When the model is shown the properties of an entity, it uses them about twice as often as the reference does.
 Making the evidence shorter and explicitly conditional does not reduce this overuse but increases it.
-The grounded arms share only half as much label vocabulary with the baseline as the idiom arm does.
+The schema-evidence arms share only half as much label vocabulary with the baseline as the idiom arm does.
 The intervention failed even though the schema cards were built from reference-linked mentions, with no linking errors at all.
 
 \paragraph{Predicting Construct Need from the Question}
@@ -104,7 +104,7 @@ The contrast with \citet{zhang2026saga} helps explain the schema-evidence result
 SAGA filters candidates by type, domain and range, removing options that would otherwise be chosen wrongly.
 The schema-evidence arm does the opposite and adds options, which the model seems to take as encouragement.
 The same graph information has opposite effects, depending on whether it filters or merely informs.
-This also explains why linking (seven candidates, a forced choice) does better than grounding (everything an entity carries, with no restriction).
+This also explains why linking (seven candidates, a forced choice) does better than schema evidence (everything an entity carries, with no restriction).
 The direction of the knowledge mattered more than its amount: narrowing the decision space helped, and widening it hurt.
 The same distinction sets this result apart from \citet{yang2026ggc}, whose gate reduces the cost of an expensive and often harmful operation.
 The gate tested here would have to improve accuracy for an operation that is cheap and almost never harmful, so there is no comparable gain for gating to find.
@@ -145,7 +145,7 @@ The gain amounts to about two fifths of the 12-point oracle headroom, so executi
 The cascade also beats result-set majority voting (37.0 vs.\ 33.8 for the centroid, against a 32.2 baseline): agreement between outputs is a weaker signal than execution, because wrong queries can agree with each other.
 Unlike agentic self-correction, which generates, executes and revises queries in a loop, the cascade checks existing alternatives in a fixed order.
 This makes it cheaper and easier to reproduce.
-It recovers a failure whenever one of the alternatives is correct.
+It recovers a failure when the first non-empty alternative is correct.
 Generating the correct structure in the first place remains the main direction for future work.
 
 \section{Methodological

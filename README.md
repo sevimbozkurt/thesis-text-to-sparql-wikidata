@@ -38,8 +38,7 @@ bash reproduce.sh --with-endpoint
 ├── requirements.txt
 ├── reproduce.sh              runs the full offline reproduction
 ├── *.py, run_*.sh            pipeline, linkers, scoring and analysis scripts
-├── ANNOTATOR2_GUIDE.md       guide given to the second annotator
-├── inter_annotator_GUIDE.md  guide given to the second judge
+├── inter_annotator_GUIDE.md  category guide given to the second annotator
 ├── data/                     inputs
 │   ├── test.json, train.json, val.json    working split of Instruct-to-SPARQL
 │   ├── official_test.json                 official test split

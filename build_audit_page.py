@@ -414,7 +414,7 @@ def annotator2():
                     "Does the reference query answer its question?")
     print(f"wrote gold_audit_annotator2.html -- {n} rows, strata interleaved so")
     print("     stopping early still leaves a balanced sample.")
-    print("Send your friend that file and ANNOTATOR2_GUIDE.md. When they send the")
+    print("Send the second judge that file and the instruction sheet. When they send the")
     print("CSV back, put it in this folder and run:")
     print("  python3 build_audit_page.py compare2")
 

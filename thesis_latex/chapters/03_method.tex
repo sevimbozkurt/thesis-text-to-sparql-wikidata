@@ -39,7 +39,7 @@ The next chapter reports all of them alongside the one that works.
   \label{fig:method}
   \tabnote{The protocol is independent of the pipeline and can
 be applied to other benchmarks that provide aligned gold and label-form
-queries.}
+queries. This figure was generated with AI.}
 \end{figure}
 
 \section{Pipeline Architecture}
@@ -53,12 +53,22 @@ This design was chosen mainly with diagnosis in mind: named stages can be measur
 \paragraph{The Six Stages}
 
 For each question, the pipeline runs the following steps.
-\Cref{fig:pipeline} shows the complete arrangement and the two evaluation conditions.
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.88\textwidth]{figures/fig_pipeline.pdf}
+  \caption{Pipeline architecture and the two evaluation conditions.}
+  \label{fig:pipeline}
+  \tabnote{The pipeline has six stages. In the gold-label
+condition, the benchmark's annotated query supplies the labels, so
+generation is skipped. All other stages remain identical. This figure was generated with AI.}
+\end{figure}
 
 \textbf{1.\ Labelled-query generation.}
 The model receives a system prompt that asks it to act as a Wikidata SPARQL expert and write a query that answers the question.
 Instead of opaque identifiers, it must use human-readable labels in a fixed bracket format: wd:[entity:LABEL] for entities and wdt:[property:LABEL] for properties.
 It is told to keep ordinary SPARQL structure and to output only the query.
+The complete prompt is reproduced in the appendix (\cref{lst:prompt-gen}).
 Decoding is deterministic, and Markdown code fences are removed.
 The notation comes from the benchmark itself.
 \textcite{xu2023wikisp} use a similar label-based representation, as do \textcite{banerjee2023gettqa}, whose grounding step based on graph embeddings performs a comparable substitution from labels to identifiers.
@@ -92,6 +102,7 @@ The substituted query is executed against the endpoint, and its result set is co
 The execution environment and the scoring metric are described later in this chapter.
 For each question, the pipeline records whether a labelled query was generated, whether all labels were linked and whether the query executed.
 These indicators make the stage analysis in the results chapter possible.
+\Cref{fig:pipeline} summarises the six stages and the two evaluation conditions described below.
 
 \paragraph{Three Decisions}
 
@@ -115,16 +126,6 @@ This condition represents the deployed system and provides the main pipeline res
 
 One asymmetry needs mentioning. Property labels are resolved with the reasoning-based method in every condition, including those where other linkers resolve the entities, because none of the compared systems links Wikidata properties. As a benefit, entity-linking and property-linking errors can be measured separately, in line with \textcite{scharpf2026survey}, who identify joint entity and predicate linking as an underdeveloped area. The split is a diagnostic design choice, not a claim that the two tasks are best solved independently: joint entity–relation linking is an established alternative that exploits compatibility between candidate entities and relations~\citep{dubey2018earl}.
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.88\textwidth]{figures/fig_pipeline.pdf}
-  \caption{Pipeline architecture and the two evaluation conditions.}
-  \label{fig:pipeline}
-  \tabnote{The pipeline has six stages. In the gold-label
-condition, the benchmark's annotated query supplies the labels, so
-generation is skipped. All other stages remain identical.}
-\end{figure}
-
 \section{Benchmark and Experimental
 Conditions}
 
@@ -137,6 +138,24 @@ It was chosen for three reasons.
 First, its queries were collected from tutorial and example pages instead of being generated from templates, so they reflect the modelling conventions of actual Wikidata users.
 Second, its complexity labels make it possible to see where systems fail.
 Third, and most important here, each query is provided both with identifiers and with those identifiers replaced by human-readable labels, which enables the ground-truth derivation described below.
+\Cref{lst:dataset-example} shows one row of the working test split in both forms.
+Aligning them position by position gives five label--identifier pairs, for example \emph{main subject} with P921 and \emph{Pentecost} with Q65560542.
+
+\begin{lstlisting}[language=SPARQL,caption={One benchmark row (working test split, row 1938, complexity \emph{simple}), for the instruction ``Find paintings depicting the Pentecost theme.'' Top: the executable reference query. Bottom: the annotated form, in which every identifier is replaced by its label (prefix declarations omitted).},label={lst:dataset-example},captionpos=b,float=tbp]
+SELECT ?item ?image WHERE {
+?item wdt:P921 wd:Q65560542 .
+?item wdt:P31 wd:Q3305213 .
+?item wdt:P18 ?image .
+}
+LIMIT 4000
+
+SELECT ?item ?image WHERE {
+?item wdt:[property:main subject] wd:[entity:Pentecost] .
+?item wdt:[property:instance of] wd:[entity:painting] .
+?item wdt:[property:image] ?image .
+}
+LIMIT 4000
+\end{lstlisting}
 
 \paragraph{Two Splits, Two Jobs}
 
@@ -154,7 +173,7 @@ Differences in row counts are explained where they occur.
   \label{fig:splits}
   \tabnote{The splits have different purposes and are not
 interchangeable. Only the linker comparison uses both splits, allowing
-the stability of its ordering to be examined.}
+the stability of its ordering to be examined. This figure was generated with AI.}
 \end{figure}
 
 \paragraph{Dataset Drift}
@@ -163,9 +182,8 @@ The dataset's identifier field is not stable between the raw file used to build 
 Some identifiers point to different questions in the two versions, so rows are matched on normalised instruction text instead.
 The release offers two configurations with different splits.
 The official-split experiments use the default configuration, whose 495 test rows match the benchmark paper (the with-limit configuration has 493).
-Against the default configuration, most working test rows correspond to official training rows: 365 of 567 (64.4\,\%).
-Another 95 (16.8\,\%) correspond to official test rows and 24 (4.2\,\%) to validation rows.
-Six (1.1\,\%) have instructions that occur in more than one official split, and 77 (13.6\,\%) have no counterpart.
+Against the default configuration, 365 of the 567 working test rows (64.4\,\%) correspond to official training rows and 95 (16.8\,\%) to official test rows.
+The remaining 107 are validation rows, rows whose instruction occurs in several official splits, or rows without a counterpart.
 The dataset revision used here is pinned in the repository.
 This overlap does not contaminate the results reported here, since none of the models is fine-tuned on the benchmark.
 It matters only for the comparison with the authors' fine-tuned systems, which is why that comparison uses the official split.
@@ -191,7 +209,7 @@ If no identifier can be extracted from the response, the top search result is us
 
 This approach follows RetReason in \textcite{alekseev2025querybased}.
 Here it is compared with the other paradigms under identical conditions and across backbones of different sizes and origins.
-Three backbones are used: Claude Opus 4.8, Qwen2.5-14B-Instruct, and Qwen2.5-7B-Instruct.
+Three backbones are used: Claude Opus 4.8~\citep{anthropic2026opus48}, Qwen2.5-14B-Instruct, and Qwen2.5-7B-Instruct~\citep{qwen2024qwen25}.
 The two open-weight models run on the AI \& Explainability group's GPU server.
 The prompt, candidate pools, reference and evaluator stay fixed, so the backbone is the only variable that changes.
 On the official split, the reasoning linker is run with Qwen2.5-14B-Instruct only: the open-weight models were available on the group's GPU server, whereas Claude Opus 4.8 is accessed through a paid API, so its use was limited to the working split to keep costs manageable.
@@ -268,9 +286,7 @@ Candidate retrieval is not a binding constraint in the comparison.
   \label{fig:groundtruth}
   \tabnote{Since the annotated query differs from the gold
 query only through identifier substitution, alignment is positional and
-requires no new annotation. It succeeds on 547 of 567 rows. The 20 rows
-with different bracket and identifier counts are excluded for every
-linker.}
+requires no new annotation. This figure was generated with AI.}
 \end{figure}
 
 \section{Evaluation and Execution}
@@ -422,7 +438,7 @@ With the eight runs reported here, that is at most seven.
   \caption{The execution-guided cascade.}
   \label{fig:cascade-mechanism}
   \tabnote{Queries generated with different prompts are executed in a
-fixed order, and the first non-empty, error-free result set is accepted.}
+fixed order, and the first non-empty, error-free result set is accepted. This figure was generated with AI.}
 \end{figure}
 
 The cascade is compared with two alternatives using the same candidates. The first selects a result-set centroid: among candidates that return results, it picks the one whose result set is, on average, most similar to the others. The second adds a fallback to the best-performing prompt when no candidates agree above a threshold. These comparisons show whether the signal comes from agreement between candidate answers or simply from having a valid preferred result.
@@ -439,21 +455,39 @@ Reproducibility}
 
 \paragraph{Models}
 
-Four frozen frontier models are evaluated for generation: GPT-5.4, Claude Opus 4.8, Gemini 3.1 Flash Lite, and DeepSeek V4 Flash, accessed through the OpenRouter API with deterministic decoding, a 1,024-token limit, and up to three retries on empty responses.
-The prompt-intervention arms, the official-split comparison and the Claude Opus 5 replication were run directly through Anthropic's API.
-In the pipeline, Claude Opus 4.8 generates the labelled queries, except in the newer-model replication, which uses Claude Opus 5.
-Claude Opus 4.8 also disambiguates in the working-split end-to-end run.
-The official-split run, the prompt-intervention arms and the Opus 5 replication disambiguate with Qwen2.5-14B-Instruct, and the backbone comparison varies the disambiguation model.
+Four frozen frontier models are evaluated for generation: GPT-5.4~\citep{openai2026gpt54}, Claude Opus 4.8~\citep{anthropic2026opus48}, Gemini 3.1 Flash Lite~\citep{googledeepmind2026gemini31}, and DeepSeek V4 Flash~\citep{deepseekai2026v4}, accessed through the OpenRouter API with deterministic decoding, a 1,024-token limit, and up to three retries on empty responses.
+Claude Opus 4.8 generates the labelled queries in the pipeline, and Claude Opus 5~\citep{anthropic2026opus5} in the newer-model replication.
 Qwen2.5-14B-Instruct and Qwen2.5-7B-Instruct are served through vLLM on the AI \& Explainability group's GPU server.
+\Cref{tab:setup} lists, for every experiment, the generator, the disambiguation model, the split and the question set.
 
-The seven prompt-intervention arms use Claude Opus 4.8 for generation and the same open-weight disambiguation model throughout, so the prompt is the only experimental variable.
-This configuration was chosen because the experiment required seven complete pipeline runs, and it is supported by the backbone comparison, which shows similar disambiguation performance across backbones (97.7 entity F1 frontier vs.\ 94.9 and 95.8 open).
-Absolute scores in these arms are therefore slightly lower than the frontier-disambiguated end-to-end results.
-Comparisons within the arms remain valid, but absolute scores across sections should be read with this in mind.
-The generator's identity was checked between arms through its lexical fingerprint (camelCase identifiers, snake\_case labels, bare property identifiers): all seven arms pass, while an open-backbone control run fails, which confirms that the check can detect a changed generator.
+\begin{table}[htbp]
+\centering
+\small
+\caption{Configuration of each experiment.}
+\label{tab:setup}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lllll@{}}
+\toprule
+Experiment & Generator & Disambiguation & Split & Questions \\
+\midrule
+Frozen models without a pipeline & four frontier models & none (identifiers written directly) & working & 400 strict, 316 common \\
+End-to-end pipeline & Claude Opus 4.8 & Claude Opus 4.8 & working & 400 strict, 316 common \\
+Gold-label condition & none (benchmark labels) & Claude Opus 4.8 & working & 400 strict, 316 common \\
+Linker comparison & none (benchmark labels) & each compared linker & working, official & 1,086 and 1,055 entity mentions \\
+LC-QuAD 2.0 replication & none (gold labels) & Qwen2.5-14B & LC-QuAD 2.0 & 150 \\
+Prompt interventions (seven arms) & Claude Opus 4.8 & Qwen2.5-14B & working & 329 common, 336--356 paired \\
+Newer-model replication & Claude Opus 5 & Qwen2.5-14B & working & 354 paired \\
+Selection and cascade & eight existing runs & as in each run & working & 327 \\
+Official-split pipeline & Claude Opus 4.8 & Qwen2.5-14B & official & 370 strict \\
+Open model for both stages & Qwen2.5-14B & Qwen2.5-14B & official & 370 strict \\
+Benchmark authors' systems & published outputs & -- & official & 370 strict \\
+\bottomrule
+\end{tabular}}
+\tabnote{The frozen models are accessed through OpenRouter, and the open models run on the group's GPU server. The end-to-end run generated through OpenRouter, with its 102 empty generations regenerated and its disambiguation run through Anthropic's API. The prompt arms, the newer-model replication and the official-split pipeline also use Anthropic's API. The selection experiments re-execute stored queries in a separate pass. Further run details are in the appendix.}
+\end{table}
 
-The official-split comparison differs in two respects: it uses Anthropic's batch interface, and it sets no temperature, since the API no longer supports this parameter for the model.
-The two experiment sets should not be compared at sub-percentage-point precision.
+The prompt arms disambiguate with the open 14B model because the experiment required seven complete pipeline runs, and the backbone comparison shows similar disambiguation performance across backbones (97.7 entity F1 frontier against 94.9 and 95.8 open).
+Their absolute scores are therefore slightly lower than the frontier-disambiguated end-to-end results, while comparisons within the arms are unaffected.
 
 \paragraph{Caching, Re-Scoring, and Reproducibility}
 

@@ -150,6 +150,7 @@ FIGMETA = {
  "fig_method.pdf":              ("--", "4.1", "the four moves of stage-wise diagnostic evaluation"),
  "fig_cascade_mechanism.pdf":   ("--", "4.5", "the execution-guided cascade"),
  "fig_wikidata_model.pdf":      ("--", "2.2", "the Wikidata statement model"),
+ "fig_example_kg.pdf":          ("--", "1.1", "a fragment of Wikidata around the question who directed Inception"),
 
  "fig_empty_rate.pdf":          ("results_tables/empty_result_rate.csv", "6.2",
                                  "how often each system returns nothing, against its accuracy"),
@@ -162,7 +163,7 @@ FIGMETA = {
  # data figures
  "fig_main_comparison.pdf":     ("results_tables/common_subset_metrics.csv", "6.2", "frozen models with and without the pipeline"),
  "fig_stage_funnel.pdf":        ("results_e2e_clean.csv", "6.3", "stage-wise outcomes by complexity"),
- "fig_gap_decomposition.pdf":   ("results_tables/gap_decomposition.csv", "6.3", "what the 66.5-point gap is made of"),
+ "fig_gap_decomposition.pdf":   ("results_tables/gap_decomposition.csv", "6.3", "failure types in the annotated sample of 30 failing rows"),
  "fig_linker_comparison.pdf":   ("linker_comparison.csv", "6.4", "entity linking F1, four paradigms, both splits"),
  "fig_linker_pr.pdf":           ("linker_comparison.csv", "6.4", "precision-recall signature per paradigm"),
  "fig_linker_complexity.pdf":   ("linker_comparison.csv", "6.4", "linking F1 by query complexity"),
@@ -240,11 +241,11 @@ save(fig, "fig_pipeline.pdf")
 
 # ============================ D2 Wikidata model =============================
 fig, ax = canvas("m")
-box(ax, 2, 40, 21, 16, "item\nwd:Q25191", fc=FAINT, fs=7.0)
+box(ax, 2, 40, 21, 16, "item\nwd:Q25188", fc=FAINT, fs=7.0)
 box(ax, 39, 40, 22, 16, "statement node\np:P57 / ps:P57", fc="white", ec=S1, fs=7.0)
-box(ax, 76, 58, 22, 13, "value\nwd:Q25188", fc="white", fs=7.0)
-box(ax, 76, 39, 22, 13, "qualifier\npq:P585", fc="white", ec=S3, fs=7.0)
-box(ax, 76, 18, 22, 13, "value node\npsv: amount + unit", fc="white", ec=S3, fs=6.6)
+box(ax, 76, 58, 22, 13, "value\nwd:Q25191", fc="white", fs=7.0)
+box(ax, 76, 39, 22, 13, "qualifier\npq:", fc="white", ec=S3, fs=7.0)
+box(ax, 76, 18, 22, 13, "value node (quantities)\npsv: amount + unit", fc="white", ec=S3, fs=6.2)
 arrow(ax, (23, 48), (39, 48), color=S1); ax.text(31, 50, "p:", ha="center", fontsize=7.0, color=S1)
 arrow(ax, (61, 50), (76, 62), color=S1); ax.text(66.5, 58.5, "ps:", fontsize=6.8, color=S1)
 arrow(ax, (61, 46), (76, 45), color=S3); ax.text(66.5, 46.5, "pq:", fontsize=6.8, color=S3)
@@ -257,6 +258,17 @@ ax.text(2, 6, "The shortcut is always syntactically available. A model that does
         fontsize=6.9, color=INK2, va="bottom", linespacing=1.6)
 ax.set_ylim(2, 84)
 save(fig, "fig_wikidata_model.pdf")
+
+# ============================ D0 example graph ==============================
+fig, ax = canvas("xs")
+box(ax, 6, 36, 24, 28, "Inception\nwd:Q25188", fc=FAINT, fs=7.4)
+box(ax, 62, 64, 30, 28, "Christopher Nolan\nwd:Q25191", fc="white", ec=S1, lw=1.1, fs=7.4)
+box(ax, 62, 8, 30, 28, "film\nwd:Q11424", fc="white", fs=7.4)
+arrow(ax, (30, 56), (62, 78), color=S1, lw=1.1)
+ax.text(44, 74, "director\nwdt:P57", ha="center", fontsize=7.0, color=S1, linespacing=1.3)
+arrow(ax, (30, 44), (62, 22), color=INK2)
+ax.text(40, 17, "instance of\nwdt:P31", ha="center", fontsize=7.0, color=INK2, linespacing=1.3)
+save(fig, "fig_example_kg.pdf")
 
 # ============================ D3 ground truth ===============================
 fig, ax = canvas("m")
@@ -552,14 +564,14 @@ gd = [r for r in rows("results_tables/gap_decomposition.csv") if r["run"].starts
 fig, ax = new("xs")
 y = list(range(len(gd)))[::-1]
 for yi, r in zip(y, gd):
-    lo, hi, p = float(r["points_ci_low"]), float(r["points_ci_high"]), float(r["points_of_gap"])
+    lo, hi, p = float(r["ci_low_pct"]), float(r["ci_high_pct"]), float(r["share_pct"])
     c = S1 if r["group"] == "structural" else (S2 if r["group"] == "identifier" else MUTED)
     ax.plot([lo, hi], [yi, yi], color=c, lw=1.8, solid_capstyle="round", zorder=3)
     ax.scatter([p], [yi], s=26, color=c, zorder=4, linewidths=0)
-    ax.text(hi + 1.0, yi, f"{p:.1f}", va="center", fontsize=7.2, color=INK2)
+    ax.text(hi + 1.5, yi, f"{p:.1f}\u202f%", va="center", fontsize=7.2, color=INK2)
 style(ax, xgrid=True); ax.set_yticks(y); ax.set_yticklabels([r["group"] for r in gd], fontsize=7.6)
-ax.set_xlabel("points of the 66.5-point gold-label-to-end-to-end gap (95\u202f% CI)")
-ax.set_xlim(0, 52); save(fig, "fig_gap_decomposition.pdf")
+ax.set_xlabel("share of the 30 annotated failing rows (%), with 95\u202f% Wilson interval")
+ax.set_xlim(0, 80); save(fig, "fig_gap_decomposition.pdf")
 
 # ============================ F12 structural predictors =====================
 cf = sorted(rows("complexity_features.csv"), key=lambda r: float(r["gap (pp)"]))

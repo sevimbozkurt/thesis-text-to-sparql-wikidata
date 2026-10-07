@@ -115,13 +115,9 @@ except Exception as e:
 
 # schema cards are built by two functions rather than being constants
 try:
-    parts = []
-    for fn in ("build_card", "build_card_targeted"):
-        parts.append(source_of(os.path.join(ROOT, "schema_grounded.py"), fn))
-    body = listing("Schema-card construction: the first function produces the verbose arm's "
-                   "evidence and the second the targeted arm's.",
-                   "lst:prompt-schema", "\n\n".join(parts))
-    # one example card of each kind
+    # the card-building code (schema_grounded.py) stays in the repository;
+    # the appendix shows one example card of each kind
+    body = ""
     ex = []
     for f, kind in [("schema_cards_working.json", "verbose"),
                     ("schema_cards_targeted_working.json", "targeted")]:
@@ -132,7 +128,7 @@ try:
             if k:
                 ex.append(f"--- {kind} card (row {k}) ---\n{d[k].strip()}")
     if ex:
-        body += "\n" + listing("Example schema cards, one of each form, as supplied to the generator.",
+        body += listing("Example schema cards, one of each form, as supplied to the generator.",
                                "lst:schema-cards", "\n\n".join(ex))
     w("app_prompts_schema.tex", body)
 except Exception as e:

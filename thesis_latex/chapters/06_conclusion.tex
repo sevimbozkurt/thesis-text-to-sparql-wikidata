@@ -24,7 +24,7 @@ RQ & Finding & Key figures \\
 2 & Under gold labels and near-ceiling candidate coverage, disambiguation is not the binding constraint; query generation is & 97.4 gold-label vs.\ 30.9 end-to-end (66.5-pt gap) \\
 3 & Reasoning over retrieved candidates outperforms specialised linkers; most of its accuracy comes from findable labels & +24.9 [22.3, 27.7] pts over GLiNKER on the same candidates; +4.1 [2.7, 5.6] over the first search result \\
 4 & General advice gives small gains; graph knowledge helps as a restriction, not as evidence & $-$14.65 pts (evidence) vs.\ $+$18.99 pts (closed vocabulary) \\
-5 & Some failures are detectable from execution alone, without gold supervision & +4.83 [2.93, 7.08] pts, 49/49 rows improved \\
+5 & Some failures are detectable from execution alone, without gold supervision & +4.83 [2.93, 7.08] pts; no row can worsen by design \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -60,7 +60,7 @@ Together, these findings yield a working pipeline in which every step is chosen 
 
 The measurements settle several design choices that are often made by convention, and together they describe a configuration that others can start from.
 
-Label generation needed the strongest model, while disambiguation worked with the 7B model.
+Label generation needed the strongest model, while for disambiguation an open 7B model came within two points of it (95.8 against 97.7 entity F1).
 Scale matters at only one stage: the 14B open model produces unfindable labels at 4.9 times the frontier rate, whereas disambiguation varies by less than three percentage points across model sizes.
 
 For linking, retrieving candidates and reasoning over them worked better than linking end to end.

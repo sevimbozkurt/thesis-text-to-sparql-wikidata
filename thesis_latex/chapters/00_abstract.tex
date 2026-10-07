@@ -17,8 +17,10 @@ In contrast, query generation is the main source of error.
 Given the benchmark's concepts and query structure, the pipeline reaches 97.4 entity-level Jaccard, compared with 30.9 when generating the query itself, a 66.5-point gap supported by analysis across the full reference set and by four models from four organisations failing on the same questions.
 
 The resulting pipeline, whose stages are selected based on experimental evidence, reaches 23.4 pooled fair Jaccard on the benchmark's official split, more than double the benchmark authors' frozen GPT-4 baseline re-scored under the same conditions.
-Generic idiom guidance improves performance modestly ($+3.9$ points), while retrieved schema evidence hurts substantially ($-14.7$ points); the same knowledge helps only when it restricts the generator's choices.
-An execution-guided cascade uses the tendency of structurally wrong queries to return nothing to recover $+4.8$ points without training and without gold answers, improving 49 questions and worsening none.
+With the generator held fixed, the pipeline adds 6.0 pooled points over the same model used zero-shot on the working split.
+Generic idiom guidance gives a modest average gain ($+3.9$ points), while retrieved schema evidence hurts substantially ($-14.7$ points); the same knowledge helps only when it restricts the generator's choices.
+An execution-guided cascade uses the tendency of structurally wrong queries to return nothing to recover $+4.8$ points without training and without gold answers.
+Because it only replaces empty or failed results, it cannot worsen any question by design, at a cost of up to seven further generations per question.
 
 \vspace{1em}
 

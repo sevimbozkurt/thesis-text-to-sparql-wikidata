@@ -101,19 +101,17 @@ table("results_tables/memorisation_frontier.csv", "memorisation_frontier.tex",
       "Structural similarity of generated queries to the benchmark.",
       "tab:memorisation",
       "Skeletons compare query shape only: identifiers, literals, variable names, numbers and "
-      "prefixes are removed. \\emph{Identical} is the memorisation test; "
-      "\\emph{Other} measures resemblance to any other dataset query and reflects genericness "
-      "rather than recall. For reference, 56\\,\\% of the benchmark authors' fine-tuned model's outputs "
-      "are character-identical to the reference query. \\emph{Identical}, $\\geq$0.95 and $\\geq$0.90 give the "
-      "share of outputs (\\%) whose skeleton is identical or that similar to its own reference; "
-      "\\emph{Other} is the best similarity to any other dataset query (mean, and share $\\geq$0.90 in \\%); "
-      "\\emph{Acc.} is entity-level Jaccard on rows whose structure is close ($\\geq$0.90) to another "
-      "dataset query and on the other rows.",
+      "prefixes are removed. \\emph{Identical} and $\\geq$0.95 give the share of outputs (\\%) whose "
+      "skeleton is identical or that similar to its own reference query, which is the memorisation test. "
+      "\\emph{Other} $\\geq$0.90 is the share whose skeleton reaches 0.90 similarity to some other dataset "
+      "query, which reflects genericness rather than recall. \\emph{Acc.} is entity-level Jaccard on rows "
+      "whose structure is close ($\\geq$0.90) to another dataset query and on the other rows. For reference, "
+      "56\\,\\% of the benchmark authors' fine-tuned model's outputs are character-identical to the reference query.",
+      cols=["run", "n", "identical_to_gold_pct", "sim_own_ge95_pct", "best_other_ge90_pct",
+            "acc_near_structure", "acc_far_structure"],
       headers={"run": "Run", "n": "n", "identical_to_gold_pct": "Identical",
-               "sim_own_ge95_pct": "$\\geq$0.95", "sim_own_ge90_pct": "$\\geq$0.90",
-               "best_other_mean": "Other, mean", "best_other_ge90_pct": "Other $\\geq$0.90",
-               "acc_near_structure": "Acc.\\ close", "acc_far_structure": "Acc.\\ other",
-               "n_near": "n close", "n_far": "n other"},
+               "sim_own_ge95_pct": "$\\geq$0.95", "best_other_ge90_pct": "Other $\\geq$0.90",
+               "acc_near_structure": "Acc.\\ close", "acc_far_structure": "Acc.\\ other"},
       relabel=lambda r: {**r, "run": r["run"].replace("Pipeline e2e (Claude gen, clean)", "End-to-end pipeline")
                                           .replace("Idiom arm (Claude gen, Qwen link)", "Idiom arm")})
 
@@ -147,13 +145,14 @@ table("results_tables/wdql_construct_prevalence.csv", "wdql_prevalence.tex",
       "Construct prevalence: benchmark gold queries versus real query logs.",
       "tab:wdql",
       "WDQL is the Wikidata Query Logs dataset (one-per-cluster release, 226{,}376 real queries). "
-      "Size bands are predicate-token counts, a formatting-robust proxy for triple patterns.",
+      "Size bands are predicate-token counts, a formatting-robust proxy for triple patterns. "
+      "Counts: 2{,}838 benchmark and 226{,}376 WDQL queries in all; 1{,}525 and 51{,}728 with 5+ predicate tokens.",
       rows_filter=lambda r: r["subset"] in ("ALL queries", "queries with 5+ predicate token(s)")
                             and r["construct"] != "label service",
-      cols=["subset", "construct", "benchmark_pct", "wdql_pct", "n_benchmark", "n_wdql"],
+      cols=["subset", "construct", "benchmark_pct", "wdql_pct"],
       headers={"subset": "Queries", "construct": "Construct", "benchmark_pct": "Benchmark (\\%)",
-               "wdql_pct": "WDQL (\\%)", "n_benchmark": "n benchmark", "n_wdql": "n WDQL"},
-      group_col="subset", align="llrrrr",
+               "wdql_pct": "WDQL (\\%)"},
+      group_col="subset", align="llrr",
       relabel=lambda r: {**r, "subset": {"ALL queries": "all",
                                          "queries with 5+ predicate token(s)": "5+ predicate tokens"}.get(r["subset"], r["subset"]),
                          "construct": "any reification or hierarchy idiom" if r["construct"].startswith("ANY") else r["construct"]})

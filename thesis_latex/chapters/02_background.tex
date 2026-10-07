@@ -1,4 +1,4 @@
-\chapter{Related Work}
+\chapter{Background and Related Work}
 
 \label{ch:background}
 
@@ -80,7 +80,7 @@ Only a few benchmark queries use it, but they are included in the construct anal
   \label{fig:wikidata-model}
   \tabnote{The truthy edge wdt: bypasses the statement node.
 Qualifiers (pq:) and normalised value nodes (psv:) are reached
-through p:/ps:.}
+through p:/ps:. This figure was generated with AI.}
 \end{figure}
 
 \Cref{fig:wikidata-model} summarises these relationships.
@@ -109,20 +109,9 @@ The mwapi service lets a query call the MediaWiki API during execution, for exam
 \paragraph{Blazegraph and QLever}
 
 The benchmark's gold queries were written for the public Wikidata Query Service, which runs on Blazegraph.
-The experiments use a dedicated QLever instance instead~\citep{bast2017qlever}.
-The reasons are practical: a local endpoint avoids the rate limits and timeouts of the public service and makes it easier to run thousands of queries under controlled conditions.
-It also keeps the graph from changing during the experiments.
-
-The two engines are not fully interchangeable.
-Blazegraph supports named subqueries (WITH \ldots{} AS), the geospatial service wikibase:around, the mwapi service and the ``gas'' graph-traversal services; QLever does not.
-QLever also applies stricter rules to AS targets and so rejects some queries that Blazegraph accepts.
-As a result, around 15\,\% of the benchmark's gold queries run only on Blazegraph and are excluded from the evaluation.
-The method chapter describes this issue in detail and discusses engine choice as a threat to comparability.
-
-Real-world query use offers another point of comparison.
-\citet{malyshev2018getting} analysed Wikidata Query Service logs and found that real users rely heavily on the label service and basic graph patterns, while more complex constructs are rarer.
-The same comparison is made here, using the larger and more recent query-log corpus released by \citet{walter2026wdql}.
-WDBench~\citep{angles2022wdbench} is a complementary benchmark built directly from public Wikidata query logs.
+The experiments use a dedicated QLever instance instead~\citep{bast2017qlever}, which avoids the rate limits of the public service and keeps the graph fixed during the experiments.
+Because Blazegraph supports extensions that QLever lacks, QLever rejects some queries that Blazegraph accepts, and some queries time out on QLever, around 15\,\% of the benchmark's gold queries run only on Blazegraph.
+The method chapter lists these exclusions.
 
 \section{Text-to-SPARQL and KGQA}
 
@@ -164,7 +153,7 @@ Execution results can be used as feedback across multiple turns.
 \end{description}
 
 This thesis uses a pipeline.
-Fine-tuned models need in-domain training data, have to be retrained for every knowledge graph, and cannot be built on frontier models that are only available through an API.
+Fine-tuning is outside the scope of this work for the reasons given in the introduction.
 Agents can recover from their own mistakes, but they make many model and endpoint calls per question, and because each step depends on the one before, it is hard to tell which step caused a failure.
 A pipeline keeps every stage observable, so each error can be traced to a specific stage, which is the central aim of this thesis.
 
@@ -251,9 +240,6 @@ It is trained on Wikipedia hyperlinks and transfers zero-shot to unseen entities
 \citet{li2020elq} adapt this approach to questions with ELQ, which detects and links mentions in a single pass over the question, with efficiency as a central design goal.
 \citet{ayoola2022refined} propose ReFinED, which performs mention detection, fine-grained typing and disambiguation in one pass over a document and scales to the full Wikidata entity set.
 
-All three systems are trained on running text and detect mentions in that text.
-As discussed above, this is not the same as supplying the broader vocabulary a SPARQL query needs, and their results in the linker comparison should be read with this mismatch in mind.
-
 \paragraph{Zero-shot bi-encoder
 retrieval}
 
@@ -276,7 +262,6 @@ In their comparison, traditional systems reach higher precision but much lower r
 They also draw a conclusion that bears directly on the design used here: high recall, even at some cost in precision, can give better end-to-end performance, because the downstream model tolerates noisy candidate sets.
 
 The same pattern appears here, on a different benchmark and with differently constructed ground truth.
-It also explains the candidate-pool design used here: retrieval deliberately admits candidates generously, and the disambiguation stage is responsible for choosing the right one with the full question as context.
 
 \paragraph{Evaluation protocol}
 
@@ -314,14 +299,13 @@ memorisation}
 A model that saw a benchmark's gold queries during pre-training may partly reproduce them from memory.
 \citet{gashkov2025memorization} show that this can affect reported performance on QALD and LC-QuAD.
 Instead of assuming that the frozen frontier models are or are not contaminated, this work measures the effect directly.
-Identifiers, literals and variable names are removed from every generated query, and the remaining structure is compared with the benchmark's reference queries.
-A model that had memorised the benchmark would often reproduce them almost exactly.
 
 \paragraph{External validity}
 
 A benchmark's mix of constructs does not necessarily reflect what users actually ask.
-\citet{malyshev2018getting} established the practice of comparing benchmark constructs with Wikidata Query Service logs, and \citet{walter2026wdql} released a much larger derived resource of 335,000 question--query pairs for the same purpose.
-It is used here to check whether the Wikidata idioms under study are a property of the benchmark or of real-world use.
+\citet{malyshev2018getting} established the practice of comparing benchmark constructs with Wikidata Query Service logs and found that real users rely heavily on the label service and basic graph patterns, while more complex constructs are rarer.
+\citet{walter2026wdql} released a much larger derived resource of 335,000 question--query pairs for the same purpose, and WDBench~\citep{angles2022wdbench} is a complementary benchmark built directly from public Wikidata query logs.
+The query-log corpus of \citet{walter2026wdql} is used here to check whether the Wikidata idioms under study are a property of the benchmark or of real-world use.
 
 \subsection{Positioning of This Work}
 
@@ -338,7 +322,3 @@ The linking comparison evaluates four paradigms on the same rows, ground truth a
 Error is attributed to individual stages, with backbone dependence measured separately for each, instead of being reduced to one end-to-end score.
 Interventions are controlled by changing only the generation prompt, and four directions are tested: generic guidance, schema evidence, selective guidance and a closed vocabulary.
 External validity is checked against real query-log usage in both directions.
-
-\paragraph{Framing}
-
-The contribution is primarily measurement and attribution: finding where a frozen-model pipeline fails, identifying which component is the main constraint, and introducing one mechanism that follows directly from that evidence.

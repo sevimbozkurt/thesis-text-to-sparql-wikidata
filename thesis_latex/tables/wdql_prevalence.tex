@@ -4,34 +4,34 @@
   \label{tab:wdql}
   \small
   \resizebox{\ifdim\width>\textwidth\textwidth\else\width\fi}{!}{%
-  \begin{tabular}{llrrrr}
+  \begin{tabular}{llrr}
     \toprule
-    Queries & Construct & Benchmark (\%) & WDQL (\%) & n benchmark & n WDQL \\
+    Queries & Construct & Benchmark (\%) & WDQL (\%) \\
     \midrule
-    all & subclass closure (P279*) & 23.6 & 12.8 & 2838 & 226376 \\
-     & statement node (p:) & 23.1 & 6.7 & 2838 & 226376 \\
-     & qualifier (pq:) & 15.1 & 3.8 & 2838 & 226376 \\
-     & value node (psv:/psn:) & 6.1 & 0.8 & 2838 & 226376 \\
-     & aggregation (GROUP BY) & 31.9 & 11.5 & 2838 & 226376 \\
-     & alternation (VALUES/UNION) & 17.3 & 12.8 & 2838 & 226376 \\
-     & property path (/ | * +) & 38.8 & 16.8 & 2838 & 226376 \\
-     & OPTIONAL & 39.9 & 29.8 & 2838 & 226376 \\
-     & FILTER & 36.2 & 59.6 & 2838 & 226376 \\
-     & LIMIT & 10.8 & 26.0 & 2838 & 226376 \\
-     & any reification or hierarchy idiom & 41.2 & 18.8 & 2838 & 226376 \\
+    all & subclass closure (P279*) & 23.6 & 12.8 \\
+     & statement node (p:) & 23.1 & 6.7 \\
+     & qualifier (pq:) & 15.1 & 3.8 \\
+     & value node (psv:/psn:) & 6.1 & 0.8 \\
+     & aggregation (GROUP BY) & 31.9 & 11.5 \\
+     & alternation (VALUES/UNION) & 17.3 & 12.8 \\
+     & property path (/ | * +) & 38.8 & 16.8 \\
+     & OPTIONAL & 39.9 & 29.8 \\
+     & FILTER & 36.2 & 59.6 \\
+     & LIMIT & 10.8 & 26.0 \\
+     & any reification or hierarchy idiom & 41.2 & 18.8 \\
     \midrule
-    5+ predicate tokens & subclass closure (P279*) & 31.6 & 25.6 & 1525 & 51728 \\
-     & statement node (p:) & 37.4 & 18.9 & 1525 & 51728 \\
-     & qualifier (pq:) & 24.7 & 13.1 & 1525 & 51728 \\
-     & value node (psv:/psn:) & 11.3 & 3.3 & 1525 & 51728 \\
-     & aggregation (GROUP BY) & 33.6 & 15.7 & 1525 & 51728 \\
-     & alternation (VALUES/UNION) & 24.8 & 21.8 & 1525 & 51728 \\
-     & property path (/ | * +) & 53.6 & 34.9 & 1525 & 51728 \\
-     & OPTIONAL & 53.6 & 53.9 & 1525 & 51728 \\
-     & FILTER & 46.9 & 83.6 & 1525 & 51728 \\
-     & LIMIT & 10.3 & 33.7 & 1525 & 51728 \\
-     & any reification or hierarchy idiom & 58.8 & 41.2 & 1525 & 51728 \\
+    5+ predicate tokens & subclass closure (P279*) & 31.6 & 25.6 \\
+     & statement node (p:) & 37.4 & 18.9 \\
+     & qualifier (pq:) & 24.7 & 13.1 \\
+     & value node (psv:/psn:) & 11.3 & 3.3 \\
+     & aggregation (GROUP BY) & 33.6 & 15.7 \\
+     & alternation (VALUES/UNION) & 24.8 & 21.8 \\
+     & property path (/ | * +) & 53.6 & 34.9 \\
+     & OPTIONAL & 53.6 & 53.9 \\
+     & FILTER & 46.9 & 83.6 \\
+     & LIMIT & 10.3 & 33.7 \\
+     & any reification or hierarchy idiom & 58.8 & 41.2 \\
     \bottomrule
   \end{tabular}}
-  \tabnote{WDQL is the Wikidata Query Logs dataset (one-per-cluster release, 226{,}376 real queries). Size bands are predicate-token counts, a formatting-robust proxy for triple patterns.}
+  \tabnote{WDQL is the Wikidata Query Logs dataset (one-per-cluster release, 226{,}376 real queries). Size bands are predicate-token counts, a formatting-robust proxy for triple patterns. Counts: 2{,}838 benchmark and 226{,}376 WDQL queries in all; 1{,}525 and 51{,}728 with 5+ predicate tokens.}
 \end{table}

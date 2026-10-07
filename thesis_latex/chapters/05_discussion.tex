@@ -11,7 +11,7 @@ Do}
 
 \label{sec:disc-rq1}
 
-Frozen frontier models write SPARQL that parses and executes but is rarely correct.
+Frozen frontier models write SPARQL that parses and executes but is rarely correct (\cref{sec:res-frozen}, \cref{tab:main}).
 On non-empty outputs their scores lie close together.
 What separates the systems is mainly how often they return nothing, and the pipeline roughly halves that rate.
 Their weakness lies in Wikidata's modelling conventions (statement nodes, subclass closure, normalised value nodes), which they rarely apply where needed.
@@ -34,7 +34,7 @@ Bottleneck}
 
 \label{sec:disc-rq2}
 
-Given the benchmark's concepts and query structure, the pipeline reaches 97.4 entity-level Jaccard.
+Given the benchmark's concepts and query structure, the pipeline reaches 97.4 entity-level Jaccard (\cref{sec:res-attribution}, \cref{tab:main}).
 When it has to generate the query itself, the score falls to 30.9.
 In this pipeline, query generation is the main constraint.
 Disambiguation over retrieved candidates stops being the limiting stage once the model writes suitable labels and the correct entity is in the candidate pool, which holds for the frontier model here.
@@ -59,7 +59,7 @@ Where}
 
 \label{sec:disc-rq3}
 
-Backbone dependence differs by stage.
+Backbone dependence differs by stage (\cref{sec:res-linkers,sec:res-backbone}, \cref{tab:linkers}).
 At disambiguation, scale has little effect: 97.7 (frontier), 94.9 (14B) and 95.8 (7B) entity F1, with overlapping intervals.
 Reasoning over seven retrieved candidates does not need a frontier-scale model.
 At generation, however, the choice of backbone matters much more: when the open model handles both stages, pipeline performance drops sharply.
@@ -78,7 +78,7 @@ Evidence}
 
 \label{sec:disc-rq4}
 
-Generic idiom guidance brings a small benefit, evidence about graph contents does about four times as much harm, and selective guidance does not beat always-on guidance, even with oracle knowledge of when it is needed.
+Generic idiom guidance brings a small benefit (\cref{sec:res-prompts}, \cref{tab:significance}), evidence about graph contents does about four times as much harm, and selective guidance does not beat always-on guidance, even with oracle knowledge of when it is needed.
 
 \paragraph{Overuse of Schema Evidence}
 
@@ -90,11 +90,11 @@ The intervention failed even though the schema cards were built from reference-l
 \paragraph{Predicting Construct Need from the Question}
 
 A classifier that predicts from the question text alone whether a reference query uses a given construct reaches only moderate performance (AUC 0.62--0.82).
-Its strongest features for subclass closure are topical terms (``libraries'', ``hospitals'', ``scientists''), which say nothing about how Wikidata models the domain.
+Its strongest features for subclass closure are topical terms (``libraries'', ``hospitals'', ``scientists''), which describe the subject of a question, not how Wikidata models it.
 
 \paragraph{Cost of Unnecessary Idiom Use}
 
-The idiom prompt helps when the reference needs the construct it describes, and rarely hurts when it does not.
+The idiom prompt helps most when the reference needs the construct it describes, and on average it still raises accuracy when it does not, although individual questions can get worse.
 Unnecessary closure over a class without subclasses simply returns the same rows.
 Construct predictions are miscalibrated, but the cost in accuracy is small, so selective application addresses a problem that is usually cheap.
 
@@ -136,8 +136,9 @@ Execution}
 
 \label{sec:disc-rq5}
 
-Some failures can be detected without the gold query.
-A cascade that accepts the first non-empty, error-free result raises the score by +4.83 points [2.93, 7.08], improving 49 questions and worsening none, without any additional training.
+Some failures can be detected without the gold query (\cref{sec:res-cascade}, \cref{tab:cascade}).
+A cascade that accepts the first non-empty, error-free result raises the score by +4.83 points [2.93, 7.08] without any additional training.
+Because it only replaces empty or failed results, it cannot worsen a question by design.
 Of the 92 fallback rows, 64 are triggered by empty results.
 The gain amounts to about two fifths of the 12-point oracle headroom, so execution feedback catches some failures but cannot correct a query that runs successfully and returns the wrong answer.
 

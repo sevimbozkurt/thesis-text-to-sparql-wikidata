@@ -1,4 +1,5 @@
 figure,thesis_section,shows,source_data
+fig_example_kg.pdf,1.1,a fragment of Wikidata around the question who directed Inception,--
 fig_wikidata_model.pdf,2.2,the Wikidata statement model,--
 fig_method.pdf,4.1,the four moves of stage-wise diagnostic evaluation,--
 fig_pipeline.pdf,4.2,pipeline architecture and the two evaluation conditions,--
@@ -11,7 +12,7 @@ fig_wdql_bysize.pdf,6.10,construct prevalence at matched query size,results_tabl
 fig_main_comparison.pdf,6.2,frozen models with and without the pipeline,results_tables/common_subset_metrics.csv
 fig_empty_rate.pdf,6.2,empty-result rate against accuracy,results_tables/empty_result_rate.csv
 fig_stage_funnel.pdf,6.3,stage-wise outcomes by complexity,results_e2e_clean.csv
-fig_gap_decomposition.pdf,6.3,what the 66.5-point gap is made of,results_tables/gap_decomposition.csv
+fig_gap_decomposition.pdf,6.3,failure types in the annotated sample of 30 failing rows,results_tables/gap_decomposition.csv
 fig_linker_comparison.pdf,6.4,"entity linking F1, four paradigms, both splits",linker_comparison.csv
 fig_linker_pr.pdf,6.4,precision-recall signature per paradigm,linker_comparison.csv
 fig_linker_complexity.pdf,6.4,linking F1 by query complexity,linker_comparison.csv

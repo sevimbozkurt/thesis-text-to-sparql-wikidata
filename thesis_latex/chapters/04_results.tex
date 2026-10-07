@@ -16,6 +16,13 @@ Because it is undefined when a query returns no identifiers, comparisons between
 Several analyses need their own subset of questions, for example the rows that every compared run scored.
 \Cref{tab:subsets} lists each set, its size and where it is used.
 
+On the working split, the pipeline is compared with the four frozen frontier models used without a pipeline, in zero-shot and few-shot settings.
+On the official split, it is compared with the systems published with the benchmark: two fine-tuned models and several prompted models, among them GPT-4 and GPT-3.5~\citep{benamor2025instruct}.
+Their published generated queries are re-executed under the same conditions as every other system, so all official-split results share one snapshot, question set and metric.
+At the time of writing, no later publication reports results on Instruct-to-SPARQL, so these are the only published reference points.
+Results from the two splits are never pooled.
+Where a table reports both, as the linker comparison does, each row names its split.
+
 \input{tables/eval_subsets}
 
 \section{Baseline Performance and Stage
@@ -35,7 +42,6 @@ In both settings the model has to write the Wikidata identifiers itself, and its
 
 \Cref{tab:main} reports, for each model and setting, the pooled and entity-level Jaccard and the entity-level Jaccard per complexity level.
 The last two rows show the two pipeline conditions: the gold-label condition, in which the labels come from the benchmark's annotated query, and the end-to-end condition, in which Claude Opus 4.8 writes the labelled query and also resolves the labels to identifiers.
-\Cref{fig:main} shows the same results graphically.
 
 The models usually produce syntactically valid SPARQL, but their answers are rarely correct.
 The strongest baseline, few-shot Claude Opus 4.8, reaches 24.5\,\% entity-level Jaccard, and the weakest, zero-shot Gemini, 10.5\,\%.
@@ -59,17 +65,6 @@ Qualifiers and aggregation occur at rates of 0.22 and 0.32 per query, respective
 
 These three analyses show that the models often write valid queries that return wrong results or none, and that their errors overlap heavily.
 The next subsection shows which pipeline stage is responsible.
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.88\textwidth]{figures/fig_main_comparison.pdf}
-  \caption{Frozen models with and without the pipeline.}
-  \label{fig:main}
-  \tabnote{Strict fair set and common entity-defined subset.
-The gold-label condition supplies the benchmark's query structure and is
-used to isolate error sources; it is not presented as a performance
-claim.}
-\end{figure}
 
 \subsection{Attributing the Error: Linking versus
 Structure}
@@ -105,9 +100,8 @@ The gap does not depend on the subset: on the full strict set of 400 questions, 
 The gold-label condition is nearly tautological, because only the identifiers remain to be filled in, so it is not a performance result in itself.
 Its value lies in the comparison between the two conditions.
 The gap might suggest that structure explains all 66.5 points, but ``structure'' would then absorb every remaining source of error.
-\Cref{fig:gap} breaks the gap down using the annotated failure sample.
+\Cref{fig:gap} breaks down the failures in the annotated sample.
 Structural failures, that is the structure category together with the single triple flip (15 of 30 cases), make up 50.0\,\% of failing rows (95\,\% Wilson interval 33.2--66.8\,\%).
-Applied to the 66.5-point gap, this share corresponds to 33.2 points.
 Projection mismatches and residual identifier errors each account for about one fifth.
 Structure is therefore the largest single component, especially for complex questions, while the rest of the gap comes from these other errors.
 These figures are proportions of failing rows, not shares of the accuracy deficit, and they come from a 30-case sample (re-annotation agreement $\kappa$=0.62; agreement with an independent second annotator $\kappa$=0.595).
@@ -121,7 +115,7 @@ The conclusion also does not rest on the annotated sample alone: the failure ana
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.88\textwidth]{figures/fig_gap_decomposition.pdf}
-  \caption{What the 66.5-point gap is made of.}
+  \caption{Failure types in the annotated sample of 30 failing rows.}
   \label{fig:gap}
   \tabnote{Proportional attribution based on the 30-case taxonomy,
 with Wilson intervals. The values are shares of failing rows, not of
@@ -144,28 +138,16 @@ For each linker, precision, recall and F1 are computed at mention level against 
 Four linking implementations were evaluated on the same rows, with the same ground truth, the same candidate pools where applicable, and the same scoring code.
 The comparison is not fully symmetric: the reasoning-based linkers and GLiNKER choose from labels and curated candidates, whereas ELQ and ReFinED have to detect mentions in the question text themselves (see the limitations).
 The paragraphs below assess how much of the ordering this difference explains.
-\Cref{fig:linkers} shows entity-linking F1 on both splits, and~\cref{tab:linkers} gives the results.
+\Cref{tab:linkers} gives the results on both splits.
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.88\textwidth]{figures/fig_linker_comparison.pdf}
-  \caption{Entity linking F1 across four paradigms and two splits.}
-  \label{fig:linkers}
-  \tabnote{Within each split, all systems use identical rows,
-ground truth and candidate pools. The first search result is a
-reference without any model. On the official split, the reasoning
-linker was run with the Qwen2.5-14B backbone only, which is available on
-the group's GPU server; Claude Opus 4.8 (paid API) and Qwen2.5-7B were
-evaluated on the working split.}
-\end{figure}
-
-With a frontier backbone, reasoning over retrieved candidates reaches 97.7 entity F1 and 98.5 property F1, and it resolves every identifier correctly in 89.9\,\% of queries.
-The specialised linkers score lower: 72.8 (GLiNKER, choosing among the same candidates), 28.4 (ELQ) and 26.6 (ReFinED).
-\Cref{fig:linker-ci} reports bootstrap confidence intervals for these scores, resampling the 1,086 entity mentions with replacement and applying the same resample to every linker in each draw.
+Candidate retrieval does most of the work.
+Taking the first Wikidata search result for each label, with no model at all, reaches 93.5 entity F1 on the working split and 90.2 on the official split.
+Reasoning over the candidates resolves the remaining ambiguous cases.
+With a frontier backbone it reaches 97.7 entity F1 and 98.5 property F1, 4.1 points $[2.7, 5.6]$ above the search order, and resolves every identifier correctly in 89.9\,\% of queries.
+Qwen2.5-7B adds 2.2 points and Qwen2.5-14B 1.4, the last within noise.
+The specialised linkers score lower: 72.8 (GLiNKER, choosing among the same candidates and falling below the search order itself), 28.4 (ELQ) and 26.6 (ReFinED).
+\Cref{tab:app-linker-ci} in the appendix reports bootstrap confidence intervals for these scores, resampling the 1,086 entity mentions with replacement and applying the same resample to every linker in each draw.
 The paired difference between the frontier reasoning linker and GLiNKER is 24.9 points $[22.3, 27.7]$, about five times the width of its own interval.
-A reference point without any model shows where this accuracy comes from: taking the first Wikidata search result for each label reaches 93.5 on the working split and 90.2 on the official split.
-Reasoning over the candidates adds 4.1 points $[2.7, 5.6]$ to it with the frontier backbone, 2.2 with Qwen2.5-7B and 1.4 with Qwen2.5-14B, the last within noise.
-So most of the linking accuracy comes from labels that Wikidata's search can find, and the reasoning step resolves the remaining ambiguous cases, while GLiNKER's choice falls below the search order itself.
 The intervals of the three reasoning backbones overlap, so they are not ranked against each other.
 This similarity is the main finding of the backbone comparison below.
 
@@ -247,16 +229,9 @@ identifiers occur only for the open model and account for 34\,\% of its
 unfindable labels.}
 \end{figure}
 
-One possible explanation is that the open model mainly has a formatting problem that a deterministic fix could solve.
-This was tested with a normalisation procedure that splits camelCase, removes underscores, drops a leading ``is'' or ``has'', removes trailing parentheticals and singularises terms.
-All 270 labels were normalised and searched again.
-
-The procedure repaired 43 labels (15.9\,\%), lowering the failure rate from 16.4\,\% to 13.8\,\%.
-Splitting camelCase recovered 36\,\% of the labels in that category, but such mechanical cases were only a minority of the failures.
-The largest category could not be repaired, because terms such as ``significant achievement'' are alternative names for existing Wikidata properties.
-
-The difference between the backbones at the generation stage is mainly a matter of knowing Wikidata's vocabulary.
-Neither surface formatting nor reasoning ability explains it.
+A deterministic normalisation (splitting camelCase, removing underscores, dropping a leading ``is'' or ``has'', removing trailing parentheticals and singularising terms) repairs only 43 of the 270 labels (15.9\,\%), lowering the failure rate from 16.4\,\% to 13.8\,\%.
+The largest category cannot be repaired this way, because terms such as ``significant achievement'' are alternative names for existing Wikidata properties.
+The difference between the backbones at the generation stage is therefore mainly a matter of knowing Wikidata's vocabulary, not of surface formatting or reasoning ability.
 The next chapter discusses the practical implications.
 
 \paragraph{Replication with Claude Opus 5}
@@ -293,7 +268,7 @@ The smallest is the easiest to interpret, and the largest gives the strongest ev
 \input{tables/error_taxonomy}
 
 A complexity-stratified random sample of thirty failing questions was drawn from the reported end-to-end run, and each was classified by its dominant error type.
-\Cref{fig:errors} and~\cref{tab:errors} show the distribution: structure accounts for 46.7\,\%, near misses for 20.0\,\%, wrong properties for 10.0\,\%, execution and unresolved errors for 6.7\,\% each, and triple flips, reference noise and wrong entities for 3.3\,\% each.
+\Cref{tab:errors} shows the distribution: structure accounts for 46.7\,\%, near misses for 20.0\,\%, wrong properties for 10.0\,\%, execution and unresolved errors for 6.7\,\% each, and triple flips, reference noise and wrong entities for 3.3\,\% each.
 The gap attribution above groups the one triple flip with structure, because the query has the right properties but the wrong shape, which gives the structural group 15 of the 30 cases.
 
 Structural errors are the largest category at every complexity level and are common among complex questions. Ten of the fifteen complex failures are structural.
@@ -301,54 +276,16 @@ Identifier-related errors still occur, though; three of the fifteen complex fail
 
 The author categorised the cases in a single annotation pass, so the proportions describe recurring failure modes and should not be read as population-level frequencies.
 
-\paragraph{Annotation Reliability}
+\paragraph{Annotation Reliability and Reference Noise}
 
-To check the reliability of the categorisation, ten of the thirty cases were selected with an independent seed, anonymised and shuffled, and then re-annotated by the same person without access to the first classification.
-Raw agreement was 7 of 10, and Cohen's $\kappa$ was 0.62, which is conventionally regarded as substantial agreement.
-
-Two of the three disagreements concerned the boundary between structural and wrong-property errors, which is exactly the distinction the attribution analysis depends on.
-Under the second annotation, the structural group fell from 15 to 14 of the 30 cases (50.0\,\% to 46.7\,\%), and the identifier-related share rose from 20.0\,\% to 26.7\,\%.
-Structure stayed the largest single category, but by a smaller margin.
-
-The second annotation also distinguished between an incorrect constraint, a missing constraint and missing aggregation.
-The current taxonomy groups these cases under ``structure'', so the category is fairly broad.
-
-\paragraph{A Second, Independent
-Annotator}
-
-Consistency within one annotator does not show that others read the categories the same way.
-A second annotator, an undergraduate computer science student not involved in the project, classified all thirty cases independently, using only the written category guide, which is provided in the accompanying repository.
-
-Raw agreement was 21 of 30, and Cohen's $\kappa$ was 0.595, slightly below the intra-annotator value.
-The two annotators gave similar estimates for the category: the structure category accounted for 46.7\,\% of cases according to the author and 43.3\,\% according to the second annotator.
-Only two of the nine disagreements concerned the boundary between structure and wrong-property errors.
-
-The attribution therefore holds across two annotators.
-Four of the nine disagreements, however, involved the quality of the reference query.
-The second annotator pointed out specific issues: a missing country constraint, a missing class restriction, a grouped count where the question asked for items, and a flag that was computed but never used as a filter.
-These judgements raise the estimated reference-noise rate in the sample from 3.3\,\% to 16.7\,\%.
-Thirty rows cannot establish the true rate, so it is estimated on the full split below.
-
-\paragraph{Bounding the Rate of Reference
-Noise}
-
-The full split was screened with five rules derived from the disputed cases (e.g.\ a superlative question whose reference query has no ordering or limit, or a nationality question whose reference has no country property), which flagged 61 of 400 strict-set queries (15.2\,\%).
-A flag rate is not a noise rate, so a stratified sample of 40 flagged and 40 unflagged queries was adjudicated one by one (24 were dropped as unexecutable on the current snapshot, leaving 26 flagged and 30 unflagged).
-Half of the flagged queries were judged faulty, against 6.7\,\% of the unflagged ones, which gives an initial estimate of 13.3\,\%.
-
-A second independent judge, a doctoral student in computer science who was blind to the author's decisions and to the sampling strata, reviewed the same 56 rows.
-Agreement was 73.2\,\% ($\kappa$=0.426).
-The second judge's estimate was 32.0\,\%, against 13.3\,\% for the author.
-The disagreement was systematic: 12 of the 15 cases went the same way, and they came from detection rather than from different standards of correctness. The author's first pass relied on the executed output, while the second judge also read the query text and caught issues such as a commented-out deduplication filter or an unchecked \texttt{OPTIONAL} block.
-
-The two judges then reconciled the fifteen disagreements together against the query text and resolved ten in the second judge's favour.
-The reconciled estimate is \textbf{24.6\,\% of the strict fair set, with an interval of $[12.9, 42.0]$}.
-This counts the five cases that remained unresolved (genuine ambiguity about the intent of a loosely written question, not a checkable fact) as sound; counting them as faulty gives 32.0\,\%, the same as the second judge's independent estimate.
-Reconciliation also showed that the screen's weakness is recall, not precision: its accuracy on the flagged group was unchanged (13/26 both before and after), while the fault rate in the unflagged group rose from 6.7\,\% to 20.0\,\%.
-
-Roughly one quarter of the reference queries may therefore be unsound.
-Some failures attributed to query structure may then come from the benchmark, and a system may be penalised for correctly answering a question that the benchmark encodes incorrectly.
+The categorisation was checked twice.
+A blind re-annotation of ten cases by the same person agreed on 7 of 10 ($\kappa$=0.62), and an independent second annotator, working only from the written category guide, agreed on 21 of 30 ($\kappa$=0.595).
+The structure category accounts for 46.7\,\% of cases according to the author and 43.3\,\% according to the second annotator, so the attribution holds across two annotators.
+Four of the second annotator's nine disagreements concerned the reference query itself, so the rate of faulty reference queries was estimated on the full split with a rule-based screen, adjudication of 56 sampled queries by two judges, and a joint reconciliation.
+The estimate is \textbf{24.6\,\% of the strict fair set, with an interval of $[12.9, 42.0]$}.
+Some failures attributed to query structure may therefore come from the benchmark, and a system may be penalised for correctly answering a question that the benchmark encodes incorrectly.
 The reported accuracy figures are not corrected for reference noise, for the comparability reasons discussed in the limitations.
+\Cref{app:reliability} gives the full procedure.
 
 \paragraph{Mechanism}
 
@@ -520,25 +457,9 @@ The model can recognise and use a named construct but still struggles to compose
 
 \paragraph{Type-Constraint Filtering}
 
-The constrained-vocabulary arm restricts the generator through instructions, which it may ignore.
-\citet{zhang2026saga} instead remove type-incompatible candidates mechanically before generation.
-Filtering cannot be undone, so a removed candidate cannot be recovered by later reasoning.
-The first thing to check is whether filtering keeps the correct property.
-The test covers every property mention with at least two candidates including the reference property (1,132 mentions, 4.39 candidates on average).
-A candidate is removed when it declares a Wikidata type constraint (P2302, constraint type Q21503250) and none of its permitted classes covers a subject type present in the question.
-Subject types are taken from the row's reference entities via P31/P279 closure.
-Of 1,062 candidate properties, 704 declare a type constraint.
-Only 80 mark it as mandatory, while 616 have a type constraint without any status, so a violation is reported but not prohibited (a property can carry several such constraints).
-Applying every declared constraint affects 79.8\,\% of mentions and shrinks the average pool from 4.39 to 3.02, but the reference property survives only 92.5\,\% of these operations.
-Restricting the filter to mandatory constraints raises survival to 99.1\,\% but removes only about half a candidate per mention and resolves just three of the 1,132.
-
-The two filters trade off differently: the stronger one removes the correct answer in roughly one of thirteen affected mentions, while the safer one removes almost nothing.
-Even the safer estimate is generous.
-The type universe combines all entity types in a row, subject types come from reference entities and not from a signal available at deployment, and forty-one mentions have no reference entity and would require abstention.
-
-The principle of constraining rather than enumerating still holds, but implementing it mechanically is not straightforward.
-Constraining the generator works when the constraint is correct.
-A mechanical filter, however, is only as good as the quality and completeness of Wikidata's constraint declarations, and most of these are not marked as binding.
+The constrained-vocabulary arm restricts the generator through instructions, which it may ignore, whereas \citet{zhang2026saga} remove type-incompatible candidates mechanically before generation.
+A test of this mechanical form on the 1,132 property mentions with competing candidates shows that applying every type constraint declared in Wikidata removes the reference property in 7.5\,\% of the affected mentions, while restricting the filter to mandatory constraints is safe but resolves almost nothing (\cref{app:filter}).
+The principle of constraining rather than enumerating still holds, but a mechanical filter is only as good as Wikidata's constraint declarations, most of which are not marked as binding.
 
 \subsection{Recovering Failures without Gold
 Supervision}
@@ -677,31 +598,10 @@ Whether these constructs also matter in everyday Wikidata use is a separate ques
 To answer it, the benchmark is compared with the Wikidata Query Logs dataset~\parencite{walter2026wdql}, which contains 226,376 real queries sent to the public query service.
 
 Across all queries, the benchmark contains substantially more reification and hierarchy idioms.
-At least one such construct appears in 41.2\,\% of benchmark reference queries, against 18.8\,\% of query-log queries (\cref{fig:wdql}).
+At least one such construct appears in 41.2\,\% of benchmark reference queries, against 18.8\,\% of query-log queries (\cref{tab:wdql}).
 Benchmark queries are, however, generally larger, so query size affects this comparison.
 
-When both datasets are restricted to queries with at least five predicate tokens (\cref{fig:wdql-size}), the difference shrinks but remains visible:
-
-\begin{itemize}
-\item
-Any reification or hierarchy idiom: 58.8\,\% versus 41.2\,\%
-\item
-Subclass closure: 31.6\,\% versus 25.6\,\%
-\item
-Statement nodes: 37.4\,\% versus 18.9\,\%
-\item
-Value nodes: 11.3\,\% versus 3.3\,\%
-\end{itemize}
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.88\textwidth]{figures/fig_wdql.pdf}
-  \caption{Construct prevalence: benchmark gold queries against real Wikidata query logs.}
-  \label{fig:wdql}
-  \tabnote{The comparison includes all queries in both datasets.
-Benchmark queries are larger on average, which confounds the comparison.
-\cref{fig:wdql-size} controls for query size.}
-\end{figure}
+When both datasets are restricted to queries with at least five predicate tokens (lower half of \cref{tab:wdql}), the difference shrinks but remains visible: at least one such idiom appears in 58.8\,\% of benchmark queries against 41.2\,\% of query-log queries.
 
 The relevant idioms are not just artefacts of the benchmark: roughly two in five non-trivial queries use at least one of them, so a system that cannot generate them will fail on a substantial share of real Wikidata queries.
 The benchmark does, however, over-represent these constructs.

@@ -6,15 +6,36 @@
 
 \label{sec:motivation}
 
-Wikidata is the largest openly licensed general-purpose knowledge graph, with more than one hundred million items.
-Volunteers and bots maintain it, and it supplies structured data to Wikipedia infoboxes, search-engine knowledge panels and many other applications~\citep{vrandecic2014wikidata}.
+Wikidata~\citep{vrandecic2014wikidata} is the largest openly licensed general-purpose knowledge graph, with more than one hundred million items.
+Volunteers and bots maintain it, and it supplies structured data to Wikipedia infoboxes, search-engine knowledge panels and many other applications.
 Anyone can query it with SPARQL, but writing a correct query is hard.
 Even a moderately complex question needs two kinds of knowledge: which Wikidata entities and properties are involved, and how Wikidata represents the fact in question.
 The question itself usually reveals neither.
 Asking ``who directed Inception'' does not tell anyone that the film is Q25188 or that the director property is P57.
 Nor does it tell whether the answer sits on a direct property or behind a statement node.
 
-Translating questions into SPARQL is therefore more than a convenience.
+\Cref{fig:example-kg} shows the part of the graph this question needs.
+Each fact is an edge between two nodes: Inception (Q25188) is connected to Christopher Nolan (Q25191) by the director property (P57), and to the class film (Q11424) by the property instance of (P31).
+A SPARQL query describes a pattern of such edges, with variables in the places that are unknown.
+The query in \cref{lst:example-query} contains a single triple pattern: it fixes the subject and the property and asks for the object.
+Run against Wikidata, it matches the director edge and returns Q25191, Christopher Nolan.
+Writing the query requires both identifiers, and neither appears in the question.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{figures/fig_example_kg.pdf}
+  \caption{A small part of Wikidata around the film Inception.}
+  \label{fig:example-kg}
+  \tabnote{Nodes are items, and edges are properties. The highlighted edge is the one matched by the query in \cref{lst:example-query}. This figure was generated with AI.}
+\end{figure}
+
+\begin{lstlisting}[language=SPARQL,caption={A SPARQL query for ``Who directed Inception?''. It returns wd:Q25191 (Christopher Nolan).},label={lst:example-query},captionpos=b]
+SELECT ?director WHERE {
+  wd:Q25188 wdt:P57 ?director .
+}
+\end{lstlisting}
+
+Generating a SPARQL query has a clear advantage over letting a language model answer directly.
 A language model that answers a question directly relies on what it stored in its parameters during training.
 Its answer cannot be traced to a source, does not follow changes in the data, and can be wrong while sounding plausible.
 An answer obtained by running a SPARQL query against Wikidata comes from a specific, inspectable source instead.
@@ -27,8 +48,8 @@ A query with the right identifiers but the wrong structure, for example, often r
 Execution then becomes a signal for detecting, and sometimes recovering from, failures.
 
 The practical question is whether this works with models that are not fine-tuned for the task.
-Fine-tuning a model for one knowledge graph can be effective, as the benchmark used here shows.
-But it needs in-domain training data, it has to be repeated for every knowledge graph, and it is usually not possible for the frontier models that are strongest at code generation.
+Fine-tuning a model for one knowledge graph can be effective: on Instruct-to-SPARQL, the benchmark used in this work, fine-tuned models clearly outperform prompted ones~\citep{benamor2025instruct}.
+However, fine-tuning needs in-domain training data, it has to be repeated for every knowledge graph, and it is usually not possible for the frontier models that are strongest at code generation.
 If frozen models can be combined into an effective pipeline instead, the approach could carry over to any knowledge graph with a suitable label index.
 This thesis asks whether frozen models can do this task and, where they fail, why.
 
@@ -51,7 +72,7 @@ Because end-to-end evaluation folds grounding and structure into one score, it h
 That matters, since the two problems need different solutions.
 Earlier error analyses have put most of the weight on entity linking.
 \citet{xu2023wikisp}, for example, attribute 35.1\,\% of their system's failures to entity linking and call it ``the biggest source of errors''.
-Much later work has accordingly focused on better grounding.
+Later work has accordingly focused on better grounding, for example by evaluating entity and relation linkers for KGQA~\citep{vollmers2025evaluation}, by reasoning over retrieved candidates~\citep{alekseev2025querybased} and by filtering candidates with schema information~\citep{zhang2026saga}.
 
 Separating the two stages requires a benchmark that offers more than questions and final answers.
 Instruct-to-SPARQL~\citep{benamor2025instruct} provides each executable gold query together with an annotated version in which the Wikidata identifiers are replaced by human-readable labels.
@@ -85,11 +106,7 @@ Contributions}
 
 \label{sec:contributions}
 
-The method, stage-wise diagnostic evaluation, has four steps.
-First, derive ground truth for an intermediate pipeline stage from the benchmark's own artefacts.
-Second, hold all other stages fixed to isolate the stage under test.
-Third, compare the conditions to attribute the resulting errors to that stage.
-Fourth, test whether the identified cause responds to intervention.
+The method, stage-wise diagnostic evaluation, derives ground truth for an intermediate pipeline stage from the benchmark's own artefacts, holds all other stages fixed, compares the conditions to attribute errors to that stage, and tests whether the identified cause responds to intervention.
 The method chapter defines each step in detail.
 
 The contributions of this thesis are:
@@ -114,3 +131,5 @@ The thesis also makes a methodological contribution.
 It identifies four measurement artefacts that can distort KGQA evaluation, such as a metric that rewards queries for returning nothing and silent API throttling that looks like a retrieval problem, and it shows how each can be detected.
 In three of the four cases the artefact produced a more striking conclusion than the true result, which made it easy to accept.
 They motivate the validation practices used throughout this work.
+
+The code, data, stored model outputs and \LaTeX{} sources needed to reproduce every result are available at \url{https://github.com/sevimbozkurt/thesis-text-to-sparql-wikidata}.

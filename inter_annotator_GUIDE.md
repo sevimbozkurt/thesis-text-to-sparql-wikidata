@@ -1,4 +1,4 @@
-# Second-annotator guide — error taxonomy
+# Second-annotator guide for error taxonomy
 
 Thank you for doing this. It should take 45–75 minutes.
 
@@ -43,19 +43,19 @@ You need this only for the `structure` category.
 - `psv:` — a **normalised value**, carrying the unit a quantity was recorded in. Needed when comparing quantities.
 - `wdt:P31/wdt:P279*` — **subclass closure**: all members of a class *including* members of its subclasses. Plain `wdt:P31` misses those.
 
-The shortcut is always allowed by the syntax, so a query that uses it where a richer form was needed still runs — it just answers a different question.
+The shortcut is always allowed by the syntax, so a query that uses it where a richer form was needed still runs. It just answers a different question.
 
 ## The categories
 
 ### `structure`
 
-The generated query is syntactically fine and its identifiers are right, but it is built the wrong SHAPE: it uses the direct shortcut `wdt:` where the reference needs a richer construct -- a subclass closure (`wdt:P31/wdt:P279*`), a qualifier reachable only through `p:`/`pq:`, a normalised value node (`psv:`) for a quantity with units, an aggregation (COUNT/AVG/GROUP BY), an alternation over allowed values, or the lexeme/sitelink model.
+The generated query is syntactically fine and its identifiers are right, but it is built the wrong SHAPE: it uses the direct shortcut `wdt:` where the reference needs a richer construct. A subclass closure (`wdt:P31/wdt:P279*`), a qualifier reachable only through `p:`/`pq:`, a normalised value node (`psv:`) for a quantity with units, an aggregation (COUNT/AVG/GROUP BY), an alternation over allowed values, or the lexeme/sitelink model.
 
 *Example:* Gold averages heights through the value node so units are normalised; the generated query averages the raw numbers.
 
 ### `wrong_property`
 
-The shape is right but a PROPERTY identifier is wrong -- a different Wikidata property was chosen than the reference uses.
+The shape is right but a PROPERTY identifier is wrong, a different Wikidata property was chosen than the reference uses.
 
 *Example:* Gold uses `position held` (P39); generated uses `occupation` (P106).
 
@@ -79,7 +79,7 @@ Subject and object of a triple pattern are REVERSED, so the query asks the relat
 
 ### `unresolved`
 
-A label was never linked to an identifier at all -- the query still contains an unresolved placeholder, or the linking stage returned nothing for it.
+A label was never linked to an identifier at all , and the query still contains an unresolved placeholder, or the linking stage returned nothing for it.
 
 *Example:* `wdt:[property:significant achievement]` left in the query.
 
@@ -91,9 +91,9 @@ The query failed to run, or the endpoint refused it (syntax error, timeout, resu
 
 ### `benchmark_noise`
 
-The REFERENCE query is itself wrong -- it does not answer the question it is paired with. The generated query may even be better.
+The REFERENCE query is itself wrong. It does not answer the question it is paired with. The generated query may even be better.
 
-*Example:* Question asks for the heaviest humans; gold returns the classes of things that have a weight.
+*Example:* Question asks for the heaviest humans, and gold returns the classes of things that have a weight.
 
 ## DECISION ORDER — apply these tests in order and stop at the first that fits.
 
@@ -114,5 +114,5 @@ Step 6 before step 7 is deliberate and is the hardest call in this task. If the
 query would still be wrong AFTER swapping in the correct property, the problem
 is the shape: choose `structure`. If swapping the property alone would make it
 right, choose `wrong_property`. Use the `second_choice` column whenever you
-hesitate between two categories -- recording the hesitation is useful data, and
+hesitate between two categories. Recording the hesitation is useful data, and
 it does not count against agreement.

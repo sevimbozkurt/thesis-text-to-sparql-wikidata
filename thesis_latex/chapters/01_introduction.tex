@@ -59,7 +59,7 @@ The first is grounding: mapping the words in the question to Wikidata identifier
 Inception must become Q25188, and director must become P57.
 A single wrong identifier can produce wrong results or none at all.
 
-The second is query structure: combining these identifiers into a query that expresses the question correctly.
+The second is query structure: the identifiers must be combined into a query that represents the question correctly.
 In Wikidata this is difficult because the same fact can be stored in more than one way.
 A short query pattern returns only the main value of a fact, for example who held an office.
 Extra details need longer and more specific patterns: when the office was held, the unit of a quantity, or every member of a broad category.
@@ -69,7 +69,7 @@ Because the short pattern is always valid SPARQL, a model that does not know a l
 A syntax check cannot catch this kind of error.
 Only comparing the query's result with the expected answer can.
 Because end-to-end evaluation folds grounding and structure into one score, it hides which of the two causes most errors.
-That matters, since the two problems need different solutions.
+The distinction matters because the two stages require different remedies.
 Earlier error analyses have put most of the weight on entity linking.
 \citet{xu2023wikisp}, for example, attribute 35.1\,\% of their system's failures to entity linking and call it ``the biggest source of errors''.
 Later work has accordingly focused on better grounding, for example by evaluating entity and relation linkers for KGQA~\citep{vollmers2025evaluation}, by reasoning over retrieved candidates~\citep{alekseev2025querybased} and by filtering candidates with schema information~\citep{zhang2026saga}.
@@ -79,8 +79,8 @@ Instruct-to-SPARQL~\citep{benamor2025instruct} provides each executable gold que
 Since the two versions are aligned, they yield ground truth for the intermediate linking stage directly, with no extra annotation and no external linker index.
 One stage can then be held fixed while another is measured.
 The benchmark authors do not propose a linking strategy of their own and leave the problem open.
-This work takes up that open question.
-Its main contribution is an evaluation, not a new model or linking algorithm: it combines established components into a pipeline and measures, stage by stage, where and why that pipeline fails.
+The experiments in this thesis address that question.
+The work does not introduce a new model or linking algorithm. Instead, it evaluates established components within a controlled pipeline.
 
 \section{Research Questions}
 
@@ -106,7 +106,7 @@ Contributions}
 
 \label{sec:contributions}
 
-The method, stage-wise diagnostic evaluation, derives ground truth for an intermediate pipeline stage from the benchmark's own artefacts, holds all other stages fixed, compares the conditions to attribute errors to that stage, and tests whether the identified cause responds to intervention.
+The proposed evaluation protocol derives intermediate ground truth from the benchmark, keeps the other pipeline stages fixed, and compares conditions to identify where errors arise. The final step tests the resulting explanation through targeted interventions.
 The method chapter defines each step in detail.
 
 The contributions of this thesis are:
@@ -119,17 +119,17 @@ It includes mention-level linking ground truth derived from the benchmark's alig
 \item
 \textbf{Evidence-based attribution of the binding constraint to query generation (concept selection and structural composition) rather than disambiguation}.
 Four linking approaches are compared on the same rows and ground truth, with the same candidate pools where a linker uses them, on two data splits, and the attribution is supported by a failure taxonomy, an analysis of Wikidata-specific constructs across the full corpus, and agreement across independent models.
-The same experiments show that backbone dependence differs between linking and generation.
+These experiments also show that backbone scale affects the two stages differently.
 \item
 \textbf{Controlled interventions and the execution-guided cascade}: generic idiom guidance and schema evidence are tested against the baseline prompt, together with three oracle conditions (a construct profile, a closed vocabulary and both) and an analysis of selective application.
-They rule out several approaches and lead to a design principle, \emph{ground by constraint, not by enumeration}.
+The results rule out several approaches and indicate that restricting the available entities and properties is more effective than presenting additional schema information as unrestricted evidence.
 The thesis then introduces an execution-guided cascade that recovers some of the remaining errors from inference-time signals alone, without additional training or a reference query.
-Together, these experiments yield a configured pipeline in which every backbone is chosen on measured performance.
+These experiments determine the backbone and intervention choices used in the final pipeline.
 \end{enumerate}
 
-The thesis also makes a methodological contribution.
+The study also makes a methodological contribution.
 It identifies four measurement artefacts that can distort KGQA evaluation, such as a metric that rewards queries for returning nothing and silent API throttling that looks like a retrieval problem, and it shows how each can be detected.
-In each case the artefact produced a plausible result that fitted the emerging interpretation, which made it easy to accept.
+In each case, the initial result was plausible and consistent with the interpretation being developed, so the problem was not apparent from the headline result alone.
 They motivate the validation practices used throughout this work.
 
-The code, data, stored model outputs and \LaTeX{} sources needed to reproduce every result are available at \url{https://github.com/sevimbozkurt/thesis-text-to-sparql-wikidata}.
+The code, data, stored model outputs and LaTeX sources needed to reproduce every result are available at \url{https://github.com/sevimbozkurt/thesis-text-to-sparql-wikidata}.

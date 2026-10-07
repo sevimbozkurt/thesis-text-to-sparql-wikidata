@@ -11,7 +11,7 @@ Evaluation}
 Text-to-SPARQL systems are usually evaluated end to end, with one score per system that shows how useful it is but says little about why it fails: one system may identify every entity correctly but build the wrong structure, another may get the structure right but use a wrong identifier, and both end up with the same score for different reasons.
 The underlying process can nonetheless be split into component decisions (entity detection, entity linking, relation selection and query construction)~\citep{mohammed2018strong}, and this is what makes stage-wise measurement possible.
 
-Stage-wise diagnostic evaluation is a four-step protocol (\cref{fig:method}).
+The evaluation follows four steps, shown in (\cref{fig:method}).
 
 \textbf{First, intermediate ground truth is derived from artefacts the benchmark already provides.}
 Instruct-to-SPARQL contains each query twice, once with identifiers and once with those identifiers replaced by labels; since the two versions are aligned position by position, they yield mention-level linking ground truth without additional annotation.
@@ -25,7 +25,7 @@ This creates an upper-bound condition (not itself a performance claim) whose dif
 \textbf{Third, the remaining error is attributed and checked against independent evidence.}
 Simple subtraction is not enough, because the unexplained remainder may have several causes.
 The subtraction-based attribution is compared with a manually annotated failure sample, corpus-wide construct counts and agreement between independent systems.
-It is reported with the confidence interval that the weakest evidence supports, and disagreements between sources are reported as well.
+It is reported with the confidence interval supported by the weakest evidence, and disagreements between sources are also reported.
 
 \textbf{Fourth, the proposed cause is tested through intervention.}
 If a system lacks particular knowledge, supplying it should improve performance, and the size of the improvement shows how much error the missing knowledge explains.
@@ -185,8 +185,7 @@ The official-split experiments use the default configuration, whose 495 test row
 Against the default configuration, 365 of the 567 working test rows (64.4\,\%) correspond to official training rows and 95 (16.8\,\%) to official test rows.
 The remaining 107 are validation rows, rows whose instruction occurs in several official splits, or rows without a counterpart.
 The dataset revision used here is pinned in the repository.
-This overlap does not contaminate the results reported here, since none of the models is fine-tuned on the benchmark.
-It matters only for the comparison with the authors' fine-tuned systems, which is why that comparison uses the official split.
+This overlap does not affect the results reported here, since none of the models is fine-tuned on the benchmark. It matters only for comparison with the authors’ fine-tuned systems, so that comparison uses the official split.
 
 \section{Linking Methods and Ground
 Truth}
@@ -222,10 +221,7 @@ It is used in external-mentions mode with gliner-linker-large-v1.0.
 Each label extracted from the query is supplied as a mention span, embedded in the question as context, and GLiNKER chooses among the same seven candidates the reasoning linker receives, each given by its label and description.
 The candidates are passed to it directly, because its default entity store looks a mention up by exact label and keeps one entity per label, which would show it at most one candidate.
 
-Using the same candidates as the reasoning-based linker isolates the disambiguation mechanism.
-It does not, however, test GLiNKER the way its authors intended, since the framework is designed to retrieve from large entity databases with its own multi-stage retrieval.
-Its score measures one mechanism inside this pipeline, not the framework as a whole.
-The discussion returns to this limitation.
+Using the same candidates as the reasoning-based linker isolates the disambiguation mechanism. It does not, however, evaluate GLiNKER as intended, since the framework retrieves from large entity databases through its own multi-stage retrieval. Its score therefore measures one component of the pipeline, not the framework as a whole. This limitation is discussed later.
 
 \paragraph{Fine-Tuned End-to-End
 Linking}

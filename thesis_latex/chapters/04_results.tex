@@ -2,8 +2,8 @@
 
 \label{ch:results}
 
-This chapter follows the research questions.
-The first section compares frozen models with and without the pipeline and attributes the remaining error to linking or to query structure (RQ1, RQ2).
+The results are organised by research question.
+The first section compares the frozen models with and without the pipeline and separates the remaining error into linking and query-structure components (RQ1, RQ2).
 The second compares the linking methods and the model backbones (RQ3), and the third analyses the structural failures in detail.
 The fourth tests prompt interventions and a way to recover failures without gold answers (RQ4, RQ5), and the last compares the pipeline with the benchmark authors' systems and checks the validity of the results.
 
@@ -386,8 +386,7 @@ latter use each comparison's own common rows. The right panel shows the
 paired difference against the baseline with a 95\,\% bootstrap interval.}
 \end{figure}
 
-\paragraph{What the Interventions
-Change}
+\paragraph{Changes in Generated Queries}
 
 \Cref{fig:idiom} shows how idiom guidance changes the generated queries: subclass closure rises from 50 to 264 (reference: 149), statement-node use from 25 to 45 (reference: 130), value-node use from 2 to 6 (reference: 35), and unrequested \texttt{LIMIT} clauses fall from 59 to 18.
 Construct agreement improves most for the two constructs the prompt stresses most (subclass closure 29\,\%$\to$58\,\%, property paths 22\,\%$\to$60\,\%).
@@ -444,10 +443,10 @@ The model kept to the list for almost every label: only 15 of 2,263 label uses (
 This is not a standalone performance claim: like the gold-label condition, the intervention receives part of the answer in advance, so its absolute performance is partly definitional.
 The result is meaningful as a comparison, because the enumerative schema cards were built from the same reference-linked mentions.
 
-The two arms receive information about the same entities and differ only in how it is presented.
+Both arms use information about the same entities, and the only difference is how that information is presented.
 Given as available evidence, it lowers accuracy by 14.65 points.
 Given as a closed vocabulary that the model must use, it raises accuracy by 18.99 points.
-The resulting difference of 34 points, with non-overlapping intervals, motivates the design principle discussed in the next chapter. Prompt-level intervention can still help, but more advice alone does not.
+The 34-point difference between the two conditions motivates the interpretation developed in the next chapter. Prompt-level intervention can still help, but more advice alone does not.
 
 \paragraph{Which Knowledge Matters: A
 Two-by-Two}

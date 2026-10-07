@@ -4,8 +4,8 @@
 \section{Prompts}
 \label{app:prompts}
 
-The prompt-intervention experiment changes only the generation prompt, so the prompts themselves are the experiment.
-The prompts are reproduced below exactly as used, extracted mechanically from the source files.
+The prompt-intervention experiment changes only the generation prompt, so the prompts are reproduced below.
+The prompts are reproduced exactly as used in the experiments.
 
 The baseline arm uses~\cref{lst:prompt-gen} alone.
 The idiom arm uses the base system prompt followed by the idiom guide (\cref{lst:prompt-idiom}).
@@ -20,19 +20,19 @@ Disambiguation (\cref{lst:prompt-disamb}) is identical in every arm.
 \section{Full Result Tables}
 \label{app:tables}
 
-The results chapter reports the figures needed for each argument on the common subset, where the entity-level metric is defined for all systems.
+The results chapter reports the main comparisons on the common subset. The tables below provide the full results, including per-run denominators, complexity breakdowns, and confidence intervals.
 The tables below provide the full results with per-run denominators, breakdowns by complexity, and complete interval estimates.
 
 \input{tables/app_master_results}
 \input{tables/app_official}
 \input{tables/app_linker_ci}
 
-Further tables that are too large to typeset are provided in the accompanying repository: the complete construct-usage and agreement matrices, all selectors over all candidate pools, the label-failure taxonomy and repair results, and construct prevalence in the query logs at every size band.
+Larger tables are provided in the accompanying repository, including the complete construct-usage and agreement matrices, selector results, label-failure taxonomy, repair results, and query-log construct prevalence.
 
 \section{Error-Analysis Annotations}
 \label{app:annotations}
 
-All thirty annotated cases from the reported end-to-end run are listed below, so that the categorisation underlying the failure analysis can be checked independently.
+All thirty annotated cases from the reported end-to-end run are listed below. This allows the failure categorisation to be checked independently.
 The sample is complexity-stratified with seed 42.
 The questions and notes are truncated for width, and the full records, including both queries, are in the accompanying repository.
 
@@ -166,8 +166,7 @@ The repository also documents the order in which the original experiments were r
 \section{Supplementary Figures}
 \label{app:figures}
 
-The figures below show further views of results reported in the results chapter.
-No result depends on them that is not stated in the body.
+The figures below provide additional views of results reported in the main text. None is required for the main conclusions.
 
 \begin{figure}[H]
   \centering

@@ -19,10 +19,10 @@ Volunteers and bots edit its more than 100 million items together.
 Its content consists of three main kinds of object: \emph{items} (opaque Q-identifiers for entities, classes and abstract concepts, e.g.\ Barack Obama is Q76), \emph{properties} (opaque P-identifiers for relations and attributes, e.g.\ P31 is instance of), and \emph{statements}, which connect an item to a property.
 A statement can also carry qualifiers, references and a rank.
 
-Two features of Wikidata matter most here.
+Two properties of Wikidata are particularly relevant to this study.
 First, identifiers are opaque and cannot be recovered from the question text.
 Nothing in ``Christopher Nolan'' points to Q25191, so entity and property linking has to be a separate pipeline stage.
-Linking is therefore treated here as a stage of its own, and four linkers are compared under identical conditions so that linking errors can be separated from errors made elsewhere.
+The pipeline therefore treats linking as a separate stage, and four linkers are compared under identical conditions so that linking errors can be separated from errors made elsewhere.
 Second, Wikidata changes all the time (items are created, merged, deprecated or re-parented), so a benchmark's gold answers can drift away from the live graph regardless of how good a system is.
 This is the reason for the fair set, which keeps only rows whose gold query still executes against the fixed snapshot used for evaluation.
 
@@ -97,8 +97,7 @@ For this reason, the thesis analyses structural and linking errors separately.
 \label{sec:sparql}
 
 SPARQL is the W3C query language for RDF, and the benchmark uses only part of it.
-SPARQL matches graph patterns built from triple patterns and returns the variables selected in the SELECT clause.
-The benchmark also uses FILTER for value constraints, OPTIONAL for left-join behaviour when a value may be missing, UNION for alternative patterns, aggregation with GROUP BY and HAVING, ordering and LIMIT, property paths such as the * and / operators described above, and subqueries.
+SPARQL matches graph patterns built from triple patterns and returns the variables selected in the SELECT clause. The benchmark also uses FILTER for value constraints, OPTIONAL for left-join behaviour when a value may be missing, UNION for alternative patterns, aggregation with GROUP BY and HAVING, ordering and LIMIT, property paths such as the * and / operators described above, and subqueries.
 Property paths matter for meaning, but they are also expensive to run.
 Where they are placed and the order in which joins are evaluated can strongly affect execution time on a graph as large as Wikidata~\citep{aimonier2023joinordering}.
 
@@ -121,7 +120,7 @@ Answering}
 \label{sec:kgqa}
 
 Knowledge graph question answering (KGQA) means answering natural-language questions with the help of a knowledge graph.
-Current research falls broadly into two approaches.
+Recent KGQA systems can be grouped into two broad approaches.
 Recent surveys of large language models and knowledge graphs draw a similar line~\citep{ma2025llmkg}, as does a systematic review of the wider KGQA architecture space~\citep{perevalov2024survey}.
 
 \paragraph{Retrieval-based
@@ -135,8 +134,8 @@ A question that needs aggregation over thousands of entities, for instance, cann
 \paragraph{Semantic parsing} translates the natural-language question into an executable SPARQL
 query.
 The answer then comes from executing the query on the graph.
-This work uses semantic parsing, because the query is an artefact that can be inspected and verified, works over any number of entities, and stays useful as the graph is updated.
-The price is brittleness: one wrong identifier or one missing * can yield a query that is valid but wrong.
+This thesis focuses on semantic parsing because the generated query can be inspected and executed directly. It also remains usable as the underlying graph changes.
+This approach is also brittle: a single wrong identifier or missing * can produce a query that executes but gives the wrong result.
 The experiments here measure and attribute this kind of failure.
 
 Within semantic parsing, three system paradigms recur:
@@ -155,7 +154,7 @@ Execution results can be used as feedback across multiple turns.
 This thesis uses a pipeline.
 Fine-tuning is outside the scope of this work for the reasons given in the introduction.
 Agents can recover from their own mistakes, but they make many model and endpoint calls per question, and because each step depends on the one before, it is hard to tell which step caused a failure.
-A pipeline keeps every stage observable, so each error can be traced to a specific stage, which is the central aim of this thesis.
+A pipeline makes the intermediate stages observable, allowing failures to be examined separately. This is the main reason for using a pipeline in this study.
 
 \subsection{Text-to-SPARQL with Language
 Models}
@@ -177,9 +176,7 @@ When the generator is a frozen frontier model and disambiguation is close to per
 learning}
 
 \citet{dabramo2025investigating} study in-context learning for text-to-SPARQL on benchmarks that supply gold entities and relations (so their evaluation, like \citet{banerjee2022modern}'s, isolates generation), and identify a systematic \emph{triple-flip} error: the model reverses the subject and object of a generated triple, producing a query that is valid, incorrect and often empty.
-Their fix keeps several beam-search hypotheses instead of only the most probable one.
-This independently supports the distinction between linking and structure drawn here.
-It also connects to the empty results observed in this work: a structurally wrong query over correct identifiers often returns nothing, so an empty result can be a diagnostic signal.
+Their fix keeps several beam-search hypotheses instead of only the most probable one. This result is consistent with the distinction between linking and query structure used in this thesis. It also connects to the empty results observed in this work: a structurally wrong query over correct identifiers often returns nothing, so an empty result can be a diagnostic signal.
 Few-shot demonstrations can also teach more than surface format: \citet{shah2024implicit} show that examples which make implicit multi-hop reasoning steps visible improve generated SPARQL and Cypher queries, a more targeted use of demonstrations than the few-shot condition tested here.
 
 \paragraph{Agentic systems}
@@ -188,7 +185,7 @@ Agentic approaches let a model explore the graph and revise a query over several
 The TEXT2SPARQL'25 challenge produced several such systems: mKGQAgent~\citep{perevalov2025mkgqagent} won overall with a multilingual pipeline modelled on human reasoning; \citet{brei2025aruqula} combine ReAct-style reasoning with graph-exploration tools; and \citet{walter2025grasp} extend the approach from one knowledge graph to many.
 \citet{soru2026researcher}'s self-improving agent reaches 0.22 accuracy on the 2025 DBpedia validation set and concludes that ``the bottleneck is consistently in basic-graph-pattern predicate selection, not in SPARQL syntax or modifiers''.
 On a different graph and system, this supports the failure taxonomy of this work.
-These systems share execution-guided revision, and the cascade used here is a deliberately minimal form of it.
+These systems also use execution feedback to revise queries, and the cascade used here is a deliberately minimal form of it.
 
 \paragraph{Schema-aware grounding}
 
@@ -261,7 +258,7 @@ They report that linkers based on language models clearly outperform other appro
 In their comparison, traditional systems reach higher precision but much lower recall.
 They also draw a conclusion that bears directly on the design used here: high recall, even at some cost in precision, can give better end-to-end performance, because the downstream model tolerates noisy candidate sets.
 
-The same pattern appears here, on a different benchmark and with differently constructed ground truth.
+The same pattern appears on a different benchmark with differently constructed ground truth.
 
 \paragraph{Evaluation protocol}
 
@@ -316,9 +313,9 @@ The query-log corpus of \citet{walter2026wdql} is used here to check whether the
 The pipeline builds on two established mechanisms: reasoning-based disambiguation over retrieved candidates, studied by \citet{alekseev2025querybased} (who compare it with fine-tuned linking in a multi-stage Wikidata pipeline) and \citet{vollmers2025evaluation}; and execution-guided revision, established in the agentic systems discussed above.
 The cascade used here is a minimal, single-round form of execution feedback, added because the measurements showed remaining headroom.
 
-\paragraph{What differs here}
+\paragraph{Relation to previous work}
 
-The linking comparison evaluates four paradigms on the same rows, ground truth and candidate pools, with the gold standard taken from the benchmark's own annotated queries.
+The linking comparison differs from these studies in that all four paradigms are evaluated on the same rows, ground truth and candidate pools. The gold standard taken from the benchmark's own annotated queries.
 Error is attributed to individual stages, with backbone dependence measured separately for each, instead of being reduced to one end-to-end score.
 Interventions are controlled by changing only the generation prompt: generic guidance and schema evidence are tested against the baseline, together with oracle conditions and an analysis of selective guidance.
-External validity is checked against real query-log usage in both directions.
+The benchmark is also compared with real Wikidata query logs to assess how representative its construct distribution is.

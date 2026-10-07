@@ -2,25 +2,25 @@
 \addcontentsline{toc}{chapter}{Abstract}
 
 Wikidata makes more than one hundred million facts publicly queryable through SPARQL, but writing these queries requires both knowing the graph's opaque identifiers and understanding how facts are represented.
-A system translating natural-language questions into SPARQL must therefore solve two different problems: generating the query, by choosing the concepts it needs and composing its structure, and linking its labels to identifiers.
-Because end-to-end accuracy combines them, it is difficult to determine which is the main source of error.
+A system translating natural-language questions into SPARQL has to handle two separate problems: selecting and composing the query, and linking its labels to identifiers.
+End-to-end accuracy combines these two stages, making their individual contributions to error difficult to distinguish.
 
-This thesis separates these problems using \method{}.
+The thesis assesses the two stages separately using a \method{}.
 A benchmark that pairs executable reference queries with label-form variants is used to derive ground truth for the linking stage.
 Each stage is then evaluated independently while the others are held fixed, allowing errors to be attributed to disambiguation or to query generation.
 
-The results show that disambiguation, resolving a label to its identifier, is not the main bottleneck.
+Disambiguation is not the main bottleneck.
 A frozen frontier model reasoning over retrieved candidates resolves 97.7 entity F1 and 98.5 property F1, exceeding a bi-encoder linker given the same candidates by 24.9 points, and, with an open 14B backbone, replicates on a second Wikidata benchmark at 90.6\,\% entity accuracy.
-Disambiguation is largely backbone-independent.
+Changing the backbone has little effect on disambiguation performance.
 
-In contrast, query generation is the main source of error.
+Query generation accounts for the larger remaining error.
 Given the benchmark's concepts and query structure, the pipeline reaches 97.4 entity-level Jaccard, compared with 30.9 when generating the query itself, a 66.5-point gap supported by analysis across the full reference set and by four models from four organisations failing on the same questions.
 
-The resulting pipeline, whose stages are selected based on experimental evidence, reaches 23.4 pooled fair Jaccard on the benchmark's official split, more than double the benchmark authors' frozen GPT-4 baseline re-scored under the same conditions.
+Using the configurations selected in the experiments, the pipeline reaches 23.4 pooled fair Jaccard on the benchmark's official split, more than double the benchmark authors' frozen GPT-4 baseline re-scored under the same conditions.
 With the generator held fixed, the pipeline adds 6.0 pooled points over the same model used zero-shot on the working split.
-Generic idiom guidance gives a modest average gain ($+3.9$ points), while retrieved schema evidence hurts substantially ($-14.7$ points); the same knowledge helps only when it restricts the generator's choices.
-An execution-guided cascade uses the tendency of structurally wrong queries to return nothing to recover $+4.8$ points without training and without gold answers.
-Because it only replaces empty or failed results, it cannot worsen any question by design, at a cost of up to seven further generations per question.
+Generic idiom guidance gives a modest average gain ($+3.9$ points), while retrieved schema evidence hurts substantially ($-14.7$ points). The schema information was beneficial only when it was presented as a restriction on the generator's available choices.
+An execution-guided cascade uses empty or failed executions to select an alternative query and recovers 4.8 points without additional training or gold answers.
+It replaces a candidate only when execution fails or returns no results, so on the strict evaluation set it cannot reduce the score of a question.
 
 \vspace{1em}
 

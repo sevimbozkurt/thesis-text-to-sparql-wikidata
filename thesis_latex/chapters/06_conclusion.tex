@@ -6,7 +6,7 @@
 
 \label{sec:conclusion-summary}
 
-This thesis examined where a frozen-model text-to-SPARQL pipeline over Wikidata fails and whether targeted interventions can reduce those failures.
+This study evaluated a frozen-model text-to-SPARQL pipeline over Wikidata and examined the sources of its remaining errors.
 It uses \method{}, which keeps every stage fixed except the one under investigation and evaluates that stage on its own.
 \Cref{tab:conclusion-summary} collects the headline figures for each research question.
 The paragraphs below state the findings, and the results and discussion chapters give the full evidence and its limits.
@@ -52,13 +52,12 @@ General advice gives small gains, and graph knowledge helps when it restricts th
 Some of the remaining failures can be detected from execution alone, without gold supervision.
 The execution-guided cascade recovers about two fifths of the available oracle headroom.
 
-Together, these findings yield a working pipeline in which every step is chosen on experimental evidence, and a protocol for finding where such pipelines fail.
-
+Taken together, the experiments determine the configuration used in the final pipeline and provide a way to evaluate its individual stages separately.
 \section{The Resulting System}
 
 \label{sec:conclusion-system}
 
-The measurements settle several design choices that are often made by convention, and together they describe a configuration that others can start from.
+The experiments also determine several design choices for the final configuration.
 
 Label generation needed the strongest model, while for disambiguation an open 7B model came within two points of it (95.8 against 97.7 entity F1).
 Scale matters at only one stage: the 14B open model produces unfindable labels at 4.9 times the frontier rate, whereas disambiguation varies by less than three percentage points across model sizes.
@@ -67,16 +66,16 @@ For linking, retrieving candidates and reasoning over them worked better than li
 Both fine-tuned linkers fail mainly because they detect mentions in the question text and therefore miss identifiers that the question never names (\cref{sec:res-linkers}).
 On a second benchmark, reasoning over candidates again links entities accurately (90.6\,\% entity accuracy), so the result is not specific to one dataset.
 
-Constrain the vocabulary; do not enumerate the schema.
+Restricting the entity and property vocabulary was more effective than presenting the generator with additional schema information.
 In this pipeline, graph knowledge supplied before generation helped only when it removed options.
 
-An empty result is a useful signal at inference time, because structurally wrong queries often return nothing.
+Empty results provide a useful inference-time signal in this evaluation because many structurally incorrect queries return no results.
 The cascade built on this signal requires no training or gold answers, only replaces failed queries, and should be the baseline for any learned selector.
 
 Candidate pools need to be checked before any linking number can be trusted.
 Fixing silently truncated pools raised the gold-label condition by 26 points, because a retrieval layer that returns an empty list because of throttling looks exactly like one that returns an empty list because nothing matches.
 
-The open problem is building a query around a construct that the model can identify but does not yet use correctly.
+The remaining difficulty is composing complete queries that use the required Wikidata constructs correctly.
 The next section describes the research directions that follow from this.
 
 \section{Future Work}

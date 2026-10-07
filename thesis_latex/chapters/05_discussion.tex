@@ -6,27 +6,26 @@ This chapter interprets the results research question by research question, then
 
 \section{Main Findings}
 
-\paragraph{RQ1: What Frozen Frontier Models Can and Cannot
-Do}
+\paragraph{RQ1: Performance of Frozen Frontier Models}
 
 \label{sec:disc-rq1}
 
 Frozen frontier models write SPARQL that parses and executes but is rarely correct (\cref{sec:res-frozen}, \cref{tab:main}).
 On non-empty outputs their scores lie close together.
-What separates the systems is mainly how often they return nothing, and the pipeline roughly halves that rate.
+The main difference between the systems is mainly how often they return nothing, and the pipeline roughly halves that rate.
 Their weakness lies in Wikidata's modelling conventions (statement nodes, subclass closure, normalised value nodes), which they rarely apply where needed.
 
 The failures are shared across models.
 Three quarters of the questions are solved by none of the four models, which come from four different organisations.
 The questions that all four fail share a clear feature in their reference queries: they contain several times more statement nodes than easier questions, and qualifier access and aggregation, which appear in them, never occur in the questions that all four models solve.
-This suggests that the difficulty is a property of the questions themselves.
+This pattern suggests that the difficulty is related to the query requirements rather than to a particular model.
 
 One likely explanation is that fine-tuning brings conformity to a query style, the very capability the frozen models lack: a 7B model trained on in-domain queries scores orders of magnitude higher than a much larger base model.
 This does not prove a general difference in capability, since more than half of its outputs are character-identical to the reference, although that alone does not establish leakage.
 A fine-tuned system reproduces a distribution of queries, whereas this pipeline derives a query from the question. The two agree only when the reference translates the question correctly, but the audit shows noise in roughly one quarter of the strict fair set.
 Whether this contributes materially to the observed gap remains open, since only nine of the sampled reference queries overlap the official test split, and it is listed as future work.
 
-The comparison that matters most for this thesis is among systems without in-domain training, and there the pipeline more than doubles the best published frozen result, partly because it uses a newer generator (\cref{sec:res-authors}).
+For the present study, the relevant comparison is between systems without in-domain training, and there the pipeline more than doubles the best published frozen result, partly because it uses a newer generator (\cref{sec:res-authors}).
 The stage-wise analysis also shows where the remaining difference to fine-tuned systems comes from.
 
 \paragraph{RQ2: Why Disambiguation Is Not the
@@ -36,7 +35,7 @@ Bottleneck}
 
 Given the benchmark's concepts and query structure, the pipeline reaches 97.4 entity-level Jaccard (\cref{sec:res-attribution}, \cref{tab:main}).
 When it has to generate the query itself, the score falls to 30.9.
-In this pipeline, query generation is the main constraint.
+Under these conditions, query generation accounts for most of the remaining limitation.
 Disambiguation over retrieved candidates stops being the limiting stage once the model writes suitable labels and the correct entity is in the candidate pool, which holds for the frontier model here.
 For the small open model, label generation itself becomes the weak point (see RQ3).
 
@@ -52,10 +51,9 @@ The fine-tuned linkers' deficit of about 70 points traces to the mention-detecti
 Given the same candidates, the bi-encoder trails the reasoning linker by 24.9 points and the plain search order by about 21, so reasoning over candidates is the strongest of the compared mechanisms, while most of its accuracy comes from labels that Wikidata's search can find.
 Research that focuses mainly on entity linking for this task, including the 35.1\,\% failure share reported by \citet{xu2023wikisp}, may therefore be improving a stage that this architecture has largely solved.
 \citet{xu2023wikisp} measured a fine-tuned system on simpler questions, where linking makes up a larger share of the errors; the two results describe different architectures and do not contradict each other.
-For a pipeline of this kind, better disambiguation offers little headroom, while query generation leaves much more room.
+For this pipeline, further improvements in disambiguation are unlikely to close the remaining gap. Query generation provides substantially more room for improvement.
 
-\paragraph{RQ3: What Backbone Scale Buys, and
-Where}
+\paragraph{RQ3: Effect of Backbone Scale by Stage}
 
 \label{sec:disc-rq3}
 
@@ -65,16 +63,15 @@ Reasoning over seven retrieved candidates does not need a frontier-scale model.
 At generation, however, the choice of backbone matters much more: when the open model handles both stages, pipeline performance drops sharply.
 
 Asked to name Wikidata entities and properties without further help, the open model produces unfindable labels for 16.4\,\% of distinct labels (270 of 1,645), against 3.3\,\% for the frontier model, a 4.9-fold difference.
-This points to a hybrid deployment, with a capable model for labels and a cheaper one for disambiguation.
+These results suggest a hybrid configuration: a stronger model for label generation and a smaller model for disambiguation.
 String normalisation, which should fix superficial casing issues such as camelCase or snake\_case, lowers the failure rate only to 13.8\,\%.
 The main problem is near-miss wording (``crew member(s)'', for example, names a different property and is not a misspelling), and normalisation hardly touches it.
 The replication with Claude Opus 5 repeats generation with a later frontier model and finds the same pattern: subclass closure and property paths improve, statement nodes and qualifiers improve little, and value nodes do not improve.
-The generation deficit does not disappear as models get better.
+The later-model replication does not remove the generation gap.
 Schema evidence, selective gating, majority voting and string repair fail in the same way: none of them restricts the generator's choices.
-The disambiguation results show that the smaller model already reasons well enough for that stage, so the most likely explanation for the generation gap is missing vocabulary knowledge.
+The disambiguation results indicate that the smaller model is sufficient for that stage. The remaining generation gap therefore appears to be related more to label and schema vocabulary, but not the general reasoning capacity.
 
-\paragraph{RQ4: Guidance versus
-Evidence}
+\paragraph{RQ4: Effects of Prompt Guidance and Schema Information}
 
 \label{sec:disc-rq4}
 
@@ -105,11 +102,11 @@ SAGA filters candidates by type, domain and range, removing options that would o
 The schema-evidence arm does the opposite and adds options, which the model seems to take as encouragement.
 The same graph information has opposite effects, depending on whether it filters or merely informs.
 This also explains why linking (seven candidates, a forced choice) does better than schema evidence (everything an entity carries, with no restriction).
-The direction of the knowledge mattered more than its amount: narrowing the decision space helped, and widening it hurt.
+The results suggest that the presentation of graph information is more important than its amount. Restricting the available entities and properties improved performance, whereas adding schema information without such a restriction reduced it.
 The same distinction sets this result apart from \citet{yang2026ggc}, whose gate reduces the cost of an expensive and often harmful operation.
 The gate tested here would have to improve accuracy for an operation that is cheap and almost never harmful, so there is no comparable gain for gating to find.
 
-\paragraph{Testing the Principle}
+\paragraph{Effect of Information Framing}
 
 The prompt experiment keeps the same reference-linked information and changes only how it is presented.
 Offered as available evidence, it lowers performance by 14.65 points.
@@ -131,8 +128,7 @@ The profile hint tells the model which idiom a question needs, but it does not s
 General advice brought no further gains in these experiments.
 Restricting the identifiers available to the generator was the more effective intervention.
 
-\paragraph{RQ5: Detectable Failure and the Value of
-Execution}
+\paragraph{RQ5: Execution-Based Failure Detection}
 
 \label{sec:disc-rq5}
 

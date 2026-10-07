@@ -109,6 +109,8 @@
 \setcounter{biburllcpenalty}{7000}
 
 \AtEveryBibitem{\clearfield{note}}
+\renewcommand*{\bibfont}{\small}
+\setlength{\bibitemsep}{0.4\baselineskip}
 
 \usepackage[colorlinks=true,linkcolor=black,citecolor=black,filecolor=black,urlcolor=blue]{hyperref}
 \usepackage[capitalise,noabbrev]{cleveref}
@@ -154,7 +156,7 @@
 \input{chapters/06_conclusion}
 \runningbodychaptersfalse
 
-\printbibliography[heading=bibintoc,title={References}]
+{\setstretch{1.0}\printbibliography[heading=bibintoc,title={References}]}
 
 \appendix
 \input{chapters/09_appendix}

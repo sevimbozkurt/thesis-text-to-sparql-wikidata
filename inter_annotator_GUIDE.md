@@ -95,7 +95,7 @@ The REFERENCE query is itself wrong. It does not answer the question it is paire
 
 *Example:* Question asks for the heaviest humans, and gold returns the classes of things that have a weight.
 
-## DECISION ORDER — apply these tests in order and stop at the first that fits.
+## DECISION ORDER please apply these tests in order and stop at the first that fits.
 
   1. Did the query fail to run?                          -> execution
   2. Is there still an unresolved [entity:...] or

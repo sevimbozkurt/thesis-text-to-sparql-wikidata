@@ -420,7 +420,7 @@ def annotator2():
 
 
 def compare2():
-    _agreement("gold_audit_annotator2_answers*.csv",
+    _agreement("annotations/gold_audit_annotator2_answers*.csv",
                "INTER-ANNOTATOR AGREEMENT ON THE ADJUDICATION",
                independent=True)
 
@@ -456,7 +456,7 @@ def compare():
 
 def _agreement(pattern, title, independent):
     import glob
-    cands = glob.glob(pattern) + glob.glob(os.path.expanduser("~/Downloads/" + pattern))
+    cands = glob.glob(pattern) + glob.glob(os.path.expanduser("~/Downloads/" + os.path.basename(pattern)))
     if not cands:
         sys.exit(f"no {pattern} found -- download the second pass first")
     src2 = max(cands, key=os.path.getmtime)
@@ -546,7 +546,7 @@ def _agreement(pattern, title, independent):
 # would hide how hard the judgement was, which on this benchmark is the finding.
 RECONCILE_PAGE = "gold_audit_reconcile.html"
 PRERECON = "annotations/gold_audit_prereconcile.csv"
-ANNOT2 = "gold_audit_annotator2_answers*.csv"
+ANNOT2 = "annotations/gold_audit_annotator2_answers*.csv"
 
 # Faults that a result preview cannot show. Detected mechanically and shown as
 # THINGS TO CHECK, never as verdicts -- the point of the round is the two
